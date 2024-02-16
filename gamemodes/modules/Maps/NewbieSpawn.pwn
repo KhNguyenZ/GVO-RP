@@ -60,7 +60,7 @@ hook OnGameModeInit()
 	MapNewbieSpawn = CreateDynamicObject(19482, 1807.737182, -1901.635742, 14.075275, 0.000000, -0.000007, 178.999954, -1, -1, -1, 1000.00, 1000.00);
 	SetDynamicObjectMaterialText(MapNewbieSpawn, 0, "{8840ed}OPEN.MP", 130, "Engravers MT", 30, 1, 0x00000000, 0x00000000, 1);
 	MapNewbieSpawn = CreateDynamicObject(19482, 1807.737182, -1901.635742, 13.655269, 0.000000, -0.000007, 178.999954, -1, -1, -1, 1000.00, 1000.00);
-	SetDynamicObjectMaterialText(MapNewbieSpawn, 0, "{ff0000}Author: DangNguyen, gnoust,\nKhNguyenZ.", 130, "Calibri", 30, 1, 0x00000000, 0x00000000, 1);
+	SetDynamicObjectMaterialText(MapNewbieSpawn, 0, "{ff0000}Author: KhNguyenZ - Main Developer \nTylers - Developer.", 130, "Calibri", 30, 1, 0x00000000, 0x00000000, 1);
 
 
 	MapNewbieSpawn = CreateDynamicObject(1557, 1752.131958, -1893.877197, 12.571161, 0.000000, 0.000000, 270.000000, -1, -1, -1, 1000.00, 1000.00);

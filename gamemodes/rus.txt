@@ -1,0 +1,5 @@
+./modules/characters/Inventory1/_textdraw.pwn(591) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "page"
+./modules/characters/Inventory1/_textdraw.pwn(687) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "page"
+./modules/dynamic/Biz/callback.pwn(13) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "count"
+Pawn compiler 3.2.3664	 	 	Copyright (c) 1997-2016, ITB CompuPhase
+

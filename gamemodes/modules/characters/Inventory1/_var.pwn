@@ -1,5 +1,6 @@
 #define MAX_INV_PAGES 5
 #define MAX_INV_ITEM 20
+#define MAX_ALL_INV_ITEM 100
 #define DAFAULT_INV_PAGE 0
 // #define MAX_TRADE_PAGES 10
 #define 		MAX_DROP_ITEMS 					1000

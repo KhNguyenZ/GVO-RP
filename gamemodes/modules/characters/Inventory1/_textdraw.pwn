@@ -590,7 +590,7 @@ hook OnPlayerConnect(playerid) {
 
 stock ShowPlayerIndexInv(playerid, page = 0)
 {
-	for(new i = 0 ; i < 21 ; i++)
+	for(new i = 1 ; i < 21 ; i++)
 	{
 		PlayerTextDrawHide(playerid, ItemBackground[playerid][i]);
 	}
@@ -629,7 +629,7 @@ stock ShowPlayerIndexInv(playerid, page = 0)
 		if(PlayerInvItem[playerid][PlayerPage[playerid]][pInvItemID][j] > 0 && PlayerInvItem[playerid][PlayerPage[playerid]][pInvAmount][j] > 0)
 		{
 			CreateInvItem(playerid, PlayerInvItem[playerid][PlayerPage[playerid]][pInvItemID][j], PlayerPage[playerid], PlayerInvItem[playerid][PlayerPage[playerid]][pInvAmount][j]);
-			printf("Inv ID: %d | Page: %d | Inv Amount: %d ",PlayerInvItem[playerid][PlayerPage[playerid]][pInvItemID][j], PlayerPage[playerid], PlayerInvItem[playerid][PlayerPage[playerid]][pInvAmount][j]);
+			// printf("Inv ID: %d | Page: %d | Inv Amount: %d ",PlayerInvItem[playerid][PlayerPage[playerid]][pInvItemID][j], PlayerPage[playerid], PlayerInvItem[playerid][PlayerPage[playerid]][pInvAmount][j]);
 		}
 	}
 	GetPlayerItem(playerid, PlayerPage[playerid]);

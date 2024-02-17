@@ -4210,3 +4210,654 @@
 [02/17/24 00:54:59] [ERROR] mysql_format: destination size '300' is too small
 [02/17/24 00:54:59] [ERROR] mysql_format: destination size '300' is too small
 [02/17/24 00:54:59] [ERROR] error #1064 while executing query "UPDATE `players` SET PosX = '1762.712280', PosY = '-1894.783447', PosZ = '13.588629', PosA = '25.735403', Health = '100.000000', Armour = '0.000000', TanSo = '0', Cash = '1000', AdminLevel = '0', Interior = '0', VW = '0', Phone = '0', DanhBa = '0', Dice = '0', CanXang = '0', DayThung = '0',": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[02/17/24 23:17:01] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:17:01] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:17:01] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:17:01] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:17:01] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:17:01] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:17:01] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:17:01] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:17:01] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:17:01] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:17:01] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:17:01] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:17:01] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:17:01] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:17:01] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:17:01] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:17:01] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:17:01] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:17:01] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:17:01] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:17:01] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:17:01] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:17:01] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:17:01] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:17:18] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/17/24 23:17:18] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/17/24 23:17:18] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/17/24 23:17:18] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/17/24 23:17:18] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/17/24 23:17:18] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/17/24 23:17:18] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/17/24 23:17:18] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/17/24 23:17:18] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/17/24 23:17:18] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/17/24 23:17:18] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/17/24 23:20:45] [ERROR] mysql_format: destination size '300' is too small
+[02/17/24 23:20:45] [ERROR] mysql_format: destination size '300' is too small
+[02/17/24 23:20:45] [ERROR] mysql_format: destination size '300' is too small
+[02/17/24 23:20:45] [ERROR] mysql_format: destination size '300' is too small
+[02/17/24 23:20:45] [ERROR] mysql_format: destination size '300' is too small
+[02/17/24 23:20:45] [ERROR] mysql_format: destination size '300' is too small
+[02/17/24 23:20:45] [ERROR] error #1064 while executing query "UPDATE `players` SET PosX = '1766.480835', PosY = '-1895.622437', PosZ = '13.743573', PosA = '278.657928', Health = '100.000000', Armour = '0.000000', TanSo = '0', Cash = '1000', AdminLevel = '0', Interior = '0', VW = '0', Phone = '0', DanhBa = '0', Dice = '0', CanXang = '0', DayThung = '0',": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[02/17/24 23:20:45] [ERROR] CCallback::Execute - invalid AMX instance
+[02/17/24 23:20:58] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:20:58] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:20:58] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:20:58] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:20:58] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:20:58] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:20:58] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:20:58] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:20:58] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:20:58] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:20:58] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:20:58] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:20:58] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:20:58] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:20:58] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:20:58] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:20:58] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:20:58] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:20:58] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:20:58] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:20:58] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:20:58] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:20:58] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:20:58] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:20:58] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:20:58] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:21:08] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:21:08] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:21:08] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:21:08] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:21:08] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:21:08] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:21:08] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:21:08] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:21:08] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:21:08] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:21:08] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:21:08] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:21:08] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:21:08] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:21:08] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:21:08] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:21:08] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:21:08] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:21:08] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:21:08] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:21:08] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:21:08] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:21:08] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:21:08] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:21:08] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:21:08] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:21:16] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/17/24 23:21:16] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/17/24 23:21:16] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/17/24 23:21:16] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/17/24 23:21:16] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/17/24 23:21:16] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/17/24 23:21:16] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/17/24 23:21:16] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/17/24 23:21:16] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/17/24 23:21:16] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/17/24 23:21:16] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/17/24 23:22:27] [ERROR] mysql_format: destination size '300' is too small
+[02/17/24 23:22:27] [ERROR] mysql_format: destination size '300' is too small
+[02/17/24 23:22:27] [ERROR] mysql_format: destination size '300' is too small
+[02/17/24 23:22:27] [ERROR] mysql_format: destination size '300' is too small
+[02/17/24 23:22:27] [ERROR] mysql_format: destination size '300' is too small
+[02/17/24 23:22:27] [ERROR] mysql_format: destination size '300' is too small
+[02/17/24 23:22:27] [ERROR] error #1064 while executing query "UPDATE `players` SET PosX = '1765.456177', PosY = '-1892.014160', PosZ = '13.583920', PosA = '288.078827', Health = '100.000000', Armour = '0.000000', TanSo = '0', Cash = '1000', AdminLevel = '0', Interior = '0', VW = '0', Phone = '0', DanhBa = '0', Dice = '0', CanXang = '0', DayThung = '0',": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[02/17/24 23:22:34] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:22:34] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:22:34] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:22:34] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:22:34] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:22:34] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:22:34] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:22:34] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:22:34] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:22:34] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:22:34] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:22:34] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:22:34] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:22:34] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:22:34] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:22:34] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:22:34] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:22:34] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:22:34] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:22:34] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:22:34] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:22:34] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:22:34] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:22:34] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:22:34] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:22:34] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:22:50] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/17/24 23:22:50] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/17/24 23:22:50] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/17/24 23:22:50] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/17/24 23:22:50] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/17/24 23:22:50] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/17/24 23:22:50] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/17/24 23:22:50] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/17/24 23:22:50] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/17/24 23:22:50] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/17/24 23:22:50] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/17/24 23:27:31] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:27:31] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:27:31] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:27:31] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:27:31] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:27:31] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:27:31] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:27:31] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:27:31] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:27:31] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:27:31] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:27:31] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:27:31] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:27:31] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:27:31] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:27:31] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:27:31] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:27:31] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:27:31] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:27:31] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:27:31] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:27:31] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:27:31] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:27:31] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:27:31] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:27:31] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:27:43] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/17/24 23:27:43] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/17/24 23:27:43] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/17/24 23:27:43] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/17/24 23:27:43] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/17/24 23:27:43] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/17/24 23:27:43] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/17/24 23:27:43] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/17/24 23:27:43] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/17/24 23:27:43] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/17/24 23:27:43] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/17/24 23:32:51] [ERROR] mysql_format: destination size '300' is too small
+[02/17/24 23:32:51] [ERROR] mysql_format: destination size '300' is too small
+[02/17/24 23:32:51] [ERROR] mysql_format: destination size '300' is too small
+[02/17/24 23:32:51] [ERROR] mysql_format: destination size '300' is too small
+[02/17/24 23:32:51] [ERROR] mysql_format: destination size '300' is too small
+[02/17/24 23:32:51] [ERROR] mysql_format: destination size '300' is too small
+[02/17/24 23:32:51] [ERROR] error #1064 while executing query "UPDATE `players` SET PosX = '1757.500732', PosY = '-1895.530273', PosZ = '13.587015', PosA = '267.628448', Health = '100.000000', Armour = '0.000000', TanSo = '0', Cash = '1000', AdminLevel = '0', Interior = '0', VW = '0', Phone = '0', DanhBa = '0', Dice = '0', CanXang = '0', DayThung = '0',": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[02/17/24 23:33:54] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:33:54] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:33:54] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:33:54] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:33:54] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:33:54] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:33:54] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:33:54] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:33:54] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:33:54] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:33:54] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:33:54] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:33:54] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:33:54] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:33:54] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:33:54] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:33:54] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:33:54] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:33:54] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:33:54] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:33:54] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:33:54] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:33:54] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:33:54] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:33:54] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:33:54] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:34:02] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/17/24 23:34:02] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/17/24 23:34:02] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/17/24 23:34:02] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/17/24 23:34:02] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/17/24 23:34:02] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/17/24 23:34:02] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/17/24 23:34:02] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/17/24 23:34:02] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/17/24 23:34:02] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/17/24 23:34:02] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/17/24 23:34:45] [ERROR] mysql_format: destination size '300' is too small
+[02/17/24 23:34:45] [ERROR] mysql_format: destination size '300' is too small
+[02/17/24 23:34:45] [ERROR] mysql_format: destination size '300' is too small
+[02/17/24 23:34:45] [ERROR] mysql_format: destination size '300' is too small
+[02/17/24 23:34:45] [ERROR] mysql_format: destination size '300' is too small
+[02/17/24 23:34:45] [ERROR] mysql_format: destination size '300' is too small
+[02/17/24 23:34:45] [ERROR] error #1064 while executing query "UPDATE `players` SET PosX = '1754.739136', PosY = '-1895.434448', PosZ = '13.738010', PosA = '-0.000000', Health = '100.000000', Armour = '0.000000', TanSo = '0', Cash = '1000', AdminLevel = '0', Interior = '0', VW = '0', Phone = '0', DanhBa = '0', Dice = '0', CanXang = '0', DayThung = '0',": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[02/17/24 23:34:54] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:34:54] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:34:54] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:34:54] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:34:54] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:34:54] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:34:54] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:34:54] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:34:54] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:34:54] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:34:54] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:34:54] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:34:54] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:34:54] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:34:54] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:34:54] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:34:54] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:34:54] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:34:54] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:34:54] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:34:54] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:34:54] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:34:54] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:34:54] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:34:54] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:34:54] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:35:08] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/17/24 23:35:08] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/17/24 23:35:08] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/17/24 23:35:08] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/17/24 23:35:08] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/17/24 23:35:08] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/17/24 23:35:08] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/17/24 23:35:08] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/17/24 23:35:08] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/17/24 23:35:08] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/17/24 23:35:08] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/17/24 23:39:22] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:39:22] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:39:22] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:39:22] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:39:22] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:39:22] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:39:22] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:39:22] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:39:22] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:39:22] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:39:22] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:39:22] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:39:22] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:39:22] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:39:22] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:39:22] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:39:22] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:39:22] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:39:22] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:39:22] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:39:22] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:39:22] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:39:22] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:39:22] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:39:22] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:39:22] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:39:30] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/17/24 23:39:30] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/17/24 23:39:30] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/17/24 23:39:30] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/17/24 23:39:30] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/17/24 23:39:30] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/17/24 23:39:30] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/17/24 23:39:30] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/17/24 23:39:30] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/17/24 23:39:30] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/17/24 23:39:30] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/17/24 23:59:03] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:59:03] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:59:03] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:59:03] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:59:03] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:59:03] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:59:03] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:59:03] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:59:03] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:59:03] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:59:03] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:59:03] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:59:03] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:59:03] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:59:03] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:59:03] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:59:03] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:59:03] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:59:03] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:59:03] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:59:03] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:59:03] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:59:03] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:59:03] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:59:03] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/17/24 23:59:03] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/17/24 23:59:15] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/17/24 23:59:15] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/17/24 23:59:15] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/17/24 23:59:15] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/17/24 23:59:15] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/17/24 23:59:15] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/17/24 23:59:15] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/17/24 23:59:15] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/17/24 23:59:15] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/17/24 23:59:15] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/17/24 23:59:15] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/18/24 00:01:05] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:01:05] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:01:05] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:01:05] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:01:05] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:01:05] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:01:05] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:01:05] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:01:05] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:01:05] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:01:05] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:01:05] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:01:05] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:01:05] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:01:05] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:01:05] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:01:05] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:01:05] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:01:05] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:01:05] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:01:05] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:01:05] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:01:05] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:01:05] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:01:05] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:01:05] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:01:13] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/18/24 00:01:13] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/18/24 00:01:13] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/18/24 00:01:13] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/18/24 00:01:13] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/18/24 00:01:13] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/18/24 00:01:13] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/18/24 00:01:13] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/18/24 00:01:13] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/18/24 00:01:13] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/18/24 00:01:13] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/18/24 00:02:35] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:02:35] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:02:35] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:02:35] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:02:35] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:02:35] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:02:35] [ERROR] error #1064 while executing query "UPDATE `players` SET PosX = '1754.770874', PosY = '-1894.827515', PosZ = '13.587015', PosA = '327.141510', Health = '100.000000', Armour = '0.000000', TanSo = '0', Cash = '1000', AdminLevel = '0', Interior = '0', VW = '0', Phone = '0', DanhBa = '0', Dice = '0', CanXang = '0', DayThung = '0',": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[02/18/24 00:02:46] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:02:46] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:02:46] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:02:46] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:02:46] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:02:46] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:02:46] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:02:46] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:02:46] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:02:46] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:02:46] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:02:46] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:02:46] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:02:46] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:02:46] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:02:46] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:02:46] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:02:46] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:02:46] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:02:46] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:02:46] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:02:46] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:02:46] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:02:46] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:02:46] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:02:46] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:02:54] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/18/24 00:02:54] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/18/24 00:02:54] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/18/24 00:02:54] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/18/24 00:02:54] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/18/24 00:02:54] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/18/24 00:02:54] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/18/24 00:02:54] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/18/24 00:02:54] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/18/24 00:02:54] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/18/24 00:02:54] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/18/24 00:07:51] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:07:51] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:07:51] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:07:51] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:07:51] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:07:51] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:07:51] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:07:51] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:07:51] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:07:51] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:07:51] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:07:51] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:07:51] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:07:51] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:07:51] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:07:51] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:07:51] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:07:51] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:07:51] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:07:51] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:07:51] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:07:51] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:07:51] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:07:51] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:07:51] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:07:51] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:07:59] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/18/24 00:07:59] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/18/24 00:07:59] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/18/24 00:07:59] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/18/24 00:07:59] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/18/24 00:07:59] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/18/24 00:07:59] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/18/24 00:07:59] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/18/24 00:07:59] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/18/24 00:07:59] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/18/24 00:07:59] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/18/24 00:15:01] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:15:01] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:15:01] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:15:01] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:15:01] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:15:01] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:15:01] [ERROR] error #1064 while executing query "UPDATE `players` SET PosX = '1777.496094', PosY = '-1895.650879', PosZ = '13.398232', PosA = '271.829590', Health = '100.000000', Armour = '0.000000', TanSo = '0', Cash = '1000', AdminLevel = '0', Interior = '0', VW = '0', Phone = '0', DanhBa = '0', Dice = '0', CanXang = '0', DayThung = '0',": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[02/18/24 00:15:22] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:15:22] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:15:22] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:15:22] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:15:22] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:15:22] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:15:22] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:15:22] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:15:22] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:15:22] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:15:22] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:15:22] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:15:22] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:15:22] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:15:22] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:15:22] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:15:22] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:15:22] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:15:22] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:15:22] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:15:22] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:15:22] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:15:22] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:15:22] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:15:22] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:15:22] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:15:22] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:15:22] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:15:36] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/18/24 00:15:36] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/18/24 00:15:36] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/18/24 00:15:36] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/18/24 00:15:36] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/18/24 00:15:36] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/18/24 00:15:36] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/18/24 00:15:36] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/18/24 00:15:36] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/18/24 00:15:36] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/18/24 00:15:36] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/18/24 00:17:51] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:17:51] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:17:51] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:17:51] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:17:51] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:17:51] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:17:51] [ERROR] error #1064 while executing query "UPDATE `players` SET PosX = '1754.739136', PosY = '-1895.434448', PosZ = '13.896021', PosA = '-0.000000', Health = '100.000000', Armour = '0.000000', TanSo = '0', Cash = '1000', AdminLevel = '0', Interior = '0', VW = '0', Phone = '0', DanhBa = '0', Dice = '0', CanXang = '0', DayThung = '0',": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[02/18/24 00:18:00] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:18:00] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:18:00] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:18:00] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:18:00] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:18:00] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:18:00] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:18:00] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:18:00] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:18:00] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:18:00] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:18:00] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:18:00] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:18:00] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:18:00] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:18:00] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:18:00] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:18:00] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:18:00] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:18:00] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:18:00] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:18:00] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:18:00] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:18:00] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:18:00] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:18:00] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:18:00] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:18:00] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:18:08] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/18/24 00:18:08] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/18/24 00:18:08] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/18/24 00:18:08] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/18/24 00:18:08] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/18/24 00:18:08] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/18/24 00:18:08] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/18/24 00:18:08] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/18/24 00:18:08] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/18/24 00:18:08] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/18/24 00:18:08] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/18/24 00:18:25] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:18:25] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:18:25] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:18:25] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:18:25] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:18:25] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:18:25] [ERROR] error #1064 while executing query "UPDATE `players` SET PosX = '1754.739136', PosY = '-1895.434448', PosZ = '13.888010', PosA = '-0.000000', Health = '100.000000', Armour = '0.000000', TanSo = '0', Cash = '1000', AdminLevel = '0', Interior = '0', VW = '0', Phone = '0', DanhBa = '0', Dice = '0', CanXang = '0', DayThung = '0',": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[02/18/24 00:20:04] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:20:04] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:20:04] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:20:04] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:20:04] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:20:04] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:20:04] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:20:04] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:20:04] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:20:04] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:20:04] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:20:04] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:20:04] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:20:04] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:20:04] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:20:04] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:20:04] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:20:04] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:20:04] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:20:04] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:20:04] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:20:04] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:20:04] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:20:04] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:20:04] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:20:04] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:20:04] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:20:04] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:20:12] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:20:12] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:20:12] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:20:12] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:20:12] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:20:12] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:20:12] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:20:12] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:20:12] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:20:12] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:20:12] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:20:12] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:20:12] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:20:12] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:20:12] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:20:12] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:20:12] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:20:12] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:20:12] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:20:12] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:20:12] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:20:12] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:20:12] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:20:12] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:20:12] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:20:12] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:20:12] [ERROR] cache_get_value_name_int: field 'tem' not found
+[02/18/24 00:20:12] [ERROR] cache_get_value_name_int: field 'unt' not found
+[02/18/24 00:20:22] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/18/24 00:20:22] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/18/24 00:20:22] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/18/24 00:20:22] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/18/24 00:20:22] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/18/24 00:20:22] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/18/24 00:20:22] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/18/24 00:20:22] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/18/24 00:20:22] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/18/24 00:20:22] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/18/24 00:20:22] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/18/24 00:22:47] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:22:47] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:22:47] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:22:47] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:22:47] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:22:47] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:22:47] [ERROR] error #1064 while executing query "UPDATE `players` SET PosX = '1773.742065', PosY = '-1896.009521', PosZ = '13.572551', PosA = '2.002911', Health = '100.000000', Armour = '0.000000', TanSo = '0', Cash = '1000', AdminLevel = '0', Interior = '0', VW = '0', Phone = '0', DanhBa = '0', Dice = '0', CanXang = '0', DayThung = '0',": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[02/18/24 00:23:12] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/18/24 00:23:12] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/18/24 00:23:12] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/18/24 00:23:12] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/18/24 00:23:12] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/18/24 00:23:12] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/18/24 00:23:12] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/18/24 00:23:12] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/18/24 00:23:12] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/18/24 00:23:12] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/18/24 00:23:12] [ERROR] cache_get_value_name_int: field 'MatNa' not found

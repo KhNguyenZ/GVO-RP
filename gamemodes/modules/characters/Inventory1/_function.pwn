@@ -43,17 +43,22 @@ stock GetPlayerItem(playerid, page = 0)
 		PlayerTextDrawShow(playerid, TradeItem[playerid][i]);
 		PlayerTextDrawShow(playerid, TradeName[playerid][i]);
 	}
-	for(new i = 0; i < 20; i++)
-	{
-		if(PlayerInvItem[playerid][page][pInvItemID][i] != 0 && PlayerInvItem[playerid][page][pInvAmount][i] > 0)
-		{
-			CreateInvItem(playerid, PlayerInvItem[playerid][page][pInvItemID][i], page, PlayerInvItem[playerid][page][pInvAmount][i]);
-		}
-	}
+
 }
 stock GetPlayerPage(playerid)
 {
-	return floatround(CountAllItem[playerid]/MAX_INV_ITEM, floatround_ceil);
+	new page;
+	if(CountAllItem[playerid] > MAX_ALL_INV_ITEM) return -1;
+	switch(CountAllItem[playerid])
+	{
+		case 0..18:  page = 1;
+		case 19..37: page = 2;
+		case 38..57: page = 3;
+		case 58..76: page = 4;
+		case 77..95: page = 5;
+		default: page = -1;
+	}
+	return page;
 }
 
 
@@ -77,91 +82,70 @@ stock CreateInvItem(playerid, itemid, page, amountz)
 {
 	new Float:InvX, Float:InvY, Float:NameX, Float:NameY;
 
-	new result_inv_slot = -1,result_inv_page = -1, has_item;
-	for(new i ; i < GetPlayerPage(playerid); i++)
+	new InvIndex = PlayerInvInfo[playerid][page][pCountItem];
+	if(PlayerInvInfo[playerid][page][pCountItem] >= 19) 
 	{
-		if(result_inv_page != -1 && result_inv_slot != -1) break;
-
-		for(new j; j < 20; j++)
-		{
-			if(InventoryInfo[playerid][i][invSlot][j] == itemInfo[itemid][item_id]) {
-				result_inv_page = i;
-				result_inv_slot = j;
-				has_item = 1;
-				break;
-			}
-		}
+		page +=1;
+		printf("page -- : %d", page);
+		PlayerInvInfo[playerid][page][pCountItem] = 0;
+		InvIndex = 0;
 	}
 
-	if(has_item){
-		print("Has item");
-		InvAmount[playerid][result_inv_page][result_inv_slot] += amountz;
+	printf("Page: %d | Count Item: %d | Item Id: %d | Count: %d", page,PlayerInvInfo[playerid][page][pCountItem], itemInfo[itemid][item_id], amountz);
+	InvAmount[playerid][PlayerPage[playerid]][InvIndex] = amountz;
+
+	if(InvIndex < 5){
+		InvX = 96+(34*InvIndex);
+		InvY = 120.000;
+
+		NameX = 113.5+(34*InvIndex);
+		NameY = 158.000;
 	}
-	else {
-		print("Hasnt item");
-		new InvIndex = PlayerInvInfo[playerid][page][pCountItem];
-		if(PlayerInvInfo[playerid][page][pCountItem] >= 19) 
-		{
-			page +=1;
-			PlayerInvInfo[playerid][page][pCountItem] = 0;
-			InvIndex = 0;
-		}
-		InvAmount[playerid][PlayerPage[playerid]][InvIndex] = amountz;
+	else if(InvIndex < 10){
+		InvX = 96+(34*(InvIndex-5));
+		InvY = 163.000;
 
-		if(InvIndex < 5){
-			InvX = 96+(34*InvIndex);
-			InvY = 120.000;
-
-			NameX = 113.5+(34*InvIndex);
-			NameY = 158.000;
-		}
-		else if(InvIndex < 10){
-			InvX = 96+(34*(InvIndex-5));
-			InvY = 163.000;
-
-			NameX = 113.5+(34*(InvIndex-5));
-			NameY = 200.000;
-		}
-		else if(InvIndex < 15){
-			InvX = 96+(34*(InvIndex-10));
-			InvY = 206.000;
-
-			NameX = 113.5+(34*(InvIndex-10));
-			NameY = 245.000;
-		}
-		else if(InvIndex < 21) {
-			InvX = 96+(34*(InvIndex-15));
-			InvY = 249.000;
-
-			NameX = 113.5+(34*(InvIndex-15));
-			NameY = 289.000;
-		}
-		ItemInv[playerid][page][InvIndex] = CreatePlayerTextDraw(playerid, InvX, InvY, itemInfo[itemid][item_txd]);
-		PlayerTextDrawTextSize(playerid, ItemInv[playerid][page][InvIndex], 33.000, 42.000);
-		PlayerTextDrawAlignment(playerid, ItemInv[playerid][page][InvIndex], 1);
-		PlayerTextDrawColor(playerid, ItemInv[playerid][page][InvIndex], -1);
-		PlayerTextDrawSetShadow(playerid, ItemInv[playerid][page][InvIndex], 0);
-		PlayerTextDrawSetOutline(playerid, ItemInv[playerid][page][InvIndex], 0);
-		PlayerTextDrawBackgroundColor(playerid, ItemInv[playerid][page][InvIndex], 255);
-		PlayerTextDrawFont(playerid, ItemInv[playerid][page][InvIndex], 4);
-		PlayerTextDrawSetProportional(playerid, ItemInv[playerid][page][InvIndex], 1);
-
-		ItemName[playerid][page][InvIndex] = CreatePlayerTextDraw(playerid, NameX, NameY, itemInfo[itemid][item_name]);
-		PlayerTextDrawLetterSize(playerid, ItemName[playerid][page][InvIndex], 0.129, 0.599);
-		PlayerTextDrawTextSize(playerid, ItemName[playerid][page][InvIndex], 4.000, 30.000);
-		PlayerTextDrawAlignment(playerid, ItemName[playerid][page][InvIndex], 2);
-		PlayerTextDrawColor(playerid, ItemName[playerid][page][InvIndex], -1);
-		PlayerTextDrawSetShadow(playerid, ItemName[playerid][page][InvIndex], 1);
-		PlayerTextDrawSetOutline(playerid, ItemName[playerid][page][InvIndex], 0);
-		PlayerTextDrawBackgroundColor(playerid, ItemName[playerid][page][InvIndex], 150);
-		PlayerTextDrawFont(playerid, ItemName[playerid][page][InvIndex], 1);
-		PlayerTextDrawSetProportional(playerid, ItemName[playerid][page][InvIndex], 1);
-
-		InventoryInfo[playerid][page][invSlot][InvIndex+1] = itemInfo[itemid][item_id];
-		PlayerInvInfo[playerid][page][pCountItem]++;
-		CountAllItem[playerid] ++;
+		NameX = 113.5+(34*(InvIndex-5));
+		NameY = 200.000;
 	}
+	else if(InvIndex < 15){
+		InvX = 96+(34*(InvIndex-10));
+		InvY = 206.000;
 
+		NameX = 113.5+(34*(InvIndex-10));
+		NameY = 245.000;
+	}
+	else if(InvIndex < 21) {
+		InvX = 96+(34*(InvIndex-15));
+		InvY = 249.000;
+
+		NameX = 113.5+(34*(InvIndex-15));
+		NameY = 289.000;
+	}
+	ItemInv[playerid][page][InvIndex] = CreatePlayerTextDraw(playerid, InvX, InvY, itemInfo[itemid][item_txd]);
+	PlayerTextDrawTextSize(playerid, ItemInv[playerid][page][InvIndex], 33.000, 42.000);
+	PlayerTextDrawAlignment(playerid, ItemInv[playerid][page][InvIndex], 1);
+	PlayerTextDrawColor(playerid, ItemInv[playerid][page][InvIndex], -1);
+	PlayerTextDrawSetShadow(playerid, ItemInv[playerid][page][InvIndex], 0);
+	PlayerTextDrawSetOutline(playerid, ItemInv[playerid][page][InvIndex], 0);
+	PlayerTextDrawBackgroundColor(playerid, ItemInv[playerid][page][InvIndex], 255);
+	PlayerTextDrawFont(playerid, ItemInv[playerid][page][InvIndex], 4);
+	PlayerTextDrawSetProportional(playerid, ItemInv[playerid][page][InvIndex], 1);
+
+	ItemName[playerid][page][InvIndex] = CreatePlayerTextDraw(playerid, NameX, NameY, itemInfo[itemid][item_name]);
+	PlayerTextDrawLetterSize(playerid, ItemName[playerid][page][InvIndex], 0.129, 0.599);
+	PlayerTextDrawTextSize(playerid, ItemName[playerid][page][InvIndex], 4.000, 30.000);
+	PlayerTextDrawAlignment(playerid, ItemName[playerid][page][InvIndex], 2);
+	PlayerTextDrawColor(playerid, ItemName[playerid][page][InvIndex], -1);
+	PlayerTextDrawSetShadow(playerid, ItemName[playerid][page][InvIndex], 1);
+	PlayerTextDrawSetOutline(playerid, ItemName[playerid][page][InvIndex], 0);
+	PlayerTextDrawBackgroundColor(playerid, ItemName[playerid][page][InvIndex], 150);
+	PlayerTextDrawFont(playerid, ItemName[playerid][page][InvIndex], 1);
+	PlayerTextDrawSetProportional(playerid, ItemName[playerid][page][InvIndex], 1);
+
+	InventoryInfo[playerid][page][invSlot][InvIndex+1] = itemInfo[itemid][item_id];
+	PlayerInvInfo[playerid][page][pCountItem]++;
+	CountAllItem[playerid] ++;
 	return 1;
 }
 

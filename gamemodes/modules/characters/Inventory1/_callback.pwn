@@ -136,8 +136,8 @@ public OnLoadDropInv(playerid)
 	{
 		
 		cache_get_value_name_int(i, "id", DropItemInfo[i][d_id]);
-		cache_get_value_name_int(i, "tem", DropItemInfo[i][d_itemid]);
-		cache_get_value_name_int(i, "unt", DropItemInfo[i][d_amount]);
+		cache_get_value_name_int(i, "item", DropItemInfo[i][d_itemid]);
+		cache_get_value_name_int(i, "amount", DropItemInfo[i][d_amount]);
 		cache_get_value_name_int(i, "uid", DropItemInfo[i][d_uid]);
 		
 		cache_get_value_name_float(i, "posx", DropItemInfo[i][d_pos][0]);

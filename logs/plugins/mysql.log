@@ -4861,3 +4861,191 @@
 [02/18/24 00:23:12] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
 [02/18/24 00:23:12] [ERROR] cache_get_value_name_int: field 'Radio' not found
 [02/18/24 00:23:12] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/18/24 00:27:18] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:27:18] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:27:18] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:27:18] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:27:18] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:27:18] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 00:27:18] [ERROR] error #1064 while executing query "UPDATE `players` SET PosX = '1763.295898', PosY = '-1894.648804', PosZ = '13.587960', PosA = '265.388916', Health = '100.000000', Armour = '0.000000', TanSo = '0', Cash = '1000', AdminLevel = '0', Interior = '0', VW = '0', Phone = '0', DanhBa = '0', Dice = '0', CanXang = '0', DayThung = '0',": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[02/18/24 20:39:33] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/18/24 20:39:33] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/18/24 20:39:33] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/18/24 20:39:33] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/18/24 20:39:33] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/18/24 20:39:33] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/18/24 20:39:33] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/18/24 20:39:33] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/18/24 20:39:33] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/18/24 20:39:33] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/18/24 20:39:33] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/18/24 20:49:38] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/18/24 20:49:38] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/18/24 20:49:38] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/18/24 20:49:38] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/18/24 20:49:38] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/18/24 20:49:38] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/18/24 20:49:38] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/18/24 20:49:38] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/18/24 20:49:38] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/18/24 20:49:38] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/18/24 20:49:38] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/18/24 20:50:10] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 20:50:10] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 20:50:10] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 20:50:10] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 20:50:10] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 20:50:10] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 20:50:10] [ERROR] error #1064 while executing query "UPDATE `players` SET PosX = '1767.626953', PosY = '-1896.570679', PosZ = '13.585138', PosA = '324.679047', Health = '100.000000', Armour = '0.000000', TanSo = '0', Cash = '1000', AdminLevel = '0', Interior = '0', VW = '0', Phone = '0', DanhBa = '0', Dice = '0', CanXang = '0', DayThung = '0',": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[02/18/24 20:51:23] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/18/24 20:51:23] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/18/24 20:51:23] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/18/24 20:51:23] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/18/24 20:51:23] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/18/24 20:51:23] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/18/24 20:51:23] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/18/24 20:51:23] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/18/24 20:51:23] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/18/24 20:51:23] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/18/24 20:51:23] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/18/24 20:52:54] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 20:52:54] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 20:52:54] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 20:52:54] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 20:52:54] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 20:52:54] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 20:52:54] [ERROR] error #1064 while executing query "UPDATE `players` SET PosX = '1800.691895', PosY = '-1900.420654', PosZ = '13.415225', PosA = '109.374901', Health = '100.000000', Armour = '0.000000', TanSo = '0', Cash = '1000', AdminLevel = '0', Interior = '0', VW = '0', Phone = '0', DanhBa = '0', Dice = '0', CanXang = '0', DayThung = '0',": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[02/18/24 21:33:45] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/18/24 21:33:45] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/18/24 21:33:45] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/18/24 21:33:45] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/18/24 21:33:45] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/18/24 21:33:45] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/18/24 21:33:45] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/18/24 21:33:45] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/18/24 21:33:45] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/18/24 21:33:45] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/18/24 21:33:45] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/18/24 21:34:12] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 21:34:12] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 21:34:12] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 21:34:12] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 21:34:12] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 21:34:12] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 21:34:12] [ERROR] error #1064 while executing query "UPDATE `players` SET PosX = '1786.340698', PosY = '-1898.501099', PosZ = '13.558010', PosA = '153.263199', Health = '100.000000', Armour = '0.000000', TanSo = '0', Cash = '1000', AdminLevel = '0', Interior = '0', VW = '0', Phone = '0', DanhBa = '0', Dice = '0', CanXang = '0', DayThung = '0',": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[02/18/24 21:35:51] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/18/24 21:35:51] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/18/24 21:35:51] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/18/24 21:35:51] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/18/24 21:35:51] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/18/24 21:35:51] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/18/24 21:35:51] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/18/24 21:35:51] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/18/24 21:35:51] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/18/24 21:35:51] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/18/24 21:35:51] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/18/24 21:36:41] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 21:36:41] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 21:36:41] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 21:36:41] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 21:36:41] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 21:36:41] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 21:36:41] [ERROR] error #1064 while executing query "UPDATE `players` SET PosX = '1792.178833', PosY = '-1889.229370', PosZ = '13.416802', PosA = '322.086395', Health = '100.000000', Armour = '0.000000', TanSo = '0', Cash = '1000', AdminLevel = '0', Interior = '0', VW = '0', Phone = '0', DanhBa = '0', Dice = '0', CanXang = '0', DayThung = '0',": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[02/18/24 21:37:43] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/18/24 21:37:43] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/18/24 21:37:43] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/18/24 21:37:43] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/18/24 21:37:43] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/18/24 21:37:43] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/18/24 21:37:43] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/18/24 21:37:43] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/18/24 21:37:43] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/18/24 21:37:43] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/18/24 21:37:43] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/18/24 21:41:13] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 21:41:13] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 21:41:13] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 21:41:13] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 21:41:13] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 21:41:13] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 21:41:13] [ERROR] error #1064 while executing query "UPDATE `players` SET PosX = '1767.026123', PosY = '-1895.402588', PosZ = '13.584868', PosA = '181.074844', Health = '100.000000', Armour = '0.000000', TanSo = '0', Cash = '1000', AdminLevel = '0', Interior = '0', VW = '0', Phone = '0', DanhBa = '0', Dice = '0', CanXang = '0', DayThung = '0',": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[02/18/24 21:46:03] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/18/24 21:46:03] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/18/24 21:46:03] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/18/24 21:46:03] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/18/24 21:46:03] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/18/24 21:46:03] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/18/24 21:46:03] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/18/24 21:46:03] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/18/24 21:46:03] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/18/24 21:46:03] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/18/24 21:46:03] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/18/24 21:49:09] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/18/24 21:49:09] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/18/24 21:49:09] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/18/24 21:49:09] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/18/24 21:49:09] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/18/24 21:49:09] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/18/24 21:49:09] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/18/24 21:49:09] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/18/24 21:49:09] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/18/24 21:49:09] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/18/24 21:49:09] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/18/24 21:53:26] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/18/24 21:53:26] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/18/24 21:53:26] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/18/24 21:53:26] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/18/24 21:53:26] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/18/24 21:53:26] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/18/24 21:53:26] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/18/24 21:53:26] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/18/24 21:53:26] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/18/24 21:53:26] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/18/24 21:53:26] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/18/24 21:56:41] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 21:56:41] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 21:56:41] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 21:56:41] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 21:56:41] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 21:56:41] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 21:56:41] [ERROR] error #1064 while executing query "UPDATE `players` SET PosX = '1800.411621', PosY = '-1899.537598', PosZ = '13.415020', PosA = '90.598343', Health = '100.000000', Armour = '0.000000', TanSo = '0', Cash = '1000', AdminLevel = '0', Interior = '0', VW = '0', Phone = '0', DanhBa = '0', Dice = '0', CanXang = '0', DayThung = '0',": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[02/18/24 21:57:14] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/18/24 21:57:14] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/18/24 21:57:14] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/18/24 21:57:14] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/18/24 21:57:14] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/18/24 21:57:14] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/18/24 21:57:14] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/18/24 21:57:14] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/18/24 21:57:14] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/18/24 21:57:14] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/18/24 21:57:14] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/18/24 22:01:14] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/18/24 22:01:14] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/18/24 22:01:14] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/18/24 22:01:14] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/18/24 22:01:14] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/18/24 22:01:14] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/18/24 22:01:14] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/18/24 22:01:14] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/18/24 22:01:14] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/18/24 22:01:14] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/18/24 22:01:14] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/18/24 22:09:20] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/18/24 22:09:20] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/18/24 22:09:20] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/18/24 22:09:20] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/18/24 22:09:20] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/18/24 22:09:20] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/18/24 22:09:20] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/18/24 22:09:20] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/18/24 22:09:20] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/18/24 22:09:20] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/18/24 22:09:20] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/18/24 22:10:47] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 22:10:47] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 22:10:47] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 22:10:47] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 22:10:47] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 22:10:47] [ERROR] mysql_format: destination size '300' is too small
+[02/18/24 22:10:47] [ERROR] error #1064 while executing query "UPDATE `players` SET PosX = '1811.473022', PosY = '-1892.507568', PosZ = '13.422953', PosA = '348.855103', Health = '100.000000', Armour = '0.000000', TanSo = '0', Cash = '1000', AdminLevel = '0', Interior = '0', VW = '0', Phone = '0', DanhBa = '0', Dice = '0', CanXang = '0', DayThung = '0',": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1

@@ -7,7 +7,13 @@ hook OnPlayerConnect(playerid)
 	mysql_tquery(Handle(), "SELECT * FROM `inventory_drop`", "OnLoadDropInv", "");
 	return 1;
 }
-
+hook OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
+{
+	if(newkeys == KEY_CTRL_BACK)
+	{
+		PickDropBox(playerid);
+	}
+}
 InvClick(playerid, PlayerText:playertextid)
 {
 	for(new i = 0; i < 21; i++)
@@ -127,7 +133,11 @@ public OnLoadPlayerInventory(playerid)
 		}
 	}
 }
-
+forward OnPlayerAddItem(playerid);
+public OnPlayerAddItem(playerid)
+{
+	ReLoadPlayerInventory(playerid);
+}
 
 forward OnLoadDropInv(playerid);
 public OnLoadDropInv(playerid)
@@ -146,4 +156,52 @@ public OnLoadDropInv(playerid)
 
 		CreateDropObject(DropItemInfo[i][d_id], DropItemInfo[i][d_itemid],DropItemInfo[i][d_amount],DropItemInfo[i][d_pos][0],DropItemInfo[i][d_pos][1],DropItemInfo[i][d_pos][2]);
 	}
+}
+
+
+forward OnPlayerPickDropBox(playerid);
+public OnPlayerPickDropBox(playerid)
+{
+	new PickDropBox_msg[1280];
+	new dropid = GetPVarInt(playerid, #DropBoxID);
+	new 
+		itemid = DropItemInfo[dropid][d_itemid],
+		amount = DropItemInfo[dropid][d_amount],
+		sqlid  = DropItemInfo[dropid][d_id]; 
+	if(GetPVarInt(playerid, #PickingTime) > 0)
+	{
+		if(PickingDropBox[playerid] == 0) return KillTimer(PickTimer[playerid]);
+
+		ApplyAnimation(playerid, "BOMBER", "BOM_Plant", 4.0, 0, 0, 0, 0, 0, 1);
+
+		format(PickDropBox_msg, sizeof(PickDropBox_msg), "~y~Thoi gian nhat con ~g~%d~y~ giay nua !",GetPVarInt(playerid, #PickingTime));
+		HienTextdraw(playerid, PickDropBox_msg, 800);
+
+		SetPVarInt(playerid, #PickingTime, GetPVarInt(playerid, #PickingTime)-1);
+
+
+		PickTimer[playerid] = SetTimerEx("OnPlayerPickDropBox", 1000, 0, "iii", playerid,  itemid, amount);
+	}
+	else {
+
+		printf("----- Item: %d | Amount: %d | SQLID: %d | ID: %d",itemid, amount,sqlid,dropid);
+
+		AddPlayerItem(playerid, itemid, amount);
+		format(PickDropBox_msg, sizeof(PickDropBox_msg), "Ban da nhan duoc vat pham %s , so luong la %d", itemInfo[itemid][item_name], amount);
+		SendClientMessage(playerid, -1, PickDropBox_msg);
+		HienTextdraw(playerid, PickDropBox_msg, 5000);
+		PickingDropBox[playerid] = 0;
+		DeletePVar(playerid, #PickingTime);
+
+		new drop_query[1280];
+		format(drop_query, sizeof(drop_query), "DELETE FROM `inventory_drop` WHERE `id` = '%d'",DropItemInfo[dropid][d_id]);
+		printf("%s", drop_query);
+		mysql_tquery(Handle(), drop_query, "OnDeleteDropItem", "");
+
+		DestroyObject(DropItemInfo[dropid][d_object]);
+		DestroyDynamic3DTextLabel(DropItemInfo[dropid][d_label]);
+
+		KillTimer(PickTimer[playerid]);
+	}
+	return 1;
 }

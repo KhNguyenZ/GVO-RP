@@ -1,11 +1,11 @@
-stock LoadPlayerInventory(playerid)
+func:LoadPlayerInventory(playerid)
 {
 	new invQuery[1280];
 	format(invQuery, sizeof(invQuery), "SELECT * FROM `inventory` WHERE `uid` = '%d'", Character[playerid][char_player_id]);
 	mysql_tquery(Handle(), invQuery, "OnLoadPlayerInventory", "i", playerid);
 	return 1;
 }
-stock ReLoadPlayerInventory(playerid)
+func:ReLoadPlayerInventory(playerid)
 {
 	for(new i = 0; i < MAX_INV_PAGES; i++)
 	{
@@ -20,8 +20,7 @@ stock ReLoadPlayerInventory(playerid)
 	mysql_tquery(Handle(), invQuery, "OnLoadPlayerInventory", "i", playerid);
 	return 1;
 }
-
-stock GetPlayerItem(playerid, page = 0)
+func:GetPlayerItem(playerid, page = 0)
 {
 	for(new i = 0; i < PlayerInvInfo[playerid][PlayerPage[playerid]][pCountItem]+1; i++)
 	{
@@ -43,9 +42,8 @@ stock GetPlayerItem(playerid, page = 0)
 		PlayerTextDrawShow(playerid, TradeItem[playerid][i]);
 		PlayerTextDrawShow(playerid, TradeName[playerid][i]);
 	}
-
 }
-stock GetPlayerPage(playerid)
+func:GetPlayerPage(playerid)
 {
 	new page;
 	if(CountAllItem[playerid] > MAX_ALL_INV_ITEM) return -1;
@@ -60,11 +58,7 @@ stock GetPlayerPage(playerid)
 	}
 	return page;
 }
-
-
-
-
-stock PlayerSelectItem(playerid, color_item)
+func:PlayerSelectItem(playerid, color_item)
 {
 	switch(color_item){
 		case 0:{
@@ -78,7 +72,7 @@ stock PlayerSelectItem(playerid, color_item)
 	}
 }
 
-stock CreateInvItem(playerid, itemid, page, amountz)
+func:CreateInvItem(playerid, itemid, page, amountz)
 {
 	new Float:InvX, Float:InvY, Float:NameX, Float:NameY;
 
@@ -86,12 +80,9 @@ stock CreateInvItem(playerid, itemid, page, amountz)
 	if(PlayerInvInfo[playerid][page][pCountItem] >= 19) 
 	{
 		page +=1;
-		printf("page -- : %d", page);
 		PlayerInvInfo[playerid][page][pCountItem] = 0;
 		InvIndex = 0;
 	}
-
-	printf("Page: %d | Count Item: %d | Item Id: %d | Count: %d", page,PlayerInvInfo[playerid][page][pCountItem], itemInfo[itemid][item_id], amountz);
 	InvAmount[playerid][PlayerPage[playerid]][InvIndex] = amountz;
 
 	if(InvIndex < 5){
@@ -149,7 +140,7 @@ stock CreateInvItem(playerid, itemid, page, amountz)
 	return 1;
 }
 
-stock CreateInvTrade(playerid, itemid, amountz)
+func:CreateInvTrade(playerid, itemid, amountz)
 {
 	new Float:InvX, Float:InvY, Float:NameX, Float:NameY;
 	
@@ -211,14 +202,22 @@ stock CreateInvTrade(playerid, itemid, amountz)
 	InvTradeInfo[playerid][trade_id] = itemid;
 	return 1;
 }
+func:AddPlayerItem(playerid, itemid, amount)
+{
+	new invQuery[1280];
+	format(invQuery, sizeof(invQuery), "INSERT INTO `inventory` SET `uid` = '%d' , `item` = '%d' , `amount` = '%d'", Character[playerid][char_player_id], itemid, amount);
+	printf("%s", invQuery);
+	mysql_tquery(Handle(), invQuery, "OnPlayerAddItem", "i", playerid);
+	return 1;
+}
 
-stock GetPlayerItemID(page, slot)
+func:GetPlayerItemID(page, slot)
 {
 	// new slotitem;
 	if(page == 1) return slot;
 	else return (20*page)-(slot)-1;
 }
-stock GetDropIDFree()
+func:GetDropIDFree()
 {
 	new dropid;
 	for(new i = 0; i < MAX_OBJECT_DROP_ITEM; i++)
@@ -231,7 +230,7 @@ stock GetDropIDFree()
 	}
 	return dropid;
 }
-stock GetIndexInv(playerid, gitemid, gamount)
+func:GetIndexInv(playerid, gitemid, gamount)
 {
 	new freeindex;
 	for(new i = 0; i < MAX_INV_ITEM; i++)
@@ -247,7 +246,7 @@ stock GetIndexInv(playerid, gitemid, gamount)
 	}
 	return freeindex;
 }
-stock GetFreeIndexInv(playerid)
+func:GetFreeIndexInv(playerid)
 {
 	new freeindex;
 	for(new j = 0; j < MAX_INV_PAGES; j++)
@@ -268,7 +267,7 @@ stock GetFreeIndexInv(playerid)
 	}
 	return freeindex;
 }
-stock DestroyInvItem(playerid, page, index)
+func:DestroyInvItem(playerid, page, index)
 {
 	PlayerTextDrawDestroy(playerid, ItemInv[playerid][page][index+1]);
 	PlayerTextDrawDestroy(playerid, ItemName[playerid][page][index+1]);
@@ -288,15 +287,38 @@ stock DestroyInvItem(playerid, page, index)
 	// printf("Item: %d | Amount: %d ", dropitemid[playerid],dropitemamount[playerid]);
 	return 1;
 }
-stock CreateDropObject(objid, objitemid,objamount, Float:DropObjX, Float:DropObjY, Float:DropObjZ)
+func:PickDropBox(playerid)
+{
+	new dropboxid;
+	for(new i ; i < MAX_DROP_ITEMS; i++)
+	{
+		if(IsPlayerInRangeOfPoint(playerid, 1.0, DropItemInfo[i][d_pos][0],DropItemInfo[i][d_pos][1],DropItemInfo[i][d_pos][2]))
+		{
+			dropboxid = i;
+			break;
+		}
+	}
+	if(dropboxid > 0)
+	{
+		SetPVarInt(playerid, #PickingTime, 10);
+		PickingDropBox[playerid] = 1;
+		printf("Item: %d | Amount: %d | SQLID: %d | ID: %d",DropItemInfo[dropboxid][d_itemid], DropItemInfo[dropboxid][d_amount],DropItemInfo[dropboxid][d_id],dropboxid);
+		SetPVarInt(playerid, #DropBoxID, dropboxid);
+		PickTimer[playerid] = SetTimerEx("OnPlayerPickDropBox", 1000, 0, "i", playerid);
+	}
+	else return 0;
+	return 1;
+}
+
+func:CreateDropObject(objid, objitemid,objamount, Float:DropObjX, Float:DropObjY, Float:DropObjZ)
 {
 	new szDrop[1280];
-	format(szDrop, sizeof(szDrop), "{53f55b}%s (Amount: %d) {ffffff}\nSu dung {53f55b}H{ffffff}", itemInfo[objitemid][item_name], objamount);
+	format(szDrop, sizeof(szDrop), "{53f55b}#%d \n%s (Amount: %d) {ffffff}\nSu dung {53f55b}H{ffffff} de nhat",objid, itemInfo[objitemid][item_name], objamount);
 	DropItemInfo[objid][d_object] = CreateObject(2969, DropObjX, DropObjY, DropObjZ-1, 0.0, 0.0, 0.0,  100);
 	DropItemInfo[objid][d_label] = CreateDynamic3DTextLabel(szDrop, -1, DropObjX, DropObjY, DropObjZ-1, 100);
 	return 1;
 }
-stock DropItem(playerid, dropitem_id, dropamount)
+func:DropItem(playerid, dropitem_id, dropamount)
 {
 	new Float:DropObject[4], DropIDz, szDropQuery[1280];
 
@@ -337,13 +359,20 @@ CMD:additem(playerid, params[])
 	new playeridadd, item, amount;
 
 	if(sscanf(params, "iii",playeridadd, item, amount)) return SendClientMessage(playerid, -1, "SU DUNG: /additem [playerid] [item] [amount]");
-	CreateInvItem(playeridadd, item, GetPlayerPage(playerid),amount);
+	/*CreateInvItem(playeridadd, item, GetPlayerPage(playerid),amount);
 
 	new additemIndex = GetFreeIndexInv(playerid);
 	PlayerInvItem[playerid][PlayerPage[playerid]][pInvItemID][additemIndex] = item;
 	PlayerInvItem[playerid][PlayerPage[playerid]][pInvAmount][additemIndex] = amount;
 	HidePlayerIndexInv(playerid);
-	ReloadInv(playeridadd);
+	ReloadInv(playeridadd);*/
+
+	if(AddPlayerItem(playerid, item, amount)){
+		new message[128];
+		format(message, sizeof(message), "Them thanh cong vat pham %s cho nguoi choi %s", itemInfo[item][item_name], player_get_name(playeridadd));
+		SendClientMessage(playerid, -1, message);
+	} else return 0;
+
 	return 1;
 }
 CMD:addtrade(playerid, params[])
@@ -357,7 +386,7 @@ CMD:addtrade(playerid, params[])
 	return 1;
 }
 
-stock InvMess(playerid, case_action, item)
+func:InvMess(playerid, case_action, item)
 {
 	new szInvMess[1280];
 	switch(case_action)
@@ -373,7 +402,7 @@ stock InvMess(playerid, case_action, item)
 	return 1;
 }
 
-stock UseItem(playerid, itemid)
+func:UseItem(playerid, itemid)
 {
 	switch(itemid)
 	{

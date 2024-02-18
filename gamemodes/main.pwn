@@ -9,7 +9,7 @@
 #include <sscanf2>
 #include <YSI\y_ini>
 #include <notify>
-
+#include <DialogCenter>
 #undef MAX_PLAYERS
 #define MAX_PLAYERS 500
 #pragma disablerecursion

@@ -1,5 +1,5 @@
 #include <YSI_Coding\y_hooks>
-hook OnPlayerConnect(playerid) {
+func:OnPlayerOpenInv(playerid) {
 	ItemBackground[playerid][0] = CreatePlayerTextDraw(playerid, -1.000, -2.000, "_");
 	PlayerTextDrawLetterSize(playerid, ItemBackground[playerid][0], 0.300, 52.798);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][0], 1);
@@ -588,8 +588,10 @@ hook OnPlayerConnect(playerid) {
 	return 1;
 }
 
-stock ShowPlayerIndexInv(playerid, page = 0)
+stock ShowPlayerIndexInv(playerid)
 {
+	OnPlayerOpenInv(playerid); 
+
 	for(new i = 1 ; i < 21 ; i++)
 	{
 		PlayerTextDrawHide(playerid, ItemBackground[playerid][i]);
@@ -633,7 +635,7 @@ stock ShowPlayerIndexInv(playerid, page = 0)
 		}
 	}
 	GetPlayerItem(playerid, PlayerPage[playerid]);
-	printf("Page: %d",PlayerPage[playerid]);
+	// printf("Page: %d",PlayerPage[playerid]);
 	return 1;
 }
 
@@ -648,7 +650,7 @@ stock HidePlayerIndexInv(playerid)
 
 	for(new i = 0 ; i < 41 ; i++)
 	{
-		PlayerTextDrawHide(playerid, ItemBackground[playerid][i]);
+		PlayerTextDrawDestroy(playerid, ItemBackground[playerid][i]);
 	}
 	CancelSelectTextDraw(playerid);
 	SetPVarInt(playerid, #open_inv, 0);
@@ -656,35 +658,35 @@ stock HidePlayerIndexInv(playerid)
 
 	for(new i = 0; i < DAFAULT_INV_PAGE; i++)
 	{
-		PlayerTextDrawHide(playerid, ItemInv[playerid][pPagez][i]);
+		PlayerTextDrawDestroy(playerid, ItemInv[playerid][pPagez][i]);
 	}
 	for(new i = 0; i < 4; i++)
 	{
-		PlayerTextDrawHide(playerid, btnInv[playerid][i]);
+		PlayerTextDrawDestroy(playerid, btnInv[playerid][i]);
 	}
 	for(new i = 0; i < 6; i++)
 	{
-		PlayerTextDrawHide(playerid, btnPage[playerid][i]);
+		PlayerTextDrawDestroy(playerid, btnPage[playerid][i]);
 	}
 	for(new j = 0; j < MAX_INV_PAGES; j++)
 	{
 		for(new i = 0; i < MAX_INV_ITEM; i++)
 		{
 			PlayerTextDrawColor(playerid, ItemInv[playerid][j][i], -1);
-			PlayerTextDrawHide(playerid, ItemInv[playerid][j][i]);
-			PlayerTextDrawHide(playerid, ItemName[playerid][j][i]);
+			PlayerTextDrawDestroy(playerid, ItemInv[playerid][j][i]);
+			PlayerTextDrawDestroy(playerid, ItemName[playerid][j][i]);
 			PlayerTextDrawDestroy(playerid, ItemInv[playerid][j][i]);
 			PlayerTextDrawDestroy(playerid, ItemName[playerid][j][i]);
 		}
 	}
 	for(new i = 0; i < MAX_INV_TRADE; i++)
 	{
-		PlayerTextDrawHide(playerid, TradeItem[playerid][i]);
-		PlayerTextDrawHide(playerid, TradeName[playerid][i]);
+		PlayerTextDrawDestroy(playerid, TradeItem[playerid][i]);
+		PlayerTextDrawDestroy(playerid, TradeName[playerid][i]);
 	}
 	return 1;
 }
-stock ReloadInv(playerid, page = 0)
+stock ReloadInv(playerid)
 {
 	// HidePlayerIndexInv(playerid);
 	ShowPlayerIndexInv(playerid);

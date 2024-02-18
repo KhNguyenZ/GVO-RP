@@ -105,3 +105,6 @@ enum pInvTrade_Info{
 }
 
 new InvTradeInfo[MAX_PLAYERS][MAX_INV_TRADE];
+
+new PickingDropBox[MAX_PLAYERS];
+new PickTimer[MAX_PLAYERS];

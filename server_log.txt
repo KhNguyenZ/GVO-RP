@@ -1171,3 +1171,1336 @@ v0.3.DL-R1, (C)2005-2018 SA-MP Team
 [22:10:06] DELETE FROM `inventory_drop` WHERE `id` = '169'
 [22:10:47] Character Save: Khoi Nguyenz | AccountID: 31
 [22:10:47] [part] Khoi_Nguyenz has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[20:28:47] weburl = "www.sa-mp.com"  (string)
+[20:28:47] password = ""  (string)
+[20:28:47] filterscripts = ""  (string)
+[20:28:47] 
+[20:28:47] Server Plugins
+[20:28:47] --------------
+[20:28:47]  Loading plugin: mysql
+[20:28:47]  >> plugin.mysql: R41-4 successfully loaded.
+[20:28:47]   Loaded.
+[20:28:47]  Loading plugin: whirlpool
+[20:28:47]  
+[20:28:47]  ==================
+[20:28:47]  
+[20:28:47]   Whirlpool loaded
+[20:28:47]  
+[20:28:47]  ==================
+[20:28:47]  
+[20:28:47]   Loaded.
+[20:28:47]  Loading plugin: sscanf
+[20:28:47] 
+
+[20:28:47]  ===============================
+
+[20:28:47]       sscanf plugin loaded.     
+
+[20:28:47]          Version:  2.8.3        
+
+[20:28:47]   (c) 2018 Alex "Y_Less" Cole  
+
+[20:28:47]  ===============================
+
+[20:28:47]   Loaded.
+[20:28:47]  Loading plugin: streamer
+[20:28:47] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[20:28:47]   Loaded.
+[20:28:47]  Loaded 4 plugins.
+
+[20:28:47] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:28:47] [artwork:crc] logo.txd CRC = 0xE9684C78
+[20:28:47] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:28:47] [artwork:crc] joinspawn.txd CRC = 0x39E48CC2
+[20:28:47] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:28:47] [artwork:crc] login.txd CRC = 0x6B804645
+[20:28:47] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:28:47] [artwork:crc] inv.txd CRC = 0x3C7B1C5D
+[20:28:47] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:28:47] [artwork:crc] 247.txd CRC = 0x5C708255
+[20:28:47] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:28:47] [artwork:crc] Inventory.txd CRC = 0x70C676BF
+[20:28:47] [artwork:crc] newbiespawn.dff CRC = 0x2499225A
+[20:28:47] [artwork:crc] newbiespawn.txd CRC = 0x5624ADB2
+[20:28:47] [artwork:crc] congvien.dff CRC = 0x94D2954
+[20:28:47] [artwork:crc] congvien.txd CRC = 0xECDCE39F
+[20:28:47] [artwork:crc] honuoc.dff CRC = 0xFBE95451
+[20:28:47] [artwork:crc] honuoc.txd CRC = 0xC8354AE8
+[20:28:47] 
+[20:28:47] Filterscripts
+[20:28:47] ---------------
+[20:28:47]   Loaded 0 filterscripts.
+
+[20:28:47] AMX (43729000) loaded
+[20:28:47]  
+[20:28:47]  
+[20:28:47]  
+[20:28:47]  ======================================= 
+[20:28:47]  |                                     | 
+[20:28:47]  |        YSI version 4.00.0001        | 
+[20:28:47]  |        By Alex "Y_Less" Cole        | 
+[20:28:47]  |                                     | 
+[20:28:47]  ======================================= 
+[20:28:47]  
+[20:28:47] > Ket noi den du lieu thanh cong.
+[20:28:47] [KNCMS][Log-Map]:Map Newbie spawn da load thanh cong
+[20:28:47] [KNCMS][Log-Map]:Map LSRP park da load thanh cong
+[20:28:47] [KNCMS][Log-Map]:[Map Loading] Map Apartment da load thanh cong
+[20:28:47] Number of vehicle models: 0
+[20:28:47] Da load thanh cong 0 Door
+[20:29:01] [connection] incoming connection: 127.0.0.1:63611 id: 0
+[20:29:01] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[20:29:10] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[20:29:20] Item: 23 | Amount: 1 | SQLID: 166 | ID: 7
+[20:29:32] ----- Item: 23 | Amount: 1 | SQLID: 166 | ID: 7
+[20:29:32] INSERT INTO `inventory` SET `uid` = '31' , `item` = '23' , `amount` = '1'
+[20:29:32] DELETE FROM `inventory_drop` WHERE `id` = '166'
+[20:29:32] Object: 0 | Text: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[20:31:00] weburl = "www.sa-mp.com"  (string)
+[20:31:00] password = ""  (string)
+[20:31:00] filterscripts = ""  (string)
+[20:31:00] 
+[20:31:00] Server Plugins
+[20:31:00] --------------
+[20:31:00]  Loading plugin: mysql
+[20:31:00]  >> plugin.mysql: R41-4 successfully loaded.
+[20:31:00]   Loaded.
+[20:31:00]  Loading plugin: whirlpool
+[20:31:00]  
+[20:31:00]  ==================
+[20:31:00]  
+[20:31:00]   Whirlpool loaded
+[20:31:00]  
+[20:31:00]  ==================
+[20:31:00]  
+[20:31:00]   Loaded.
+[20:31:00]  Loading plugin: sscanf
+[20:31:00] 
+
+[20:31:00]  ===============================
+
+[20:31:00]       sscanf plugin loaded.     
+
+[20:31:00]          Version:  2.8.3        
+
+[20:31:00]   (c) 2018 Alex "Y_Less" Cole  
+
+[20:31:00]  ===============================
+
+[20:31:00]   Loaded.
+[20:31:00]  Loading plugin: streamer
+[20:31:00] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[20:31:00]   Loaded.
+[20:31:00]  Loaded 4 plugins.
+
+[20:31:00] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:31:00] [artwork:crc] logo.txd CRC = 0xE9684C78
+[20:31:00] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:31:00] [artwork:crc] joinspawn.txd CRC = 0x39E48CC2
+[20:31:00] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:31:00] [artwork:crc] login.txd CRC = 0x6B804645
+[20:31:00] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:31:00] [artwork:crc] inv.txd CRC = 0x3C7B1C5D
+[20:31:00] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:31:00] [artwork:crc] 247.txd CRC = 0x5C708255
+[20:31:00] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:31:00] [artwork:crc] Inventory.txd CRC = 0x70C676BF
+[20:31:00] [artwork:crc] newbiespawn.dff CRC = 0x2499225A
+[20:31:00] [artwork:crc] newbiespawn.txd CRC = 0x5624ADB2
+[20:31:00] [artwork:crc] congvien.dff CRC = 0x94D2954
+[20:31:00] [artwork:crc] congvien.txd CRC = 0xECDCE39F
+[20:31:00] [artwork:crc] honuoc.dff CRC = 0xFBE95451
+[20:31:00] [artwork:crc] honuoc.txd CRC = 0xC8354AE8
+[20:31:00] 
+[20:31:00] Filterscripts
+[20:31:00] ---------------
+[20:31:00]   Loaded 0 filterscripts.
+
+[20:31:00] AMX (43729000) loaded
+[20:31:00]  
+[20:31:00]  
+[20:31:00]  
+[20:31:00]  ======================================= 
+[20:31:00]  |                                     | 
+[20:31:00]  |        YSI version 4.00.0001        | 
+[20:31:00]  |        By Alex "Y_Less" Cole        | 
+[20:31:00]  |                                     | 
+[20:31:00]  ======================================= 
+[20:31:00]  
+[20:31:00] > Ket noi den du lieu thanh cong.
+[20:31:00] [KNCMS][Log-Map]:Map Newbie spawn da load thanh cong
+[20:31:00] [KNCMS][Log-Map]:Map LSRP park da load thanh cong
+[20:31:00] [KNCMS][Log-Map]:[Map Loading] Map Apartment da load thanh cong
+[20:31:00] Number of vehicle models: 0
+[20:31:00] Da load thanh cong 0 Door
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[20:32:00] weburl = "www.sa-mp.com"  (string)
+[20:32:00] password = ""  (string)
+[20:32:00] filterscripts = ""  (string)
+[20:32:00] 
+[20:32:00] Server Plugins
+[20:32:00] --------------
+[20:32:00]  Loading plugin: mysql
+[20:32:00]  >> plugin.mysql: R41-4 successfully loaded.
+[20:32:00]   Loaded.
+[20:32:00]  Loading plugin: whirlpool
+[20:32:00]  
+[20:32:00]  ==================
+[20:32:00]  
+[20:32:00]   Whirlpool loaded
+[20:32:00]  
+[20:32:00]  ==================
+[20:32:00]  
+[20:32:00]   Loaded.
+[20:32:00]  Loading plugin: sscanf
+[20:32:00] 
+
+[20:32:00]  ===============================
+
+[20:32:00]       sscanf plugin loaded.     
+
+[20:32:00]          Version:  2.8.3        
+
+[20:32:00]   (c) 2018 Alex "Y_Less" Cole  
+
+[20:32:00]  ===============================
+
+[20:32:00]   Loaded.
+[20:32:00]  Loading plugin: streamer
+[20:32:00] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[20:32:00]   Loaded.
+[20:32:00]  Loaded 4 plugins.
+
+[20:32:00] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:32:00] [artwork:crc] logo.txd CRC = 0xE9684C78
+[20:32:00] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:32:00] [artwork:crc] joinspawn.txd CRC = 0x39E48CC2
+[20:32:00] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:32:00] [artwork:crc] login.txd CRC = 0x6B804645
+[20:32:00] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:32:00] [artwork:crc] inv.txd CRC = 0x3C7B1C5D
+[20:32:00] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:32:00] [artwork:crc] 247.txd CRC = 0x5C708255
+[20:32:00] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:32:00] [artwork:crc] Inventory.txd CRC = 0x70C676BF
+[20:32:00] [artwork:crc] newbiespawn.dff CRC = 0x2499225A
+[20:32:00] [artwork:crc] newbiespawn.txd CRC = 0x5624ADB2
+[20:32:00] [artwork:crc] congvien.dff CRC = 0x94D2954
+[20:32:00] [artwork:crc] congvien.txd CRC = 0xECDCE39F
+[20:32:00] [artwork:crc] honuoc.dff CRC = 0xFBE95451
+[20:32:00] [artwork:crc] honuoc.txd CRC = 0xC8354AE8
+[20:32:00] 
+[20:32:00] Filterscripts
+[20:32:00] ---------------
+[20:32:00]   Loaded 0 filterscripts.
+
+[20:32:00] AMX (44056680) loaded
+[20:32:00]  
+[20:32:00]  
+[20:32:00]  
+[20:32:00]  ======================================= 
+[20:32:00]  |                                     | 
+[20:32:00]  |        YSI version 4.00.0001        | 
+[20:32:00]  |        By Alex "Y_Less" Cole        | 
+[20:32:00]  |                                     | 
+[20:32:00]  ======================================= 
+[20:32:00]  
+[20:32:01] > Ket noi den du lieu thanh cong.
+[20:32:01] [KNCMS][Log-Map]:Map Newbie spawn da load thanh cong
+[20:32:01] [KNCMS][Log-Map]:Map LSRP park da load thanh cong
+[20:32:01] [KNCMS][Log-Map]:[Map Loading] Map Apartment da load thanh cong
+[20:32:01] Number of vehicle models: 0
+[20:32:01] Da load thanh cong 0 Door
+[20:32:20] [connection] incoming connection: 127.0.0.1:49666 id: 0
+[20:32:20] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[20:32:20] Object ID: 159 | Object: 78
+[20:32:20] Object ID: 160 | Object: 79
+[20:32:20] Object ID: 161 | Object: 80
+[20:32:20] Object ID: 162 | Object: 81
+[20:32:20] Object ID: 163 | Object: 82
+[20:32:20] Object ID: 164 | Object: 83
+[20:32:20] Object ID: 165 | Object: 84
+[20:32:20] Object ID: 167 | Object: 85
+[20:32:20] Object ID: 168 | Object: 86
+[20:32:20] Object ID: 170 | Object: 87
+[20:32:20] Object ID: 171 | Object: 88
+[20:32:20] Object ID: 172 | Object: 89
+[20:32:20] Object ID: 173 | Object: 90
+[20:32:20] Object ID: 174 | Object: 91
+[20:32:20] Object ID: 175 | Object: 92
+[20:32:28] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[20:46:31] Character Save: Khoi Nguyenz | AccountID: 31
+[20:46:31] [part] Khoi_Nguyenz has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[20:46:33] weburl = "www.sa-mp.com"  (string)
+[20:46:33] password = ""  (string)
+[20:46:33] filterscripts = ""  (string)
+[20:46:33] 
+[20:46:33] Server Plugins
+[20:46:33] --------------
+[20:46:33]  Loading plugin: mysql
+[20:46:33]  >> plugin.mysql: R41-4 successfully loaded.
+[20:46:33]   Loaded.
+[20:46:33]  Loading plugin: whirlpool
+[20:46:33]  
+[20:46:33]  ==================
+[20:46:33]  
+[20:46:33]   Whirlpool loaded
+[20:46:33]  
+[20:46:33]  ==================
+[20:46:33]  
+[20:46:33]   Loaded.
+[20:46:33]  Loading plugin: sscanf
+[20:46:33] 
+
+[20:46:33]  ===============================
+
+[20:46:33]       sscanf plugin loaded.     
+
+[20:46:33]          Version:  2.8.3        
+
+[20:46:33]   (c) 2018 Alex "Y_Less" Cole  
+
+[20:46:33]  ===============================
+
+[20:46:33]   Loaded.
+[20:46:33]  Loading plugin: streamer
+[20:46:33] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[20:46:33]   Loaded.
+[20:46:33]  Loaded 4 plugins.
+
+[20:46:33] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:46:33] [artwork:crc] logo.txd CRC = 0xE9684C78
+[20:46:33] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:46:33] [artwork:crc] joinspawn.txd CRC = 0x39E48CC2
+[20:46:33] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:46:33] [artwork:crc] login.txd CRC = 0x6B804645
+[20:46:33] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:46:33] [artwork:crc] inv.txd CRC = 0x3C7B1C5D
+[20:46:33] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:46:33] [artwork:crc] 247.txd CRC = 0x5C708255
+[20:46:33] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:46:33] [artwork:crc] Inventory.txd CRC = 0x70C676BF
+[20:46:33] [artwork:crc] newbiespawn.dff CRC = 0x2499225A
+[20:46:33] [artwork:crc] newbiespawn.txd CRC = 0x5624ADB2
+[20:46:33] [artwork:crc] congvien.dff CRC = 0x94D2954
+[20:46:33] [artwork:crc] congvien.txd CRC = 0xECDCE39F
+[20:46:33] [artwork:crc] honuoc.dff CRC = 0xFBE95451
+[20:46:33] [artwork:crc] honuoc.txd CRC = 0xC8354AE8
+[20:46:33] 
+[20:46:33] Filterscripts
+[20:46:33] ---------------
+[20:46:33]   Loaded 0 filterscripts.
+
+[20:46:33] AMX (43729000) loaded
+[20:46:33]  
+[20:46:33]  
+[20:46:33]  
+[20:46:33]  ======================================= 
+[20:46:33]  |                                     | 
+[20:46:33]  |        YSI version 4.00.0001        | 
+[20:46:33]  |        By Alex "Y_Less" Cole        | 
+[20:46:33]  |                                     | 
+[20:46:33]  ======================================= 
+[20:46:33]  
+[20:46:33] > Ket noi den du lieu thanh cong.
+[20:46:33] [KNCMS][Log-Map]:Map Newbie spawn da load thanh cong
+[20:46:33] [KNCMS][Log-Map]:Map LSRP park da load thanh cong
+[20:46:33] [KNCMS][Log-Map]:[Map Loading] Map Apartment da load thanh cong
+[20:46:33] Number of vehicle models: 0
+[20:46:33] Da load thanh cong 0 Door
+[20:46:42] [connection] incoming connection: 127.0.0.1:58672 id: 0
+[20:46:42] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[20:46:52] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[20:55:27] Character Save: Khoi Nguyenz | AccountID: 31
+[20:55:27] [part] Khoi_Nguyenz has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[20:55:32] weburl = "www.sa-mp.com"  (string)
+[20:55:32] password = ""  (string)
+[20:55:32] filterscripts = ""  (string)
+[20:55:32] 
+[20:55:32] Server Plugins
+[20:55:32] --------------
+[20:55:32]  Loading plugin: mysql
+[20:55:32]  >> plugin.mysql: R41-4 successfully loaded.
+[20:55:32]   Loaded.
+[20:55:32]  Loading plugin: whirlpool
+[20:55:32]  
+[20:55:32]  ==================
+[20:55:32]  
+[20:55:32]   Whirlpool loaded
+[20:55:32]  
+[20:55:32]  ==================
+[20:55:32]  
+[20:55:32]   Loaded.
+[20:55:32]  Loading plugin: sscanf
+[20:55:32] 
+
+[20:55:32]  ===============================
+
+[20:55:32]       sscanf plugin loaded.     
+
+[20:55:32]          Version:  2.8.3        
+
+[20:55:32]   (c) 2018 Alex "Y_Less" Cole  
+
+[20:55:32]  ===============================
+
+[20:55:32]   Loaded.
+[20:55:32]  Loading plugin: streamer
+[20:55:32] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[20:55:32]   Loaded.
+[20:55:32]  Loaded 4 plugins.
+
+[20:55:32] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:55:32] [artwork:crc] logo.txd CRC = 0xE9684C78
+[20:55:32] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:55:32] [artwork:crc] joinspawn.txd CRC = 0x39E48CC2
+[20:55:32] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:55:33] [artwork:crc] login.txd CRC = 0x6B804645
+[20:55:33] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:55:33] [artwork:crc] inv.txd CRC = 0x3C7B1C5D
+[20:55:33] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:55:33] [artwork:crc] 247.txd CRC = 0x5C708255
+[20:55:33] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:55:33] [artwork:crc] Inventory.txd CRC = 0x70C676BF
+[20:55:33] [artwork:crc] newbiespawn.dff CRC = 0x2499225A
+[20:55:33] [artwork:crc] newbiespawn.txd CRC = 0x5624ADB2
+[20:55:33] [artwork:crc] congvien.dff CRC = 0x94D2954
+[20:55:33] [artwork:crc] congvien.txd CRC = 0xECDCE39F
+[20:55:33] [artwork:crc] honuoc.dff CRC = 0xFBE95451
+[20:55:33] [artwork:crc] honuoc.txd CRC = 0xC8354AE8
+[20:55:33] 
+[20:55:33] Filterscripts
+[20:55:33] ---------------
+[20:55:33]   Loaded 0 filterscripts.
+
+[20:55:33] AMX (43729000) loaded
+[20:55:33]  
+[20:55:33]  
+[20:55:33]  
+[20:55:33]  ======================================= 
+[20:55:33]  |                                     | 
+[20:55:33]  |        YSI version 4.00.0001        | 
+[20:55:33]  |        By Alex "Y_Less" Cole        | 
+[20:55:33]  |                                     | 
+[20:55:33]  ======================================= 
+[20:55:33]  
+[20:55:33] > Ket noi den du lieu thanh cong.
+[20:55:33] [KNCMS][Log-Map]:Map Newbie spawn da load thanh cong
+[20:55:33] [KNCMS][Log-Map]:Map LSRP park da load thanh cong
+[20:55:33] [KNCMS][Log-Map]:[Map Loading] Map Apartment da load thanh cong
+[20:55:33] Number of vehicle models: 0
+[20:55:33] Da load thanh cong 0 Door
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[20:56:30] weburl = "www.sa-mp.com"  (string)
+[20:56:30] password = ""  (string)
+[20:56:30] filterscripts = ""  (string)
+[20:56:30] 
+[20:56:30] Server Plugins
+[20:56:30] --------------
+[20:56:30]  Loading plugin: mysql
+[20:56:30]  >> plugin.mysql: R41-4 successfully loaded.
+[20:56:30]   Loaded.
+[20:56:30]  Loading plugin: whirlpool
+[20:56:30]  
+[20:56:30]  ==================
+[20:56:30]  
+[20:56:30]   Whirlpool loaded
+[20:56:30]  
+[20:56:30]  ==================
+[20:56:30]  
+[20:56:30]   Loaded.
+[20:56:30]  Loading plugin: sscanf
+[20:56:30] 
+
+[20:56:30]  ===============================
+
+[20:56:30]       sscanf plugin loaded.     
+
+[20:56:30]          Version:  2.8.3        
+
+[20:56:30]   (c) 2018 Alex "Y_Less" Cole  
+
+[20:56:30]  ===============================
+
+[20:56:30]   Loaded.
+[20:56:30]  Loading plugin: streamer
+[20:56:30] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[20:56:30]   Loaded.
+[20:56:30]  Loaded 4 plugins.
+
+[20:56:30] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:56:30] [artwork:crc] logo.txd CRC = 0xE9684C78
+[20:56:30] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:56:30] [artwork:crc] joinspawn.txd CRC = 0x39E48CC2
+[20:56:30] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:56:30] [artwork:crc] login.txd CRC = 0x6B804645
+[20:56:30] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:56:30] [artwork:crc] inv.txd CRC = 0x3C7B1C5D
+[20:56:30] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:56:30] [artwork:crc] 247.txd CRC = 0x5C708255
+[20:56:30] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:56:30] [artwork:crc] Inventory.txd CRC = 0x70C676BF
+[20:56:30] [artwork:crc] newbiespawn.dff CRC = 0x2499225A
+[20:56:30] [artwork:crc] newbiespawn.txd CRC = 0x5624ADB2
+[20:56:30] [artwork:crc] congvien.dff CRC = 0x94D2954
+[20:56:30] [artwork:crc] congvien.txd CRC = 0xECDCE39F
+[20:56:30] [artwork:crc] honuoc.dff CRC = 0xFBE95451
+[20:56:30] [artwork:crc] honuoc.txd CRC = 0xC8354AE8
+[20:56:30] 
+[20:56:30] Filterscripts
+[20:56:30] ---------------
+[20:56:30]   Loaded 0 filterscripts.
+
+[20:56:30] AMX (43729000) loaded
+[20:56:30]  
+[20:56:30]  
+[20:56:30]  
+[20:56:30]  ======================================= 
+[20:56:30]  |                                     | 
+[20:56:30]  |        YSI version 4.00.0001        | 
+[20:56:30]  |        By Alex "Y_Less" Cole        | 
+[20:56:30]  |                                     | 
+[20:56:30]  ======================================= 
+[20:56:30]  
+[20:56:30] > Ket noi den du lieu thanh cong.
+[20:56:30] [KNCMS][Log-Map]:Map Newbie spawn da load thanh cong
+[20:56:30] [KNCMS][Log-Map]:Map LSRP park da load thanh cong
+[20:56:30] [KNCMS][Log-Map]:[Map Loading] Map Apartment da load thanh cong
+[20:56:30] Number of vehicle models: 0
+[20:56:30] Da load thanh cong 0 Door
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[20:56:54] weburl = "www.sa-mp.com"  (string)
+[20:56:54] password = ""  (string)
+[20:56:54] filterscripts = ""  (string)
+[20:56:54] 
+[20:56:54] Server Plugins
+[20:56:54] --------------
+[20:56:54]  Loading plugin: mysql
+[20:56:54]  >> plugin.mysql: R41-4 successfully loaded.
+[20:56:54]   Loaded.
+[20:56:54]  Loading plugin: whirlpool
+[20:56:54]  
+[20:56:54]  ==================
+[20:56:54]  
+[20:56:54]   Whirlpool loaded
+[20:56:54]  
+[20:56:54]  ==================
+[20:56:54]  
+[20:56:54]   Loaded.
+[20:56:54]  Loading plugin: sscanf
+[20:56:54] 
+
+[20:56:54]  ===============================
+
+[20:56:54]       sscanf plugin loaded.     
+
+[20:56:54]          Version:  2.8.3        
+
+[20:56:54]   (c) 2018 Alex "Y_Less" Cole  
+
+[20:56:54]  ===============================
+
+[20:56:54]   Loaded.
+[20:56:54]  Loading plugin: streamer
+[20:56:54] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[20:56:54]   Loaded.
+[20:56:54]  Loaded 4 plugins.
+
+[20:56:54] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:56:54] [artwork:crc] logo.txd CRC = 0xE9684C78
+[20:56:54] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:56:54] [artwork:crc] joinspawn.txd CRC = 0x39E48CC2
+[20:56:54] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:56:54] [artwork:crc] login.txd CRC = 0x6B804645
+[20:56:54] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:56:54] [artwork:crc] inv.txd CRC = 0x3C7B1C5D
+[20:56:54] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:56:54] [artwork:crc] 247.txd CRC = 0x5C708255
+[20:56:54] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:56:54] [artwork:crc] Inventory.txd CRC = 0x70C676BF
+[20:56:54] [artwork:crc] newbiespawn.dff CRC = 0x2499225A
+[20:56:54] [artwork:crc] newbiespawn.txd CRC = 0x5624ADB2
+[20:56:54] [artwork:crc] congvien.dff CRC = 0x94D2954
+[20:56:54] [artwork:crc] congvien.txd CRC = 0xECDCE39F
+[20:56:54] [artwork:crc] honuoc.dff CRC = 0xFBE95451
+[20:56:54] [artwork:crc] honuoc.txd CRC = 0xC8354AE8
+[20:56:54] 
+[20:56:54] Filterscripts
+[20:56:54] ---------------
+[20:56:54]   Loaded 0 filterscripts.
+
+[20:56:54] AMX (44253288) loaded
+[20:56:54]  
+[20:56:54]  
+[20:56:54]  
+[20:56:54]  ======================================= 
+[20:56:54]  |                                     | 
+[20:56:54]  |        YSI version 4.00.0001        | 
+[20:56:54]  |        By Alex "Y_Less" Cole        | 
+[20:56:54]  |                                     | 
+[20:56:54]  ======================================= 
+[20:56:54]  
+[20:56:54] > Ket noi den du lieu thanh cong.
+[20:56:54] [KNCMS][Log-Map]:Map Newbie spawn da load thanh cong
+[20:56:54] [KNCMS][Log-Map]:Map LSRP park da load thanh cong
+[20:56:54] [KNCMS][Log-Map]:[Map Loading] Map Apartment da load thanh cong
+[20:56:54] Number of vehicle models: 0
+[20:56:54] Object ID: 159 | Object: 78
+[20:56:54] Object ID: 160 | Object: 79
+[20:56:54] Object ID: 161 | Object: 80
+[20:56:54] Object ID: 162 | Object: 81
+[20:56:54] Object ID: 163 | Object: 82
+[20:56:54] Object ID: 164 | Object: 83
+[20:56:54] Object ID: 165 | Object: 84
+[20:56:54] Object ID: 167 | Object: 85
+[20:56:54] Object ID: 168 | Object: 86
+[20:56:54] Object ID: 170 | Object: 87
+[20:56:54] Object ID: 171 | Object: 88
+[20:56:54] Object ID: 172 | Object: 89
+[20:56:54] Object ID: 173 | Object: 90
+[20:56:54] Object ID: 174 | Object: 91
+[20:56:54] Object ID: 175 | Object: 92
+[20:56:54] Da load thanh cong 0 Door
+[20:57:00] [connection] incoming connection: 127.0.0.1:60196 id: 0
+[20:57:00] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[20:57:09] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[20:57:15] Item: 20 | Amount: 10 | SQLID: 170 | ID: 9
+[20:57:28] ----- Item: 20 | Amount: 10 | SQLID: 170 | ID: 9
+[20:57:28] INSERT INTO `inventory` SET `uid` = '31' , `item` = '20' , `amount` = '10'
+[20:57:28] DELETE FROM `inventory_drop` WHERE `id` = '170'
+[20:57:28] Object: 0 | Text: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[20:58:45] weburl = "www.sa-mp.com"  (string)
+[20:58:45] password = ""  (string)
+[20:58:45] filterscripts = ""  (string)
+[20:58:45] 
+[20:58:45] Server Plugins
+[20:58:45] --------------
+[20:58:45]  Loading plugin: mysql
+[20:58:45]  >> plugin.mysql: R41-4 successfully loaded.
+[20:58:45]   Loaded.
+[20:58:45]  Loading plugin: whirlpool
+[20:58:45]  
+[20:58:45]  ==================
+[20:58:45]  
+[20:58:45]   Whirlpool loaded
+[20:58:45]  
+[20:58:45]  ==================
+[20:58:45]  
+[20:58:45]   Loaded.
+[20:58:45]  Loading plugin: sscanf
+[20:58:45] 
+
+[20:58:45]  ===============================
+
+[20:58:45]       sscanf plugin loaded.     
+
+[20:58:45]          Version:  2.8.3        
+
+[20:58:45]   (c) 2018 Alex "Y_Less" Cole  
+
+[20:58:45]  ===============================
+
+[20:58:45]   Loaded.
+[20:58:45]  Loading plugin: streamer
+[20:58:45] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[20:58:45]   Loaded.
+[20:58:45]  Loaded 4 plugins.
+
+[20:58:45] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:58:45] [artwork:crc] logo.txd CRC = 0xE9684C78
+[20:58:45] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:58:45] [artwork:crc] joinspawn.txd CRC = 0x39E48CC2
+[20:58:45] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:58:45] [artwork:crc] login.txd CRC = 0x6B804645
+[20:58:45] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:58:45] [artwork:crc] inv.txd CRC = 0x3C7B1C5D
+[20:58:45] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:58:45] [artwork:crc] 247.txd CRC = 0x5C708255
+[20:58:45] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:58:45] [artwork:crc] Inventory.txd CRC = 0x70C676BF
+[20:58:45] [artwork:crc] newbiespawn.dff CRC = 0x2499225A
+[20:58:45] [artwork:crc] newbiespawn.txd CRC = 0x5624ADB2
+[20:58:45] [artwork:crc] congvien.dff CRC = 0x94D2954
+[20:58:45] [artwork:crc] congvien.txd CRC = 0xECDCE39F
+[20:58:45] [artwork:crc] honuoc.dff CRC = 0xFBE95451
+[20:58:45] [artwork:crc] honuoc.txd CRC = 0xC8354AE8
+[20:58:45] 
+[20:58:45] Filterscripts
+[20:58:45] ---------------
+[20:58:45]   Loaded 0 filterscripts.
+
+[20:58:45] AMX (43991144) loaded
+[20:58:45]  
+[20:58:45]  
+[20:58:45]  
+[20:58:45]  ======================================= 
+[20:58:45]  |                                     | 
+[20:58:45]  |        YSI version 4.00.0001        | 
+[20:58:45]  |        By Alex "Y_Less" Cole        | 
+[20:58:45]  |                                     | 
+[20:58:45]  ======================================= 
+[20:58:45]  
+[20:58:45] > Ket noi den du lieu thanh cong.
+[20:58:45] [KNCMS][Log-Map]:Map Newbie spawn da load thanh cong
+[20:58:45] [KNCMS][Log-Map]:Map LSRP park da load thanh cong
+[20:58:45] [KNCMS][Log-Map]:[Map Loading] Map Apartment da load thanh cong
+[20:58:45] Number of vehicle models: 0
+[20:58:45] Object ID: 159 | Object: 78
+[20:58:45] Object ID: 160 | Object: 79
+[20:58:45] Object ID: 161 | Object: 80
+[20:58:45] Object ID: 162 | Object: 81
+[20:58:45] Object ID: 163 | Object: 82
+[20:58:45] Object ID: 164 | Object: 83
+[20:58:45] Object ID: 165 | Object: 84
+[20:58:45] Object ID: 167 | Object: 85
+[20:58:45] Object ID: 168 | Object: 86
+[20:58:45] Object ID: 171 | Object: 87
+[20:58:45] Object ID: 172 | Object: 88
+[20:58:45] Object ID: 173 | Object: 89
+[20:58:45] Object ID: 174 | Object: 90
+[20:58:45] Object ID: 175 | Object: 91
+[20:58:45] Da load thanh cong 0 Door
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[20:59:03] weburl = "www.sa-mp.com"  (string)
+[20:59:03] password = ""  (string)
+[20:59:03] filterscripts = ""  (string)
+[20:59:03] 
+[20:59:03] Server Plugins
+[20:59:03] --------------
+[20:59:03]  Loading plugin: mysql
+[20:59:03]  >> plugin.mysql: R41-4 successfully loaded.
+[20:59:03]   Loaded.
+[20:59:03]  Loading plugin: whirlpool
+[20:59:03]  
+[20:59:03]  ==================
+[20:59:03]  
+[20:59:03]   Whirlpool loaded
+[20:59:03]  
+[20:59:03]  ==================
+[20:59:03]  
+[20:59:03]   Loaded.
+[20:59:03]  Loading plugin: sscanf
+[20:59:03] 
+
+[20:59:03]  ===============================
+
+[20:59:03]       sscanf plugin loaded.     
+
+[20:59:03]          Version:  2.8.3        
+
+[20:59:03]   (c) 2018 Alex "Y_Less" Cole  
+
+[20:59:03]  ===============================
+
+[20:59:03]   Loaded.
+[20:59:03]  Loading plugin: streamer
+[20:59:03] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[20:59:03]   Loaded.
+[20:59:03]  Loaded 4 plugins.
+
+[20:59:03] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:59:03] [artwork:crc] logo.txd CRC = 0xE9684C78
+[20:59:03] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:59:03] [artwork:crc] joinspawn.txd CRC = 0x39E48CC2
+[20:59:03] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:59:03] [artwork:crc] login.txd CRC = 0x6B804645
+[20:59:03] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:59:03] [artwork:crc] inv.txd CRC = 0x3C7B1C5D
+[20:59:03] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:59:03] [artwork:crc] 247.txd CRC = 0x5C708255
+[20:59:03] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:59:03] [artwork:crc] Inventory.txd CRC = 0x70C676BF
+[20:59:03] [artwork:crc] newbiespawn.dff CRC = 0x2499225A
+[20:59:03] [artwork:crc] newbiespawn.txd CRC = 0x5624ADB2
+[20:59:03] [artwork:crc] congvien.dff CRC = 0x94D2954
+[20:59:03] [artwork:crc] congvien.txd CRC = 0xECDCE39F
+[20:59:03] [artwork:crc] honuoc.dff CRC = 0xFBE95451
+[20:59:03] [artwork:crc] honuoc.txd CRC = 0xC8354AE8
+[20:59:03] 
+[20:59:03] Filterscripts
+[20:59:03] ---------------
+[20:59:03]   Loaded 0 filterscripts.
+
+[20:59:03] AMX (43991144) loaded
+[20:59:03]  
+[20:59:03]  
+[20:59:03]  
+[20:59:03]  ======================================= 
+[20:59:03]  |                                     | 
+[20:59:03]  |        YSI version 4.00.0001        | 
+[20:59:03]  |        By Alex "Y_Less" Cole        | 
+[20:59:03]  |                                     | 
+[20:59:03]  ======================================= 
+[20:59:03]  
+[20:59:03] > Ket noi den du lieu thanh cong.
+[20:59:03] [KNCMS][Log-Map]:Map Newbie spawn da load thanh cong
+[20:59:03] [KNCMS][Log-Map]:Map LSRP park da load thanh cong
+[20:59:03] [KNCMS][Log-Map]:[Map Loading] Map Apartment da load thanh cong
+[20:59:03] Number of vehicle models: 0
+[20:59:03] Da load thanh cong 0 Door
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[20:59:28] weburl = "www.sa-mp.com"  (string)
+[20:59:28] password = ""  (string)
+[20:59:28] filterscripts = ""  (string)
+[20:59:28] 
+[20:59:28] Server Plugins
+[20:59:28] --------------
+[20:59:28]  Loading plugin: mysql
+[20:59:28]  >> plugin.mysql: R41-4 successfully loaded.
+[20:59:28]   Loaded.
+[20:59:28]  Loading plugin: whirlpool
+[20:59:28]  
+[20:59:28]  ==================
+[20:59:28]  
+[20:59:28]   Whirlpool loaded
+[20:59:28]  
+[20:59:28]  ==================
+[20:59:28]  
+[20:59:28]   Loaded.
+[20:59:28]  Loading plugin: sscanf
+[20:59:28] 
+
+[20:59:28]  ===============================
+
+[20:59:28]       sscanf plugin loaded.     
+
+[20:59:28]          Version:  2.8.3        
+
+[20:59:28]   (c) 2018 Alex "Y_Less" Cole  
+
+[20:59:28]  ===============================
+
+[20:59:28]   Loaded.
+[20:59:28]  Loading plugin: streamer
+[20:59:28] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[20:59:28]   Loaded.
+[20:59:28]  Loaded 4 plugins.
+
+[20:59:28] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:59:28] [artwork:crc] logo.txd CRC = 0xE9684C78
+[20:59:28] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:59:28] [artwork:crc] joinspawn.txd CRC = 0x39E48CC2
+[20:59:28] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:59:28] [artwork:crc] login.txd CRC = 0x6B804645
+[20:59:28] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:59:28] [artwork:crc] inv.txd CRC = 0x3C7B1C5D
+[20:59:28] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:59:28] [artwork:crc] 247.txd CRC = 0x5C708255
+[20:59:28] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[20:59:28] [artwork:crc] Inventory.txd CRC = 0x70C676BF
+[20:59:28] [artwork:crc] newbiespawn.dff CRC = 0x2499225A
+[20:59:28] [artwork:crc] newbiespawn.txd CRC = 0x5624ADB2
+[20:59:28] [artwork:crc] congvien.dff CRC = 0x94D2954
+[20:59:28] [artwork:crc] congvien.txd CRC = 0xECDCE39F
+[20:59:28] [artwork:crc] honuoc.dff CRC = 0xFBE95451
+[20:59:28] [artwork:crc] honuoc.txd CRC = 0xC8354AE8
+[20:59:28] 
+[20:59:28] Filterscripts
+[20:59:28] ---------------
+[20:59:28]   Loaded 0 filterscripts.
+
+[20:59:28] AMX (44646504) loaded
+[20:59:28]  
+[20:59:28]  
+[20:59:28]  
+[20:59:28]  ======================================= 
+[20:59:28]  |                                     | 
+[20:59:28]  |        YSI version 4.00.0001        | 
+[20:59:28]  |        By Alex "Y_Less" Cole        | 
+[20:59:28]  |                                     | 
+[20:59:28]  ======================================= 
+[20:59:28]  
+[20:59:28] > Ket noi den du lieu thanh cong.
+[20:59:28] [KNCMS][Log-Map]:Map Newbie spawn da load thanh cong
+[20:59:28] [KNCMS][Log-Map]:Map LSRP park da load thanh cong
+[20:59:28] [KNCMS][Log-Map]:[Map Loading] Map Apartment da load thanh cong
+[20:59:28] Number of vehicle models: 0
+[20:59:28] Da load thanh cong 0 Door
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[21:00:07] weburl = "www.sa-mp.com"  (string)
+[21:00:07] password = ""  (string)
+[21:00:07] filterscripts = ""  (string)
+[21:00:07] 
+[21:00:07] Server Plugins
+[21:00:07] --------------
+[21:00:07]  Loading plugin: mysql
+[21:00:07]  >> plugin.mysql: R41-4 successfully loaded.
+[21:00:07]   Loaded.
+[21:00:07]  Loading plugin: whirlpool
+[21:00:07]  
+[21:00:07]  ==================
+[21:00:07]  
+[21:00:07]   Whirlpool loaded
+[21:00:07]  
+[21:00:07]  ==================
+[21:00:07]  
+[21:00:07]   Loaded.
+[21:00:07]  Loading plugin: sscanf
+[21:00:07] 
+
+[21:00:07]  ===============================
+
+[21:00:07]       sscanf plugin loaded.     
+
+[21:00:07]          Version:  2.8.3        
+
+[21:00:07]   (c) 2018 Alex "Y_Less" Cole  
+
+[21:00:07]  ===============================
+
+[21:00:07]   Loaded.
+[21:00:07]  Loading plugin: streamer
+[21:00:07] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[21:00:07]   Loaded.
+[21:00:07]  Loaded 4 plugins.
+
+[21:00:07] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:00:07] [artwork:crc] logo.txd CRC = 0xE9684C78
+[21:00:07] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:00:07] [artwork:crc] joinspawn.txd CRC = 0x39E48CC2
+[21:00:07] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:00:07] [artwork:crc] login.txd CRC = 0x6B804645
+[21:00:07] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:00:07] [artwork:crc] inv.txd CRC = 0x3C7B1C5D
+[21:00:07] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:00:07] [artwork:crc] 247.txd CRC = 0x5C708255
+[21:00:07] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:00:07] [artwork:crc] Inventory.txd CRC = 0x70C676BF
+[21:00:07] [artwork:crc] newbiespawn.dff CRC = 0x2499225A
+[21:00:07] [artwork:crc] newbiespawn.txd CRC = 0x5624ADB2
+[21:00:07] [artwork:crc] congvien.dff CRC = 0x94D2954
+[21:00:07] [artwork:crc] congvien.txd CRC = 0xECDCE39F
+[21:00:07] [artwork:crc] honuoc.dff CRC = 0xFBE95451
+[21:00:07] [artwork:crc] honuoc.txd CRC = 0xC8354AE8
+[21:00:07] 
+[21:00:07] Filterscripts
+[21:00:07] ---------------
+[21:00:07]   Loaded 0 filterscripts.
+
+[21:00:07] AMX (44253288) loaded
+[21:00:07]  
+[21:00:07]  
+[21:00:07]  
+[21:00:07]  ======================================= 
+[21:00:07]  |                                     | 
+[21:00:07]  |        YSI version 4.00.0001        | 
+[21:00:07]  |        By Alex "Y_Less" Cole        | 
+[21:00:07]  |                                     | 
+[21:00:07]  ======================================= 
+[21:00:07]  
+[21:00:07] > Ket noi den du lieu thanh cong.
+[21:00:07] [KNCMS][Log-Map]:Map Newbie spawn da load thanh cong
+[21:00:07] [KNCMS][Log-Map]:Map LSRP park da load thanh cong
+[21:00:07] [KNCMS][Log-Map]:[Map Loading] Map Apartment da load thanh cong
+[21:00:07] Number of vehicle models: 0
+[21:00:07] Da load thanh cong 0 Door
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[21:02:04] weburl = "www.sa-mp.com"  (string)
+[21:02:04] password = ""  (string)
+[21:02:04] filterscripts = ""  (string)
+[21:02:04] 
+[21:02:04] Server Plugins
+[21:02:04] --------------
+[21:02:04]  Loading plugin: mysql
+[21:02:04]  >> plugin.mysql: R41-4 successfully loaded.
+[21:02:04]   Loaded.
+[21:02:04]  Loading plugin: whirlpool
+[21:02:04]  
+[21:02:04]  ==================
+[21:02:04]  
+[21:02:04]   Whirlpool loaded
+[21:02:04]  
+[21:02:04]  ==================
+[21:02:04]  
+[21:02:04]   Loaded.
+[21:02:04]  Loading plugin: sscanf
+[21:02:04] 
+
+[21:02:04]  ===============================
+
+[21:02:04]       sscanf plugin loaded.     
+
+[21:02:04]          Version:  2.8.3        
+
+[21:02:04]   (c) 2018 Alex "Y_Less" Cole  
+
+[21:02:04]  ===============================
+
+[21:02:04]   Loaded.
+[21:02:04]  Loading plugin: streamer
+[21:02:04] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[21:02:04]   Loaded.
+[21:02:04]  Loaded 4 plugins.
+
+[21:02:04] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:02:04] [artwork:crc] logo.txd CRC = 0xE9684C78
+[21:02:04] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:02:04] [artwork:crc] joinspawn.txd CRC = 0x39E48CC2
+[21:02:04] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:02:04] [artwork:crc] login.txd CRC = 0x6B804645
+[21:02:04] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:02:04] [artwork:crc] inv.txd CRC = 0x3C7B1C5D
+[21:02:04] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:02:04] [artwork:crc] 247.txd CRC = 0x5C708255
+[21:02:04] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:02:04] [artwork:crc] Inventory.txd CRC = 0x70C676BF
+[21:02:04] [artwork:crc] newbiespawn.dff CRC = 0x2499225A
+[21:02:04] [artwork:crc] newbiespawn.txd CRC = 0x5624ADB2
+[21:02:04] [artwork:crc] congvien.dff CRC = 0x94D2954
+[21:02:04] [artwork:crc] congvien.txd CRC = 0xECDCE39F
+[21:02:04] [artwork:crc] honuoc.dff CRC = 0xFBE95451
+[21:02:04] [artwork:crc] honuoc.txd CRC = 0xC8354AE8
+[21:02:04] 
+[21:02:04] Filterscripts
+[21:02:04] ---------------
+[21:02:04]   Loaded 0 filterscripts.
+
+[21:02:04] AMX (44974184) loaded
+[21:02:04]  
+[21:02:04]  
+[21:02:04]  
+[21:02:04]  ======================================= 
+[21:02:04]  |                                     | 
+[21:02:04]  |        YSI version 4.00.0001        | 
+[21:02:04]  |        By Alex "Y_Less" Cole        | 
+[21:02:04]  |                                     | 
+[21:02:04]  ======================================= 
+[21:02:04]  
+[21:02:05] > Ket noi den du lieu thanh cong.
+[21:02:05] [KNCMS][Log-Map]:Map Newbie spawn da load thanh cong
+[21:02:05] [KNCMS][Log-Map]:Map LSRP park da load thanh cong
+[21:02:05] [KNCMS][Log-Map]:Map Apartment da load thanh cong
+[21:02:05] Number of vehicle models: 0
+[21:02:05] [KNCMS][Log-SQL]:Da load thanh cong 14 DropBox
+[21:02:05] [KNCMS][Log-SQL]:Da load thanh cong 0 Door
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[21:26:20] weburl = "www.sa-mp.com"  (string)
+[21:26:20] password = ""  (string)
+[21:26:20] filterscripts = ""  (string)
+[21:26:20] 
+[21:26:20] Server Plugins
+[21:26:20] --------------
+[21:26:20]  Loading plugin: mysql
+[21:26:20]  >> plugin.mysql: R41-4 successfully loaded.
+[21:26:20]   Loaded.
+[21:26:20]  Loading plugin: whirlpool
+[21:26:20]  
+[21:26:20]  ==================
+[21:26:20]  
+[21:26:20]   Whirlpool loaded
+[21:26:20]  
+[21:26:20]  ==================
+[21:26:20]  
+[21:26:20]   Loaded.
+[21:26:20]  Loading plugin: sscanf
+[21:26:20] 
+
+[21:26:20]  ===============================
+
+[21:26:20]       sscanf plugin loaded.     
+
+[21:26:20]          Version:  2.8.3        
+
+[21:26:20]   (c) 2018 Alex "Y_Less" Cole  
+
+[21:26:20]  ===============================
+
+[21:26:20]   Loaded.
+[21:26:20]  Loading plugin: streamer
+[21:26:20] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[21:26:20]   Loaded.
+[21:26:20]  Loaded 4 plugins.
+
+[21:26:20] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:26:20] [artwork:crc] logo.txd CRC = 0xE9684C78
+[21:26:20] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:26:20] [artwork:crc] joinspawn.txd CRC = 0x39E48CC2
+[21:26:20] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:26:20] [artwork:crc] login.txd CRC = 0x6B804645
+[21:26:20] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:26:20] [artwork:crc] inv.txd CRC = 0x3C7B1C5D
+[21:26:20] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:26:20] [artwork:crc] 247.txd CRC = 0x5C708255
+[21:26:20] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:26:20] [artwork:crc] Inventory.txd CRC = 0x70C676BF
+[21:26:20] [artwork:crc] newbiespawn.dff CRC = 0x2499225A
+[21:26:20] [artwork:crc] newbiespawn.txd CRC = 0x5624ADB2
+[21:26:20] [artwork:crc] congvien.dff CRC = 0x94D2954
+[21:26:20] [artwork:crc] congvien.txd CRC = 0xECDCE39F
+[21:26:20] [artwork:crc] honuoc.dff CRC = 0xFBE95451
+[21:26:20] [artwork:crc] honuoc.txd CRC = 0xC8354AE8
+[21:26:20] 
+[21:26:20] Filterscripts
+[21:26:20] ---------------
+[21:26:20]   Loaded 0 filterscripts.
+
+[21:26:20] AMX (43729000) loaded
+[21:26:20]  
+[21:26:20]  
+[21:26:20]  
+[21:26:20]  ======================================= 
+[21:26:20]  |                                     | 
+[21:26:20]  |        YSI version 4.00.0001        | 
+[21:26:20]  |        By Alex "Y_Less" Cole        | 
+[21:26:20]  |                                     | 
+[21:26:20]  ======================================= 
+[21:26:20]  
+[21:26:20] > Ket noi den du lieu thanh cong.
+[21:26:20] [KNCMS][Log-Map]:Map Newbie spawn da load thanh cong
+[21:26:20] [KNCMS][Log-Map]:Map LSRP park da load thanh cong
+[21:26:20] [KNCMS][Log-Map]:Map Apartment da load thanh cong
+[21:26:20] Number of vehicle models: 0
+[21:26:20] [KNCMS][Log-SQL]:Da load thanh cong 14 DropBox
+[21:26:20] [KNCMS][Log-SQL]:Da load thanh cong 0 Door
+[21:26:33] [connection] incoming connection: 127.0.0.1:56259 id: 0
+[21:26:33] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[21:33:25] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[21:33:50] INSERT INTO `inventory` SET `uid` = '31' , `item` = '23' , `amount` = '10'
+[21:33:50] DELETE FROM `inventory_drop` WHERE `id` = '164'
+[21:34:08] ID:0 | Name: 0 | X:1155491584.000000 Y:-990986624.000000 Z:1096187008.000000 | VW: 0 | Inter:0 | PickupID: 19135
+[21:34:21] ID:1 | Name: 0 | X:1155487616.000000 Y:-990990016.000000 Z:1096186624.000000 | VW: 0 | Inter:0 | PickupID: 19135
+[21:35:05] sscanf warning: Format specifier does not match parameter count.
+[21:35:09] sscanf warning: Format specifier does not match parameter count.
+[21:41:56] sscanf warning: Format specifier does not match parameter count.
+Console input: cc
+[21:42:05] sscanf warning: Format specifier does not match parameter count.
+[21:43:49] Character Save: Khoi Nguyenz | AccountID: 31
+[21:43:49] [part] Khoi_Nguyenz has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[21:43:51] weburl = "www.sa-mp.com"  (string)
+[21:43:51] password = ""  (string)
+[21:43:51] filterscripts = ""  (string)
+[21:43:51] 
+[21:43:51] Server Plugins
+[21:43:51] --------------
+[21:43:51]  Loading plugin: mysql
+[21:43:51]  >> plugin.mysql: R41-4 successfully loaded.
+[21:43:51]   Loaded.
+[21:43:51]  Loading plugin: whirlpool
+[21:43:51]  
+[21:43:51]  ==================
+[21:43:51]  
+[21:43:51]   Whirlpool loaded
+[21:43:51]  
+[21:43:51]  ==================
+[21:43:51]  
+[21:43:51]   Loaded.
+[21:43:51]  Loading plugin: sscanf
+[21:43:51] 
+
+[21:43:51]  ===============================
+
+[21:43:51]       sscanf plugin loaded.     
+
+[21:43:51]          Version:  2.8.3        
+
+[21:43:51]   (c) 2018 Alex "Y_Less" Cole  
+
+[21:43:51]  ===============================
+
+[21:43:51]   Loaded.
+[21:43:51]  Loading plugin: streamer
+[21:43:51] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[21:43:51]   Loaded.
+[21:43:51]  Loaded 4 plugins.
+
+[21:43:51] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:43:51] [artwork:crc] logo.txd CRC = 0xE9684C78
+[21:43:51] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:43:51] [artwork:crc] joinspawn.txd CRC = 0x39E48CC2
+[21:43:51] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:43:51] [artwork:crc] login.txd CRC = 0x6B804645
+[21:43:51] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:43:51] [artwork:crc] inv.txd CRC = 0x3C7B1C5D
+[21:43:51] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:43:51] [artwork:crc] 247.txd CRC = 0x5C708255
+[21:43:51] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:43:51] [artwork:crc] Inventory.txd CRC = 0x70C676BF
+[21:43:51] [artwork:crc] newbiespawn.dff CRC = 0x2499225A
+[21:43:51] [artwork:crc] newbiespawn.txd CRC = 0x5624ADB2
+[21:43:51] [artwork:crc] congvien.dff CRC = 0x94D2954
+[21:43:51] [artwork:crc] congvien.txd CRC = 0xECDCE39F
+[21:43:51] [artwork:crc] honuoc.dff CRC = 0xFBE95451
+[21:43:51] [artwork:crc] honuoc.txd CRC = 0xC8354AE8
+[21:43:51] 
+[21:43:51] Filterscripts
+[21:43:51] ---------------
+[21:43:51]   Loaded 0 filterscripts.
+
+[21:43:51] AMX (43729000) loaded
+[21:43:51]  
+[21:43:51]  
+[21:43:51]  
+[21:43:51]  ======================================= 
+[21:43:51]  |                                     | 
+[21:43:51]  |        YSI version 4.00.0001        | 
+[21:43:51]  |        By Alex "Y_Less" Cole        | 
+[21:43:51]  |                                     | 
+[21:43:51]  ======================================= 
+[21:43:51]  
+[21:43:51] > Ket noi den du lieu thanh cong.
+[21:43:51] [KNCMS][Log-Map]:Map Newbie spawn da load thanh cong
+[21:43:51] [KNCMS][Log-Map]:Map LSRP park da load thanh cong
+[21:43:51] [KNCMS][Log-Map]:Map Apartment da load thanh cong
+[21:43:51] Number of vehicle models: 0
+[21:43:51] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
+[21:43:51] [KNCMS][Log-SQL]:Da load thanh cong 1 Door

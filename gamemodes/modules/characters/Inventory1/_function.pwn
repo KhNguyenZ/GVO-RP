@@ -284,7 +284,6 @@ func:DestroyInvItem(playerid, page, index)
 	dropitemamount[playerid] = PlayerInvItem[playerid][PlayerPage[playerid]][pInvAmount][index];
 
 	DropItem(playerid, dropitemid[playerid],dropitemamount[playerid]);
-	// printf("Item: %d | Amount: %d ", dropitemid[playerid],dropitemamount[playerid]);
 	return 1;
 }
 func:PickDropBox(playerid)
@@ -302,7 +301,6 @@ func:PickDropBox(playerid)
 	{
 		SetPVarInt(playerid, #PickingTime, 10);
 		PickingDropBox[playerid] = 1;
-		printf("Item: %d | Amount: %d | SQLID: %d | ID: %d",DropItemInfo[dropboxid][d_itemid], DropItemInfo[dropboxid][d_amount],DropItemInfo[dropboxid][d_id],dropboxid);
 		SetPVarInt(playerid, #DropBoxID, dropboxid);
 		PickTimer[playerid] = SetTimerEx("OnPlayerPickDropBox", 1000, 0, "i", playerid);
 	}
@@ -314,7 +312,7 @@ func:CreateDropObject(objid, objitemid,objamount, Float:DropObjX, Float:DropObjY
 {
 	new szDrop[1280];
 	format(szDrop, sizeof(szDrop), "{53f55b}#%d \n%s (Amount: %d) {ffffff}\nSu dung {53f55b}H{ffffff} de nhat",objid, itemInfo[objitemid][item_name], objamount);
-	DropItemInfo[objid][d_object] = CreateObject(2969, DropObjX, DropObjY, DropObjZ-1, 0.0, 0.0, 0.0,  100);
+	DropItemInfo[objid][d_object] = CreateDynamicObject(2969, DropObjX, DropObjY, DropObjZ-1, 0.0, 0.0, 0.0);
 	DropItemInfo[objid][d_label] = CreateDynamic3DTextLabel(szDrop, -1, DropObjX, DropObjY, DropObjZ-1, 100);
 	return 1;
 }

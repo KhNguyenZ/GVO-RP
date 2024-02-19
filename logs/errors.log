@@ -1,18 +1,6 @@
-[02/18/24 22:09:20] [plugins/mysql] cache_get_value_name_int: value 'dep traii' is not a number
-[02/18/24 22:09:20] [plugins/mysql] cache_get_value_name_int: field 'Phone' not found
-[02/18/24 22:09:20] [plugins/mysql] cache_get_value_name_int: field 'DanhBa' not found
-[02/18/24 22:09:20] [plugins/mysql] cache_get_value_name_int: field 'Dice' not found
-[02/18/24 22:09:20] [plugins/mysql] cache_get_value_name_int: field 'CanXang' not found
-[02/18/24 22:09:20] [plugins/mysql] cache_get_value_name_int: field 'DayThung' not found
-[02/18/24 22:09:20] [plugins/mysql] cache_get_value_name_int: field 'XiGa' not found
-[02/18/24 22:09:20] [plugins/mysql] cache_get_value_name_int: field 'Drink' not found
-[02/18/24 22:09:20] [plugins/mysql] cache_get_value_name_int: field 'BinhSonXe' not found
-[02/18/24 22:09:20] [plugins/mysql] cache_get_value_name_int: field 'Radio' not found
-[02/18/24 22:09:20] [plugins/mysql] cache_get_value_name_int: field 'MatNa' not found
-[02/18/24 22:10:47] [plugins/mysql] mysql_format: destination size '300' is too small
-[02/18/24 22:10:47] [plugins/mysql] mysql_format: destination size '300' is too small
-[02/18/24 22:10:47] [plugins/mysql] mysql_format: destination size '300' is too small
-[02/18/24 22:10:47] [plugins/mysql] mysql_format: destination size '300' is too small
-[02/18/24 22:10:47] [plugins/mysql] mysql_format: destination size '300' is too small
-[02/18/24 22:10:47] [plugins/mysql] mysql_format: destination size '300' is too small
-[02/18/24 22:10:47] [plugins/mysql] error #1064 while executing query "UPDATE `players` SET PosX = '1811.473022', PosY = '-1892.507568', PosZ = '13.422953', PosA = '348.855103', Health = '100.000000', Armour = '0.000000', TanSo = '0', Cash = '1000', AdminLevel = '0', Interior = '0', VW = '0', Phone = '0', DanhBa = '0', Dice = '0', CanXang = '0', DayThung = '0',": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[02/19/24 21:43:51] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[02/19/24 21:43:51] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[02/19/24 21:43:51] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[02/19/24 21:43:51] [plugins/mysql] cache_get_value_name_float: value 'NULL' is not a number
+[02/19/24 21:43:51] [plugins/mysql] cache_get_value_name_float: value 'NULL' is not a number
+[02/19/24 21:43:51] [plugins/mysql] cache_get_value_name_float: value 'NULL' is not a number

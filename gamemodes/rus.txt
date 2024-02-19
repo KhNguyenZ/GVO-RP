@@ -1,3 +1,7 @@
+./modules/dynamic/Doors/cmd.pwn(123) : ïđåäóïđåæäåíèå 202: êîëè÷åṇ̃âî àđăó́åị́îâ íå ñîâïàäàạ̊ ñ îáúÿâëåíèǻ
+./modules/dynamic/Doors/cmd.pwn(123) : ïđåäóïđåæäåíèå 202: êîëè÷åṇ̃âî àđăó́åị́îâ íå ñîâïàäàạ̊ ñ îáúÿâëåíèǻ
 ./modules/dynamic/Biz/callback.pwn(13) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "count"
 Pawn compiler 3.2.3664	 	 	Copyright (c) 1997-2016, ITB CompuPhase
 
+
+Ïđåäóïđåæäåíèé:2.

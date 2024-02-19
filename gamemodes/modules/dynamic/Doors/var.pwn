@@ -1,5 +1,5 @@
 #define   						MAX_DYNAMIC_DOORS					3000
-
+#define                         DIALOG_A_DOOR 		150
 enum door_e
 {
 	door_id,

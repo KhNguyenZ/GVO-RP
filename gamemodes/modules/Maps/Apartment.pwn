@@ -549,7 +549,7 @@ hook OnGameModeInit(){
 	ApartmentObjects = CreateObject(2394, 1439.277832, -1225.358520, 152.161712, 0.000000, 0.000000, 0.000000, 300.00);
 	ApartmentObjects = CreateObject(2384, 1439.635864, -1225.495727, 152.657699, 0.000000, 0.000000, 270.000000, 300.00);
 	ApartmentObjects = CreateObject(2384, 1438.845581, -1225.495727, 152.657699, 0.000000, 0.000000, 270.000000, 300.00);
-	LogConsole("[Map Loading] Map Apartment da load thanh cong","Map");
+	LogConsole("Map Apartment da load thanh cong","Map");
 	return 1;
 }
 

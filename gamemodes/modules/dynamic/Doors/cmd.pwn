@@ -27,6 +27,8 @@ CMD:taodoor(playerid, params[])
 	mysql_format(Handle(), queryzzzzz, sizeof(queryzzzzz), "INSERT INTO `doors` SET \
 		`id` = '%d' , `Name` = '%s', `ExPosX` = '%f' , `ExPosY` = '%f' , `ExPosZ` = '%f', `PickupID` = '%d' ",iddoor, name, dPos[0], dPos[1], dPos[2], pickup);
 	mysql_tquery(Handle(),queryzzzzz, "OnAdminDoorCreate", "iisfffi", playerid, iddoor,name, dPos[0], dPos[1], dPos[2],pickup);
+
+
 	return 1;
 }
 
@@ -35,7 +37,7 @@ CMD:dname(playerid, params[])
 	new DoorID, DoorName[128] = EOS;
 	if(CheckAdmin(playerid, 4))
 	{
-		if(sscanf(params, "is[64]()", DoorID, DoorName))
+		if(sscanf(params, "ds[128]", DoorID, DoorName))
 		{
 			SendClientMessage(playerid, -1, "SU DUNG: /dname [door id] [Name]");
 		}
@@ -116,7 +118,11 @@ CMD:dedit(playerid, params[])
 	else SendClientMessage(playerid, -1, "Ban khong co quyen su dung lenh nay");
 	return 1;
 }
-
+CMD:adoor(playerid, params[])
+{
+	ShowPlayerDialog(playerid, DIALOG_A_DOOR, DIALOG_STYLE_LIST, "Admin Control Door", "Nhap ID door can thao tac", ">>", "<<");
+	return 1;
+}
 
 CMD:enter(playerid, params[])
 {

@@ -19,7 +19,10 @@ hook OnGameModeInit()
 		SetTimerEx("ReturnExitGamemode_", 5000, 0, "");
 		return (~0);
 	}
-	else print("> Ket noi den du lieu thanh cong."); 
+	else{
+		CallRemoteFunction("SSA_Mysql_Intit", "");
+		print("> Ket noi den du lieu thanh cong.");
+	} 
 	return 1;
 }
 

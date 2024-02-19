@@ -39,7 +39,10 @@ public Doors_Load()
 
 		count++;
 	}
-	printf("Da load thanh cong %d Door", count);
+
+	new load_msg[128];
+	format(load_msg, sizeof(load_msg),"Da load thanh cong %d Door", count);
+	LogConsole(load_msg, "SQL");
 	return 1;
 }
 forward OnAdminDoorCreate(playerid, iddoor,name[], x,y,z,pickup);

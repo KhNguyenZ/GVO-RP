@@ -1,3 +1,9 @@
+forward SSA_Mysql_Intit();
+public SSA_Mysql_Intit()
+{
+	LoadInventoryDrop();
+}
+
 public OnPlayerConnect(playerid)
 {
 	PlayerSelectSlot[playerid] = -1;

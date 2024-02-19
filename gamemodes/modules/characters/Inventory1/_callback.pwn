@@ -1,9 +1,11 @@
 #include <YSI\y_hooks>
 
-
 hook OnPlayerConnect(playerid)
 {
 	PlayerPage[playerid] = 1;
+}
+func:LoadInventoryDrop()
+{
 	mysql_tquery(Handle(), "SELECT * FROM `inventory_drop`", "OnLoadDropInv", "");
 	return 1;
 }
@@ -139,8 +141,8 @@ public OnPlayerAddItem(playerid)
 	ReLoadPlayerInventory(playerid);
 }
 
-forward OnLoadDropInv(playerid);
-public OnLoadDropInv(playerid)
+forward OnLoadDropInv();
+public OnLoadDropInv()
 {
 	for(new i = 0; i < cache_num_rows(); i++)
 	{
@@ -156,6 +158,9 @@ public OnLoadDropInv(playerid)
 
 		CreateDropObject(DropItemInfo[i][d_id], DropItemInfo[i][d_itemid],DropItemInfo[i][d_amount],DropItemInfo[i][d_pos][0],DropItemInfo[i][d_pos][1],DropItemInfo[i][d_pos][2]);
 	}
+	new load_msg[128];
+	format(load_msg, sizeof(load_msg),"Da load thanh cong %d DropBox", cache_num_rows());
+	LogConsole(load_msg, "SQL");
 }
 
 
@@ -184,8 +189,6 @@ public OnPlayerPickDropBox(playerid)
 	}
 	else {
 
-		printf("----- Item: %d | Amount: %d | SQLID: %d | ID: %d",itemid, amount,sqlid,dropid);
-
 		AddPlayerItem(playerid, itemid, amount);
 		format(PickDropBox_msg, sizeof(PickDropBox_msg), "Ban da nhan duoc vat pham %s , so luong la %d", itemInfo[itemid][item_name], amount);
 		SendClientMessage(playerid, -1, PickDropBox_msg);
@@ -198,8 +201,8 @@ public OnPlayerPickDropBox(playerid)
 		printf("%s", drop_query);
 		mysql_tquery(Handle(), drop_query, "OnDeleteDropItem", "");
 
-		DestroyObject(DropItemInfo[dropid][d_object]);
-		DestroyDynamic3DTextLabel(DropItemInfo[dropid][d_label]);
+		DestroyDynamicObject(DropItemInfo[sqlid][d_object]);
+		DestroyDynamic3DTextLabel(DropItemInfo[sqlid][d_label]);
 
 		KillTimer(PickTimer[playerid]);
 	}

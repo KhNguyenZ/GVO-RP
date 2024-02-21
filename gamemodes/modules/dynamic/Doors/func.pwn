@@ -25,7 +25,6 @@ func:SaveDynamicDoor(doorid)
 	DoorInfo[doorid][door_group],
 	DoorInfo[doorid][door_vip],
 	DoorInfo[doorid][door_pickup],
-	DoorInfo[doorid][door_pickup],
 	DoorInfo[doorid][door_name],
 	doorid );
 
@@ -38,6 +37,7 @@ func:SaveDynamicDoor(doorid)
 		LogConsole(door_str, "Door");
 	}
 	cache_delete(update_expos);
+	printf("Pickup ID for Door ID %d: %d", doorid, DoorInfo[doorid][door_pickup]);
 }
 
 func:INVALID_DOORS()

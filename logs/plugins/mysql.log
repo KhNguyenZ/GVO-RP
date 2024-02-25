@@ -5138,3 +5138,501 @@
 [02/19/24 21:43:51] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
 [02/19/24 21:43:51] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
 [02/19/24 21:43:51] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/20/24 21:03:17] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/20/24 21:03:17] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/20/24 21:03:17] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/20/24 21:03:17] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/20/24 21:03:17] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/20/24 21:03:17] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/20/24 22:22:48] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/20/24 22:22:48] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/20/24 22:22:48] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/20/24 22:22:48] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/20/24 22:22:48] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/20/24 22:22:48] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/20/24 22:22:48] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/20/24 22:22:48] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/20/24 22:22:48] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/20/24 22:22:48] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/20/24 22:22:48] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/20/24 22:22:54] [ERROR] mysql_format: destination size '300' is too small
+[02/20/24 22:22:54] [ERROR] mysql_format: destination size '300' is too small
+[02/20/24 22:22:54] [ERROR] mysql_format: destination size '300' is too small
+[02/20/24 22:22:54] [ERROR] mysql_format: destination size '300' is too small
+[02/20/24 22:22:54] [ERROR] mysql_format: destination size '300' is too small
+[02/20/24 22:22:54] [ERROR] mysql_format: destination size '300' is too small
+[02/20/24 22:22:54] [ERROR] error #1064 while executing query "UPDATE `players` SET PosX = '1776.106812', PosY = '-1896.589355', PosZ = '13.397214', PosA = '263.262665', Health = '100.000000', Armour = '0.000000', TanSo = '0', Cash = '1000', AdminLevel = '0', Interior = '0', VW = '0', Phone = '0', DanhBa = '0', Dice = '0', CanXang = '0', DayThung = '0',": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[02/21/24 14:29:05] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/21/24 14:29:05] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/21/24 14:29:05] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/21/24 14:29:05] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/21/24 14:29:05] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/21/24 14:29:05] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/21/24 14:29:25] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/21/24 14:29:25] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/21/24 14:29:25] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/21/24 14:29:25] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/21/24 14:29:25] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/21/24 14:29:25] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/21/24 14:29:25] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/21/24 14:29:25] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/21/24 14:29:25] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/21/24 14:29:25] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/21/24 14:29:25] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/21/24 14:30:29] [ERROR] mysql_format: destination size '300' is too small
+[02/21/24 14:30:29] [ERROR] mysql_format: destination size '300' is too small
+[02/21/24 14:30:29] [ERROR] mysql_format: destination size '300' is too small
+[02/21/24 14:30:29] [ERROR] mysql_format: destination size '300' is too small
+[02/21/24 14:30:29] [ERROR] mysql_format: destination size '300' is too small
+[02/21/24 14:30:29] [ERROR] mysql_format: destination size '300' is too small
+[02/21/24 14:30:29] [ERROR] error #1064 while executing query "UPDATE `players` SET PosX = '1767.390015', PosY = '-1895.749146', PosZ = '13.584767', PosA = '267.168823', Health = '100.000000', Armour = '0.000000', TanSo = '0', Cash = '1000', AdminLevel = '0', Interior = '0', VW = '0', Phone = '0', DanhBa = '0', Dice = '0', CanXang = '0', DayThung = '0',": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[02/21/24 14:30:47] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/21/24 14:30:47] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/21/24 14:30:47] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/21/24 14:30:47] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/21/24 14:30:47] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/21/24 14:30:47] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/21/24 14:30:47] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/21/24 14:30:47] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/21/24 14:30:47] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/21/24 14:30:47] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/21/24 14:30:47] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/21/24 14:31:14] [ERROR] mysql_format: destination size '300' is too small
+[02/21/24 14:31:14] [ERROR] mysql_format: destination size '300' is too small
+[02/21/24 14:31:14] [ERROR] mysql_format: destination size '300' is too small
+[02/21/24 14:31:14] [ERROR] mysql_format: destination size '300' is too small
+[02/21/24 14:31:14] [ERROR] mysql_format: destination size '300' is too small
+[02/21/24 14:31:14] [ERROR] mysql_format: destination size '300' is too small
+[02/21/24 14:31:14] [ERROR] error #1064 while executing query "UPDATE `players` SET PosX = '1766.935059', PosY = '-1894.369263', PosZ = '13.584200', PosA = '266.609741', Health = '100.000000', Armour = '0.000000', TanSo = '0', Cash = '1000', AdminLevel = '0', Interior = '0', VW = '0', Phone = '0', DanhBa = '0', Dice = '0', CanXang = '0', DayThung = '0',": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[02/22/24 12:52:09] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 12:52:09] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 12:52:09] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 12:52:09] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 12:52:09] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 12:52:09] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:00:45] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:00:45] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:00:45] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:00:45] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:00:45] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:00:45] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:01:17] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:01:17] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:01:17] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:01:17] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:01:17] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:01:17] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:03:55] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/22/24 14:03:55] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/22/24 14:03:55] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/22/24 14:03:55] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/22/24 14:03:55] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/22/24 14:03:55] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/22/24 14:03:55] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/22/24 14:03:55] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/22/24 14:03:55] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/22/24 14:03:55] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/22/24 14:03:55] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/22/24 14:04:09] [ERROR] mysql_format: destination size '300' is too small
+[02/22/24 14:04:09] [ERROR] mysql_format: destination size '300' is too small
+[02/22/24 14:04:09] [ERROR] mysql_format: destination size '300' is too small
+[02/22/24 14:04:09] [ERROR] mysql_format: destination size '300' is too small
+[02/22/24 14:04:09] [ERROR] mysql_format: destination size '300' is too small
+[02/22/24 14:04:09] [ERROR] mysql_format: destination size '300' is too small
+[02/22/24 14:04:09] [ERROR] error #1064 while executing query "UPDATE `players` SET PosX = '1767.624878', PosY = '-1895.439697', PosZ = '13.584311', PosA = '104.549759', Health = '100.000000', Armour = '0.000000', TanSo = '0', Cash = '1000', AdminLevel = '0', Interior = '0', VW = '0', Phone = '0', DanhBa = '0', Dice = '0', CanXang = '0', DayThung = '0',": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[02/22/24 14:04:24] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/22/24 14:04:24] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/22/24 14:04:24] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/22/24 14:04:24] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/22/24 14:04:24] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/22/24 14:04:24] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/22/24 14:04:24] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/22/24 14:04:24] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/22/24 14:04:24] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/22/24 14:04:24] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/22/24 14:04:24] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/22/24 14:04:26] [ERROR] mysql_format: destination size '300' is too small
+[02/22/24 14:04:26] [ERROR] mysql_format: destination size '300' is too small
+[02/22/24 14:04:26] [ERROR] mysql_format: destination size '300' is too small
+[02/22/24 14:04:26] [ERROR] mysql_format: destination size '300' is too small
+[02/22/24 14:04:26] [ERROR] mysql_format: destination size '300' is too small
+[02/22/24 14:04:26] [ERROR] mysql_format: destination size '300' is too small
+[02/22/24 14:04:26] [ERROR] error #1064 while executing query "UPDATE `players` SET PosX = '1754.739136', PosY = '-1895.434448', PosZ = '14.038011', PosA = '-0.000000', Health = '100.000000', Armour = '0.000000', TanSo = '0', Cash = '1000', AdminLevel = '0', Interior = '0', VW = '0', Phone = '0', DanhBa = '0', Dice = '0', CanXang = '0', DayThung = '0',": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[02/22/24 14:05:02] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:05:02] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:05:02] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:05:02] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:05:02] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:05:02] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:05:20] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:05:20] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:05:20] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:05:20] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:05:20] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:05:20] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:05:33] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/22/24 14:05:33] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/22/24 14:05:33] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/22/24 14:05:33] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/22/24 14:05:33] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/22/24 14:05:33] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/22/24 14:05:33] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/22/24 14:05:33] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/22/24 14:05:33] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/22/24 14:05:33] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/22/24 14:05:33] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/22/24 14:05:40] [ERROR] mysql_format: destination size '300' is too small
+[02/22/24 14:05:40] [ERROR] mysql_format: destination size '300' is too small
+[02/22/24 14:05:40] [ERROR] mysql_format: destination size '300' is too small
+[02/22/24 14:05:40] [ERROR] mysql_format: destination size '300' is too small
+[02/22/24 14:05:40] [ERROR] mysql_format: destination size '300' is too small
+[02/22/24 14:05:40] [ERROR] mysql_format: destination size '300' is too small
+[02/22/24 14:05:40] [ERROR] error #1064 while executing query "UPDATE `players` SET PosX = '1784.503052', PosY = '-1897.332764', PosZ = '13.403365', PosA = '266.019958', Health = '100.000000', Armour = '0.000000', TanSo = '0', Cash = '1000', AdminLevel = '0', Interior = '0', VW = '0', Phone = '0', DanhBa = '0', Dice = '0', CanXang = '0', DayThung = '0',": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[02/22/24 14:06:53] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:06:53] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:06:53] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:06:53] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:06:53] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:06:53] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:07:05] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/22/24 14:07:05] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/22/24 14:07:05] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/22/24 14:07:05] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/22/24 14:07:05] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/22/24 14:07:05] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/22/24 14:07:05] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/22/24 14:07:05] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/22/24 14:07:05] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/22/24 14:07:05] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/22/24 14:07:05] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/22/24 14:07:18] [ERROR] mysql_format: destination size '300' is too small
+[02/22/24 14:07:18] [ERROR] mysql_format: destination size '300' is too small
+[02/22/24 14:07:18] [ERROR] mysql_format: destination size '300' is too small
+[02/22/24 14:07:18] [ERROR] mysql_format: destination size '300' is too small
+[02/22/24 14:07:18] [ERROR] mysql_format: destination size '300' is too small
+[02/22/24 14:07:18] [ERROR] mysql_format: destination size '300' is too small
+[02/22/24 14:07:18] [ERROR] error #1064 while executing query "UPDATE `players` SET PosX = '1783.868164', PosY = '-1897.147339', PosZ = '13.402900', PosA = '78.814430', Health = '100.000000', Armour = '0.000000', TanSo = '0', Cash = '1000', AdminLevel = '0', Interior = '0', VW = '0', Phone = '0', DanhBa = '0', Dice = '0', CanXang = '0', DayThung = '0',": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[02/22/24 14:12:22] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:12:22] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:12:22] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:12:22] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:12:22] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:12:22] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:12:36] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/22/24 14:12:36] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/22/24 14:12:36] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/22/24 14:12:36] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/22/24 14:12:36] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/22/24 14:12:36] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/22/24 14:12:36] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/22/24 14:12:36] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/22/24 14:12:36] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/22/24 14:12:36] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/22/24 14:12:36] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/22/24 14:13:35] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/22/24 14:13:35] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/22/24 14:13:35] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/22/24 14:13:35] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/22/24 14:13:35] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/22/24 14:13:35] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/22/24 14:13:35] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/22/24 14:13:35] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/22/24 14:13:35] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/22/24 14:13:35] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/22/24 14:13:35] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/22/24 14:22:41] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:22:41] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:22:41] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:22:41] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:22:41] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:22:41] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:23:43] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:23:43] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:23:43] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:23:43] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:23:43] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:23:43] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:24:04] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/22/24 14:24:04] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/22/24 14:24:04] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/22/24 14:24:04] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/22/24 14:24:04] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/22/24 14:24:04] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/22/24 14:24:04] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/22/24 14:24:04] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/22/24 14:24:04] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/22/24 14:24:04] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/22/24 14:24:04] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/22/24 14:25:42] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:25:42] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:25:42] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:25:42] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:25:42] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:25:42] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:25:54] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/22/24 14:25:54] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/22/24 14:25:54] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/22/24 14:25:54] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/22/24 14:25:54] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/22/24 14:25:54] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/22/24 14:25:54] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/22/24 14:25:54] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/22/24 14:25:54] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/22/24 14:25:54] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/22/24 14:25:54] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/22/24 14:26:53] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:26:53] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:26:53] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:26:53] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:26:53] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:26:53] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:27:07] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/22/24 14:27:07] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/22/24 14:27:07] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/22/24 14:27:07] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/22/24 14:27:07] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/22/24 14:27:07] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/22/24 14:27:07] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/22/24 14:27:07] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/22/24 14:27:07] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/22/24 14:27:07] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/22/24 14:27:07] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/22/24 14:27:23] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:27:23] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:27:23] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:27:23] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:27:23] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:27:23] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:27:35] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/22/24 14:27:35] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/22/24 14:27:35] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/22/24 14:27:35] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/22/24 14:27:35] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/22/24 14:27:35] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/22/24 14:27:35] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/22/24 14:27:35] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/22/24 14:27:35] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/22/24 14:27:35] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/22/24 14:27:35] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/22/24 14:28:54] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:28:54] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:28:54] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:28:54] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:28:54] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:28:54] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:29:10] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/22/24 14:29:10] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/22/24 14:29:10] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/22/24 14:29:10] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/22/24 14:29:10] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/22/24 14:29:10] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/22/24 14:29:10] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/22/24 14:29:10] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/22/24 14:29:10] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/22/24 14:29:10] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/22/24 14:29:10] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/22/24 14:29:42] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:29:42] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:29:42] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:29:42] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:29:42] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:29:42] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:29:50] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:29:50] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:29:50] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:29:50] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:29:50] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:29:50] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:30:03] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/22/24 14:30:03] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/22/24 14:30:03] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/22/24 14:30:03] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/22/24 14:30:03] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/22/24 14:30:03] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/22/24 14:30:03] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/22/24 14:30:03] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/22/24 14:30:03] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/22/24 14:30:03] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/22/24 14:30:03] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/22/24 14:30:55] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:30:55] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:30:55] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:30:55] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:30:55] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:30:55] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:31:06] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/22/24 14:31:06] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/22/24 14:31:06] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/22/24 14:31:06] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/22/24 14:31:06] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/22/24 14:31:06] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/22/24 14:31:06] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/22/24 14:31:06] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/22/24 14:31:06] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/22/24 14:31:06] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/22/24 14:31:06] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/22/24 14:33:50] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:33:50] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:33:50] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:33:50] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:33:50] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:33:50] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:34:02] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/22/24 14:34:02] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/22/24 14:34:02] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/22/24 14:34:02] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/22/24 14:34:02] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/22/24 14:34:02] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/22/24 14:34:02] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/22/24 14:34:02] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/22/24 14:34:02] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/22/24 14:34:02] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/22/24 14:34:02] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/22/24 14:34:55] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:34:55] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:34:55] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:34:55] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:34:55] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:34:55] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:35:09] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/22/24 14:35:09] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/22/24 14:35:09] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/22/24 14:35:09] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/22/24 14:35:09] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/22/24 14:35:09] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/22/24 14:35:09] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/22/24 14:35:09] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/22/24 14:35:09] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/22/24 14:35:09] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/22/24 14:35:09] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/22/24 14:38:25] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:38:25] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:38:25] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:38:25] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:38:25] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:38:25] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:38:37] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/22/24 14:38:37] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/22/24 14:38:37] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/22/24 14:38:37] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/22/24 14:38:37] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/22/24 14:38:37] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/22/24 14:38:37] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/22/24 14:38:37] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/22/24 14:38:37] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/22/24 14:38:37] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/22/24 14:38:37] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/22/24 14:39:25] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:39:25] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:39:25] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:39:25] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:39:25] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:39:25] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:39:36] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/22/24 14:39:36] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/22/24 14:39:36] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/22/24 14:39:36] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/22/24 14:39:36] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/22/24 14:39:36] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/22/24 14:39:36] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/22/24 14:39:36] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/22/24 14:39:36] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/22/24 14:39:36] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/22/24 14:39:36] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/22/24 14:47:16] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:47:16] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:47:16] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:47:16] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:47:16] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:47:16] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:47:28] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/22/24 14:47:28] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/22/24 14:47:28] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/22/24 14:47:28] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/22/24 14:47:28] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/22/24 14:47:28] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/22/24 14:47:28] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/22/24 14:47:28] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/22/24 14:47:28] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/22/24 14:47:28] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/22/24 14:47:28] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/22/24 14:50:19] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:50:19] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:50:19] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:50:19] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:50:19] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:50:19] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:50:31] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/22/24 14:50:31] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/22/24 14:50:31] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/22/24 14:50:31] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/22/24 14:50:31] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/22/24 14:50:31] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/22/24 14:50:31] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/22/24 14:50:31] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/22/24 14:50:31] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/22/24 14:50:31] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/22/24 14:50:31] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/22/24 14:51:34] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:51:34] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:51:34] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:51:34] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:51:34] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:51:34] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:51:47] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:51:47] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:51:47] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:51:47] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:51:47] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:51:47] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:51:59] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/22/24 14:51:59] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/22/24 14:51:59] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/22/24 14:51:59] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/22/24 14:51:59] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/22/24 14:51:59] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/22/24 14:51:59] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/22/24 14:51:59] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/22/24 14:51:59] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/22/24 14:51:59] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/22/24 14:51:59] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/22/24 14:53:16] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:53:16] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:53:16] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:53:16] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:53:16] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:53:16] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:53:27] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/22/24 14:53:27] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/22/24 14:53:27] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/22/24 14:53:27] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/22/24 14:53:27] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/22/24 14:53:27] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/22/24 14:53:27] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/22/24 14:53:27] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/22/24 14:53:27] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/22/24 14:53:27] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/22/24 14:53:27] [ERROR] cache_get_value_name_int: field 'MatNa' not found
+[02/22/24 14:53:37] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:53:37] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:53:37] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:53:37] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:53:37] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:53:37] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:53:48] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:53:48] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:53:48] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[02/22/24 14:53:48] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:53:48] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:53:48] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[02/22/24 14:54:06] [ERROR] cache_get_value_name_int: value 'dep traii' is not a number
+[02/22/24 14:54:06] [ERROR] cache_get_value_name_int: field 'Phone' not found
+[02/22/24 14:54:06] [ERROR] cache_get_value_name_int: field 'DanhBa' not found
+[02/22/24 14:54:06] [ERROR] cache_get_value_name_int: field 'Dice' not found
+[02/22/24 14:54:06] [ERROR] cache_get_value_name_int: field 'CanXang' not found
+[02/22/24 14:54:06] [ERROR] cache_get_value_name_int: field 'DayThung' not found
+[02/22/24 14:54:06] [ERROR] cache_get_value_name_int: field 'XiGa' not found
+[02/22/24 14:54:06] [ERROR] cache_get_value_name_int: field 'Drink' not found
+[02/22/24 14:54:06] [ERROR] cache_get_value_name_int: field 'BinhSonXe' not found
+[02/22/24 14:54:06] [ERROR] cache_get_value_name_int: field 'Radio' not found
+[02/22/24 14:54:06] [ERROR] cache_get_value_name_int: field 'MatNa' not found

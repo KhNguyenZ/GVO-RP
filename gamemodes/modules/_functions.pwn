@@ -1,4 +1,12 @@
-
+func:IsPlayerSpawned(playerid)
+{ 
+    switch(GetPlayerState(playerid))
+    {
+        case PLAYER_STATE_ONFOOT, PLAYER_STATE_DRIVER, PLAYER_STATE_PASSENGER, PLAYER_STATE_SPAWNED:
+            return 1; 
+    } 
+    return 0; 
+} 
 func:player_Login(const playerid)
 {
 	if(IsPlayerConnected(playerid) && Character[playerid][char_Login])

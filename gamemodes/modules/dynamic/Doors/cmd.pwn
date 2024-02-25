@@ -34,7 +34,7 @@ CMD:taodoor(playerid, params[])
 
 CMD:dname(playerid, params[])
 {
-	new DoorID, DoorName[128] = EOS;
+	new DoorID, DoorName[128];
 	if(CheckAdmin(playerid, 4))
 	{
 		if(sscanf(params, "ds[128]", DoorID, DoorName))

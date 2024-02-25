@@ -109,7 +109,12 @@ public OnCharacterLoad(const playerid)
 
 	if(GetPVarInt(playerid, "SetupRegister_") == 0)
     {
-    	ShowPlayerSpawnMenu(playerid);
+    	SetSpawnInfo(playerid, 0, Character[playerid][char_Skin], 1754.7391,-1895.4344,13.5870,0,0, 0,0, 0,0, 0);
+		FadeOutPlayerScreen(playerid);
+  		SetTimerEx("PlayerJoinGameReal", 1000, false, "i", playerid);
+		HidePlayerSpawnMenu(playerid);
+		PlayerSetupping[playerid] = 0;
+		OnPlayerLoad(playerid);
     }
     return 1;
 }

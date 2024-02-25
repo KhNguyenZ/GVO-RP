@@ -331,9 +331,17 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 		format(query, sizeof(query), "SELECT * FROM `players` WHERE `AccID` = '%s'", Character[playerid][char_account_id]);
 		mysql_tquery(Handle(), query, "OnCharacterLoad", "i", playerid);
 
-		ShowPlayerSpawnMenu(playerid);
 		print(query_reg);
 		cache_delete(UpdateCache);
+
+
+		SetSpawnInfo(playerid, 0, Character[playerid][char_Skin], 1754.7391,-1895.4344,13.5870,0,0, 0,0, 0,0, 0);
+		FadeOutPlayerScreen(playerid);
+  		SetTimerEx("PlayerJoinGameReal", 1000, false, "i", playerid);
+		HidePlayerSpawnMenu(playerid);
+		PlayerSetupping[playerid] = 0;
+		OnPlayerLoad(playerid);
+
 	}
 
 	//end

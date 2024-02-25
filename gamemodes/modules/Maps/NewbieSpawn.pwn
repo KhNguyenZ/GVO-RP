@@ -54,7 +54,7 @@ hook OnGameModeInit()
 	MapNewbieSpawn = CreateDynamicObject(19426, 1807.843994, -1901.068115, 14.493512, 90.000000, 0.000000, -1.000000, -1, -1, -1, 1000.00, 1000.00);
 	SetDynamicObjectMaterial(MapNewbieSpawn, 0, 18835, "mickytextures", "whiteforletters", 0x00000000);
 	MapNewbieSpawn = CreateDynamicObject(19482, 1807.737182, -1901.635742, 14.675274, 0.000000, -0.000007, 178.999954, -1, -1, -1, 1000.00, 1000.00);
-	SetDynamicObjectMaterialText(MapNewbieSpawn, 0, "{212c58}Los Santos Roleplay", 130, "Engravers MT", 30, 1, 0x00000000, 0x00000000, 1);
+	SetDynamicObjectMaterialText(MapNewbieSpawn, 0, "{212c58}Sounth Of San Andreas", 130, "Engravers MT", 30, 1, 0x00000000, 0x00000000, 1);
 	MapNewbieSpawn = CreateDynamicObject(19482, 1807.737182, -1901.635742, 14.345273, 0.000000, -0.000007, 178.999954, -1, -1, -1, 1000.00, 1000.00);
 	SetDynamicObjectMaterialText(MapNewbieSpawn, 0, "{000000}Vietnamese Community", 130, "Engravers MT", 25, 1, 0x00000000, 0x00000000, 1);
 	MapNewbieSpawn = CreateDynamicObject(19482, 1807.737182, -1901.635742, 14.075275, 0.000000, -0.000007, 178.999954, -1, -1, -1, 1000.00, 1000.00);

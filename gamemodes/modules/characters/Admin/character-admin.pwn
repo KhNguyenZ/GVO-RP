@@ -69,6 +69,8 @@ new flying[MAX_PLAYERS];
 
 CMD:fly(playerid, params[])
 {
+	if(CheckAdmin(playerid, 3)) return SendClientMessage(playerid, -1, "Ban khong co quyen su dung lenh nay");
+
     new Float:x, Float:y, Float:z;
 	if((flying[playerid] = !flying[playerid]))
 	{
@@ -167,5 +169,43 @@ CMD:gotoco(playerid, params[])
 	HienTextdraw(playerid,"Ban da duoc dich chuyen den vi tri yeu cau.", 2000);
 	SetPlayerPos(playerid, pos[0], pos[1], pos[2]);
 	SetPlayerInterior(playerid, int);
+	return 1;
+}
+
+
+CMD:sethealth(playerid, params[])
+{
+	if(CheckAdmin(playerid, 3)) return SendClientMessage(playerid, -1, "Ban khong co quyen su dung lenh nay");
+	new playerset, Float:health;
+	if(sscanf(params, "if", playerset, health)) return SendClientMessage(playerid, -1, "Su dung: /sethealth [playerid] [health] ");
+
+	SetPlayerHealth(playerid, health);
+
+	HienTextdraw(playerid, "Ban da set health thanh cong", 3000);
+	return 1;
+}
+
+
+CMD:setarmour(playerid, params[])
+{
+	if(CheckAdmin(playerid, 3)) return SendClientMessage(playerid, -1, "Ban khong co quyen su dung lenh nay");
+	new playerset, Float:armour;
+	if(sscanf(params, "if", playerset, armour)) return SendClientMessage(playerid, -1, "Su dung: /setarmour [playerid] [armour] ");
+
+	SetPlayerArmour(playerid, armour);
+
+	HienTextdraw(playerid, "Ban da set armour thanh cong", 3000);
+	return 1;
+}
+
+CMD:givegun(playerid, params[])
+{
+	if(CheckAdmin(playerid, 3)) return SendClientMessage(playerid, -1, "Ban khong co quyen su dung lenh nay");
+	new playerset, gun, ammo;
+	if(sscanf(params, "iii", playerset, gun,ammo)) return SendClientMessage(playerid, -1, "Su dung: /givegun [playerid] [gun] [ammo]");
+
+	GivePlayerWeapon(playerid, gun, ammo);
+
+	HienTextdraw(playerid, "Ban da give gun thanh cong", 3000);
 	return 1;
 }

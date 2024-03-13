@@ -10,6 +10,8 @@
 #include <YSI\y_ini>
 #include <notify>
 #include <DialogCenter>
+#include <Veh-Lib\tdw_vyengine> 
+// #include <easyDialog>
 #undef MAX_PLAYERS
 #define MAX_PLAYERS 500
 #pragma disablerecursion
@@ -43,6 +45,7 @@ main()
 #include "./modules/_callback.pwn"
 #include "./modules/_core.pwn"
 #include "./modules/_textdraw.pwn"
+#include "./modules/color.pwn"
 
 #include "./modules/server/ProgressLoad.pwn"
 
@@ -84,9 +87,16 @@ main()
 #include "./modules/dynamic/Biz/247/textdraw.pwn"
 #include "./modules/dynamic/Biz/247/func.pwn"
 //map
-#include "./modules/Maps/NewbieSpawn.pwn"
-#include "./modules/Maps/LSRPpark.pwn"
-#include "./modules/Maps/Apartment.pwn"
+// #include "./modules/Maps/NewbieSpawn.pwn"
+// #include "./modules/Maps/LSRPpark.pwn"
+// #include "./modules/Maps/Apartment.pwn"
+
+#include "./modules/Vehicle/Core/_var.pwn"
+#include "./modules/Vehicle/Core/_func.pwn"
+#include "./modules/Vehicle/Core/_callback.pwn"
+#include "./modules/Vehicle/Core/_cmd.pwn"
+#include "./modules/Vehicle/Speedo/_textdraw.pwn"
+
 public OnGameModeExit()
 {
 	mysql_close(Handle());

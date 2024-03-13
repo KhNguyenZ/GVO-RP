@@ -12,7 +12,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawFont(playerid, ItemBackground[playerid][0], 1);
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][0], 1);
 
-	ItemBackground[playerid][1] = CreatePlayerTextDraw(playerid, 97.000, 123.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][1] = CreatePlayerTextDraw(playerid, 97.000, 123.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][1], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][1], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][1], -1);
@@ -23,7 +23,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][1], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][1], 1);
 
-	ItemBackground[playerid][2] = CreatePlayerTextDraw(playerid, 131.000, 123.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][2] = CreatePlayerTextDraw(playerid, 131.000, 123.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][2], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][2], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][2], -1);
@@ -34,7 +34,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][2], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][2], 1);
 
-	ItemBackground[playerid][3] = CreatePlayerTextDraw(playerid, 165.000, 123.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][3] = CreatePlayerTextDraw(playerid, 165.000, 123.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][3], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][3], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][3], -1);
@@ -45,7 +45,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][3], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][3], 1);
 
-	ItemBackground[playerid][4] = CreatePlayerTextDraw(playerid, 199.000, 123.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][4] = CreatePlayerTextDraw(playerid, 199.000, 123.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][4], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][4], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][4], -1);
@@ -56,7 +56,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][4], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][4], 1);
 
-	ItemBackground[playerid][5] = CreatePlayerTextDraw(playerid, 233.000, 123.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][5] = CreatePlayerTextDraw(playerid, 233.000, 123.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][5], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][5], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][5], -1);
@@ -67,7 +67,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][5], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][5], 1);
 
-	ItemBackground[playerid][6] = CreatePlayerTextDraw(playerid, 97.000, 166.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][6] = CreatePlayerTextDraw(playerid, 97.000, 166.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][6], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][6], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][6], -1);
@@ -78,7 +78,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][6], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][6], 1);
 
-	ItemBackground[playerid][7] = CreatePlayerTextDraw(playerid, 131.000, 166.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][7] = CreatePlayerTextDraw(playerid, 131.000, 166.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][7], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][7], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][7], -1);
@@ -89,7 +89,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][7], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][7], 1);
 
-	ItemBackground[playerid][8] = CreatePlayerTextDraw(playerid, 165.000, 166.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][8] = CreatePlayerTextDraw(playerid, 165.000, 166.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][8], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][8], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][8], -1);
@@ -100,7 +100,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][8], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][8], 1);
 
-	ItemBackground[playerid][9] = CreatePlayerTextDraw(playerid, 199.000, 166.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][9] = CreatePlayerTextDraw(playerid, 199.000, 166.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][9], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][9], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][9], -1);
@@ -111,7 +111,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][9], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][9], 1);
 
-	ItemBackground[playerid][10] = CreatePlayerTextDraw(playerid, 233.000, 166.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][10] = CreatePlayerTextDraw(playerid, 233.000, 166.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][10], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][10], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][10], -1);
@@ -122,7 +122,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][10], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][10], 1);
 
-	ItemBackground[playerid][11] = CreatePlayerTextDraw(playerid, 97.000, 210.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][11] = CreatePlayerTextDraw(playerid, 97.000, 210.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][11], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][11], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][11], -1);
@@ -133,7 +133,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][11], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][11], 1);
 
-	ItemBackground[playerid][12] = CreatePlayerTextDraw(playerid, 131.000, 210.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][12] = CreatePlayerTextDraw(playerid, 131.000, 210.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][12], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][12], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][12], -1);
@@ -144,7 +144,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][12], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][12], 1);
 
-	ItemBackground[playerid][13] = CreatePlayerTextDraw(playerid, 165.000, 210.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][13] = CreatePlayerTextDraw(playerid, 165.000, 210.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][13], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][13], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][13], -1);
@@ -155,7 +155,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][13], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][13], 1);
 
-	ItemBackground[playerid][14] = CreatePlayerTextDraw(playerid, 199.000, 210.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][14] = CreatePlayerTextDraw(playerid, 199.000, 210.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][14], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][14], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][14], -1);
@@ -166,7 +166,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][14], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][14], 1);
 
-	ItemBackground[playerid][15] = CreatePlayerTextDraw(playerid, 233.000, 210.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][15] = CreatePlayerTextDraw(playerid, 233.000, 210.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][15], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][15], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][15], -1);
@@ -177,7 +177,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][15], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][15], 1);
 
-	ItemBackground[playerid][16] = CreatePlayerTextDraw(playerid, 97.000, 254.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][16] = CreatePlayerTextDraw(playerid, 97.000, 254.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][16], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][16], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][16], -1);
@@ -188,7 +188,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][16], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][16], 1);
 
-	ItemBackground[playerid][17] = CreatePlayerTextDraw(playerid, 131.000, 254.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][17] = CreatePlayerTextDraw(playerid, 131.000, 254.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][17], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][17], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][17], -1);
@@ -199,7 +199,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][17], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][17], 1);
 
-	ItemBackground[playerid][18] = CreatePlayerTextDraw(playerid, 165.000, 254.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][18] = CreatePlayerTextDraw(playerid, 165.000, 254.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][18], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][18], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][18], -1);
@@ -210,7 +210,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][18], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][18], 1);
 
-	ItemBackground[playerid][19] = CreatePlayerTextDraw(playerid, 199.000, 254.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][19] = CreatePlayerTextDraw(playerid, 199.000, 254.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][19], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][19], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][19], -1);
@@ -221,7 +221,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][19], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][19], 1);
 
-	ItemBackground[playerid][20] = CreatePlayerTextDraw(playerid, 233.000, 254.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][20] = CreatePlayerTextDraw(playerid, 233.000, 254.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][20], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][20], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][20], -1);
@@ -232,7 +232,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][20], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][20], 1);
 
-	ItemBackground[playerid][21] = CreatePlayerTextDraw(playerid, 346.000, 123.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][21] = CreatePlayerTextDraw(playerid, 346.000, 123.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][21], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][21], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][21], -1);
@@ -243,7 +243,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][21], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][21], 1);
 
-	ItemBackground[playerid][22] = CreatePlayerTextDraw(playerid, 380.000, 123.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][22] = CreatePlayerTextDraw(playerid, 380.000, 123.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][22], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][22], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][22], -1);
@@ -254,7 +254,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][22], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][22], 1);
 
-	ItemBackground[playerid][23] = CreatePlayerTextDraw(playerid, 414.000, 123.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][23] = CreatePlayerTextDraw(playerid, 414.000, 123.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][23], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][23], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][23], -1);
@@ -265,7 +265,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][23], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][23], 1);
 
-	ItemBackground[playerid][24] = CreatePlayerTextDraw(playerid, 448.000, 123.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][24] = CreatePlayerTextDraw(playerid, 448.000, 123.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][24], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][24], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][24], -1);
@@ -276,7 +276,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][24], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][24], 1);
 
-	ItemBackground[playerid][25] = CreatePlayerTextDraw(playerid, 482.000, 123.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][25] = CreatePlayerTextDraw(playerid, 482.000, 123.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][25], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][25], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][25], -1);
@@ -287,7 +287,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][25], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][25], 1);
 
-	ItemBackground[playerid][26] = CreatePlayerTextDraw(playerid, 346.000, 166.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][26] = CreatePlayerTextDraw(playerid, 346.000, 166.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][26], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][26], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][26], -1);
@@ -298,7 +298,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][26], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][26], 1);
 
-	ItemBackground[playerid][27] = CreatePlayerTextDraw(playerid, 380.000, 166.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][27] = CreatePlayerTextDraw(playerid, 380.000, 166.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][27], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][27], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][27], -1);
@@ -309,7 +309,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][27], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][27], 1);
 
-	ItemBackground[playerid][28] = CreatePlayerTextDraw(playerid, 414.000, 166.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][28] = CreatePlayerTextDraw(playerid, 414.000, 166.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][28], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][28], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][28], -1);
@@ -320,7 +320,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][28], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][28], 1);
 
-	ItemBackground[playerid][29] = CreatePlayerTextDraw(playerid, 448.000, 166.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][29] = CreatePlayerTextDraw(playerid, 448.000, 166.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][29], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][29], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][29], -1);
@@ -331,7 +331,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][29], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][29], 1);
 
-	ItemBackground[playerid][30] = CreatePlayerTextDraw(playerid, 482.000, 166.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][30] = CreatePlayerTextDraw(playerid, 482.000, 166.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][30], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][30], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][30], -1);
@@ -342,7 +342,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][30], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][30], 1);
 
-	ItemBackground[playerid][31] = CreatePlayerTextDraw(playerid, 346.000, 210.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][31] = CreatePlayerTextDraw(playerid, 346.000, 210.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][31], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][31], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][31], -1);
@@ -353,7 +353,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][31], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][31], 1);
 
-	ItemBackground[playerid][32] = CreatePlayerTextDraw(playerid, 380.000, 210.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][32] = CreatePlayerTextDraw(playerid, 380.000, 210.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][32], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][32], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][32], -1);
@@ -364,7 +364,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][32], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][32], 1);
 
-	ItemBackground[playerid][33] = CreatePlayerTextDraw(playerid, 414.000, 210.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][33] = CreatePlayerTextDraw(playerid, 414.000, 210.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][33], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][33], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][33], -1);
@@ -375,7 +375,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][33], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][33], 1);
 
-	ItemBackground[playerid][34] = CreatePlayerTextDraw(playerid, 448.000, 210.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][34] = CreatePlayerTextDraw(playerid, 448.000, 210.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][34], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][34], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][34], -1);
@@ -386,7 +386,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][34], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][34], 1);
 
-	ItemBackground[playerid][35] = CreatePlayerTextDraw(playerid, 482.000, 210.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][35] = CreatePlayerTextDraw(playerid, 482.000, 210.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][35], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][35], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][35], -1);
@@ -397,7 +397,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][35], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][35], 1);
 
-	ItemBackground[playerid][36] = CreatePlayerTextDraw(playerid, 346.000, 254.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][36] = CreatePlayerTextDraw(playerid, 346.000, 254.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][36], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][36], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][36], -1);
@@ -408,7 +408,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][36], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][36], 1);
 
-	ItemBackground[playerid][37] = CreatePlayerTextDraw(playerid, 380.000, 254.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][37] = CreatePlayerTextDraw(playerid, 380.000, 254.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][37], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][37], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][37], -1);
@@ -419,7 +419,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][37], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][37], 1);
 
-	ItemBackground[playerid][38] = CreatePlayerTextDraw(playerid, 414.000, 254.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][38] = CreatePlayerTextDraw(playerid, 414.000, 254.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][38], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][38], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][38], -1);
@@ -430,7 +430,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][38], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][38], 1);
 
-	ItemBackground[playerid][39] = CreatePlayerTextDraw(playerid, 448.000, 254.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][39] = CreatePlayerTextDraw(playerid, 448.000, 254.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][39], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][39], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][39], -1);
@@ -441,7 +441,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][39], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][39], 1);
 
-	ItemBackground[playerid][40] = CreatePlayerTextDraw(playerid, 482.000, 254.000, "mdl-2007:bg_item");
+	ItemBackground[playerid][40] = CreatePlayerTextDraw(playerid, 482.000, 254.000, "Inventory:bg_item");
 	PlayerTextDrawTextSize(playerid, ItemBackground[playerid][40], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemBackground[playerid][40], 1);
 	PlayerTextDrawColor(playerid, ItemBackground[playerid][40], -1);
@@ -452,7 +452,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, ItemBackground[playerid][40], 1);
 	PlayerTextDrawSetSelectable(playerid, ItemBackground[playerid][40], 1);
 
-	btnInv[playerid][0] = CreatePlayerTextDraw(playerid, 279.000, 158.000, "mdl-2007:btnUse");
+	btnInv[playerid][0] = CreatePlayerTextDraw(playerid, 279.000, 158.000, "Inventory:btnUse");
 	PlayerTextDrawTextSize(playerid, btnInv[playerid][0], 56.000, 16.000);
 	PlayerTextDrawAlignment(playerid, btnInv[playerid][0], 1);
 	PlayerTextDrawColor(playerid, btnInv[playerid][0], -1);
@@ -463,7 +463,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, btnInv[playerid][0], 1);
 	PlayerTextDrawSetSelectable(playerid, btnInv[playerid][0], 1);
 
-	btnInv[playerid][1] = CreatePlayerTextDraw(playerid, 279.000, 177.000, "mdl-2007:btnDrop");
+	btnInv[playerid][1] = CreatePlayerTextDraw(playerid, 279.000, 177.000, "Inventory:btnDrop");
 	PlayerTextDrawTextSize(playerid, btnInv[playerid][1], 56.000, 16.000);
 	PlayerTextDrawAlignment(playerid, btnInv[playerid][1], 1);
 	PlayerTextDrawColor(playerid, btnInv[playerid][1], -1);
@@ -474,7 +474,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, btnInv[playerid][1], 1);
 	PlayerTextDrawSetSelectable(playerid, btnInv[playerid][1], 1);
 
-	btnInv[playerid][2] = CreatePlayerTextDraw(playerid, 279.000, 197.000, "mdl-2007:btnTrade");
+	btnInv[playerid][2] = CreatePlayerTextDraw(playerid, 279.000, 197.000, "Inventory:btnTrade");
 	PlayerTextDrawTextSize(playerid, btnInv[playerid][2], 56.000, 16.000);
 	PlayerTextDrawAlignment(playerid, btnInv[playerid][2], 1);
 	PlayerTextDrawColor(playerid, btnInv[playerid][2], -1);
@@ -485,7 +485,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, btnInv[playerid][2], 1);
 	PlayerTextDrawSetSelectable(playerid, btnInv[playerid][2], 1);
 
-	btnInv[playerid][3] = CreatePlayerTextDraw(playerid, 279.000, 216.000, "mdl-2007:btnInfo");
+	btnInv[playerid][3] = CreatePlayerTextDraw(playerid, 279.000, 216.000, "Inventory:btnInfo");
 	PlayerTextDrawTextSize(playerid, btnInv[playerid][3], 56.000, 16.000);
 	PlayerTextDrawAlignment(playerid, btnInv[playerid][3], 1);
 	PlayerTextDrawColor(playerid, btnInv[playerid][3], -1);
@@ -518,7 +518,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawFont(playerid, WeightInv[playerid][1], 1);
 	PlayerTextDrawSetProportional(playerid, WeightInv[playerid][1], 1);
 
-	btnPage[playerid][0] = CreatePlayerTextDraw(playerid, 97.000, 298.000, "mdl-2007:btnPre");
+	btnPage[playerid][0] = CreatePlayerTextDraw(playerid, 97.000, 298.000, "Inventory:btnPre");
 	PlayerTextDrawTextSize(playerid, btnPage[playerid][0], 47.000, 12.000);
 	PlayerTextDrawAlignment(playerid, btnPage[playerid][0], 1);
 	PlayerTextDrawColor(playerid, btnPage[playerid][0], -1);
@@ -529,7 +529,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, btnPage[playerid][0], 1);
 	PlayerTextDrawSetSelectable(playerid, btnPage[playerid][0], 1);
 
-	btnPage[playerid][1] = CreatePlayerTextDraw(playerid, 219.000, 298.000, "mdl-2007:btnNext");
+	btnPage[playerid][1] = CreatePlayerTextDraw(playerid, 219.000, 298.000, "Inventory:btnNext");
 	PlayerTextDrawTextSize(playerid, btnPage[playerid][1], 47.000, 12.000);
 	PlayerTextDrawAlignment(playerid, btnPage[playerid][1], 1);
 	PlayerTextDrawColor(playerid, btnPage[playerid][1], -1);
@@ -552,7 +552,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, btnPage[playerid][2], 1);
 	PlayerTextDrawSetSelectable(playerid, btnPage[playerid][2], 1);
 
-	btnPage[playerid][3] = CreatePlayerTextDraw(playerid, 346.000, 298.000, "mdl-2007:btnPre");
+	btnPage[playerid][3] = CreatePlayerTextDraw(playerid, 346.000, 298.000, "Inventory:btnPre");
 	PlayerTextDrawTextSize(playerid, btnPage[playerid][3], 47.000, 12.000);
 	PlayerTextDrawAlignment(playerid, btnPage[playerid][3], 1);
 	PlayerTextDrawColor(playerid, btnPage[playerid][3], -1);
@@ -563,7 +563,7 @@ func:OnPlayerOpenInv(playerid) {
 	PlayerTextDrawSetProportional(playerid, btnPage[playerid][3], 1);
 	PlayerTextDrawSetSelectable(playerid, btnPage[playerid][3], 1);
 
-	btnPage[playerid][4] = CreatePlayerTextDraw(playerid, 468.000, 298.000, "mdl-2007:btnNext");
+	btnPage[playerid][4] = CreatePlayerTextDraw(playerid, 468.000, 298.000, "Inventory:btnNext");
 	PlayerTextDrawTextSize(playerid, btnPage[playerid][4], 47.000, 12.000);
 	PlayerTextDrawAlignment(playerid, btnPage[playerid][4], 1);
 	PlayerTextDrawColor(playerid, btnPage[playerid][4], -1);

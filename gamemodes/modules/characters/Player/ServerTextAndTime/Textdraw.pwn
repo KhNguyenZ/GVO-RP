@@ -3,7 +3,7 @@ new Text: LSRP[1];
 new PlayerText: LSRPTime[MAX_PLAYERS][2];
 hook OnGameModeInit()
 {
-    LSRP[0] = TextDrawCreate(35.000, 427.000, "www.LS-RP.ONLINE");
+    LSRP[0] = TextDrawCreate(35.000, 427.000, "www.SSA.ONLINE");
 	TextDrawLetterSize(LSRP[0], 0.180, 1.098);
 	TextDrawTextSize(LSRP[0], 4.000, -1.000);
 	TextDrawAlignment(LSRP[0], 1);

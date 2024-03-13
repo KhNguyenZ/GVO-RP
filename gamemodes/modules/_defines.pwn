@@ -12,3 +12,11 @@
 #define 		DLG_REG_YEAR 		18
 #define 		DLG_SKIN	 		19
 #define    		DLG_DeleteItem		20
+
+
+#define         MAX_PLAYER_VEHICLES         500
+
+#define         INVALID_NUMER           -1
+
+
+#define         DIALOG_MYCAR        100

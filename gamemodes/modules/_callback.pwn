@@ -3,7 +3,11 @@ public SSA_Mysql_Intit()
 {
 	LoadInventoryDrop();
 }
+forward Mysql_PlayerInit(playerid);
+public Mysql_PlayerInit(playerid){
 
+    return 1;
+}
 public OnPlayerConnect(playerid)
 {
 	PlayerSelectSlot[playerid] = -1;
@@ -173,7 +177,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 								PlayerTextDrawHide(playerid, InvPTD[playerid][j]);
 							}
 							SetPVarInt(playerid, #detailstatus, 0);
-							format(string, sizeof(string), "[{212C58}LS-RP{ffffff}] Ban da ghep thanh cong vat pham {B31312}%s {ffffff}so luong hien co {64CCC5}%d{ffffff}.", iItem_info[pInventory[playerid][invSlot][i]][item_name], pInventory[playerid][invSlotAmount][i]);
+							format(string, sizeof(string), "[{212C58}SSA{ffffff}] Ban da ghep thanh cong vat pham {B31312}%s {ffffff}so luong hien co {64CCC5}%d{ffffff}.", iItem_info[pInventory[playerid][invSlot][i]][item_name], pInventory[playerid][invSlotAmount][i]);
 							SendClientMessage(playerid, -1, string);
 							PlayerSelectSlot[playerid] = -1;
 							inventory_show(playerid);
@@ -181,7 +185,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 						else
 						{
 							new string[555];	
-							format(string, sizeof(string), "[{212C58}LS-RP{ffffff}] Ban da ghep {B31312}KHONG {ffffff}thanh cong vat pham {B31312}%s {ffffff}do chi duoc phep co toi da {64CCC5}%d/%d{ffffff}.", iItem_info[pInventory[playerid][invSlot][i]][item_name], pInventory[playerid][invSlotAmount][i]+pInventory[playerid][invSlotAmount][PlayerSelectSlot[playerid]], iItem_info[pInventory[playerid][invSlot][i]][item_maxamount]);
+							format(string, sizeof(string), "[{212C58}SSA{ffffff}] Ban da ghep {B31312}KHONG {ffffff}thanh cong vat pham {B31312}%s {ffffff}do chi duoc phep co toi da {64CCC5}%d/%d{ffffff}.", iItem_info[pInventory[playerid][invSlot][i]][item_name], pInventory[playerid][invSlotAmount][i]+pInventory[playerid][invSlotAmount][PlayerSelectSlot[playerid]], iItem_info[pInventory[playerid][invSlot][i]][item_maxamount]);
 							SendClientMessage(playerid, -1, string);
 						}
 					}
@@ -217,7 +221,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 	if(playertextid == MainRegisterPTD[playerid][6])
 	{
 		new login_string[1280];
-		format(login_string, sizeof(login_string), "{ffffff}Chao mung {3366ff}%s{ffffff} den voi {3366ff}LS-RP{ffffff}", player_get_name(playerid, 1));
+		format(login_string, sizeof(login_string), "{ffffff}Chao mung {3366ff}%s{ffffff} den voi {3366ff}SSA{ffffff}", player_get_name(playerid, 1));
 		ShowPlayerDialog(playerid, DLG_REGISTER,DIALOG_STYLE_PASSWORD, "Dang ky", login_string, ">>", "<<");
 	}
 	if(playertextid == RegisterPTD[playerid][9]) // lui 
@@ -406,7 +410,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 	if(playertextid == LoginPTD[playerid][6])
 	{
 		new login_string[1280];
-		format(login_string, sizeof(login_string), "{ffffff}Chao mung {3366ff}%s{ffffff} tro lai voi {3366ff}LS-RP{ffffff}", player_get_name(playerid, 1));
+		format(login_string, sizeof(login_string), "{ffffff}Chao mung {3366ff}%s{ffffff} tro lai voi {3366ff}SSA{ffffff}", player_get_name(playerid, 1));
 		ShowPlayerDialog(playerid, DLG_LOGIN,DIALOG_STYLE_PASSWORD, "Dang Nhap", login_string, ">>", "<<");
 	}
 	if(playertextid == LoginPTD[playerid][8])
@@ -453,7 +457,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			if(response)
 			{
 				new string[555];
-				format(string, sizeof(string), "[{212C58}LS-RP{ffffff}] Ban da xoa thanh cong vat pham {B31312}%s {ffffff}ra khoi tui do.", iItem_info[pInventory[playerid][invSlot][PlayerSelectSlot[playerid]]][item_name]);
+				format(string, sizeof(string), "[{212C58}SSA{ffffff}] Ban da xoa thanh cong vat pham {B31312}%s {ffffff}ra khoi tui do.", iItem_info[pInventory[playerid][invSlot][PlayerSelectSlot[playerid]]][item_name]);
 				SendClientMessage(playerid, -1, string);
 				SendClientMessage(playerid, -1, "[{B31312}DELETE ITEM{ffffff}] {EA906C}Neu day la nham lan, hay nhanh chong chup man hinh lai va bao voi admin.");
 				InvWeight[playerid] -= iItem_info[pInventory[playerid][invSlot][PlayerSelectSlot[playerid]]][item_weight];
@@ -470,7 +474,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			}
 			else
 			{
-				SendClientMessage(playerid, -1, "[{212C58}LS-RP{ffffff}] Ban da khong xoa vat pham.");
+				SendClientMessage(playerid, -1, "[{212C58}SSA{ffffff}] Ban da khong xoa vat pham.");
 			}
 		}
 		case DLG_LOGIN:
@@ -480,7 +484,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				if(isnull(inputtext))
 				{
 					new login_string[128];
-					format(login_string, sizeof(login_string), "{ffffff}Chao mung {3366ff}%s{ffffff} tro lai voi {3366ff}LS-RP{ffffff}\nVui long nhap mat khau !", player_get_name(playerid, 1));
+					format(login_string, sizeof(login_string), "{ffffff}Chao mung {3366ff}%s{ffffff} tro lai voi {3366ff}SSA{ffffff}\nVui long nhap mat khau !", player_get_name(playerid, 1));
 					ShowPlayerDialog(playerid, DLG_LOGIN,DIALOG_STYLE_INPUT, "Dang Nhap", login_string, ">>", "<<");
 				}
 				if(strlen(inputtext) < 64)
@@ -497,12 +501,13 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				else
 				{
 					new login_string[128];
-					format(login_string, sizeof(login_string), "{ffffff}Chao mung {3366ff}%s{ffffff} tro lai voi {3366ff}LS-RP{ffffff}\nMat khau qua dai !", player_get_name(playerid, 1));
+					format(login_string, sizeof(login_string), "{ffffff}Chao mung {3366ff}%s{ffffff} tro lai voi {3366ff}SSA{ffffff}\nMat khau qua dai !", player_get_name(playerid, 1));
 					ShowPlayerDialog(playerid, DLG_LOGIN,DIALOG_STYLE_INPUT, "Dang Nhap", login_string, ">>", "<<");
 				}
 			}
 		}
 	}
+	return 1;
 }
 public OnPlayerUpdate(playerid)
 {
@@ -529,7 +534,7 @@ public OnPlayerLoad(playerid)
 	TogglePlayerSpectating(playerid, 0);
 	
 	new sdm[1280];
-	mysql_format(Handle(), sdm, sizeof(sdm), "[{212c58}LS-RP{ffffff}] Chao mung ban den voi may chu, {0066ff}%s.", player_get_name(playerid));
+	mysql_format(Handle(), sdm, sizeof(sdm), "[{212c58}SSA{ffffff}] Chao mung ban den voi may chu, {0066ff}%s.", player_get_name(playerid));
 	SendClientMessage(playerid, -1, sdm);
 	PlayerSetupping[playerid] = 0;
 	if(Character[playerid][char_Admin] > 0)
@@ -538,8 +543,12 @@ public OnPlayerLoad(playerid)
 		format(msgzz, sizeof(msgzz),"Xin Chao {0000EE}%s{FFFFFF}, ban la %s.", player_get_name(playerid), GetAdmin(playerid));
 		SendClientMessage(playerid, -1, msgzz);
 	}
+
+
+	CallRemoteFunction("Mysql_PlayerInit","i", playerid);
 	return 1;
 }
+
 forward ForceSpawn(playerid);
 public ForceSpawn(playerid)
 {

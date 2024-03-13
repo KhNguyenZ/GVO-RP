@@ -9,7 +9,7 @@ hook OnGameModeInit()
 }
 hook OnPlayerConnect(playerid)
 {
-	StorePTD[playerid][0] = CreatePlayerTextDraw(playerid, 109.000, 64.000, "mdl-2006:main");
+	StorePTD[playerid][0] = CreatePlayerTextDraw(playerid, 109.000, 64.000, "247:main");
 	PlayerTextDrawTextSize(playerid, StorePTD[playerid][0], 256.000, 350.000);
 	PlayerTextDrawAlignment(playerid, StorePTD[playerid][0], 1);
 	PlayerTextDrawColor(playerid, StorePTD[playerid][0], -1);
@@ -52,7 +52,7 @@ hook OnPlayerConnect(playerid)
 	PlayerTextDrawSetProportional(playerid, StoreButton[playerid][2], 1);
 	PlayerTextDrawSetSelectable(playerid, StoreButton[playerid][2], 1);
 
-	StoreItemInfo[playerid][0] = CreatePlayerTextDraw(playerid, 358.000, 68.500, "mdl-2006:thongtin");
+	StoreItemInfo[playerid][0] = CreatePlayerTextDraw(playerid, 358.000, 68.500, "247:thongtin");
 	PlayerTextDrawTextSize(playerid, StoreItemInfo[playerid][0], 173.000, 197.000);
 	PlayerTextDrawAlignment(playerid, StoreItemInfo[playerid][0], 1);
 	PlayerTextDrawColor(playerid, StoreItemInfo[playerid][0], -1);
@@ -72,7 +72,7 @@ hook OnPlayerConnect(playerid)
 	PlayerTextDrawFont(playerid, StoreItemInfo[playerid][1], 1);
 	PlayerTextDrawSetProportional(playerid, StoreItemInfo[playerid][1], 1);
 
-	StoreItemInfo[playerid][2] = CreatePlayerTextDraw(playerid, 358.000, 68.500, "mdl-2006:thongtin");
+	StoreItemInfo[playerid][2] = CreatePlayerTextDraw(playerid, 358.000, 68.500, "247:thongtin");
 	PlayerTextDrawTextSize(playerid, StoreItemInfo[playerid][2], 173.000, 197.000);
 	PlayerTextDrawAlignment(playerid, StoreItemInfo[playerid][2], 1);
 	PlayerTextDrawColor(playerid, StoreItemInfo[playerid][2], -1);
@@ -82,7 +82,7 @@ hook OnPlayerConnect(playerid)
 	PlayerTextDrawFont(playerid, StoreItemInfo[playerid][2], 4);
 	PlayerTextDrawSetProportional(playerid, StoreItemInfo[playerid][2], 1);
 
-	StoreItemInfo[playerid][3] = CreatePlayerTextDraw(playerid, 374.000, 165.000, "DUNG DE DAM CHET ME THANG PHAT BEO NGU SI DAN DON | LS-RP.Online | Roleplay dinh cao | Aafasfbhasfbabhfasbfbasfasfasfasadavsdga");
+	StoreItemInfo[playerid][3] = CreatePlayerTextDraw(playerid, 374.000, 165.000, "DUNG DE DAM CHET ME THANG PHAT BEO NGU SI DAN DON | SSA.Online | Roleplay dinh cao | Aafasfbhasfbabhfasbfbasfasfasfasadavsdga");
 	PlayerTextDrawLetterSize(playerid, StoreItemInfo[playerid][3], 0.189, 1.699);
 	PlayerTextDrawTextSize(playerid, StoreItemInfo[playerid][3], 513.000, 0.000);
 	PlayerTextDrawAlignment(playerid, StoreItemInfo[playerid][3], 1);

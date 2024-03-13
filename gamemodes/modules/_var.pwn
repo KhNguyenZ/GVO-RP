@@ -99,3 +99,9 @@ new iItem_info[][Inv_Item] = {
 	{10, 4.0,"mdl-2004:sniper","Sniper", "Sung ban tia, su dung dan Sniper, su dung vu khi va sau do su dung hop dan.", 1}
 };
 new PlayerSelectSlot[MAX_PLAYERS];
+
+new iCreate[MAX_VEHICLES] = -1;
+
+new pSpeedo[MAX_PLAYERS];
+
+new pCountVeh[MAX_VEHICLES];

@@ -5,7 +5,7 @@
 
 CMD:dnext(playerid, params[])
 {
-	if(CheckAdmin(playerid, 4))
+	if(!CheckAdmin(playerid, 4))
 	{
 		new szformat[1280];
 		format(szformat, sizeof(szformat), "Next Door ID: %d", INVALID_DOORS());
@@ -35,7 +35,7 @@ CMD:taodoor(playerid, params[])
 CMD:dname(playerid, params[])
 {
 	new DoorID, DoorName[128];
-	if(CheckAdmin(playerid, 4))
+	if(!CheckAdmin(playerid, 4))
 	{
 		if(sscanf(params, "ds[128]", DoorID, DoorName))
 		{
@@ -52,7 +52,7 @@ CMD:dname(playerid, params[])
 CMD:dedit(playerid, params[])
 {
 	new doorid, option[14], param[64], amount;
-	if(CheckAdmin(playerid, 4))
+	if(!CheckAdmin(playerid, 4))
 	{
 		if(sscanf(params, "is[14]S()[64]", doorid, option, param))
 		{

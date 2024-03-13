@@ -22,7 +22,7 @@ func:add_item_player(playerid, itemid, amount)
 			{
 				new string[255], name[34];
 				GetPlayerName(playerid, name, 34);
-				format(string, sizeof(string), "[{212C58}LS-RP{ffffff}] %s da dat toi da can nang [{EA906C}%0.2f{ffffff}/{EA906C}%0.2f{ffffff}].", name, tempWeight, InvMaxWeight[playerid]);
+				format(string, sizeof(string), "[{212C58}SSA{ffffff}] %s da dat toi da can nang [{EA906C}%0.2f{ffffff}/{EA906C}%0.2f{ffffff}].", name, tempWeight, InvMaxWeight[playerid]);
 				SendClientMessage(playerid, -1, string);
 				break;
 			}
@@ -30,7 +30,7 @@ func:add_item_player(playerid, itemid, amount)
 		else
 		{
 			new string[255];
-			format(string, sizeof(string), "[{212C58}LS-RP{ffffff}] Item %s chi co the co toi da %d.", iItem_info[itemid][item_name], iItem_info[itemid][item_maxamount]);
+			format(string, sizeof(string), "[{212C58}SSA{ffffff}] Item %s chi co the co toi da %d.", iItem_info[itemid][item_name], iItem_info[itemid][item_maxamount]);
 			SendClientMessage(playerid, -1, string);
 			break;
 		}

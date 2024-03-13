@@ -39,7 +39,36 @@ func:player_get_name(const playerid, bool:fix_ = true)
 	}
 	return player_name;
 }
+ProxDetector(Float: f_Radius, playerid, string[],col1,col2,col3,col4,col5)
+{
 
+	new
+		Float: f_playerPos[3];
+
+	GetPlayerPos(playerid, f_playerPos[0], f_playerPos[1], f_playerPos[2]);
+	foreach(new i: Player)
+	{
+		if(GetPlayerVirtualWorld(i) == GetPlayerVirtualWorld(playerid)) 
+		{
+			if(IsPlayerInRangeOfPoint(i, f_Radius / 16, f_playerPos[0], f_playerPos[1], f_playerPos[2])) {
+				SendClientMessage(i, col1, string);
+			}
+			else if(IsPlayerInRangeOfPoint(i, f_Radius / 8, f_playerPos[0], f_playerPos[1], f_playerPos[2])) {
+				SendClientMessage(i, col2, string);
+			}
+			else if(IsPlayerInRangeOfPoint(i, f_Radius / 4, f_playerPos[0], f_playerPos[1], f_playerPos[2])) {
+				SendClientMessage(i, col3, string);
+			}
+			else if(IsPlayerInRangeOfPoint(i, f_Radius / 2, f_playerPos[0], f_playerPos[1], f_playerPos[2])) {
+				SendClientMessage(i, col4, string);
+			}
+			else if(IsPlayerInRangeOfPoint(i, f_Radius, f_playerPos[0], f_playerPos[1], f_playerPos[2])) {
+				SendClientMessage(i, col5, string);
+			}
+		}
+	}
+	return 1;
+}
 func:Clear_Chat(const playerid) 
 {
 	if(IsPlayerConnected(playerid)) 
@@ -55,7 +84,7 @@ func:Clear_Chat(const playerid)
 func:GivePlayerValidWeapon( playerid, WeaponID, Ammo )
 {
     #if defined zombiemode
-   	if(zombieevent == 1 && GetPVarType(playerid, "pIsZombie")) return SendClientMessageEx(playerid, COLOR_GREY, "Zombie khong the co sung.");
+   	if(zombieevent == 1 && GetPVarType(playerid, "pIsZombie")) return SendClientMessage(playerid, COLOR_GREY, "Zombie khong the co sung.");
 	#endif
 	switch( WeaponID )
 	{

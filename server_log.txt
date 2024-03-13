@@ -6816,3 +6816,2260 @@ v0.3.DL-R1, (C)2005-2018 SA-MP Team
 [14:54:06] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
 [16:29:29] Character Save: Khoi Nguyenz | AccountID: 31
 [16:29:29] [part] Khoi_Nguyenz has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[21:43:50] weburl = "www.sa-mp.com"  (string)
+[21:43:50] password = ""  (string)
+[21:43:50] filterscripts = ""  (string)
+[21:43:50] 
+[21:43:50] Server Plugins
+[21:43:50] --------------
+[21:43:50]  Loading plugin: mysql
+[21:43:50]  >> plugin.mysql: R41-4 successfully loaded.
+[21:43:50]   Loaded.
+[21:43:50]  Loading plugin: whirlpool
+[21:43:50]  
+[21:43:50]  ==================
+[21:43:50]  
+[21:43:50]   Whirlpool loaded
+[21:43:50]  
+[21:43:50]  ==================
+[21:43:50]  
+[21:43:50]   Loaded.
+[21:43:50]  Loading plugin: sscanf
+[21:43:50] 
+
+[21:43:50]  ===============================
+
+[21:43:50]       sscanf plugin loaded.     
+
+[21:43:50]          Version:  2.8.3        
+
+[21:43:50]   (c) 2018 Alex "Y_Less" Cole  
+
+[21:43:50]  ===============================
+
+[21:43:50]   Loaded.
+[21:43:50]  Loading plugin: streamer
+[21:43:50] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[21:43:50]   Loaded.
+[21:43:50]  Loaded 4 plugins.
+
+[21:43:50] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:43:50] [artwork:crc] logo.txd CRC = 0x3E256910
+[21:43:50] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:43:50] [artwork:crc] joinspawn.txd CRC = 0x39E48CC2
+[21:43:50] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:43:50] [artwork:crc] login.txd CRC = 0x6B804645
+[21:43:50] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:43:50] [artwork:crc] inv.txd CRC = 0x3C7B1C5D
+[21:43:50] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:43:50] [artwork:crc] 247.txd CRC = 0x5C708255
+[21:43:50] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:43:50] [artwork:crc] Inventory.txd CRC = 0x70C676BF
+[21:43:50] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:43:50] [artwork:crc] Hudz.txd CRC = 0xAA707129
+[21:43:50] [artwork:crc] newbiespawn.dff CRC = 0x2499225A
+[21:43:50] [artwork:crc] newbiespawn.txd CRC = 0x2AF71386
+[21:43:50] [artwork:crc] congvien.dff CRC = 0x94D2954
+[21:43:50] [artwork:crc] congvien.txd CRC = 0xECDCE39F
+[21:43:50] [artwork:crc] honuoc.dff CRC = 0xFBE95451
+[21:43:50] [artwork:crc] honuoc.txd CRC = 0xC8354AE8
+[21:43:50] 
+[21:43:50] Filterscripts
+[21:43:50] ---------------
+[21:43:50]   Loaded 0 filterscripts.
+
+[21:43:50] AMX (43795224) loaded
+[21:43:50]  
+[21:43:50]  
+[21:43:50]  
+[21:43:50]  ======================================= 
+[21:43:50]  |                                     | 
+[21:43:50]  |        YSI version 4.00.0001        | 
+[21:43:50]  |        By Alex "Y_Less" Cole        | 
+[21:43:50]  |                                     | 
+[21:43:50]  ======================================= 
+[21:43:50]  
+[21:43:51] > Ket noi den du lieu thanh cong.
+[21:43:51] [KNCMS][Log-Map]:Map Newbie spawn da load thanh cong
+[21:43:51] [KNCMS][Log-Map]:Map LSRP park da load thanh cong
+[21:43:51] [KNCMS][Log-Map]:Map Apartment da load thanh cong
+[21:43:51] Number of vehicle models: 0
+[21:43:51] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
+[21:43:51] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+[21:44:01] [connection] incoming connection: 127.0.0.1:64944 id: 0
+[21:44:02] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[21:44:09] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[22:02:43] Character Save: Khoi Nguyenz | AccountID: 31
+[22:02:43] [part] Khoi_Nguyenz has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[12:13:47] weburl = "www.sa-mp.com"  (string)
+[12:13:47] password = ""  (string)
+[12:13:47] filterscripts = ""  (string)
+[12:13:47] 
+[12:13:47] Server Plugins
+[12:13:47] --------------
+[12:13:47]  Loading plugin: mysql
+[12:13:47]  >> plugin.mysql: R41-4 successfully loaded.
+[12:13:47]   Loaded.
+[12:13:47]  Loading plugin: whirlpool
+[12:13:47]  
+[12:13:47]  ==================
+[12:13:47]  
+[12:13:47]   Whirlpool loaded
+[12:13:47]  
+[12:13:47]  ==================
+[12:13:47]  
+[12:13:47]   Loaded.
+[12:13:47]  Loading plugin: sscanf
+[12:13:47] 
+
+[12:13:47]  ===============================
+
+[12:13:47]       sscanf plugin loaded.     
+
+[12:13:47]          Version:  2.8.3        
+
+[12:13:47]   (c) 2018 Alex "Y_Less" Cole  
+
+[12:13:47]  ===============================
+
+[12:13:47]   Loaded.
+[12:13:47]  Loading plugin: streamer
+[12:13:47] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[12:13:47]   Loaded.
+[12:13:47]  Loaded 4 plugins.
+
+[12:13:47] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[12:13:47] [artwork:crc] logo.txd CRC = 0x3E256910
+[12:13:47] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[12:13:47] [artwork:crc] joinspawn.txd CRC = 0x39E48CC2
+[12:13:47] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[12:13:47] [artwork:crc] login.txd CRC = 0x6B804645
+[12:13:47] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[12:13:47] [artwork:crc] inv.txd CRC = 0x3C7B1C5D
+[12:13:47] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[12:13:47] [artwork:crc] 247.txd CRC = 0x5C708255
+[12:13:47] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[12:13:47] [artwork:crc] Inventory.txd CRC = 0x70C676BF
+[12:13:47] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[12:13:47] [artwork:crc] Hudz.txd CRC = 0xAA707129
+[12:13:47] [artwork:crc] newbiespawn.dff CRC = 0x2499225A
+[12:13:47] [artwork:crc] newbiespawn.txd CRC = 0x2AF71386
+[12:13:47] [artwork:crc] congvien.dff CRC = 0x94D2954
+[12:13:47] [artwork:crc] congvien.txd CRC = 0xECDCE39F
+[12:13:47] [artwork:crc] honuoc.dff CRC = 0xFBE95451
+[12:13:47] [artwork:crc] honuoc.txd CRC = 0xC8354AE8
+[12:13:48] 
+[12:13:48] Filterscripts
+[12:13:48] ---------------
+[12:13:48]   Loaded 0 filterscripts.
+
+[12:13:48] AMX (43926384) loaded
+[12:13:48]  
+[12:13:48]  
+[12:13:48]  
+[12:13:48]  ======================================= 
+[12:13:48]  |                                     | 
+[12:13:48]  |        YSI version 4.00.0001        | 
+[12:13:48]  |        By Alex "Y_Less" Cole        | 
+[12:13:48]  |                                     | 
+[12:13:48]  ======================================= 
+[12:13:48]  
+[12:13:48] > Ket noi den du lieu thanh cong.
+[12:13:48] [KNCMS][Log-Map]:Map Newbie spawn da load thanh cong
+[12:13:48] [KNCMS][Log-Map]:Map LSRP park da load thanh cong
+[12:13:48] [KNCMS][Log-Map]:Map Apartment da load thanh cong
+[12:13:48] Number of vehicle models: 0
+[12:13:48] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
+[12:13:48] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+[12:14:02] [connection] incoming connection: 127.0.0.1:58103 id: 0
+[12:14:02] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[12:14:31] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[12:14:53] Character Save: Khoi Nguyenz | AccountID: 31
+[12:14:53] [part] Khoi_Nguyenz has left the server (0:1)
+[12:16:15] [connection] incoming connection: 127.0.0.1:51938 id: 0
+[12:16:15] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[12:16:30] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[12:16:51] Character Save: Khoi Nguyenz | AccountID: 31
+[12:16:51] [part] Khoi_Nguyenz has left the server (0:1)
+[12:24:39] [connection] incoming connection: 127.0.0.1:53457 id: 0
+[12:24:39] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[12:24:49] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[12:27:47] Character Save: Khoi Nguyenz | AccountID: 31
+[12:27:47] [part] Khoi_Nguyenz has left the server (0:1)
+[12:27:52] [connection] incoming connection: 127.0.0.1:50663 id: 0
+[12:27:52] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[12:27:59] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[12:49:33] INSERT INTO `inventory` SET `uid` = '31' , `item` = '10' , `amount` = '5'
+[12:49:48] INSERT INTO `inventory` SET `uid` = '31' , `item` = '15' , `amount` = '5'
+[12:51:30] INSERT INTO `inventory` SET `uid` = '31' , `item` = '20' , `amount` = '10'
+[12:51:30] DELETE FROM `inventory_drop` WHERE `id` = '165'
+[12:51:49] INSERT INTO `inventory` SET `uid` = '31' , `item` = '20' , `amount` = '5'
+[12:51:54] INSERT INTO `inventory` SET `uid` = '31' , `item` = '8' , `amount` = '5'
+[12:52:25] INSERT INTO `inventory` SET `uid` = '31' , `item` = '16' , `amount` = '10'
+[12:52:25] DELETE FROM `inventory_drop` WHERE `id` = '168'
+[13:12:59] Character Save: Khoi Nguyenz | AccountID: 31
+[13:12:59] [part] Khoi_Nguyenz has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[22:05:18] weburl = "www.sa-mp.com"  (string)
+[22:05:18] password = ""  (string)
+[22:05:18] filterscripts = ""  (string)
+[22:05:18] 
+[22:05:18] Server Plugins
+[22:05:18] --------------
+[22:05:18]  Loading plugin: mysql
+[22:05:18]  >> plugin.mysql: R41-4 successfully loaded.
+[22:05:18]   Loaded.
+[22:05:18]  Loading plugin: whirlpool
+[22:05:18]  
+[22:05:18]  ==================
+[22:05:18]  
+[22:05:18]   Whirlpool loaded
+[22:05:18]  
+[22:05:18]  ==================
+[22:05:18]  
+[22:05:18]   Loaded.
+[22:05:18]  Loading plugin: sscanf
+[22:05:18] 
+
+[22:05:18]  ===============================
+
+[22:05:18]       sscanf plugin loaded.     
+
+[22:05:18]          Version:  2.8.3        
+
+[22:05:18]   (c) 2018 Alex "Y_Less" Cole  
+
+[22:05:18]  ===============================
+
+[22:05:18]   Loaded.
+[22:05:18]  Loading plugin: streamer
+[22:05:18] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[22:05:18]   Loaded.
+[22:05:18]  Loaded 4 plugins.
+
+[22:05:18] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[22:05:18] [artwork:crc] logo.txd CRC = 0x3E256910
+[22:05:18] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[22:05:18] [artwork:crc] joinspawn.txd CRC = 0x39E48CC2
+[22:05:18] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[22:05:18] [artwork:crc] login.txd CRC = 0x6B804645
+[22:05:18] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[22:05:18] [artwork:crc] inv.txd CRC = 0x3C7B1C5D
+[22:05:18] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[22:05:18] [artwork:crc] 247.txd CRC = 0x5C708255
+[22:05:18] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[22:05:18] [artwork:crc] Inventory.txd CRC = 0x70C676BF
+[22:05:18] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[22:05:18] [artwork:crc] Hudz.txd CRC = 0xAA707129
+[22:05:18] [artwork:crc] newbiespawn.dff CRC = 0x2499225A
+[22:05:18] [artwork:crc] newbiespawn.txd CRC = 0x2AF71386
+[22:05:18] [artwork:crc] congvien.dff CRC = 0x94D2954
+[22:05:18] [artwork:crc] congvien.txd CRC = 0xECDCE39F
+[22:05:18] [artwork:crc] honuoc.dff CRC = 0xFBE95451
+[22:05:18] [artwork:crc] honuoc.txd CRC = 0xC8354AE8
+[22:05:18] 
+[22:05:18] Filterscripts
+[22:05:18] ---------------
+[22:05:18]   Loaded 0 filterscripts.
+
+[22:05:18] AMX (44319592) loaded
+[22:05:18]  
+[22:05:18]  
+[22:05:18]  
+[22:05:18]  ======================================= 
+[22:05:18]  |                                     | 
+[22:05:18]  |        YSI version 4.00.0001        | 
+[22:05:18]  |        By Alex "Y_Less" Cole        | 
+[22:05:18]  |                                     | 
+[22:05:18]  ======================================= 
+[22:05:18]  
+[22:05:19] > Ket noi den du lieu thanh cong.
+[22:05:19] [KNCMS][Log-Map]:Map Newbie spawn da load thanh cong
+[22:05:19] [KNCMS][Log-Map]:Map LSRP park da load thanh cong
+[22:05:19] [KNCMS][Log-Map]:Map Apartment da load thanh cong
+[22:05:19] Number of vehicle models: 0
+[22:05:19] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
+[22:05:19] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+[22:05:42] [connection] incoming connection: 127.0.0.1:61071 id: 0
+[22:05:42] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[22:06:02] [part] Khoi_Nguyen has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[22:06:05] weburl = "www.sa-mp.com"  (string)
+[22:06:05] password = ""  (string)
+[22:06:05] filterscripts = ""  (string)
+[22:06:05] 
+[22:06:05] Server Plugins
+[22:06:05] --------------
+[22:06:05]  Loading plugin: mysql
+[22:06:05]  >> plugin.mysql: R41-4 successfully loaded.
+[22:06:05]   Loaded.
+[22:06:05]  Loading plugin: whirlpool
+[22:06:05]  
+[22:06:05]  ==================
+[22:06:05]  
+[22:06:05]   Whirlpool loaded
+[22:06:05]  
+[22:06:05]  ==================
+[22:06:05]  
+[22:06:05]   Loaded.
+[22:06:05]  Loading plugin: sscanf
+[22:06:05] 
+
+[22:06:05]  ===============================
+
+[22:06:05]       sscanf plugin loaded.     
+
+[22:06:05]          Version:  2.8.3        
+
+[22:06:05]   (c) 2018 Alex "Y_Less" Cole  
+
+[22:06:05]  ===============================
+
+[22:06:05]   Loaded.
+[22:06:05]  Loading plugin: streamer
+[22:06:05] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[22:06:05]   Loaded.
+[22:06:05]  Loaded 4 plugins.
+
+[22:06:05] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[22:06:05] [artwork:crc] logo.txd CRC = 0x3E256910
+[22:06:05] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[22:06:05] [artwork:crc] joinspawn.txd CRC = 0x39E48CC2
+[22:06:05] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[22:06:05] [artwork:crc] login.txd CRC = 0x6B804645
+[22:06:05] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[22:06:05] [artwork:crc] inv.txd CRC = 0x3C7B1C5D
+[22:06:05] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[22:06:05] [artwork:crc] 247.txd CRC = 0x5C708255
+[22:06:05] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[22:06:05] [artwork:crc] Inventory.txd CRC = 0x70C676BF
+[22:06:05] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[22:06:05] [artwork:crc] Hudz.txd CRC = 0xAA707129
+[22:06:05] [artwork:crc] newbiespawn.dff CRC = 0x2499225A
+[22:06:05] [artwork:crc] newbiespawn.txd CRC = 0x2AF71386
+[22:06:05] [artwork:crc] congvien.dff CRC = 0x94D2954
+[22:06:05] [artwork:crc] congvien.txd CRC = 0xECDCE39F
+[22:06:05] [artwork:crc] honuoc.dff CRC = 0xFBE95451
+[22:06:05] [artwork:crc] honuoc.txd CRC = 0xC8354AE8
+[22:06:05] 
+[22:06:05] Filterscripts
+[22:06:05] ---------------
+[22:06:05]   Loaded 0 filterscripts.
+
+[22:06:05] AMX (44647272) loaded
+[22:06:05]  
+[22:06:05]  
+[22:06:05]  
+[22:06:05]  ======================================= 
+[22:06:05]  |                                     | 
+[22:06:05]  |        YSI version 4.00.0001        | 
+[22:06:05]  |        By Alex "Y_Less" Cole        | 
+[22:06:05]  |                                     | 
+[22:06:05]  ======================================= 
+[22:06:05]  
+[22:06:05] > Ket noi den du lieu thanh cong.
+[22:06:05] [KNCMS][Log-Map]:Map Newbie spawn da load thanh cong
+[22:06:05] [KNCMS][Log-Map]:Map LSRP park da load thanh cong
+[22:06:05] [KNCMS][Log-Map]:Map Apartment da load thanh cong
+[22:06:05] Number of vehicle models: 0
+[22:06:05] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
+[22:06:05] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+[22:06:11] [connection] incoming connection: 127.0.0.1:64475 id: 0
+[22:06:11] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[22:06:50] [part] Khoi_Nguyen has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[22:07:19] weburl = "www.sa-mp.com"  (string)
+[22:07:19] password = ""  (string)
+[22:07:19] filterscripts = ""  (string)
+[22:07:19] 
+[22:07:19] Server Plugins
+[22:07:19] --------------
+[22:07:19]  Loading plugin: mysql
+[22:07:19]  >> plugin.mysql: R41-4 successfully loaded.
+[22:07:19]   Loaded.
+[22:07:19]  Loading plugin: whirlpool
+[22:07:19]  
+[22:07:19]  ==================
+[22:07:19]  
+[22:07:19]   Whirlpool loaded
+[22:07:19]  
+[22:07:19]  ==================
+[22:07:19]  
+[22:07:19]   Loaded.
+[22:07:19]  Loading plugin: sscanf
+[22:07:19] 
+
+[22:07:19]  ===============================
+
+[22:07:19]       sscanf plugin loaded.     
+
+[22:07:19]          Version:  2.8.3        
+
+[22:07:19]   (c) 2018 Alex "Y_Less" Cole  
+
+[22:07:19]  ===============================
+
+[22:07:19]   Loaded.
+[22:07:19]  Loading plugin: streamer
+[22:07:19] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[22:07:19]   Loaded.
+[22:07:19]  Loaded 4 plugins.
+
+[22:07:19] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[22:07:19] [artwork:crc] logo.txd CRC = 0x3E256910
+[22:07:19] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[22:07:19] [artwork:crc] joinspawn.txd CRC = 0x39E48CC2
+[22:07:19] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[22:07:19] [artwork:crc] login.txd CRC = 0x6B804645
+[22:07:19] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[22:07:19] [artwork:crc] inv.txd CRC = 0x3C7B1C5D
+[22:07:19] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[22:07:19] [artwork:crc] 247.txd CRC = 0x5C708255
+[22:07:19] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[22:07:19] [artwork:crc] Inventory.txd CRC = 0x70C676BF
+[22:07:19] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[22:07:19] [artwork:crc] Hudz.txd CRC = 0xAA707129
+[22:07:19] [artwork:crc] newbiespawn.dff CRC = 0x2499225A
+[22:07:19] [artwork:crc] newbiespawn.txd CRC = 0x2AF71386
+[22:07:19] [artwork:crc] congvien.dff CRC = 0x94D2954
+[22:07:19] [artwork:crc] congvien.txd CRC = 0xECDCE39F
+[22:07:19] [artwork:crc] honuoc.dff CRC = 0xFBE95451
+[22:07:19] [artwork:crc] honuoc.txd CRC = 0xC8354AE8
+[22:07:19] 
+[22:07:19] Filterscripts
+[22:07:19] ---------------
+[22:07:19]   Loaded 0 filterscripts.
+
+[22:07:19] AMX (44057448) loaded
+[22:07:19]  
+[22:07:19]  
+[22:07:19]  
+[22:07:19]  ======================================= 
+[22:07:19]  |                                     | 
+[22:07:19]  |        YSI version 4.00.0001        | 
+[22:07:19]  |        By Alex "Y_Less" Cole        | 
+[22:07:19]  |                                     | 
+[22:07:19]  ======================================= 
+[22:07:19]  
+[22:07:20] > Ket noi den du lieu thanh cong.
+[22:07:20] [KNCMS][Log-Map]:Map Newbie spawn da load thanh cong
+[22:07:20] [KNCMS][Log-Map]:Map LSRP park da load thanh cong
+[22:07:20] [KNCMS][Log-Map]:Map Apartment da load thanh cong
+[22:07:20] Number of vehicle models: 0
+[22:07:20] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
+[22:07:20] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+[22:08:00] [connection] incoming connection: 127.0.0.1:61265 id: 0
+[22:08:01] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[22:08:05] [part] Khoi_Nguyen has left the server (0:1)
+[22:08:43] [connection] incoming connection: 127.0.0.1:62486 id: 0
+[22:08:43] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[22:09:08] [part] Khoi_Nguyen has left the server (0:1)
+[22:09:36] [connection] incoming connection: 127.0.0.1:61023 id: 0
+[22:09:36] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[22:10:48] [part] Khoi_Nguyen has left the server (0:1)
+[22:11:00] [connection] incoming connection: 127.0.0.1:50591 id: 0
+[22:11:01] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[22:11:08] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[22:11:29] Character Save: Khoi Nguyenz | AccountID: 31
+[22:11:29] [part] Khoi_Nguyenz has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[22:27:41] weburl = "www.sa-mp.com"  (string)
+[22:27:41] password = ""  (string)
+[22:27:41] filterscripts = ""  (string)
+[22:27:41] 
+[22:27:41] Server Plugins
+[22:27:41] --------------
+[22:27:41]  Loading plugin: mysql
+[22:27:41]  >> plugin.mysql: R41-4 successfully loaded.
+[22:27:41]   Loaded.
+[22:27:41]  Loading plugin: whirlpool
+[22:27:41]  
+[22:27:41]  ==================
+[22:27:41]  
+[22:27:41]   Whirlpool loaded
+[22:27:41]  
+[22:27:41]  ==================
+[22:27:41]  
+[22:27:41]   Loaded.
+[22:27:41]  Loading plugin: sscanf
+[22:27:41] 
+
+[22:27:41]  ===============================
+
+[22:27:41]       sscanf plugin loaded.     
+
+[22:27:41]          Version:  2.8.3        
+
+[22:27:41]   (c) 2018 Alex "Y_Less" Cole  
+
+[22:27:41]  ===============================
+
+[22:27:41]   Loaded.
+[22:27:41]  Loading plugin: streamer
+[22:27:41] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[22:27:41]   Loaded.
+[22:27:41]  Loaded 4 plugins.
+
+[22:27:41] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[22:27:41] [artwork:crc] logo.txd CRC = 0x3E256910
+[22:27:41] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[22:27:41] [artwork:crc] joinspawn.txd CRC = 0x39E48CC2
+[22:27:41] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[22:27:42] [artwork:crc] login.txd CRC = 0x6B804645
+[22:27:42] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[22:27:42] [artwork:crc] inv.txd CRC = 0x3C7B1C5D
+[22:27:42] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[22:27:42] [artwork:crc] 247.txd CRC = 0x5C708255
+[22:27:42] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[22:27:42] [artwork:crc] Inventory.txd CRC = 0x70C676BF
+[22:27:42] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[22:27:42] [artwork:crc] Hudz.txd CRC = 0xAA707129
+[22:27:42] [artwork:crc] newbiespawn.dff CRC = 0x2499225A
+[22:27:42] [artwork:crc] newbiespawn.txd CRC = 0x2AF71386
+[22:27:42] [artwork:crc] congvien.dff CRC = 0x94D2954
+[22:27:42] [artwork:crc] congvien.txd CRC = 0xECDCE39F
+[22:27:42] [artwork:crc] honuoc.dff CRC = 0xFBE95451
+[22:27:42] [artwork:crc] honuoc.txd CRC = 0xC8354AE8
+[22:27:42] 
+[22:27:42] Filterscripts
+[22:27:42] ---------------
+[22:27:42]   Loaded 0 filterscripts.
+
+[22:27:42] AMX (43729760) loaded
+[22:27:42]  
+[22:27:42]  
+[22:27:42]  
+[22:27:42]  ======================================= 
+[22:27:42]  |                                     | 
+[22:27:42]  |        YSI version 4.00.0001        | 
+[22:27:42]  |        By Alex "Y_Less" Cole        | 
+[22:27:42]  |                                     | 
+[22:27:42]  ======================================= 
+[22:27:42]  
+[22:27:42] > Ket noi den du lieu thanh cong.
+[22:27:42] [KNCMS][Log-Map]:Map Newbie spawn da load thanh cong
+[22:27:42] [KNCMS][Log-Map]:Map LSRP park da load thanh cong
+[22:27:42] [KNCMS][Log-Map]:Map Apartment da load thanh cong
+[22:27:42] Number of vehicle models: 0
+[22:27:42] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
+[22:27:42] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+[22:27:59] [connection] incoming connection: 127.0.0.1:57315 id: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[01:25:26] weburl = "www.sa-mp.com"  (string)
+[01:25:26] password = ""  (string)
+[01:25:26] filterscripts = ""  (string)
+[01:25:26] 
+[01:25:26] Server Plugins
+[01:25:26] --------------
+[01:25:26]  Loading plugin: mysql
+[01:25:26]  >> plugin.mysql: R41-4 successfully loaded.
+[01:25:26]   Loaded.
+[01:25:26]  Loading plugin: whirlpool
+[01:25:26]  
+[01:25:26]  ==================
+[01:25:26]  
+[01:25:26]   Whirlpool loaded
+[01:25:26]  
+[01:25:26]  ==================
+[01:25:26]  
+[01:25:26]   Loaded.
+[01:25:26]  Loading plugin: sscanf
+[01:25:26] 
+
+[01:25:26]  ===============================
+
+[01:25:26]       sscanf plugin loaded.     
+
+[01:25:26]          Version:  2.8.3        
+
+[01:25:26]   (c) 2018 Alex "Y_Less" Cole  
+
+[01:25:26]  ===============================
+
+[01:25:26]   Loaded.
+[01:25:26]  Loading plugin: streamer
+[01:25:26] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[01:25:26]   Loaded.
+[01:25:26]  Loaded 4 plugins.
+
+[01:25:26] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[01:25:26] [artwork:crc] logo.txd CRC = 0x3E256910
+[01:25:26] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[01:25:26] [artwork:crc] joinspawn.txd CRC = 0x39E48CC2
+[01:25:26] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[01:25:26] [artwork:crc] login.txd CRC = 0x6B804645
+[01:25:26] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[01:25:26] [artwork:crc] inv.txd CRC = 0x3C7B1C5D
+[01:25:26] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[01:25:26] [artwork:crc] 247.txd CRC = 0x5C708255
+[01:25:26] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[01:25:26] [artwork:crc] Inventory.txd CRC = 0x70C676BF
+[01:25:26] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[01:25:26] [artwork:crc] Hudz.txd CRC = 0xAA707129
+[01:25:26] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[01:25:26] [artwork:crc] Speedometter.txd CRC = 0x9244E067
+[01:25:26] [artwork:crc] newbiespawn.dff CRC = 0x2499225A
+[01:25:26] [artwork:crc] newbiespawn.txd CRC = 0x2AF71386
+[01:25:26] [artwork:crc] congvien.dff CRC = 0x94D2954
+[01:25:26] [artwork:crc] congvien.txd CRC = 0xECDCE39F
+[01:25:26] [artwork:crc] honuoc.dff CRC = 0xFBE95451
+[01:25:26] [artwork:crc] honuoc.txd CRC = 0xC8354AE8
+[01:25:26] 
+[01:25:26] Filterscripts
+[01:25:26] ---------------
+[01:25:26]   Loaded 0 filterscripts.
+
+[01:25:26] AMX (43992360) loaded
+[01:25:26]  
+[01:25:26]  
+[01:25:26]  
+[01:25:26]  ======================================= 
+[01:25:26]  |                                     | 
+[01:25:26]  |        YSI version 4.00.0001        | 
+[01:25:26]  |        By Alex "Y_Less" Cole        | 
+[01:25:26]  |                                     | 
+[01:25:26]  ======================================= 
+[01:25:26]  
+[01:25:27] > Ket noi den du lieu thanh cong.
+[01:25:27] [KNCMS][Log-Map]:Map Newbie spawn da load thanh cong
+[01:25:27] [KNCMS][Log-Map]:Map LSRP park da load thanh cong
+[01:25:27] [KNCMS][Log-Map]:Map Apartment da load thanh cong
+[01:25:27] Number of vehicle models: 0
+[01:25:27] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
+[01:25:27] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+[01:25:41] [connection] incoming connection: 127.0.0.1:50921 id: 0
+[01:25:41] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[01:25:52] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[01:29:06] Character Save: Khoi Nguyenz | AccountID: 31
+[01:29:06] [part] Khoi_Nguyenz has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[19:35:05] weburl = "www.sa-mp.com"  (string)
+[19:35:05] password = ""  (string)
+[19:35:05] filterscripts = ""  (string)
+[19:35:05] 
+[19:35:05] Server Plugins
+[19:35:05] --------------
+[19:35:05]  Loading plugin: mysql
+[19:35:05]  >> plugin.mysql: R41-4 successfully loaded.
+[19:35:05]   Loaded.
+[19:35:05]  Loading plugin: whirlpool
+[19:35:05]  
+[19:35:05]  ==================
+[19:35:05]  
+[19:35:05]   Whirlpool loaded
+[19:35:05]  
+[19:35:05]  ==================
+[19:35:05]  
+[19:35:05]   Loaded.
+[19:35:05]  Loading plugin: sscanf
+[19:35:05] 
+
+[19:35:05]  ===============================
+
+[19:35:05]       sscanf plugin loaded.     
+
+[19:35:05]          Version:  2.8.3        
+
+[19:35:05]   (c) 2018 Alex "Y_Less" Cole  
+
+[19:35:05]  ===============================
+
+[19:35:05]   Loaded.
+[19:35:05]  Loading plugin: streamer
+[19:35:05] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[19:35:05]   Loaded.
+[19:35:05]  Loaded 4 plugins.
+
+[19:35:05] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[19:35:05] [artwork:crc] logo.txd CRC = 0x3E256910
+[19:35:05] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[19:35:05] [artwork:crc] joinspawn.txd CRC = 0x39E48CC2
+[19:35:05] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[19:35:05] [artwork:crc] login.txd CRC = 0x6B804645
+[19:35:05] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[19:35:05] [artwork:crc] inv.txd CRC = 0x3C7B1C5D
+[19:35:05] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[19:35:05] [artwork:crc] 247.txd CRC = 0x5C708255
+[19:35:05] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[19:35:05] [artwork:crc] Inventory.txd CRC = 0x70C676BF
+[19:35:05] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[19:35:05] [artwork:crc] Hudz.txd CRC = 0xAA707129
+[19:35:05] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[19:35:05] [artwork:crc] Speedometter.txd CRC = 0x0
+[19:35:05] [artwork:error] Bad file: Speedometter.txd
+[19:35:05] [artwork:crc] newbiespawn.dff CRC = 0x2499225A
+[19:35:05] [artwork:crc] newbiespawn.txd CRC = 0x2AF71386
+[19:35:05] [artwork:crc] congvien.dff CRC = 0x94D2954
+[19:35:05] [artwork:crc] congvien.txd CRC = 0xECDCE39F
+[19:35:05] [artwork:crc] honuoc.dff CRC = 0xFBE95451
+[19:35:05] [artwork:crc] honuoc.txd CRC = 0xC8354AE8
+[19:35:05] 
+[19:35:05] Filterscripts
+[19:35:05] ---------------
+[19:35:05]   Loaded 0 filterscripts.
+
+[19:35:05] AMX (44254688) loaded
+[19:35:05]  
+[19:35:05]  
+[19:35:05]  
+[19:35:05]  ======================================= 
+[19:35:05]  |                                     | 
+[19:35:05]  |        YSI version 4.00.0001        | 
+[19:35:05]  |        By Alex "Y_Less" Cole        | 
+[19:35:05]  |                                     | 
+[19:35:05]  ======================================= 
+[19:35:05]  
+[19:35:06] > Ket noi den du lieu thanh cong.
+[19:35:06] [KNCMS][Log-Map]:Map Newbie spawn da load thanh cong
+[19:35:06] [KNCMS][Log-Map]:Map LSRP park da load thanh cong
+[19:35:06] [KNCMS][Log-Map]:Map Apartment da load thanh cong
+[19:35:06] Number of vehicle models: 0
+[19:35:06] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
+[19:35:06] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+[19:35:23] [connection] incoming connection: 127.0.0.1:49391 id: 0
+[19:35:23] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[19:35:33] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[20:41:50] Character Save: Khoi Nguyenz | AccountID: 31
+[20:41:50] [part] Khoi_Nguyenz has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[21:15:27] weburl = "www.sa-mp.com"  (string)
+[21:15:27] password = ""  (string)
+[21:15:27] filterscripts = ""  (string)
+[21:15:27] 
+[21:15:27] Server Plugins
+[21:15:27] --------------
+[21:15:27]  Loading plugin: mysql
+[21:15:27]  >> plugin.mysql: R41-4 successfully loaded.
+[21:15:27]   Loaded.
+[21:15:27]  Loading plugin: whirlpool
+[21:15:27]  
+[21:15:27]  ==================
+[21:15:27]  
+[21:15:27]   Whirlpool loaded
+[21:15:27]  
+[21:15:27]  ==================
+[21:15:27]  
+[21:15:27]   Loaded.
+[21:15:27]  Loading plugin: sscanf
+[21:15:27] 
+
+[21:15:27]  ===============================
+
+[21:15:27]       sscanf plugin loaded.     
+
+[21:15:27]          Version:  2.8.3        
+
+[21:15:27]   (c) 2018 Alex "Y_Less" Cole  
+
+[21:15:27]  ===============================
+
+[21:15:27]   Loaded.
+[21:15:27]  Loading plugin: streamer
+[21:15:27] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[21:15:27]   Loaded.
+[21:15:27]  Loaded 4 plugins.
+
+[21:15:27] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:15:27] [artwork:crc] logo.txd CRC = 0x3E256910
+[21:15:27] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:15:27] [artwork:crc] joinspawn.txd CRC = 0x39E48CC2
+[21:15:27] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:15:27] [artwork:crc] login.txd CRC = 0x6B804645
+[21:15:27] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:15:27] [artwork:crc] inv.txd CRC = 0x3C7B1C5D
+[21:15:27] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:15:27] [artwork:crc] 247.txd CRC = 0x5C708255
+[21:15:27] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:15:27] [artwork:crc] Inventory.txd CRC = 0x70C676BF
+[21:15:27] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:15:27] [artwork:crc] Hudz.txd CRC = 0xAA707129
+[21:15:27] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:15:27] [artwork:crc] Speedometter.txd CRC = 0x0
+[21:15:27] [artwork:error] Bad file: Speedometter.txd
+[21:15:27] [artwork:crc] newbiespawn.dff CRC = 0x2499225A
+[21:15:27] [artwork:crc] newbiespawn.txd CRC = 0x2AF71386
+[21:15:27] [artwork:crc] congvien.dff CRC = 0x94D2954
+[21:15:27] [artwork:crc] congvien.txd CRC = 0xECDCE39F
+[21:15:27] [artwork:crc] honuoc.dff CRC = 0xFBE95451
+[21:15:27] [artwork:crc] honuoc.txd CRC = 0xC8354AE8
+[21:15:27] 
+[21:15:27] Filterscripts
+[21:15:27] ---------------
+[21:15:27]   Loaded 0 filterscripts.
+
+[21:15:28] AMX (43730400) loaded
+[21:15:28]  
+[21:15:28]  
+[21:15:28]  
+[21:15:28]  ======================================= 
+[21:15:28]  |                                     | 
+[21:15:28]  |        YSI version 4.00.0001        | 
+[21:15:28]  |        By Alex "Y_Less" Cole        | 
+[21:15:28]  |                                     | 
+[21:15:28]  ======================================= 
+[21:15:28]  
+[21:15:28] > Ket noi den du lieu thanh cong.
+[21:15:28] [KNCMS][Log-Map]:Map Newbie spawn da load thanh cong
+[21:15:28] [KNCMS][Log-Map]:Map LSRP park da load thanh cong
+[21:15:28] [KNCMS][Log-Map]:Map Apartment da load thanh cong
+[21:15:28] Number of vehicle models: 0
+[21:15:28] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
+[21:15:28] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+[21:15:39] [connection] incoming connection: 127.0.0.1:58726 id: 0
+[21:15:40] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[21:15:55] [connection] incoming connection: 127.0.0.1:59295 id: 1
+[21:15:56] [connection] incoming connection: 127.0.0.1:56968 id: 1
+[21:15:57] [connection] incoming connection: 127.0.0.1:56969 id: 1
+[21:15:59] [connection] incoming connection: 127.0.0.1:65031 id: 1
+[21:16:01] [connection] incoming connection: 127.0.0.1:65032 id: 1
+[21:16:03] [connection] incoming connection: 127.0.0.1:59257 id: 1
+[21:16:08] [part] Khoi_Nguyen has left the server (0:0)
+[21:16:15] [connection] incoming connection: 127.0.0.1:65110 id: 0
+[21:16:15] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[21:16:22] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:01:07] weburl = "www.sa-mp.com"  (string)
+[22:01:07] password = ""  (string)
+[22:01:07] filterscripts = ""  (string)
+[22:01:07] 
+[22:01:07] Server Plugins
+[22:01:07] --------------
+[22:01:07]  Loading plugin: mysql
+[22:01:07]  >> plugin.mysql: R41-4 successfully loaded.
+[22:01:07]   Loaded.
+[22:01:07]  Loading plugin: whirlpool
+[22:01:07]  
+[22:01:07]  ==================
+[22:01:07]  
+[22:01:07]   Whirlpool loaded
+[22:01:07]  
+[22:01:07]  ==================
+[22:01:07]  
+[22:01:07]   Loaded.
+[22:01:07]  Loading plugin: sscanf
+[22:01:07] 
+
+[22:01:07]  ===============================
+
+[22:01:07]       sscanf plugin loaded.     
+
+[22:01:07]          Version:  2.8.3        
+
+[22:01:07]   (c) 2018 Alex "Y_Less" Cole  
+
+[22:01:07]  ===============================
+
+[22:01:07]   Loaded.
+[22:01:07]  Loading plugin: streamer
+[22:01:07] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[22:01:07]   Loaded.
+[22:01:07]  Loaded 4 plugins.
+
+[22:01:07] 
+[22:01:07] Filterscripts
+[22:01:07] ---------------
+[22:01:07]   Loaded 0 filterscripts.
+
+[22:01:07] AMX (44246832) loaded
+[22:01:07]  
+[22:01:07]  
+[22:01:07]  
+[22:01:07]  ======================================= 
+[22:01:07]  |                                     | 
+[22:01:07]  |        YSI version 4.00.0001        | 
+[22:01:07]  |        By Alex "Y_Less" Cole        | 
+[22:01:07]  |                                     | 
+[22:01:07]  ======================================= 
+[22:01:07]  
+[22:01:08] > Ket noi den du lieu thanh cong.
+[22:01:08] [KNCMS][Log-Map]:Map Newbie spawn da load thanh cong
+[22:01:08] [KNCMS][Log-Map]:Map LSRP park da load thanh cong
+[22:01:08] [KNCMS][Log-Map]:Map Apartment da load thanh cong
+[22:01:08] Number of vehicle models: 0
+[22:01:08] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
+[22:01:08] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[23:03:23] weburl = "www.sa-mp.com"  (string)
+[23:03:23] password = ""  (string)
+[23:03:23] filterscripts = ""  (string)
+[23:03:23] 
+[23:03:23] Server Plugins
+[23:03:23] --------------
+[23:03:23]  Loading plugin: mysql
+[23:03:23]  >> plugin.mysql: R41-4 successfully loaded.
+[23:03:23]   Loaded.
+[23:03:23]  Loading plugin: whirlpool
+[23:03:23]  
+[23:03:23]  ==================
+[23:03:23]  
+[23:03:23]   Whirlpool loaded
+[23:03:23]  
+[23:03:23]  ==================
+[23:03:23]  
+[23:03:23]   Loaded.
+[23:03:23]  Loading plugin: sscanf
+[23:03:23] 
+
+[23:03:23]  ===============================
+
+[23:03:23]       sscanf plugin loaded.     
+
+[23:03:23]          Version:  2.8.3        
+
+[23:03:23]   (c) 2018 Alex "Y_Less" Cole  
+
+[23:03:23]  ===============================
+
+[23:03:23]   Loaded.
+[23:03:23]  Loading plugin: streamer
+[23:03:23] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[23:03:23]   Loaded.
+[23:03:23]  Loaded 4 plugins.
+
+[23:03:23] 
+[23:03:23] Filterscripts
+[23:03:23] ---------------
+[23:03:23]   Loaded 0 filterscripts.
+
+[23:03:23] AMX (44639976) loaded
+[23:03:23]  
+[23:03:23]  
+[23:03:23]  
+[23:03:23]  ======================================= 
+[23:03:23]  |                                     | 
+[23:03:23]  |        YSI version 4.00.0001        | 
+[23:03:23]  |        By Alex "Y_Less" Cole        | 
+[23:03:23]  |                                     | 
+[23:03:23]  ======================================= 
+[23:03:23]  
+[23:03:24] > Ket noi den du lieu thanh cong.
+[23:03:24] [KNCMS][Log-Map]:Map Newbie spawn da load thanh cong
+[23:03:24] [KNCMS][Log-Map]:Map LSRP park da load thanh cong
+[23:03:24] [KNCMS][Log-Map]:Map Apartment da load thanh cong
+[23:03:24] Number of vehicle models: 0
+[23:03:24] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
+[23:03:24] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+[23:03:33] [connection] 127.0.0.1:63442 requests connection cookie.
+[23:03:34] [connection] incoming connection: 127.0.0.1:63442 id: 0
+[23:03:49] [connection] incoming connection: 127.0.0.1:53385 id: 0
+[23:04:07] [connection] 127.0.0.1:62982 requests connection cookie.
+[23:04:08] [connection] incoming connection: 127.0.0.1:62982 id: 0
+[23:04:23] [connection] incoming connection: 127.0.0.1:64940 id: 0
+[23:04:23] [connection] incoming connection: 127.0.0.1:64941 id: 0
+[23:04:24] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[23:04:44] [connection] 127.0.0.1:63965 requests connection cookie.
+[23:04:45] [connection] incoming connection: 127.0.0.1:63965 id: 1
+[23:04:57] [part] Khoi_Nguyen has left the server (0:0)
+[23:05:00] [connection] incoming connection: 127.0.0.1:62802 id: 0
+[23:05:01] [connection] incoming connection: 127.0.0.1:62803 id: 0
+[23:05:01] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[23:05:56] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[23:12:03] Character Save: Khoi Nguyenz | AccountID: 31
+[23:12:03] [part] Khoi_Nguyenz has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[23:20:42] weburl = "www.sa-mp.com"  (string)
+[23:20:42] password = ""  (string)
+[23:20:42] filterscripts = ""  (string)
+[23:20:42] 
+[23:20:42] Server Plugins
+[23:20:42] --------------
+[23:20:42]  Loading plugin: mysql
+[23:20:42]  >> plugin.mysql: R41-4 successfully loaded.
+[23:20:42]   Loaded.
+[23:20:42]  Loading plugin: whirlpool
+[23:20:42]  
+[23:20:42]  ==================
+[23:20:42]  
+[23:20:42]   Whirlpool loaded
+[23:20:42]  
+[23:20:42]  ==================
+[23:20:42]  
+[23:20:42]   Loaded.
+[23:20:42]  Loading plugin: sscanf
+[23:20:42] 
+
+[23:20:42]  ===============================
+
+[23:20:42]       sscanf plugin loaded.     
+
+[23:20:42]          Version:  2.8.3        
+
+[23:20:42]   (c) 2018 Alex "Y_Less" Cole  
+
+[23:20:42]  ===============================
+
+[23:20:42]   Loaded.
+[23:20:42]  Loading plugin: streamer
+[23:20:42] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[23:20:42]   Loaded.
+[23:20:42]  Loaded 4 plugins.
+
+[23:20:42] 
+[23:20:42] Filterscripts
+[23:20:42] ---------------
+[23:20:42]   Loaded 0 filterscripts.
+
+[23:20:42] AMX (43722472) loaded
+[23:20:42]  
+[23:20:42]  
+[23:20:42]  
+[23:20:42]  ======================================= 
+[23:20:42]  |                                     | 
+[23:20:42]  |        YSI version 4.00.0001        | 
+[23:20:42]  |        By Alex "Y_Less" Cole        | 
+[23:20:42]  |                                     | 
+[23:20:42]  ======================================= 
+[23:20:42]  
+[23:20:42] > Ket noi den du lieu thanh cong.
+[23:20:42] [KNCMS][Log-Map]:Map Newbie spawn da load thanh cong
+[23:20:42] [KNCMS][Log-Map]:Map LSRP park da load thanh cong
+[23:20:42] [KNCMS][Log-Map]:Map Apartment da load thanh cong
+[23:20:42] Number of vehicle models: 0
+[23:20:42] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
+[23:20:42] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+[23:20:50] [connection] 127.0.0.1:51244 requests connection cookie.
+[23:20:51] [connection] incoming connection: 127.0.0.1:51244 id: 0
+[23:21:07] [connection] incoming connection: 127.0.0.1:59202 id: 0
+[23:21:22] [connection] incoming connection: 127.0.0.1:58987 id: 0
+[23:21:22] [connection] incoming connection: 127.0.0.1:58988 id: 0
+[23:21:22] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[23:21:36] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[23:21:40] [death] Khoi_Nguyenz died 54
+[23:22:10] [chat] [Khoi_Nguyenz]: awdawsssawt/dla
+[23:39:00] Character Save: Khoi Nguyenz | AccountID: 31
+[23:39:00] [part] Khoi_Nguyenz has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[23:42:49] weburl = "www.sa-mp.com"  (string)
+[23:42:49] password = ""  (string)
+[23:42:49] filterscripts = ""  (string)
+[23:42:49] 
+[23:42:49] Server Plugins
+[23:42:49] --------------
+[23:42:49]  Loading plugin: mysql
+[23:42:49]  >> plugin.mysql: R41-4 successfully loaded.
+[23:42:49]   Loaded.
+[23:42:49]  Loading plugin: whirlpool
+[23:42:49]  
+[23:42:49]  ==================
+[23:42:49]  
+[23:42:49]   Whirlpool loaded
+[23:42:49]  
+[23:42:49]  ==================
+[23:42:49]  
+[23:42:49]   Loaded.
+[23:42:49]  Loading plugin: sscanf
+[23:42:49] 
+
+[23:42:49]  ===============================
+
+[23:42:49]       sscanf plugin loaded.     
+
+[23:42:49]          Version:  2.8.3        
+
+[23:42:49]   (c) 2018 Alex "Y_Less" Cole  
+
+[23:42:49]  ===============================
+
+[23:42:49]   Loaded.
+[23:42:49]  Loading plugin: streamer
+[23:42:49] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[23:42:49]   Loaded.
+[23:42:49]  Loaded 4 plugins.
+
+[23:42:49] 
+[23:42:49] Filterscripts
+[23:42:49] ---------------
+[23:42:49]   Loaded 0 filterscripts.
+
+[23:42:49] AMX (43722472) loaded
+[23:42:49]  
+[23:42:49]  
+[23:42:49]  
+[23:42:49]  ======================================= 
+[23:42:49]  |                                     | 
+[23:42:49]  |        YSI version 4.00.0001        | 
+[23:42:49]  |        By Alex "Y_Less" Cole        | 
+[23:42:49]  |                                     | 
+[23:42:49]  ======================================= 
+[23:42:49]  
+[23:42:49] > Ket noi den du lieu thanh cong.
+[23:42:49] [KNCMS][Log-Map]:Map Newbie spawn da load thanh cong
+[23:42:49] [KNCMS][Log-Map]:Map LSRP park da load thanh cong
+[23:42:49] [KNCMS][Log-Map]:Map Apartment da load thanh cong
+[23:42:49] Number of vehicle models: 0
+[23:42:49] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
+[23:42:49] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+[23:43:01] [connection] 127.0.0.1:62706 requests connection cookie.
+[23:43:02] [connection] incoming connection: 127.0.0.1:62706 id: 0
+[23:43:19] [connection] 127.0.0.1:62433 requests connection cookie.
+[23:43:19] [connection] incoming connection: 127.0.0.1:62433 id: 0
+[23:43:19] [connection] incoming connection: 127.0.0.1:49164 id: 0
+[23:43:19] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[23:43:33] [part] Khoi_Nguyen has left the server (0:0)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[23:46:01] weburl = "www.sa-mp.com"  (string)
+[23:46:01] password = ""  (string)
+[23:46:01] filterscripts = ""  (string)
+[23:46:01] 
+[23:46:01] Server Plugins
+[23:46:01] --------------
+[23:46:01]  Loading plugin: mysql
+[23:46:01]  >> plugin.mysql: R41-4 successfully loaded.
+[23:46:01]   Loaded.
+[23:46:01]  Loading plugin: whirlpool
+[23:46:01]  
+[23:46:01]  ==================
+[23:46:01]  
+[23:46:01]   Whirlpool loaded
+[23:46:01]  
+[23:46:01]  ==================
+[23:46:01]  
+[23:46:01]   Loaded.
+[23:46:01]  Loading plugin: sscanf
+[23:46:01] 
+
+[23:46:01]  ===============================
+
+[23:46:01]       sscanf plugin loaded.     
+
+[23:46:01]          Version:  2.8.3        
+
+[23:46:01]   (c) 2018 Alex "Y_Less" Cole  
+
+[23:46:01]  ===============================
+
+[23:46:01]   Loaded.
+[23:46:01]  Loading plugin: streamer
+[23:46:01] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[23:46:01]   Loaded.
+[23:46:01]  Loaded 4 plugins.
+
+[23:46:01] 
+[23:46:01] Filterscripts
+[23:46:01] ---------------
+[23:46:01]   Loaded 0 filterscripts.
+
+[23:46:01] AMX (44705512) loaded
+[23:46:01]  
+[23:46:01]  
+[23:46:01]  
+[23:46:01]  ======================================= 
+[23:46:01]  |                                     | 
+[23:46:01]  |        YSI version 4.00.0001        | 
+[23:46:01]  |        By Alex "Y_Less" Cole        | 
+[23:46:01]  |                                     | 
+[23:46:01]  ======================================= 
+[23:46:01]  
+[23:46:02] > Ket noi den du lieu thanh cong.
+[23:46:02] [KNCMS][Log-Map]:Map Newbie spawn da load thanh cong
+[23:46:02] [KNCMS][Log-Map]:Map LSRP park da load thanh cong
+[23:46:02] [KNCMS][Log-Map]:Map Apartment da load thanh cong
+[23:46:02] Number of vehicle models: 0
+[23:46:02] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
+[23:46:02] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+[23:48:11] [connection] 127.0.0.1:61186 requests connection cookie.
+[23:48:12] [connection] incoming connection: 127.0.0.1:61186 id: 0
+[23:48:12] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[23:48:24] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[23:48:38] Character Save: Khoi Nguyenz | AccountID: 31
+[23:48:38] [part] Khoi_Nguyenz has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[23:49:01] weburl = "www.sa-mp.com"  (string)
+[23:49:01] password = ""  (string)
+[23:49:01] filterscripts = ""  (string)
+[23:49:01] 
+[23:49:01] Server Plugins
+[23:49:01] --------------
+[23:49:01]  Loading plugin: mysql
+[23:49:01]  >> plugin.mysql: R41-4 successfully loaded.
+[23:49:01]   Loaded.
+[23:49:01]  Loading plugin: whirlpool
+[23:49:01]  
+[23:49:01]  ==================
+[23:49:01]  
+[23:49:01]   Whirlpool loaded
+[23:49:01]  
+[23:49:01]  ==================
+[23:49:01]  
+[23:49:01]   Loaded.
+[23:49:01]  Loading plugin: sscanf
+[23:49:01] 
+
+[23:49:01]  ===============================
+
+[23:49:01]       sscanf plugin loaded.     
+
+[23:49:01]          Version:  2.8.3        
+
+[23:49:01]   (c) 2018 Alex "Y_Less" Cole  
+
+[23:49:01]  ===============================
+
+[23:49:01]   Loaded.
+[23:49:01]  Loading plugin: streamer
+[23:49:01] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[23:49:01]   Loaded.
+[23:49:01]  Loaded 4 plugins.
+
+[23:49:01] 
+[23:49:01] Filterscripts
+[23:49:01] ---------------
+[23:49:01]   Loaded 0 filterscripts.
+
+[23:49:01] AMX (44181224) loaded
+[23:49:01]  
+[23:49:01]  
+[23:49:01]  
+[23:49:01]  ======================================= 
+[23:49:01]  |                                     | 
+[23:49:01]  |        YSI version 4.00.0001        | 
+[23:49:01]  |        By Alex "Y_Less" Cole        | 
+[23:49:01]  |                                     | 
+[23:49:01]  ======================================= 
+[23:49:01]  
+[23:49:02] > Ket noi den du lieu thanh cong.
+[23:49:02] Number of vehicle models: 0
+[23:49:02] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
+[23:49:02] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+[23:49:12] [connection] 127.0.0.1:60885 requests connection cookie.
+[23:49:13] [connection] incoming connection: 127.0.0.1:60885 id: 0
+[23:49:13] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[23:49:21] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[23:52:48] Character Save: Khoi Nguyenz | AccountID: 31
+[23:52:48] [part] Khoi_Nguyenz has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[00:07:02] weburl = "www.sa-mp.com"  (string)
+[00:07:02] password = ""  (string)
+[00:07:02] filterscripts = ""  (string)
+[00:07:02] 
+[00:07:02] Server Plugins
+[00:07:02] --------------
+[00:07:02]  Loading plugin: mysql
+[00:07:02]  >> plugin.mysql: R41-4 successfully loaded.
+[00:07:02]   Loaded.
+[00:07:02]  Loading plugin: whirlpool
+[00:07:02]  
+[00:07:02]  ==================
+[00:07:02]  
+[00:07:02]   Whirlpool loaded
+[00:07:02]  
+[00:07:02]  ==================
+[00:07:02]  
+[00:07:02]   Loaded.
+[00:07:02]  Loading plugin: sscanf
+[00:07:02] 
+
+[00:07:02]  ===============================
+
+[00:07:02]       sscanf plugin loaded.     
+
+[00:07:02]          Version:  2.8.3        
+
+[00:07:02]   (c) 2018 Alex "Y_Less" Cole  
+
+[00:07:02]  ===============================
+
+[00:07:02]   Loaded.
+[00:07:02]  Loading plugin: streamer
+[00:07:02] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[00:07:02]   Loaded.
+[00:07:02]  Loaded 4 plugins.
+
+[00:07:02] 
+[00:07:02] Filterscripts
+[00:07:02] ---------------
+[00:07:02]   Loaded 0 filterscripts.
+
+[00:07:02] AMX (43788008) loaded
+[00:07:02]  
+[00:07:02]  
+[00:07:02]  
+[00:07:02]  ======================================= 
+[00:07:02]  |                                     | 
+[00:07:02]  |        YSI version 4.00.0001        | 
+[00:07:02]  |        By Alex "Y_Less" Cole        | 
+[00:07:02]  |                                     | 
+[00:07:02]  ======================================= 
+[00:07:02]  
+[00:07:02] > Ket noi den du lieu thanh cong.
+[00:07:02] Number of vehicle models: 0
+[00:07:02] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
+[00:07:02] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+[00:07:20] [connection] 127.0.0.1:54479 requests connection cookie.
+[00:07:21] [connection] incoming connection: 127.0.0.1:54479 id: 0
+[00:07:21] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[00:07:29] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[00:07:51] INSERT INTO `vehicles` SET `sqlid`  = '31', `model`  = '411', `pos_x`= '1788.340087' `pos_y` = '-1907.327758' `pos_z`= '13.395425' `pos_r`= '235.956130' `lock`  = '0', `paintjob`  = '0', `color1`  = '1', `color2`  = '1', `ticket`  = '0', `restricted` = '0', `fuel` = '1109393408', `impound` = '0', `vw` = '0', `int`  = '0'
+[00:07:51] SELECT * FROM `vehicle` WHERE `sqlid` = '31'
+[00:11:00] --- Server Shutting Down.
+[00:11:00] [part] Khoi_Nguyenz has left the server (0:0)
+[00:11:01] plugin.mysql: Unloading plugin...
+[00:11:01] plugin.mysql: Plugin unloaded.
+[00:11:01]  
+[00:11:01]  ====================
+[00:11:01]  
+[00:11:01]   Whirlpool unloaded
+[00:11:01]  
+[00:11:01]  ====================
+[00:11:01]  
+[00:11:01] 
+
+[00:11:01]  ===============================
+
+[00:11:01]      sscanf plugin unloaded.    
+
+[00:11:01]  ===============================
+
+[00:11:01] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[00:24:56] weburl = "www.sa-mp.com"  (string)
+[00:24:56] password = ""  (string)
+[00:24:56] filterscripts = ""  (string)
+[00:24:56] 
+[00:24:56] Server Plugins
+[00:24:56] --------------
+[00:24:56]  Loading plugin: mysql
+[00:24:56]  >> plugin.mysql: R41-4 successfully loaded.
+[00:24:56]   Loaded.
+[00:24:56]  Loading plugin: whirlpool
+[00:24:56]  
+[00:24:56]  ==================
+[00:24:56]  
+[00:24:56]   Whirlpool loaded
+[00:24:56]  
+[00:24:56]  ==================
+[00:24:56]  
+[00:24:56]   Loaded.
+[00:24:56]  Loading plugin: sscanf
+[00:24:56] 
+
+[00:24:56]  ===============================
+
+[00:24:56]       sscanf plugin loaded.     
+
+[00:24:56]          Version:  2.8.3        
+
+[00:24:56]   (c) 2018 Alex "Y_Less" Cole  
+
+[00:24:56]  ===============================
+
+[00:24:56]   Loaded.
+[00:24:56]  Loading plugin: streamer
+[00:24:56] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[00:24:56]   Loaded.
+[00:24:56]  Loaded 4 plugins.
+
+[00:24:56] 
+[00:24:56] Filterscripts
+[00:24:56] ---------------
+[00:24:56]   Loaded 0 filterscripts.
+
+[00:24:56] AMX (44181224) loaded
+[00:24:56]  
+[00:24:56]  
+[00:24:56]  
+[00:24:56]  ======================================= 
+[00:24:56]  |                                     | 
+[00:24:56]  |        YSI version 4.00.0001        | 
+[00:24:56]  |        By Alex "Y_Less" Cole        | 
+[00:24:56]  |                                     | 
+[00:24:56]  ======================================= 
+[00:24:56]  
+[00:24:57] > Ket noi den du lieu thanh cong.
+[00:24:57] Number of vehicle models: 0
+[00:24:57] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
+[00:24:57] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+[00:25:04] [connection] 127.0.0.1:59357 requests connection cookie.
+[00:25:05] [connection] incoming connection: 127.0.0.1:59357 id: 0
+[00:25:06] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[00:25:14] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[00:25:31] INSERT INTO `vehicle` SET `sqlid`  = '31', `model`  = '411', `pos_x`= '1768.573364', `pos_y` = '-1895.883666', `pos_z`= '13.563441', `pos_r`= '209.099716', `lock`  = '0', `paintjob`  = '0', `color1`  = '11', `color2`  = '1', `ticket`  = '0', `restricted` = '0', `fuel` = '100', `impound` = '0', `vw` = '0', `int`  = '0'
+[00:25:31] SELECT * FROM `vehicle` WHERE `sqlid` = '31'
+[00:29:48] INSERT INTO `vehicle` SET `sqlid`  = '31', `model`  = '411', `pos_x`= '1779.495361', `pos_y` = '-1902.614624', `pos_z`= '13.388946', `pos_r`= '245.026153', `lock`  = '0', `paintjob`  = '0', `color1`  = '11', `color2`  = '1', `ticket`  = '0', `restricted` = '0', `fuel` = '100', `impound` = '0', `vw` = '0', `int`  = '0'
+[00:29:48] SELECT * FROM `vehicle` WHERE `sqlid` = '31'
+[00:31:30] INSERT INTO `vehicle` SET `sqlid`  = '31', `model`  = '411', `pos_x`= '1779.495361', `pos_y` = '-1902.614624', `pos_z`= '13.388946', `pos_r`= '245.026153', `lock`  = '0', `paintjob`  = '0', `color1`  = '11', `color2`  = '1', `ticket`  = '0', `restricted` = '0', `fuel` = '100', `impound` = '0', `vw` = '0', `int`  = '0'
+[00:31:30] SELECT * FROM `vehicle` WHERE `sqlid` = '31'
+[00:34:05] Character Save: Khoi Nguyenz | AccountID: 31
+[00:34:05] [part] Khoi_Nguyenz has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[00:38:25] weburl = "www.sa-mp.com"  (string)
+[00:38:25] password = ""  (string)
+[00:38:25] filterscripts = ""  (string)
+[00:38:25] 
+[00:38:25] Server Plugins
+[00:38:25] --------------
+[00:38:25]  Loading plugin: mysql
+[00:38:25]  >> plugin.mysql: R41-4 successfully loaded.
+[00:38:25]   Loaded.
+[00:38:25]  Loading plugin: whirlpool
+[00:38:25]  
+[00:38:25]  ==================
+[00:38:25]  
+[00:38:25]   Whirlpool loaded
+[00:38:25]  
+[00:38:25]  ==================
+[00:38:25]  
+[00:38:25]   Loaded.
+[00:38:25]  Loading plugin: sscanf
+[00:38:25] 
+
+[00:38:25]  ===============================
+
+[00:38:25]       sscanf plugin loaded.     
+
+[00:38:25]          Version:  2.8.3        
+
+[00:38:25]   (c) 2018 Alex "Y_Less" Cole  
+
+[00:38:25]  ===============================
+
+[00:38:25]   Loaded.
+[00:38:25]  Loading plugin: streamer
+[00:38:25] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[00:38:25]   Loaded.
+[00:38:25]  Loaded 4 plugins.
+
+[00:38:25] 
+[00:38:25] Filterscripts
+[00:38:25] ---------------
+[00:38:25]   Loaded 0 filterscripts.
+
+[00:38:25] AMX (44312296) loaded
+[00:38:25]  
+[00:38:25]  
+[00:38:25]  
+[00:38:25]  ======================================= 
+[00:38:25]  |                                     | 
+[00:38:25]  |        YSI version 4.00.0001        | 
+[00:38:25]  |        By Alex "Y_Less" Cole        | 
+[00:38:25]  |                                     | 
+[00:38:25]  ======================================= 
+[00:38:25]  
+[00:38:25] > Ket noi den du lieu thanh cong.
+[00:38:25] Number of vehicle models: 0
+[00:38:25] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
+[00:38:25] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+[00:39:34] [connection] 127.0.0.1:58528 requests connection cookie.
+[00:39:35] [connection] incoming connection: 127.0.0.1:58528 id: 0
+[00:39:35] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[00:39:35] SELECT * FROM `vehicle` WHERE `sqlid` = '0'
+[00:39:35] Loaded 0 vehicle for Khoi_Nguyen
+[00:39:42] [part] Khoi_Nguyen has left the server (0:1)
+[00:43:35] [connection] 127.0.0.1:53444 requests connection cookie.
+[00:43:36] [connection] incoming connection: 127.0.0.1:53444 id: 0
+[00:43:51] [connection] incoming connection: 127.0.0.1:53736 id: 0
+[00:43:52] [connection] incoming connection: 127.0.0.1:53737 id: 0
+[00:43:52] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[00:43:52] SELECT * FROM `vehicle` WHERE `sqlid` = '0'
+[00:43:52] Loaded 0 vehicle for Khoi_Nguyen
+[00:44:01] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[00:45:40] Character Save: Khoi Nguyenz | AccountID: 31
+[00:45:40] [part] Khoi_Nguyenz has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[00:48:30] weburl = "www.sa-mp.com"  (string)
+[00:48:30] password = ""  (string)
+[00:48:30] filterscripts = ""  (string)
+[00:48:30] 
+[00:48:30] Server Plugins
+[00:48:30] --------------
+[00:48:30]  Loading plugin: mysql
+[00:48:30]  >> plugin.mysql: R41-4 successfully loaded.
+[00:48:30]   Loaded.
+[00:48:30]  Loading plugin: whirlpool
+[00:48:30]  
+[00:48:30]  ==================
+[00:48:30]  
+[00:48:30]   Whirlpool loaded
+[00:48:30]  
+[00:48:30]  ==================
+[00:48:30]  
+[00:48:30]   Loaded.
+[00:48:30]  Loading plugin: sscanf
+[00:48:30] 
+
+[00:48:30]  ===============================
+
+[00:48:30]       sscanf plugin loaded.     
+
+[00:48:30]          Version:  2.8.3        
+
+[00:48:30]   (c) 2018 Alex "Y_Less" Cole  
+
+[00:48:30]  ===============================
+
+[00:48:30]   Loaded.
+[00:48:30]  Loading plugin: streamer
+[00:48:30] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[00:48:30]   Loaded.
+[00:48:30]  Loaded 4 plugins.
+
+[00:48:30] 
+[00:48:30] Filterscripts
+[00:48:30] ---------------
+[00:48:30]   Loaded 0 filterscripts.
+
+[00:48:30] AMX (43788008) loaded
+[00:48:30]  
+[00:48:30]  
+[00:48:30]  
+[00:48:30]  ======================================= 
+[00:48:30]  |                                     | 
+[00:48:30]  |        YSI version 4.00.0001        | 
+[00:48:30]  |        By Alex "Y_Less" Cole        | 
+[00:48:30]  |                                     | 
+[00:48:30]  ======================================= 
+[00:48:30]  
+[00:48:31] > Ket noi den du lieu thanh cong.
+[00:48:31] Number of vehicle models: 0
+[00:48:31] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
+[00:48:31] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+[00:48:38] [connection] 127.0.0.1:59026 requests connection cookie.
+[00:48:39] [connection] incoming connection: 127.0.0.1:59026 id: 0
+[00:48:54] [connection] incoming connection: 127.0.0.1:61290 id: 0
+[00:49:10] [connection] incoming connection: 127.0.0.1:57561 id: 0
+[00:49:10] [connection] incoming connection: 127.0.0.1:57562 id: 0
+[00:49:10] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[00:49:36] [connection] 127.0.0.1:55909 requests connection cookie.
+[00:49:37] [connection] incoming connection: 127.0.0.1:55909 id: 1
+[00:49:41] [part] Khoi_Nguyen has left the server (0:0)
+[00:49:53] [connection] incoming connection: 127.0.0.1:59242 id: 0
+[00:49:53] [connection] incoming connection: 127.0.0.1:59243 id: 0
+[00:49:53] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[00:50:05] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[00:50:05] SELECT * FROM `vehicle` WHERE `sqlid` = '31'
+[00:50:05] Loaded 4 vehicle for Khoi_Nguyenz
+[00:50:32] INSERT INTO `vehicle` SET `sqlid`  = '31', `model`  = '3145', `pos_x`= '1788.846313', `pos_y` = '-1906.365478', `pos_z`= '13.395796', `pos_r`= '291.949676', `lock`  = '0', `paintjob`  = '0', `color1`  = '1', `color2`  = '1', `ticket`  = '0', `restricted` = '0', `fuel` = '100', `impound` = '0', `vw` = '0', `int`  = '0'
+[00:50:32] SELECT * FROM `vehicle` WHERE `sqlid` = '31'
+[00:50:32] Loaded 5 vehicle for Khoi_Nguyenz
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:14:59] weburl = "www.sa-mp.com"  (string)
+[22:14:59] password = ""  (string)
+[22:14:59] filterscripts = ""  (string)
+[22:14:59] 
+[22:14:59] Server Plugins
+[22:14:59] --------------
+[22:14:59]  Loading plugin: mysql
+[22:14:59]  >> plugin.mysql: R41-4 successfully loaded.
+[22:14:59]   Loaded.
+[22:14:59]  Loading plugin: whirlpool
+[22:14:59]  
+[22:14:59]  ==================
+[22:14:59]  
+[22:14:59]   Whirlpool loaded
+[22:14:59]  
+[22:14:59]  ==================
+[22:14:59]  
+[22:14:59]   Loaded.
+[22:14:59]  Loading plugin: sscanf
+[22:14:59] 
+
+[22:14:59]  ===============================
+
+[22:14:59]       sscanf plugin loaded.     
+
+[22:14:59]          Version:  2.8.3        
+
+[22:14:59]   (c) 2018 Alex "Y_Less" Cole  
+
+[22:14:59]  ===============================
+
+[22:14:59]   Loaded.
+[22:14:59]  Loading plugin: streamer
+[22:14:59] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[22:14:59]   Loaded.
+[22:14:59]  Loaded 4 plugins.
+
+[22:14:59] 
+[22:14:59] Filterscripts
+[22:14:59] ---------------
+[22:14:59]   Loaded 0 filterscripts.
+
+[22:14:59] AMX (43722472) loaded
+[22:14:59]  
+[22:14:59]  
+[22:14:59]  
+[22:14:59]  ======================================= 
+[22:14:59]  |                                     | 
+[22:14:59]  |        YSI version 4.00.0001        | 
+[22:14:59]  |        By Alex "Y_Less" Cole        | 
+[22:14:59]  |                                     | 
+[22:14:59]  ======================================= 
+[22:14:59]  
+[22:15:00] > Ket noi den du lieu thanh cong.
+[22:15:00] Number of vehicle models: 0
+[22:15:00] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
+[22:15:00] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+[22:15:18] [connection] 127.0.0.1:64863 requests connection cookie.
+[22:15:19] [connection] incoming connection: 127.0.0.1:64863 id: 0
+[22:15:20] [connection] incoming connection: 127.0.0.1:58299 id: 0
+[22:15:20] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[22:15:41] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[22:15:41] SELECT * FROM `vehicle` WHERE `sqlid` = '31'
+[22:15:41] Loaded 5 vehicle for Khoi_Nguyenz
+[22:17:44] Character Save: Khoi Nguyenz | AccountID: 31
+[22:17:44] [part] Khoi_Nguyenz has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:25:52] weburl = "www.sa-mp.com"  (string)
+[22:25:52] password = ""  (string)
+[22:25:52] filterscripts = ""  (string)
+[22:25:52] 
+[22:25:52] Server Plugins
+[22:25:52] --------------
+[22:25:52]  Loading plugin: mysql
+[22:25:52]  >> plugin.mysql: R41-4 successfully loaded.
+[22:25:52]   Loaded.
+[22:25:52]  Loading plugin: whirlpool
+[22:25:52]  
+[22:25:52]  ==================
+[22:25:52]  
+[22:25:52]   Whirlpool loaded
+[22:25:52]  
+[22:25:52]  ==================
+[22:25:52]  
+[22:25:52]   Loaded.
+[22:25:52]  Loading plugin: sscanf
+[22:25:52] 
+
+[22:25:52]  ===============================
+
+[22:25:52]       sscanf plugin loaded.     
+
+[22:25:52]          Version:  2.8.3        
+
+[22:25:52]   (c) 2018 Alex "Y_Less" Cole  
+
+[22:25:52]  ===============================
+
+[22:25:52]   Loaded.
+[22:25:52]  Loading plugin: streamer
+[22:25:52] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[22:25:52]   Loaded.
+[22:25:52]  Loaded 4 plugins.
+
+[22:25:52] 
+[22:25:52] Filterscripts
+[22:25:52] ---------------
+[22:25:52]   Loaded 0 filterscripts.
+
+[22:25:52] AMX (45098728) loaded
+[22:25:52]  
+[22:25:52]  
+[22:25:52]  
+[22:25:52]  ======================================= 
+[22:25:52]  |                                     | 
+[22:25:52]  |        YSI version 4.00.0001        | 
+[22:25:52]  |        By Alex "Y_Less" Cole        | 
+[22:25:52]  |                                     | 
+[22:25:52]  ======================================= 
+[22:25:52]  
+[22:25:52] > Ket noi den du lieu thanh cong.
+[22:25:52] Number of vehicle models: 0
+[22:25:52] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
+[22:25:52] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+[22:25:59] [connection] 127.0.0.1:62439 requests connection cookie.
+[22:26:00] [connection] incoming connection: 127.0.0.1:62439 id: 0
+[22:26:16] [connection] incoming connection: 127.0.0.1:58654 id: 0
+[22:26:31] [connection] incoming connection: 127.0.0.1:53509 id: 0
+[22:26:31] [connection] incoming connection: 127.0.0.1:50365 id: 0
+[22:26:32] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[22:26:49] [part] Khoi_Nguyen has left the server (0:0)
+[22:27:10] [connection] 127.0.0.1:54337 requests connection cookie.
+[22:27:11] [connection] incoming connection: 127.0.0.1:54337 id: 0
+[22:27:26] [connection] incoming connection: 127.0.0.1:56788 id: 0
+[22:27:27] [connection] incoming connection: 127.0.0.1:56789 id: 0
+[22:27:27] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[22:27:36] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[22:27:36] SELECT * FROM `vehicle` WHERE `sqlid` = '31'
+[22:27:36] Loaded 5 vehicle for Khoi_Nguyenz
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:29:49] weburl = "www.sa-mp.com"  (string)
+[22:29:49] password = ""  (string)
+[22:29:49] filterscripts = ""  (string)
+[22:29:49] 
+[22:29:49] Server Plugins
+[22:29:49] --------------
+[22:29:49]  Loading plugin: mysql
+[22:29:49]  >> plugin.mysql: R41-4 successfully loaded.
+[22:29:49]   Loaded.
+[22:29:49]  Loading plugin: whirlpool
+[22:29:49]  
+[22:29:49]  ==================
+[22:29:49]  
+[22:29:49]   Whirlpool loaded
+[22:29:49]  
+[22:29:49]  ==================
+[22:29:49]  
+[22:29:49]   Loaded.
+[22:29:49]  Loading plugin: sscanf
+[22:29:49] 
+
+[22:29:49]  ===============================
+
+[22:29:49]       sscanf plugin loaded.     
+
+[22:29:49]          Version:  2.8.3        
+
+[22:29:49]   (c) 2018 Alex "Y_Less" Cole  
+
+[22:29:49]  ===============================
+
+[22:29:49]   Loaded.
+[22:29:49]  Loading plugin: streamer
+[22:29:49] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[22:29:49]   Loaded.
+[22:29:49]  Loaded 4 plugins.
+
+[22:29:49] [connection] 127.0.0.1:49928 requests connection cookie.
+[22:29:49] 
+[22:29:49] Filterscripts
+[22:29:49] ---------------
+[22:29:49]   Loaded 0 filterscripts.
+
+[22:29:50] AMX (44771048) loaded
+[22:29:50]  
+[22:29:50]  
+[22:29:50]  
+[22:29:50]  ======================================= 
+[22:29:50]  |                                     | 
+[22:29:50]  |        YSI version 4.00.0001        | 
+[22:29:50]  |        By Alex "Y_Less" Cole        | 
+[22:29:50]  |                                     | 
+[22:29:50]  ======================================= 
+[22:29:50]  
+[22:29:50] > Ket noi den du lieu thanh cong.
+[22:29:50] Number of vehicle models: 0
+[22:29:50] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
+[22:29:50] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+[22:29:50] [connection] incoming connection: 127.0.0.1:49928 id: 0
+[22:29:51] [join] Khoi_Nguyenz has joined the server (0:127.0.0.1)
+[22:30:04] [part] Khoi_Nguyenz has left the server (0:1)
+[22:30:13] [connection] 127.0.0.1:60712 requests connection cookie.
+[22:30:14] [connection] incoming connection: 127.0.0.1:60712 id: 0
+[22:30:15] [connection] incoming connection: 127.0.0.1:63738 id: 0
+[22:30:15] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[22:30:22] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[22:30:22] SELECT * FROM `vehicle` WHERE `sqlid` = '31'
+[22:30:22] Loaded 5 vehicle for Khoi_Nguyenz
+[22:34:44] INSERT INTO `vehicle` SET `sqlid`  = '31', `model`  = '3166', `pos_x`= '1792.334594', `pos_y` = '-1913.026000', `pos_z`= '13.395973', `pos_r`= '268.186950', `lock`  = '0', `paintjob`  = '0', `color1`  = '1', `color2`  = '1', `ticket`  = '0', `restricted` = '0', `fuel` = '100', `impound` = '0', `vw` = '0', `int`  = '0'
+[22:34:44] SELECT * FROM `vehicle` WHERE `sqlid` = '31'
+[22:34:44] Loaded 6 vehicle for Khoi_Nguyenz
+[22:34:57] Character Save: Khoi Nguyenz | AccountID: 31
+[22:34:57] [part] Khoi_Nguyenz has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:39:00] weburl = "www.sa-mp.com"  (string)
+[22:39:00] password = ""  (string)
+[22:39:00] filterscripts = ""  (string)
+[22:39:00] 
+[22:39:00] Server Plugins
+[22:39:00] --------------
+[22:39:00]  Loading plugin: mysql
+[22:39:00]  >> plugin.mysql: R41-4 successfully loaded.
+[22:39:00]   Loaded.
+[22:39:00]  Loading plugin: whirlpool
+[22:39:00]  
+[22:39:00]  ==================
+[22:39:00]  
+[22:39:00]   Whirlpool loaded
+[22:39:00]  
+[22:39:00]  ==================
+[22:39:00]  
+[22:39:00]   Loaded.
+[22:39:00]  Loading plugin: sscanf
+[22:39:00] 
+
+[22:39:00]  ===============================
+
+[22:39:00]       sscanf plugin loaded.     
+
+[22:39:00]          Version:  2.8.3        
+
+[22:39:00]   (c) 2018 Alex "Y_Less" Cole  
+
+[22:39:00]  ===============================
+
+[22:39:00]   Loaded.
+[22:39:00]  Loading plugin: streamer
+[22:39:00] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[22:39:00]   Loaded.
+[22:39:00]  Loaded 4 plugins.
+
+[22:39:00] 
+[22:39:00] Filterscripts
+[22:39:00] ---------------
+[22:39:00]   Loaded 0 filterscripts.
+
+[22:39:00] AMX (44377832) loaded
+[22:39:00]  
+[22:39:00]  
+[22:39:00]  
+[22:39:00]  ======================================= 
+[22:39:00]  |                                     | 
+[22:39:00]  |        YSI version 4.00.0001        | 
+[22:39:00]  |        By Alex "Y_Less" Cole        | 
+[22:39:00]  |                                     | 
+[22:39:00]  ======================================= 
+[22:39:00]  
+[22:39:00] > Ket noi den du lieu thanh cong.
+[22:39:00] Number of vehicle models: 0
+[22:39:00] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
+[22:39:00] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+[22:39:30] [connection] 127.0.0.1:61015 requests connection cookie.
+[22:39:31] [connection] incoming connection: 127.0.0.1:61015 id: 0
+[22:39:31] [connection] incoming connection: 127.0.0.1:57746 id: 0
+[22:39:32] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[22:39:40] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[22:39:40] SELECT * FROM `vehicle` WHERE `sqlid` = '31'
+[22:39:40] Loaded 6 vehicle for Khoi_Nguyenz
+[22:39:48] value listitem: 0
+[22:41:24] Character Save: Khoi Nguyenz | AccountID: 31
+[22:41:24] [part] Khoi_Nguyenz has left the server (0:1)
+[22:41:47] [connection] 127.0.0.1:56784 requests connection cookie.
+[22:41:48] [connection] incoming connection: 127.0.0.1:56784 id: 0
+[22:41:49] [connection] incoming connection: 127.0.0.1:57194 id: 0
+[22:41:49] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[22:41:58] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[22:41:58] SELECT * FROM `vehicle` WHERE `sqlid` = '31'
+[22:41:58] Loaded 6 vehicle for Khoi_Nguyenz
+[22:42:10] value listitem: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:42:19] weburl = "www.sa-mp.com"  (string)
+[22:42:19] password = ""  (string)
+[22:42:19] filterscripts = ""  (string)
+[22:42:19] 
+[22:42:19] Server Plugins
+[22:42:19] --------------
+[22:42:19]  Loading plugin: mysql
+[22:42:19]  >> plugin.mysql: R41-4 successfully loaded.
+[22:42:19]   Loaded.
+[22:42:19]  Loading plugin: whirlpool
+[22:42:19]  
+[22:42:19]  ==================
+[22:42:19]  
+[22:42:19]   Whirlpool loaded
+[22:42:19]  
+[22:42:19]  ==================
+[22:42:19]  
+[22:42:19]   Loaded.
+[22:42:19]  Loading plugin: sscanf
+[22:42:19] 
+
+[22:42:19]  ===============================
+
+[22:42:19]       sscanf plugin loaded.     
+
+[22:42:19]          Version:  2.8.3        
+
+[22:42:19]   (c) 2018 Alex "Y_Less" Cole  
+
+[22:42:19]  ===============================
+
+[22:42:19]   Loaded.
+[22:42:19]  Loading plugin: streamer
+[22:42:19] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[22:42:19]   Loaded.
+[22:42:19]  Loaded 4 plugins.
+
+[22:42:19] 
+[22:42:19] Filterscripts
+[22:42:19] ---------------
+[22:42:19]   Loaded 0 filterscripts.
+
+[22:42:19] AMX (43984616) loaded
+[22:42:19]  
+[22:42:19]  
+[22:42:19]  
+[22:42:19]  ======================================= 
+[22:42:19]  |                                     | 
+[22:42:19]  |        YSI version 4.00.0001        | 
+[22:42:19]  |        By Alex "Y_Less" Cole        | 
+[22:42:19]  |                                     | 
+[22:42:19]  ======================================= 
+[22:42:19]  
+[22:42:20] > Ket noi den du lieu thanh cong.
+[22:42:20] Number of vehicle models: 0
+[22:42:20] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
+[22:42:20] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+[22:42:29] [connection] 127.0.0.1:63423 requests connection cookie.
+[22:42:30] [connection] incoming connection: 127.0.0.1:63423 id: 0
+[22:42:30] [connection] incoming connection: 127.0.0.1:63424 id: 0
+[22:42:30] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[22:42:38] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[22:42:38] SELECT * FROM `vehicle` WHERE `sqlid` = '31'
+[22:42:38] Loaded 6 vehicle for Khoi_Nguyenz
+[22:42:41] VehID: P_Veh_0
+[22:42:41] VehID: P_Veh_1
+[22:42:41] VehID: P_Veh_2
+[22:42:41] VehID: P_Veh_3
+[22:42:41] VehID: P_Veh_4
+[22:42:41] VehID: P_Veh_5
+[22:42:50] value listitem: 0
+[22:44:05] Character Save: Khoi Nguyenz | AccountID: 31
+[22:44:05] [part] Khoi_Nguyenz has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:44:08] weburl = "www.sa-mp.com"  (string)
+[22:44:08] password = ""  (string)
+[22:44:08] filterscripts = ""  (string)
+[22:44:08] 
+[22:44:08] Server Plugins
+[22:44:08] --------------
+[22:44:08]  Loading plugin: mysql
+[22:44:08]  >> plugin.mysql: R41-4 successfully loaded.
+[22:44:08]   Loaded.
+[22:44:08]  Loading plugin: whirlpool
+[22:44:08]  
+[22:44:08]  ==================
+[22:44:08]  
+[22:44:08]   Whirlpool loaded
+[22:44:08]  
+[22:44:08]  ==================
+[22:44:08]  
+[22:44:08]   Loaded.
+[22:44:08]  Loading plugin: sscanf
+[22:44:08] 
+
+[22:44:08]  ===============================
+
+[22:44:08]       sscanf plugin loaded.     
+
+[22:44:08]          Version:  2.8.3        
+
+[22:44:08]   (c) 2018 Alex "Y_Less" Cole  
+
+[22:44:08]  ===============================
+
+[22:44:08]   Loaded.
+[22:44:08]  Loading plugin: streamer
+[22:44:08] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[22:44:08]   Loaded.
+[22:44:08]  Loaded 4 plugins.
+
+[22:44:08] 
+[22:44:08] Filterscripts
+[22:44:08] ---------------
+[22:44:08]   Loaded 0 filterscripts.
+
+[22:44:08] AMX (43722472) loaded
+[22:44:08]  
+[22:44:08]  
+[22:44:08]  
+[22:44:08]  ======================================= 
+[22:44:08]  |                                     | 
+[22:44:08]  |        YSI version 4.00.0001        | 
+[22:44:08]  |        By Alex "Y_Less" Cole        | 
+[22:44:08]  |                                     | 
+[22:44:08]  ======================================= 
+[22:44:08]  
+[22:44:08] > Ket noi den du lieu thanh cong.
+[22:44:08] Number of vehicle models: 0
+[22:44:08] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
+[22:44:08] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+[22:44:18] [connection] 127.0.0.1:53938 requests connection cookie.
+[22:44:19] [connection] incoming connection: 127.0.0.1:53938 id: 0
+[22:44:34] [connection] incoming connection: 127.0.0.1:56690 id: 0
+[22:44:50] [connection] incoming connection: 127.0.0.1:51773 id: 0
+[22:44:50] [connection] incoming connection: 127.0.0.1:51774 id: 0
+[22:44:50] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[22:44:58] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[22:44:58] SELECT * FROM `vehicle` WHERE `sqlid` = '31'
+[22:44:58] Loaded 6 vehicle for Khoi_Nguyenz
+[22:45:07] VehID: P_Veh_0
+[22:45:07] VehID: P_Veh_1
+[22:45:07] VehID: P_Veh_2
+[22:45:07] VehID: P_Veh_3
+[22:45:07] VehID: P_Veh_4
+[22:45:07] VehID: P_Veh_5
+[22:45:08] value listitem: 2
+[22:45:19] VehID: P_Veh_0
+[22:45:19] VehID: P_Veh_1
+[22:45:19] VehID: P_Veh_2
+[22:45:19] VehID: P_Veh_3
+[22:45:19] VehID: P_Veh_4
+[22:45:19] VehID: P_Veh_5
+[22:45:21] value listitem: 6
+[22:46:35] VehID: P_Veh_0
+[22:46:35] VehID: P_Veh_1
+[22:46:35] VehID: P_Veh_2
+[22:46:35] VehID: P_Veh_3
+[22:46:35] VehID: P_Veh_4
+[22:46:35] VehID: P_Veh_5
+[22:46:36] value listitem: 5

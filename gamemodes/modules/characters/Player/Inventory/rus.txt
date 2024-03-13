@@ -1,9 +1,9 @@
-C:\Users\Administrator\Desktop\LS-RP.Online\gamemodes\modules\characters\Player\Inventory\Inventory_Main.pwn(213) : ïðåäóïðåæäåíèå 208: ôóíêöèÿ ñ òèïîâûì ðåçóëüòàòîì èñïîëüçóåòñÿ ïåðåä îáúÿâëåíèåì, èíèöèèðîâàíà ïåðåîáðàáîòêà
-C:\Users\Administrator\Desktop\LS-RP.Online\gamemodes\modules\characters\Player\Inventory\Inventory_Main.pwn(33) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "InvPTD"
-C:\Users\Administrator\Desktop\LS-RP.Online\gamemodes\modules\characters\Player\Inventory\Inventory_Main.pwn(33) : ïðåäóïðåæäåíèå 215: âûðàæåíèå íå èìååò ýôôåêòà
-C:\Users\Administrator\Desktop\LS-RP.Online\gamemodes\modules\characters\Player\Inventory\Inventory_Main.pwn(33) : îøèáêà 001: îæèäàëñÿ òîêåí ";", íî íàéäåí "]"
-C:\Users\Administrator\Desktop\LS-RP.Online\gamemodes\modules\characters\Player\Inventory\Inventory_Main.pwn(33) : îøèáêà 029: íåïðàâèëüíîå âûðàæåíèå, ïðèíÿò íîëü
-C:\Users\Administrator\Desktop\LS-RP.Online\gamemodes\modules\characters\Player\Inventory\Inventory_Main.pwn(33) : ôàòàëüíàÿ îøèáêà 107: ñëèøêîì ìíîãî îøèáîê íà îäíîé ñòðîêå
+C:\Users\Administrator\Desktop\SSA.Online\gamemodes\modules\characters\Player\Inventory\Inventory_Main.pwn(213) : ïðåäóïðåæäåíèå 208: ôóíêöèÿ ñ òèïîâûì ðåçóëüòàòîì èñïîëüçóåòñÿ ïåðåä îáúÿâëåíèåì, èíèöèèðîâàíà ïåðåîáðàáîòêà
+C:\Users\Administrator\Desktop\SSA.Online\gamemodes\modules\characters\Player\Inventory\Inventory_Main.pwn(33) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "InvPTD"
+C:\Users\Administrator\Desktop\SSA.Online\gamemodes\modules\characters\Player\Inventory\Inventory_Main.pwn(33) : ïðåäóïðåæäåíèå 215: âûðàæåíèå íå èìååò ýôôåêòà
+C:\Users\Administrator\Desktop\SSA.Online\gamemodes\modules\characters\Player\Inventory\Inventory_Main.pwn(33) : îøèáêà 001: îæèäàëñÿ òîêåí ";", íî íàéäåí "]"
+C:\Users\Administrator\Desktop\SSA.Online\gamemodes\modules\characters\Player\Inventory\Inventory_Main.pwn(33) : îøèáêà 029: íåïðàâèëüíîå âûðàæåíèå, ïðèíÿò íîëü
+C:\Users\Administrator\Desktop\SSA.Online\gamemodes\modules\characters\Player\Inventory\Inventory_Main.pwn(33) : ôàòàëüíàÿ îøèáêà 107: ñëèøêîì ìíîãî îøèáîê íà îäíîé ñòðîêå
 
 Êîìïèëÿöèÿ îñòàíîâëåíà.
 

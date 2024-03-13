@@ -1,3 +1,5 @@
+#define GetPlayerSQLID(playerid) Character[playerid][char_player_id]
+
 stock character_Select(const playerid) 
 {
 	Clear_Chat(playerid);

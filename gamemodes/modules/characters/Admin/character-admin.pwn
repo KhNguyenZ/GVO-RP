@@ -69,7 +69,7 @@ new flying[MAX_PLAYERS];
 
 CMD:fly(playerid, params[])
 {
-	if(CheckAdmin(playerid, 3)) return SendClientMessage(playerid, -1, "Ban khong co quyen su dung lenh nay");
+	if(!CheckAdmin(playerid, 3)) return SendClientMessage(playerid, -1, "Ban khong co quyen su dung lenh nay");
 
     new Float:x, Float:y, Float:z;
 	if((flying[playerid] = !flying[playerid]))
@@ -175,7 +175,7 @@ CMD:gotoco(playerid, params[])
 
 CMD:sethealth(playerid, params[])
 {
-	if(CheckAdmin(playerid, 3)) return SendClientMessage(playerid, -1, "Ban khong co quyen su dung lenh nay");
+	if(!CheckAdmin(playerid, 3)) return SendClientMessage(playerid, -1, "Ban khong co quyen su dung lenh nay");
 	new playerset, Float:health;
 	if(sscanf(params, "if", playerset, health)) return SendClientMessage(playerid, -1, "Su dung: /sethealth [playerid] [health] ");
 
@@ -188,7 +188,7 @@ CMD:sethealth(playerid, params[])
 
 CMD:setarmour(playerid, params[])
 {
-	if(CheckAdmin(playerid, 3)) return SendClientMessage(playerid, -1, "Ban khong co quyen su dung lenh nay");
+	if(!CheckAdmin(playerid, 3)) return SendClientMessage(playerid, -1, "Ban khong co quyen su dung lenh nay");
 	new playerset, Float:armour;
 	if(sscanf(params, "if", playerset, armour)) return SendClientMessage(playerid, -1, "Su dung: /setarmour [playerid] [armour] ");
 
@@ -200,12 +200,45 @@ CMD:setarmour(playerid, params[])
 
 CMD:givegun(playerid, params[])
 {
-	if(CheckAdmin(playerid, 3)) return SendClientMessage(playerid, -1, "Ban khong co quyen su dung lenh nay");
+	if(!CheckAdmin(playerid, 3)) return SendClientMessage(playerid, -1, "Ban khong co quyen su dung lenh nay");
 	new playerset, gun, ammo;
 	if(sscanf(params, "iii", playerset, gun,ammo)) return SendClientMessage(playerid, -1, "Su dung: /givegun [playerid] [gun] [ammo]");
 
 	GivePlayerWeapon(playerid, gun, ammo);
 
 	HienTextdraw(playerid, "Ban da give gun thanh cong", 3000);
+	return 1;
+}
+
+CMD:veh(playerid, params[]) {
+	if(!CheckAdmin(playerid, 4)) {
+
+		new
+			iVehicle,
+			iColors[2];
+
+		if(sscanf(params, "iii", iVehicle, iColors[0], iColors[1])) {
+			SendClientMessage(playerid, COLOR_GREY, "SU DUNG: /veh [model ID] [color 1] [color 2]");
+		}
+		else if(!(0 <= iColors[0] <= 255 && 0 <= iColors[1] <= 255)) return SendClientMessage(playerid, COLOR_GRAD2, "ID mau xe phai tu 0 den 255.");
+		for(new i; i < MAX_VEHICLES; i++)
+		{
+			if(iCreate[i] == -1)
+			{
+				new
+				Float: fVehPos[4];
+
+				new fVW = GetPlayerVirtualWorld(playerid);
+				GetPlayerPos(playerid, fVehPos[0], fVehPos[1], fVehPos[2]);
+				GetPlayerFacingAngle(playerid, fVehPos[3]);
+				iCreate[i] = CreateVehicle(iVehicle, fVehPos[0], fVehPos[1], fVehPos[2], fVehPos[3], iColors[0], iColors[1], -1);
+				LinkVehicleToInterior(iCreate[i], GetPlayerInterior(playerid));
+				SetVehicleVirtualWorld(iCreate[i], fVW);
+				SendClientMessage(playerid, COLOR_GREY, "Xe da duoc tao ra!");
+				break;
+			}
+		}
+	}
+	else SendClientMessage(playerid, COLOR_GRAD1, "Ban khong duoc phep su dung lenh nay.");
 	return 1;
 }

@@ -147,14 +147,14 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				if(isnull(inputtext))
 				{
 					new login_string[1280];
-					format(login_string, sizeof(login_string), "{ffffff}Chao mung {3366ff}%s{ffffff} den voi {3366ff}LS-RP{ffffff}\n{FF0000}Vui long nhap mat khau", player_get_name(playerid, 1));
+					format(login_string, sizeof(login_string), "{ffffff}Chao mung {3366ff}%s{ffffff} den voi {3366ff}SSA{ffffff}\n{FF0000}Vui long nhap mat khau", player_get_name(playerid, 1));
 					ShowPlayerDialog(playerid, DLG_REGISTER,DIALOG_STYLE_PASSWORD, "Dang ky", login_string, ">>", "<<");
 					HienTextdraw(playerid, "~r~Vui long nhap mat khau", 3000);
 				}
 				if(strlen(inputtext) < 6 || strlen(inputtext) > 64)
 				{
 					new login_string[1280];
-					format(login_string, sizeof(login_string), "{ffffff}Chao mung {3366ff}%s{ffffff} den voi {3366ff}LS-RP{ffffff}\n{FF0000}Mat khau phai dai hon 6 ki tu va ngan hon 64 ki tu", player_get_name(playerid, 1));
+					format(login_string, sizeof(login_string), "{ffffff}Chao mung {3366ff}%s{ffffff} den voi {3366ff}SSA{ffffff}\n{FF0000}Mat khau phai dai hon 6 ki tu va ngan hon 64 ki tu", player_get_name(playerid, 1));
 					ShowPlayerDialog(playerid, DLG_REGISTER,DIALOG_STYLE_PASSWORD, "Dang ky", login_string, ">>", "<<");
 					HienTextdraw(playerid, "~r~Mat khau phai dai hon 6 ki tu va ngan hon 64 ki tu", 3000);
 				}

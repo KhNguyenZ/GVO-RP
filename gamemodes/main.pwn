@@ -91,6 +91,9 @@ main()
 // #include "./modules/Maps/LSRPpark.pwn"
 // #include "./modules/Maps/Apartment.pwn"
 
+//Location
+#include "./modules/PLD/main.pwn"
+
 #include "./modules/Vehicle/Core/_var.pwn"
 #include "./modules/Vehicle/Core/_func.pwn"
 #include "./modules/Vehicle/Core/_callback.pwn"

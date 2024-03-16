@@ -1,5 +1,13 @@
-./modules/dynamic/Biz/callback.pwn(13) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "count"
-./modules/Vehicle/Core/_var.pwn(108) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "MaxVehicleFuel"
-./modules/_var.pwn(107) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "pCountVeh"
+./modules/dynamic/Biz/callback.pwn(13) : èäåíòèôèêàòîð íå èñïîëüçóåòñÿ: "count"
+./modules/PLD/main.pwn(13) : ïðåäóïðåæäåíèå 201: ïîâòîðíîå îáúÿâëåíèå êîíñòàíòû/ìàêðîñà (èäåíòèôèêàòîð "COLOR_GREEN")
+./modules/PLD/main.pwn(16) : ïðåäóïðåæäåíèå 201: ïîâòîðíîå îáúÿâëåíèå êîíñòàíòû/ìàêðîñà (èäåíòèôèêàòîð "COLOR_RED")
+./modules/PLD/main.pwn(384) : ïðåäóïðåæäåíèå 200: ñèìâîë "@yH_OnPlayerEnterDynamicArea@02" îáðåçàí äî 31 ñèìâîëîâ
+./modules/PLD/main.pwn(384) : ïðåäóïðåæäåíèå 200: ñèìâîë "@yH_OnPlayerEnterDynamicArea@02" îáðåçàí äî 31 ñèìâîëîâ
+./modules/PLD/main.pwn(392) : ïðåäóïðåæäåíèå 200: ñèìâîë "@yH_OnPlayerLeaveDynamicArea@02" îáðåçàí äî 31 ñèìâîëîâ
+./modules/PLD/main.pwn(392) : ïðåäóïðåæäåíèå 200: ñèìâîë "@yH_OnPlayerLeaveDynamicArea@02" îáðåçàí äî 31 ñèìâîëîâ
+./modules/Vehicle/Core/_var.pwn(108) : èäåíòèôèêàòîð íå èñïîëüçóåòñÿ: "MaxVehicleFuel"
+./modules/_var.pwn(107) : èäåíòèôèêàòîð íå èñïîëüçóåòñÿ: "pCountVeh"
 Pawn compiler 3.2.3664	 	 	Copyright (c) 1997-2016, ITB CompuPhase
 
+
+Ïðåäóïðåæäåíèé:6.

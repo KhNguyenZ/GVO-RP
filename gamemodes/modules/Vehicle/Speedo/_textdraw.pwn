@@ -197,7 +197,7 @@ task UpdateOdo[1000]()
 
             UpdatePlayerSpeedo(i, VehicleFuel[speedo_vid]);
         }
-        if(IsPlayerInAnyVehicle(playerid) && !pSpeedo[i]) ShowPlayerSpeedo(i);
+        if(IsPlayerInAnyVehicle(i) && !pSpeedo[i]) ShowPlayerSpeedo(i);
         else HidePlayerSpeedo(i);
     }
     return 1;

@@ -11,7 +11,7 @@
  Target Server Version : 50515 (5.5.15)
  File Encoding         : 65001
 
- Date: 18/02/2024 00:25:02
+ Date: 31/03/2024 19:28:55
 */
 
 SET NAMES utf8mb4;
@@ -32,12 +32,13 @@ CREATE TABLE `accounts`  (
   `CharName1` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT 'Tao nhan vat',
   `CharName2` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT 'Tao nhan vat',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 12 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 13 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of accounts
 -- ----------------------------
 INSERT INTO `accounts` VALUES (11, 'Khoi_Nguyen', 'nguyen', NULL, NULL, NULL, 'Khoi_Nguyenz', 'Tao nhan vat', 'Tao nhan vat');
+INSERT INTO `accounts` VALUES (12, 'Khoi_Nguyenz', 'nguyen', NULL, NULL, NULL, 'Jey_BEE', 'Tao nhan vat', 'Tao nhan vat');
 
 -- ----------------------------
 -- Table structure for biz
@@ -56,7 +57,7 @@ CREATE TABLE `biz`  (
   `InPosY` float NULL DEFAULT NULL,
   `InPosZ` float NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 5 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of biz
@@ -205,6 +206,7 @@ CREATE TABLE `doors`  (
 -- ----------------------------
 -- Records of doors
 -- ----------------------------
+INSERT INTO `doors` VALUES (1, '0', NULL, 0, 0, NULL, NULL, 1787, -1909.54, 13.405, NULL, NULL, NULL, 19135, 0, 0, -1, -1);
 
 -- ----------------------------
 -- Table structure for inventory
@@ -216,54 +218,28 @@ CREATE TABLE `inventory`  (
   `item` int(11) NULL DEFAULT NULL,
   `amount` int(11) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 169 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = COMPACT;
+) ENGINE = InnoDB AUTO_INCREMENT = 229 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = COMPACT;
 
 -- ----------------------------
 -- Records of inventory
 -- ----------------------------
-INSERT INTO `inventory` VALUES (116, 31, 1, 10);
-INSERT INTO `inventory` VALUES (117, 31, 2, 10);
-INSERT INTO `inventory` VALUES (119, 31, 4, 10);
-INSERT INTO `inventory` VALUES (120, 31, 5, 10);
-INSERT INTO `inventory` VALUES (121, 31, 6, 10);
-INSERT INTO `inventory` VALUES (122, 31, 7, 10);
-INSERT INTO `inventory` VALUES (125, 31, 10, 10);
-INSERT INTO `inventory` VALUES (129, 31, 14, 10);
-INSERT INTO `inventory` VALUES (130, 31, 15, 10);
-INSERT INTO `inventory` VALUES (132, 31, 17, 10);
-INSERT INTO `inventory` VALUES (133, 31, 18, 10);
-INSERT INTO `inventory` VALUES (134, 31, 19, 10);
-INSERT INTO `inventory` VALUES (136, 31, 21, 10);
-INSERT INTO `inventory` VALUES (137, 31, 22, 10);
-INSERT INTO `inventory` VALUES (138, 31, 23, 10);
-INSERT INTO `inventory` VALUES (139, 31, 12, 10);
-INSERT INTO `inventory` VALUES (142, 31, 16, 3);
-INSERT INTO `inventory` VALUES (143, 31, 3, 5);
-INSERT INTO `inventory` VALUES (144, 31, 22, 2);
-INSERT INTO `inventory` VALUES (145, 31, 12, 76);
-INSERT INTO `inventory` VALUES (146, 31, 10, 49);
-INSERT INTO `inventory` VALUES (147, 31, 15, 14);
-INSERT INTO `inventory` VALUES (148, 31, 22, 60);
-INSERT INTO `inventory` VALUES (149, 31, 11, 26);
-INSERT INTO `inventory` VALUES (150, 31, 20, 10);
-INSERT INTO `inventory` VALUES (151, 31, 11, 46);
-INSERT INTO `inventory` VALUES (152, 31, 8, 44);
-INSERT INTO `inventory` VALUES (153, 31, 12, 57);
-INSERT INTO `inventory` VALUES (154, 31, 4, 19);
-INSERT INTO `inventory` VALUES (155, 31, 10, 23);
-INSERT INTO `inventory` VALUES (156, 31, 3, 91);
-INSERT INTO `inventory` VALUES (157, 31, 8, 80);
-INSERT INTO `inventory` VALUES (158, 31, 20, 74);
-INSERT INTO `inventory` VALUES (159, 31, 14, 66);
-INSERT INTO `inventory` VALUES (160, 31, 4, 11);
-INSERT INTO `inventory` VALUES (161, 31, 17, 78);
-INSERT INTO `inventory` VALUES (162, 31, 14, 77);
-INSERT INTO `inventory` VALUES (163, 31, 22, 46);
-INSERT INTO `inventory` VALUES (164, 31, 22, 2);
-INSERT INTO `inventory` VALUES (165, 31, 12, 76);
-INSERT INTO `inventory` VALUES (166, 31, 10, 49);
-INSERT INTO `inventory` VALUES (167, 31, 15, 14);
-INSERT INTO `inventory` VALUES (168, 31, 22, 60);
+INSERT INTO `inventory` VALUES (169, 31, 10, 1);
+INSERT INTO `inventory` VALUES (170, 31, 12, 1);
+INSERT INTO `inventory` VALUES (211, 31, 16, 10);
+INSERT INTO `inventory` VALUES (212, 31, 20, 10);
+INSERT INTO `inventory` VALUES (214, 31, 23, 10);
+INSERT INTO `inventory` VALUES (215, 31, 23, 1);
+INSERT INTO `inventory` VALUES (216, 31, 23, 1);
+INSERT INTO `inventory` VALUES (217, 31, 0, 0);
+INSERT INTO `inventory` VALUES (218, 31, 3, 1);
+INSERT INTO `inventory` VALUES (219, 31, 3, 1);
+INSERT INTO `inventory` VALUES (220, 31, 23, 1);
+INSERT INTO `inventory` VALUES (221, 31, 20, 10);
+INSERT INTO `inventory` VALUES (222, 31, 23, 10);
+INSERT INTO `inventory` VALUES (224, 31, 15, 5);
+INSERT INTO `inventory` VALUES (225, 31, 20, 10);
+INSERT INTO `inventory` VALUES (227, 31, 8, 5);
+INSERT INTO `inventory` VALUES (228, 31, 16, 10);
 
 -- ----------------------------
 -- Table structure for inventory_drop
@@ -278,26 +254,71 @@ CREATE TABLE `inventory_drop`  (
   `posy` float(20, 11) NULL DEFAULT NULL,
   `posz` float(20, 11) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 173 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 178 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of inventory_drop
 -- ----------------------------
-INSERT INTO `inventory_drop` VALUES (158, 3, 10, 12, 1820.19995117188, -1601.70996093750, 13.35999965668);
 INSERT INTO `inventory_drop` VALUES (159, 8, 10, 12, 1815.03002929688, -1612.48999023438, 13.38000011444);
 INSERT INTO `inventory_drop` VALUES (160, 12, 10, 12, 1816.28002929688, -1613.01000976562, 13.38000011444);
 INSERT INTO `inventory_drop` VALUES (161, 9, 10, 12, 2092.29003906250, -1748.23999023438, 13.39999961853);
 INSERT INTO `inventory_drop` VALUES (162, 19, 1, 12, 2096.53002929688, -1768.67004394531, 13.56000041962);
 INSERT INTO `inventory_drop` VALUES (163, 11, 10, 12, 2096.53002929688, -1768.67004394531, 13.71000003815);
-INSERT INTO `inventory_drop` VALUES (164, 23, 10, 31, 1773.66003417969, -1899.16003417969, 13.56999969482);
-INSERT INTO `inventory_drop` VALUES (165, 20, 10, 31, 1786.07995605469, -1898.66003417969, 13.39999961853);
-INSERT INTO `inventory_drop` VALUES (166, 23, 1, 31, 1801.52001953125, -1900.51000976562, 13.40999984741);
 INSERT INTO `inventory_drop` VALUES (167, 5, 1, 31, 1754.72998046875, -1895.43005371094, 13.57999992371);
-INSERT INTO `inventory_drop` VALUES (168, 16, 10, 31, 1758.01000976562, -1895.57995605469, 13.57999992371);
-INSERT INTO `inventory_drop` VALUES (169, 3, 1, 31, 1762.18005371094, -1895.29003906250, 13.57999992371);
-INSERT INTO `inventory_drop` VALUES (170, 20, 10, 31, 1766.47998046875, -1895.61999511719, 13.57999992371);
 INSERT INTO `inventory_drop` VALUES (171, 13, 10, 31, 1754.72998046875, -1895.43005371094, 13.72999954224);
 INSERT INTO `inventory_drop` VALUES (172, 18, 5, 31, 1754.72998046875, -1895.43005371094, 13.88000011444);
+INSERT INTO `inventory_drop` VALUES (173, 22, 2, 31, 1754.50000000000, -1894.82995605469, 13.57999992371);
+INSERT INTO `inventory_drop` VALUES (174, 20, 10, 31, 1755.81005859375, -1895.11999511719, 13.57999992371);
+INSERT INTO `inventory_drop` VALUES (175, 3, 1, 31, 1756.06005859375, -1895.82995605469, 13.57999992371);
+INSERT INTO `inventory_drop` VALUES (176, 10, 5, 31, 1787.26000976562, -1898.13000488281, 13.39999961853);
+INSERT INTO `inventory_drop` VALUES (177, 20, 5, 31, 1785.48999023438, -1899.66003417969, 13.39999961853);
+
+-- ----------------------------
+-- Table structure for organization
+-- ----------------------------
+DROP TABLE IF EXISTS `organization`;
+CREATE TABLE `organization`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `leader` int(11) NULL DEFAULT NULL,
+  `birth` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `logo` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `type` int(11) NULL DEFAULT -1,
+  `safe` int(11) NULL DEFAULT NULL,
+  `safe_dirty` int(11) NULL DEFAULT NULL,
+  `rank1` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `rank2` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `rank3` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `rank4` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `rank5` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `rank6` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `rank7` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `rank8` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `rank9` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `rank10` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Records of organization
+-- ----------------------------
+INSERT INTO `organization` VALUES (1, 'Test', 31, '29-3-2024', 'logo:logo', 2, 10000, 10000, 'Ong trum', 'Pho Bang', 'Pho Bang 2', 'Dai Ca', 'Linh', NULL, NULL, NULL, NULL, NULL);
+
+-- ----------------------------
+-- Table structure for organization_safe_gun
+-- ----------------------------
+DROP TABLE IF EXISTS `organization_safe_gun`;
+CREATE TABLE `organization_safe_gun`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `org_id` int(11) NULL DEFAULT NULL,
+  `weapon` int(11) NULL DEFAULT NULL,
+  `ammo` int(11) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Records of organization_safe_gun
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for players
@@ -321,18 +342,68 @@ CREATE TABLE `players`  (
   `LastLogin` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT '00:00:00 00-00-0000',
   `Gender` int(11) NULL DEFAULT 0,
   `Level` int(11) NULL DEFAULT 0,
-  `Interior` int(11) NULL DEFAULT 0,
+  `Interior` int(11) NULL DEFAULT -1,
   `VW` int(11) NULL DEFAULT 0,
   `QuocTich` int(11) NULL DEFAULT 0,
   `BirthDay` int(11) NULL DEFAULT 0,
   `BirthMonth` int(11) NULL DEFAULT 0,
   `BirthYear` int(11) NULL DEFAULT 0,
+  `OrgID` int(11) NULL DEFAULT -1,
+  `OrgRank` int(11) NULL DEFAULT -1,
+  `Phone` int(11) NULL DEFAULT NULL,
+  `DanhBa` int(11) NULL DEFAULT NULL,
+  `Dice` int(11) NULL DEFAULT NULL,
+  `CanXang` int(11) NULL DEFAULT NULL,
+  `DayThung` int(11) NULL DEFAULT NULL,
+  `XiGa` int(11) NULL DEFAULT NULL,
+  `Drink` int(11) NULL DEFAULT NULL,
+  `BinhSonXe` int(11) NULL DEFAULT NULL,
+  `Radio` int(11) NULL DEFAULT NULL,
+  `MatNa` int(11) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 32 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 33 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of players
 -- ----------------------------
-INSERT INTO `players` VALUES (31, 0, 'Khoi_Nguyenz', 'dep traii', 1000, 100, 0, 3, 1192, -1292, 13, 180, 0, 0, '00:00:00 00-00-0000', 1, 0, 0, 0, 1, 15, 11, 2008);
+INSERT INTO `players` VALUES (31, 0, 'Khoi_Nguyenz', 'dep traii', 1000, 100, 0, 3, 1764.56, -1898.66, 13.5638, 254, 0, 0, '00:00:00 00-00-0000', 1, 0, 0, 0, 1, 15, 11, 2008, 1, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+INSERT INTO `players` VALUES (32, 0, 'Jey_BEE', '', 1000, 100, 0, 1, 1192, -1292, 13, 180, 0, 0, '00:00:00 00-00-0000', 1, 0, -1, 0, 1, 1, 1, 2010, 1, 8, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+
+-- ----------------------------
+-- Table structure for vehicle
+-- ----------------------------
+DROP TABLE IF EXISTS `vehicle`;
+CREATE TABLE `vehicle`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `sqlid` int(11) NULL DEFAULT NULL,
+  `model` int(11) NULL DEFAULT NULL,
+  `pos_x` float NOT NULL,
+  `pos_y` float NOT NULL,
+  `pos_z` float NOT NULL,
+  `pos_r` float NULL DEFAULT NULL,
+  `lock` int(11) NULL DEFAULT 0,
+  `paintjob` int(11) NULL DEFAULT 0,
+  `color1` int(11) NULL DEFAULT 0,
+  `color2` int(11) NULL DEFAULT 2,
+  `ticket` int(11) NULL DEFAULT 0,
+  `restricted` int(11) NULL DEFAULT 0,
+  `fuel` int(11) NULL DEFAULT 0,
+  `impound` int(11) NULL DEFAULT 0,
+  `vw` int(11) NULL DEFAULT NULL,
+  `int` int(11) NULL DEFAULT NULL,
+  `health` int(11) NULL DEFAULT NULL,
+  `odo` int(11) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 7 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Records of vehicle
+-- ----------------------------
+INSERT INTO `vehicle` VALUES (1, 31, 411, 1788.34, -1907.33, 13.3954, 235.956, 0, 0, 1, 1, 0, 0, 1109393408, 0, 0, 0, 3000, 100);
+INSERT INTO `vehicle` VALUES (2, 31, 411, 1768.57, -1895.88, 13.5634, 209.1, 0, 0, 11, 1, 0, 0, 100, 0, 0, 0, 3000, 100);
+INSERT INTO `vehicle` VALUES (3, 31, 411, 1779.5, -1902.61, 13.3889, 245.026, 0, 0, 11, 1, 0, 0, 100, 0, 0, 0, 3000, 100);
+INSERT INTO `vehicle` VALUES (4, 31, 411, 1779.5, -1902.61, 13.3889, 245.026, 0, 0, 11, 1, 0, 0, 100, 0, 0, 0, 3000, 100);
+INSERT INTO `vehicle` VALUES (5, 31, 3145, 1788.85, -1906.37, 13.3958, 291.95, 0, 0, 1, 1, 0, 0, 100, 0, 0, 0, 3000, 100);
+INSERT INTO `vehicle` VALUES (6, 31, 3166, 1792.33, -1913.03, 13.396, 268.187, 0, 0, 1, 1, 0, 0, 100, 0, 0, 0, 1500, 100);
 
 SET FOREIGN_KEY_CHECKS = 1;

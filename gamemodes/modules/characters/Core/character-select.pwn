@@ -109,6 +109,10 @@ public OnCharacterLoad(const playerid)
 	cache_get_value_name_int(0, "Radio", Character[playerid][char_Radio]);
 	cache_get_value_name_int(0, "MatNa", Character[playerid][char_MatNa]);
 
+
+	cache_get_value_name_int(0, "OrgID", Character[playerid][char_OrgID]);
+	cache_get_value_name_int(0, "OrgRank", Character[playerid][char_OrgRank]);
+
 	if(GetPVarInt(playerid, "SetupRegister_") == 0)
     {
     	SetSpawnInfo(playerid, 0, Character[playerid][char_Skin], 1754.7391,-1895.4344,13.5870,0,0, 0,0, 0,0, 0);

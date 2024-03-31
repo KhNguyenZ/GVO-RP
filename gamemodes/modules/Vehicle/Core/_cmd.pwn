@@ -117,7 +117,7 @@ CMD:mycar(playerid, params[])
 		new p_vehid[128];
 		format(p_vehid, sizeof(p_vehid), "P_Veh_%d", i);
 		SetPVarInt(playerid, p_vehid, PlayerVehicle[playerid][i][pv_id]);
-		printf("VehID: %s", p_vehid);
+		// printf("VehID: %s", p_vehid);
 	}
 	strcat(dialog_mycar, "Trong", 5);
 
@@ -132,7 +132,7 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			new p_vehid[128];
 			format(p_vehid, sizeof(p_vehid), "P_Veh_%d", listitem);
 			SpawnPlayerVehicle(playerid, GetPVarInt(playerid, p_vehid));
-			printf("value listitem: %d",GetPVarInt(playerid, p_vehid));
+			// printf("value listitem: %d",GetPVarInt(playerid, p_vehid));
 			for(new i; i < PlayerVehicleCount[playerid]; i++){
 				format(p_vehid, sizeof(p_vehid), "P_Veh_%d", i);
 				DeletePVar(playerid, p_vehid);

@@ -1,0 +1,5 @@
+#include "./modules/Vehicle/Core/_var.pwn"
+#include "./modules/Vehicle/Core/_func.pwn"
+#include "./modules/Vehicle/Core/_callback.pwn"
+#include "./modules/Vehicle/Core/_cmd.pwn"
+#include "./modules/Vehicle/Speedo/_textdraw.pwn"

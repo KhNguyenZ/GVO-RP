@@ -401,3 +401,15 @@ func:UpdateFloat(table[], field[], Float:value)
 	mysql_query(Handle(), query_build, false);
 	return 1;
 }
+
+func:GetNameFromDB(sqlid)
+{
+    new query[1280], namedb[123];
+    format(query, sizeof(query), "SELECT * FROM `players` WHERE `id` = '%d'",sqlid);
+    new Cache:iGetNameFromDB;
+    iGetNameFromDB = mysql_query(Handle(),query);
+
+	cache_get_value_name(0, "PlayerName",namedb);
+    cache_delete(iGetNameFromDB);
+    return namedb;
+}

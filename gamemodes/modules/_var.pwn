@@ -43,7 +43,9 @@ enum character_Info
 	char_Drink,
 	char_BinhSonXe,
 	char_Radio,
-	char_MatNa
+	char_MatNa,
+	char_OrgID,
+	char_OrgRank
 }
 
 new Character[MAX_PLAYERS][character_Info];
@@ -105,3 +107,5 @@ new iCreate[MAX_VEHICLES] = -1;
 new pSpeedo[MAX_PLAYERS];
 
 new pCountVeh[MAX_VEHICLES];
+
+new OrgCount;

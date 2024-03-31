@@ -10,10 +10,8 @@ new p_TextDirection[8][MAX_PLAYERS];
 #define COLOR_BLUE		0x2641FEFF
 #define COL_BLUE		"{2641FE}"
 
-#define COLOR_GREEN     0x00FF00FF
 #define COL_GREEN       "{00FF00}"
 
-#define COLOR_RED       0xFF0000FF
 #define COL_RED         "{FF0000}"
 
 enum e_ZONE_INFO {

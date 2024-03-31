@@ -15,7 +15,7 @@
 #undef MAX_PLAYERS
 #define MAX_PLAYERS 500
 #pragma disablerecursion
-#pragma warning disable 213, 208, 219, 239, 240
+#pragma warning disable 213, 208, 219, 239, 240, 200
 
 #define  			MYSQL_HOST				"localhost"
 #define  			MYSQL_USER				"root"
@@ -50,19 +50,7 @@ main()
 #include "./modules/server/ProgressLoad.pwn"
 
 // login
-#include "./modules/multi-account/logintxd.pwn"
-// character
-#include "./modules/characters/Core/character.pwn"
-#include "./modules/characters/Core/Register/build.pwn"
-#include "./modules/characters/Core/character-select.pwn"
-#include "./modules/characters/Core/character-select-textdraw.pwn"
-#include "./modules/characters/Admin/character-admin.pwn"
-// Spawn player
-#include "./modules/characters/Player/SpawnPlayer/callback.pwn"
-#include "./modules/characters/Player/SpawnPlayer/func.pwn"
-#include "./modules/characters/Player/SpawnPlayer/textdraw.pwn"
-#include "./modules/characters/Player/Inventory/Inventory_Main.pwn"
-#include "./modules/characters/Inventory/build.pwn"
+#include "./modules/characters/build.pwn"
 
 #include "./modules/characters/Hud/_textdraw.pwn"
 // Text and time server
@@ -74,32 +62,22 @@ main()
 // core server
 #include "./modules/server/radio.pwn"
 // dynamic
-#include "./modules/dynamic/func_dynamic.pwn"
+#include "./modules/dynamic/build.pwn"
 
-#include "./modules/dynamic/Doors/build.pwn"
+#include "./modules/Vehicle/build.pwn"
 
-#include "./modules/dynamic/Biz/var.pwn"
-#include "./modules/dynamic/Biz/func.pwn"
-#include "./modules/dynamic/Biz/callback.pwn"
-#include "./modules/dynamic/Biz/cmd.pwn"
+#include "./modules/Organization/_var.pwn"
+#include "./modules/Organization/_function.pwn"
+#include "./modules/Organization/_callback.pwn"
+#include "./modules/Organization/_textdraw.pwn"
 
-#include "./modules/dynamic/Biz/247/var.pwn"
-#include "./modules/dynamic/Biz/247/textdraw.pwn"
-#include "./modules/dynamic/Biz/247/func.pwn"
-//map
-// #include "./modules/Maps/NewbieSpawn.pwn"
-// #include "./modules/Maps/LSRPpark.pwn"
-// #include "./modules/Maps/Apartment.pwn"
+public SSA_Mysql_Intit()
+{
+	for(new i; i < 1000; i++) LoadOrg(i);
+	LoadInventoryDrop();
 
-//Location
-#include "./modules/PLD/main.pwn"
-
-#include "./modules/Vehicle/Core/_var.pwn"
-#include "./modules/Vehicle/Core/_func.pwn"
-#include "./modules/Vehicle/Core/_callback.pwn"
-#include "./modules/Vehicle/Core/_cmd.pwn"
-#include "./modules/Vehicle/Speedo/_textdraw.pwn"
-
+	printf("Loaded %d Organization", OrgCount);
+}
 public OnGameModeExit()
 {
 	mysql_close(Handle());

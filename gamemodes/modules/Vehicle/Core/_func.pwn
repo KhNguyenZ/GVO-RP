@@ -121,10 +121,10 @@ func:SavePlayerVehicle(playerid, vehsqlid){
             new v_save[1280];
             format(v_save, sizeof(v_save), "UPDATE `vehicle` SET \
             `model`  = '%d', \
-            `pos_x`= '%f' \
-            `pos_y` = '%f' \
-            `pos_z`= '%f' \
-            `pos_r`= '%f' \
+            `pos_x`= '%f', \
+            `pos_y` = '%f' ,\
+            `pos_z`= '%f' ,\
+            `pos_r`= '%f', \
             `lock`  = '%d', \
             `paintjob`  = '%d', \
             `color1`  = '%d', \

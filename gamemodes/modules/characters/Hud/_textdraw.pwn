@@ -9,48 +9,48 @@ enum IconHud_Data{
 	txd_gun[128]
 }
 new const IconHud[][IconHud_Data] = {
-	{ 30 ,"Hudz:ak47icon"},
-	{ 5 ,"Hudz:baticon"},
-	{ 1 ,"Hudz:BRASSKNUCKLEicon"},
-	{ 43 ,"Hudz:Cameraicon"},
-	{ 9 , "Hudz:chnsawicon"},
-	{ 25 , "Hudz:chromegunicon"},
-	{ 22 , "Hudz:colt45icon"},
-	{ 33 , "Hudz:cuntgunicon"},
-	{ 24 , "Hudz:desert_eagleicon"},
-	{ 42 , "Hudz:fire_exicon"},
-	{ 0 , "Hudz:fist"},
-	{ 14 , "Hudz:floweraicon"},
-	{ 2, "Hudz:golfclubicon"},
-	{ 16, "Hudz:grenadeicon"},
-	{ 15, "Hudz:gun_caneicon"},
-	{ 46 , "Hudz:gun_paraIcon"},
-	{ 36, "Hudz:heatseekicon"},
-	{ 45, "Hudz:irgogglesicon"},
-	{ 8, "Hudz:katanaicon"},
-	{ 4, "Hudz:knifecuricon"},
-	{ 31, "Hudz:M4icon"},
-	{ 28, "Hudz:micro_uziicon"},
-	{ 28, "Hudz:minigunicon"},
-	{ 18, "Hudz:molotovicon"},
-	{ 29, "Hudz:mp5lngicon"},
-	{ 3 , "Hudz:nitestickicon"},
-	{ 44 , "Hudz:nvgogglesicon"},
-	{ 7 , "Hudz:poolcueicon"},
-	{ 35, "Hudz:rocketlaicon"},
-	{ 39 , "Hudz:satchelicon"},
-	{ 26, "Hudz:sawnofficon"},
-	{ 27, "Hudz:shotgspaicon"},
-	{ 6, "Hudz:shovelicon"},
-	{ 23, "Hudz:silencedicon"},
-	{ 34, "Hudz:SNIPERicon"},
-	{ 41, "Hudz:SPRAYCANicon"},
-	{ 17, "Hudz:TearGasicon"},
-	{ 32, "Hudz:tec9icon"}
+	{ 30 ,"mdl-2008:ak47icon"},
+	{ 5 ,"mdl-2008:baticon"},
+	{ 1 ,"mdl-2008:BRASSKNUCKLEicon"},
+	{ 43 ,"mdl-2008:Cameraicon"},
+	{ 9 , "mdl-2008:chnsawicon"},
+	{ 25 , "mdl-2008:chromegunicon"},
+	{ 22 , "mdl-2008:colt45icon"},
+	{ 33 , "mdl-2008:cuntgunicon"},
+	{ 24 , "mdl-2008:desert_eagleicon"},
+	{ 42 , "mdl-2008:fire_exicon"},
+	{ 0 , "mdl-2008:fist"},
+	{ 14 , "mdl-2008:floweraicon"},
+	{ 2, "mdl-2008:golfclubicon"},
+	{ 16, "mdl-2008:grenadeicon"},
+	{ 15, "mdl-2008:gun_caneicon"},
+	{ 46 , "mdl-2008:gun_paraIcon"},
+	{ 36, "mdl-2008:heatseekicon"},
+	{ 45, "mdl-2008:irgogglesicon"},
+	{ 8, "mdl-2008:katanaicon"},
+	{ 4, "mdl-2008:knifecuricon"},
+	{ 31, "mdl-2008:M4icon"},
+	{ 28, "mdl-2008:micro_uziicon"},
+	{ 28, "mdl-2008:minigunicon"},
+	{ 18, "mdl-2008:molotovicon"},
+	{ 29, "mdl-2008:mp5lngicon"},
+	{ 3 , "mdl-2008:nitestickicon"},
+	{ 44 , "mdl-2008:nvgogglesicon"},
+	{ 7 , "mdl-2008:poolcueicon"},
+	{ 35, "mdl-2008:rocketlaicon"},
+	{ 39 , "mdl-2008:satchelicon"},
+	{ 26, "mdl-2008:sawnofficon"},
+	{ 27, "mdl-2008:shotgspaicon"},
+	{ 6, "mdl-2008:shovelicon"},
+	{ 23, "mdl-2008:silencedicon"},
+	{ 34, "mdl-2008:SNIPERicon"},
+	{ 41, "mdl-2008:SPRAYCANicon"},
+	{ 17, "mdl-2008:TearGasicon"},
+	{ 32, "mdl-2008:tec9icon"}
 };
 hook OnPlayerConnect(playerid)
 {
-	PlayerTD[playerid][0] = CreatePlayerTextDraw(playerid, 455.000000, 43.000000, "Hudz:hud");
+	PlayerTD[playerid][0] = CreatePlayerTextDraw(playerid, 455.000000, 43.000000, "mdl-2008:hud");
 	PlayerTextDrawFont(playerid, PlayerTD[playerid][0], 4);
 	PlayerTextDrawLetterSize(playerid, PlayerTD[playerid][0], 0.600000, 2.000000);
 	PlayerTextDrawTextSize(playerid, PlayerTD[playerid][0], 166.000000, 46.500000);
@@ -64,7 +64,7 @@ hook OnPlayerConnect(playerid)
 	PlayerTextDrawSetProportional(playerid, PlayerTD[playerid][0], 1);
 	PlayerTextDrawSetSelectable(playerid, PlayerTD[playerid][0], 0);
 
-	PlayerTD[playerid][1] = CreatePlayerTextDraw(playerid, 571.000000, 52.000000, "Hudz:fist");
+	PlayerTD[playerid][1] = CreatePlayerTextDraw(playerid, 571.000000, 52.000000, "mdl-2008:fist");
 	PlayerTextDrawFont(playerid, PlayerTD[playerid][1], 4);
 	PlayerTextDrawLetterSize(playerid, PlayerTD[playerid][1], 0.600000, 2.000000);
 	PlayerTextDrawTextSize(playerid, PlayerTD[playerid][1], 25.000000, 26.000000);

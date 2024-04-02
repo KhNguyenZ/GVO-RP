@@ -110,7 +110,7 @@ hook OnPlayerConnect(playerid)
 	PlayerTextDrawFont(playerid, MainRegisterPTD[playerid][9], 4);
 	PlayerTextDrawSetProportional(playerid, MainRegisterPTD[playerid][9], 1);
 
-	RegisterPTD[playerid][0] = CreatePlayerTextDraw(playerid, 101.000, 133.000, "login:bg_menu");
+	RegisterPTD[playerid][0] = CreatePlayerTextDraw(playerid, 101.000, 133.000, "mdl-2003::bg_menu");
 	PlayerTextDrawTextSize(playerid, RegisterPTD[playerid][0], 145.000, 216.000);
 	PlayerTextDrawAlignment(playerid, RegisterPTD[playerid][0], 1);
 	PlayerTextDrawColor(playerid, RegisterPTD[playerid][0], -1);
@@ -192,7 +192,7 @@ hook OnPlayerConnect(playerid)
 	PlayerTextDrawSetProportional(playerid, RegisterPTD[playerid][6], 1);
 	PlayerTextDrawSetSelectable(playerid, RegisterPTD[playerid][6], 1);
 
-	RegisterPTD[playerid][7] = CreatePlayerTextDraw(playerid, 288.000, 130.000, "login:bg_skin");
+	RegisterPTD[playerid][7] = CreatePlayerTextDraw(playerid, 288.000, 130.000, "mdl-2003::bg_skin");
 	PlayerTextDrawTextSize(playerid, RegisterPTD[playerid][7], 148.000, 221.000);
 	PlayerTextDrawAlignment(playerid, RegisterPTD[playerid][7], 1);
 	PlayerTextDrawColor(playerid, RegisterPTD[playerid][7], -1);

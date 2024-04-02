@@ -1,6 +1,6 @@
 func:CreatePlayerOrgManagement(playerid)
 {
-    OrgPTD[playerid][0] = CreatePlayerTextDraw(playerid, 116.000, 122.000, "org:org");
+    OrgPTD[playerid][0] = CreatePlayerTextDraw(playerid, 116.000, 122.000, "mdl-2010:org");
     PlayerTextDrawTextSize(playerid, OrgPTD[playerid][0], 421.000, 242.000);
     PlayerTextDrawAlignment(playerid, OrgPTD[playerid][0], 1);
     PlayerTextDrawColor(playerid, OrgPTD[playerid][0], -1);
@@ -10,7 +10,7 @@ func:CreatePlayerOrgManagement(playerid)
     PlayerTextDrawFont(playerid, OrgPTD[playerid][0], 4);
     PlayerTextDrawSetProportional(playerid, OrgPTD[playerid][0], 1);
 
-    OrgPTD[playerid][1] = CreatePlayerTextDraw(playerid, 123.000, 315.000, "org:list-member");
+    OrgPTD[playerid][1] = CreatePlayerTextDraw(playerid, 123.000, 315.000, "mdl-2010:list-member");
     PlayerTextDrawTextSize(playerid, OrgPTD[playerid][1], 92.000, 17.000);
     PlayerTextDrawAlignment(playerid, OrgPTD[playerid][1], 1);
     PlayerTextDrawColor(playerid, OrgPTD[playerid][1], -1);
@@ -21,7 +21,7 @@ func:CreatePlayerOrgManagement(playerid)
     PlayerTextDrawSetProportional(playerid, OrgPTD[playerid][1], 1);
     PlayerTextDrawSetSelectable(playerid, OrgPTD[playerid][1], 1);
 
-    OrgPTD[playerid][2] = CreatePlayerTextDraw(playerid, 228.000, 315.000, "org:weapon");
+    OrgPTD[playerid][2] = CreatePlayerTextDraw(playerid, 228.000, 315.000, "mdl-2010:weapon");
     PlayerTextDrawTextSize(playerid, OrgPTD[playerid][2], 92.000, 17.000);
     PlayerTextDrawAlignment(playerid, OrgPTD[playerid][2], 1);
     PlayerTextDrawColor(playerid, OrgPTD[playerid][2], -1);
@@ -32,7 +32,7 @@ func:CreatePlayerOrgManagement(playerid)
     PlayerTextDrawSetProportional(playerid, OrgPTD[playerid][2], 1);
     PlayerTextDrawSetSelectable(playerid, OrgPTD[playerid][2], 1);
 
-    OrgPTD[playerid][3] = CreatePlayerTextDraw(playerid, 333.000, 315.000, "org:safe");
+    OrgPTD[playerid][3] = CreatePlayerTextDraw(playerid, 333.000, 315.000, "mdl-2010:safe");
     PlayerTextDrawTextSize(playerid, OrgPTD[playerid][3], 92.000, 17.000);
     PlayerTextDrawAlignment(playerid, OrgPTD[playerid][3], 1);
     PlayerTextDrawColor(playerid, OrgPTD[playerid][3], -1);
@@ -43,7 +43,7 @@ func:CreatePlayerOrgManagement(playerid)
     PlayerTextDrawSetProportional(playerid, OrgPTD[playerid][3], 1);
     PlayerTextDrawSetSelectable(playerid, OrgPTD[playerid][3], 1);
 
-    OrgPTD[playerid][4] = CreatePlayerTextDraw(playerid, 438.000, 315.000, "org:quit");
+    OrgPTD[playerid][4] = CreatePlayerTextDraw(playerid, 438.000, 315.000, "mdl-2010:quit");
     PlayerTextDrawTextSize(playerid, OrgPTD[playerid][4], 92.000, 17.000);
     PlayerTextDrawAlignment(playerid, OrgPTD[playerid][4], 1);
     PlayerTextDrawColor(playerid, OrgPTD[playerid][4], -1);
@@ -54,7 +54,7 @@ func:CreatePlayerOrgManagement(playerid)
     PlayerTextDrawSetProportional(playerid, OrgPTD[playerid][4], 1);
     PlayerTextDrawSetSelectable(playerid, OrgPTD[playerid][4], 1);
 
-    OrgPTD[playerid][5] = CreatePlayerTextDraw(playerid, 282.000, 339.000, "org:giaitan");
+    OrgPTD[playerid][5] = CreatePlayerTextDraw(playerid, 282.000, 339.000, "mdl-2010:giaitan");
     PlayerTextDrawTextSize(playerid, OrgPTD[playerid][5], 92.000, 17.000);
     PlayerTextDrawAlignment(playerid, OrgPTD[playerid][5], 1);
     PlayerTextDrawColor(playerid, OrgPTD[playerid][5], -1);

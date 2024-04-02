@@ -4,7 +4,7 @@ new PlayerText: SpeedoPTD[MAX_PLAYERS][7];
 
 func:OnPlayerCreateSpeedo(playerid){
 
-    SpeedoPTD[playerid][0] = CreatePlayerTextDraw(playerid, 463.000, 266.000, "Speedometter:speedo");
+    SpeedoPTD[playerid][0] = CreatePlayerTextDraw(playerid, 463.000, 266.000, "mdl-2009:speedo");
     PlayerTextDrawTextSize(playerid, SpeedoPTD[playerid][0], 197.000, 230.000);
     PlayerTextDrawAlignment(playerid, SpeedoPTD[playerid][0], 1);
     PlayerTextDrawColor(playerid, SpeedoPTD[playerid][0], -1);
@@ -14,7 +14,7 @@ func:OnPlayerCreateSpeedo(playerid){
     PlayerTextDrawFont(playerid, SpeedoPTD[playerid][0], 4);
     PlayerTextDrawSetProportional(playerid, SpeedoPTD[playerid][0], 1);
 
-    SpeedoPTD[playerid][1] = CreatePlayerTextDraw(playerid, 526.000, 341.000, "Speedometter:seatbelt");
+    SpeedoPTD[playerid][1] = CreatePlayerTextDraw(playerid, 526.000, 341.000, "mdl-2009:seatbelt");
     PlayerTextDrawTextSize(playerid, SpeedoPTD[playerid][1], 15.000, 18.000);
     PlayerTextDrawAlignment(playerid, SpeedoPTD[playerid][1], 1);
     PlayerTextDrawColor(playerid, SpeedoPTD[playerid][1], -1);
@@ -24,7 +24,7 @@ func:OnPlayerCreateSpeedo(playerid){
     PlayerTextDrawFont(playerid, SpeedoPTD[playerid][1], 4);
     PlayerTextDrawSetProportional(playerid, SpeedoPTD[playerid][1], 1);
 
-    SpeedoPTD[playerid][2] = CreatePlayerTextDraw(playerid, 583.000, 341.000, "Speedometter:car_lock");
+    SpeedoPTD[playerid][2] = CreatePlayerTextDraw(playerid, 583.000, 341.000, "mdl-2009:car_lock");
     PlayerTextDrawTextSize(playerid, SpeedoPTD[playerid][2], 18.000, 18.000);
     PlayerTextDrawAlignment(playerid, SpeedoPTD[playerid][2], 1);
     PlayerTextDrawColor(playerid, SpeedoPTD[playerid][2], -1);
@@ -34,7 +34,7 @@ func:OnPlayerCreateSpeedo(playerid){
     PlayerTextDrawFont(playerid, SpeedoPTD[playerid][2], 4);
     PlayerTextDrawSetProportional(playerid, SpeedoPTD[playerid][2], 1);
 
-    SpeedoPTD[playerid][3] = CreatePlayerTextDraw(playerid, 557.000, 319.000, "Speedometter:engine");
+    SpeedoPTD[playerid][3] = CreatePlayerTextDraw(playerid, 557.000, 319.000, "mdl-2009:engine");
     PlayerTextDrawTextSize(playerid, SpeedoPTD[playerid][3], 9.000, 16.000);
     PlayerTextDrawAlignment(playerid, SpeedoPTD[playerid][3], 1);
     PlayerTextDrawColor(playerid, SpeedoPTD[playerid][3], -1);
@@ -44,7 +44,7 @@ func:OnPlayerCreateSpeedo(playerid){
     PlayerTextDrawFont(playerid, SpeedoPTD[playerid][3], 4);
     PlayerTextDrawSetProportional(playerid, SpeedoPTD[playerid][3], 1);
 
-    SpeedoPTD[playerid][4] = CreatePlayerTextDraw(playerid, 557.000, 319.000, "Speedometter:on_off");
+    SpeedoPTD[playerid][4] = CreatePlayerTextDraw(playerid, 557.000, 319.000, "mdl-2009:on_off");
     PlayerTextDrawTextSize(playerid, SpeedoPTD[playerid][4], 9.000, 17.000);
     PlayerTextDrawAlignment(playerid, SpeedoPTD[playerid][4], 1);
     PlayerTextDrawColor(playerid, SpeedoPTD[playerid][4], -1);
@@ -161,11 +161,11 @@ func:UpdatePlayerSpeedo(playerid, fuel)
         }
 
         if(Seatbelt[playerid]){
-            PlayerTextDrawSetString(playerid, SpeedoPTD[playerid][1], "Speedometter:seatbelt-on");
+            PlayerTextDrawSetString(playerid, SpeedoPTD[playerid][1], "mdl-2009:seatbelt-on");
             ReloadPlayerTextDraw(playerid, SpeedoPTD[playerid][1]);
         }
         else{
-            PlayerTextDrawSetString(playerid, SpeedoPTD[playerid][1], "Speedometter:seatbelt");
+            PlayerTextDrawSetString(playerid, SpeedoPTD[playerid][1], "mdl-2009:seatbelt");
             ReloadPlayerTextDraw(playerid, SpeedoPTD[playerid][1]);
         }
 

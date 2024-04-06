@@ -38,38 +38,38 @@ main()
         SendRconCommand("exit");
 	}
 }
-#include "./modules/mysql.pwn"
-#include "./modules/_var.pwn"
-#include "./modules/_defines.pwn"
-#include "./modules/_functions.pwn"
-#include "./modules/_callback.pwn"
-#include "./modules/_core.pwn"
-#include "./modules/_textdraw.pwn"
-#include "./modules/color.pwn"
+#include "./modules/Main/mysql.pwn"
+#include "./modules/Main/_var.pwn"
+#include "./modules/Main/_defines.pwn"
+#include "./modules/Main/_functions.pwn"
+#include "./modules/Main/_callback.pwn"
+#include "./modules/Main/_core.pwn"
+#include "./modules/Main/_textdraw.pwn"
+#include "./modules/Main/color.pwn"
 
-#include "./modules/server/ProgressLoad.pwn"
+#include "./modules/Server/ProgressLoad.pwn"
 
 // login
-#include "./modules/characters/build.pwn"
+#include "./modules/Players/characters/build.pwn"
 
-#include "./modules/characters/Hud/_textdraw.pwn"
+#include "./modules/Players/characters/Hud/_textdraw.pwn"
 // Text and time server
-#include "./modules/characters/Player/ServerTextAndTime/textdraw.pwn"
-#include "./modules/characters/Player/ServerTextAndTime/func.pwn"
+#include "./modules/Players/characters/Player/ServerTextAndTime/textdraw.pwn"
+#include "./modules/Players/characters/Player/ServerTextAndTime/func.pwn"
 
 // core login
-#include "./modules/multi-account/account.pwn"
+#include "./modules/Players/multi-account/account.pwn"
 // core server
-#include "./modules/server/radio.pwn"
+#include "./modules/Server/radio.pwn"
 // dynamic
-#include "./modules/dynamic/build.pwn"
+#include "./modules/Server/dynamic/build.pwn"
 
-#include "./modules/Vehicle/build.pwn"
+#include "./modules/Server/Vehicle/build.pwn"
 
-#include "./modules/Organization/_var.pwn"
-#include "./modules/Organization/_function.pwn"
-#include "./modules/Organization/_callback.pwn"
-#include "./modules/Organization/_textdraw.pwn"
+#include "./modules/Server/Organization/_var.pwn"
+#include "./modules/Server/Organization/_function.pwn"
+#include "./modules/Server/Organization/_callback.pwn"
+#include "./modules/Server/Organization/_textdraw.pwn"
 
 public SSA_Mysql_Intit()
 {

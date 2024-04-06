@@ -16540,3 +16540,173 @@ Type: 2
 [12:42:26] [connection] incoming connection: 127.0.0.1:63296 id: 0
 [12:42:26] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
 [12:42:28] [part] Khoi_Nguyen has left the server (0:1)
+[12:51:06] [connection] incoming connection: 127.0.0.1:56192 id: 0
+[12:51:06] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[12:51:13] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[12:51:13] SELECT * FROM `vehicle` WHERE `sqlid` = '31'
+[12:51:13] Loaded 6 vehicle for Khoi_Nguyenz
+[12:53:21] Character Save: Khoi Nguyenz | AccountID: 31
+[12:53:21] [part] Khoi_Nguyenz has left the server (0:1)
+[12:53:55] [connection] incoming connection: 127.0.0.1:60315 id: 0
+[12:53:55] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[12:54:38] Character Save: Khoi Nguyen | AccountID: 31
+[12:54:38] [part] Khoi_Nguyen has left the server (0:1)
+[12:56:09] [connection] incoming connection: 127.0.0.1:52952 id: 0
+[12:56:09] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[12:56:19] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[12:56:19] SELECT * FROM `vehicle` WHERE `sqlid` = '31'
+[12:56:19] Loaded 6 vehicle for Khoi_Nguyenz
+[13:01:12] Character Save: Khoi Nguyenz | AccountID: 31
+[13:01:12] [part] Khoi_Nguyenz has left the server (0:1)
+[13:09:05] [connection] incoming connection: 127.0.0.1:52367 id: 0
+[13:09:05] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[13:09:13] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[13:09:13] SELECT * FROM `vehicle` WHERE `sqlid` = '31'
+[13:09:13] Loaded 6 vehicle for Khoi_Nguyenz
+[13:13:20] Character Save: Khoi Nguyenz | AccountID: 31
+[13:13:20] [part] Khoi_Nguyenz has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[21:18:06] weburl = "www.sa-mp.com"  (string)
+[21:18:06] password = ""  (string)
+[21:18:06] filterscripts = ""  (string)
+[21:18:06] 
+[21:18:06] Server Plugins
+[21:18:06] --------------
+[21:18:06]  Loading plugin: mysql
+[21:18:06]  >> plugin.mysql: R41-4 successfully loaded.
+[21:18:06]   Loaded.
+[21:18:06]  Loading plugin: whirlpool
+[21:18:06]  
+[21:18:06]  ==================
+[21:18:06]  
+[21:18:06]   Whirlpool loaded
+[21:18:06]  
+[21:18:06]  ==================
+[21:18:06]  
+[21:18:06]   Loaded.
+[21:18:06]  Loading plugin: sscanf
+[21:18:06] 
+
+[21:18:06]  ===============================
+
+[21:18:06]       sscanf plugin loaded.     
+
+[21:18:06]          Version:  2.8.3        
+
+[21:18:06]   (c) 2018 Alex "Y_Less" Cole  
+
+[21:18:06]  ===============================
+
+[21:18:06]   Loaded.
+[21:18:06]  Loading plugin: streamer
+[21:18:06] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[21:18:06]   Loaded.
+[21:18:06]  Loaded 4 plugins.
+
+[21:18:06] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:18:06] [artwork:crc] logo.txd CRC = 0x3E256910
+[21:18:06] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:18:06] [artwork:crc] joinspawn.txd CRC = 0x39E48CC2
+[21:18:06] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:18:06] [artwork:crc] login.txd CRC = 0x6B804645
+[21:18:06] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:18:06] [artwork:crc] inv.txd CRC = 0x3C7B1C5D
+[21:18:06] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:18:06] [artwork:crc] 247.txd CRC = 0x5C708255
+[21:18:06] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:18:06] [artwork:crc] Inventory.txd CRC = 0x70C676BF
+[21:18:06] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:18:06] [artwork:crc] Hudz.txd CRC = 0xAA707129
+[21:18:06] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:18:06] [artwork:crc] Speedometter.txd CRC = 0x4FB8AD9D
+[21:18:06] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[21:18:06] [artwork:crc] Org.txd CRC = 0x429499AB
+[21:18:06] [artwork:crc] newbiespawn.dff CRC = 0x2499225A
+[21:18:07] [artwork:crc] newbiespawn.txd CRC = 0x2AF71386
+[21:18:07] [artwork:crc] congvien.dff CRC = 0x94D2954
+[21:18:07] [artwork:crc] congvien.txd CRC = 0xECDCE39F
+[21:18:07] [artwork:crc] honuoc.dff CRC = 0xFBE95451
+[21:18:07] [artwork:crc] honuoc.txd CRC = 0xC8354AE8
+[21:18:07] 
+[21:18:07] Filterscripts
+[21:18:07] ---------------
+[21:18:07]   Loaded 0 filterscripts.
+
+[21:18:07] AMX (43731056) loaded
+[21:18:07]  
+[21:18:07]  
+[21:18:07]  
+[21:18:07]  ======================================= 
+[21:18:07]  |                                     | 
+[21:18:07]  |        YSI version 4.00.0001        | 
+[21:18:07]  |        By Alex "Y_Less" Cole        | 
+[21:18:07]  |                                     | 
+[21:18:07]  ======================================= 
+[21:18:07]  
+[21:18:07] Loaded 0 Organization
+[21:18:07] > Ket noi den du lieu thanh cong.
+[21:18:07] Number of vehicle models: 0
+[21:18:07] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
+[21:18:07] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+[21:18:17] [connection] incoming connection: 127.0.0.1:52659 id: 0
+[21:18:17] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[21:20:25] [part] Khoi_Nguyen has left the server (0:1)
+[21:20:33] [connection] incoming connection: 127.0.0.1:58842 id: 0
+[21:20:34] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[21:24:20] [part] Khoi_Nguyen has left the server (0:1)
+[21:24:27] [connection] incoming connection: 127.0.0.1:49666 id: 0
+[21:24:28] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[21:24:33] [part] Khoi_Nguyen has left the server (0:1)
+[21:24:54] [connection] incoming connection: 127.0.0.1:49666 id: 0
+[21:24:54] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[21:27:24] [part] Khoi_Nguyen has left the server (0:1)
+[21:28:25] [connection] incoming connection: 127.0.0.1:51037 id: 0
+[21:28:25] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[21:28:57] [part] Khoi_Nguyen has left the server (0:0)
+[21:29:30] [connection] incoming connection: 127.0.0.1:57446 id: 0
+[21:29:30] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[21:29:33] [part] Khoi_Nguyen has left the server (0:1)
+[21:37:51] [connection] incoming connection: 127.0.0.1:61471 id: 0
+[21:37:52] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[21:37:54] [part] Khoi_Nguyen has left the server (0:1)
+[21:40:48] [connection] incoming connection: 127.0.0.1:58336 id: 0
+[21:40:48] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[21:41:23] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[21:41:23] SELECT * FROM `vehicle` WHERE `sqlid` = '31'
+[21:41:23] Loaded 6 vehicle for Khoi_Nguyenz
+[21:41:29] Name: Test
+Leader: Khoi_Nguyenz 
+Total member: 1
+Birth: 29-3-2024
+Logo: logo:logo
+Type: 2
+[21:51:18] Character Save: Khoi Nguyenz | AccountID: 31
+[21:51:18] [part] Khoi_Nguyenz has left the server (0:1)
+[21:51:24] [connection] incoming connection: 127.0.0.1:56593 id: 0
+[21:51:24] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[21:52:44] [part] Khoi_Nguyen has left the server (0:0)
+[22:13:08] [connection] incoming connection: 127.0.0.1:64761 id: 0
+[22:13:08] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[22:13:16] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[22:13:16] SELECT * FROM `vehicle` WHERE `sqlid` = '31'
+[22:13:16] Loaded 6 vehicle for Khoi_Nguyenz
+[22:15:58] Character Save: Khoi Nguyenz | AccountID: 31
+[22:15:58] [part] Khoi_Nguyenz has left the server (0:1)
+[22:16:03] [connection] incoming connection: 127.0.0.1:51566 id: 0
+[22:16:03] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[22:16:13] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[22:16:13] SELECT * FROM `vehicle` WHERE `sqlid` = '31'
+[22:16:13] Loaded 6 vehicle for Khoi_Nguyenz
+[22:18:10] Character Save: Khoi Nguyenz | AccountID: 31
+[22:18:10] [part] Khoi_Nguyenz has left the server (0:1)

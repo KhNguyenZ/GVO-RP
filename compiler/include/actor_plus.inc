@@ -93,7 +93,7 @@
 #if !defined isnull
 	#define isnull(%1) ((!(%1[0])) || (((%1[0]) == '\1') && (!(%1[1]))))
 #endif
-
+#include <YSI_Coding\y_hooks>
 // =====================================================================================
 
 // #define DONT_DETECT_OPTA can be defined if you won't detect use any timer for OnPlayerTargetActor(playerid, actorid, weaponid);
@@ -325,7 +325,7 @@ stock static
 // =======================================================================================================================================================================================
 // =======================================================================================================================================================================================
 
-public OnPlayerWeaponShot(playerid, weaponid, hittype, hitid, Float:fX, Float:fY, Float:fZ)
+hook OnPlayerWeaponShot(playerid, weaponid, hittype, hitid, Float:fX, Float:fY, Float:fZ)
 {
 	if(hittype != BULLET_HIT_TYPE_NONE || (fX == 0.0 && fY == 0.0))
 		return 1;
@@ -355,7 +355,7 @@ public OnPlayerWeaponShot(playerid, weaponid, hittype, hitid, Float:fX, Float:fY
 
 // =====================================================================================
 
-public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, weaponid, bodypart)
+hook OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, weaponid, bodypart)
 {
 	new 
 		Float:fOriginX, Float:fOriginY, Float:fOriginZ,
@@ -419,7 +419,7 @@ public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, weaponid
 
 #if USING_STREAMER
 
-public OnPlayerGiveDamageDynamicActor(playerid, STREAMER_TAG_ACTOR:actorid, Float:amount, weaponid, bodypart)
+hook OnPlayerGiveDamageDynamicActor(playerid, STREAMER_TAG_ACTOR:actorid, Float:amount, weaponid, bodypart)
 {
 	new 
 		Float:fOriginX, Float:fOriginY, Float:fOriginZ,
@@ -486,7 +486,7 @@ public OnPlayerGiveDamageDynamicActor(playerid, STREAMER_TAG_ACTOR:actorid, Floa
 
 #endif // #if USING_STREAMER
 
-public OnPlayerConnect(playerid)
+hook OnPlayerConnect(playerid)
 {
 	Player_Actor_Target[playerid][eaaActorID] = INVALID_ACTOR_ID;
 	Player_Actor_Target[playerid][eaaIsDynamicActor] = false;
@@ -513,7 +513,7 @@ public OnPlayerConnect(playerid)
 // =====================================================================================
 
 #if defined OnPlayerTextNearActor
-public OnPlayerText(playerid, text[])
+hook OnPlayerText(playerid, text[])
 {
 	new actorid,
 		bool:isdyna;
@@ -641,7 +641,7 @@ public OnPlayerText(playerid, text[])
 
 
 #if !defined FILTERSCRIPT
-	public OnGameModeInit()
+	hook OnGameModeInit()
 	{
 		#if !USING_Y_TIMERS && !defined DONT_DETECT_OPTA
 		SetTimer("@AP_AimingActor", DEFAULT_CHECKING_TIME, true);
@@ -698,7 +698,7 @@ public OnPlayerText(playerid, text[])
 	#endif			
 	#define OnGameModeInit AP_OnGameModeInit
 #else
-	public OnFilterScriptInit()
+	hook OnFilterScriptInit()
 	{
 		#if !USING_Y_TIMERS && !defined DONT_DETECT_OPTA
 		SetTimer("@AP_AimingActor", DEFAULT_CHECKING_TIME, true);
@@ -2184,7 +2184,7 @@ stock IsActorAtDiffPosForPlayer(forplayerid, actorid, bool:isdynamic = DEFAULT_I
 // ================================================================================== Hooked callbacks ===================================================================================
 // =======================================================================================================================================================================================
 
-public OnActorStreamIn(actorid, forplayerid)
+hook OnActorStreamIn(actorid, forplayerid)
 {
 	new Float:x,
 		Float:y,
@@ -2304,7 +2304,7 @@ public OnActorStreamIn(actorid, forplayerid)
 
 // =======================================================================================================================================================================================
 
-public OnOutcomingRPC(playerid, rpcid, BitStream:bs)
+hook OnOutcomingRPC(playerid, rpcid, BitStream:bs)
 {
 	if(rpcid == 0xAB)
 	{

@@ -1,4 +1,5 @@
-#include <actor_plus>
+#include <YSI_Coding\y_hooks>
+// #include <actor_plus>
 
 stock CreatePlayerInteractiveNPC(playerid)
 {
@@ -150,17 +151,18 @@ stock CreatePlayerInteractiveNPC(playerid)
 // InteractiveNPCs_Data[MAX_INTERACTIVE_NPC][InteractiveNPCs_Enum];
 func:IsFreeInteractiveID(inpc_id)
 {
-    new check = 1;
+    new checkzz = 1;
     for(new i; i < MAX_INTERACTIVE_NPC; i++)
     {
         if(InteractiveNPCs_Data[i][iNPC_ID] == inpc_id)
         {
-            check = 0;
+            checkzz = 0;
             break;
         }
     }
+    return checkzz;
 }
-func:CreateInteractiveNPC(i_id, npcid, a_name[], skin, title, content, Float:iNPC_PosX, Float:iNPC_PosY, Float:iNPC_PosZ, Float:iNPC_PosA);
+func:CreateInteractiveNPC(i_id, npcid, a_name[], skin, title, content, Float:iNPC_PosX, Float:iNPC_PosY, Float:iNPC_PosZ, Float:iNPC_PosA)
 {
     if(IsFreeInteractiveID(inpc_id)){
         inter_npc = i_id;
@@ -179,6 +181,6 @@ func:CreateInteractiveNPC(i_id, npcid, a_name[], skin, title, content, Float:iNP
     ApplyActorAnimation(InteractiveNPCs_Data[inter_npc][iNPC_ID], "LOWRIDER","prtial_gngtlkB",4.1,1,0,0,0,0);
 
     //SetActorName(actorid, actor_name[], bool:display, color = DEFAULT_ACTOR_COLOR_NAME, bool:contain_id = false, bool:isdynamic = DEFAULT_IS_DYNAMIC_PARAMETER)
-    SetActorName(InteractiveNPCs_Data[inter_npc][iNPC_ID], a_name, 1, DEFAULT_ACTOR_COLOR_NAME);
+    // SetActorName(InteractiveNPCs_Data[inter_npc][iNPC_ID], a_name, 1, DEFAULT_ACTOR_COLOR_NAME);
     return 1;
 }

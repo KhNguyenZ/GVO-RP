@@ -47,6 +47,8 @@ main()
 #include "./modules/Main/_textdraw.pwn"
 #include "./modules/Main/color.pwn"
 
+#include "./modules/Dev/build.pwn"
+
 #include "./modules/Server/ProgressLoad.pwn"
 
 // login

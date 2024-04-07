@@ -302,12 +302,12 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 		new Pass_str[128];
 		GetPVarString(playerid, "UserPass_", Pass_str, sizeof(Pass_str));
 
-		if(isnull(Pass_str))
+		if(isnull(Pass_str) || GetPVarInt(playerid, #InputPassworded) != 1)
 		{
 			SendClientMessage(playerid, -1, "[!] Ban chua nhap mat khau !");
 		}
 
-		if(!strcmp(account_get_password(player_get_name(playerid, false)), Pass_str))
+		if(!strcmp(account_get_password(player_get_name(playerid, false)), Pass_str) && GetPVarInt(playerid, #InputPassworded) == 1)
 		{
 			new queryzzz[128], Cache:acc_cache;
 			mysql_format(Handle(), queryzzz, sizeof(queryzzz), "SELECT * FROM `accounts` WHERE `Username` = '%s'", player_get_name(playerid, false));
@@ -373,6 +373,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				}
 				if(strlen(inputtext) < 64)
 				{
+					SetPVarInt(playerid, #InputPassworded, 1);
 					SetPVarString(playerid, "UserPass_", inputtext);
 					new pass_string[128];
 					for(new pass_hide = 0 ; pass_hide < strlen(inputtext); pass_hide++)

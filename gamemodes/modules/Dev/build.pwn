@@ -3,3 +3,5 @@
 
 #include "./modules/Dev/Interactive-NPCs/_var.pwn"
 #include "./modules/Dev/Interactive-NPCs/_textdraw.pwn"
+#include "./modules/Dev/Interactive-NPCs/_function.pwn"
+#include "./modules/Dev/Interactive-NPCs/_callback.pwn"

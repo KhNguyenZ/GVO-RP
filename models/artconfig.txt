@@ -8,7 +8,7 @@ AddSimpleModel(-1,19379, -2007, "object.dff", "Inventory.txd");
 AddSimpleModel(-1,19379, -2008, "object.dff", "Hudz.txd");
 AddSimpleModel(-1,19379, -2009, "object.dff", "Speedometter.txd");
 AddSimpleModel(-1,19379, -2010, "object.dff", "Org.txd");
-AddSimpleModel(-1,19379, -2011, "object.dff", "Menu.txd");
+AddSimpleModel(-1,19379, -2011, "object.dff", "npctextbox.txd");
 AddSimpleModel(-1,19379, -2012, "object.dff", "GuideBtn.txd");
 AddSimpleModel(-1,19379, -2013, "object.dff", "Info.txd");
 

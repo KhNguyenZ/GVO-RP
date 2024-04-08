@@ -12,6 +12,7 @@
 #include <DialogCenter>
 #include <Veh-Lib\tdw_vyengine> 
 #include <sampp>
+#include <actor_plus>
 #undef MAX_PLAYERS
 #define MAX_PLAYERS 500
 #pragma disablerecursion

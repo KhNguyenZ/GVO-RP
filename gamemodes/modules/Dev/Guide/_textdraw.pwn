@@ -1,7 +1,24 @@
-stock CreatePlayerGuide(playerid, key_guid[], key_suggest[])
+stock CreatePlayerGuide(playerid,key_guid[], key_suggest[])
 {
 
     new p_guide_index = CountGuide[playerid];
+    // PlayerTextDrawDestroy(playerid,Guide_BG_PTD[playerid][p_guide_index]);
+    // PlayerTextDrawDestroy(playerid,Guide_Key_PTD[playerid][p_guide_index]);
+    // PlayerTextDrawDestroy(playerid,Guide_Suggest_PTD[playerid][p_guide_index]);
+
+    // for(new i ; i < 10; i++)
+    // {
+    //     new key_n = GuideTXD_Info[i][g_key];
+    //     if( key_n == key_guid){
+    //         printf("[Guide-Error] Key %s was used, ID Guide is %d", key_guid, i);
+    //         return 0;
+    //     }
+    // }
+    GuideTXD_Info[p_guide_index][g_id] = p_guide_index;
+    
+    GuideTXD_Info[p_guide_index][g_key] = MapCharToValue(key_guid);
+    format(GuideTXD_Info[p_guide_index][g_content], 1280, "%s", key_suggest);
+
     if(p_guide_index > 9) return 0;
     new Float:bg_pos[2], Float:Key_pos[2], Float:Key_Sug[2];
     bg_pos[0] = 4;
@@ -52,13 +69,133 @@ stock CreatePlayerGuide(playerid, key_guid[], key_suggest[])
     return 1;
 }
 
+func:MapCharToValue(character[])
+{
+    new value, n_character;
+    n_character = tolower(character[0]);
+    switch (n_character)
+    {
+        case 'a':
+            value = 1;
+            
+        case 'b':
+            value = 2;
+            
+        case 'c':
+            value = 3;
+            
+        case 'd':
+            value = 4;
+            
+        case 'e':
+            value = 5;
+            
+        case 'f':
+            value = 6;
+            
+        case 'g':
+            value = 7;
+            
+        case 'h':
+            value = 8;
+            
+        case 'i':
+            value = 9;
+            
+        case 'j':
+            value = 10;
+            
+        case 'k':
+            value = 11;
+            
+        case 'l':
+            value = 12;
+            
+        case 'm':
+            value = 13;
+            
+        case 'n':
+            value = 14;
+            
+        case 'o':
+            value = 15;
+            
+        case 'p':
+            value = 16;
+            
+        case 'q':
+            value = 17;
+            
+        case 'r':
+            value = 18;
+            
+        case 's':
+            value = 19;
+            
+        case 't':
+            value = 20;
+            
+        case 'u':
+            value = 21;
+            
+        case 'v':
+            value = 22;
+            
+        case 'w':
+            value = 23;
+            
+        case 'x':
+            value = 24;
+            
+        case 'y':
+            value = 25;
+            
+        case 'z':
+            value = 26;
+            
+        default:
+            value = 0; // Default value if character is not a letter
+            
+    }
 
+    return value;
+}
+
+func:FindKeyGuide(key_find[])
+{
+    new key_finder = -1;
+    for(new i ; i < 10; i++)
+    {
+        if(GuideTXD_Info[i][g_key] == MapCharToValue(key_find)){
+            key_finder = i;
+            break;
+        }
+    }
+    return key_finder;
+}
+
+func:ChangeGuideContent(playerid, key_f[],g_content_c[])
+{
+    new g_idss = FindKeyGuide(key_f);
+    if(g_idss == -1) return CreatePlayerGuide(playerid,key_f, g_content_c);
+
+    format(GuideTXD_Info[g_idss][g_content], 1280, "%s", g_content_c);
+
+    PlayerTextDrawSetString(playerid, Guide_Suggest_PTD[playerid][g_idss], g_content_c);
+    return 1;
+}
 hook OnPlayerSpawn(playerid)
 {
-    CreatePlayerGuide(playerid, "A", "Bat Voice");
-    CreatePlayerGuide(playerid, "B", "Bat Setting");
-    CreatePlayerGuide(playerid, "C", "Bat Inventory");
-    CreatePlayerGuide(playerid, "D", "Bat Org Management");
-    CreatePlayerGuide(playerid, "E", "Tuong tac voi ~g~Mystery");
+    // CreatePlayerGuide(playerid, "A", "Bat Voice");
+    // CreatePlayerGuide(playerid, "B", "Bat Setting");
+    // CreatePlayerGuide(playerid, "C", "Bat Inventory");
+    // CreatePlayerGuide(playerid, "D", "Bat Org Management");
+    // CreatePlayerGuide(playerid, "E", "Tuong tac voi ~g~Mystery");
+    return 1;
+}
+
+hook OnPlayerConnect(playerid)
+{
+    CountGuide[playerid] = 0;
     return 1;
 }

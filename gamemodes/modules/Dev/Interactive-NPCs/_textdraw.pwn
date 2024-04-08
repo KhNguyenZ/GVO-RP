@@ -1,10 +1,8 @@
 #include <YSI_Coding\y_hooks>
 // #include <actor_plus>
 
-stock CreatePlayerInteractiveNPC(playerid)
+func:CreatePlayerInteractiveNPC(playerid)
 {
-    new PlayerText: iNPC_PTD[MAX_PLAYERS][13];
-
     iNPC_PTD[playerid][0] = CreatePlayerTextDraw(playerid, 2.000, 313.000, ""); // title
     PlayerTextDrawLetterSize(playerid, iNPC_PTD[playerid][0], 0.479, 2.299);
     PlayerTextDrawAlignment(playerid, iNPC_PTD[playerid][0], 1);
@@ -58,7 +56,7 @@ stock CreatePlayerInteractiveNPC(playerid)
     PlayerTextDrawSetProportional(playerid, iNPC_PTD[playerid][4], 1);
     PlayerTextDrawSetSelectable(playerid, iNPC_PTD[playerid][4], 1);
 
-    iNPC_PTD[playerid][5] = CreatePlayerTextDraw(playerid, 350.000, 315.000, "Optional 1");
+    iNPC_PTD[playerid][5] = CreatePlayerTextDraw(playerid, 350.000, 315.000, ""); //Optional 1
     PlayerTextDrawLetterSize(playerid, iNPC_PTD[playerid][5], 0.300, 1.500);
     PlayerTextDrawAlignment(playerid, iNPC_PTD[playerid][5], 2);
     PlayerTextDrawColor(playerid, iNPC_PTD[playerid][5], -1);
@@ -68,7 +66,7 @@ stock CreatePlayerInteractiveNPC(playerid)
     PlayerTextDrawFont(playerid, iNPC_PTD[playerid][5], 2);
     PlayerTextDrawSetProportional(playerid, iNPC_PTD[playerid][5], 1);
 
-    iNPC_PTD[playerid][6] = CreatePlayerTextDraw(playerid, 465.000, 315.000, "Optional 2");
+    iNPC_PTD[playerid][6] = CreatePlayerTextDraw(playerid, 465.000, 315.000, "");
     PlayerTextDrawLetterSize(playerid, iNPC_PTD[playerid][6], 0.300, 1.500);
     PlayerTextDrawAlignment(playerid, iNPC_PTD[playerid][6], 2);
     PlayerTextDrawColor(playerid, iNPC_PTD[playerid][6], -1);
@@ -78,7 +76,7 @@ stock CreatePlayerInteractiveNPC(playerid)
     PlayerTextDrawFont(playerid, iNPC_PTD[playerid][6], 2);
     PlayerTextDrawSetProportional(playerid, iNPC_PTD[playerid][6], 1);
 
-    iNPC_PTD[playerid][7] = CreatePlayerTextDraw(playerid, 581.000, 315.000, "Optional 3");
+    iNPC_PTD[playerid][7] = CreatePlayerTextDraw(playerid, 581.000, 315.000, "");
     PlayerTextDrawLetterSize(playerid, iNPC_PTD[playerid][7], 0.300, 1.500);
     PlayerTextDrawAlignment(playerid, iNPC_PTD[playerid][7], 2);
     PlayerTextDrawColor(playerid, iNPC_PTD[playerid][7], -1);
@@ -149,41 +147,47 @@ stock CreatePlayerInteractiveNPC(playerid)
     return 1;
 }
 // InteractiveNPCs_Data[MAX_INTERACTIVE_NPC][InteractiveNPCs_Enum];
-func:IsFreeInteractiveID(inpc_id)
+func:ShowPlayerInteractive(playerid, inter_ids, i_btn1[] = "", i_btn2[] = "", i_btn3[] = "",i_btn4[] = "")
 {
-    new checkzz = 1;
-    for(new i; i < MAX_INTERACTIVE_NPC; i++)
-    {
-        if(InteractiveNPCs_Data[i][iNPC_ID] == inpc_id)
-        {
-            checkzz = 0;
-            break;
-        }
-    }
-    return checkzz;
+    if(GetPVarInt(playerid, #isOpenInteractive)) return DestroyPlayerInteractive(playerid);
+
+    new Float:Int_Pos[3];
+    GetPlayerPos(playerid, Int_Pos[0], Int_Pos[1], Int_Pos[2]);
+
+    SetPlayerCameraLookAt(playerid, Int_Pos[0], Int_Pos[1]-1, Int_Pos[2]);
+    SetPlayerCameraPos(playerid,InteractiveNPCs_Data[inter_ids][iNPC_Pos][0],
+    InteractiveNPCs_Data[inter_ids][iNPC_Pos][1],
+    InteractiveNPCs_Data[inter_ids][iNPC_Pos][2]);
+    TogglePlayerControllable(playerid, 0);
+
+    SetPVarInt(playerid, #isOpenInteractive, 1);
+    CreatePlayerInteractiveNPC(playerid);
+    PlayerTextDrawSetString(playerid, iNPC_PTD[playerid][0], InteractiveNPCs_Data[inter_ids][iNPC_Title]);
+    PlayerTextDrawSetString(playerid, iNPC_PTD[playerid][8], InteractiveNPCs_Data[inter_ids][iNPC_Content]);
+
+    new btnF[128];
+    format(btnF, 128, "%s", i_btn1);
+    PlayerTextDrawSetString(playerid, iNPC_PTD[playerid][9], btnF);
+    format(btnF, 128, "%s", i_btn2);
+    PlayerTextDrawSetString(playerid, iNPC_PTD[playerid][10], btnF);
+    format(btnF, 128, "%s", i_btn3);
+    PlayerTextDrawSetString(playerid, iNPC_PTD[playerid][11], btnF);
+    format(btnF, 128, "%s", i_btn4);
+    PlayerTextDrawSetString(playerid, iNPC_PTD[playerid][12], btnF);
+
+    for(new i; i < 13; i++) PlayerTextDrawShow(playerid, iNPC_PTD[playerid][i]);
+    SelectTextDraw(playerid, -1);
+    return 1;
 }
-func:CreateInteractiveNPC(i_id, npcid, a_name[], skin, title[], content[], Float:iNPC_PosX, Float:iNPC_PosY, Float:iNPC_PosZ, Float:iNPC_PosA)
+
+func:DestroyPlayerInteractive(playerid)
 {
-    new inter_npc;
-    if(IsFreeInteractiveID(i_id)){
-        inter_npc = i_id;
-    } else{
-        printf("[Log-Dev]Interactive NPCs ID: %d was used to", i_id);
-        return 1;
-    }
+    CancelSelectTextDraw(playerid);
+    for(new i; i < 13; i++) PlayerTextDrawDestroy(playerid, iNPC_PTD[playerid][i]);
+    DeletePVar(playerid, #isOpenInteractive);
 
-    InteractiveNPCs_Data[inter_npc][iNPC_Pos][0] = iNPC_PosX;
-    InteractiveNPCs_Data[inter_npc][iNPC_Pos][1] = iNPC_PosY;
-    InteractiveNPCs_Data[inter_npc][iNPC_Pos][2] = iNPC_PosZ;
-    InteractiveNPCs_Data[inter_npc][iNPC_Pos][3] = iNPC_PosA;
-
-    InteractiveNPCs_Data[inter_npc][iNPC_Skin] = skin;
-
-    InteractiveNPCs_Data[inter_npc][iNPC_ID] = CreateActor(skin, iNPC_PosX, iNPC_PosY, iNPC_PosZ, iNPC_PosA);
-    ApplyActorAnimation(InteractiveNPCs_Data[inter_npc][iNPC_ID], "LOWRIDER","prtial_gngtlkB",4.1,1,0,0,0,0);
-
-    //SetActorName(actorid, actor_name[], bool:display, color = DEFAULT_ACTOR_COLOR_NAME, bool:contain_id = false, bool:isdynamic = DEFAULT_IS_DYNAMIC_PARAMETER)
-    // SetActorName(InteractiveNPCs_Data[inter_npc][iNPC_ID], a_name, 1, DEFAULT_ACTOR_COLOR_NAME);
+    SetCameraBehindPlayer(playerid);
+    TogglePlayerControllable(playerid, 1);
     return 1;
 }
 
@@ -191,5 +195,8 @@ hook OnGameModeInit()
 {
     for(new i; i < MAX_INTERACTIVE_NPC; i++) InteractiveNPCs_Data[i][iNPC_ID] = -1;
     new Inter_NPC_Test;
-    CreateInteractiveNPC(0, Inter_NPC_Test, "Test", 2, "title", "Interactive Test", 1808.5581,-1905.7458,13.5741,90.0084);
+    Inter_NPC_Test = CreateInteractiveNPC(0, "Test", "Interactive Test",2, "title", "Interactive Test", 1808.5581,-1905.7458,13.5741,90.0084);
+
+    Inter_NPC_Test = CreateInteractiveNPC(1, "KhNguyen_Z", "Interactive Test Actor",2, "title", "Interactive Test",1797.5756,-1909.0494,13.3979,150.5175);
+    ApplyActorAnimation(Inter_NPC_Test, "LOWRIDER","prtial_gngtlkB",4.1,1,0,0,0,0);
 }

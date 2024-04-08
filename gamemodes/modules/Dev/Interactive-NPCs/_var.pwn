@@ -1,5 +1,5 @@
 #define MAX_INTERACTIVE_NPC 1000
-#define MAX_INTERACTIVE_NPC_NAME 24
+#define MAX_INTERACTIVE_NPC_NAME 100
 
 enum InteractiveNPCs_Enum{
     iNPC_ID,
@@ -13,3 +13,6 @@ enum InteractiveNPCs_Enum{
 }
 
 new InteractiveNPCs_Data[MAX_INTERACTIVE_NPC][InteractiveNPCs_Enum];
+
+new Count_InterNPC;
+new PlayerText: iNPC_PTD[MAX_PLAYERS][13];

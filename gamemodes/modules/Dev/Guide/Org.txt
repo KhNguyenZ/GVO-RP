@@ -1,0 +1,5 @@
+Admin:
+
+tạo/delete org
+chỉnh sửa thông tin org ( mọi thông tin nằm ở database `organization` )
+thêm/sửa/xóa weapon ( database `organization_safe_gun`)

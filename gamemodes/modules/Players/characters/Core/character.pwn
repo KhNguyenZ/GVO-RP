@@ -42,6 +42,7 @@ hook OnPlayerDisconnect(playerid, reason)
 		mysql_format(Handle(), query, sizeof(query), "%s OrgRank = '%d',", query, Character[playerid][char_OrgRank]);
 
 		mysql_format(Handle(), query, sizeof(query), "%s Skin = %d WHERE `id` = '%d' LIMIT 1", query, Character[playerid][char_Skin], Character[playerid][char_player_id]);
+		printf("%s",query);
 		if(mysql_tquery(Handle(), query))
 		{
 			Character[playerid][char_Login] = false;

@@ -109,3 +109,8 @@ new pSpeedo[MAX_PLAYERS];
 new pCountVeh[MAX_VEHICLES];
 
 new OrgCount;
+
+
+new Text: InfoTD[3];
+
+new PlayerText: InfoPTD[MAX_PLAYERS][2];

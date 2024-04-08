@@ -1,3 +1,7 @@
+./modules/Dev/Interactive-NPCs/_textdraw.pwn(165) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "content"
+./modules/Dev/Interactive-NPCs/_textdraw.pwn(165) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "title"
+./modules/Dev/Interactive-NPCs/_textdraw.pwn(165) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "a_name"
+./modules/Dev/Interactive-NPCs/_textdraw.pwn(165) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "npcid"
 ./modules/Server/dynamic/Biz/callback.pwn(13) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "count"
 ./modules/Server/Organization/_function.pwn(22) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "org_type"
 ./modules/Server/Vehicle/Core/_var.pwn(108) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "MaxVehicleFuel"

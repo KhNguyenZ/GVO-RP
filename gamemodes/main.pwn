@@ -11,7 +11,7 @@
 #include <notify>
 #include <DialogCenter>
 #include <Veh-Lib\tdw_vyengine> 
-// #include <easyDialog>
+#include <sampp>
 #undef MAX_PLAYERS
 #define MAX_PLAYERS 500
 #pragma disablerecursion
@@ -77,8 +77,9 @@ public SSA_Mysql_Intit()
 {
 	for(new i; i < 1000; i++) LoadOrg(i);
 	LoadInventoryDrop();
-
+	CreateInfo(); 
 	printf("Loaded %d Organization", OrgCount);
+
 }
 public OnGameModeExit()
 {

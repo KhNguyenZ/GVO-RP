@@ -413,3 +413,63 @@ func:GetNameFromDB(sqlid)
     cache_delete(iGetNameFromDB);
     return namedb;
 }
+
+// func:FormatPrice(price)
+// {
+// 	new output[1280];
+//     new formatted_str[16];
+//     format(formatted_str, sizeof(formatted_str), "%d", price);
+
+//     new i = 0, j = 0;
+//     while (formatted_str[i] != EOS)
+//     {
+//         if (formatted_str[i] == ',')
+//         {
+//             output[j] = '.';
+//         }
+//         else
+//         {
+//             output[j] = formatted_str[i];
+//         }
+//         i++;
+//         j++;
+//     }
+//     return output;
+// }
+
+stock FormatMoney(amount)
+{
+	new output[1220];
+    new formatted_str[32];
+    format(formatted_str, sizeof(formatted_str), "%d", amount);
+
+    new i = 0, j = 0;
+    new len = strlen(formatted_str);
+    new comma_pos = len % 3;
+    
+    for (i = 0; i < len; i++)
+    {
+        if (i > 0 && (i - comma_pos) % 3 == 0)
+        {
+            output[j] = ',';
+            j++;
+        }
+        
+        output[j] = formatted_str[i];
+        j++;
+    }
+    output[j] = EOS;
+	return output;
+}
+
+
+
+func:GetTotalPlayerOnline()
+{
+	new total_p;
+	foreach(new i:Player)
+	{
+		if(IsPlayerConnected(i)) total_p++;
+	}
+	return total_p;
+}

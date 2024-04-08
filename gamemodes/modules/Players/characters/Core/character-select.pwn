@@ -195,11 +195,6 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			}
 			else 
 			{
-				new queyz[1280], Cache:update_cache;
-				format(queyz, sizeof(queyz), "UPDATE `accounts` SET `CharName%d` = '%s' WHERE `Username` = '%s'", GetPVarInt(playerid,"CharSelect_"), inputtext, player_get_name(playerid, false));
-				update_cache = mysql_query(Handle(),queyz);
-				cache_delete(update_cache);
-				DeletePVar(playerid,"CharSelect_");
 				new 
 					Cache:iCache, _query[200];
 				new query[240];
@@ -216,6 +211,12 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				}
 				else
 				{
+					new queyz[1280], Cache:update_cache;
+					format(queyz, sizeof(queyz), "UPDATE `accounts` SET `CharName%d` = '%s' WHERE `Username` = '%s'", GetPVarInt(playerid,"CharSelect_"), inputtext, player_get_name(playerid, false));
+					update_cache = mysql_query(Handle(),queyz);
+					cache_delete(update_cache);
+					DeletePVar(playerid,"CharSelect_");
+					
 					SetPlayerName(playerid, inputtext);
 					mysql_format(Handle(), _query, 200, "INSERT INTO `players` (`AccID`, `PlayerName`) VALUES ('%d', '%s')", strval(Character[playerid][char_account_id]), inputtext);
 					mysql_tquery(Handle(), _query, "OnCharacterCreate", "i", playerid);

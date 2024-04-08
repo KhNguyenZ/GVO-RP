@@ -14,6 +14,8 @@ public OnPlayerConnect(playerid)
     CreateHienTextDraw(playerid);
 	SetPVarString(playerid, "Current_IC_@", player_get_name(playerid));
 	TogglePlayerSpectating(playerid, 0);
+
+	CreatePlayerInfo(playerid);
 	return 1;
 }
 
@@ -252,6 +254,8 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 				SetPVarInt(playerid, "CharSelect_",char_click-4);
 				ShowPlayerDialog(playerid, dialog_charCreate, DIALOG_STYLE_INPUT, "Tao nhan vat.", "Nhap ten nhan vat ban muon tao.", "Tao", "Tro lai");				
 			}
+
+			printf("CharSelect: %d", GetPVarInt(playerid, "CharSelect_"));
 		}
 	}
 	if(playertextid == InfoCharPTD[playerid][7])
@@ -265,31 +269,6 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 		format(query, sizeof(query), "SELECT * FROM `players` WHERE `PlayerName` = '%s'", player_get_name(playerid, false));
 		mysql_tquery(Handle(), query, "OnCharacterLoad", "i", playerid);
 		SetPVarInt(playerid,"CharSelected_", 1);
-	}
-	// if(IsOpenSpawnMenu(playerid))
-	// {
-	if(playertextid == SpawnLSRP[playerid][1]) // Home
-	{
-		HienTextdraw(playerid, "Tinh nang dang doc update, vui long chon vi tri khac.", 5000);
-	}
-	if(playertextid == SpawnLSRP[playerid][2]) // Hien tai
-	{
-		SetSpawnInfo(playerid, 0, Character[playerid][char_Skin], Character[playerid][char_last_Pos][0], Character[playerid][char_last_Pos][1],Character[playerid][char_last_Pos][2],Character[playerid][char_last_Pos][3],0, 0,0, 0,0, 0);
-		FadeOutPlayerScreen(playerid);
-		SetTimerEx("PlayerJoinGameReal", 1000, false, "i", playerid);
-		HidePlayerSpawnMenu(playerid);
-		PlayerSetupping[playerid] = 0;
-
-		OnPlayerLoad(playerid);
-	}
-	if(playertextid == SpawnLSRP[playerid][3]) // Newbie Spawn
-	{
-		SetSpawnInfo(playerid, 0, Character[playerid][char_Skin], 1754.7391,-1895.4344,13.5870,0,0, 0,0, 0,0, 0);
-		FadeOutPlayerScreen(playerid);
-  		SetTimerEx("PlayerJoinGameReal", 1000, false, "i", playerid);
-		HidePlayerSpawnMenu(playerid);
-		PlayerSetupping[playerid] = 0;
-		OnPlayerLoad(playerid);
 	}
 	if(playertextid == LoginPTD[playerid][6])
 	{
@@ -397,6 +376,20 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 public OnPlayerUpdate(playerid)
 {
 	UpdateTextTime(playerid);
+
+	new info_f[128];
+	format(info_f, 128, "ID: ~w~%d", playerid);
+	PlayerTextDrawSetString(playerid, InfoPTD[playerid][0], info_f);
+
+	format(info_f, 128, "%s", FormatMoney(GetPlayerMoney(playerid)));
+	PlayerTextDrawSetString(playerid, InfoPTD[playerid][1], info_f);
+
+	format(info_f, 128, "%d", GetTotalPlayerOnline());
+	TextDrawSetString(InfoTD[1], info_f);
+	TextDrawShowForPlayer(playerid, InfoTD[1]);
+
+	ReloadPlayerTextDraw(playerid,InfoPTD[playerid][0]);
+	ReloadPlayerTextDraw(playerid,InfoPTD[playerid][1]);
 	return 1;
 }
 public OnPlayerSpawn(playerid)
@@ -410,7 +403,19 @@ public OnPlayerSpawn(playerid)
 	SetPlayerVirtualWorld(playerid, Character[playerid][char_VW]);
 	SetPlayerInterior(playerid, Character[playerid][char_Interior]);
 
+
+	TextDrawShowForPlayer(playerid, InfoTD[0]);
+	TextDrawShowForPlayer(playerid, InfoTD[1]);
+	TextDrawShowForPlayer(playerid, InfoTD[2]);
+
+
 	LoadPlayerInventory(playerid);
+
+	ToggleHUDComponentForPlayer(playerid, HUD_COMPONENT_MONEY, false);
+	ToggleHUDComponentForPlayer(playerid, HUD_COMPONENT_HEALTH, false);
+	ToggleHUDComponentForPlayer(playerid, HUD_COMPONENT_ARMOUR, false);
+	ToggleHUDComponentForPlayer(playerid, HUD_COMPONENT_WEAPON, false);
+	ToggleHUDComponentForPlayer(playerid, HUD_COMPONENT_AMMO, false);
 	return 1;
 }
 forward OnPlayerLoad(playerid);
@@ -437,7 +442,7 @@ public OnPlayerLoad(playerid)
 forward ForceSpawn(playerid);
 public ForceSpawn(playerid)
 {
-	SendClientMessage(playerid, -1, "Hi");
+	// SendClientMessage(playerid, -1, "Hi");
 	SpawnPlayer(playerid);
 }
 

@@ -8,7 +8,7 @@ stock CreatePlayerGuide(playerid, key_guid[], key_suggest[])
     Key_pos[0] = 13.5;
     Key_Sug[0] = 24;
 
-    printf("p_guide_index: %d", p_guide_index);
+    // printf("p_guide_index: %d", p_guide_index);
     bg_pos[1] = 291-(p_guide_index*18);
     Key_pos[1] = 292-(p_guide_index*18);
     Key_Sug[1] = 295-(p_guide_index*18);

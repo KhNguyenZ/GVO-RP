@@ -162,12 +162,14 @@ func:IsFreeInteractiveID(inpc_id)
     }
     return checkzz;
 }
-func:CreateInteractiveNPC(i_id, npcid, a_name[], skin, title, content, Float:iNPC_PosX, Float:iNPC_PosY, Float:iNPC_PosZ, Float:iNPC_PosA)
+func:CreateInteractiveNPC(i_id, npcid, a_name[], skin, title[], content[], Float:iNPC_PosX, Float:iNPC_PosY, Float:iNPC_PosZ, Float:iNPC_PosA)
 {
-    if(IsFreeInteractiveID(inpc_id)){
+    new inter_npc;
+    if(IsFreeInteractiveID(i_id)){
         inter_npc = i_id;
     } else{
         printf("[Log-Dev]Interactive NPCs ID: %d was used to", i_id);
+        return 1;
     }
 
     InteractiveNPCs_Data[inter_npc][iNPC_Pos][0] = iNPC_PosX;
@@ -183,4 +185,11 @@ func:CreateInteractiveNPC(i_id, npcid, a_name[], skin, title, content, Float:iNP
     //SetActorName(actorid, actor_name[], bool:display, color = DEFAULT_ACTOR_COLOR_NAME, bool:contain_id = false, bool:isdynamic = DEFAULT_IS_DYNAMIC_PARAMETER)
     // SetActorName(InteractiveNPCs_Data[inter_npc][iNPC_ID], a_name, 1, DEFAULT_ACTOR_COLOR_NAME);
     return 1;
+}
+
+hook OnGameModeInit()
+{
+    for(new i; i < MAX_INTERACTIVE_NPC; i++) InteractiveNPCs_Data[i][iNPC_ID] = -1;
+    new Inter_NPC_Test;
+    CreateInteractiveNPC(0, Inter_NPC_Test, "Test", 2, "title", "Interactive Test", 1808.5581,-1905.7458,13.5741,90.0084);
 }

@@ -147,23 +147,23 @@ func:CreatePlayerInteractiveNPC(playerid)
     return 1;
 }
 // InteractiveNPCs_Data[MAX_INTERACTIVE_NPC][InteractiveNPCs_Enum];
-func:ShowPlayerInteractive(playerid, inter_ids, i_btn1[] = "", i_btn2[] = "", i_btn3[] = "",i_btn4[] = "")
+func:ShowPlayerInteractive(playerid, inter_ids, title[], content[], i_btn1[] = "", i_btn2[] = "", i_btn3[] = "",i_btn4[] = "")
 {
     if(GetPVarInt(playerid, #isOpenInteractive)) return DestroyPlayerInteractive(playerid);
-
+    SetPVarInt(playerid, #Interactive_Open_ID, inter_ids);
     new Float:Int_Pos[3];
     GetPlayerPos(playerid, Int_Pos[0], Int_Pos[1], Int_Pos[2]);
 
-    SetPlayerCameraLookAt(playerid, Int_Pos[0], Int_Pos[1]-1, Int_Pos[2]);
+    /*SetPlayerCameraLookAt(playerid, Int_Pos[0], Int_Pos[1]-1, Int_Pos[2]);
     SetPlayerCameraPos(playerid,InteractiveNPCs_Data[inter_ids][iNPC_Pos][0],
     InteractiveNPCs_Data[inter_ids][iNPC_Pos][1],
-    InteractiveNPCs_Data[inter_ids][iNPC_Pos][2]);
+    InteractiveNPCs_Data[inter_ids][iNPC_Pos][2]);*/
     TogglePlayerControllable(playerid, 0);
 
     SetPVarInt(playerid, #isOpenInteractive, 1);
     CreatePlayerInteractiveNPC(playerid);
-    PlayerTextDrawSetString(playerid, iNPC_PTD[playerid][0], InteractiveNPCs_Data[inter_ids][iNPC_Title]);
-    PlayerTextDrawSetString(playerid, iNPC_PTD[playerid][8], InteractiveNPCs_Data[inter_ids][iNPC_Content]);
+    PlayerTextDrawSetString(playerid, iNPC_PTD[playerid][0], title);
+    PlayerTextDrawSetString(playerid, iNPC_PTD[playerid][8], content);
 
     new btnF[128];
     format(btnF, 128, "%s", i_btn1);
@@ -195,8 +195,9 @@ hook OnGameModeInit()
 {
     for(new i; i < MAX_INTERACTIVE_NPC; i++) InteractiveNPCs_Data[i][iNPC_ID] = -1;
     new Inter_NPC_Test;
-    Inter_NPC_Test = CreateInteractiveNPC(0, "Test", "Interactive Test",2, "title", "Interactive Test", 1808.5581,-1905.7458,13.5741,90.0084);
+    Inter_NPC_Test = CreateInteractiveNPC(0, "Test", "Interactive Test",2, 1808.5581,-1905.7458,13.5741,90.0084);
 
-    Inter_NPC_Test = CreateInteractiveNPC(1, "KhNguyen_Z", "Interactive Test Actor",2, "title", "Interactive Test",1797.5756,-1909.0494,13.3979,150.5175);
+    Inter_NPC_Test = CreateInteractiveNPC(1, "KhNguyen_Z", "Interactive Test Actor",2,1797.5756,-1909.0494,13.3979,150.5175);
+     Inter_NPC_Test = CreateInteractiveNPC(1, "KhNguyen_Z", "Interactive Test Actor",2,1797.5756,-1909.0494,13.3979,150.5175);
     ApplyActorAnimation(Inter_NPC_Test, "LOWRIDER","prtial_gngtlkB",4.1,1,0,0,0,0);
 }

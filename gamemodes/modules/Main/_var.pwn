@@ -114,3 +114,5 @@ new OrgCount;
 new Text: InfoTD[3];
 
 new PlayerText: InfoPTD[MAX_PLAYERS][2];
+
+new CountGuide[MAX_PLAYERS];

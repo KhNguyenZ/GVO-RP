@@ -8,6 +8,7 @@ public Mysql_PlayerInit(playerid){
 public OnPlayerConnect(playerid)
 {
 	PlayerSelectSlot[playerid] = -1;
+	CountGuide[playerid] = 0;
     InvWeight[playerid] = 0.0;
 	InvMaxWeight[playerid] = 10.0;
     CreateFadeEffectTextDraw(playerid);
@@ -308,6 +309,8 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
             ReloadPlayerTextDraw(playerid, LoginPTD[playerid][6]);
 		}
 	}
+
+	InteractiveNPCs_Click(playerid, PlayerText:playertextid);
 	return 1;
 }
 

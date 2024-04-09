@@ -11,7 +11,7 @@ func:IsFreeInteractiveID(inpc_id)
     }
     return checkzz;
 }
-func:CreateInteractiveNPC(i_id, a_name[], describe[], skin, title[], content[], Float:iNPC_PosX, Float:iNPC_PosY, Float:iNPC_PosZ, Float:iNPC_PosA)
+func:CreateInteractiveNPC(i_id, a_name[], describe[], skin, Float:iNPC_PosX, Float:iNPC_PosY, Float:iNPC_PosZ, Float:iNPC_PosA)
 {
     new inter_npc;
     if(IsFreeInteractiveID(i_id)){
@@ -20,7 +20,7 @@ func:CreateInteractiveNPC(i_id, a_name[], describe[], skin, title[], content[], 
         printf("[Log-Dev]Interactive NPCs ID: %d was used to", i_id);
         return 1;
     }
-    format(InteractiveNPCs_Data[inter_npc][iNPC_Name], MAX_INTERACTIVE_NPC_NAME, "%s", a_name);
+    
     InteractiveNPCs_Data[inter_npc][iNPC_Pos][0] = iNPC_PosX;
     InteractiveNPCs_Data[inter_npc][iNPC_Pos][1] = iNPC_PosY;
     InteractiveNPCs_Data[inter_npc][iNPC_Pos][2] = iNPC_PosZ;
@@ -29,14 +29,13 @@ func:CreateInteractiveNPC(i_id, a_name[], describe[], skin, title[], content[], 
     InteractiveNPCs_Data[inter_npc][iNPC_Skin] = skin;
 
     InteractiveNPCs_Data[inter_npc][iNPC_ID] = CreateActor(skin, iNPC_PosX, iNPC_PosY, iNPC_PosZ, iNPC_PosA);
-
-    format(InteractiveNPCs_Data[inter_npc][iNPC_Title], 1280, "%s", title);
-    format(InteractiveNPCs_Data[inter_npc][iNPC_Content], 1280, "%s", content);
-
-
     new Inter_lbmsg[1280];
-    format(Inter_lbmsg, 1280,"{41bcfa}%s (%d)\n{FFFFFF}%s", a_name,inter_npc,describe);
-    SetActorName(InteractiveNPCs_Data[inter_npc][iNPC_ID], Inter_lbmsg);
+    format(Inter_lbmsg, 1280,"{41bcfa}%s (%d)", a_name,inter_npc);
+    SetActorName(InteractiveNPCs_Data[inter_npc][iNPC_ID], a_name);
+    format(Inter_lbmsg, 1280,"{FFFFFF}%s", describe);
+    Attach3DTextLabelToActor(InteractiveNPCs_Data[inter_npc][iNPC_ID], Inter_lbmsg, -1, 0,0,0,8);
+
+    format(InteractiveNPCs_Data[inter_npc][iNPC_Name], MAX_INTERACTIVE_NPC_NAME, "%s", GetActorName(InteractiveNPCs_Data[inter_npc][iNPC_ID]));
     Count_InterNPC++;
 
     return InteractiveNPCs_Data[inter_npc][iNPC_ID];

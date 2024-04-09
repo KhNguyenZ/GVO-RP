@@ -194,8 +194,3 @@ hook OnPlayerSpawn(playerid)
     return 1;
 }
 
-hook OnPlayerConnect(playerid)
-{
-    CountGuide[playerid] = 0;
-    return 1;
-}

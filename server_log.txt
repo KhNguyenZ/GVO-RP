@@ -25931,3 +25931,766 @@ v0.3.DL-R1, (C)2005-2018 SA-MP Team
 [13:16:35] Number of vehicle models: 0
 [13:16:35] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
 [13:16:35] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[12:05:26] weburl = "www.sa-mp.com"  (string)
+[12:05:26] password = ""  (string)
+[12:05:26] filterscripts = ""  (string)
+[12:05:26] 
+[12:05:26] Server Plugins
+[12:05:26] --------------
+[12:05:26]  Loading plugin: mysql
+[12:05:26]  >> plugin.mysql: R41-4 successfully loaded.
+[12:05:26]   Loaded.
+[12:05:26]  Loading plugin: whirlpool
+[12:05:26]  
+[12:05:26]  ==================
+[12:05:26]  
+[12:05:26]   Whirlpool loaded
+[12:05:26]  
+[12:05:26]  ==================
+[12:05:26]  
+[12:05:26]   Loaded.
+[12:05:26]  Loading plugin: sscanf
+[12:05:26] 
+
+[12:05:26]  ===============================
+
+[12:05:26]       sscanf plugin loaded.     
+
+[12:05:26]          Version:  2.8.3        
+
+[12:05:26]   (c) 2018 Alex "Y_Less" Cole  
+
+[12:05:26]  ===============================
+
+[12:05:26]   Loaded.
+[12:05:26]  Loading plugin: streamer
+[12:05:26] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[12:05:26]   Loaded.
+[12:05:26]  Loading plugin: sampp_server
+[12:05:26] [SA-MP+] Loaded
+[12:05:26]   Loaded.
+[12:05:26]  Loaded 5 plugins.
+
+[12:05:26] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[12:05:26] [artwork:crc] logo.txd CRC = 0x3E256910
+[12:05:26] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[12:05:26] [artwork:crc] joinspawn.txd CRC = 0x39E48CC2
+[12:05:26] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[12:05:26] [artwork:crc] login.txd CRC = 0x6B804645
+[12:05:26] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[12:05:26] [artwork:crc] inv.txd CRC = 0x3C7B1C5D
+[12:05:26] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[12:05:26] [artwork:crc] 247.txd CRC = 0x5C708255
+[12:05:26] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[12:05:26] [artwork:crc] Inventory.txd CRC = 0x70C676BF
+[12:05:26] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[12:05:26] [artwork:crc] Hudz.txd CRC = 0xAA707129
+[12:05:26] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[12:05:26] [artwork:crc] Speedometter.txd CRC = 0x4FB8AD9D
+[12:05:26] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[12:05:26] [artwork:crc] Org.txd CRC = 0x429499AB
+[12:05:26] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[12:05:26] [artwork:crc] npctextbox.txd CRC = 0xE73FF298
+[12:05:26] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[12:05:26] [artwork:crc] GuideBtn.txd CRC = 0xF8657154
+[12:05:26] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[12:05:26] [artwork:crc] Info.txd CRC = 0xF0CADE65
+[12:05:26] [artwork:crc] newbiespawn.dff CRC = 0x2499225A
+[12:05:26] [artwork:crc] newbiespawn.txd CRC = 0x2AF71386
+[12:05:26] [artwork:crc] congvien.dff CRC = 0x94D2954
+[12:05:26] [artwork:crc] congvien.txd CRC = 0xECDCE39F
+[12:05:26] [artwork:crc] honuoc.dff CRC = 0xFBE95451
+[12:05:26] [artwork:crc] honuoc.txd CRC = 0xC8354AE8
+[12:05:27] 
+[12:05:27] Filterscripts
+[12:05:27] ---------------
+[12:05:27]   Loaded 0 filterscripts.
+
+[12:05:27] AMX (48517048) loaded
+[12:05:27]  
+[12:05:27]  
+[12:05:27]  
+[12:05:27]  ======================================= 
+[12:05:27]  |                                     | 
+[12:05:27]  |        YSI version 4.00.0001        | 
+[12:05:27]  |        By Alex "Y_Less" Cole        | 
+[12:05:27]  |                                     | 
+[12:05:27]  ======================================= 
+[12:05:27]  
+[12:05:27] Loaded 0 Organization
+[12:05:27] > Ket noi den du lieu thanh cong.
+[12:05:27] [Log-Dev]Interactive NPCs ID: 1 was used to
+[12:05:27] Number of vehicle models: 0
+[12:05:27] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
+[12:05:27] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[15:44:25] weburl = "www.sa-mp.com"  (string)
+[15:44:25] password = ""  (string)
+[15:44:25] filterscripts = ""  (string)
+[15:44:25] 
+[15:44:25] Server Plugins
+[15:44:25] --------------
+[15:44:25]  Loading plugin: mysql
+[15:44:25]  >> plugin.mysql: R41-4 successfully loaded.
+[15:44:25]   Loaded.
+[15:44:25]  Loading plugin: whirlpool
+[15:44:25]  
+[15:44:25]  ==================
+[15:44:25]  
+[15:44:25]   Whirlpool loaded
+[15:44:25]  
+[15:44:25]  ==================
+[15:44:25]  
+[15:44:25]   Loaded.
+[15:44:25]  Loading plugin: sscanf
+[15:44:25] 
+
+[15:44:25]  ===============================
+
+[15:44:25]       sscanf plugin loaded.     
+
+[15:44:25]          Version:  2.8.3        
+
+[15:44:25]   (c) 2018 Alex "Y_Less" Cole  
+
+[15:44:25]  ===============================
+
+[15:44:25]   Loaded.
+[15:44:25]  Loading plugin: streamer
+[15:44:25] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[15:44:25]   Loaded.
+[15:44:25]  Loading plugin: sampp_server
+[15:44:25] [SA-MP+] Loaded
+[15:44:25] [SA-MP+] Couldn't start SA-MP+ plugin
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[15:44:27] weburl = "www.sa-mp.com"  (string)
+[15:44:27] password = ""  (string)
+[15:44:27] filterscripts = ""  (string)
+[15:44:27] 
+[15:44:27] Server Plugins
+[15:44:27] --------------
+[15:44:27]  Loading plugin: mysql
+[15:44:27]  >> plugin.mysql: R41-4 successfully loaded.
+[15:44:27]   Loaded.
+[15:44:27]  Loading plugin: whirlpool
+[15:44:27]  
+[15:44:27]  ==================
+[15:44:27]  
+[15:44:27]   Whirlpool loaded
+[15:44:27]  
+[15:44:27]  ==================
+[15:44:27]  
+[15:44:27]   Loaded.
+[15:44:27]  Loading plugin: sscanf
+[15:44:27] 
+
+[15:44:27]  ===============================
+
+[15:44:27]       sscanf plugin loaded.     
+
+[15:44:27]          Version:  2.8.3        
+
+[15:44:27]   (c) 2018 Alex "Y_Less" Cole  
+
+[15:44:27]  ===============================
+
+[15:44:27]   Loaded.
+[15:44:27]  Loading plugin: streamer
+[15:44:27] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[15:44:27]   Loaded.
+[15:44:27]  Loading plugin: sampp_server
+[15:44:27] [SA-MP+] Loaded
+[15:44:27]   Loaded.
+[15:44:27]  Loaded 5 plugins.
+
+[15:44:27] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:44:27] [artwork:crc] logo.txd CRC = 0x3E256910
+[15:44:27] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:44:27] [artwork:crc] joinspawn.txd CRC = 0x39E48CC2
+[15:44:27] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:44:27] [artwork:crc] login.txd CRC = 0x6B804645
+[15:44:27] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:44:27] [artwork:crc] inv.txd CRC = 0x3C7B1C5D
+[15:44:27] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:44:27] [artwork:crc] 247.txd CRC = 0x5C708255
+[15:44:27] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:44:27] [artwork:crc] Inventory.txd CRC = 0x70C676BF
+[15:44:27] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:44:27] [artwork:crc] Hudz.txd CRC = 0xAA707129
+[15:44:27] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:44:27] [artwork:crc] Speedometter.txd CRC = 0x4FB8AD9D
+[15:44:27] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:44:28] [artwork:crc] Org.txd CRC = 0x429499AB
+[15:44:28] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:44:28] [artwork:crc] npctextbox.txd CRC = 0xE73FF298
+[15:44:28] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:44:28] [artwork:crc] GuideBtn.txd CRC = 0xF8657154
+[15:44:28] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:44:28] [artwork:crc] Info.txd CRC = 0xF0CADE65
+[15:44:28] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:44:28] [artwork:crc] custom_hud.txd CRC = 0xD07CB7AB
+[15:44:28] [artwork:crc] newbiespawn.dff CRC = 0x2499225A
+[15:44:28] [artwork:crc] newbiespawn.txd CRC = 0x2AF71386
+[15:44:28] [artwork:crc] congvien.dff CRC = 0x94D2954
+[15:44:28] [artwork:crc] congvien.txd CRC = 0xECDCE39F
+[15:44:28] [artwork:crc] honuoc.dff CRC = 0xFBE95451
+[15:44:28] [artwork:crc] honuoc.txd CRC = 0xC8354AE8
+[15:44:28] 
+[15:44:28] Filterscripts
+[15:44:28] ---------------
+[15:44:28]   Loaded 0 filterscripts.
+
+[15:44:28] AMX (48714248) loaded
+[15:44:28]  
+[15:44:28]  
+[15:44:28]  
+[15:44:28]  ======================================= 
+[15:44:28]  |                                     | 
+[15:44:28]  |        YSI version 4.00.0001        | 
+[15:44:28]  |        By Alex "Y_Less" Cole        | 
+[15:44:28]  |                                     | 
+[15:44:28]  ======================================= 
+[15:44:28]  
+[15:44:29] Loaded 0 Organization
+[15:44:29] > Ket noi den du lieu thanh cong.
+[15:44:29] [Log-Dev]Interactive NPCs ID: 1 was used to
+[15:44:29] Number of vehicle models: 0
+[15:44:29] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
+[15:44:29] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+[15:45:15] [SA-MP+] Unhandled connection accepted: 192.168.1.15:63683
+[15:45:15] [SA-MP+] Unknown packet received: 19, local: 0
+[15:45:15] [SA-MP+] Unhandled connection accepted: 127.0.0.1:63858
+[15:45:15] [SA-MP+] Unknown packet received: 19, local: 0
+[15:45:15] [SA-MP+] Connection lost: 192.168.1.15|63683
+[15:45:15] [SA-MP+] Connection status: unhandledConnections: 1, players: 0
+[15:45:15] [connection] incoming connection: 192.168.1.15:63684 id: 0
+[15:45:15] Invalid client connecting from 192.168.1.15
+[15:45:15] [connection] incoming connection: 127.0.0.1:63859 id: 1
+[15:45:15] [join] Adminz has joined the server (1:127.0.0.1)
+[15:45:15] [SA-MP+] Player connecting, has the SA-MP+ plugin: 1
+[15:45:44] [part] Adminz has left the server (1:1)
+[15:45:44] [SA-MP+] Disconnected: 127.0.0.1|63858
+[15:45:44] [SA-MP+] Connection status: unhandledConnections: 0, players: 0
+[15:45:54] [SA-MP+] Unhandled connection accepted: 127.0.0.1:52262
+[15:45:54] [SA-MP+] Unknown packet received: 19, local: 0
+[15:45:55] [connection] incoming connection: 127.0.0.1:52263 id: 0
+[15:45:56] [join] Khoi_Nguyenz has joined the server (0:127.0.0.1)
+[15:45:56] [SA-MP+] Player connecting, has the SA-MP+ plugin: 1
+[15:46:02] CharSelect: 0
+[15:46:03] [nick] Khoi_Nguyenz nick changed to Jey_BEE
+[15:46:03] SELECT * FROM `vehicle` WHERE `sqlid` = '35'
+[15:46:03] Loaded 0 vehicle for Jey_BEE
+[15:46:11] UPDATE `players` SET PosX = '1199.774902', PosY = '-1324.794922', PosZ = '13.398438', PosA = '174.255386', Health = '100.000000', Armour = '0.000000', TanSo = '0', Cash = '1000', AdminLevel = '0', Interior = '0', VW = '0', Phone = '0', DanhBa = '0', Dice = '0', CanXang = '0', DayThung = '0', XiGa = '0', Drink = '0', BinhSonXe = '0', Radio = '0', MatNa = '0', OrgID = '-1', OrgRank = '-1', Eat = '0', Skin = 1 WHERE `id` = '35' LIMIT 1
+[15:46:11] Character Save: Jey BEE | AccountID: 35
+[15:46:11] [part] Jey_BEE has left the server (0:1)
+[15:46:11] [SA-MP+] Disconnected: 127.0.0.1|52262
+[15:46:11] [SA-MP+] Connection status: unhandledConnections: 0, players: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[15:47:41] weburl = "www.sa-mp.com"  (string)
+[15:47:41] password = ""  (string)
+[15:47:41] filterscripts = ""  (string)
+[15:47:41] 
+[15:47:41] Server Plugins
+[15:47:41] --------------
+[15:47:41]  Loading plugin: mysql
+[15:47:41]  >> plugin.mysql: R41-4 successfully loaded.
+[15:47:41]   Loaded.
+[15:47:41]  Loading plugin: whirlpool
+[15:47:41]  
+[15:47:41]  ==================
+[15:47:41]  
+[15:47:41]   Whirlpool loaded
+[15:47:41]  
+[15:47:41]  ==================
+[15:47:41]  
+[15:47:41]   Loaded.
+[15:47:41]  Loading plugin: sscanf
+[15:47:41] 
+
+[15:47:41]  ===============================
+
+[15:47:41]       sscanf plugin loaded.     
+
+[15:47:41]          Version:  2.8.3        
+
+[15:47:41]   (c) 2018 Alex "Y_Less" Cole  
+
+[15:47:41]  ===============================
+
+[15:47:41]   Loaded.
+[15:47:41]  Loading plugin: streamer
+[15:47:41] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[15:47:41]   Loaded.
+[15:47:41]  Loading plugin: sampp_server
+[15:47:41] [SA-MP+] Loaded
+[15:47:41]   Loaded.
+[15:47:41]  Loaded 5 plugins.
+
+[15:47:41] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:47:41] [artwork:crc] logo.txd CRC = 0x3E256910
+[15:47:41] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:47:41] [artwork:crc] joinspawn.txd CRC = 0x39E48CC2
+[15:47:41] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:47:42] [artwork:crc] login.txd CRC = 0x6B804645
+[15:47:42] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:47:42] [artwork:crc] inv.txd CRC = 0x3C7B1C5D
+[15:47:42] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:47:42] [artwork:crc] 247.txd CRC = 0x5C708255
+[15:47:42] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:47:42] [artwork:crc] Inventory.txd CRC = 0x70C676BF
+[15:47:42] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:47:42] [artwork:crc] Hudz.txd CRC = 0xAA707129
+[15:47:42] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:47:42] [artwork:crc] Speedometter.txd CRC = 0x4FB8AD9D
+[15:47:42] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:47:42] [artwork:crc] Org.txd CRC = 0x429499AB
+[15:47:42] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:47:42] [artwork:crc] npctextbox.txd CRC = 0xE73FF298
+[15:47:42] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:47:42] [artwork:crc] GuideBtn.txd CRC = 0xF8657154
+[15:47:42] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:47:42] [artwork:crc] Info.txd CRC = 0xF0CADE65
+[15:47:42] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:47:42] [artwork:crc] custom_hud.txd CRC = 0xD07CB7AB
+[15:47:42] [artwork:crc] newbiespawn.dff CRC = 0x2499225A
+[15:47:42] [artwork:crc] newbiespawn.txd CRC = 0x2AF71386
+[15:47:42] [artwork:crc] congvien.dff CRC = 0x94D2954
+[15:47:42] [artwork:crc] congvien.txd CRC = 0xECDCE39F
+[15:47:42] [artwork:crc] honuoc.dff CRC = 0xFBE95451
+[15:47:42] [artwork:crc] honuoc.txd CRC = 0xC8354AE8
+[15:47:42] 
+[15:47:42] Filterscripts
+[15:47:42] ---------------
+[15:47:42]   Loaded 0 filterscripts.
+
+[15:47:42] AMX (48583176) loaded
+[15:47:42]  
+[15:47:42]  
+[15:47:42]  
+[15:47:42]  ======================================= 
+[15:47:42]  |                                     | 
+[15:47:42]  |        YSI version 4.00.0001        | 
+[15:47:42]  |        By Alex "Y_Less" Cole        | 
+[15:47:42]  |                                     | 
+[15:47:42]  ======================================= 
+[15:47:42]  
+[15:47:43] Loaded 0 Organization
+[15:47:43] > Ket noi den du lieu thanh cong.
+[15:47:43] [Log-Dev]Interactive NPCs ID: 1 was used to
+[15:47:43] Number of vehicle models: 0
+[15:47:43] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
+[15:47:43] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+[15:47:46] [SA-MP+] Unhandled connection accepted: 127.0.0.1:57574
+[15:47:46] [SA-MP+] Unknown packet received: 19, local: 0
+[15:47:48] [connection] incoming connection: 127.0.0.1:57575 id: 0
+[15:47:48] [join] Khoi_Nguyenz has joined the server (0:127.0.0.1)
+[15:47:48] [SA-MP+] Player connecting, has the SA-MP+ plugin: 1
+[15:47:54] CharSelect: 0
+[15:47:55] [nick] Khoi_Nguyenz nick changed to Jey_BEE
+[15:47:55] SELECT * FROM `vehicle` WHERE `sqlid` = '35'
+[15:47:55] Loaded 0 vehicle for Jey_BEE
+[15:50:47] UPDATE `players` SET PosX = '1195.258423', PosY = '-1308.223389', PosZ = '13.392258', PosA = '32.387722', Health = '100.000000', Armour = '0.000000', TanSo = '0', Cash = '1000', AdminLevel = '10', Interior = '0', VW = '0', Phone = '0', DanhBa = '0', Dice = '0', CanXang = '0', DayThung = '0', XiGa = '0', Drink = '0', BinhSonXe = '0', Radio = '0', MatNa = '0', OrgID = '-1', OrgRank = '-1', Eat = '0', Skin = 1 WHERE `id` = '35' LIMIT 1
+[15:50:47] Character Save: Jey BEE | AccountID: 35
+[15:50:47] [part] Jey_BEE has left the server (0:1)
+[15:50:47] [SA-MP+] Disconnected: 127.0.0.1|57574
+[15:50:47] [SA-MP+] Connection status: unhandledConnections: 0, players: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[15:50:50] weburl = "www.sa-mp.com"  (string)
+[15:50:50] password = ""  (string)
+[15:50:50] filterscripts = ""  (string)
+[15:50:50] 
+[15:50:50] Server Plugins
+[15:50:50] --------------
+[15:50:50]  Loading plugin: mysql
+[15:50:50]  >> plugin.mysql: R41-4 successfully loaded.
+[15:50:50]   Loaded.
+[15:50:50]  Loading plugin: whirlpool
+[15:50:50]  
+[15:50:50]  ==================
+[15:50:50]  
+[15:50:50]   Whirlpool loaded
+[15:50:50]  
+[15:50:50]  ==================
+[15:50:50]  
+[15:50:50]   Loaded.
+[15:50:50]  Loading plugin: sscanf
+[15:50:50] 
+
+[15:50:50]  ===============================
+
+[15:50:50]       sscanf plugin loaded.     
+
+[15:50:50]          Version:  2.8.3        
+
+[15:50:50]   (c) 2018 Alex "Y_Less" Cole  
+
+[15:50:50]  ===============================
+
+[15:50:50]   Loaded.
+[15:50:50]  Loading plugin: streamer
+[15:50:50] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[15:50:50]   Loaded.
+[15:50:50]  Loading plugin: sampp_server
+[15:50:50] [SA-MP+] Loaded
+[15:50:50]   Loaded.
+[15:50:50]  Loaded 5 plugins.
+
+[15:50:50] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:50:50] [artwork:crc] logo.txd CRC = 0x3E256910
+[15:50:50] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:50:50] [artwork:crc] joinspawn.txd CRC = 0x39E48CC2
+[15:50:50] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:50:50] [artwork:crc] login.txd CRC = 0x6B804645
+[15:50:50] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:50:50] [artwork:crc] inv.txd CRC = 0x3C7B1C5D
+[15:50:50] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:50:50] [artwork:crc] 247.txd CRC = 0x5C708255
+[15:50:50] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:50:50] [artwork:crc] Inventory.txd CRC = 0x70C676BF
+[15:50:50] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:50:50] [artwork:crc] Hudz.txd CRC = 0xAA707129
+[15:50:50] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:50:50] [artwork:crc] Speedometter.txd CRC = 0x4FB8AD9D
+[15:50:50] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:50:50] [artwork:crc] Org.txd CRC = 0x429499AB
+[15:50:50] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:50:50] [artwork:crc] npctextbox.txd CRC = 0xE73FF298
+[15:50:50] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:50:50] [artwork:crc] GuideBtn.txd CRC = 0xF8657154
+[15:50:50] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:50:50] [artwork:crc] Info.txd CRC = 0xF0CADE65
+[15:50:50] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:50:50] [artwork:crc] custom_hud.txd CRC = 0xD07CB7AB
+[15:50:50] [artwork:crc] newbiespawn.dff CRC = 0x2499225A
+[15:50:50] [artwork:crc] newbiespawn.txd CRC = 0x2AF71386
+[15:50:50] [artwork:crc] congvien.dff CRC = 0x94D2954
+[15:50:50] [artwork:crc] congvien.txd CRC = 0xECDCE39F
+[15:50:50] [artwork:crc] honuoc.dff CRC = 0xFBE95451
+[15:50:50] [artwork:crc] honuoc.txd CRC = 0xC8354AE8
+[15:50:50] 
+[15:50:50] Filterscripts
+[15:50:50] ---------------
+[15:50:50]   Loaded 0 filterscripts.
+
+[15:50:50] AMX (48517640) loaded
+[15:50:50]  
+[15:50:50]  
+[15:50:50]  
+[15:50:50]  ======================================= 
+[15:50:50]  |                                     | 
+[15:50:50]  |        YSI version 4.00.0001        | 
+[15:50:50]  |        By Alex "Y_Less" Cole        | 
+[15:50:50]  |                                     | 
+[15:50:50]  ======================================= 
+[15:50:50]  
+[15:50:51] Loaded 0 Organization
+[15:50:51] > Ket noi den du lieu thanh cong.
+[15:50:51] [Log-Dev]Interactive NPCs ID: 1 was used to
+[15:50:51] Number of vehicle models: 0
+[15:50:51] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
+[15:50:51] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+[15:50:56] [SA-MP+] Unhandled connection accepted: 127.0.0.1:59901
+[15:50:56] [SA-MP+] Unknown packet received: 19, local: 0
+[15:50:57] [connection] incoming connection: 127.0.0.1:59902 id: 0
+[15:50:57] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[15:50:57] [SA-MP+] Player connecting, has the SA-MP+ plugin: 1
+[15:51:05] CharSelect: 0
+[15:51:06] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[15:51:06] SELECT * FROM `vehicle` WHERE `sqlid` = '31'
+[15:51:06] Loaded 6 vehicle for Khoi_Nguyenz
+[15:54:07] UPDATE `players` SET PosX = '1816.205688', PosY = '-1876.587158', PosZ = '13.578125', PosA = '187.721039', Health = '100.000000', Armour = '0.000000', TanSo = '0', Cash = '1000', AdminLevel = '10', Interior = '0', VW = '0', Phone = '0', DanhBa = '0', Dice = '0', CanXang = '0', DayThung = '0', XiGa = '0', Drink = '0', BinhSonXe = '0', Radio = '0', MatNa = '0', OrgID = '1', OrgRank = '10', Eat = '80', Skin = 3 WHERE `id` = '31' LIMIT 1
+[15:54:07] Character Save: Khoi Nguyenz | AccountID: 31
+[15:54:07] [part] Khoi_Nguyenz has left the server (0:1)
+[15:54:07] [SA-MP+] Disconnected: 127.0.0.1|59901
+[15:54:07] [SA-MP+] Connection status: unhandledConnections: 0, players: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[15:54:15] weburl = "www.sa-mp.com"  (string)
+[15:54:15] password = ""  (string)
+[15:54:15] filterscripts = ""  (string)
+[15:54:15] 
+[15:54:15] Server Plugins
+[15:54:15] --------------
+[15:54:15]  Loading plugin: mysql
+[15:54:15]  >> plugin.mysql: R41-4 successfully loaded.
+[15:54:15]   Loaded.
+[15:54:15]  Loading plugin: whirlpool
+[15:54:15]  
+[15:54:15]  ==================
+[15:54:15]  
+[15:54:15]   Whirlpool loaded
+[15:54:15]  
+[15:54:15]  ==================
+[15:54:15]  
+[15:54:15]   Loaded.
+[15:54:15]  Loading plugin: sscanf
+[15:54:15] 
+
+[15:54:15]  ===============================
+
+[15:54:15]       sscanf plugin loaded.     
+
+[15:54:15]          Version:  2.8.3        
+
+[15:54:15]   (c) 2018 Alex "Y_Less" Cole  
+
+[15:54:15]  ===============================
+
+[15:54:15]   Loaded.
+[15:54:15]  Loading plugin: streamer
+[15:54:15] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[15:54:15]   Loaded.
+[15:54:15]  Loading plugin: sampp_server
+[15:54:15] [SA-MP+] Loaded
+[15:54:15]   Loaded.
+[15:54:15]  Loaded 5 plugins.
+
+[15:54:15] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:54:15] [artwork:crc] logo.txd CRC = 0x3E256910
+[15:54:15] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:54:15] [artwork:crc] joinspawn.txd CRC = 0x39E48CC2
+[15:54:15] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:54:15] [artwork:crc] login.txd CRC = 0x6B804645
+[15:54:15] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:54:15] [artwork:crc] inv.txd CRC = 0x3C7B1C5D
+[15:54:15] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:54:15] [artwork:crc] 247.txd CRC = 0x5C708255
+[15:54:15] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:54:15] [artwork:crc] Inventory.txd CRC = 0x70C676BF
+[15:54:15] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:54:15] [artwork:crc] Hudz.txd CRC = 0xAA707129
+[15:54:15] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:54:15] [artwork:crc] Speedometter.txd CRC = 0x4FB8AD9D
+[15:54:15] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:54:15] [artwork:crc] Org.txd CRC = 0x429499AB
+[15:54:15] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:54:15] [artwork:crc] npctextbox.txd CRC = 0xE73FF298
+[15:54:15] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:54:15] [artwork:crc] GuideBtn.txd CRC = 0xF8657154
+[15:54:15] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:54:15] [artwork:crc] Info.txd CRC = 0xF0CADE65
+[15:54:15] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:54:16] [artwork:crc] custom_hud.txd CRC = 0xD07CB7AB
+[15:54:16] [artwork:crc] newbiespawn.dff CRC = 0x2499225A
+[15:54:16] [artwork:crc] newbiespawn.txd CRC = 0x2AF71386
+[15:54:16] [artwork:crc] congvien.dff CRC = 0x94D2954
+[15:54:16] [artwork:crc] congvien.txd CRC = 0xECDCE39F
+[15:54:16] [artwork:crc] honuoc.dff CRC = 0xFBE95451
+[15:54:16] [artwork:crc] honuoc.txd CRC = 0xC8354AE8
+[15:54:16] 
+[15:54:16] Filterscripts
+[15:54:16] ---------------
+[15:54:16]   Loaded 0 filterscripts.
+
+[15:54:16] AMX (49762824) loaded
+[15:54:16]  
+[15:54:16]  
+[15:54:16]  
+[15:54:16]  ======================================= 
+[15:54:16]  |                                     | 
+[15:54:16]  |        YSI version 4.00.0001        | 
+[15:54:16]  |        By Alex "Y_Less" Cole        | 
+[15:54:16]  |                                     | 
+[15:54:16]  ======================================= 
+[15:54:16]  
+[15:54:17] Loaded 0 Organization
+[15:54:17] > Ket noi den du lieu thanh cong.
+[15:54:17] [Log-Dev]Interactive NPCs ID: 1 was used to
+[15:54:17] Number of vehicle models: 0
+[15:54:17] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
+[15:54:17] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+[15:54:21] [SA-MP+] Unhandled connection accepted: 127.0.0.1:57402
+[15:54:21] [SA-MP+] Unknown packet received: 19, local: 0
+[15:54:21] [connection] incoming connection: 127.0.0.1:61940 id: 0
+[15:54:21] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[15:54:21] [SA-MP+] Player connecting, has the SA-MP+ plugin: 1
+[15:54:28] CharSelect: 0
+[15:54:28] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[15:54:28] SELECT * FROM `vehicle` WHERE `sqlid` = '31'
+[15:54:28] Loaded 6 vehicle for Khoi_Nguyenz
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[15:55:29] weburl = "www.sa-mp.com"  (string)
+[15:55:29] password = ""  (string)
+[15:55:29] filterscripts = ""  (string)
+[15:55:29] 
+[15:55:29] Server Plugins
+[15:55:29] --------------
+[15:55:29]  Loading plugin: mysql
+[15:55:29]  >> plugin.mysql: R41-4 successfully loaded.
+[15:55:29]   Loaded.
+[15:55:29]  Loading plugin: whirlpool
+[15:55:29]  
+[15:55:29]  ==================
+[15:55:29]  
+[15:55:29]   Whirlpool loaded
+[15:55:29]  
+[15:55:29]  ==================
+[15:55:29]  
+[15:55:29]   Loaded.
+[15:55:29]  Loading plugin: sscanf
+[15:55:29] 
+
+[15:55:29]  ===============================
+
+[15:55:29]       sscanf plugin loaded.     
+
+[15:55:29]          Version:  2.8.3        
+
+[15:55:29]   (c) 2018 Alex "Y_Less" Cole  
+
+[15:55:29]  ===============================
+
+[15:55:29]   Loaded.
+[15:55:29]  Loading plugin: streamer
+[15:55:29] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[15:55:29]   Loaded.
+[15:55:29]  Loading plugin: sampp_server
+[15:55:29] [SA-MP+] Loaded
+[15:55:29]   Loaded.
+[15:55:29]  Loaded 5 plugins.
+
+[15:55:29] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:55:29] [artwork:crc] logo.txd CRC = 0x3E256910
+[15:55:29] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:55:29] [artwork:crc] joinspawn.txd CRC = 0x39E48CC2
+[15:55:29] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:55:29] [artwork:crc] login.txd CRC = 0x6B804645
+[15:55:29] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:55:29] [artwork:crc] inv.txd CRC = 0x3C7B1C5D
+[15:55:29] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:55:29] [artwork:crc] 247.txd CRC = 0x5C708255
+[15:55:29] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:55:29] [artwork:crc] Inventory.txd CRC = 0x70C676BF
+[15:55:29] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:55:29] [artwork:crc] Hudz.txd CRC = 0xAA707129
+[15:55:29] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:55:29] [artwork:crc] Speedometter.txd CRC = 0x4FB8AD9D
+[15:55:29] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:55:29] [artwork:crc] Org.txd CRC = 0x429499AB
+[15:55:29] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:55:29] [artwork:crc] npctextbox.txd CRC = 0xE73FF298
+[15:55:29] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:55:29] [artwork:crc] GuideBtn.txd CRC = 0xF8657154
+[15:55:29] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:55:29] [artwork:crc] Info.txd CRC = 0xF0CADE65
+[15:55:29] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[15:55:29] [artwork:crc] custom_hud.txd CRC = 0xD07CB7AB
+[15:55:29] [artwork:crc] newbiespawn.dff CRC = 0x2499225A
+[15:55:29] [artwork:crc] newbiespawn.txd CRC = 0x2AF71386
+[15:55:29] [artwork:crc] congvien.dff CRC = 0x94D2954
+[15:55:29] [artwork:crc] congvien.txd CRC = 0xECDCE39F
+[15:55:29] [artwork:crc] honuoc.dff CRC = 0xFBE95451
+[15:55:29] [artwork:crc] honuoc.txd CRC = 0xC8354AE8
+[15:55:30] 
+[15:55:30] Filterscripts
+[15:55:30] ---------------
+[15:55:30]   Loaded 0 filterscripts.
+
+[15:55:30] AMX (48517640) loaded
+[15:55:30]  
+[15:55:30]  
+[15:55:30]  
+[15:55:30]  ======================================= 
+[15:55:30]  |                                     | 
+[15:55:30]  |        YSI version 4.00.0001        | 
+[15:55:30]  |        By Alex "Y_Less" Cole        | 
+[15:55:30]  |                                     | 
+[15:55:30]  ======================================= 
+[15:55:30]  
+[15:55:30] Loaded 0 Organization
+[15:55:30] > Ket noi den du lieu thanh cong.
+[15:55:30] [Log-Dev]Interactive NPCs ID: 1 was used to
+[15:55:30] Number of vehicle models: 0
+[15:55:31] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
+[15:55:31] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+[15:55:35] [SA-MP+] Unhandled connection accepted: 127.0.0.1:55951
+[15:55:35] [SA-MP+] Unknown packet received: 19, local: 0
+[15:55:37] [connection] incoming connection: 127.0.0.1:52761 id: 0
+[15:55:37] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[15:55:37] [SA-MP+] Player connecting, has the SA-MP+ plugin: 1
+[15:55:44] CharSelect: 0
+[15:55:44] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[15:55:44] SELECT * FROM `vehicle` WHERE `sqlid` = '31'
+[15:55:44] Loaded 6 vehicle for Khoi_Nguyenz
+[15:57:28] UPDATE `players` SET PosX = '1800.290649', PosY = '-1921.638062', PosZ = '13.391767', PosA = '188.524689', Health = '100.000000', Armour = '0.000000', TanSo = '0', Cash = '1000', AdminLevel = '10', Interior = '0', VW = '0', Phone = '0', DanhBa = '0', Dice = '0', CanXang = '0', DayThung = '0', XiGa = '0', Drink = '0', BinhSonXe = '0', Radio = '0', MatNa = '0', OrgID = '1', OrgRank = '10', Eat = '80', Skin = 3 WHERE `id` = '31' LIMIT 1
+[15:57:28] Character Save: Khoi Nguyenz | AccountID: 31
+[15:57:28] [part] Khoi_Nguyenz has left the server (0:1)
+[15:57:28] [SA-MP+] Disconnected: 127.0.0.1|55951
+[15:57:28] [SA-MP+] Connection status: unhandledConnections: 0, players: 0

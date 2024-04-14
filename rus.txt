@@ -1,8 +1,6 @@
-./modules/Dev/Interactive-NPCs/_textdraw.pwn(201) : íåïđàâèëüíàÿ ̣àáóëÿöèÿ
-./modules/Dev/Interactive-NPCs/_textdraw.pwn(202) : íåïđàâèëüíàÿ ̣àáóëÿöèÿ
 ./modules/Server/dynamic/Biz/callback.pwn(13) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "count"
 ./modules/Server/Organization/_function.pwn(22) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "org_type"
 ./modules/Server/Vehicle/Core/_var.pwn(108) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "MaxVehicleFuel"
-./modules/Main/_var.pwn(109) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "pCountVeh"
+./modules/Main/_var.pwn(110) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "pCountVeh"
 Pawn compiler 3.2.3664	 	 	Copyright (c) 1997-2016, ITB CompuPhase
 

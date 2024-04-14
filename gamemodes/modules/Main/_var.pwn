@@ -45,7 +45,8 @@ enum character_Info
 	char_Radio,
 	char_MatNa,
 	char_OrgID,
-	char_OrgRank
+	char_OrgRank,
+	char_Eat
 }
 
 new Character[MAX_PLAYERS][character_Info];

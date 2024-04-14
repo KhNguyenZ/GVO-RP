@@ -112,6 +112,7 @@ public OnCharacterLoad(const playerid)
 
 	cache_get_value_name_int(0, "OrgID", Character[playerid][char_OrgID]);
 	cache_get_value_name_int(0, "OrgRank", Character[playerid][char_OrgRank]);
+	cache_get_value_name_int(0, "Eat", Character[playerid][char_Eat]);
 
 	if(GetPVarInt(playerid, "SetupRegister_") == 0)
     {

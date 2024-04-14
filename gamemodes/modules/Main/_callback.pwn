@@ -419,6 +419,10 @@ public OnPlayerSpawn(playerid)
 	ToggleHUDComponentForPlayer(playerid, HUD_COMPONENT_ARMOUR, false);
 	ToggleHUDComponentForPlayer(playerid, HUD_COMPONENT_WEAPON, false);
 	ToggleHUDComponentForPlayer(playerid, HUD_COMPONENT_AMMO, false);
+
+
+	SendClientMessage(playerid, -1, "Ðây laÌ SA-MP Tiêìng Viêòt");
+	SendClientMessage(playerid, -1, "Ðây là SA-MP tiếng việt");
 	return 1;
 }
 forward OnPlayerLoad(playerid);

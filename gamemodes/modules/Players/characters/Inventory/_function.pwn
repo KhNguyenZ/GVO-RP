@@ -400,6 +400,7 @@ func:UsedItem(playerid, page, index)
 	new itemsqlid[MAX_PLAYERS], amount_item[MAX_PLAYERS];
 	itemsqlid[playerid] = PlayerInvItem[playerid][PlayerPage[playerid]][pInvSQLID][index];
 	amount_item[playerid] = PlayerInvItem[playerid][PlayerPage[playerid]][pInvAmount][index];
+	amount_item[playerid]--;
 	new used_query[1280];
 	if(amount_item[playerid]  > 0)
 	{
@@ -410,6 +411,7 @@ func:UsedItem(playerid, page, index)
 	}
 	printf("%s",used_query);
 	mysql_tquery(Handle(), used_query, "");
+	ReLoadPlayerInventory(playerid);
 	HidePlayerIndexInv(playerid);
 	return 1;
 }

@@ -69,10 +69,7 @@ main()
 
 #include "./modules/Server/Vehicle/build.pwn"
 
-#include "./modules/Server/Organization/_var.pwn"
-#include "./modules/Server/Organization/_function.pwn"
-#include "./modules/Server/Organization/_callback.pwn"
-#include "./modules/Server/Organization/_textdraw.pwn"
+#include "./modules/Server/Organization/build.pwn"
 
 public SSA_Mysql_Intit()
 {
@@ -80,7 +77,7 @@ public SSA_Mysql_Intit()
 	LoadInventoryDrop();
 	CreateInfo(); 
 	printf("Loaded %d Organization", OrgCount);
-
+	return 1; 
 }
 public OnGameModeExit()
 {

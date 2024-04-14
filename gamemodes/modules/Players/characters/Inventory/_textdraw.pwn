@@ -605,8 +605,6 @@ stock ShowPlayerIndexInv(playerid)
 			PlayerTextDrawHide(playerid, ItemName[playerid][j][i]);
 		}
 	}
-	
-	// if(PlayerInvInfo[playerid][PlayerPage[playerid]][pCountItem] == 0) PlayerTextDrawShow(playerid,ItemBackground[playerid][1]);
 
 	PlayerInvInfo[playerid][PlayerPage[playerid]][pSelectItemID] = 0;
 
@@ -631,11 +629,9 @@ stock ShowPlayerIndexInv(playerid)
 		if(PlayerInvItem[playerid][PlayerPage[playerid]][pInvItemID][j] > 0 && PlayerInvItem[playerid][PlayerPage[playerid]][pInvAmount][j] > 0)
 		{
 			CreateInvItem(playerid, PlayerInvItem[playerid][PlayerPage[playerid]][pInvItemID][j], PlayerPage[playerid], PlayerInvItem[playerid][PlayerPage[playerid]][pInvAmount][j]);
-			// printf("Inv ID: %d | Page: %d | Inv Amount: %d ",PlayerInvItem[playerid][PlayerPage[playerid]][pInvItemID][j], PlayerPage[playerid], PlayerInvItem[playerid][PlayerPage[playerid]][pInvAmount][j]);
 		}
 	}
 	GetPlayerItem(playerid, PlayerPage[playerid]);
-	// printf("Page: %d",PlayerPage[playerid]);
 	return 1;
 }
 

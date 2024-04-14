@@ -131,10 +131,9 @@ public OnLoadPlayerInventory(playerid)
 				pinvpage++;
 				countitem[playerid] = 0;
 			}
-
+			cache_get_value_name_int(i,  "id", PlayerInvItem[playerid][pinvpage][pInvSQLID][countitem[playerid]]);
 			cache_get_value_name_int(i,  "item", PlayerInvItem[playerid][pinvpage][pInvItemID][countitem[playerid]]);
 			cache_get_value_name_int(i,  "amount", PlayerInvItem[playerid][pinvpage][pInvAmount][countitem[playerid]]);
-			PlayerInvItem[playerid][pinvpage][pInvSQLID][countitem[playerid]] = i;
 			countitem[playerid]++;
 		}
 	}

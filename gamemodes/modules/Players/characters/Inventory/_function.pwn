@@ -13,6 +13,7 @@ func:ReLoadPlayerInventory(playerid)
 		{
 			PlayerInvItem[playerid][i][pInvItemID][j] = 0;
 			PlayerInvItem[playerid][i][pInvAmount][j] = 0;
+			PlayerInvItem[playerid][i][pInvSQLID][j] = 0;
 		}
 	}
 	new invQuery[1280];
@@ -72,7 +73,7 @@ func:PlayerSelectItem(playerid, color_item)
 	}
 }
 
-func:CreateInvItem(playerid, itemid, page, amountz)
+func:CreateInvItem(playerid, itemid, page, amountz, itemsqlid = -1)
 {
 	new Float:InvX, Float:InvY, Float:NameX, Float:NameY;
 
@@ -84,7 +85,7 @@ func:CreateInvItem(playerid, itemid, page, amountz)
 		InvIndex = 0;
 	}
 	InvAmount[playerid][PlayerPage[playerid]][InvIndex] = amountz;
-
+	if(itemsqlid != -1) InvSQLID[playerid][PlayerPage[playerid]][InvIndex] = itemsqlid;
 	if(InvIndex < 5){
 		InvX = 96+(34*InvIndex);
 		InvY = 120.000;
@@ -357,13 +358,6 @@ CMD:additem(playerid, params[])
 	new playeridadd, item, amount;
 
 	if(sscanf(params, "iii",playeridadd, item, amount)) return SendClientMessage(playerid, -1, "SU DUNG: /additem [playerid] [item] [amount]");
-	/*CreateInvItem(playeridadd, item, GetPlayerPage(playerid),amount);
-
-	new additemIndex = GetFreeIndexInv(playerid);
-	PlayerInvItem[playerid][PlayerPage[playerid]][pInvItemID][additemIndex] = item;
-	PlayerInvItem[playerid][PlayerPage[playerid]][pInvAmount][additemIndex] = amount;
-	HidePlayerIndexInv(playerid);
-	ReloadInv(playeridadd);*/
 
 	if(AddPlayerItem(playerid, item, amount)){
 		new message[128];
@@ -397,6 +391,26 @@ func:InvMess(playerid, case_action, item)
 		}
 	}
 	SendClientMessage(playerid, -1, szInvMess);
+	return 1;
+}
+
+func:UsedItem(playerid, page, index)
+{
+
+	new itemsqlid[MAX_PLAYERS], amount_item[MAX_PLAYERS];
+	itemsqlid[playerid] = PlayerInvItem[playerid][PlayerPage[playerid]][pInvSQLID][index];
+	amount_item[playerid] = PlayerInvItem[playerid][PlayerPage[playerid]][pInvAmount][index];
+	new used_query[1280];
+	if(amount_item[playerid]  > 0)
+	{
+		format(used_query, sizeof(used_query), "UPDATE `inventory` SET `amount` = '%d' WHERE `id` = '%d'", amount_item[playerid],itemsqlid[playerid]);
+	}
+	else{
+		format(used_query, sizeof(used_query), "DELETE FROM `inventory` WHERE `id` = '%d'",itemsqlid[playerid]);
+	}
+	printf("%s",used_query);
+	mysql_tquery(Handle(), used_query, "");
+	HidePlayerIndexInv(playerid);
 	return 1;
 }
 
@@ -458,22 +472,5 @@ func:UseItem(playerid, itemid)
 		}
 	}
 	InvMess(playerid, 1, itemid);
-	return 1;
-}
-
-
-CMD:itempage(playerid, params[])
-{
-	new pages;
-	if(sscanf(params, "i", pages)) return SendClientMessage(playerid, -1, "SU DUNG: /itempage [page]");
-
-
-	for(new i; i < 20; i++)
-	{
-		if(InventoryInfo[playerid][pages][invSlot][i] != 0)
-		{
-			printf("Item: %d | Page: %d", InventoryInfo[playerid][pages][invSlot][i], pages);
-		}
-	}
 	return 1;
 }

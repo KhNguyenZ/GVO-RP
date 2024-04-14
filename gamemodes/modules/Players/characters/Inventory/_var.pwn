@@ -23,7 +23,8 @@ new DropItemInfo[MAX_DROP_ITEMS][DropItem_Info];
 enum PlayerInventory_Info
 {
 	pInvItemID,
-	pInvAmount
+	pInvAmount,
+	pInvSQLID
 }
 new PlayerInvItem[MAX_PLAYERS][MAX_INV_PAGES][PlayerInventory_Info][INV_MAX_ITEM];
 
@@ -98,7 +99,7 @@ new PlayerText: TradeName[MAX_PLAYERS][MAX_INV_TRADE];
 new pSelect[MAX_PLAYERS];
 new pCurrentSelect[MAX_PLAYERS];
 new InvAmount[MAX_PLAYERS][MAX_INV_PAGES][MAX_INV_ITEM];
-
+new InvSQLID[MAX_PLAYERS][MAX_INV_PAGES][MAX_INV_ITEM];
 enum pInvTrade_Info{
 	trade_id,
 	trade_amount

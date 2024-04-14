@@ -16,15 +16,16 @@ hook OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
 	{
 		PickDropBox(playerid);
 	}
+	return 1;
 }
 InvClick(playerid, PlayerText:playertextid)
 {
 	for(new i = 0; i < 21; i++)
 	{
-		if(playertextid == ItemBackground[playerid][i]){
+		if(playertextid == ItemBackground[playerid][i])
+		{
 			new invSlotClick[MAX_PLAYERS];
 			invSlotClick[playerid] = InventoryInfo[playerid][PlayerPage[playerid]][invSlot][i];
-			// pSelect[playerid] = PlayerInvInfo[playerid][PlayerPage[playerid]][pSelectItemID];
 
 			if(invSlotClick[playerid] != 0)
 			{
@@ -37,7 +38,7 @@ InvClick(playerid, PlayerText:playertextid)
 
 				PlayerInvInfo[playerid][PlayerPage[playerid]][pSelectItemID] = i;
 				pSelect[playerid] = PlayerInvInfo[playerid][PlayerPage[playerid]][pSelectItemID];
-				PlayerSelectItem(playerid, 1);
+				PlayerSelectItem(playerid, 1); // change color after click
 
 				if(pCurrentSelect[playerid] == pSelect[playerid]) { // Cancel Select
 					
@@ -50,7 +51,7 @@ InvClick(playerid, PlayerText:playertextid)
 			}
 		}
 	}
-	if(playertextid == btnInv[playerid][0])
+	if(playertextid == btnInv[playerid][0]) // use btn
 	{
 		new pSelectID[MAX_PLAYERS];
 		pSelectID[playerid] = PlayerInvInfo[playerid][PlayerPage[playerid]][pSelectItemID];
@@ -58,10 +59,11 @@ InvClick(playerid, PlayerText:playertextid)
 		invSlotClick[playerid] = InventoryInfo[playerid][PlayerPage[playerid]][invSlot][pSelectID[playerid]];
 
 		UseItem(playerid, itemInfo[invSlotClick[playerid]][item_id]);
+		UsedItem(playerid, PlayerPage[playerid], pSelectID[playerid]-1);
+
 		HidePlayerIndexInv(playerid);
-		// printf("Use | pSelect: %d\n",PlayerInvInfo[playerid][PlayerPage[playerid]][pSelectItemID]);
 	}
-	if(playertextid == btnPage[playerid][0])
+	if(playertextid == btnPage[playerid][0]) // previous btn
 	{
 		if(PlayerPage[playerid] > 1)
 		{
@@ -70,7 +72,7 @@ InvClick(playerid, PlayerText:playertextid)
 			ReloadInv(playerid);
 		}
 	}
-	if(playertextid == btnInv[playerid][3])
+	if(playertextid == btnInv[playerid][3]) // info btn
 	{
 		new pSelectID[MAX_PLAYERS];
 		pSelectID[playerid] = PlayerInvInfo[playerid][PlayerPage[playerid]][pSelectItemID];
@@ -88,7 +90,7 @@ InvClick(playerid, PlayerText:playertextid)
 		itemInfo[invSlotClick[playerid]][item_usage]);
 		ShowPlayerDialog(playerid, 10000, DIALOG_STYLE_MSGBOX, "Thong tin vat pham", szInfoInv, "OK", "");
 	}
-	if(playertextid == btnPage[playerid][1])
+	if(playertextid == btnPage[playerid][1]) // next btn
 	{
 		if(PlayerPage[playerid] >= 0 && PlayerPage[playerid] < GetPlayerPage(playerid)+1)
 		{
@@ -97,7 +99,7 @@ InvClick(playerid, PlayerText:playertextid)
 			ReloadInv(playerid);
 		}
 	}
-	if(playertextid == btnInv[playerid][1])
+	if(playertextid == btnInv[playerid][1])  // drop item
 	{
 		new pSelectID[MAX_PLAYERS];
 		pSelectID[playerid] = PlayerInvInfo[playerid][PlayerPage[playerid]][pSelectItemID];
@@ -132,6 +134,7 @@ public OnLoadPlayerInventory(playerid)
 
 			cache_get_value_name_int(i,  "item", PlayerInvItem[playerid][pinvpage][pInvItemID][countitem[playerid]]);
 			cache_get_value_name_int(i,  "amount", PlayerInvItem[playerid][pinvpage][pInvAmount][countitem[playerid]]);
+			PlayerInvItem[playerid][pinvpage][pInvSQLID][countitem[playerid]] = i;
 			countitem[playerid]++;
 		}
 	}

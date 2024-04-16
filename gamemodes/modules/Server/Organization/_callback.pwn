@@ -12,7 +12,7 @@ public OnLoadOrganization(org_idzz)
         cache_get_value_name(0, "logo", OrgData[org_idzz][org_logo]);
 
         cache_get_value_name_int(0,  "safe", OrgData[org_idzz][org_safe]);
-        cache_get_value_name_int(0,  "safedirty", OrgData[org_idzz][org_safedirty]);
+        cache_get_value_name_int(0,  "safe_dirty", OrgData[org_idzz][org_safedirty]);
         cache_get_value_name_int(0,  "type", OrgData[org_idzz][org_type]);
 
         for(new i; i < 10; i++)
@@ -34,6 +34,11 @@ public OnLoadOrganization(org_idzz)
 forward OnLoadOrganizationGun(org_idzz);
 public OnLoadOrganizationGun(org_idzz)
 {
+    for(new i; i < 100; i++)
+    {
+        OrgData[org_idzz][org_gun][i] = -1;
+        OrgData[org_idzz][org_ammo][i] = 0;
+    }
     if(cache_num_rows() > 0)
 	{
         for(new i; i < cache_num_rows(); i++)
@@ -51,6 +56,10 @@ func:Org_Click(playerid, PlayerText:playertextid)
     if(playertextid == OrgPTD[playerid][1])
     {
         OrgShowMemberList(playerid, Character[playerid][char_OrgID]);
+    }
+    if(playertextid == OrgPTD[playerid][2])
+    {
+        OrgShowWeaponList(playerid, Character[playerid][char_OrgID]);
     }
     return 1;
 }

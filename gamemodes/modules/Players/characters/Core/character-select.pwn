@@ -90,7 +90,7 @@ public OnCharacterLoad(const playerid)
 	cache_get_value_name_int(0, "Level", Character[playerid][char_Level]);
 	cache_get_value_name_int(0, "Gender", Character[playerid][char_GioiTinh]);
 	cache_get_value_name_int(0, "QuocTich", Character[playerid][char_Nation]);
-	cache_get_value_name_int(0, "Note", Character[playerid][char_Note]);
+	cache_get_value_name(0, "Note", Character[playerid][char_Note]);
 
 	cache_get_value_name_int(0, "BirthDay", Character[playerid][char_Birthday][0]);
 	cache_get_value_name_int(0, "BirthMonth", Character[playerid][char_Birthday][1]);

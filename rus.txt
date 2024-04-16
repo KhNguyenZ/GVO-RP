@@ -1,7 +1,14 @@
 ./modules/Players/characters/Inventory/_function.pwn(397) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "page"
 ./modules/Server/dynamic/Biz/callback.pwn(13) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "count"
 ./modules/Server/Organization/_function.pwn(22) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "org_type"
-./modules/Server/Vehicle/Core/_var.pwn(108) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "MaxVehicleFuel"
-./modules/Main/_var.pwn(110) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "pCountVeh"
+./modules/Server/Organization/_function.pwn(68) : îøèáêà 017: íåîáúÿâëåííûé ñè́âîë "dl_memlist"
+./modules/Server/Organization/_function.pwn(68) : îøèáêà 017: íåîáúÿâëåííûé ñè́âîë "dl_memlist"
+./modules/Server/Organization/_function.pwn(68) : îøèáêà 029: íåïđàâèëüíîå âûđàæåíèå, ïđèíỵ̈ íîëü
+./modules/Server/Organization/_function.pwn(68) : ôạ̀àëüíàÿ îøèáêà 107: ñëèøêî́ ́íîăî îøèáîê íà îäíîé ṇ̃đîêå
+
+Êî́ïèëÿöèÿ îṇ̃àíîâëåíà.
+
 Pawn compiler 3.2.3664	 	 	Copyright (c) 1997-2016, ITB CompuPhase
 
+
+Îøèáîê:4.

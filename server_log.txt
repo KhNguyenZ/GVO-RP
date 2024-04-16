@@ -27524,3 +27524,14 @@ v0.3.DL-R1, (C)2005-2018 SA-MP Team
 [20:38:17] Loaded 6 vehicle for Khoi_Nguyenz
 [20:38:24] DELETE FROM `inventory` WHERE `id` = '169'
 [20:38:38] UPDATE `inventory` SET `amount` = '9' WHERE `id` = '211'
+[20:44:30] Name: Test
+Leader: Khoi_Nguyenz 
+Total member: 1
+Birth: 29-3-2024
+Logo: logo:logo
+Type: 2
+[21:20:48] UPDATE `players` SET PosX = '1786.857544', PosY = '-1912.626831', PosZ = '13.394341', PosA = '147.632706', Health = '100.000000', Armour = '0.000000', TanSo = '0', Cash = '1000', AdminLevel = '10', Interior = '0', VW = '0', Phone = '0', DanhBa = '0', Dice = '0', CanXang = '0', DayThung = '0', XiGa = '0', Drink = '0', BinhSonXe = '0', Radio = '0', MatNa = '0', OrgID = '1', OrgRank = '10', Eat = '80', Skin = 3 WHERE `id` = '31' LIMIT 1
+[21:20:48] Character Save: Khoi Nguyenz | AccountID: 31
+[21:20:48] [part] Khoi_Nguyenz has left the server (0:1)
+[21:20:48] [SA-MP+] Disconnected: 127.0.0.1|50167
+[21:20:48] [SA-MP+] Connection status: unhandledConnections: 0, players: 0

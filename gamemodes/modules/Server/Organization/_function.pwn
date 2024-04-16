@@ -44,12 +44,32 @@ func:OrgShowMemberList(playerid, org_idz){
         if(Character[i][char_OrgID] == org_idz)
         {
             new dl_memlist[1280];
-            printf("", Character[i][char_OrgRank]);
             format(dl_memlist, sizeof(dl_memlist),"%s\t%s\n", player_get_name(i), OrgRank[org_idz][Character[i][char_OrgRank]-1]);
             strcat(dialog_member_list, dl_memlist);
         }
     }
     strcat(dialog_member_list, "End");
     ShowPlayerDialog(playerid,1000, DIALOG_STYLE_TABLIST_HEADERS,"List of organization members online",dialog_member_list, ">>", "<<");
+    return 1;
+}
+
+func:OrgShowWeaponList(playerid, org_idz){
+
+    new dialog_weapon_list[1280];
+    strcat(dialog_weapon_list, "Weapon\tChuc vu\n");
+
+    for(new i; i < MAX_WEAPON_ORG; i++)
+    {
+        if(OrgData[org_idz][org_gun][i] != -1)
+        {
+
+            new dl_wplist[1280], weapon_name[128];
+            GetWeaponName(OrgData[org_idz][org_gun][i], weapon_name, 128);
+            format(dl_memlist, sizeof(dl_memlist),"%s\t%s\n", weapon_name,OrgData[org_idz][org_ammo][i]);
+            strcat(dialog_weapon_list, dl_wplist);
+        }
+    }
+    strcat(dialog_member_list, "End");
+    ShowPlayerDialog(playerid,1000, DIALOG_STYLE_TABLIST_HEADERS,"List of organization weapon",dialog_weapon_list, ">>", "<<");
     return 1;
 }

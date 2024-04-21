@@ -20,7 +20,34 @@ func:RandomEx(min, max)
     new a = random(max - min) + min;
     return a;
 }
+func:GetPlayerNameEx(playerid) {
 
+	new
+		szName[MAX_PLAYER_NAME],
+		iPos;
+
+	GetPlayerName(playerid, szName, MAX_PLAYER_NAME);
+	while ((iPos = strfind(szName, "_", false, iPos)) != -1) szName[iPos] = ' ';
+	return szName;
+}
+
+func:IsPlayerInRangeOfVehicle(playerid, vehicleid, Float: radius) {
+
+	new
+		Float:Floats[3];
+
+	GetVehiclePos(vehicleid, Floats[0], Floats[1], Floats[2]);
+	return IsPlayerInRangeOfPoint(playerid, radius, Floats[0], Floats[1], Floats[2]);
+}
+func:IsNumeric(szInput[]) {
+
+	new
+		iChar,
+		i = 0;
+
+	while ((iChar = szInput[i++])) if (!('0' <= iChar <= '9')) return 0;
+	return 1;
+}
 func:player_get_name(const playerid, bool:fix_ = true) 
 {
 	new 

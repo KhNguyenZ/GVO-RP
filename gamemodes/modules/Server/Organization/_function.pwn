@@ -62,7 +62,7 @@ func:OrgShowWeaponList(playerid, org_idz){
     {
         if(OrgData[org_idz][org_gun][i] != -1)
         {
-
+            new dl_memlist[1280];
             new dl_wplist[1280], weapon_name[128];
             GetWeaponName(OrgData[org_idz][org_gun][i], weapon_name, 128);
             format(dl_memlist, sizeof(dl_memlist),"%s\t%s\n", weapon_name,OrgData[org_idz][org_ammo][i]);

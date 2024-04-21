@@ -10,9 +10,11 @@
 #include <YSI\y_ini>
 #include <notify>
 #include <DialogCenter>
+#include <easyDialog>
 #include <Veh-Lib\tdw_vyengine> 
 #include <sampp>
 #include <actor_plus>
+#include <strlib>
 #undef MAX_PLAYERS
 #define MAX_PLAYERS 500
 #pragma disablerecursion

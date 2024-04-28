@@ -14,6 +14,7 @@
 #include <Veh-Lib\tdw_vyengine> 
 #include <sampp>
 #include <actor_plus>
+#include <discord-connector>
 #include <strlib>
 #undef MAX_PLAYERS
 #define MAX_PLAYERS 500
@@ -73,12 +74,17 @@ main()
 
 #include "./modules/Server/Organization/build.pwn"
 
+#include "./modules/Server/Discord/main.pwn"
+#include "./modules/Server/Discord/_func.pwn"
+#include "./modules/Server/Discord/command.pwn"
+
 public SSA_Mysql_Intit()
 {
 	for(new i; i < 1000; i++) LoadOrg(i);
 	LoadInventoryDrop();
 	CreateInfo(); 
 	printf("Loaded %d Organization", OrgCount);
+
 	return 1; 
 }
 public OnGameModeExit()

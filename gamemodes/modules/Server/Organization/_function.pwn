@@ -69,7 +69,7 @@ func:OrgShowWeaponList(playerid, org_idz){
             strcat(dialog_weapon_list, dl_wplist);
         }
     }
-    strcat(dialog_member_list, "End");
+    strcat(dialog_weapon_list, "End");
     ShowPlayerDialog(playerid,1000, DIALOG_STYLE_TABLIST_HEADERS,"List of organization weapon",dialog_weapon_list, ">>", "<<");
     return 1;
 }

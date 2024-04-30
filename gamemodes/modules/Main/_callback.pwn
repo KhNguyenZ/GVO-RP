@@ -30,6 +30,7 @@ public OnPlayerText(playerid, text[])
 {
 	if(player_Login(playerid))
 	{
+		if(Character[playerid][char_DC_Auth] == 0) return SendErrorMessage(playerid, "[!] Vui long xac thuc tai khoan discord");
 		SendRangeMessage(playerid, 10, text);
 		Log("log/chat.log", text);
 		return 1;
@@ -41,6 +42,7 @@ public OnPlayerText(playerid, text[])
 public OnPlayerCommandText(playerid, cmdtext[]) {
 	if(!player_Login(playerid))
 	{
+		if(Character[playerid][char_DC_Auth] == 0) return SendErrorMessage(playerid, "[!] Vui long xac thuc tai khoan discord");
 		SendClientMessage(playerid,0xFF0000FF, "Ban chua dang nhap");
 		Log("log/cmd.log", cmdtext);
 		return 0;
@@ -295,6 +297,9 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 			if(cache_num_rows())
 			{
 				cache_get_value_name_int(0,"id", Character[playerid][char_account_id]);
+				cache_get_value_name(0,"DiscordID", Character[playerid][char_DCID]);
+				cache_get_value_name(0,"Discord_Code", Character[playerid][char_DC_Code]);
+				cache_get_value_name_int(0,"Discord_Auth", Character[playerid][char_DC_Auth]);
 			}
 			cache_delete(acc_cache);
 			character_Select(playerid);

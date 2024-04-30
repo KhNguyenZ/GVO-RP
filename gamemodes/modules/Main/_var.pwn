@@ -47,7 +47,10 @@ enum character_Info
 	char_OrgID,
 	char_OrgRank,
 	char_Eat,
-	char_Job
+	char_Job,
+	char_DCID[50],
+	char_DC_Code[12],
+	char_DC_Auth
 }
 
 new Character[MAX_PLAYERS][character_Info];

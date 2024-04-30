@@ -1,3 +1,16 @@
+
+#define SendUsageMessage(%0,%1) \
+    SendClientMessage(%0, 0xFF6347AA, "{FF6347}USE:{FFFFFF}"%1)
+    
+#define SendErrorMessage(%0,%1) \
+    SendClientMessage(%0, 0xFF6347AA, "{FF6347}ERROR:{FFFFFF}"%1)
+
+#define SendServerMessage(%0,%1) \
+    SendClientMessage(%0, 0xFF6347AA, "{FF6347}SERVER:{FFFFFF}"%1)
+
+#define SendSelectMessage(%0,%1) \
+    SendClientMessage(%0, 0xFF6347AA, "{FF6347}TUY CHON:{FFFFFF}"%1)
+
 func:IsPlayerSpawned(playerid)
 { 
     switch(GetPlayerState(playerid))

@@ -16,6 +16,7 @@
 #include <actor_plus>
 #include <discord-connector>
 #include <strlib>
+
 #undef MAX_PLAYERS
 #define MAX_PLAYERS 500
 #pragma disablerecursion
@@ -84,7 +85,6 @@ public SSA_Mysql_Intit()
 	LoadInventoryDrop();
 	CreateInfo(); 
 	printf("Loaded %d Organization", OrgCount);
-
 	return 1; 
 }
 public OnGameModeExit()

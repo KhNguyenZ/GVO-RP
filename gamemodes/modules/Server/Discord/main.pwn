@@ -5,8 +5,11 @@ new DCC_Guild:SSA_GUILD_ID;
 new DCC_Channel:SSA_MAINTAINCE;
 new DCC_Channel:SSA_CMD;
 new DCC_Role:AuthMember;
+new DCC_Channel:LogAuth;
 hook SSA_Mysql_Intit()
 {
+    LogAuth = DCC_FindChannelById("1234388490897063946");
+    
     SSA_GUILD_ID = DCC_FindGuildById("1221835813386584126");
     SSA_CMD = DCC_Channel:DCC_FindChannelById("1234175760810643518");
     SSA_MAINTAINCE = DCC_Channel:DCC_FindChannelById("1234168206118354965");

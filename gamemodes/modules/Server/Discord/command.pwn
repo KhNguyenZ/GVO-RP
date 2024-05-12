@@ -35,6 +35,7 @@ DCMD:verify(user, channel, params[])
     if(IsUserOnline(PlayerAuthName)) return DISCORD_ERROR_MSG(SSA_CMD, "Tài khoản của bạn đang Online , vui lòng thoát (/quit) game !!!");
     new dcid_o[DCC_ID_SIZE];
     DCC_GetUserId(user,dcid_o);
+    if(IsDiscordLinked(dcid_o)) return DISCORD_ERROR_MSG(SSA_CMD,"1 Discord chỉ có thể liên kết được 1 Account !");
     AuthAccount(user, PlayerAuthName, dcid_o);
     return 1;
 }
@@ -43,7 +44,6 @@ CMD:verify(playerid, params[])
 {
     if(!strcmp(Character[playerid][char_DCID],"-1")) return SendErrorMessage(playerid, "Vui long truy cap discord va thuc hien lenh /verify nhe !!");
     if(Character[playerid][char_DC_Auth] != 0) return SendErrorMessage(playerid, "Tai khoan cua ban da duoc kich hoat truoc do !!");
-
     new auth_code[12];
 
     if(sscanf(params, "s[12]", auth_code)) return SendUsageMessage(playerid, "/verify [Auth_Code]");
@@ -54,5 +54,17 @@ CMD:verify(playerid, params[])
         AuthSuccess(playerid);
     }
     else SendErrorMessage(playerid, "Ma xac thuc khong hop le !!");
+    return 1;
+}
+
+DCMD:otp(user, channel, params[])
+{
+    if(!DISCORD_IsChannel(channel,SSA_CMD)) return DISCORD_WARNING_MSG(channel, "Lệnh không khả dụng trong kênh này \nCố tình 'Spam' sẽ bị `Mute`");
+
+    new dcid_o[DCC_ID_SIZE];
+    DCC_GetUserId(user,dcid_o);
+    if(!IsDiscordLinked(dcid_o)) return DISCORD_ERROR_MSG(SSA_CMD,"Tài khoản của bạn chưa được liên kết với bất kì Account nào !");
+
+    CreateOTP(user, dcid_o);
     return 1;
 }

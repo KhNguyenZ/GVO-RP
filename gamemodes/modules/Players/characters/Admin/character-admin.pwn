@@ -69,7 +69,7 @@ new flying[MAX_PLAYERS];
 
 CMD:fly(playerid, params[])
 {
-	if(!CheckAdmin(playerid, 3)) return SendClientMessage(playerid, -1, "Ban khong co quyen su dung lenh nay");
+	if(!CheckAdmin(playerid, 3)) return SendErrorMessage(playerid, "Ban khong co quyen su dung lenh nay");
 
     new Float:x, Float:y, Float:z;
 	if((flying[playerid] = !flying[playerid]))
@@ -175,7 +175,7 @@ CMD:gotoco(playerid, params[])
 
 CMD:sethealth(playerid, params[])
 {
-	if(!CheckAdmin(playerid, 3)) return SendClientMessage(playerid, -1, "Ban khong co quyen su dung lenh nay");
+	if(!CheckAdmin(playerid, 3)) return SendErrorMessage(playerid, "Ban khong co quyen su dung lenh nay");
 	new playerset, Float:health;
 	if(sscanf(params, "if", playerset, health)) return SendClientMessage(playerid, -1, "Su dung: /sethealth [playerid] [health] ");
 
@@ -188,7 +188,7 @@ CMD:sethealth(playerid, params[])
 
 CMD:setarmour(playerid, params[])
 {
-	if(!CheckAdmin(playerid, 3)) return SendClientMessage(playerid, -1, "Ban khong co quyen su dung lenh nay");
+	if(!CheckAdmin(playerid, 3)) return SendErrorMessage(playerid, "Ban khong co quyen su dung lenh nay");
 	new playerset, Float:armour;
 	if(sscanf(params, "if", playerset, armour)) return SendClientMessage(playerid, -1, "Su dung: /setarmour [playerid] [armour] ");
 
@@ -200,7 +200,7 @@ CMD:setarmour(playerid, params[])
 
 CMD:givegun(playerid, params[])
 {
-	if(!CheckAdmin(playerid, 3)) return SendClientMessage(playerid, -1, "Ban khong co quyen su dung lenh nay");
+	if(!CheckAdmin(playerid, 3)) return SendErrorMessage(playerid, "Ban khong co quyen su dung lenh nay");
 	new playerset, gun, ammo;
 	if(sscanf(params, "iii", playerset, gun,ammo)) return SendClientMessage(playerid, -1, "Su dung: /givegun [playerid] [gun] [ammo]");
 

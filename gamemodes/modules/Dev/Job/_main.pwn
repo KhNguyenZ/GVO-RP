@@ -69,7 +69,7 @@ new i_job;
 
 CMD:editjob(playerid, params[]) {
 	if (Character[playerid][char_Admin] < 1)
-	    return SendClientMessage(playerid, COLOR_GRAD2,"Ban khong co quyen su dung lenh nay.");
+	    return SendErrorMessage(playerid,"Ban khong co quyen su dung lenh nay.");
 	new string[456];
 	format(string,sizeof(string), "STT\tNPC Name\tTrang Thai");
 	for(new i=1;i<MAX_JOBS;i++){
@@ -117,7 +117,7 @@ CMD:xoajob(playerid, params[])
 	    id = 0;
 
 	if (Character[playerid][char_Admin] < 1)
-	    return SendClientMessage(playerid, COLOR_GRAD2, "Ban khong co quyen su dung lenh nay.");
+	    return SendErrorMessage(playerid, "Ban khong co quyen su dung lenh nay.");
 
 	if (sscanf(params, "d", id))
 	    return  SendClientMessage(playerid, COLOR_GREY, "/xoajob [job id]");

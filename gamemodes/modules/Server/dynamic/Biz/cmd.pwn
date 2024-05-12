@@ -99,6 +99,6 @@ CMD:bedit(playerid, params[])
 			HienTextdraw(playerid, "Cap nhat ~y~Locked~w~ thanh cong");
 		}
 	}
-	else SendClientMessage(playerid, -1, "Ban khong co quyen su dung lenh nay");
+	else SendErrorMessage(playerid, "Ban khong co quyen su dung lenh nay");
 	return 1;
 }

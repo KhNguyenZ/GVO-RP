@@ -88,7 +88,7 @@ func:AuthAccount(fuser, user_input[], DCID_input[])
             DCC_AddGuildMemberRole(SSA_GUILD_ID, fuser, AuthMember);
         }
         else{
-            if(strcmp(DCID_input, Auth_DCID))
+            if(!strcmp(DCID_input, Auth_DCID))
             {
                 new DCC_Embed:embed = DCC_CreateEmbed("Succes: Auth User", "User của bạn đã được kích hoạt trước đó");
                 DCC_SetEmbedColor(embed, 0x78FF32);
@@ -103,7 +103,7 @@ func:AuthAccount(fuser, user_input[], DCID_input[])
                 new DCC_Embed:embed = DCC_CreateEmbed("Error: Invalid User", "User không hợp lệ");
                 DCC_SetEmbedColor(embed, 0xFF0000);
                 new d_owner[DCC_USERNAME_SIZE];
-                DCC_GetUserName(fuser,d_owner);
+                DCC_GetUserName(DCC_FindUserById(Auth_DCID),d_owner);
 
                 format(auth_code_msg, 1280,"***User [%s] đã được kích hoạt với tài khoản discord [%s]***",UserAuthed,d_owner);
                 DCC_SetEmbedFooter(embed, auth_code_msg);
@@ -173,7 +173,15 @@ func:IsUserAuth(fusername[])
     cache_delete(IsOnlineCache);
     return 0;
 }
-
+func:IsDiscordLinked(fc_DCID[])
+{
+    new query_check[1280], Cache:LinkedCache, frows;
+    format(query_check, 1280, "SELECT * FROM `accounts` WHERE `DiscordID` = '%s' AND `Discord_Auth` = '1' LIMIT 1", fc_DCID);
+    LinkedCache = mysql_query(Handle(), query_check);
+    frows = cache_num_rows();
+    cache_delete(LinkedCache);
+    return frows;
+}
 func:AuthSuccess(playerid)
 {
     new query_auth[1280];
@@ -203,5 +211,38 @@ public OnPlayerAuthSuccess(playerid, fdcid_succes[])
     format(auth_msg, sizeof(auth_msg), "Tài khoản discord [%s] đã được xác thực bởi nhân vật [%s] của bạn", OwnerName, player_get_name(playerid, false));
     DISCORD_SendEmbedMsg(AuthDM, "Xác thực tài khoản thành công",auth_msg, 0x2ac7ff, "https://img.upanh.tv/2024/04/29/SSA-Logo-Resizw.png","https://img.upanh.tv/2024/04/29/Authb35441edd8095edc.png");
     DISCORD_SendEmbedMsg(LogAuth, "Xác thực tài khoản thành công",auth_msg, 0x2ac7ff, "https://img.upanh.tv/2024/04/29/SSA-Logo-Resizw.png","https://img.upanh.tv/2024/04/29/Authb35441edd8095edc.png");
+    return 1;
+}
+
+
+func:CreateOTP(fuser, f_DCID[])
+{
+    new check_otp[1280], Cache:OTPc;
+    format(check_otp, 1280, "SELECT * FROM `accounts` WHERE `DiscordID` = '%s'", f_DCID);
+    OTPc = mysql_query(Handle(), check_otp);
+    if(cache_num_rows())
+    {
+        new pOTP = 0;
+        cache_get_value_name_int(0, "OTP", pOTP);
+        if(pOTP != 0) return DISCORD_ERROR_MSG(SSA_CMD, "Tài khoản của bạn đã có mã OTP , nếu quên hãy liên hệ Admin để xác minh và khôi phục OTP nhé !");
+        pOTP = random(999999);
+        format(check_otp, 1280, "UPDATE `accounts` SET `OTP` = '%d' WHERE `DiscordID` = '%s'", pOTP, f_DCID);
+        OTPc = mysql_query(Handle(), check_otp);
+        DISCORD_MSG(SSA_CMD, "Mã 'OTP' đã được gửi tới hộp thư DM của bạn !");
+
+        DCC_CreatePrivateChannel(fuser, "OnPlayerCreateOTP", "i",pOTP);
+    }
+    cache_delete(OTPc);
+    return 1;
+}
+
+forward OnPlayerCreateOTP(OTP);
+public OnPlayerCreateOTP(OTP)
+{
+    new DCC_Channel:OTP_DM = DCC_Channel:DCC_GetCreatedPrivateChannel();
+    new otp_msg[1280];
+    format(otp_msg, sizeof(otp_msg), "Mã OTP của bạn là: %d \nVui lòng không chia sẻ mã này cho bất kì ai , kể cả Admin nhằm đảm bảo toàn bộ tài sản của bạn !!", OTP);
+    DISCORD_SendEmbedMsg(OTP_DM, "Mã OTP bảo mật tài khoản", otp_msg);
+    DISCORD_MSG(OTP_DM,"Chúc bạn chơi game vui vẻ tại SSA-RP");
     return 1;
 }

@@ -114,6 +114,12 @@ public OnCharacterLoad(const playerid)
 	cache_get_value_name_int(0, "OrgRank", Character[playerid][char_OrgRank]);
 	cache_get_value_name_int(0, "Eat", Character[playerid][char_Eat]);
 
+	cache_get_value_name_int(0, "Bank", Character[playerid][char_Bank]);
+	cache_get_value_name_int(0, "BankSaving", Character[playerid][char_BankSaving]);
+	cache_get_value_name_int(0, "LastLogin", Character[playerid][char_LastLogin]);
+
+	cache_get_value_name(0, "HoursSaving", Character[playerid][char_HoursSaving]);
+
 	if(GetPVarInt(playerid, "SetupRegister_") == 0)
     {
     	SetSpawnInfo(playerid, 0, Character[playerid][char_Skin], Character[playerid][char_last_Pos][0],Character[playerid][char_last_Pos][1],Character[playerid][char_last_Pos][2],Character[playerid][char_last_Pos][3],0,0,0,0,0,0);

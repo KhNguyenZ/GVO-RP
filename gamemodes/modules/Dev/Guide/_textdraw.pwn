@@ -2,18 +2,7 @@ stock CreatePlayerGuide(playerid,key_guid[], key_suggest[])
 {
 
     new p_guide_index = CountGuide[playerid];
-    // PlayerTextDrawDestroy(playerid,Guide_BG_PTD[playerid][p_guide_index]);
-    // PlayerTextDrawDestroy(playerid,Guide_Key_PTD[playerid][p_guide_index]);
-    // PlayerTextDrawDestroy(playerid,Guide_Suggest_PTD[playerid][p_guide_index]);
 
-    // for(new i ; i < 10; i++)
-    // {
-    //     new key_n = GuideTXD_Info[i][g_key];
-    //     if( key_n == key_guid){
-    //         printf("[Guide-Error] Key %s was used, ID Guide is %d", key_guid, i);
-    //         return 0;
-    //     }
-    // }
     GuideTXD_Info[p_guide_index][g_id] = p_guide_index;
     
     GuideTXD_Info[p_guide_index][g_key] = MapCharToValue(key_guid);
@@ -182,6 +171,14 @@ func:ChangeGuideContent(playerid, key_f[],g_content_c[])
     format(GuideTXD_Info[g_idss][g_content], 1280, "%s", g_content_c);
 
     PlayerTextDrawSetString(playerid, Guide_Suggest_PTD[playerid][g_idss], g_content_c);
+    return 1;
+}
+hook OnPlayerDisconnect(playerid, reason){
+    for(new i; i < 10; i++){
+        PlayerTextDrawDestroy(playerid, Guide_BG_PTD[playerid][i]);
+        PlayerTextDrawDestroy(playerid, Guide_Suggest_PTD[playerid][i]);
+        PlayerTextDrawDestroy(playerid, Guide_Key_PTD[playerid][i]);
+    }
     return 1;
 }
 hook OnPlayerSpawn(playerid)

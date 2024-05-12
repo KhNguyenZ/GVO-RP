@@ -27,6 +27,9 @@
 #define  			MYSQL_PASS				"123456"
 #define  			MYSQL_DB				"ssa"
 
+
+new SERVER_TEST = 1; // 1: Server test ( bỏ qua login và nhiều anti khác) | 0: Mở server bình thường 
+new SERVER_API[20] = "localhost/api/";
 main()
 {
 	SetGameModeText("KhNguyen Dev");
@@ -52,6 +55,10 @@ main()
 #include "./modules/Main/_textdraw.pwn"
 #include "./modules/Main/color.pwn"
 
+#include "./modules/Server/Discord/main.pwn"
+#include "./modules/Server/Discord/_func.pwn"
+#include "./modules/Server/Discord/command.pwn"
+
 #include "./modules/Dev/build.pwn"
 
 #include "./modules/Server/ProgressLoad.pwn"
@@ -75,9 +82,9 @@ main()
 
 #include "./modules/Server/Organization/build.pwn"
 
-#include "./modules/Server/Discord/main.pwn"
-#include "./modules/Server/Discord/_func.pwn"
-#include "./modules/Server/Discord/command.pwn"
+#include "./modules/Server/Banking/build.pwn"
+
+#include "./modules/Server/CheckClient/main.pwn"
 
 public SSA_Mysql_Intit()
 {
@@ -85,6 +92,7 @@ public SSA_Mysql_Intit()
 	LoadInventoryDrop();
 	CreateInfo(); 
 	printf("Loaded %d Organization", OrgCount);
+
 	return 1; 
 }
 public OnGameModeExit()

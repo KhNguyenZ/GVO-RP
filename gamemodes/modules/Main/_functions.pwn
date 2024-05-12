@@ -28,6 +28,20 @@ func:player_Login(const playerid)
 	}
 	return 0;
 }
+func:KickDelay(playerid, time_kick)
+{
+	new Kick_msg[128];
+	format(Kick_msg, 128, "Ban se bi kick sau %d giay", floatround(time_kick/1000));
+	SendClientMessage(playerid,-1, Kick_msg);
+
+	SetTimerEx("C_KickDelay", time_kick, 0,"i", playerid);
+}
+forward C_KickDelay(playerid);
+public C_KickDelay(playerid)
+{
+	Kick(playerid);
+	return 1;
+}
 func:RandomEx(min, max)
 {
     new a = random(max - min) + min;

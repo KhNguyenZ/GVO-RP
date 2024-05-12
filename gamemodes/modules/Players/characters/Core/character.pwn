@@ -41,6 +41,12 @@ hook OnPlayerDisconnect(playerid, reason)
 		mysql_format(Handle(), query, sizeof(query), "%s OrgID = '%d',", query, Character[playerid][char_OrgID]);
 		mysql_format(Handle(), query, sizeof(query), "%s OrgRank = '%d',", query, Character[playerid][char_OrgRank]);
 		mysql_format(Handle(), query, sizeof(query), "%s Eat = '%d',", query, Character[playerid][char_Eat]);
+
+		mysql_format(Handle(), query, sizeof(query), "%s Bank = '%d',", query, Character[playerid][char_Bank]);
+		mysql_format(Handle(), query, sizeof(query), "%s BankSaving = '%d',", query, Character[playerid][char_BankSaving]);
+		mysql_format(Handle(), query, sizeof(query), "%s HoursSaving = '%d',", query, Character[playerid][char_HoursSaving]);
+
+		mysql_format(Handle(), query, sizeof(query), "%s LastLogin = '%s',", query, Character[playerid][char_LastLogin]);		
 		
 		mysql_format(Handle(), query, sizeof(query), "%s Skin = %d WHERE `id` = '%d' LIMIT 1", query, Character[playerid][char_Skin], Character[playerid][char_player_id]);
 		printf("%s",query);

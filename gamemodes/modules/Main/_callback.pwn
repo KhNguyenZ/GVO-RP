@@ -17,6 +17,7 @@ public OnPlayerConnect(playerid)
 	TogglePlayerSpectating(playerid, 0);
 
 	CreatePlayerInfo(playerid);
+
 	return 1;
 }
 
@@ -81,6 +82,7 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 }
 public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 {	
+	BankingClick(playerid, PlayerText:playertextid);
 	InvClick(playerid, PlayerText:playertextid);
 	Org_Click(playerid, PlayerText:playertextid);
 	if(playertextid == RegisterPTD[playerid][1]) // ngay sinh
@@ -272,6 +274,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 		format(query, sizeof(query), "SELECT * FROM `players` WHERE `PlayerName` = '%s'", player_get_name(playerid, false));
 		mysql_tquery(Handle(), query, "OnCharacterLoad", "i", playerid);
 		SetPVarInt(playerid,"CharSelected_", 1);
+		
 	}
 	if(playertextid == LoginPTD[playerid][6])
 	{
@@ -289,8 +292,14 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 			SendClientMessage(playerid, -1, "[!] Ban chua nhap mat khau !");
 		}
 
-		if(!strcmp(account_get_password(player_get_name(playerid, false)), Pass_str) && GetPVarInt(playerid, #InputPassworded) == 1)
+		if(SERVER_TEST == 1 || (!strcmp(account_get_password(player_get_name(playerid, false)), Pass_str) && GetPVarInt(playerid, #InputPassworded) == 1))
 		{
+			new hour,minute,second, year,month,day;
+			gettime(hour,minute,second);
+			getdate(year,month,day);
+			format(Character[playerid][char_LastLogin], 100, "%d:%d:%d %d-%d-%d",hour, minute, second, month, day, year);
+
+
 			new queryzzz[128], Cache:acc_cache;
 			mysql_format(Handle(), queryzzz, sizeof(queryzzz), "SELECT * FROM `accounts` WHERE `Username` = '%s'", player_get_name(playerid, false));
 			acc_cache = mysql_query(Handle(), queryzzz);
@@ -300,6 +309,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 				cache_get_value_name(0,"DiscordID", Character[playerid][char_DCID]);
 				cache_get_value_name(0,"Discord_Code", Character[playerid][char_DC_Code]);
 				cache_get_value_name_int(0,"Discord_Auth", Character[playerid][char_DC_Auth]);
+				cache_get_value_name_int(0,"OTP", Character[playerid][char_OTP]);
 			}
 			cache_delete(acc_cache);
 			character_Select(playerid);

@@ -50,7 +50,12 @@ enum character_Info
 	char_Job,
 	char_DCID[50],
 	char_DC_Code[12],
-	char_DC_Auth
+	char_DC_Auth,
+	char_Bank,
+	char_BankSaving,
+	char_OTP,
+	char_HoursSaving,
+	char_LastLogin[100]
 }
 
 new Character[MAX_PLAYERS][character_Info];

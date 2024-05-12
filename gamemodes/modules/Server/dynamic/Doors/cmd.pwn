@@ -11,14 +11,14 @@ CMD:dnext(playerid, params[])
 		format(szformat, sizeof(szformat), "Next Door ID: %d", INVALID_DOORS());
 		SendClientMessage(playerid, -1, szformat);
 	}
-	else SendClientMessage(playerid, -1, "Ban khong co quyen su dung lenh nay");
+	else SendErrorMessage(playerid, "Ban khong co quyen su dung lenh nay");
 	return 1;
 }
 
 CMD:taodoor(playerid, params[])
 {
 	new name[1280], pickup;
-	if(!CheckAdmin(playerid, 4)) return SendClientMessage(playerid, -1, "Ban khong co quyen su dung lenh nay");
+	if(!CheckAdmin(playerid, 4)) return SendErrorMessage(playerid, "Ban khong co quyen su dung lenh nay");
 	if(sscanf(params, "s[40]i", name,pickup)) return SendClientMessage(playerid, -1 ,"Su dung: /taodoor [name] [pickup id]");
 
 	new Float:dPos[3], iddoor = INVALID_DOORS();
@@ -115,7 +115,7 @@ CMD:dedit(playerid, params[])
 		}
 		else SendClientMessage(playerid, -1, "Invaild ID");
 	}
-	else SendClientMessage(playerid, -1, "Ban khong co quyen su dung lenh nay");
+	else SendErrorMessage(playerid, "Ban khong co quyen su dung lenh nay");
 	return 1;
 }
 CMD:adoor(playerid, params[])

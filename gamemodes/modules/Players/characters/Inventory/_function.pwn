@@ -146,7 +146,7 @@ func:CreateInvTrade(playerid, itemid, amountz)
 	new Float:InvX, Float:InvY, Float:NameX, Float:NameY;
 	
 	new TradeIndex = TradeAllItem[playerid];
-	if(TradeIndex > 20) SendClientMessage(playerid, -1, "Max item !");
+	if(TradeIndex > 20) return SendClientMessage(playerid, -1, "Max item !");
 	InvTradeInfo[playerid][trade_amount] = amountz;
 
 	if(TradeIndex < 5){
@@ -394,9 +394,8 @@ func:InvMess(playerid, case_action, item)
 	return 1;
 }
 
-func:UsedItem(playerid, page, index)
+func:UsedItem(playerid, index)
 {
-
 	new itemsqlid[MAX_PLAYERS], amount_item[MAX_PLAYERS];
 	itemsqlid[playerid] = PlayerInvItem[playerid][PlayerPage[playerid]][pInvSQLID][index];
 	amount_item[playerid] = PlayerInvItem[playerid][PlayerPage[playerid]][pInvAmount][index];

@@ -10,7 +10,7 @@ hook OnGameModeInit(){
 forward Biz_Load();
 public Biz_Load()
 {
-	new biz_count, count;
+	new biz_count;
 	cache_get_row_count(biz_count);
 	for(new i = 0 ; i < biz_count; i++)
 	{

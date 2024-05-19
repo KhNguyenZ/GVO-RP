@@ -3,6 +3,7 @@
 
 hook OnPlayerUpdate(playerid)
 {
+    if(!IsPlayerSpawned(playerid)) return 1;
     if(IsPlayerNearInteractiveNPC(playerid) != -1)
     {
         new inter_guide[1280], inter_aid = IsPlayerNearInteractiveNPC(playerid);

@@ -59,7 +59,7 @@ InvClick(playerid, PlayerText:playertextid)
 		invSlotClick[playerid] = InventoryInfo[playerid][PlayerPage[playerid]][invSlot][pSelectID[playerid]];
 
 		UseItem(playerid, itemInfo[invSlotClick[playerid]][item_id]);
-		UsedItem(playerid, PlayerPage[playerid], pSelectID[playerid]-1);
+		UsedItem(playerid, pSelectID[playerid]-1);
 
 		HidePlayerIndexInv(playerid);
 	}

@@ -12,9 +12,8 @@
 #include <DialogCenter>
 #include <easyDialog>
 #include <Veh-Lib\tdw_vyengine> 
-#include <sampp>
+// #include <sampp>
 #include <actor_plus>
-#include <discord-connector>
 #include <strlib>
 
 #undef MAX_PLAYERS
@@ -29,7 +28,9 @@
 
 
 new SERVER_TEST = 1; // 1: Server test ( bỏ qua login và nhiều anti khác) | 0: Mở server bình thường 
-new SERVER_API[20] = "localhost/api/";
+new SERVER_API[20]    = "localhost/api/",
+	SERVER_COMPONET[30]   = "localhost/server/component/",
+	SEVRER_CONTROLLER[30] = "localhost/server/controller/";
 main()
 {
 	SetGameModeText("KhNguyen Dev");
@@ -85,6 +86,9 @@ main()
 #include "./modules/Server/Banking/build.pwn"
 
 #include "./modules/Server/CheckClient/main.pwn"
+#include "./modules/Server/ActiveMail/main.pwn"
+
+#include "./modules/Server/Maps/build.pwn"
 
 public SSA_Mysql_Intit()
 {

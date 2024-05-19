@@ -607,17 +607,12 @@ stock ShowPlayerIndexInv(playerid)
 	}
 
 	PlayerInvInfo[playerid][PlayerPage[playerid]][pSelectItemID] = 0;
-
-	for(new i = 21; i < 41; i++)
-	{
-		PlayerTextDrawShow(playerid,ItemBackground[playerid][i]);
-	}
 	new szPage[1280];
 	format(szPage, sizeof(szPage), "%d/%d",PlayerPage[playerid], GetPlayerPage(playerid)+1);
 
 	PlayerTextDrawSetString(playerid, btnPage[playerid][2], szPage);
 
-	for(new i = 0; i < 6; i++)
+	for(new i = 0; i < 3; i++)
 	{
 
 		PlayerTextDrawShow(playerid, btnPage[playerid][i]);
@@ -684,7 +679,6 @@ stock HidePlayerIndexInv(playerid)
 }
 stock ReloadInv(playerid)
 {
-	// HidePlayerIndexInv(playerid);
 	ShowPlayerIndexInv(playerid);
 	return 1;
 }

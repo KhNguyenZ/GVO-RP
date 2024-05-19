@@ -1,10 +1,6 @@
-./modules/Dev/Job/_main.pwn(448) : èäåị́èôèêạ̀îđó ïđèñâîåíî çíà÷åíèå, íî îí íå èñïîëüçóạ̊ñÿ: "playerjob"
-./modules/Players/characters/Inventory/_function.pwn(397) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "page"
-./modules/Server/dynamic/Biz/callback.pwn(13) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "count"
 ./modules/Server/Organization/_function.pwn(22) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "org_type"
-./modules/Server/CheckClient/main.pwn(35) : èäåị́èôèêạ̀îđó ïđèñâîåíî çíà÷åíèå, íî îí íå èñïîëüçóạ̊ñÿ: "clientCache"
 ./modules/Server/Discord/command.pwn(25) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "HintCommand"
 ./modules/Server/Vehicle/Core/_var.pwn(108) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "MaxVehicleFuel"
-./modules/Main/_var.pwn(119) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "pCountVeh"
+D:\Desktop\SSA-Project-Main\gamemodes\main.pwn(32) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "SERVER_COMPONET"
 Pawn compiler 3.2.3664	 	 	Copyright (c) 1997-2016, ITB CompuPhase
 

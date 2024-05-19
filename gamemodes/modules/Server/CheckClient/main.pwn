@@ -9,19 +9,19 @@ hook OnPlayerConnect(playerid)
 hook OnPlayerSpawn(playerid){
     if(SERVER_TEST == 0 && GetPVarInt(playerid, #Check_Client) == 0)
     {
-        TogglePlayerControllable(playerid, 0);
         new Float:CheckPos[MAX_PLAYERS][3];
         GetPlayerPos(playerid, CheckPos[playerid][0], CheckPos[playerid][1], CheckPos[playerid][2]);
-        SetPlayerPos(playerid,CheckPos[playerid][0], CheckPos[playerid][1], CheckPos[playerid][2]+0.2);
+        SetPlayerPos(playerid,CheckPos[playerid][0], CheckPos[playerid][1], CheckPos[playerid][2]+0.5);
 
         ShowPlayerDialog(playerid, 1239, DIALOG_STYLE_MSGBOX,"Kiem tra Client", "Qua trinh kiem tra client dang tien hanh !","OK", "");
-        SetPVarInt(playerid, #ClientTimer, 3);
-        CheckTimer[playerid] = SetTimerEx("OnTimerCheckClient", 1000, 1,"i", playerid);
+        SetPVarInt(playerid, #ClientTimer, 2);
+        CheckTimer[playerid] = SetTimerEx("OnTimerCheckClient", 500, 1,"i", playerid);
     }
     return 1;
 }
 forward OnTimerCheckClient(playerid);
 public OnTimerCheckClient(playerid){
+    TogglePlayerControllable(playerid, 0);
     if(GetPVarInt(playerid, #ClientTimer) > 0){
         new check_msg[1280];
         format(check_msg, 1280, "Trinh kiem tra client dang tien hanh , thoi gian con %ds",GetPVarInt(playerid, #ClientTimer));
@@ -43,7 +43,7 @@ func:CheckPlayerPrivateClient(playerid)
     {
         cache_get_value_name(0, "Username", CharName_Check);
     }
-
+    cache_delete(Cache:clientCache);
     new check_url[128];
     format(check_url, 128,"%snet.php?Check=%s", SERVER_API, CharName_Check);
     HTTP(playerid, HTTP_GET,check_url , "", "CheckPlayerClient");
@@ -55,6 +55,12 @@ func:CheckPlayerPrivateClient(playerid)
 
 forward CheckPlayerClient(index, response_code, data[]);
 public CheckPlayerClient(index, response_code, data[]){
+
+    if(response_code != 200) {
+        SendErrorMessage(index, "Mat ket noi voi may chu 'API' , hay bao cho Quan tri vien nhanh nhe !");
+        KickDelay(index, 2000);
+        return 1;
+    }
 
     if(strcmp(data, "1")){
         SendErrorMessage(index, "Client cua ban khong phai client do SSA phat hanh , hay su dung SSA-Launcher/SSA-Mobile nhe");

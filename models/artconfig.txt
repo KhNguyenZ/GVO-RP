@@ -1,6 +1,5 @@
-AddSimpleModel(-1,19379, -2001, "object.dff", "logo.txd");
-AddSimpleModel(-1,19379, -2002, "object.dff", "joinspawn.txd");
-AddSimpleModel(-1,19379, -2003, "object.dff", "login.txd");
+AddSimpleModel(-1, 19379,-2001, "object.dff", "char.txd");
+AddSimpleModel(-1,19379, -2002, "object.dff", "login.txd");
 AddSimpleModel(-1,19379, -2004, "object.dff", "inv.txd");
 AddSimpleModel(-1,19379, -2006, "object.dff", "247.txd");
 
@@ -13,6 +12,9 @@ AddSimpleModel(-1,19379, -2012, "object.dff", "GuideBtn.txd");
 AddSimpleModel(-1,19379, -2013, "object.dff", "Info.txd");
 AddSimpleModel(-1,19379, -2014, "object.dff", "custom_hud.txd");
 AddSimpleModel(-1,19379, -2016, "object.dff", "Banking.txd");
+AddSimpleModel(-1, 19379, -2018, "object.dff", "start.txd");
+
+
 AddSimpleModel(-1,19379, -5000, "newbiespawn.dff", "newbiespawn.txd");
 AddSimpleModel(-1,19379, -5001, "congvien.dff", "congvien.txd");
 AddSimpleModel(-1,19379, -5002, "honuoc.dff", "honuoc.txd");

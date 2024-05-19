@@ -1,8 +1,10 @@
-[05/11/24 17:40:05] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number (./modules/Server/dynamic/Doors/callback.pwn:21)
-[05/11/24 17:40:05] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number (./modules/Server/dynamic/Doors/callback.pwn:24)
-[05/11/24 17:40:05] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number (./modules/Server/dynamic/Doors/callback.pwn:25)
-[05/11/24 17:40:05] [plugins/mysql] cache_get_value_name_float: value 'NULL' is not a number (./modules/Server/dynamic/Doors/callback.pwn:29)
-[05/11/24 17:40:05] [plugins/mysql] cache_get_value_name_float: value 'NULL' is not a number (./modules/Server/dynamic/Doors/callback.pwn:30)
-[05/11/24 17:40:05] [plugins/mysql] cache_get_value_name_float: value 'NULL' is not a number (./modules/Server/dynamic/Doors/callback.pwn:31)
-[05/11/24 22:02:53] [plugins/discord-connector] Can't read from Discord websocket gateway: An existing connection was forcibly closed by the remote host (10054)
-[05/11/24 22:02:53] [plugins/discord-connector] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[05/19/24 15:17:25] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number (./modules/Server/dynamic/Doors/callback.pwn:21)
+[05/19/24 15:17:25] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number (./modules/Server/dynamic/Doors/callback.pwn:24)
+[05/19/24 15:17:25] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number (./modules/Server/dynamic/Doors/callback.pwn:25)
+[05/19/24 15:17:25] [plugins/mysql] cache_get_value_name_float: value 'NULL' is not a number (./modules/Server/dynamic/Doors/callback.pwn:29)
+[05/19/24 15:17:25] [plugins/mysql] cache_get_value_name_float: value 'NULL' is not a number (./modules/Server/dynamic/Doors/callback.pwn:30)
+[05/19/24 15:17:25] [plugins/mysql] cache_get_value_name_float: value 'NULL' is not a number (./modules/Server/dynamic/Doors/callback.pwn:31)
+[05/19/24 15:20:10] [plugins/mysql] cache_get_value_name_int: value '5:14:30 5-19-2024' is not a number (./modules/Players/characters/Core/sql.pwn:66)
+[05/19/24 15:21:34] [plugins/mysql] error #1064 while executing query "SELECT * FROM `players` WHERE `AccID` = '
+¤E": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''
+¤E' at line 1 (./modules/Players/characters/Core/Register/func.pwn:156 -> ./modules/Main/_callback.pwn:59)

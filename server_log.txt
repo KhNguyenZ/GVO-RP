@@ -38447,3 +38447,182 @@ v0.3.DL-R1, (C)2005-2018 SA-MP Team
 [14:13:15] SELECT * FROM `vehicle` WHERE `sqlid` = '37'
 [14:13:15] Loaded 0 vehicle for Admin_Test
 [14:13:22] UPDATE `accounts` SET `Discord_Code` = '0', `Discord_Auth` = '1' WHERE `id` = '14'
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[08:34:44] weburl = "www.sa-mp.com"  (string)
+[08:34:44] password = ""  (string)
+[08:34:44] filterscripts = ""  (string)
+[08:34:44] 
+[08:34:44] Server Plugins
+[08:34:44] --------------
+[08:34:44]  Loading plugin: mysql
+[08:34:44]  >> plugin.mysql: R41-4 successfully loaded.
+[08:34:44]   Loaded.
+[08:34:44]  Loading plugin: whirlpool
+[08:34:44]  
+[08:34:44]  ==================
+[08:34:44]  
+[08:34:44]   Whirlpool loaded
+[08:34:44]  
+[08:34:44]  ==================
+[08:34:44]  
+[08:34:44]   Loaded.
+[08:34:44]  Loading plugin: sscanf
+[08:34:44] 
+
+[08:34:44]  ===============================
+
+[08:34:44]       sscanf plugin loaded.     
+
+[08:34:44]          Version:  2.8.3        
+
+[08:34:44]   (c) 2018 Alex "Y_Less" Cole  
+
+[08:34:44]  ===============================
+
+[08:34:44]   Loaded.
+[08:34:44]  Loading plugin: streamer
+[08:34:44] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[08:34:44]   Loaded.
+[08:34:44]  Loading plugin: sampp_server
+[08:34:44] [SA-MP+] Loaded
+[08:34:44]   Loaded.
+[08:34:44]  Loading plugin: discord-connector
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[08:38:58] weburl = "www.sa-mp.com"  (string)
+[08:38:58] password = ""  (string)
+[08:38:58] filterscripts = ""  (string)
+[08:38:58] 
+[08:38:58] Server Plugins
+[08:38:58] --------------
+[08:38:58]  Loading plugin: mysql
+[08:38:58]  >> plugin.mysql: R41-4 successfully loaded.
+[08:38:58]   Loaded.
+[08:38:58]  Loading plugin: whirlpool
+[08:38:58]  
+[08:38:58]  ==================
+[08:38:58]  
+[08:38:58]   Whirlpool loaded
+[08:38:58]  
+[08:38:58]  ==================
+[08:38:58]  
+[08:38:58]   Loaded.
+[08:38:58]  Loading plugin: sscanf
+[08:38:58] 
+
+[08:38:58]  ===============================
+
+[08:38:58]       sscanf plugin loaded.     
+
+[08:38:58]          Version:  2.8.3        
+
+[08:38:58]   (c) 2018 Alex "Y_Less" Cole  
+
+[08:38:58]  ===============================
+
+[08:38:58]   Loaded.
+[08:38:58]  Loading plugin: streamer
+[08:38:58] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[08:38:58]   Loaded.
+[08:38:58]  Loading plugin: sampp_server
+[08:38:58] [SA-MP+] Loaded
+[08:38:58]   Loaded.
+[08:38:58]  Loading plugin: discord-connector
+[08:39:19]  >> plugin.dc-connector: timeout while initializing data.
+[08:39:19]                          plugin will proceed to retry connecting in the background.
+[08:39:19]   Loaded.
+[08:39:19]  Loaded 6 plugins.
+
+[08:39:19] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[08:39:19] [artwork:crc] logo.txd CRC = 0x3E256910
+[08:39:19] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[08:39:19] [artwork:crc] joinspawn.txd CRC = 0x39E48CC2
+[08:39:19] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[08:39:19] [artwork:crc] login.txd CRC = 0x6B804645
+[08:39:19] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[08:39:19] [artwork:crc] inv.txd CRC = 0x3C7B1C5D
+[08:39:19] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[08:39:19] [artwork:crc] 247.txd CRC = 0x5C708255
+[08:39:19] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[08:39:19] [artwork:crc] Inventory.txd CRC = 0x70C676BF
+[08:39:19] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[08:39:19] [artwork:crc] Hudz.txd CRC = 0xAA707129
+[08:39:19] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[08:39:19] [artwork:crc] Speedometter.txd CRC = 0x4FB8AD9D
+[08:39:19] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[08:39:19] [artwork:crc] Org.txd CRC = 0x429499AB
+[08:39:19] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[08:39:19] [artwork:crc] npctextbox.txd CRC = 0xE73FF298
+[08:39:19] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[08:39:19] [artwork:crc] GuideBtn.txd CRC = 0xF8657154
+[08:39:19] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[08:39:19] [artwork:crc] Info.txd CRC = 0xF0CADE65
+[08:39:19] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[08:39:19] [artwork:crc] custom_hud.txd CRC = 0xD07CB7AB
+[08:39:19] [artwork:crc] newbiespawn.dff CRC = 0x2499225A
+[08:39:19] [artwork:crc] newbiespawn.txd CRC = 0x2AF71386
+[08:39:19] [artwork:crc] congvien.dff CRC = 0x94D2954
+[08:39:19] [artwork:crc] congvien.txd CRC = 0xECDCE39F
+[08:39:19] [artwork:crc] honuoc.dff CRC = 0xFBE95451
+[08:39:19] [artwork:crc] honuoc.txd CRC = 0xC8354AE8
+[08:39:19] 
+[08:39:19] Filterscripts
+[08:39:19] ---------------
+[08:39:19]   Loaded 0 filterscripts.
+
+[08:39:20] AMX (58285136) loaded
+[08:39:20]  
+[08:39:20]  
+[08:39:20]  
+[08:39:20]  ======================================= 
+[08:39:20]  |                                     | 
+[08:39:20]  |        YSI version 4.00.0001        | 
+[08:39:20]  |        By Alex "Y_Less" Cole        | 
+[08:39:20]  |                                     | 
+[08:39:20]  ======================================= 
+[08:39:20]  
+[08:39:20] Loaded 0 Organization
+[08:39:20] > Ket noi den du lieu thanh cong.
+[08:39:20] [Log-Dev]Interactive NPCs ID: 1 was used to
+[08:39:20] Number of vehicle models: 0
+[08:39:20] [KNCMS][Log-SQL]:Da load thanh cong 13 DropBox
+[08:39:20] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+Console input: ddd
+[08:41:50] [connection] incoming connection: 127.0.0.1:51987 id: 0
+[08:41:50] [join] nhat_nam has joined the server (0:127.0.0.1)
+[08:41:50] [SA-MP+] Player connecting, has the SA-MP+ plugin: 0
+[08:47:12] CharSelect: 0
+[08:47:25] [nick] nhat_nam nick changed to Hapt_CuDen
+[08:47:25] [KNCMS][Log-Register]:Nguoi choi Hapt CuDen vua dang ky tai khoan
+[08:48:20] [part] Hapt_CuDen has left the server (0:1)
+[08:48:55] [connection] incoming connection: 127.0.0.1:58494 id: 0
+[08:48:55] [join] nhat_nam has joined the server (0:127.0.0.1)
+[08:48:55] [SA-MP+] Player connecting, has the SA-MP+ plugin: 0
+[08:49:04] CharSelect: 0
+[08:49:08] [nick] nhat_nam nick changed to Hapt_CuDen
+[08:49:08] SELECT * FROM `vehicle` WHERE `sqlid` = '33'
+[08:49:08] Loaded 0 vehicle for Hapt_CuDen
+[09:18:39] UPDATE `players` SET PosX = '1278.329468', PosY = '-1278.676514', PosZ = '14.034493', PosA = '324.300354', Health = '100.000000', Armour = '0.000000', TanSo = '0', Cash = '1000', AdminLevel = '99999', Interior = '-1', VW = '0', Phone = '0', DanhBa = '0', Dice = '0', CanXang = '0', DayThung = '0', XiGa = '0', Drink = '0', BinhSonXe = '0', Radio = '0', MatNa = '0', OrgID = '-1', OrgRank = '-1', Eat = '0', Skin = 299 WHERE `id` = '33' LIMIT 1
+[09:18:39] Character Save: Hapt CuDen | AccountID: 33
+[09:18:39] [part] Hapt_CuDen has left the server (0:1)

@@ -24,8 +24,8 @@
 
 #define  			MYSQL_HOST				"localhost"
 #define  			MYSQL_USER				"root"
-#define  			MYSQL_PASS				"123456"
-#define  			MYSQL_DB				"ssa"
+#define  			MYSQL_PASS				"123123"
+#define  			MYSQL_DB				"db"
 
 main()
 {

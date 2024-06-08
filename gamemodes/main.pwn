@@ -28,9 +28,9 @@
 
 
 new SERVER_TEST = 1; // 1: Server test ( bỏ qua login và nhiều anti khác) | 0: Mở server bình thường 
-new SERVER_API[20]    = "localhost/api/",
-	SERVER_COMPONET[30]   = "localhost/server/component/",
-	SEVRER_CONTROLLER[30] = "localhost/server/controller/";
+new SERVER_API[20]    = "ssa-rp.xyz/api/",
+	SERVER_COMPONET[30]   = "ssa-rp.xyz/server/component/",
+	SEVRER_CONTROLLER[30] = "ssa-rp.xyz/server/controller/";
 main()
 {
 	SetGameModeText("KhNguyen Dev");

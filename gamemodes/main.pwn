@@ -15,7 +15,8 @@
 // #include <sampp>
 #include <actor_plus>
 #include <strlib>
-
+#include <sampvoice>
+#include <Pawn.RakNet>
 #undef MAX_PLAYERS
 #define MAX_PLAYERS 500
 #pragma disablerecursion
@@ -23,8 +24,8 @@
 
 #define  			MYSQL_HOST				"localhost"
 #define  			MYSQL_USER				"root"
-#define  			MYSQL_PASS				"123123"
-#define  			MYSQL_DB				"db"
+#define  			MYSQL_PASS				"123456"
+#define  			MYSQL_DB				"ssa"
 
 
 new SERVER_TEST = 1; // 1: Server test ( bỏ qua login và nhiều anti khác) | 0: Mở server bình thường 
@@ -89,6 +90,9 @@ main()
 #include "./modules/Server/ActiveMail/main.pwn"
 
 #include "./modules/Server/Maps/build.pwn"
+
+#include "./modules/Players/characters/Death/textdraw.pwn"
+#include "./modules/Players/characters/Death/callback.pwn"
 
 public SSA_Mysql_Intit()
 {

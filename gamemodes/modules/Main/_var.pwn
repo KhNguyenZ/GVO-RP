@@ -60,7 +60,8 @@ enum character_Info
 	char_Email[50],
 	char_Email_Code[10],
 	char_Email_Status,
-	char_Refer[MAX_PLAYER_NAME]
+	char_Refer[MAX_PLAYER_NAME],
+	char_Injured
 }
 
 new Character[MAX_PLAYERS][character_Info];
@@ -112,3 +113,7 @@ new Text: InfoTD[3];
 new PlayerText: InfoPTD[MAX_PLAYERS][2];
 
 new CountGuide[MAX_PLAYERS];
+
+
+new PlayerText:
+    DeathUI[MAX_PLAYERS][4];

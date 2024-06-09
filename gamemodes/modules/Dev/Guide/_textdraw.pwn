@@ -161,13 +161,3 @@ hook OnPlayerDisconnect(playerid, reason)
     }
     return 1;
 }
-hook OnPlayerSpawn(playerid)
-{
-    // CreatePlayerGuide(playerid, "A", "Bat Voice");
-    // CreatePlayerGuide(playerid, "B", "Bat Setting");
-    // CreatePlayerGuide(playerid, "C", "Bat Inventory");
-    // CreatePlayerGuide(playerid, "D", "Bat Org Management");
-    // CreatePlayerGuide(playerid, "E", "Tuong tac voi ~g~Mystery");
-    return 1;
-}
-

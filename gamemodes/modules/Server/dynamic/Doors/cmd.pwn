@@ -24,6 +24,7 @@ CMD:taodoor(playerid, params[])
 	new Float:dPos[3], iddoor = INVALID_DOORS();
 	GetPlayerPos(playerid, dPos[0],dPos[1],dPos[2]);
 	new queryzzzzz[1280];
+	printf("%s", queryzzzzz);
 	mysql_format(Handle(), queryzzzzz, sizeof(queryzzzzz), "INSERT INTO `doors` SET \
 		`id` = '%d' , `Name` = '%s', `ExPosX` = '%f' , `ExPosY` = '%f' , `ExPosZ` = '%f', `PickupID` = '%d' ",iddoor, name, dPos[0], dPos[1], dPos[2], pickup);
 	mysql_tquery(Handle(),queryzzzzz, "OnAdminDoorCreate", "iisfffi", playerid, iddoor,name, dPos[0], dPos[1], dPos[2],pickup);

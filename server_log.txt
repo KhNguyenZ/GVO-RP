@@ -9860,3 +9860,396 @@ v0.3.DL-R1, (C)2005-2018 SA-MP Team
 [01:12:40]   Filterscript 'animlist.amx' loaded.
 [01:22:18] Pickup ID for Door ID 1: 0
 [01:23:37] Pickup ID for Door ID 1: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[00:01:58] weburl = "www.sa-mp.com"  (string)
+[00:01:58] password = ""  (string)
+[00:01:58] 
+[00:01:58] Server Plugins
+[00:01:58] --------------
+[00:01:58]  Loading plugin: mysql
+[00:01:58]  >> plugin.mysql: R41-4 successfully loaded.
+[00:01:58]   Loaded.
+[00:01:58]  Loading plugin: whirlpool
+[00:01:58]  
+[00:01:58]  ==================
+[00:01:58]  
+[00:01:58]   Whirlpool loaded
+[00:01:58]  
+[00:01:58]  ==================
+[00:01:58]  
+[00:01:58]   Loaded.
+[00:01:58]  Loading plugin: sscanf
+[00:01:58] 
+
+[00:01:58]  ===============================
+
+[00:01:58]       sscanf plugin loaded.     
+
+[00:01:58]          Version:  2.8.3        
+
+[00:01:58]   (c) 2018 Alex "Y_Less" Cole  
+
+[00:01:58]  ===============================
+
+[00:01:58]   Loaded.
+[00:01:58]  Loading plugin: streamer
+[00:01:58] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[00:01:58]   Loaded.
+[00:01:58]  Loading plugin: discord-connector
+[00:02:01]  >> plugin.dc-connector: v0.3.5 successfully loaded.
+[00:02:01]   Loaded.
+[00:02:01]  Loading plugin: pawnraknet
+[00:02:01] [Pawn.RakNet] plugin v1.6.0 loading...
+[00:02:01] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 19:36:19
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[00:02:01]   Loaded.
+[00:02:01]  Loading plugin: samp-compat
+[00:02:01]   -- samp-compat for 0.3.DL-R1 initialized
+[00:02:01]   Loaded.
+[00:02:01]  Loading plugin: sampvoice
+[00:02:01] [sv:dbg:network:init] : module initializing...
+[00:02:01] [dbg:raknet:init] : module initializing...
+[00:02:01] [dbg:raknet:init] : module initialized
+[00:02:01] [sv:dbg:network:init] : module initialized
+[00:02:01] [sv:dbg:main:Load] : creating 8 work threads...
+[00:02:01]  -------------------------------------------    
+[00:02:01]    ___                __   __    _              
+[00:02:01]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[00:02:01]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[00:02:01]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[00:02:01]                   |_|                           
+[00:02:01]  -------------------------------------------    
+[00:02:01]            SampVoice by MOR loaded              
+[00:02:01]  -------------------------------------------    
+[00:02:01]   Loaded.
+[00:02:01]  Loading plugin: sky
+[00:02:01] 
+[00:02:01]  ===============================
+[00:02:01]    
+[00:02:01]    < SKY - 2.3.0 >
+[00:02:01]    
+[00:02:01]    (c) 2008 - Present | YSF Maintainers
+[00:02:01]    (c) 2015 | Oscar "Slice" Broman
+[00:02:01]    
+[00:02:01]    Server Version: 0.3.DL R1
+[00:02:01]    Operating System: Windows
+[00:02:01]    Built on: Sep 27 2021 at 23:19:52
+[00:02:01]    
+[00:02:01]  ===============================
+[00:02:01] 
+[00:02:01]   Loaded.
+[00:02:01]  Loaded 9 plugins.
+
+[00:02:01] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[00:02:01] [artwork:crc] char.txd CRC = 0xC0AEF802
+[00:02:01] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[00:02:01] [artwork:crc] login.txd CRC = 0x2353CF44
+[00:02:01] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[00:02:01] [artwork:crc] inv.txd CRC = 0x3C7B1C5D
+[00:02:01] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[00:02:01] [artwork:crc] 247.txd CRC = 0x5C708255
+[00:02:01] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[00:02:01] [artwork:crc] Inventory.txd CRC = 0x70C676BF
+[00:02:01] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[00:02:02] [artwork:crc] Hudz.txd CRC = 0xAA707129
+[00:02:02] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[00:02:02] [artwork:crc] Speedometter.txd CRC = 0x4FB8AD9D
+[00:02:02] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[00:02:02] [artwork:crc] Org.txd CRC = 0x429499AB
+[00:02:02] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[00:02:02] [artwork:crc] npctextbox.txd CRC = 0xE73FF298
+[00:02:02] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[00:02:02] [artwork:crc] GuideBtn.txd CRC = 0xF8657154
+[00:02:02] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[00:02:02] [artwork:crc] Info.txd CRC = 0xF0CADE65
+[00:02:02] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[00:02:02] [artwork:crc] custom_hud.txd CRC = 0xD07CB7AB
+[00:02:02] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[00:02:02] [artwork:crc] Banking.txd CRC = 0xA29429BD
+[00:02:02] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[00:02:02] [artwork:crc] start.txd CRC = 0x2421C439
+[00:02:02] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[00:02:02] [artwork:crc] death.txd CRC = 0x3DCD916F
+[00:02:02] [artwork:crc] newbiespawn.dff CRC = 0x2499225A
+[00:02:02] [artwork:crc] newbiespawn.txd CRC = 0x2AF71386
+[00:02:02] [artwork:crc] congvien.dff CRC = 0x94D2954
+[00:02:03] [artwork:crc] congvien.txd CRC = 0xECDCE39F
+[00:02:03] [artwork:crc] honuoc.dff CRC = 0xFBE95451
+[00:02:03] [artwork:crc] honuoc.txd CRC = 0xC8354AE8
+[00:02:03] 
+[00:02:03] Filterscripts
+[00:02:03] ---------------
+[00:02:03]   Loading filterscript 'animlist.amx'...
+[00:02:03] AMX (68083824) loaded
+[00:02:03] [sv:dbg:main:AmxLoad] : net game pointer (value:04012050) received
+[00:02:03] [sv:dbg:network:bind] : voice server running on port 50092
+[00:02:03]   Loaded 1 filterscripts.
+
+[00:02:03] AMX (67926488) loaded
+[00:02:03]  
+[00:02:03]  
+[00:02:03]  
+[00:02:03]  ======================================= 
+[00:02:03]  |                                     | 
+[00:02:03]  |        YSI version 4.00.0001        | 
+[00:02:03]  |        By Alex "Y_Less" Cole        | 
+[00:02:03]  |                                     | 
+[00:02:03]  ======================================= 
+[00:02:03]  
+[00:02:03] Loaded 0 Organization
+[00:02:03] > Ket noi den du lieu thanh cong.
+[00:02:03] [Log-Dev]Interactive NPCs ID: 1 was used to
+[00:02:03] [KNCMS][Log-Map]:Map CityHall loaded
+[00:02:03] [KNCMS][Log-Map]:Map Officer da load thanh cong
+[00:02:03] [KNCMS][Log-Map]:Map Hospital da load thanh cong
+[00:02:03] Number of vehicle models: 0
+[00:02:04] [KNCMS][Log-SQL]:Da load thanh cong 16 DropBox
+[00:02:04] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+[00:02:33] [connection] incoming connection: 127.0.0.1:59479 id: 0
+[00:02:33] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[00:02:41] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[00:02:41] CharSelect: 0
+[00:02:52] SELECT * FROM `vehicle` WHERE `sqlid` = '31'
+[00:02:52] Loaded 6 vehicle for Khoi_Nguyenz
+[00:02:54] [death] Khoi_Nguyenz died 54
+[00:03:12] [death] Khoi_Nguyenz died 255
+[00:06:47] 
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[11:05:00] weburl = "www.sa-mp.com"  (string)
+[11:05:00] password = ""  (string)
+[11:05:00] 
+[11:05:00] Server Plugins
+[11:05:00] --------------
+[11:05:00]  Loading plugin: mysql
+[11:05:00]  >> plugin.mysql: R41-4 successfully loaded.
+[11:05:00]   Loaded.
+[11:05:00]  Loading plugin: whirlpool
+[11:05:00]  
+[11:05:00]  ==================
+[11:05:00]  
+[11:05:00]   Whirlpool loaded
+[11:05:00]  
+[11:05:00]  ==================
+[11:05:00]  
+[11:05:00]   Loaded.
+[11:05:00]  Loading plugin: sscanf
+[11:05:00] 
+
+[11:05:00]  ===============================
+
+[11:05:00]       sscanf plugin loaded.     
+
+[11:05:00]          Version:  2.8.3        
+
+[11:05:00]   (c) 2018 Alex "Y_Less" Cole  
+
+[11:05:00]  ===============================
+
+[11:05:00]   Loaded.
+[11:05:00]  Loading plugin: streamer
+[11:05:00] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[11:05:00]   Loaded.
+[11:05:00]  Loading plugin: discord-connector
+[11:05:01]  >> plugin.dc-connector: v0.3.5 successfully loaded.
+[11:05:01]   Loaded.
+[11:05:01]  Loading plugin: pawnraknet
+[11:05:02] [Pawn.RakNet] plugin v1.6.0 loading...
+[11:05:02] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 19:36:19
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[11:05:02]   Loaded.
+[11:05:02]  Loading plugin: samp-compat
+[11:05:02]   -- samp-compat for 0.3.DL-R1 initialized
+[11:05:02]   Loaded.
+[11:05:02]  Loading plugin: sampvoice
+[11:05:02] [sv:dbg:network:init] : module initializing...
+[11:05:02] [dbg:raknet:init] : module initializing...
+[11:05:02] [dbg:raknet:init] : module initialized
+[11:05:02] [sv:dbg:network:init] : module initialized
+[11:05:02] [sv:dbg:main:Load] : creating 8 work threads...
+[11:05:02]  -------------------------------------------    
+[11:05:02]    ___                __   __    _              
+[11:05:02]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[11:05:02]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[11:05:02]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[11:05:02]                   |_|                           
+[11:05:02]  -------------------------------------------    
+[11:05:02]            SampVoice by MOR loaded              
+[11:05:02]  -------------------------------------------    
+[11:05:02]   Loaded.
+[11:05:02]  Loading plugin: sky
+[11:05:02] 
+[11:05:02]  ===============================
+[11:05:02]    
+[11:05:02]    < SKY - 2.3.0 >
+[11:05:02]    
+[11:05:02]    (c) 2008 - Present | YSF Maintainers
+[11:05:02]    (c) 2015 | Oscar "Slice" Broman
+[11:05:02]    
+[11:05:02]    Server Version: 0.3.DL R1
+[11:05:02]    Operating System: Windows
+[11:05:02]    Built on: Sep 27 2021 at 23:19:52
+[11:05:02]    
+[11:05:02]  ===============================
+[11:05:02] 
+[11:05:02]   Loaded.
+[11:05:02]  Loaded 9 plugins.
+
+[11:05:02] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[11:05:02] [artwork:crc] char.txd CRC = 0xC0AEF802
+[11:05:02] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[11:05:02] [artwork:crc] login.txd CRC = 0x2353CF44
+[11:05:02] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[11:05:02] [artwork:crc] inv.txd CRC = 0x3C7B1C5D
+[11:05:02] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[11:05:02] [artwork:crc] 247.txd CRC = 0x5C708255
+[11:05:02] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[11:05:02] [artwork:crc] Inventory.txd CRC = 0x70C676BF
+[11:05:02] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[11:05:02] [artwork:crc] Hudz.txd CRC = 0xAA707129
+[11:05:02] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[11:05:03] [artwork:crc] Speedometter.txd CRC = 0x4FB8AD9D
+[11:05:03] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[11:05:03] [artwork:crc] Org.txd CRC = 0x429499AB
+[11:05:03] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[11:05:03] [artwork:crc] npctextbox.txd CRC = 0xE73FF298
+[11:05:03] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[11:05:03] [artwork:crc] GuideBtn.txd CRC = 0xF8657154
+[11:05:03] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[11:05:03] [artwork:crc] Info.txd CRC = 0xF0CADE65
+[11:05:03] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[11:05:03] [artwork:crc] custom_hud.txd CRC = 0xD07CB7AB
+[11:05:03] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[11:05:03] [artwork:crc] Banking.txd CRC = 0xA29429BD
+[11:05:03] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[11:05:03] [artwork:crc] start.txd CRC = 0x2421C439
+[11:05:03] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[11:05:03] [artwork:crc] death.txd CRC = 0x3DCD916F
+[11:05:03] [artwork:crc] newbiespawn.dff CRC = 0x2499225A
+[11:05:03] [artwork:crc] newbiespawn.txd CRC = 0x2AF71386
+[11:05:04] [artwork:crc] congvien.dff CRC = 0x94D2954
+[11:05:04] [artwork:crc] congvien.txd CRC = 0xECDCE39F
+[11:05:04] [artwork:crc] honuoc.dff CRC = 0xFBE95451
+[11:05:04] [artwork:crc] honuoc.txd CRC = 0xC8354AE8
+[11:05:04] 
+[11:05:04] Filterscripts
+[11:05:04] ---------------
+[11:05:04]   Loading filterscript 'animlist.amx'...
+[11:05:04] AMX (68018288) loaded
+[11:05:04] [sv:dbg:main:AmxLoad] : net game pointer (value:04002050) received
+[11:05:04] [sv:dbg:network:bind] : voice server running on port 49666
+[11:05:04]   Loaded 1 filterscripts.
+
+[11:05:04] AMX (67860952) loaded
+[11:05:04]  
+[11:05:04]  
+[11:05:04]  
+[11:05:04]  ======================================= 
+[11:05:04]  |                                     | 
+[11:05:04]  |        YSI version 4.00.0001        | 
+[11:05:04]  |        By Alex "Y_Less" Cole        | 
+[11:05:04]  |                                     | 
+[11:05:04]  ======================================= 
+[11:05:04]  
+[11:05:05] Loaded 0 Organization
+[11:05:05] > Ket noi den du lieu thanh cong.
+[11:05:05] [Log-Dev]Interactive NPCs ID: 1 was used to
+[11:05:05] [KNCMS][Log-Map]:Map CityHall loaded
+[11:05:05] [KNCMS][Log-Map]:Map Officer da load thanh cong
+[11:05:05] [KNCMS][Log-Map]:Map Hospital da load thanh cong
+[11:05:05] Number of vehicle models: 0
+[11:05:05] [KNCMS][Log-SQL]:Da load thanh cong 16 DropBox
+[11:05:05] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+[11:05:46] [connection] incoming connection: 127.0.0.1:59348 id: 0
+[11:05:46] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[11:05:52] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[11:05:52] CharSelect: 0
+[11:06:03] SELECT * FROM `vehicle` WHERE `sqlid` = '31'
+[11:06:03] Loaded 6 vehicle for Khoi_Nguyenz
+[11:06:05] [death] Khoi_Nguyenz died 54
+[11:06:59] UPDATE `players` SET PosX = '1475.280029', PosY = '-1714.829956', PosZ = '14.046875', PosA = '-0.000000', Health = '84.000000', Armour = '0.000000', TanSo = '0', Cash = '942100', AdminLevel = '10', Interior = '0', VW = '0', Phone = '0', DanhBa = '0', Dice = '0', CanXang = '0', DayThung = '0', XiGa = '0', Drink = '0', BinhSonXe = '0', Radio = '0', MatNa = '0', OrgID = '1', OrgRank = '10', Eat = '80', Refer = 'NULL', Bank = '43900', BankSaving = '15000', HoursSaving = '0', LastLogin = '11:5:48 6-12-2024', Injured = '', Skin = 3 WHERE `id` = '31' LIMIT 1
+[11:06:59] Character Save: Khoi Nguyenz | AccountID: 31
+[11:06:59] [part] Khoi_Nguyenz has left the server (0:1)
+[11:07:19] [connection] incoming connection: 127.0.0.1:62377 id: 0
+[11:07:19] [join] Khoi_Nguyen has joined the server (0:127.0.0.1)
+[11:07:27] [nick] Khoi_Nguyen nick changed to Khoi_Nguyenz
+[11:07:27] CharSelect: 0
+[11:07:39] SELECT * FROM `vehicle` WHERE `sqlid` = '31'
+[11:07:39] Loaded 6 vehicle for Khoi_Nguyenz
+[11:07:41] [death] Khoi_Nguyenz died 54
+[11:07:51]  -------------------------------------------
+[11:07:51]            SampVoice unloading...           
+[11:07:51]  -------------------------------------------
+[11:07:51] [dbg:raknet:free] : module releasing...
+[11:07:51] [dbg:raknet:free] : module released
+[11:07:51] [sv:dbg:network:free] : module releasing...
+[11:07:51] [sv:dbg:network:free] : module released
+[11:07:51] --- Server Shutting Down.
+[11:07:51] [part] Khoi_Nguyenz has left the server (0:0)
+[11:07:51] plugin.mysql: Unloading plugin...
+[11:07:51] plugin.mysql: Plugin unloaded.
+[11:07:51]  
+[11:07:51]  ====================
+[11:07:51]  
+[11:07:51]   Whirlpool unloaded
+[11:07:51]  
+[11:07:51]  ====================
+[11:07:51]  
+[11:07:51] 
+
+[11:07:51]  ===============================
+
+[11:07:51]      sscanf plugin unloaded.    
+
+[11:07:51]  ===============================
+
+[11:07:51] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[11:07:51] plugin.dc-connector: Unloading plugin...
+[11:07:52] plugin.dc-connector: Plugin unloaded.
+[11:07:52] [Pawn.RakNet] plugin unloaded

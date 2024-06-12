@@ -24,8 +24,8 @@
 
 #define  			MYSQL_HOST				"localhost"
 #define  			MYSQL_USER				"root"
-#define  			MYSQL_PASS				"123456"
-#define  			MYSQL_DB				"ssa"
+#define  			MYSQL_PASS				"123123" //123123
+#define  			MYSQL_DB				"ssa" //ssa
 
 
 new SERVER_TEST = 1; // 1: Server test ( bỏ qua login và nhiều anti khác) | 0: Mở server bình thường 
@@ -92,7 +92,7 @@ main()
 #include "./modules/Server/Maps/build.pwn"
 
 #include "./modules/Players/characters/Death/textdraw.pwn"
-#include "./modules/Players/characters/Death/callback.pwn"
+#include "./modules/Players/characters/Death/callback.pwn" 
 
 public SSA_Mysql_Intit()
 {

@@ -14,6 +14,8 @@
 #define JOB_PORTERS 4
 #define JOB_MINER   5
 #define JOB_LUMBERJACK 6
+#define DLG_DIEMGIAOHANG 7
+#define DLG_XEMHANG 8
 
 
 #define         LAYHANG_BOCVAC                  (6311)

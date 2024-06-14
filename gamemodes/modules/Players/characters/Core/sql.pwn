@@ -92,7 +92,7 @@ hook OnPlayerDisconnect(playerid, reason)
 		GetPlayerHealth(playerid, Character[playerid][char_health]);
 		GetPlayerArmour(playerid,Character[playerid][char_armour]);
 
-		mysql_format(MySQL:Handle(), query, sizeof(query), "%s PosX = '%f',", query, X);
+		mysql_format(Handle(), query, sizeof(query), "%s PosX = '%f',", query, X);
 		mysql_format(Handle(), query, sizeof(query), "%s PosY = '%f',", query, Y);
 		mysql_format(Handle(), query, sizeof(query), "%s PosZ = '%f',", query, Z);
 		mysql_format(Handle(), query, sizeof(query), "%s PosA = '%f',", query, R);

@@ -3,18 +3,18 @@ public OnLoadOrganization(org_idzz)
 {
     if(cache_num_rows() > 0)
 	{
-        OrgCount ++;
-
-		cache_get_value_name_int(0,  "id", OrgData[org_idzz][org_idzz]);
+        OrgCount+=1;
+        printf("Loaded Org %d", org_idzz);
+		cache_get_value_name_int(0,  "id", OrgData[org_idzz][org_id]);
         cache_get_value_name(0, "name", OrgData[org_idzz][org_name]);
 		cache_get_value_name_int(0,  "leader", OrgData[org_idzz][org_leader]);
         cache_get_value_name(0, "birth", OrgData[org_idzz][org_birth]);
         cache_get_value_name(0, "logo", OrgData[org_idzz][org_logo]);
+        
 
         cache_get_value_name_int(0,  "safe", OrgData[org_idzz][org_safe]);
         cache_get_value_name_int(0,  "safe_dirty", OrgData[org_idzz][org_safedirty]);
         cache_get_value_name_int(0,  "type", OrgData[org_idzz][org_type]);
-
         for(new i; i < 10; i++)
         {
             new forg[128];
@@ -22,12 +22,18 @@ public OnLoadOrganization(org_idzz)
             cache_get_value_name(0, forg, OrgRank[org_idzz][i]);
 
         }
+        for(new i; i < 10; i++)
+        {
+            new forg[128];
+            format(forg, sizeof(forg), "skin%d", i+1);
+            cache_get_value_name_int(0, forg, OrgData[org_idzz][org_skin][i]);
+
+        }
 
         new query[1280];
         format(query, sizeof(query), "SELECT * FROM `organization_safe_gun` WHERE `org_id` = '%d'",org_idzz);
         mysql_tquery(Handle(),query, "OnLoadOrganizationGun", "i", org_idzz);
 	}
-    // else printf("%d is no data", org_idzz);
     return 1;
 }
 

@@ -344,6 +344,18 @@ CREATE TABLE `organization`  (
   `rank8` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
   `rank9` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
   `rank10` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+
+  `skin1`  int(11) NULL DEFAULT NULL,
+  `skin2`  int(11) NULL DEFAULT NULL,
+  `skin3`  int(11) NULL DEFAULT NULL,
+  `skin4`  int(11) NULL DEFAULT NULL,
+  `skin5`  int(11) NULL DEFAULT NULL,
+  `skin6`  int(11) NULL DEFAULT NULL,
+  `skin7`  int(11) NULL DEFAULT NULL,
+  `skin8`  int(11) NULL DEFAULT NULL,
+  `skin9`  int(11) NULL DEFAULT NULL,
+  `skin10`  int(11) NULL DEFAULT NULL,
+
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Compact;
 

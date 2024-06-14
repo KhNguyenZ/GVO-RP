@@ -77,10 +77,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
-    switch (dialogid)
-    {
-
-    }
+    SettingOrgDialog(playerid, dialogid, response, listitem, inputtext);
     return 1;
 }
 public OnPlayerUpdate(playerid)

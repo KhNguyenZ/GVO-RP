@@ -137,6 +137,12 @@ func:ShowPlayerOrgManagement(playerid)
 
     if(Character[playerid][char_OrgID] != -1)
     {
+        if(OrgData[Character[playerid][char_OrgID]][org_id] == -1)
+        {
+            SendErrorMessage(playerid, "Org cua ban khong ton tai hoac da bi giai tan !");
+            Character[playerid][char_OrgID] = -1;
+            return 1;
+        }
         SelectTextDraw(playerid, -1);
         SetPVarInt(playerid, #open_org_mng, 1);
         CreatePlayerOrgManagement(playerid);

@@ -12,7 +12,6 @@
 #include <DialogCenter>
 #include <easyDialog>
 #include <Veh-Lib\tdw_vyengine> 
-// #include <sampp>
 #include <actor_plus>
 #include <strlib>
 #include <sampvoice>
@@ -24,7 +23,7 @@
 
 #define  			MYSQL_HOST				"localhost"
 #define  			MYSQL_USER				"root"
-#define  			MYSQL_PASS				"123123" //123123
+#define  			MYSQL_PASS				"123456" //123123
 #define  			MYSQL_DB				"ssa" //ssa
 
 
@@ -96,15 +95,15 @@ main()
 
 public SSA_Mysql_Intit()
 {
-	for(new i; i < 1000; i++) LoadOrg(i);
+	LoadOrgs();
 	LoadInventoryDrop();
 	CreateInfo(); 
-	printf("Loaded %d Organization", OrgCount);
 
 	return 1; 
 }
 public OnGameModeExit()
 {
+	for(new i; i < MAX_ORG; i++) SaveOrg(i);
 	mysql_close(Handle());
 	return 1;
 }

@@ -1,3 +1,5 @@
+#include <YSI_Coding\y_hooks>
+
 func:DepositPlayer(playerid, cash_amount)
 {
     if(Character[playerid][char_Cash] < cash_amount) return 0;

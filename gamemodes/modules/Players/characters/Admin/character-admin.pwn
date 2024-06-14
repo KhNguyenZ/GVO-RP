@@ -121,7 +121,7 @@ stock SendAdminMessage(playerid, string[], level_admin)
         if (IsPlayerConnected(i) && Character[i][char_Admin] >= level_admin)
         {
             new msgadmin[1280];
-            format(msgadmin, sizeof(msgadmin), "[Admin Channel]: %s {0000EE}%s : %s", GetAdmin(playerid), player_get_name(playerid), string);
+            format(msgadmin, sizeof(msgadmin), "[Admin Channel]: %s {bbc9fe}%s {FFFFFF}: %s", GetAdmin(playerid), player_get_name(playerid), string);
             SendClientMessage(playerid, 0x0000EEFF, msgadmin);
         }
     }

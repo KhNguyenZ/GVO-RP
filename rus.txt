@@ -1,5 +1,5 @@
 ./modules/Dev/Job/_main.pwn(450) : èäåị́èôèêạ̀îđó ïđèñâîåíî çíà÷åíèå, íî îí íå èñïîëüçóạ̊ñÿ: "playerjob"
-./modules/Players/characters/Admin/character-admin.pwn(244) : íåïđàâèëüíàÿ ̣àáóëÿöèÿ
+./modules/Players/characters/Admin/character-admin.pwn(238) : íåïđàâèëüíàÿ ̣àáóëÿöèÿ
 ./modules/Server/Organization/_function.pwn(54) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "playerid"
 ./modules/Server/Discord/command.pwn(25) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "HintCommand"
 ./modules/Server/Organization/_var.pwn(26) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "ML_Targetid"

@@ -151,6 +151,7 @@ func:IsOpenCharSelect(playerid) {
 }
 func:ShowCharacterSelect(playerid)
 {
+	if (player_Login(playerid)) return 1;
 	SetPVarInt(playerid, "Open_Char_Select_", 1);
 	for(new i = 0;i < 3; i++)
 	{

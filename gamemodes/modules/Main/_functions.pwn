@@ -88,6 +88,36 @@ func:IsNumeric(szInput[]) {
 	while ((iChar = szInput[i++])) if (!('0' <= iChar <= '9')) return 0;
 	return 1;
 }
+func:GetIntegersFromString(szInput[], output[]) {
+    new
+        iChar,
+        i = 0,
+        j = 0;
+
+    new num = 0;
+    new hasNumber = false;
+
+    while ((iChar = szInput[i++])) {
+        if ('0' <= iChar <= '9') {
+            num = num * 10 + (iChar - '0');
+            hasNumber = true;
+        } else {
+            if (hasNumber) {
+                output[j++] = num;
+                num = 0;
+                hasNumber = false;
+            }
+        }
+    }
+
+    // Check for a number at the end of the string
+    if (hasNumber) {
+        output[j++] = num;
+    }
+
+    // Terminate the output array
+    output[j] = -1;
+}
 func:player_get_name(const playerid, bool:fix_ = true) 
 {
 	new 
@@ -280,7 +310,7 @@ public XoaTextDraw(playerid)
 {
     PlayerTextDrawSetString(playerid, scm_PTD[playerid], " ");
     PlayerTextDrawHide(playerid, scm_PTD[playerid]);
-    //PlayerTextDrawDestroy(playerid, scm_PTD[playerid]);
+    //PlayerTextDrawHide(playerid, scm_PTD[playerid]);
     HienThi[playerid] = 0;
     //SCM(playerid, COLOR_WHITE, "Textdraw da duoc xoa bo.");
     return 1;

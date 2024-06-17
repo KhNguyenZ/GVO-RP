@@ -32,6 +32,20 @@
 					"message": 4
 				}
 			}
-		}
+		},
+		{
+            "label": "run-exe",
+            "type": "shell",
+            "command": "${workspaceRoot}/samp-server.exe",
+            "runOptions": {
+                "instanceLimit": 1
+            },
+            "dependsOn": "build-normal",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        }
 	],
 }

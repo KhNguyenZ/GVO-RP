@@ -464,7 +464,7 @@ func:UpdatePlayerHealth(playerid)
 
 	if(CursorPTD_0[playerid] != 0){
 
-		PlayerTextDrawDestroy(playerid, CursorPTD_0[playerid]);
+		PlayerTextDrawHide(playerid, CursorPTD_0[playerid]);
 		CursorPTD_0[playerid] = 0;
 
 		CursorPTD_0[playerid] = CreatePlayerTextDraw(playerid, 493+cursor[0], 76.000, "mdl-2014:cursor");
@@ -480,7 +480,7 @@ func:UpdatePlayerHealth(playerid)
 		PlayerTextDrawShow(playerid,CursorPTD_0[playerid]);
 	}if(CursorPTD_1[playerid] != 0){
 
-		PlayerTextDrawDestroy(playerid, CursorPTD_1[playerid]);
+		PlayerTextDrawHide(playerid, CursorPTD_1[playerid]);
 		CursorPTD_1[playerid] = 0;
 
 		CursorPTD_1[playerid] = CreatePlayerTextDraw(playerid, 493+cursor[1], 89.000, "mdl-2014:cursor");
@@ -496,7 +496,7 @@ func:UpdatePlayerHealth(playerid)
 		PlayerTextDrawShow(playerid,CursorPTD_1[playerid]);
 	}if(CursorPTD_2[playerid] != 0){
 
-		PlayerTextDrawDestroy(playerid, CursorPTD_2[playerid]);
+		PlayerTextDrawHide(playerid, CursorPTD_2[playerid]);
 		CursorPTD_2[playerid] = 0;
 
 

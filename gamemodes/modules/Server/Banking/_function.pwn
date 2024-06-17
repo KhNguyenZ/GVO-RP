@@ -95,6 +95,10 @@ func:BankingClick(playerid, PlayerText:playertextid)
     HomeBankingClick(playerid, PlayerText:playertextid);
     WithdrawsBankingClick(playerid, PlayerText:playertextid);
     DepositBankingClick(playerid, PlayerText:playertextid);
+    if(playertextid == MainBankPTD[playerid][7])
+    {
+        DestroyAllBanking(playerid);
+    }
     return 1;
 }
 

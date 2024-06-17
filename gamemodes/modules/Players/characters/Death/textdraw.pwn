@@ -48,7 +48,7 @@ func:DestroyDeathUI(playerid)
 {
     for(new i; i < 4 ; i++)
     {
-        PlayerTextDrawDestroy(playerid, DeathUI[playerid][i]);
+        PlayerTextDrawHide(playerid, DeathUI[playerid][i]);
     }
     CancelSelectTextDraw(playerid);
     return 1;

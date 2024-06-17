@@ -24,7 +24,7 @@ hook OnPlayerSpawn(playerid)
     if(SERVER_TEST == 1) return 1;
     
     SetPVarInt(playerid, #Success_Mail, -2);
-    if (!strcmp(Character[playerid][char_Email], "") || isnull(Character[playerid][char_Email]))
+    if (isnull(Character[playerid][char_Email]))
     {
         ShowPlayerDialog(playerid, 2124, DIALOG_STYLE_INPUT, "Vui long xac thuc email", "Vui long nhap email cua ban vao day", ">>", "<<");
     }
@@ -42,6 +42,7 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
     if (dialogid == 2124)
     {
+        if(!response) return ShowPlayerDialog(playerid, 2124, DIALOG_STYLE_INPUT, "Vui long xac thuc email", "Vui long nhap email cua ban vao day", ">>", "<<");
         if (isnull(inputtext)) return
                 ShowPlayerDialog(playerid, 2124, DIALOG_STYLE_INPUT, "Vui long xac thuc email", "Vui long nhap email cua ban vao day", ">>", "<<");
 
@@ -72,7 +73,8 @@ public SendUserMail(index, response_code, data[])
         return 1;
     }
     format(data, 1280, "%s", GetNumberic(data));
-    if (!strcmp(data, "1"))
+
+    if (strcmp(data,"-1"))
     {
         ShowPlayerDialog(index, 12213, DIALOG_STYLE_MSGBOX, "Xac thuc email",
                          "> {03fc4e}Email{FFFFFF} da duoc gui thanh cong \n> {fc0303}Luu Y:{ffffff} Neu trong truong hop khong thay email , \
@@ -90,7 +92,7 @@ public SendUserMail(index, response_code, data[])
             cache_get_value_name(0, "Email_Code", Character[index][char_Email_Code]);
         }
         cache_delete(Code_Cache);
-        TimerCheckEmail[index] = SetTimerEx("OnCheckVerifyEmail", 1000, 1, "is[10]", index, Character[index][char_Email_Code]);
+        TimerCheckEmail[index] = SetTimerEx("OnCheckVerifyEmail", 1000, 1, "is[10]", index, GetNumberic(data));
     }
     else {
         SendErrorMessage(index, "Xac thuc mail bi loi !");
@@ -98,9 +100,10 @@ public SendUserMail(index, response_code, data[])
     return 1;
 }
 
-forward OnCheckVerifyEmail(playerid, code[10]);
-public OnCheckVerifyEmail(playerid, code[10])
+forward OnCheckVerifyEmail(playerid, code[]);
+public OnCheckVerifyEmail(playerid, code[])
 {
+    // printf("%s", code);
     TogglePlayerControllable(playerid, 0);
     if (GetPVarInt(playerid, #CheckEmail_Time) >= 0)
     {
@@ -129,8 +132,9 @@ public OnCheckVerifyEmail(playerid, code[10])
         cache_delete(GetCode);
 
         new check_url[128];
-        format(check_url, 128, "%sauth/verify_api.php?&CodeVerify=%s", SEVRER_CONTROLLER, Character[playerid][char_Email_Code]);
+        format(check_url, 128, "%sauth/verify_api.php?&CodeVerify=%s&Username=%s", SEVRER_CONTROLLER, Character[playerid][char_Email_Code], GetAccountName(playerid));
         HTTP(playerid, HTTP_GET, check_url, "", "CheckVerifyMail");
+        printf("%s", check_url);
     }
     else if(GetPVarInt(playerid, #CheckEmail_Time) == 0)
     {

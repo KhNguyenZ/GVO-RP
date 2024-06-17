@@ -1,9 +1,10 @@
-new PlayerText: MainBankPTD[MAX_PLAYERS][8];
+new PlayerText:
+MainBankPTD[MAX_PLAYERS][8];
 new PlayerText:HomeBankPTD[MAX_PLAYERS][16]; // 5-15
 new PlayerText:WithdrawsBankPTD[MAX_PLAYERS][11]; // 6-10
 new PlayerText:DepositBankPTD[MAX_PLAYERS][11]; // 6-10
 new PlayerText:TransferBankPTD[MAX_PLAYERS][12]; // 5-11
-
+#include <YSI_Coding\y_hooks>
 #define      IsOpenMainBanking(%0)        GetPVarInt(%0, #Open_Bank_Main)
 #define      IsOpenHomeBanking(%0)        GetPVarInt(%0, #Open_Bank_Home)
 #define      IsOpenWithdrawsBanking(%0)        GetPVarInt(%0, #Open_Bank_Withdraws)
@@ -11,8 +12,8 @@ new PlayerText:TransferBankPTD[MAX_PLAYERS][12]; // 5-11
 #define      IsOpenTransferBanking(%0)        GetPVarInt(%0, #Open_Bank_Transfer)
 
 
-func:CreateMainBanking(playerid){
-    SetPVarInt(playerid, #Open_Bank_Main, 1);
+func:CreateMainBankingUI(playerid)
+{
 
     MainBankPTD[playerid][0] = CreatePlayerTextDraw(playerid, 71.000, 28.000, "mdl-2016:bg_bank");
     PlayerTextDrawTextSize(playerid, MainBankPTD[playerid][0], 518.000, 440.000);
@@ -104,10 +105,10 @@ func:CreateMainBanking(playerid){
     PlayerTextDrawSetProportional(playerid, MainBankPTD[playerid][7], 1);
     PlayerTextDrawSetSelectable(playerid, MainBankPTD[playerid][7], 1);
 
-    for(new i; i < 8; i++) PlayerTextDrawShow(playerid, MainBankPTD[playerid][i]);
+
     return 1;
 }
-func:CreatePageHomeBanking(playerid)
+func:CreatePageHomeBankingUI(playerid)
 {
     new Home_msg[1280];
     SetPVarInt(playerid, #Open_Bank_Home, 1);
@@ -237,12 +238,12 @@ func:CreatePageHomeBanking(playerid)
     PlayerTextDrawSetProportional(playerid, HomeBankPTD[playerid][15], 1);
     PlayerTextDrawSetSelectable(playerid, HomeBankPTD[playerid][15], 1);
 
-    for(new i = 5; i < 16; i++) PlayerTextDrawShow(playerid, HomeBankPTD[playerid][i]);
+    for (new i = 5; i < 16; i++) PlayerTextDrawShow(playerid, HomeBankPTD[playerid][i]);
 }
 
-func:CreatePageWithdrawsBanking(playerid)
+func:CreatePageWithdrawsBankingUI(playerid)
 {
-    SetPVarInt(playerid, #Open_Bank_Withdraws, 1);
+
     WithdrawsBankPTD[playerid][6] = CreatePlayerTextDraw(playerid, 259.000, 128.000, "mdl-2016:withdraws");
     PlayerTextDrawTextSize(playerid, WithdrawsBankPTD[playerid][6], 230.000, 140.000);
     PlayerTextDrawAlignment(playerid, WithdrawsBankPTD[playerid][6], 1);
@@ -299,12 +300,11 @@ func:CreatePageWithdrawsBanking(playerid)
     PlayerTextDrawSetProportional(playerid, WithdrawsBankPTD[playerid][10], 1);
     PlayerTextDrawSetSelectable(playerid, WithdrawsBankPTD[playerid][10], 1);
 
-    for(new i = 6; i < 11; i++) PlayerTextDrawShow(playerid, WithdrawsBankPTD[playerid][i]);
 }
 
-func:CreatePageDepositBanking(playerid)
+func:CreatePageDepositBankingUI(playerid)
 {
-    SetPVarInt(playerid, #Open_Bank_Deposit, 1);
+
     DepositBankPTD[playerid][6] = CreatePlayerTextDraw(playerid, 259.000, 128.000, "mdl-2016:Deposit");
     PlayerTextDrawTextSize(playerid, DepositBankPTD[playerid][6], 230.000, 140.000);
     PlayerTextDrawAlignment(playerid, DepositBankPTD[playerid][6], 1);
@@ -360,10 +360,9 @@ func:CreatePageDepositBanking(playerid)
     PlayerTextDrawFont(playerid, DepositBankPTD[playerid][10], 1);
     PlayerTextDrawSetProportional(playerid, DepositBankPTD[playerid][10], 1);
     PlayerTextDrawSetSelectable(playerid, DepositBankPTD[playerid][10], 1);
-    for(new i = 6; i < 11; i++) PlayerTextDrawShow(playerid, DepositBankPTD[playerid][i]);
 }
 
-func:CreatePageTransferBanking(playerid)
+func:CreatePageTransferBankingUI(playerid)
 {
     SetPVarInt(playerid, #Open_Bank_Transfer, 1);
     TransferBankPTD[playerid][5] = CreatePlayerTextDraw(playerid, 259.000, 134.000, "mdl-2016:transfer");
@@ -433,35 +432,84 @@ func:CreatePageTransferBanking(playerid)
     PlayerTextDrawFont(playerid, TransferBankPTD[playerid][10], 1);
     PlayerTextDrawSetProportional(playerid, TransferBankPTD[playerid][10], 1);
     PlayerTextDrawSetSelectable(playerid, TransferBankPTD[playerid][10], 1);
-    for(new i = 5; i < 11; i++) PlayerTextDrawShow(playerid, TransferBankPTD[playerid][i]);
+}
+hook OnPlayerConnect(playerid)
+{
+    CreateMainBankingUI(playerid);
+    CreatePageHomeBankingUI(playerid);
+    CreatePageWithdrawsBankingUI(playerid);
+    CreatePageDepositBankingUI(playerid);
+    CreatePageTransferBankingUI(playerid);
+
+    DestroyPageMainBanking(playerid);
+    DestroyPageHomeBanking(playerid);
+    DestroyPageWithdrawsBanking(playerid);
+    DestroyPageDepositBanking(playerid);
+    DestroyPageTransferBanking(playerid);
+}
+func:CreateMainBanking(playerid)
+{
+    SetPVarInt(playerid, #Open_Bank_Main, 1);
+    for (new i; i < 8; i++) PlayerTextDrawShow(playerid, MainBankPTD[playerid][i]);
+}
+func:CreatePageHomeBanking(playerid)
+{
+    SetPVarInt(playerid, #Open_Bank_Home, 1);
+    for (new i = 5; i < 16; i++) PlayerTextDrawShow(playerid, HomeBankPTD[playerid][i]);
+}
+
+func:CreatePageWithdrawsBanking(playerid)
+{
+    SetPVarInt(playerid, #Open_Bank_Withdraws, 1);
+    for (new i = 6; i < 11; i++) PlayerTextDrawShow(playerid, WithdrawsBankPTD[playerid][i]);
+}
+
+func:CreatePageDepositBanking(playerid)
+{
+    SetPVarInt(playerid, #Open_Bank_Deposit, 1);
+    for (new i = 6; i < 11; i++) PlayerTextDrawShow(playerid, DepositBankPTD[playerid][i]);
+}
+
+func:CreatePageTransferBanking(playerid)
+{
+    SetPVarInt(playerid, #Open_Bank_Transfer, 1);
+    for (new i = 5; i < 11; i++) PlayerTextDrawShow(playerid, TransferBankPTD[playerid][i]);
+}
+func:DestroyAllBanking(playerid)
+{
+    DestroyPageMainBanking(playerid);
+    DestroyPageHomeBanking(playerid);
+    DestroyPageWithdrawsBanking(playerid);
+    DestroyPageDepositBanking(playerid);
 }
 func:DestroyPageMainBanking(playerid)
 {
     SetPVarInt(playerid, #Open_Bank_Main, 0);
-    for(new i = 0; i < 8; i++) PlayerTextDrawDestroy(playerid, MainBankPTD[playerid][i]);
+    for (new i = 0; i < 8; i++) PlayerTextDrawHide(playerid, MainBankPTD[playerid][i]);
     return 1;
 }
 func:DestroyPageHomeBanking(playerid)
 {
     SetPVarInt(playerid, #Open_Bank_Home, 0);
-    for(new i = 5; i < 16; i++) PlayerTextDrawDestroy(playerid, HomeBankPTD[playerid][i]);
+    for (new i = 5; i < 16; i++) PlayerTextDrawHide(playerid, HomeBankPTD[playerid][i]);
     return 1;
 }
 func:DestroyPageWithdrawsBanking(playerid)
 {
     SetPVarInt(playerid, #Open_Bank_Withdraws, 0);
-    for(new i = 6; i < 11; i++) PlayerTextDrawDestroy(playerid, WithdrawsBankPTD[playerid][i]);
+    for (new i = 6; i < 11; i++) PlayerTextDrawHide(playerid, WithdrawsBankPTD[playerid][i]);
     return 1;
 }
 func:DestroyPageDepositBanking(playerid)
 {
     SetPVarInt(playerid, #Open_Bank_Deposit, 0);
-    for(new i = 6; i < 11; i++) PlayerTextDrawDestroy(playerid, DepositBankPTD[playerid][i]);
+    for (new i = 6; i < 11; i++) PlayerTextDrawHide(playerid, DepositBankPTD[playerid][i]);
     return 1;
 }
 func:OpenBanking(playerid)
 {
-    if(IsOpenMainBanking(playerid)) {
+    if (IsOpenMainBanking(playerid))
+    {
 
         DestroyPageMainBanking(playerid);
         DestroyPageHomeBanking(playerid);
@@ -481,20 +529,21 @@ func:ReloadBanking(playerid)
     DestroyPageTransferBanking(playerid);
 
     CreateMainBanking(playerid);
-    switch(GetPVarInt(playerid, #Open_Page_))
+    switch (GetPVarInt(playerid, #Open_Page_))
     {
         case 1: CreatePageHomeBanking(playerid);
         case 2: CreatePageWithdrawsBanking(playerid);
         case 3: CreatePageDepositBanking(playerid);
         case 4: CreatePageTransferBanking(playerid);
-        default: CreatePageHomeBanking(playerid);
+        default:
+            CreatePageHomeBanking(playerid);
     }
     return 1;
 }
 func:DestroyPageTransferBanking(playerid)
 {
     SetPVarInt(playerid, #Open_Bank_Transfer, 0);
-    for(new i = 5; i < 11; i++) PlayerTextDrawDestroy(playerid, TransferBankPTD[playerid][i]);
+    for (new i = 5; i < 11; i++) PlayerTextDrawHide(playerid, TransferBankPTD[playerid][i]);
     return 1;
 }
 

@@ -80,9 +80,15 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
     SettingOrgDialog(playerid, dialogid, response, listitem, inputtext);
     return 1;
 }
+
 public OnPlayerUpdate(playerid)
 {
-    UpdateTextTime(playerid);
+    GetPlayerPos(playerid, Character[playerid][char_last_Pos][0],
+                 Character[playerid][char_last_Pos][1],
+                 Character[playerid][char_last_Pos][2]);
+    GetPlayerFacingAngle(playerid, Character[playerid][char_last_Pos][3]);
+
+    // UpdateTextTime(playerid);
 
     new info_f[128];
     format(info_f, 128, "ID: ~w~%d", playerid);
@@ -103,7 +109,7 @@ public OnPlayerSpawn(playerid)
 {
     if (Character[playerid][char_Injured] == 0)
     {
-        ShowPlayerTextTime(playerid);
+        // ShowPlayerTextTime(playerid);
         SetPlayerSkin(playerid, Character[playerid][char_Skin]);
         ResetPlayerWeapons(playerid);
         GivePlayerMoney(playerid, Character[playerid][char_Cash]);

@@ -1,0 +1,18 @@
+Register, login
+Sys nhân vật
+Chat(local, global, private)
+Job(hợp pháp, bất hợp pháp)
+Tiền tệ(cơ cấu đồng tiền, chi tiêu vật phẩm dịch vụ bất động sản)
+ATM
+Xe cộ(Mua bán, thuê, bảo dưỡng, sửa chữa, học bawnfg lái, giấy phép)
+Điện thoại, radio tần số
+Medic(hồi sức tại bệnh viện, cứu thương)
+Pháp luật(Law, toà án luật sư)
+Kinh tế(kinh doanh các loại của biz, thị trường bất động sản)
+Family, gang
+Nhiệm vụ(hàng tháng, hằng ngày,)
+Kỹ năng(job, có thể làm về body system kiểu cơ bắp tốc độ)
+Tương tác NPC, tương tác Interactive HUD
+Admin, CTV
+Ticket hỗ trợ mem(api làm sao cho nhập ticket trên dialog xong gửi về ucp thì okela lun)
+Forum, landing page

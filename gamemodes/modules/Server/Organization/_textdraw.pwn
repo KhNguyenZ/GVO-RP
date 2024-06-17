@@ -132,6 +132,11 @@ func:CreatePlayerOrgManagement(playerid)
     PlayerTextDrawSetProportional(playerid, OrgPTD[playerid][11], 1);
     return 1;
 }
+hook OnPlayerConnect(playerid)
+{
+    CreatePlayerOrgManagement(playerid);
+    return 1;
+}
 func:ShowPlayerOrgManagement(playerid)
 {
 
@@ -145,7 +150,6 @@ func:ShowPlayerOrgManagement(playerid)
         }
         SelectTextDraw(playerid, -1);
         SetPVarInt(playerid, #open_org_mng, 1);
-        CreatePlayerOrgManagement(playerid);
         new pOrg = Character[playerid][char_OrgID], org_str[128];
         format(org_str, sizeof(org_str), "%d",OrgGetTotalMember(pOrg));
         PlayerTextDrawSetString(playerid, OrgPTD[playerid][6], OrgData[pOrg][org_name]);
@@ -167,7 +171,7 @@ func:HidePlayerOrgManagement(playerid)
 {
     CancelSelectTextDraw(playerid);
     DeletePVar(playerid, #open_org_mng);
-    for(new i; i < 12; i++) PlayerTextDrawDestroy(playerid, OrgPTD[playerid][i]);
+    for(new i; i < 12; i++) PlayerTextDrawHide(playerid, OrgPTD[playerid][i]);
     return 1;
 }
 

@@ -183,7 +183,7 @@ func:ShowPlayerInteractive(playerid, inter_ids, title[], content[], i_btn1[] = "
 func:DestroyPlayerInteractive(playerid)
 {
     CancelSelectTextDraw(playerid);
-    for(new i; i < 13; i++) PlayerTextDrawDestroy(playerid, iNPC_PTD[playerid][i]);
+    for(new i; i < 13; i++) PlayerTextDrawHide(playerid, iNPC_PTD[playerid][i]);
     DeletePVar(playerid, #isOpenInteractive);
 
     SetCameraBehindPlayer(playerid);

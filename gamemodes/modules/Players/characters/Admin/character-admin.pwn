@@ -121,8 +121,8 @@ stock SendAdminMessage(playerid, string[], level_admin)
         if (IsPlayerConnected(i) && Character[i][char_Admin] >= level_admin)
         {
             new msgadmin[1280];
-            format(msgadmin, sizeof(msgadmin), "[Admin Channel]: %s {bbc9fe}%s {FFFFFF}: %s", GetAdmin(playerid), player_get_name(playerid), string);
-            SendClientMessage(playerid, 0x0000EEFF, msgadmin);
+            format(msgadmin, sizeof(msgadmin), "[{bbc9fe}Admin Channel{ffffff}]: {ff4242}%s{FFFFFF} {bbc9fe}%s {FFFFFF}: %s", GetAdmin(playerid), player_get_name(playerid), string);
+            SendClientMessage(playerid, -1, msgadmin);
         }
     }
     return 1;
@@ -152,13 +152,6 @@ stock CheckAdmin(playerid, level)
     else return 0;
 }
 
-
-CMD:reloga(playerid, params[])
-{
-    ShowLoginPTD(playerid);
-    return 1;
-}
-
 CMD:gotoco(playerid, params[])
 {
     if (!CheckAdmin(playerid, 3)) return SendErrorMessage(playerid, "Ban khong co quyen su dung lenh nay");
@@ -179,6 +172,7 @@ CMD:hoisinh(playerid, params[])
 
 	SetPlayerHealth(targetid, 100);
 	Character[targetid][char_Injured] = 0;
+    OnPlayerSpawn(targetid);
 
 	HienTextdraw(playerid, "Ban da hoi sinh thanh cong nguoi choi!", 3000);
 	return 1;

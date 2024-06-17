@@ -151,9 +151,8 @@ CMD:carengine(playerid){
 }
 
 
-CMD:sb(playerid, params[]) return cmd_seatbelt(playerid, params);
 
-CMD:seatbelt(playerid, params[])
+CMD:sb(playerid, params[])
 {
     if(IsPlayerInAnyVehicle(playerid) == 0)
 	{

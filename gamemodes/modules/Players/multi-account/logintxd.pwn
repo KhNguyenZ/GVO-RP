@@ -163,6 +163,7 @@ hook OnPlayerConnect(playerid)
 
 func:ShowLoginPTD(playerid)
 {
+	if (player_Login(playerid)) return 1;
 	SetPVarInt(playerid, #Auth_Case, 1); // login
 	SetPVarInt(playerid, "OpenLoginPTD_@", 1);
 	PlayerTextDrawSetString(playerid, LoginPTD[playerid][6],player_get_name(playerid, 1));
@@ -172,10 +173,9 @@ func:ShowLoginPTD(playerid)
 		PlayerTextDrawShow(playerid,LoginPTD[playerid][login_loop]);
 	}
 
-	PlayerTextDrawDestroy(playerid, LoginPTD[playerid][3]);
-	// PlayerTextDrawDestroy(playerid, LoginPTD[playerid][8]);
-	PlayerTextDrawDestroy(playerid, LoginPTD[playerid][9]);
-	PlayerTextDrawDestroy(playerid, LoginPTD[playerid][10]);
+	PlayerTextDrawHide(playerid, LoginPTD[playerid][3]);
+	PlayerTextDrawHide(playerid, LoginPTD[playerid][9]);
+	PlayerTextDrawHide(playerid, LoginPTD[playerid][10]);
 
 	return 1;
 }
@@ -190,13 +190,14 @@ func:HideAuthPTD(playerid)
 	SetPVarInt(playerid, "OpenLoginPTD_@", 0);	
 	for(new login_loop = 0 ; login_loop < 15; login_loop++)
 	{
-		PlayerTextDrawDestroy(playerid,LoginPTD[playerid][login_loop]);
+		PlayerTextDrawHide(playerid,LoginPTD[playerid][login_loop]);
 	}
 	return 1;
 }
 
 func:ShowPlayerMainRegister(playerid)
 {
+	if (player_Login(playerid)) return 1;
 	SetPVarInt(playerid, #Auth_Case, 0); // register
 
 	SetPVarInt(playerid, "OpenLoginPTD_@", 1);
@@ -207,4 +208,5 @@ func:ShowPlayerMainRegister(playerid)
 	{
 		PlayerTextDrawShow(playerid,LoginPTD[playerid][login_loop]);
 	}
+	return 1;
 }

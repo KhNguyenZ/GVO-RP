@@ -47,6 +47,7 @@ main()
         SendRconCommand("exit");
 	}
 }
+#include "./modules/Server/Voice/main.pwn"
 #include "./modules/Main/mysql.pwn"
 #include "./modules/Main/_var.pwn"
 #include "./modules/Main/_defines.pwn"

@@ -1,0 +1,3 @@
+- Tạm ẩn túi đồ (/inv1) để làm Inv mới
+- Fix bug textdraw
+- Add help function

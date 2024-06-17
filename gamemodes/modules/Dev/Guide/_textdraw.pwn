@@ -154,9 +154,10 @@ hook OnPlayerDisconnect(playerid, reason)
     {
         for (new i; i < 10; i++)
         {
-            PlayerTextDrawDestroy(playerid, Guide_BG_PTD[playerid][i]);
-            PlayerTextDrawDestroy(playerid, Guide_Suggest_PTD[playerid][i]);
-            PlayerTextDrawDestroy(playerid, Guide_Key_PTD[playerid][i]);
+            PlayerTextDrawHide(playerid, Guide_BG_PTD[playerid][i]);
+            PlayerTextDrawHide(playerid, Guide_Suggest_PTD[playerid][i]);
+            PlayerTextDrawHide(playerid, Guide_Key_PTD[playerid][i]);
+            
         }
     }
     return 1;

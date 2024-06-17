@@ -18,3 +18,26 @@
 [06/14/24 10:17:48] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
 [06/14/24 10:56:16] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
 [06/14/24 12:20:34] [ERROR] Error while retrieving HTTP POST response from '/api/v8/channels/1234776475979481188/messages': end of stream
+[06/14/24 15:40:08] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[06/14/24 16:18:44] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[06/14/24 20:29:30] [ERROR] Can't read from Discord websocket gateway: The semaphore timeout period has expired (121)
+[06/14/24 20:29:30] [ERROR] Can't resolve Discord gateway URL 'gateway.discord.gg': No such host is known (11001)
+[06/14/24 20:29:35] [ERROR] Can't resolve Discord gateway URL 'gateway.discord.gg': No such host is known (11001)
+[06/14/24 22:15:30] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[06/14/24 22:16:58] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[06/14/24 22:19:10] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[06/14/24 22:19:10] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[06/14/24 22:19:14] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[06/14/24 22:19:29] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[06/15/24 17:46:28] [ERROR] Can't read from Discord websocket gateway: An existing connection was forcibly closed by the remote host (10054)
+[06/15/24 17:46:28] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[06/15/24 21:49:37] [ERROR] Can't read from Discord websocket gateway: An existing connection was forcibly closed by the remote host (10054)
+[06/16/24 16:19:04] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[06/16/24 16:20:54] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[06/16/24 16:21:11] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[06/16/24 22:00:10] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[06/16/24 23:40:37] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[06/17/24 00:01:05] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[06/17/24 01:15:11] [ERROR] Error while retrieving HTTP POST response from '/api/v8/channels/1234776475979481188/messages': end of stream
+[06/17/24 10:13:03] [ERROR] Can't read from Discord websocket gateway: An existing connection was forcibly closed by the remote host (10054)
+[06/17/24 10:13:03] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)

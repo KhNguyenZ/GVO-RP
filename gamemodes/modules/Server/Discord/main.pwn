@@ -20,7 +20,7 @@ hook SSA_Mysql_Intit()
     SSA_CMD = DCC_Channel:DCC_FindChannelById("1234175760810643518");
     SSA_MAINTAINCE = DCC_Channel:DCC_FindChannelById("1234168206118354965");
     AuthMember = DCC_Role:DCC_FindRoleById("1234182795459297300");
-    if(SERVER_TEST == 0) DISCORD_MSG(SSA_MAINTAINCE, "Máy chủ đã được khởi động \nNgười chơi có thể connect rồi đóooooo\n_103.78.0.123:7777_");
+    if(SERVER_TEST == 0) DISCORD_MSG(SSA_MAINTAINCE, "Máy chủ đã được khởi động \nNgười chơi có thể connect rồi đóooooo\n_SV.SSA-RP.XYZ:7777_");
 
     return 1;
 }

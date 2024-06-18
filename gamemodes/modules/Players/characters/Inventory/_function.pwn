@@ -347,7 +347,7 @@ func:DropItem(playerid, dropitem_id, dropamount)
 	ReLoadPlayerInventory(playerid);
 }
 
-CMD:inv1(playerid, params[])
+CMD:inv(playerid, params[])
 {
 	if(GetPVarInt(playerid, #open_inv) == 1) return HidePlayerIndexInv(playerid);
 	ShowPlayerIndexInv(playerid);

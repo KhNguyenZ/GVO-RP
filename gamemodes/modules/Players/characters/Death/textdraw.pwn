@@ -1,6 +1,6 @@
 func:CreateDeathUI(playerid)
 {
-    DeathUI[playerid][0] = CreatePlayerTextDraw(playerid, -11.000, -1.000, "mdl-2019:bg");
+    DeathUI[playerid][0] = CreatePlayerTextDraw(playerid, -11.000, -1.000, "mdl-2019:death_bg");
     PlayerTextDrawTextSize(playerid, DeathUI[playerid][0], 665.000, 469.000);
     PlayerTextDrawAlignment(playerid, DeathUI[playerid][0], 1);
     PlayerTextDrawColor(playerid, DeathUI[playerid][0], -1);

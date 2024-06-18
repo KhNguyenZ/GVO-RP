@@ -33,8 +33,9 @@ public OnLoadOrganization(org_idzz)
         new query[1280];
         format(query, sizeof(query), "SELECT * FROM `organization_safe_gun` WHERE `org_id` = '%d'", org_idzz);
         mysql_tquery(Handle(), query, "OnLoadOrganizationGun", "i", org_idzz);
+        return 1;
     }
-    return 1;
+    return 0;
 }
 
 forward OnLoadOrganizationGun(org_idzz);

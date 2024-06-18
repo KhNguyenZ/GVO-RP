@@ -83,10 +83,13 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 public OnPlayerUpdate(playerid)
 {
-    GetPlayerPos(playerid, Character[playerid][char_last_Pos][0],
-                 Character[playerid][char_last_Pos][1],
-                 Character[playerid][char_last_Pos][2]);
-    GetPlayerFacingAngle(playerid, Character[playerid][char_last_Pos][3]);
+    if (IsPlayerSpawned(playerid))
+    {
+        GetPlayerPos(playerid, Character[playerid][char_last_Pos][0],
+                     Character[playerid][char_last_Pos][1],
+                     Character[playerid][char_last_Pos][2]);
+        GetPlayerFacingAngle(playerid, Character[playerid][char_last_Pos][3]);
+    }
 
     // UpdateTextTime(playerid);
 

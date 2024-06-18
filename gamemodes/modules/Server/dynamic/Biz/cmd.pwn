@@ -1,7 +1,7 @@
 CMD:bcreate(playerid, params[])
 {
 	new Type[20], Name[128];
-	if(!CheckAdmin(playerid, 4))
+	if(CheckAdmin(playerid, 4))
 	{
 		if(sscanf(params, "s[20]s[128]", Type, Name))
 		{
@@ -63,7 +63,7 @@ public OnBizCreate(playerid,bizid,name[], type, Float:BizX, Float:BizY, Float:Bi
 CMD:bedit(playerid, params[])
 {
 	new BizID, Name[128];
-	if(!CheckAdmin(playerid, 4))
+	if(CheckAdmin(playerid, 4))
 	{
 		if(sscanf(params, "is[128]", BizID, Name))
 		{

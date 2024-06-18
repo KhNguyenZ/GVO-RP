@@ -617,6 +617,7 @@ stock ShowPlayerIndexInv(playerid)
 
 		PlayerTextDrawShow(playerid, btnPage[playerid][i]);
 	}
+	
 	SelectTextDraw(playerid, -1);
 	SetPVarInt(playerid, #open_inv, 1);
 	for(new j = 0; j < MAX_INV_ITEM; j++)

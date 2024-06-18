@@ -41,3 +41,5 @@
 [06/17/24 01:15:11] [ERROR] Error while retrieving HTTP POST response from '/api/v8/channels/1234776475979481188/messages': end of stream
 [06/17/24 10:13:03] [ERROR] Can't read from Discord websocket gateway: An existing connection was forcibly closed by the remote host (10054)
 [06/17/24 10:13:03] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[06/17/24 21:42:49] [ERROR] Can't read from Discord websocket gateway: An existing connection was forcibly closed by the remote host (10054)
+[06/17/24 21:42:49] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)

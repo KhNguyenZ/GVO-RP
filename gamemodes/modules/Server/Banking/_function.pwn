@@ -47,55 +47,33 @@ func:SendLogBank(playerid,famount, ftype = 0)
 }
 func:BankingClick(playerid, PlayerText:playertextid)
 {
-    if(playertextid == MainBankPTD[playerid][1]) // home
+    if(playertextid == MainBankPTD[playerid][2]) // home
+    {
+        SetPVarInt(playerid, #Open_Page_, 0);
+
+        if(IsOpenHomeBanking(playerid)) return DestroyPageMainBanking(playerid);
+
+        if(IsOpenWithdrawsBanking(playerid)) DestroyPageWithdrawsBanking(playerid);
+        if(IsOpenDepositBanking(playerid)) DestroyPageDepositBanking(playerid);
+        if(IsOpenTransferBanking(playerid)) DestroyPageTransferBanking(playerid);
+
+        CreateMainBanking(playerid);
+    }
+    if(playertextid == MainBankPTD[playerid][11]) // Transaction
     {
         SetPVarInt(playerid, #Open_Page_, 1);
-
-        if(IsOpenHomeBanking(playerid)) return DestroyPageHomeBanking(playerid);
-
-        if(IsOpenWithdrawsBanking(playerid)) DestroyPageWithdrawsBanking(playerid);
-        if(IsOpenDepositBanking(playerid)) DestroyPageDepositBanking(playerid);
-        if(IsOpenTransferBanking(playerid)) DestroyPageTransferBanking(playerid);
-
-        CreatePageHomeBanking(playerid);
-    }
-    if(playertextid == MainBankPTD[playerid][2]) // withdraws
-    {
-        SetPVarInt(playerid, #Open_Page_, 2);
         if(IsOpenWithdrawsBanking(playerid)) return DestroyPageWithdrawsBanking(playerid);
-
-        if(IsOpenHomeBanking(playerid)) DestroyPageHomeBanking(playerid);
+        if(IsOpenHomeBanking(playerid)) DestroyPageMainBanking(playerid);
         if(IsOpenDepositBanking(playerid)) DestroyPageDepositBanking(playerid);
         if(IsOpenTransferBanking(playerid)) DestroyPageTransferBanking(playerid);
-
-        CreatePageWithdrawsBanking(playerid);
+        DestroyPageMainBanking(playerid);
+        CreatePageTransactionBanking(playerid);
     }
-    if(playertextid == MainBankPTD[playerid][3]) // deposit
-    {
-        SetPVarInt(playerid, #Open_Page_, 3);
-        if(IsOpenDepositBanking(playerid)) return DestroyPageDepositBanking(playerid);
-
-        if(IsOpenHomeBanking(playerid)) DestroyPageHomeBanking(playerid);
-        if(IsOpenWithdrawsBanking(playerid)) DestroyPageWithdrawsBanking(playerid);
-        if(IsOpenTransferBanking(playerid)) DestroyPageTransferBanking(playerid);
-
-        CreatePageDepositBanking(playerid);
-    }
-    if(playertextid == MainBankPTD[playerid][4]) // transfer
-    {
-        SetPVarInt(playerid, #Open_Page_, 4);
-        if(IsOpenTransferBanking(playerid)) return DestroyPageTransferBanking(playerid);
-
-        if(IsOpenHomeBanking(playerid)) DestroyPageHomeBanking(playerid);
-        if(IsOpenDepositBanking(playerid)) DestroyPageDepositBanking(playerid);
-        if(IsOpenWithdrawsBanking(playerid)) DestroyPageWithdrawsBanking(playerid);
-
-        CreatePageTransferBanking(playerid);
-    }
+    MenuBankClick(playerid, PlayerText:playertextid);
     HomeBankingClick(playerid, PlayerText:playertextid);
     WithdrawsBankingClick(playerid, PlayerText:playertextid);
     DepositBankingClick(playerid, PlayerText:playertextid);
-    if(playertextid == MainBankPTD[playerid][7])
+    if(playertextid == MainBankPTD[playerid][1])
     {
         DestroyAllBanking(playerid);
     }
@@ -105,86 +83,112 @@ func:BankingClick(playerid, PlayerText:playertextid)
 #define SendBankMsg(%0,%1) \
     SendClientMessage(%0, 0xFF6347AA, "{2175b5}NGAN HANG:{FFFFFF}"%1)
 
-
+func:MenuBankClick(playerid, PlayerText:playertextid)
+{
+    if(playertextid == MenuBankPTD[playerid][2])
+    {
+        SetPVarInt(playerid, #Open_Page_, 0);
+        DestroyPageMainBanking(playerid);
+        DestroyPageTransactionBanking(playerid);
+        CreateMainBanking(playerid);
+    }
+    if(playertextid == MenuBankPTD[playerid][3])
+    {
+        
+    }
+    if(playertextid == MenuBankPTD[playerid][4])
+    {
+        
+    }
+    if(playertextid == MenuBankPTD[playerid][4])
+    {
+        
+    }
+}
 func:HomeBankingClick(playerid, PlayerText:playertextid)
 {
-    if(GetPVarInt(playerid, #Open_Page_) == 1)
-    {
-        if(playertextid == HomeBankPTD[playerid][8]) // WITHDRAWS 100
+        if(playertextid == MainBankPTD[playerid][8]) // WITHDRAWS 100
         {
             if(WithdrawsPlayer(playerid, 100)) {
                 SendBankMsg(playerid, "Ban da rut $100 ra khoi tai khoan ngan hang");
                 SendLogBank(playerid, 100, 1);
+                SetPVarInt(playerid, #Open_Page_, 0);
                 ReloadBanking(playerid);
             }
             else SendErrorMessage(playerid, "So du trong tai khoan khong du !");
         }
-        if(playertextid == HomeBankPTD[playerid][9]) // WITHDRAWS 1000
+        if(playertextid == MainBankPTD[playerid][9]) // WITHDRAWS 1000
         {
             if(WithdrawsPlayer(playerid, 1000)) {
                 SendBankMsg(playerid, "Ban da rut $1000 ra khoi tai khoan ngan hang");
                 SendLogBank(playerid, 1000, 1);
+                SetPVarInt(playerid, #Open_Page_, 0);
                 ReloadBanking(playerid);
             }
             else SendErrorMessage(playerid, "So du trong tai khoan khong du !");
         }
-        if(playertextid == HomeBankPTD[playerid][10]) // WITHDRAWS 5000
+        if(playertextid == MainBankPTD[playerid][10]) // WITHDRAWS 5000
         {
             if(WithdrawsPlayer(playerid, 5000)) {
                 SendBankMsg(playerid, "Ban da rut $5000 ra khoi tai khoan ngan hang");
                 SendLogBank(playerid, 5000, 1);
+                SetPVarInt(playerid, #Open_Page_, 0);
                 ReloadBanking(playerid);
             }
             else SendErrorMessage(playerid, "So du trong tai khoan khong du !");
         }
-        if(playertextid == HomeBankPTD[playerid][11]) // DEPOSIT 100
+        if(playertextid == MainBankPTD[playerid][5]) // DEPOSIT 100
         {
             if(DepositPlayer(playerid, 100)) {
                 SendBankMsg(playerid, "Ban da gui $100 vao tai khoan ngan hang");
                 SendLogBank(playerid, 100, 0);
+                SetPVarInt(playerid, #Open_Page_, 0);
                 ReloadBanking(playerid);
             }
             else SendErrorMessage(playerid, "So du trong tai khoan khong du !");
         }
-        if(playertextid == HomeBankPTD[playerid][12]) // DEPOSIT 1000
+        if(playertextid == MainBankPTD[playerid][6]) // DEPOSIT 1000
         {
             if(DepositPlayer(playerid, 1000)) {
                 SendBankMsg(playerid, "Ban da gui $1000 vao tai khoan ngan hang");
                 SendLogBank(playerid, 1000, 0);
+                SetPVarInt(playerid, #Open_Page_, 0);
                 ReloadBanking(playerid);
             }
             else SendErrorMessage(playerid, "So du trong tai khoan khong du !");
         }
-        if(playertextid == HomeBankPTD[playerid][13]) // DEPOSIT 5000
+        if(playertextid == MainBankPTD[playerid][7]) // DEPOSIT 5000
         {
             if(DepositPlayer(playerid, 5000)) 
             {
                 SendBankMsg(playerid, "Ban da gui $5000 vao tai khoan ngan hang");
                 SendLogBank(playerid, 5000, 0);
+                SetPVarInt(playerid, #Open_Page_, 0);
                 ReloadBanking(playerid);
             }
             else SendErrorMessage(playerid, "So du trong tai khoan khong du !");
         }
-        if(playertextid == HomeBankPTD[playerid][14]) // TRANSFER 1000
+        if(playertextid == MainBankPTD[playerid][3]) // TRANSFER 1000
         {
             if(BankToTransferPlayer(playerid, 1000)) {
                 SendBankMsg(playerid, "Ban da gui $5000 vao so tiet kiem");
                 SendLogBank(playerid, 1000, 3);
+                SetPVarInt(playerid, #Open_Page_, 0);
                 ReloadBanking(playerid);
             }
             else SendErrorMessage(playerid, "So du $1000 trong tai khoan khong du !");
         }
-        if(playertextid == HomeBankPTD[playerid][15]) // TRANSFER 5000
+        if(playertextid == MainBankPTD[playerid][4]) // TRANSFER 5000
         {
             if(TransferToBankPlayer(playerid, 1000))  {
                 SendBankMsg(playerid, "Ban da rut $5000 ra khoi so tiet kiem");
                 SendLogBank(playerid, 1000, 4);
+                SetPVarInt(playerid, #Open_Page_, 0);
                 ReloadBanking(playerid);
             }
             else SendErrorMessage(playerid, "So du $1000 trong tai khoan khong du !");
         }
-    }
-    return 1;
+        return 1;
 }
 
 func:WithdrawsBankingClick(playerid, PlayerText:playertextid)

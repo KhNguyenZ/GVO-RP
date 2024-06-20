@@ -15,6 +15,12 @@ AddSimpleModel(-1,19379, -2016, "object.dff", "Banking.txd");
 AddSimpleModel(-1, 19379, -2018, "object.dff", "start.txd");
 AddSimpleModel(-1, 19379, -2019, "object.dff", "death.txd");
 
+
+
+AddSimpleModel(-1, 19379, -2020, "object.dff", "bank_main.txd");
+AddSimpleModel(-1, 19379, -2021, "object.dff", "bank_tab.txd");
+
+
 AddSimpleModel(-1,19379, -5000, "newbiespawn.dff", "newbiespawn.txd");
 AddSimpleModel(-1,19379, -5001, "congvien.dff", "congvien.txd");
 AddSimpleModel(-1,19379, -5002, "honuoc.dff", "honuoc.txd");

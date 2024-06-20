@@ -73,6 +73,7 @@ public OnCharacterLoad(const playerid)
 
 	cache_get_value_name_int(0, "Injured", Character[playerid][char_Injured]);
 
+	cache_get_value_name_int(0, "OTP", Character[playerid][char_OTP]);
 
     return 1;
 }

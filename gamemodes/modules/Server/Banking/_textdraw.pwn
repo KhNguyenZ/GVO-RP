@@ -481,6 +481,7 @@ func:DestroyAllBanking(playerid)
     DestroyPageHomeBanking(playerid);
     DestroyPageWithdrawsBanking(playerid);
     DestroyPageDepositBanking(playerid);
+    DestroyPageTransferBanking(playerid);
 }
 func:DestroyPageMainBanking(playerid)
 {

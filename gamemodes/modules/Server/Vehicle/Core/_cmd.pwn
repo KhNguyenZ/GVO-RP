@@ -193,30 +193,3 @@ CMD:sb(playerid, params[])
     return 1;
 }
 
-
-CMD:setmoney(playerid, params[])
-{
-	new targetid, amount_set;
-
-	if(sscanf(params, "ii", targetid, amount_set)) return SendUsageMessage(playerid, "/setmoney [PlayerID][Amount]");
-	Character[playerid][char_Cash] = amount_set;
-
-	new logdisc[1280];
-	format(logdisc, 1280, "Admin [%s] da set cho tai khoan [%s] so tien $%s", player_get_name(playerid), player_get_name(targetid), FormatMoney(amount_set));
-	DISCORD_SendEmbedMsg(LogMoney, "Lịch sử 'SET MONEY'",logdisc, 0x2ac7ff);
-	return 1;
-}
-
-
-CMD:givemoney(playerid, params[])
-{
-	new targetid, amount_set;
-
-	if(sscanf(params, "ii", targetid, amount_set)) return SendUsageMessage(playerid, "/givemoney [PlayerID][Amount]");
-	Character[playerid][char_Cash] += amount_set;
-	
-	new logdisc[1280];
-	format(logdisc, 1280, "Admin [%s] da set cho tai khoan [%s] so tien $%s", player_get_name(playerid), player_get_name(targetid), FormatMoney(amount_set));
-	DISCORD_SendEmbedMsg(LogMoney, "Lịch sử 'GIVE MONEY'",logdisc, 0x2ac7ff);
-	return 1;
-}

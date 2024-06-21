@@ -135,9 +135,6 @@ public OnPlayerSpawn(playerid)
 forward OnPlayerLoad(playerid);
 public OnPlayerLoad(playerid)
 {
-
-    Character[playerid][char_Interior] = 1;
-
     TogglePlayerSpectating(playerid, 0);
     Clear_Chat(playerid);
     new sdm[1280];

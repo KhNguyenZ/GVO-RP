@@ -899,3 +899,52 @@ CMD:goto(playerid, params[])
     return 1;
 }
 
+CMD:setmoney(playerid, params[])
+{
+    if (!CheckAdmin(playerid, 3)) return SendErrorMessage(playerid, "Ban khong co quyen su dung lenh nay");
+	new targetid, amount_set;
+
+	if(sscanf(params, "ii", targetid, amount_set)) return SendUsageMessage(playerid, "/setmoney [PlayerID][Amount]");
+	Character[playerid][char_Cash] = amount_set;
+
+	new logdisc[1280];
+	format(logdisc, 1280, "Admin [%s] da set cho tai khoan [%s] so tien $%s", player_get_name(playerid), player_get_name(targetid), FormatMoney(amount_set));
+	DISCORD_SendEmbedMsg(LogMoney, "Lịch sử 'SET MONEY'",logdisc, 0x2ac7ff);
+	return 1;
+}
+
+
+CMD:givemoney(playerid, params[])
+{
+    if (!CheckAdmin(playerid, 3)) return SendErrorMessage(playerid, "Ban khong co quyen su dung lenh nay");
+	new targetid, amount_set;
+
+	if(sscanf(params, "ii", targetid, amount_set)) return SendUsageMessage(playerid, "/givemoney [PlayerID][Amount]");
+	Character[playerid][char_Cash] += amount_set;
+	
+	new logdisc[1280];
+	format(logdisc, 1280, "Admin [%s] da set cho tai khoan [%s] so tien $%s", player_get_name(playerid), player_get_name(targetid), FormatMoney(amount_set));
+	DISCORD_SendEmbedMsg(LogMoney, "Lịch sử 'GIVE MONEY'",logdisc, 0x2ac7ff);
+	return 1;
+}
+
+
+CMD:setint(playerid, params[])
+{
+    if (!CheckAdmin(playerid, 3)) return SendErrorMessage(playerid, "Ban khong co quyen su dung lenh nay");
+    new targetid, _cint;
+    if(sscanf(params, "ii", targetid,_cint)) return SendUsageMessage(playerid, "/setint [Playerid] [Interior]");
+    SetPlayerInterior(playerid,_cint);
+    HienTextdraw(playerid, "Cap nhat interior cho nguoi choi thanh cong", 3000);
+    return 1;
+}
+
+CMD:setvw(playerid, params[])
+{
+    if (!CheckAdmin(playerid, 3)) return SendErrorMessage(playerid, "Ban khong co quyen su dung lenh nay");
+    new targetid, _cvw;
+    if(sscanf(params, "ii", targetid,_cvw)) return SendUsageMessage(playerid, "/setvw [Playerid] [VW]");
+    SetPlayerVirtualWorld(playerid,_cvw);
+    HienTextdraw(playerid, "Cap nhat VW cho nguoi choi thanh cong", 3000);
+    return 1;
+}

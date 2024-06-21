@@ -59,3 +59,8 @@
 [06/21/24 11:20:37] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
 [06/21/24 11:27:06] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
 [06/21/24 11:27:22] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[06/21/24 11:40:19] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[06/21/24 11:40:57] [ERROR] Error while retrieving HTTP POST response from '/api/v8/channels/1253178296741400596/messages': end of stream
+[06/21/24 11:45:49] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[06/21/24 11:46:04] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[06/21/24 12:01:02] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'

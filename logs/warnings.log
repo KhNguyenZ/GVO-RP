@@ -1,2 +1,6 @@
 [06/21/24 11:27:06] [plugins/discord-connector] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
 [06/21/24 11:27:22] [plugins/discord-connector] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[06/21/24 11:40:19] [plugins/discord-connector] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[06/21/24 11:45:49] [plugins/discord-connector] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[06/21/24 11:46:04] [plugins/discord-connector] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[06/21/24 12:01:02] [plugins/discord-connector] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'

@@ -24,5 +24,6 @@ func:DeliverPatient(playerid)
                  InjuredBed[CountBed][1],
                  InjuredBed[CountBed][2]);
     SetPlayerFacingAngle(playerid, InjuredBed[CountBed][3]);
+    PlayAnimEx(playerid, "SWAT", "gnstwall_injurd", 4.0, 1, 0, 0, 0, 0, 1);
     return 1;
 }

@@ -18,18 +18,21 @@ new const Org_HelpCMD[][AHelpCMD_D] = {
     {"/makeleader", "Trao quyen quan li 'To chuc' cho ai do"},
     {"/createorg", "Tao 'To chuc' moi"}
 };
-/*CMD:help(playerid)
-{
-    for (new i; i < 1000; i++)
-    {
+new const Dynamic_HelpCMD[][AHelpCMD_D] = {
+    {"/taodoor", "Tao door moi"},
+    {"/dname", "Cai dat ten cho door"},
+    {"/dedit", "Tuy chinh door"},
+    {"/bcreate", "Tao cua hang"},
+    {"/bedit", "Tao cua hang"},
+    {"/bcreate", "Tao cua hang"},
+    {"/bcreate", "Tao cua hang"}
+};
 
-    }
-}*/
 CMD:ahelp(playerid)
 {
     if(!CheckAdmin(playerid, 1)) return SendErrorMessage(playerid, "Ban khong co quyen su dung lenh nay");
     ShowPlayerDialog(playerid, DIALOG_AHELP, DIALOG_STYLE_LIST, "Admin Help",
-    "Organization\nDoor\nBiz\nHouse", ">>", "<<");
+    "Organization\nDynamic(Door & Biz & House)", ">>", "<<");
     return 1;
 }
 
@@ -45,6 +48,17 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
             {
                 new _cmd_ahz[1280];
                 format(_cmd_ahz, 1280, "{d7f562}%s{FFFFFF} - %s \n", Org_HelpCMD[i][h_cmd], Org_HelpCMD[i][h_describe]);
+                strcat(_cmd_ah, _cmd_ahz);
+            }
+            strcat(_cmd_ah, "END");
+            ShowPlayerDialog(playerid, DIALOG_NOTHING, DIALOG_STYLE_MSGBOX, "Admin Help", _cmd_ah, "..", "");
+        }
+        if(listitem == 1)
+        {
+            for(new i; i < sizeof(Dynamic_HelpCMD); i++)
+            {
+                new _cmd_ahz[1280];
+                format(_cmd_ahz, 1280, "{d7f562}%s{FFFFFF} - %s \n", Dynamic_HelpCMD[i][h_cmd], Dynamic_HelpCMD[i][h_describe]);
                 strcat(_cmd_ah, _cmd_ahz);
             }
             strcat(_cmd_ah, "END");

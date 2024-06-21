@@ -90,19 +90,31 @@ func:MenuBankClick(playerid, PlayerText:playertextid)
         SetPVarInt(playerid, #Open_Page_, 0);
         DestroyPageMainBanking(playerid);
         DestroyPageTransactionBanking(playerid);
+        DestroyPageWithdrawsBanking(playerid);
+        DestroyPageDepositBanking(playerid);
+        DestroyPageTransferBanking(playerid);
         CreateMainBanking(playerid);
     }
-    if(playertextid == MenuBankPTD[playerid][3])
+    if(playertextid == MenuBankPTD[playerid][3]) // withdraws
     {
-        
+        SetPVarInt(playerid, #Open_Page_, 2);
+        DestroyPageMainBanking(playerid);
+        DestroyPageTransactionBanking(playerid);
+        CreatePageWithdrawsBanking(playerid);
     }
-    if(playertextid == MenuBankPTD[playerid][4])
+    if(playertextid == MenuBankPTD[playerid][4]) // deposit
     {
-        
+        SetPVarInt(playerid, #Open_Page_, 3);
+        DestroyPageMainBanking(playerid);
+        DestroyPageTransactionBanking(playerid);
+        CreatePageDepositBanking(playerid);
     }
-    if(playertextid == MenuBankPTD[playerid][4])
+    if(playertextid == MenuBankPTD[playerid][5]) // transfer
     {
-        
+        SetPVarInt(playerid, #Open_Page_, 4);
+        DestroyPageMainBanking(playerid);
+        DestroyPageTransactionBanking(playerid);
+        CreatePageTransferBanking(playerid);
     }
 }
 func:HomeBankingClick(playerid, PlayerText:playertextid)
@@ -196,15 +208,15 @@ func:WithdrawsBankingClick(playerid, PlayerText:playertextid)
     if(GetPVarInt(playerid, #Open_Page_) == 2)
     {
         
-        if(playertextid == WithdrawsBankPTD[playerid][9])
+        if(playertextid == WithdrawsBankPTD[playerid][4])
         {
             ShowPlayerDialog(playerid, 5003, DIALOG_STYLE_INPUT, "Rut tien", "Nhap so tien", ">>", "<<");
         }
-        if(playertextid == WithdrawsBankPTD[playerid][10])
+        if(playertextid == WithdrawsBankPTD[playerid][5])
         {
             ShowPlayerDialog(playerid, 5002, DIALOG_STYLE_INPUT, "Rut tien", "Ma OTP", ">>", "<<");
         }
-        if(playertextid == WithdrawsBankPTD[playerid][7])
+        if(playertextid == WithdrawsBankPTD[playerid][3])
         {
             if(GetPVarInt(playerid, #Banking_OTP) <= 0) return SendErrorMessage(playerid, "Yeu cau OTP !!!");
             if(GetPVarInt(playerid, #Banking_Amount) <= 0) return SendErrorMessage(playerid, "Yeu cau nhap so tien can rut !!!");
@@ -227,15 +239,15 @@ func:DepositBankingClick(playerid, PlayerText:playertextid)
     if(GetPVarInt(playerid, #Open_Page_) == 3)
     {
         
-        if(playertextid == DepositBankPTD[playerid][9])
+        if(playertextid == DepositBankPTD[playerid][4])
         {
             ShowPlayerDialog(playerid, 5005, DIALOG_STYLE_INPUT, "Rut tien", "Nhap so tien", ">>", "<<");
         }
-        if(playertextid == DepositBankPTD[playerid][10])
+        if(playertextid == DepositBankPTD[playerid][5])
         {
             ShowPlayerDialog(playerid, 5004, DIALOG_STYLE_INPUT, "Rut tien", "Ma OTP", ">>", "<<");
         }
-        if(playertextid == DepositBankPTD[playerid][7])
+        if(playertextid == DepositBankPTD[playerid][3])
         {
             if(GetPVarInt(playerid, #Banking_OTP) <= 0) return SendErrorMessage(playerid, "Yeu cau OTP !!!");
             if(GetPVarInt(playerid, #Banking_Amount) <= 0) return SendErrorMessage(playerid, "Yeu cau nhap so tien can rut !!!");
@@ -255,15 +267,15 @@ func:DepositBankingClick(playerid, PlayerText:playertextid)
 }
 func:TransferBankingClick(playerid, PlayerText:playertextid)
 {
-    if(playertextid == TransferBankPTD[playerid][8]) // amount
+    if(playertextid == TransferBankPTD[playerid][4]) // amount
     {
         ShowPlayerDialog(playerid, 5006, DIALOG_STYLE_INPUT, "Gui tiet kiem", "Nhap so tien", ">>", "<<");
     }
-    if(playertextid == TransferBankPTD[playerid][9]) // otp
+    if(playertextid == TransferBankPTD[playerid][5]) // otp
     {
         ShowPlayerDialog(playerid, 5007, DIALOG_STYLE_INPUT, "OTP", "Nhap OTP", ">>", "<<");
     }
-    if(playertextid == TransferBankPTD[playerid][10]){
+    if(playertextid == TransferBankPTD[playerid][3]){
         SendErrorMessage(playerid, "Chuc nang dang bao tri !");
         
         /*ShowPlayerDialog(playerid, 5008, DIALOG_STYLE_INPUT, "Thoi gian gui tiet kiem", 
@@ -305,7 +317,7 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
                 }
                 SetPVarInt(playerid, #Banking_Amount, strval(inputtext));
                 format(wd_msg, 1280, "%s", FormatMoney(strval(inputtext)));
-                PlayerTextDrawSetString(playerid, TransferBankPTD[playerid][8], wd_msg);
+                PlayerTextDrawSetString(playerid, TransferBankPTD[playerid][4], wd_msg);
             }
             else SendErrorMessage(playerid, "So du cua ban khong du !");
         }
@@ -322,7 +334,7 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
             }
             SetPVarInt(playerid, #Banking_OTP, strval(inputtext));
             format(wd_msg, 1280, "%s", inputtext);
-            PlayerTextDrawSetString(playerid, TransferBankPTD[playerid][9], wd_msg);
+            PlayerTextDrawSetString(playerid, TransferBankPTD[playerid][5], wd_msg);
 
         }
     }
@@ -338,7 +350,7 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
             }
             SetPVarInt(playerid, #Banking_OTP, strval(inputtext));
             format(wd_msg, 1280, "%s", inputtext);
-            PlayerTextDrawSetString(playerid, WithdrawsBankPTD[playerid][10], wd_msg);
+            PlayerTextDrawSetString(playerid, WithdrawsBankPTD[playerid][5], wd_msg);
 
         }
     }
@@ -357,7 +369,7 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
                 }
                 SetPVarInt(playerid, #Banking_Amount, strval(inputtext));
                 format(wd_msg, 1280, "%s", FormatMoney(strval(inputtext)));
-                PlayerTextDrawSetString(playerid, WithdrawsBankPTD[playerid][9], wd_msg);
+                PlayerTextDrawSetString(playerid, WithdrawsBankPTD[playerid][4], wd_msg);
             }
             else SendErrorMessage(playerid, "So du cua ban khong du !");
         }
@@ -375,7 +387,7 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
             }
             SetPVarInt(playerid, #Banking_OTP, strval(inputtext));
             format(wd_msg, 1280, "%s", inputtext);
-            PlayerTextDrawSetString(playerid, DepositBankPTD[playerid][10], wd_msg);
+            PlayerTextDrawSetString(playerid, DepositBankPTD[playerid][5], wd_msg);
 
         }
     }
@@ -395,7 +407,7 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
                 SetPVarInt(playerid, #Banking_Amount, strval(inputtext));
                 format(wd_msg, 1280, "%s", FormatMoney(strval(inputtext)));
-                PlayerTextDrawSetString(playerid, DepositBankPTD[playerid][9], wd_msg);
+                PlayerTextDrawSetString(playerid, DepositBankPTD[playerid][4], wd_msg);
             }
             else SendErrorMessage(playerid, "So du cua ban khong du !");
         }

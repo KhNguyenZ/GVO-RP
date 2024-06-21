@@ -43,3 +43,24 @@
 [06/17/24 10:13:03] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
 [06/17/24 21:42:49] [ERROR] Can't read from Discord websocket gateway: An existing connection was forcibly closed by the remote host (10054)
 [06/17/24 21:42:49] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[06/21/24 11:16:21] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[06/21/24 11:16:21] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[06/21/24 11:16:26] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[06/21/24 11:16:31] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[06/21/24 11:16:39] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[06/21/24 11:16:42] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[06/21/24 11:16:44] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[06/21/24 11:16:58] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[06/21/24 11:17:01] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[06/21/24 11:17:04] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[06/21/24 11:19:59] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[06/21/24 11:20:03] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[06/21/24 11:20:03] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[06/21/24 11:20:37] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[06/21/24 11:27:06] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[06/21/24 11:27:22] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[06/21/24 11:40:19] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[06/21/24 11:40:57] [ERROR] Error while retrieving HTTP POST response from '/api/v8/channels/1253178296741400596/messages': end of stream
+[06/21/24 11:45:49] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[06/21/24 11:46:04] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[06/21/24 12:01:02] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'

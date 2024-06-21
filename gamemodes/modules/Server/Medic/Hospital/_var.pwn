@@ -11,18 +11,6 @@ new Float:InjuredBed[10][4] = {
     {1416.8751, 1496.1519, 1011.6442, 180.3067}
 };
 
-new CountBed;
+new CountBed[10];
 
-func:DeliverPatient(playerid)
-{
-    if (CountBed > 9)
-    {
-        SendErrorMessage(playerid, "Giuong benh dang bi qua tai !");
-        return 0; 
-    }
-    SetPlayerPos(playerid, InjuredBed[CountBed][0],
-                 InjuredBed[CountBed][1],
-                 InjuredBed[CountBed][2]);
-    SetPlayerFacingAngle(playerid, InjuredBed[CountBed][3]);
-    return 1;
-}
+new InjuredTimer[MAX_PLAYERS];

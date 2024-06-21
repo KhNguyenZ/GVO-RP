@@ -2,19 +2,6 @@
 #include <YSI_Coding\y_hooks>
 
 
-
-CMD:dnext(playerid, params[])
-{
-    if (!CheckAdmin(playerid, 4))
-    {
-        new szformat[1280];
-        format(szformat, sizeof(szformat), "Next Door ID: %d", INVALID_DOORS());
-        SendClientMessage(playerid, -1, szformat);
-    }
-    else SendErrorMessage(playerid, "Ban khong co quyen su dung lenh nay");
-    return 1;
-}
-
 CMD:taodoor(playerid, params[])
 {
     new _dname[1280], pickup;
@@ -117,19 +104,3 @@ CMD:dedit(playerid, params[])
     else SendErrorMessage(playerid, "Ban khong co quyen su dung lenh nay");
     return 1;
 }
-CMD:adoor(playerid, params[])
-{
-    ShowPlayerDialog(playerid, DIALOG_A_DOOR, DIALOG_STYLE_LIST, "Admin Control Door", "Nhap ID door can thao tac", ">>", "<<");
-    return 1;
-}
-
-// CMD:enter(playerid, params[])
-// {
-//     EnterDoor(playerid);
-//     return 1;
-// }
-// CMD:exit(playerid, params[])
-// {
-//     ExitDoor(playerid);
-//     return 1;
-// }

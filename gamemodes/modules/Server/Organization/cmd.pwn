@@ -72,12 +72,12 @@ CMD:createorg(playerid, params[])
     _birth,
     _org_type
     );
-    mysql_tquery(Handle(),query, "OnCreateOrg", "");
+    mysql_tquery(Handle(),query, "OnCreateOrg", "i", playerid);
     return 1;
 }
 
-forward OnCreateOrg();
-public OnCreateOrg()
+forward OnCreateOrg(playerid);
+public OnCreateOrg(playerid)
 {
     new _org_id = cache_insert_id();
 

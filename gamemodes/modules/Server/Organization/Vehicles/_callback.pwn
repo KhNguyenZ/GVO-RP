@@ -4,7 +4,8 @@ public OnLoadOrgVehicle(_org_id)
     new v_count;
     cache_get_row_count(v_count);
     printf("Loaded %d vehicle for Org %d", v_count, _org_id);
-    for (new i; i < MAX_ORG_VEHICLES)
+
+    for (new i; i < MAX_ORG_VEHICLES; i++)
     {
         OrgVeh[_org_id][i][ov_vehid] = -1;
     }

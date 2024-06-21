@@ -1,13 +1,10 @@
-./modules/Dev/Job/_main.pwn(450) : èäåị́èôèêạ̀îđó ïđèñâîåíî çíà÷åíèå, íî îí íå èñïîëüçóạ̊ñÿ: "playerjob"
 ./modules/Players/characters/Admin/character-admin.pwn(238) : íåïđàâèëüíàÿ ̣àáóëÿöèÿ
 ./modules/Server/Organization/_function.pwn(54) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "playerid"
-./modules/Server/Organization/Vehicles/_callback.pwn(7) : îøèáêà 001: îæèäàëñÿ ̣îêåí ";", íî íàéäåí ")"
 ./modules/Server/Discord/command.pwn(25) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "HintCommand"
+./modules/Server/Banking/_textdraw.pwn(3) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "HomeBankPTD"
 ./modules/Server/Organization/_var.pwn(26) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "ML_Targetid"
 ./modules/Server/Vehicle/Core/_var.pwn(108) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "MaxVehicleFuel"
 D:\Desktop\SSA-Project-Main\gamemodes\main.pwn(32) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "SERVER_COMPONET"
 D:\Desktop\SSA-Project-Main\gamemodes\main.pwn(21) : èäåị́èôèêạ̀îđó ïđèñâîåíî çíà÷åíèå, íî îí íå èñïîëüçóạ̊ñÿ: "SSA_MAINTAINCE"
 Pawn compiler 3.2.3664	 	 	Copyright (c) 1997-2016, ITB CompuPhase
 
-
-Îøèáîê:1.

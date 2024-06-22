@@ -34,3 +34,39 @@
 [06/21/24 22:41:17] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number (./modules/Server/Organization/_callback.pwn:29)
 [06/21/24 22:41:17] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number (./modules/Server/Organization/_callback.pwn:29)
 [06/21/24 22:41:17] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number (./modules/Server/Organization/_callback.pwn:29)
+[06/21/24 22:47:54] [plugins/mysql] cache_get_value_name_int: field 'OTP' not found (./modules/Players/characters/Core/sql.pwn:76)
+[06/21/24 23:27:20] [plugins/discord-connector] Can't read from Discord websocket gateway: The network connection was aborted by the local system (1236)
+[06/21/24 23:27:20] [plugins/discord-connector] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[06/21/24 23:27:20] [plugins/discord-connector] Can't resolve Discord gateway URL 'gateway.discord.gg': No such host is known (11001)
+[06/21/24 23:27:37] [plugins/discord-connector] Can't resolve Discord gateway URL 'gateway.discord.gg': No such host is known (11001)
+[06/22/24 11:22:15] [plugins/discord-connector] Can't read from Discord websocket gateway: An existing connection was forcibly closed by the remote host (10054)
+[06/22/24 11:22:15] [plugins/discord-connector] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[06/22/24 11:22:28] [plugins/discord-connector] Can't resolve Discord gateway URL 'gateway.discord.gg': No such host is known (11001)
+[06/22/24 11:36:16] [plugins/discord-connector] can't update guild member presence: user id "1199907805335916551" not cached
+[06/22/24 11:56:13] [plugins/discord-connector] can't update guild member presence: user id "1199907805335916551" not cached
+[06/22/24 12:18:36] [plugins/discord-connector] can't update guild member presence: user id "1181825585337598040" not cached
+[06/22/24 12:21:17] [plugins/discord-connector] can't update guild member presence: user id "1199907805335916551" not cached
+[06/22/24 12:25:50] [plugins/discord-connector] can't update guild member presence: user id "1199907805335916551" not cached
+[06/22/24 12:38:47] [plugins/discord-connector] can't update guild member presence: user id "1199907805335916551" not cached
+[06/22/24 12:38:51] [plugins/discord-connector] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[06/22/24 13:10:34] [plugins/discord-connector] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[06/22/24 13:28:47] [plugins/discord-connector] can't update guild member presence: user id "1181825585337598040" not cached
+[06/22/24 13:31:31] [plugins/discord-connector] can't update guild member presence: user id "1181825585337598040" not cached
+[06/22/24 13:38:27] [plugins/discord-connector] can't update guild member presence: user id "1181825585337598040" not cached
+[06/22/24 14:11:13] [plugins/discord-connector] can't update guild member presence: user id "1199907805335916551" not cached
+[06/22/24 14:16:19] [plugins/discord-connector] can't update guild member presence: user id "1181825585337598040" not cached
+[06/22/24 14:16:51] [plugins/discord-connector] can't update guild member presence: user id "1199907805335916551" not cached
+[06/22/24 14:33:46] [plugins/discord-connector] can't update guild member presence: user id "1199907805335916551" not cached
+[06/22/24 14:51:30] [plugins/discord-connector] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[06/22/24 14:52:47] [plugins/discord-connector] can't update guild member presence: user id "1199907805335916551" not cached
+[06/22/24 15:05:41] [plugins/discord-connector] can't update guild member presence: user id "1199907805335916551" not cached
+[06/22/24 15:07:39] [plugins/discord-connector] can't update guild member presence: user id "1199907805335916551" not cached
+[06/22/24 15:12:34] [plugins/discord-connector] can't update guild member presence: user id "1199907805335916551" not cached
+[06/22/24 21:21:13] [plugins/discord-connector] Can't read from Discord websocket gateway: An existing connection was forcibly closed by the remote host (10054)
+[06/22/24 21:21:13] [plugins/discord-connector] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[06/22/24 21:22:48] [plugins/discord-connector] can't update guild member presence: user id "998089968209625158" not cached
+[06/22/24 21:25:49] [plugins/discord-connector] can't update guild member presence: user id "1199907805335916551" not cached
+[06/22/24 21:27:27] [plugins/discord-connector] can't update guild member presence: user id "998089968209625158" not cached
+[06/22/24 21:58:28] [plugins/discord-connector] Can't read from Discord websocket gateway: The network connection was aborted by the local system (1236)
+[06/22/24 21:58:28] [plugins/discord-connector] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[06/22/24 21:58:28] [plugins/discord-connector] Can't resolve Discord gateway URL 'gateway.discord.gg': This is usually a temporary error during hostname resolution and means that the local server did not receive a response from an authoritative server (11002)

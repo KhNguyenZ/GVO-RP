@@ -2604,3 +2604,4 @@
 [06/21/24 22:41:17] [ERROR] cache_get_value_name_int: value 'NULL' is not a number (./modules/Server/Organization/_callback.pwn:29)
 [06/21/24 22:41:17] [ERROR] cache_get_value_name_int: value 'NULL' is not a number (./modules/Server/Organization/_callback.pwn:29)
 [06/21/24 22:41:17] [ERROR] cache_get_value_name_int: value 'NULL' is not a number (./modules/Server/Organization/_callback.pwn:29)
+[06/21/24 22:47:54] [ERROR] cache_get_value_name_int: field 'OTP' not found (./modules/Players/characters/Core/sql.pwn:76)

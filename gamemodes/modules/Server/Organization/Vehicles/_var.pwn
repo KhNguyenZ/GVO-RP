@@ -16,7 +16,7 @@ enum OrgVehicle_Data {
     ov_int,
     ov_spawned,
     ov_vehid,
-    ov_health,
+    Float:ov_health,
     ov_odo,
     ov_siren
 }

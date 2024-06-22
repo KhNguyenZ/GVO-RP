@@ -49,7 +49,7 @@ public OnLoadPlayerVehicle(playerid)
         cache_get_value_name_int(i, "vw", PlayerVehicle[playerid][i][pv_vw]);
         cache_get_value_name_int(i, "int", PlayerVehicle[playerid][i][pv_int]);
 
-        cache_get_value_name_int(i, "health", PlayerVehicle[playerid][i][pv_health]);
+        cache_get_value_name_float(i, "health", PlayerVehicle[playerid][i][pv_health]);
         cache_get_value_name_int(i, "odo", PlayerVehicle[playerid][i][pv_odo]);
 
     }

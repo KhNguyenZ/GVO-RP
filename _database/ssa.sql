@@ -11,7 +11,7 @@
  Target Server Version : 50515 (5.5.15)
  File Encoding         : 65001
 
- Date: 14/06/2024 22:14:26
+ Date: 22/06/2024 22:20:02
 */
 
 SET NAMES utf8mb4;
@@ -40,12 +40,12 @@ CREATE TABLE `accounts`  (
   `Email_Code` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
   `Email_Status` int(11) NULL DEFAULT 0,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 23 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 25 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of accounts
 -- ----------------------------
-INSERT INTO `accounts` VALUES (11, 'Khoi_Nguyen', 'nguyen', NULL, NULL, NULL, 'Khoi_Nguyenz', 'Hack_Monkey', 'Tao nhan vat', '992137033449480203', '0', 1, NULL, 123, 'knguyen151108@gmail.com', '123456', 0);
+INSERT INTO `accounts` VALUES (11, 'Khoi_Nguyen', 'nguyen', NULL, NULL, NULL, 'Khoi_Nguyenz', 'Hack_Monkey', 'Tao nhan vat', '992137033449480203', '0', 1, NULL, 123, 'knguyen151108@gmail.com', '273765', 0);
 INSERT INTO `accounts` VALUES (12, 'Khoi_Nguyenz', 'nguyen', NULL, NULL, NULL, 'Khoi_Bi', 'Tao nhan vat', 'Tao nhan vat', '992137033449480203', '489948', 0, 0, 916630, NULL, '0', 1);
 INSERT INTO `accounts` VALUES (13, 'Adminz', 'nguyen', NULL, NULL, NULL, 'Tao nhan vat', 'Tao nhan vat', 'Tao nhan vat', '-1', NULL, 0, 0, NULL, NULL, '0', 1);
 INSERT INTO `accounts` VALUES (14, 'Account_Test', 'nguyen', NULL, NULL, NULL, 'Tao nhan vat', 'Tao nhan vat', 'Tao nhan vat', '1203582188386390056', '0', 1, 0, NULL, NULL, '0', 1);
@@ -57,6 +57,8 @@ INSERT INTO `accounts` VALUES (19, 'Khoi_Nguyenzzzz', 'nguyen', NULL, NULL, NULL
 INSERT INTO `accounts` VALUES (20, 'Khoi_Nguyenzzzadz', 'egegwrgwe', NULL, NULL, NULL, 'Tao nhan vat', 'Tao nhan vat', 'Tao nhan vat', '-1', NULL, 0, 0, NULL, NULL, NULL, 0);
 INSERT INTO `accounts` VALUES (21, 'Khoi_Nguyensdfsdf', 'cc@gmail.com', NULL, NULL, NULL, 'Tao nhan vat', 'Tao nhan vat', 'Tao nhan vat', '-1', NULL, 0, 0, NULL, NULL, NULL, 0);
 INSERT INTO `accounts` VALUES (22, 'Khoi_Nguyenzz', '', NULL, NULL, NULL, 'Hacker_Nedumem', 'Hello_SSA', 'CC_NE', '-1', NULL, 0, 0, NULL, NULL, NULL, 0);
+INSERT INTO `accounts` VALUES (23, 'Khoi_Nguyendadf', 'nguyen', NULL, NULL, NULL, 'Tao nhan vat', 'Tao nhan vat', 'Tao nhan vat', '-1', NULL, 0, 0, NULL, NULL, NULL, 0);
+INSERT INTO `accounts` VALUES (24, 'Jey_BeeD', 'nguyen', NULL, NULL, NULL, 'Khanh_Nguyen', 'Tao nhan vat', 'Tao nhan vat', '-1', NULL, 0, 0, NULL, NULL, NULL, 0);
 
 -- ----------------------------
 -- Table structure for biz
@@ -219,7 +221,7 @@ INSERT INTO `cleo` VALUES (8, 'HudDisable.cs', '4fdb43549545a0dd2994613dca2f3369
 -- ----------------------------
 DROP TABLE IF EXISTS `doors`;
 CREATE TABLE `doors`  (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `Name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
   `OwnerID` int(11) NULL DEFAULT -1,
   `Locked` int(11) NULL DEFAULT 0,
@@ -238,12 +240,12 @@ CREATE TABLE `doors`  (
   `ExInterior` int(11) NULL DEFAULT -1,
   `InInterior` int(11) NULL DEFAULT -1,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of doors
 -- ----------------------------
-INSERT INTO `doors` VALUES (1, '', 0, 0, 0, 0, 0, 1172, -1323.6, 15.4035, 1425.16, 1469.53, 1010.91, 0, 0, 0, 0, 1);
+INSERT INTO `doors` VALUES (1, 'Benh Vien 1', 0, 0, 0, 0, 0, 1172, -1323.6, 15.4035, 1425.16, 1469.53, 1010.91, 1240, 0, 0, 0, 1);
 
 -- ----------------------------
 -- Table structure for hardwareid
@@ -279,22 +281,14 @@ CREATE TABLE `inventory`  (
   `item` int(11) NULL DEFAULT NULL,
   `amount` int(11) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 229 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = COMPACT;
+) ENGINE = InnoDB AUTO_INCREMENT = 232 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = COMPACT;
 
 -- ----------------------------
 -- Records of inventory
 -- ----------------------------
-INSERT INTO `inventory` VALUES (212, 31, 20, 10);
-INSERT INTO `inventory` VALUES (214, 31, 23, 10);
-INSERT INTO `inventory` VALUES (217, 31, 0, 0);
-INSERT INTO `inventory` VALUES (218, 31, 3, 1);
-INSERT INTO `inventory` VALUES (219, 31, 3, 1);
-INSERT INTO `inventory` VALUES (221, 31, 20, 10);
-INSERT INTO `inventory` VALUES (222, 31, 23, 10);
-INSERT INTO `inventory` VALUES (224, 31, 15, 5);
-INSERT INTO `inventory` VALUES (225, 31, 20, 10);
-INSERT INTO `inventory` VALUES (227, 31, 8, 5);
-INSERT INTO `inventory` VALUES (228, 31, 16, 10);
+INSERT INTO `inventory` VALUES (229, 31, 3, 1);
+INSERT INTO `inventory` VALUES (230, 31, 5, 1);
+INSERT INTO `inventory` VALUES (231, 31, 6, 4);
 
 -- ----------------------------
 -- Table structure for inventory_drop
@@ -309,7 +303,7 @@ CREATE TABLE `inventory_drop`  (
   `posy` float(20, 11) NULL DEFAULT NULL,
   `posz` float(20, 11) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 181 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 188 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of inventory_drop
@@ -330,6 +324,13 @@ INSERT INTO `inventory_drop` VALUES (177, 20, 5, 31, 1785.48999023438, -1899.660
 INSERT INTO `inventory_drop` VALUES (178, 12, 1, 31, 1796.83996582031, -1911.63000488281, 13.39000034332);
 INSERT INTO `inventory_drop` VALUES (179, 23, 1, 31, 1794.43005371094, -1895.91003417969, 13.39000034332);
 INSERT INTO `inventory_drop` VALUES (180, 16, 9, 31, -1514.57995605469, 747.83001708984, 7.17999982834);
+INSERT INTO `inventory_drop` VALUES (181, 23, 10, 31, 1402.42004394531, -1680.63000488281, 39.54000091553);
+INSERT INTO `inventory_drop` VALUES (182, 20, 10, 31, 1402.75000000000, -1679.78002929688, 39.54000091553);
+INSERT INTO `inventory_drop` VALUES (183, 0, 0, 31, 1402.39001464844, -1677.65002441406, 39.54000091553);
+INSERT INTO `inventory_drop` VALUES (184, 3, 1, 31, 1403.88000488281, -1676.10998535156, 39.54000091553);
+INSERT INTO `inventory_drop` VALUES (185, 15, 5, 31, 1403.42004394531, -1674.26000976562, 39.54000091553);
+INSERT INTO `inventory_drop` VALUES (186, 8, 5, 31, 1401.32995605469, -1673.71997070312, 39.54000091553);
+INSERT INTO `inventory_drop` VALUES (187, 16, 10, 31, 1402.43005371094, -1672.26000976562, 39.54000091553);
 
 -- ----------------------------
 -- Table structure for organization
@@ -339,11 +340,11 @@ CREATE TABLE `organization`  (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
   `leader` int(11) NULL DEFAULT NULL,
-  `birth` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
-  `logo` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `birth` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `logo` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `type` int(11) NULL DEFAULT -1,
-  `safe` int(11) NULL DEFAULT NULL,
-  `safe_dirty` int(11) NULL DEFAULT NULL,
+  `safe` int(11) NULL DEFAULT 0,
+  `safe_dirty` int(11) NULL DEFAULT 0,
   `rank1` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `rank2` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `rank3` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
@@ -354,23 +355,26 @@ CREATE TABLE `organization`  (
   `rank8` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `rank9` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `rank10` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `skin1` int(11) NULL DEFAULT NULL,
-  `skin2` int(11) NULL DEFAULT NULL,
-  `skin3` int(11) NULL DEFAULT NULL,
-  `skin4` int(11) NULL DEFAULT NULL,
-  `skin5` int(11) NULL DEFAULT NULL,
-  `skin6` int(11) NULL DEFAULT NULL,
-  `skin7` int(11) NULL DEFAULT NULL,
-  `skin8` int(11) NULL DEFAULT NULL,
-  `skin9` int(11) NULL DEFAULT NULL,
-  `skin10` int(11) NULL DEFAULT NULL,
+  `skin1` int(11) NULL DEFAULT 0,
+  `skin2` int(11) NULL DEFAULT 0,
+  `skin3` int(11) NULL DEFAULT 0,
+  `skin4` int(11) NULL DEFAULT 0,
+  `skin5` int(11) NULL DEFAULT 0,
+  `skin6` int(11) NULL DEFAULT 0,
+  `skin7` int(11) NULL DEFAULT 0,
+  `skin8` int(11) NULL DEFAULT 0,
+  `skin9` int(11) NULL DEFAULT 0,
+  `skin10` int(11) NULL DEFAULT 0,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = COMPACT;
+) ENGINE = InnoDB AUTO_INCREMENT = 6 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = COMPACT;
 
 -- ----------------------------
 -- Records of organization
 -- ----------------------------
 INSERT INTO `organization` VALUES (2, '2', 31, '29-5-2024', '29-5-2024', 0, 100000, 50000, 'Giam doc', 'Pho giam doc', 'Truong khoa', 'Pho khoa', 'Ke toan', 'Bac si', 'Dieu duong', 'Y ta', 'Thu ngan', 'Bao ve', 274, 275, 276, 308, 0, 0, 0, 0, 0, 0);
+INSERT INTO `organization` VALUES (3, '', 31, '0-0-0', NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `organization` VALUES (4, 'DumeM', 31, '0-0-0', NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `organization` VALUES (5, 'CC', 31, '0-0-0', NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 -- ----------------------------
 -- Table structure for organization_safe_gun
@@ -387,6 +391,36 @@ CREATE TABLE `organization_safe_gun`  (
 -- ----------------------------
 -- Records of organization_safe_gun
 -- ----------------------------
+
+-- ----------------------------
+-- Table structure for orgvehs
+-- ----------------------------
+DROP TABLE IF EXISTS `orgvehs`;
+CREATE TABLE `orgvehs`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `model` int(11) NULL DEFAULT NULL,
+  `orgid` int(11) NULL DEFAULT NULL,
+  `pos_x` float NOT NULL,
+  `pos_y` float NOT NULL,
+  `pos_z` float NOT NULL,
+  `pos_r` float NULL DEFAULT NULL,
+  `lock` int(11) NULL DEFAULT 0,
+  `paintjob` int(11) NULL DEFAULT 0,
+  `color1` int(11) NULL DEFAULT 0,
+  `color2` int(11) NULL DEFAULT 2,
+  `fuel` int(11) NULL DEFAULT 0,
+  `vw` int(11) NULL DEFAULT NULL,
+  `int` int(11) NULL DEFAULT NULL,
+  `health` int(11) NULL DEFAULT NULL,
+  `odo` int(11) NULL DEFAULT NULL,
+  `siren` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 8 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Records of orgvehs
+-- ----------------------------
+INSERT INTO `orgvehs` VALUES (7, 416, 2, 1800.79, -1896.51, 13.4045, 220.856, 0, 0, 1, 1, 100, 0, 0, NULL, NULL, '1');
 
 -- ----------------------------
 -- Table structure for players
@@ -436,19 +470,20 @@ CREATE TABLE `players`  (
   `Refer` varchar(11) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
   `Injured` int(11) NULL DEFAULT 0,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 53 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 54 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of players
 -- ----------------------------
-INSERT INTO `players` VALUES (31, 0, 'Khoi_Nguyenz', 'dep traii', 942100, 100, 0, 3, 111.41, -81.2433, 1.57812, 101, 0, 10, '\r3:5:37 6-14-2024', 1, 0, 0, 0, 1, 15, 11, 2008, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 80, 43900, 15000, 0, -1, 'NULL', 0);
+INSERT INTO `players` VALUES (31, 0, 'Khoi_Nguyenz', 'dep traii', 943100, 77, 100, 3, 1829.29, -1561.77, 13.5164, 221, 0, 10, '\r2:47:50 6-21-2024', 1, 0, 1, 0, 1, 15, 11, 2008, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 80, 42900, 15000, 0, -1, 'NULL', 0);
 INSERT INTO `players` VALUES (46, 0, 'Ngoc_Linh', 'Khong co thong tin', 1000, 100, 0, 299, 1192, -1292, 13, 180, 0, 0, '00:00:00 00-00-0000', 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 50, 0, 0, NULL, -1, NULL, 0);
 INSERT INTO `players` VALUES (47, 0, 'Hacker_Ne', 'Khong co thong tin', 1000, 100, 0, 299, 1192, -1292, 13, 180, 0, 0, '00:00:00 00-00-0000', 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 50, 0, 0, NULL, -1, NULL, 0);
 INSERT INTO `players` VALUES (48, 0, 'Hacker_Nedumem', 'dep traiidume m beo vcl ', 1000, 100, 0, 15, 1192, -1292, 13, 180, 0, 0, '00:00:00 00-00-0000', 1, 0, 0, 0, 1, 15, 11, 1998, -1, -1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 50, 0, 0, NULL, -1, NULL, 0);
 INSERT INTO `players` VALUES (49, 0, 'Hello_SSA', 'Khong co thong tin', 1000, 100, 0, 299, 1192, -1292, 13, 180, 0, 0, '00:00:00 00-00-0000', 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 50, 0, 0, NULL, -1, NULL, 0);
 INSERT INTO `players` VALUES (50, 0, 'CC_NE', 'Khong co thong tin', 1000, 100, 0, 299, 1192, -1292, 13, 180, 0, 0, '00:00:00 00-00-0000', 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 50, 0, 0, NULL, -1, NULL, 0);
-INSERT INTO `players` VALUES (51, 0, 'Khoi_Bi', 'Beo du vu cmm', 1000, 100, 0, 11, 1200.73, -1305.46, 13.3902, 313, 0, 0, '21:49:25 6-12-2024', 1, 0, 0, 0, 1, 12, 8, 1999, -1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, -1, 'NULL', 0);
+INSERT INTO `players` VALUES (51, 0, 'Khoi_Bi', 'Beo du vu cmm', 1000, 100, 0, 11, 1465.72, -1652.15, 14.5469, 61, 0, 0, '1:10:54 6-17-2024', 1, 0, 0, 0, 1, 12, 8, 1999, -1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, -1, 'NULL', 0);
 INSERT INTO `players` VALUES (52, 0, 'Hack_Monkey', 'dep traiiDume SSA hay vclll', 1000, 100, 0, 5, 1192, -1292, 13, 180, 0, 0, '00:00:00 00-00-0000', 1, 0, 0, 0, 1, 15, 11, 1992, -1, -1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 50, 0, 0, NULL, -1, NULL, 0);
+INSERT INTO `players` VALUES (53, 0, 'Khanh_Nguyen', '', 1000, 100, 0, 0, 1192, -1292, 13, 180, 0, 0, '00:00:00 00-00-0000', 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 50, 0, 0, NULL, -1, NULL, 0);
 
 -- ----------------------------
 -- Table structure for settings

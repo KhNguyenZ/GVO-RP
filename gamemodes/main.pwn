@@ -23,8 +23,8 @@
 
 #define  			MYSQL_HOST				"localhost"
 #define  			MYSQL_USER				"root"
-#define  			MYSQL_PASS				"123456" //123123
-#define  			MYSQL_DB				"ssa" //ssa
+#define  			MYSQL_PASS				"12346789" //123123
+#define  			MYSQL_DB				"gvo" //ssa
 
 
 new SERVER_TEST = 1; // 1: Server test ( bỏ qua login và nhiều anti khác) | 0: Mở server bình thường 
@@ -107,4 +107,21 @@ public OnGameModeExit()
 	for(new i; i < MAX_ORG; i++) SaveOrg(i);
 	mysql_close(Handle());
 	return 1;
+}
+
+
+public OnQueryError(errorid, const error[], const callback[], const query[], MySQL:handle)
+{
+    printf("[MySQL: OnQueryError (%d, %s, %s)]: Query: %s.", errorid, error, callback, query);
+    switch(errorid)
+    {
+        case CR_COMMAND_OUT_OF_SYNC: {
+            printf("[MySQL: Error:: Callback; %s]: Commands Out Of Sync For (Query: %s).", callback, query);
+        }
+        case ER_UNKNOWN_TABLE: printf("[MySQL: Error:: Callback; %s]: Unknown table '%s' (Query: %s).", callback, error, query);
+        case ER_SYNTAX_ERROR: printf("[MySQL: Error:: Callback; %s]: Something is wrong in your syntax (Query: %s).", callback, query);
+        // case CR_SERVER_GONE_ERROR, CR_SERVER_LOST, CR_SERVER_LOST_EXTENDED: mysql_reconnect();
+        //case 2003: Can't connect to MySQL server on 
+    }
+    return 1;
 }

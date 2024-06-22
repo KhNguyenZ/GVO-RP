@@ -76,7 +76,7 @@ enum PlayerVehicle_Data {
     pv_int,
     pv_spawned,
     pv_vehid,
-    pv_health,
+    Float:pv_health,
     pv_odo
 }
 

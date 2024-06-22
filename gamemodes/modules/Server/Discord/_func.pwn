@@ -135,9 +135,9 @@ public OnPlayerAuthCode(fdcid[], fauth_code){
     Bước 2: Sau khi đã hoàn tất bước chọn nhân vật , hãy sử dụng lệnh /verify [Auth_Code]\n\
     Auth_Code: là mã bạn đã nhận được ở phía trên nhé!\n\
     \n\
-    Chúc bạn chơi game vui vẻ tại `SSA-RP` ~~~~"
+    Chúc bạn chơi game vui vẻ tại `GVO` ~~~~"
     );
-    DISCORD_WARNING_MSG(UserDM,"Nếu nhân vật này không phải của bạn nhưng vẫn cố gắng xác thực , bạn sẽ bị cấm vĩnh viễn tại `SSA-RP`");
+    DISCORD_WARNING_MSG(UserDM,"Nếu nhân vật này không phải của bạn nhưng vẫn cố gắng xác thực , bạn sẽ bị cấm vĩnh viễn tại `GVO`");
     return 1;
 }
 
@@ -243,6 +243,6 @@ public OnPlayerCreateOTP(OTP)
     new otp_msg[1280];
     format(otp_msg, sizeof(otp_msg), "Mã OTP của bạn là: %d \nVui lòng không chia sẻ mã này cho bất kì ai , kể cả Admin nhằm đảm bảo toàn bộ tài sản của bạn !!", OTP);
     DISCORD_SendEmbedMsg(OTP_DM, "Mã OTP bảo mật tài khoản", otp_msg);
-    DISCORD_MSG(OTP_DM,"Chúc bạn chơi game vui vẻ tại SSA-RP");
+    DISCORD_MSG(OTP_DM,"Chúc bạn chơi game vui vẻ tại GVO");
     return 1;
 }

@@ -141,7 +141,7 @@ connectForm_Show(const playerid, const _case)
     }
     else
     {
-        ShowPlayerDialog(playerid, dialog_Register, 3, "Dang ky", "{ffffff}Chao mung den voi may chu {3366ff}SSA-RP{ffffff}\n\
+        ShowPlayerDialog(playerid, dialog_Register, 3, "Dang ky", "{ffffff}Chao mung den voi may chu {3366ff}GVO{ffffff}\n\
 			Vui long nhap mat khau dang ky.", "Dang ky", "Thoat");
     }
 }

@@ -2568,3 +2568,27 @@
 [06/21/24 13:22:10] [ERROR] cache_get_value_name_int: value 'NULL' is not a number (./modules/Server/Organization/_callback.pwn:29)
 [06/21/24 13:22:10] [ERROR] cache_get_value_name_int: value 'NULL' is not a number (./modules/Server/Organization/_callback.pwn:29)
 [06/21/24 13:23:12] [ERROR] error #1366 while executing query "INSERT INTO `orgvehs` SET `orgid`  = '411', `model`  = '1155626324', `pos_x`= '-1901.703247', `pos_y` = '13.401503', `pos_z`= '274.076477', `pos_r`= '0.000000', `lock`  = '0', `paintjob`  = '1', `color1`  = '1', `color2`  = '100', `fuel` = '0', `vw` = '1', `siren` = '0',`int`  = ''": Incorrect integer value: '' for column 'int' at row 1 (./modules/Server/Organization/Vehicles/_func.pwn:92 -> ./modules/Server/Organization/Vehicles/cmd.pwn:7)
+[06/22/24 09:13:06] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1045 'Access denied for user 'root'@'localhost' (using password: YES)'
+[06/22/24 09:13:06] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1045 'Access denied for user 'root'@'localhost' (using password: YES)'
+[06/22/24 09:13:06] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1045 'Access denied for user 'root'@'localhost' (using password: YES)'
+[06/22/24 09:13:06] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1045 'Access denied for user 'root'@'localhost' (using password: YES)'
+[06/22/24 09:13:25] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1045 'Access denied for user 'root'@'localhost' (using password: YES)'
+[06/22/24 09:13:25] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1045 'Access denied for user 'root'@'localhost' (using password: YES)'
+[06/22/24 09:13:25] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1045 'Access denied for user 'root'@'localhost' (using password: YES)'
+[06/22/24 09:13:25] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #1045 'Access denied for user 'root'@'localhost' (using password: YES)'
+[06/22/24 09:14:05] [ERROR] error #1146 while executing query "SELECT * FROM `orgvehs` WHERE `orgid` = '2'": Table 'ssarp.orgvehs' doesn't exist (./modules/Server/Organization/Vehicles/_func.pwn:6 -> ./modules/Server/Organization/_callback.pwn:37)
+[06/22/24 09:15:35] [ERROR] cache_get_value_name_int: value 'NULL' is not a number (./modules/Players/multi-account/account.pwn:205 -> ./modules/Players/multi-account/account.pwn:238 -> ./modules/Main/_callback.pwn:68)
+[06/22/24 09:15:38] [ERROR] cache_get_value_name_int: field 'OTP' not found (./modules/Players/characters/Core/sql.pwn:76)
+[06/22/24 09:17:15] [ERROR] error #1146 while executing query "SELECT * FROM `orgvehs` WHERE `orgid` = '2'": Table 'ssarp.orgvehs' doesn't exist (./modules/Server/Organization/Vehicles/_func.pwn:6 -> ./modules/Server/Organization/_callback.pwn:37)
+[06/22/24 09:17:54] [ERROR] cache_get_value_name_int: value 'NULL' is not a number (./modules/Players/multi-account/account.pwn:205 -> ./modules/Players/multi-account/account.pwn:238 -> ./modules/Main/_callback.pwn:68)
+[06/22/24 09:17:57] [ERROR] cache_get_value_name_int: value ':15:35 6-22-2024' is not a number (./modules/Players/characters/Core/sql.pwn:66)
+[06/22/24 09:17:57] [ERROR] cache_get_value_name_int: field 'OTP' not found (./modules/Players/characters/Core/sql.pwn:76)
+[06/22/24 09:19:08] [ERROR] cache_get_value_name_int: field 'OTP' not found (./modules/Players/characters/Core/sql.pwn:76)
+[06/22/24 09:23:18] [ERROR] error #1146 while executing query "SELECT * FROM `orgvehs` WHERE `orgid` = '2'": Table 'ssarp.orgvehs' doesn't exist (./modules/Server/Organization/Vehicles/_func.pwn:6 -> ./modules/Server/Organization/_callback.pwn:37)
+[06/22/24 09:23:40] [ERROR] cache_get_value_name_int: value '	:18:59 6-22-2024' is not a number (./modules/Players/characters/Core/sql.pwn:66)
+[06/22/24 09:23:40] [ERROR] cache_get_value_name_int: field 'OTP' not found (./modules/Players/characters/Core/sql.pwn:76)
+[06/22/24 09:25:38] [ERROR] error #1146 while executing query "SELECT * FROM `orgvehs` WHERE `orgid` = '2'": Table 'ssarp.orgvehs' doesn't exist (./modules/Server/Organization/Vehicles/_func.pwn:6 -> ./modules/Server/Organization/_callback.pwn:37)
+[06/22/24 09:25:58] [ERROR] cache_get_value_name_int: field 'OTP' not found (./modules/Players/characters/Core/sql.pwn:76)
+[06/22/24 09:29:01] [ERROR] error #1146 while executing query "SELECT * FROM `orgvehs` WHERE `orgid` = '2'": Table 'ssarp.orgvehs' doesn't exist (./modules/Server/Organization/Vehicles/_func.pwn:6 -> ./modules/Server/Organization/_callback.pwn:37)
+[06/22/24 09:29:32] [ERROR] cache_get_value_name_int: value '	:25:53 6-22-2024' is not a number (./modules/Players/characters/Core/sql.pwn:66)
+[06/22/24 09:29:32] [ERROR] cache_get_value_name_int: field 'OTP' not found (./modules/Players/characters/Core/sql.pwn:76)

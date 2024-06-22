@@ -95,6 +95,16 @@ func:MenuBankClick(playerid, PlayerText:playertextid)
         DestroyPageTransferBanking(playerid);
         CreateMainBanking(playerid);
     }
+    if(playertextid == BackToTransaction[playerid][1])
+    {
+        SetPVarInt(playerid, #Open_Page_, 1);
+        DestroyPageMainBanking(playerid);
+        DestroyPageTransactionBanking(playerid);
+        DestroyPageWithdrawsBanking(playerid);
+        DestroyPageDepositBanking(playerid);
+        DestroyPageTransferBanking(playerid);
+        CreatePageTransactionBanking(playerid);
+    }
     if(playertextid == MenuBankPTD[playerid][3]) // withdraws
     {
         SetPVarInt(playerid, #Open_Page_, 2);

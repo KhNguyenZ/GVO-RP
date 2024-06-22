@@ -1,6 +1,7 @@
 new PlayerText:
 MainBankPTD[MAX_PLAYERS][15];
 new PlayerText:MenuBankPTD[MAX_PLAYERS][6];
+new PlayerText:BackToTransaction[MAX_PLAYERS][2];
 new PlayerText:WithdrawsBankPTD[MAX_PLAYERS][6]; // 6-10
 new PlayerText:DepositBankPTD[MAX_PLAYERS][6]; // 6-10
 new PlayerText:TransferBankPTD[MAX_PLAYERS][7]; // 5-11
@@ -11,10 +12,20 @@ new PlayerText:TransferBankPTD[MAX_PLAYERS][7]; // 5-11
 #define      IsOpenDepositBanking(%0)        GetPVarInt(%0, #Open_Bank_Deposit)
 #define      IsOpenTransferBanking(%0)        GetPVarInt(%0, #Open_Bank_Transfer)
 
-
-func:CreateMainBankingUI(playerid)
+hook OnPlayerUpdate(playerid)
 {
     new Home_msg[1280];
+    format(Home_msg, 1280, "%s$", FormatMoney(Character[playerid][char_Cash]));
+    PlayerTextDrawSetString(playerid, MainBankPTD[playerid][12], Home_msg);
+    format(Home_msg, 1280, "%s$", FormatMoney(Character[playerid][char_Bank]));
+    PlayerTextDrawSetString(playerid, MainBankPTD[playerid][13], Home_msg);
+    format(Home_msg, 1280, "%s", player_get_name(playerid));
+    PlayerTextDrawSetString(playerid, MainBankPTD[playerid][14], Home_msg);
+    return 1;
+}
+func:CreateMainBankingUI(playerid)
+{
+    
     
     MainBankPTD[playerid][0] = CreatePlayerTextDraw(playerid, 83.000000, 60.000000, "mdl-2020:main_bg");
     PlayerTextDrawFont(playerid, MainBankPTD[playerid][0], 4);
@@ -198,9 +209,7 @@ func:CreateMainBankingUI(playerid)
     PlayerTextDrawSetProportional(playerid, MainBankPTD[playerid][12], 1);
     PlayerTextDrawSetSelectable(playerid, MainBankPTD[playerid][12], 0);
 
-    format(Home_msg, 1280, "%s$", FormatMoney(Character[playerid][char_Cash]));
-    PlayerTextDrawSetString(playerid, MainBankPTD[playerid][12], Home_msg);
-
+    
     MainBankPTD[playerid][13] = CreatePlayerTextDraw(playerid, 252.000000, 276.000000, "100.000.000$");
     PlayerTextDrawFont(playerid, MainBankPTD[playerid][13], 1);
     PlayerTextDrawLetterSize(playerid, MainBankPTD[playerid][13], 0.266665, 1.599998);
@@ -215,8 +224,7 @@ func:CreateMainBankingUI(playerid)
     PlayerTextDrawSetProportional(playerid, MainBankPTD[playerid][13], 1);
     PlayerTextDrawSetSelectable(playerid, MainBankPTD[playerid][13], 0);
 
-    format(Home_msg, 1280, "%s$", FormatMoney(Character[playerid][char_Bank]));
-    PlayerTextDrawSetString(playerid, MainBankPTD[playerid][13], Home_msg);
+    
 
 
     MainBankPTD[playerid][14] = CreatePlayerTextDraw(playerid, 164.000000, 166.000000, "Charles_Walter");
@@ -232,8 +240,7 @@ func:CreateMainBankingUI(playerid)
     PlayerTextDrawUseBox(playerid, MainBankPTD[playerid][14], 0);
     PlayerTextDrawSetProportional(playerid, MainBankPTD[playerid][14], 1);
     PlayerTextDrawSetSelectable(playerid, MainBankPTD[playerid][14], 0);
-    format(Home_msg, 1280, "%s", player_get_name(playerid));
-    PlayerTextDrawSetString(playerid, MainBankPTD[playerid][14], Home_msg);
+    
 
     return 1;
 }
@@ -357,19 +364,19 @@ func:CreatePageWithdrawsBankingUI(playerid)
     PlayerTextDrawSetProportional(playerid, WithdrawsBankPTD[playerid][1], 1);
     PlayerTextDrawSetSelectable(playerid, WithdrawsBankPTD[playerid][1], 0);
 
-    MenuBankPTD[playerid][2] = CreatePlayerTextDraw(playerid, 242.000000, 165.000000, "mdl-2021:back");
-    PlayerTextDrawFont(playerid, MenuBankPTD[playerid][2], 4);
-    PlayerTextDrawLetterSize(playerid, MenuBankPTD[playerid][2], 0.600000, 2.000000);
-    PlayerTextDrawTextSize(playerid, MenuBankPTD[playerid][2], 42.000000, 20.500000);
-    PlayerTextDrawSetOutline(playerid, MenuBankPTD[playerid][2], 1);
-    PlayerTextDrawSetShadow(playerid, MenuBankPTD[playerid][2], 0);
-    PlayerTextDrawAlignment(playerid, MenuBankPTD[playerid][2], 1);
-    PlayerTextDrawColor(playerid, MenuBankPTD[playerid][2], -1);
-    PlayerTextDrawBackgroundColor(playerid, MenuBankPTD[playerid][2], 255);
-    PlayerTextDrawBoxColor(playerid, MenuBankPTD[playerid][2], 50);
-    PlayerTextDrawUseBox(playerid, MenuBankPTD[playerid][2], 1);
-    PlayerTextDrawSetProportional(playerid, MenuBankPTD[playerid][2], 1);
-    PlayerTextDrawSetSelectable(playerid, MenuBankPTD[playerid][2], 1);
+    BackToTransaction[playerid][1] = CreatePlayerTextDraw(playerid, 242.000000, 165.000000, "mdl-2021:back");
+    PlayerTextDrawFont(playerid, BackToTransaction[playerid][1], 4);
+    PlayerTextDrawLetterSize(playerid, BackToTransaction[playerid][1], 0.600000, 2.000000);
+    PlayerTextDrawTextSize(playerid, BackToTransaction[playerid][1], 42.000000, 20.500000);
+    PlayerTextDrawSetOutline(playerid, BackToTransaction[playerid][1], 1);
+    PlayerTextDrawSetShadow(playerid, BackToTransaction[playerid][1], 0);
+    PlayerTextDrawAlignment(playerid, BackToTransaction[playerid][1], 1);
+    PlayerTextDrawColor(playerid, BackToTransaction[playerid][1], -1);
+    PlayerTextDrawBackgroundColor(playerid, BackToTransaction[playerid][1], 255);
+    PlayerTextDrawBoxColor(playerid, BackToTransaction[playerid][1], 50);
+    PlayerTextDrawUseBox(playerid, BackToTransaction[playerid][1], 1);
+    PlayerTextDrawSetProportional(playerid, BackToTransaction[playerid][1], 1);
+    PlayerTextDrawSetSelectable(playerid, BackToTransaction[playerid][1], 1);
 
     WithdrawsBankPTD[playerid][3] = CreatePlayerTextDraw(playerid, 282.000000, 262.000000, "mdl-2021:btn_withdraws");
     PlayerTextDrawFont(playerid, WithdrawsBankPTD[playerid][3], 4);
@@ -447,19 +454,19 @@ func:CreatePageDepositBankingUI(playerid)
     PlayerTextDrawSetProportional(playerid, DepositBankPTD[playerid][1], 1);
     PlayerTextDrawSetSelectable(playerid, DepositBankPTD[playerid][1], 0);
 
-    MenuBankPTD[playerid][2] = CreatePlayerTextDraw(playerid, 242.000000, 165.000000, "mdl-2021:back");
-    PlayerTextDrawFont(playerid, MenuBankPTD[playerid][2], 4);
-    PlayerTextDrawLetterSize(playerid, MenuBankPTD[playerid][2], 0.600000, 2.000000);
-    PlayerTextDrawTextSize(playerid, MenuBankPTD[playerid][2], 42.000000, 20.500000);
-    PlayerTextDrawSetOutline(playerid, MenuBankPTD[playerid][2], 1);
-    PlayerTextDrawSetShadow(playerid, MenuBankPTD[playerid][2], 0);
-    PlayerTextDrawAlignment(playerid, MenuBankPTD[playerid][2], 1);
-    PlayerTextDrawColor(playerid, MenuBankPTD[playerid][2], -1);
-    PlayerTextDrawBackgroundColor(playerid, MenuBankPTD[playerid][2], 255);
-    PlayerTextDrawBoxColor(playerid, MenuBankPTD[playerid][2], 50);
-    PlayerTextDrawUseBox(playerid, MenuBankPTD[playerid][2], 1);
-    PlayerTextDrawSetProportional(playerid, MenuBankPTD[playerid][2], 1);
-    PlayerTextDrawSetSelectable(playerid, MenuBankPTD[playerid][2], 1);
+    BackToTransaction[playerid][1] = CreatePlayerTextDraw(playerid, 242.000000, 165.000000, "mdl-2021:back");
+    PlayerTextDrawFont(playerid, BackToTransaction[playerid][1], 4);
+    PlayerTextDrawLetterSize(playerid, BackToTransaction[playerid][1], 0.600000, 2.000000);
+    PlayerTextDrawTextSize(playerid, BackToTransaction[playerid][1], 42.000000, 20.500000);
+    PlayerTextDrawSetOutline(playerid, BackToTransaction[playerid][1], 1);
+    PlayerTextDrawSetShadow(playerid, BackToTransaction[playerid][1], 0);
+    PlayerTextDrawAlignment(playerid, BackToTransaction[playerid][1], 1);
+    PlayerTextDrawColor(playerid, BackToTransaction[playerid][1], -1);
+    PlayerTextDrawBackgroundColor(playerid, BackToTransaction[playerid][1], 255);
+    PlayerTextDrawBoxColor(playerid, BackToTransaction[playerid][1], 50);
+    PlayerTextDrawUseBox(playerid, BackToTransaction[playerid][1], 1);
+    PlayerTextDrawSetProportional(playerid, BackToTransaction[playerid][1], 1);
+    PlayerTextDrawSetSelectable(playerid, BackToTransaction[playerid][1], 1);
 
     DepositBankPTD[playerid][3] = CreatePlayerTextDraw(playerid, 282.000000, 262.000000, "mdl-2021:btn_deposit");
     PlayerTextDrawFont(playerid, DepositBankPTD[playerid][3], 4);
@@ -535,19 +542,19 @@ func:CreatePageTransferBankingUI(playerid)
     PlayerTextDrawSetProportional(playerid, TransferBankPTD[playerid][1], 1);
     PlayerTextDrawSetSelectable(playerid, TransferBankPTD[playerid][1], 0);
 
-    MenuBankPTD[playerid][2] = CreatePlayerTextDraw(playerid, 242.000000, 165.000000, "mdl-2021:back");
-    PlayerTextDrawFont(playerid, MenuBankPTD[playerid][2], 4);
-    PlayerTextDrawLetterSize(playerid, MenuBankPTD[playerid][2], 0.600000, 2.000000);
-    PlayerTextDrawTextSize(playerid, MenuBankPTD[playerid][2], 42.000000, 20.500000);
-    PlayerTextDrawSetOutline(playerid, MenuBankPTD[playerid][2], 1);
-    PlayerTextDrawSetShadow(playerid, MenuBankPTD[playerid][2], 0);
-    PlayerTextDrawAlignment(playerid, MenuBankPTD[playerid][2], 1);
-    PlayerTextDrawColor(playerid, MenuBankPTD[playerid][2], -1);
-    PlayerTextDrawBackgroundColor(playerid, MenuBankPTD[playerid][2], 255);
-    PlayerTextDrawBoxColor(playerid, MenuBankPTD[playerid][2], 50);
-    PlayerTextDrawUseBox(playerid, MenuBankPTD[playerid][2], 1);
-    PlayerTextDrawSetProportional(playerid, MenuBankPTD[playerid][2], 1);
-    PlayerTextDrawSetSelectable(playerid, MenuBankPTD[playerid][2], 1);
+    BackToTransaction[playerid][1] = CreatePlayerTextDraw(playerid, 242.000000, 165.000000, "mdl-2021:back");
+    PlayerTextDrawFont(playerid, BackToTransaction[playerid][1], 4);
+    PlayerTextDrawLetterSize(playerid, BackToTransaction[playerid][1], 0.600000, 2.000000);
+    PlayerTextDrawTextSize(playerid, BackToTransaction[playerid][1], 42.000000, 20.500000);
+    PlayerTextDrawSetOutline(playerid, BackToTransaction[playerid][1], 1);
+    PlayerTextDrawSetShadow(playerid, BackToTransaction[playerid][1], 0);
+    PlayerTextDrawAlignment(playerid, BackToTransaction[playerid][1], 1);
+    PlayerTextDrawColor(playerid, BackToTransaction[playerid][1], -1);
+    PlayerTextDrawBackgroundColor(playerid, BackToTransaction[playerid][1], 255);
+    PlayerTextDrawBoxColor(playerid, BackToTransaction[playerid][1], 50);
+    PlayerTextDrawUseBox(playerid, BackToTransaction[playerid][1], 1);
+    PlayerTextDrawSetProportional(playerid, BackToTransaction[playerid][1], 1);
+    PlayerTextDrawSetSelectable(playerid, BackToTransaction[playerid][1], 1);
 
     TransferBankPTD[playerid][3] = CreatePlayerTextDraw(playerid, 282.000000, 262.000000, "mdl-2021:btn_transfer");
     PlayerTextDrawFont(playerid, TransferBankPTD[playerid][3], 4);
@@ -633,23 +640,23 @@ func:CreatePageTransactionBanking(playerid)
 
 func:CreatePageWithdrawsBanking(playerid)
 {
-    SetPVarInt(playerid, #Open_Bank_Withdraws, 1);
+    SetPVarInt(playerid, #Open_Bank_Withdraws, 2);
     for (new i = 0; i < 6; i++) PlayerTextDrawShow(playerid, WithdrawsBankPTD[playerid][i]);
-    PlayerTextDrawShow(playerid, MenuBankPTD[playerid][2]);
+    PlayerTextDrawShow(playerid, BackToTransaction[playerid][1]);
 }
 
 func:CreatePageDepositBanking(playerid)
 {
-    SetPVarInt(playerid, #Open_Bank_Deposit, 1);
+    SetPVarInt(playerid, #Open_Bank_Deposit, 3);
     for (new i = 0; i < 6; i++) PlayerTextDrawShow(playerid, DepositBankPTD[playerid][i]);
-    PlayerTextDrawShow(playerid, MenuBankPTD[playerid][2]);
+    PlayerTextDrawShow(playerid, BackToTransaction[playerid][1]);
 }
 
 func:CreatePageTransferBanking(playerid)
 {
-    SetPVarInt(playerid, #Open_Bank_Transfer, 1);
+    SetPVarInt(playerid, #Open_Bank_Transfer, 4);
     for (new i = 0; i < 7; i++) PlayerTextDrawShow(playerid, TransferBankPTD[playerid][i]);
-    PlayerTextDrawShow(playerid, MenuBankPTD[playerid][2]);
+    PlayerTextDrawShow(playerid, BackToTransaction[playerid][1]);
 }
 func:DestroyAllBanking(playerid)
 {
@@ -675,14 +682,14 @@ func:DestroyPageWithdrawsBanking(playerid)
 {
     SetPVarInt(playerid, #Open_Bank_Withdraws, 0);
     for (new i = 0; i < 6; i++) PlayerTextDrawHide(playerid, WithdrawsBankPTD[playerid][i]);
-    PlayerTextDrawHide(playerid, MenuBankPTD[playerid][2]);
+    PlayerTextDrawHide(playerid, BackToTransaction[playerid][1]);
     return 1;
 }
 func:DestroyPageDepositBanking(playerid)
 {
     SetPVarInt(playerid, #Open_Bank_Deposit, 0);
     for (new i = 0; i < 6; i++) PlayerTextDrawHide(playerid, DepositBankPTD[playerid][i]);
-    PlayerTextDrawHide(playerid, MenuBankPTD[playerid][2]);
+    PlayerTextDrawHide(playerid, BackToTransaction[playerid][1]);
     return 1;
 }
 func:OpenBanking(playerid)
@@ -722,13 +729,22 @@ func:DestroyPageTransferBanking(playerid)
 {
     SetPVarInt(playerid, #Open_Bank_Transfer, 0);
     for (new i = 0; i < 7; i++) PlayerTextDrawHide(playerid, TransferBankPTD[playerid][i]);
-    PlayerTextDrawHide(playerid, MenuBankPTD[playerid][2]);
+    PlayerTextDrawHide(playerid, BackToTransaction[playerid][1]);
     return 1;
 }
 
 CMD:banking(playerid, params[])
 {
-    OpenBanking(playerid);
-    SelectTextDraw(playerid, 0xFF00FF);
+    if(Character[playerid][char_OTP] != EOS)
+    {
+        OpenBanking(playerid);
+        SelectTextDraw(playerid, 0xFF00FF);
+        
+    }
+    else 
+    {
+        SendClientMessage(playerid, COLOR_WHITE, "Ban chua cap nhat ma OTP [ {ff0000}/otp{ffffff} ] de cap nhat");    
+    }
+    
     return 1;
 }

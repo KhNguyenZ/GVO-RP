@@ -34,7 +34,10 @@ stock GetNeraestVehicle(playerid, Float:radius)
     }
     return vehicleid;
 } 
-
+stock IsPlayerValidFixer(playerid)
+{
+    return Character[playerid][char_OrgID] == MECHANIC_JOB_ID;
+}
 PlayAnim(playerid, animlib[], animname[], Float:fDelta, loop, lockx, locky, freeze, time, forcesync)
 {
     ApplyAnimation(playerid, animlib, animname, fDelta, loop, lockx, locky, freeze, time, forcesync);

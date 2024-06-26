@@ -174,18 +174,6 @@ func:FixEngine(playerid)
     SetVehicleHealth(vehicleid, 1000.0);
     Update3DTextLabelText(vtext[5], 0xFF0000FF, "{ffffff}[ {33ff00}Engine {ffffff}]");
     SendClientMessage(playerid, -1, "[Mechanic] | Ban dang sua {ffffff}[ {33ff00}Engine {ffffff}]");
-    if(700.0 < health)
-    {
-        Bill[playerid][bPrice] = Bill[playerid][bPrice] + HEAVY_ENGINE;
-    }
-    else if(300.0 < health < 700.0)
-    {
-        Bill[playerid][bPrice] = Bill[playerid][bPrice] + MEDIUM_ENGINE;
-    }
-    else if(health < 300.0)
-    {
-        Bill[playerid][bPrice] = Bill[playerid][bPrice] + BAD_ENGINE;
-    }
     return 1;
 }
 func:FixLeftFrontTire(playerid)
@@ -202,7 +190,6 @@ func:FixLeftFrontTire(playerid)
     SetVehicleTires(vehicleid,0,front_right,rear_left,rear_right);
     Update3DTextLabelText(vtext[1], 0xFF0000FF, "{ffffff}[ {33ff00}Left Front Tire {ffffff}]");
     SendClientMessage(playerid, -1, "[Mechanic] | Ban dang sua {ffffff}[ {33ff00}Left Front Tire {ffffff}]");
-    Bill[playerid][bPrice] = Bill[playerid][bPrice] + TIRES;
     return 1;
 }
 func:FixRightFrontTire(playerid)
@@ -219,7 +206,6 @@ func:FixRightFrontTire(playerid)
     SetVehicleTires(vehicleid,front_left,0,rear_left,rear_right);
     Update3DTextLabelText(vtext[2], 0xFF0000FF, "{ffffff}[ {33ff00}Right Front Tire {ffffff}]");
     SendClientMessage(playerid, -1, "[Mechanic] | Ban dang sua {ffffff}[ {33ff00}Right Front Tire {ffffff}]");    
-    Bill[playerid][bPrice] = Bill[playerid][bPrice] + TIRES;
     return 1;
 }
 func:FixLeftRearTire(playerid)
@@ -236,7 +222,6 @@ func:FixLeftRearTire(playerid)
     SetVehicleTires(vehicleid,front_left,front_right,0,rear_right);
     Update3DTextLabelText(vtext[3], 0xFF0000FF, "{ffffff}[ {33ff00}Left Rear Tire {ffffff}]");
     SendClientMessage(playerid, -1, "[Mechanic] | Ban dang sua {ffffff}[ {33ff00}Left Rear Tire {ffffff}]");
-    Bill[playerid][bPrice] = Bill[playerid][bPrice] + TIRES;
     return 1;
 }
 func:FixRightRearTire(playerid)
@@ -253,7 +238,6 @@ func:FixRightRearTire(playerid)
     SetVehicleTires(vehicleid,front_left,front_right,rear_left,0);
     Update3DTextLabelText(vtext[4], 0xFF0000FF, "{ffffff}[ {33ff00}Right Rear Tire {ffffff}]");
     SendClientMessage(playerid, -1, "[Mechanic] | Ban dang sua {ffffff}[ {33ff00}Right Rear Tire {ffffff}]");
-    Bill[playerid][bPrice] = Bill[playerid][bPrice] + TIRES;
     return 1;
 }
 

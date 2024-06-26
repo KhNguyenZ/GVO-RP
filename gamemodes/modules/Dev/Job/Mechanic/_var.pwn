@@ -3,10 +3,7 @@
 #define PRESSED(%0) \
 	(((newkeys & (%0)) == (%0)) && ((oldkeys & (%0)) != (%0)))
 
-#define         HEAVY_ENGINE                1000
-#define         MEDIUM_ENGINE               2000
-#define         BAD_ENGINE                  3000
-#define         TIRES                       5000
+#define         MECHANIC_JOB_ID         2142
 
 new Text3D:vtext[MAX_VEHICLE_PART];
 new 
@@ -18,10 +15,10 @@ new
     alarm, 
     objective;
 
-enum vBill
+enum DongTienMechanic
 {
     bId,
     bPlayerId,
-    bPrice
+    bText
 }
-new Bill[MAX_PLAYERS][vBill];
+new DongTien[MAX_PLAYERS][DongTienMechanic];

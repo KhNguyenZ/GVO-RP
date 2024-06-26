@@ -1,16 +1,19 @@
 #include <YSI_Coding\y_hooks>
 
 CMD:placevehicle(playerid){
-    PlaceVehicle(playerid);
+    if(IsPlayerValidFixer(playerid))
+    {
+        PlaceVehicle(playerid);
+    }
     return 1;
 }
 
-CMD:vdame(playerid, params[])
-{
-    new vehicleid = GetPlayerVehicleID(playerid);
-    UpdateVehicleDamageStatus(vehicleid, panels, doors, lights, 15);
-    return 1;
-}
+// CMD:vdame(playerid, params[])
+// {
+//     new vehicleid = GetPlayerVehicleID(playerid);
+//     UpdateVehicleDamageStatus(vehicleid, panels, doors, lights, 15);
+//     return 1;
+// }
 CMD:vstatus(playerid){
     new 
     vehicleid = GetPlayerVehicleID(playerid),
@@ -32,7 +35,7 @@ CMD:fixvehicle(playerid){
     rear_left = tires >> 2 & 1,
     front_left = tires >> 3 & 1,
     Float:health;
-    if (GetPVarInt(playerid, "placevehicle") == 1)
+    if (GetPVarInt(playerid, "placevehicle") == 1 && IsPlayerValidFixer(playerid))
     {
         if(IsPlayerNearVehiclePart(playerid, vehicleid, VEH_PART_HOOD, 0.5, 0))
         {

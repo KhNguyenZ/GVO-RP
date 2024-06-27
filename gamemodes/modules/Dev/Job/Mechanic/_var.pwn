@@ -1,9 +1,14 @@
-#define MAX_VEHICLE_PART 100
+#define     MAX_VEHICLE_PART    100
+#define     DIALOG_MECHANIC     1000
+#define     DIALOG_IRON     2000
+#define     DIALOG_RUBBER       3000
+#define     DIALOG_PLASTIC      4000
+#define     MECHANIC_ITEMS      1000
 // PRESSED(keys)
 #define PRESSED(%0) \
 	(((newkeys & (%0)) == (%0)) && ((oldkeys & (%0)) != (%0)))
 
-#define         MECHANIC_JOB_ID         2142
+#define         MECHANIC_JOB_ID         4
 
 new Text3D:vtext[MAX_VEHICLE_PART];
 new 
@@ -15,10 +20,10 @@ new
     alarm, 
     objective;
 
-enum DongTienMechanic
+enum mInfo
 {
-    bId,
-    bPlayerId,
-    bText
+    mId,
+    mName,
+    mValue
 }
-new DongTien[MAX_PLAYERS][DongTienMechanic];
+new Mechanic[MECHANIC_ITEMS][mInfo];

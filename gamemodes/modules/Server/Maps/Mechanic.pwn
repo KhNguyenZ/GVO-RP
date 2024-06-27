@@ -16,9 +16,9 @@ hook OnGameModeInit()
 	Create3DTextLabel("/placevehicle", COLOR_WHITE, 1796.4661,-1692.3882,14.0940, 15.0, 0);
 	Create3DTextLabel("/placevehicle", COLOR_WHITE, 1803.5209,-1692.2703,13.5663, 15.0, 0);
 	Create3DTextLabel("/placevehicle", COLOR_WHITE, 1807.7323,-1692.1379,13.5663, 15.0, 0);
-	Create3DTextLabel("[{33ff00}Mechanic{ffffff}]\nNhan {33ff00}Y{ffffff}\n de mo kho vat lieu", COLOR_WHITE, 1770.8954,-1689.1117,13.5253, 15.0, 0);
-	Create3DTextLabel("[{33ff00}Mechanic{ffffff}]\nNhan {33ff00}Y{ffffff}\n de thay do va onduty", COLOR_WHITE, 1771.4639,-1701.7825,13.5253, 15.0, 0);
-	Create3DTextLabel("{33ff00}[Mechanic{ffffff}]\nNhan {33ff00}Y{ffffff}\n de mua repair tool", COLOR_WHITE, 1765.7659,-1701.4037,13.5253, 15.0, 0);
+	Create3DTextLabel("[{33ff00}Mechanic{ffffff}]\n{33ff00}/mechanic{ffffff}\n de mo kho vat lieu", COLOR_WHITE, 1770.8954,-1689.1117,13.5253, 15.0, 0);
+	Create3DTextLabel("[{33ff00}Mechanic{ffffff}]\n{33ff00}/onduty{ffffff}\n de thay do va onduty", COLOR_WHITE, 1771.4639,-1701.7825,13.5253, 15.0, 0);
+	Create3DTextLabel("{33ff00}[Mechanic{ffffff}]\n{33ff00}/repairtool{ffffff}\n de mua repair tool", COLOR_WHITE, 1765.7659,-1701.4037,13.5253, 15.0, 0);
 	new tmpobjid;
 	tmpobjid = CreateDynamicObject(18762, 1761.355102, -1696.522827, 14.847060, 0.000000, 0.000000, 0.000000, -1, -1, -1, 300.00, 300.00); 
 	SetDynamicObjectMaterial(tmpobjid, 0, 10765, "airportgnd_sfse", "sf_pave2", 0xFF555555);

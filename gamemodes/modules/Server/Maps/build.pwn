@@ -2,3 +2,4 @@
 #include "./modules/Server/Maps/officer.pwn"
 #include "./modules/Server/Maps/Hospital.pwn"
 #include "./modules/Server/Maps/Bank.pwn"
+#include "./modules/Server/Maps/Mechanic.pwn"

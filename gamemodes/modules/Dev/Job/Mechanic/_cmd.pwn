@@ -137,8 +137,8 @@ CMD:mechanic(playerid, params[])
     {
         new query[128];
         format(query, sizeof(query), "[ Iron ]\t[ {33ff00}%d{ffffff} ]\n\
-        [ Cao su ]\t[ {33ff00}%d{ffffff} ]\n\
-        [ Nhua ]\t[ {33ff00}%d{ffffff} ]", Mechanic[1][mValue], Mechanic[2][mValue], Mechanic[3][mValue]);
+        [ Rubber ]\t[ {33ff00}%d{ffffff} ]\n\
+        [ Plastic ]\t[ {33ff00}%d{ffffff} ]", Mechanic[1][mValue], Mechanic[2][mValue], Mechanic[3][mValue]);
         ShowPlayerDialog(playerid, DIALOG_MECHANIC, DIALOG_STYLE_TABLIST, "Caption", query,"Choose", "Cancel");
     }
     return 1;

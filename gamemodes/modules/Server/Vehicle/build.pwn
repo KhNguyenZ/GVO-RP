@@ -3,3 +3,6 @@
 #include "./modules/Server/Vehicle/Core/_callback.pwn"
 #include "./modules/Server/Vehicle/Core/_cmd.pwn"
 #include "./modules/Server/Vehicle/Speedo/_textdraw.pwn"
+#include "./modules/Server/Vehicle/Controll/_textdraw.pwn"
+#include "./modules/Server/Vehicle/Controll/_function.pwn"
+#include "./modules/Server/Vehicle/Controll/_callback.pwn"

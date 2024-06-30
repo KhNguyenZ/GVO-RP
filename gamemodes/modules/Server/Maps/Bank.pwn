@@ -11,10 +11,10 @@ hook OnGameModeInit()
     // Create3DTextLabel("{00ff00}[BANK]\n{99cc00}Exterior{FFFFFF}\nSu dung {ffff00}Y{FFFFFF} de vao Interrior Bank.", COLOR_WHITE, 1457.0790,-1010.0229,26.8438, 10.0, 0, false);
     // Create3DTextLabel("{00ff00}[BANK]\n{99cc00}Exterior{FFFFFF}\nSu dung {ffff00}Y{FFFFFF} de vao Interrior Bank.", COLOR_WHITE, 1467.3745,-1009.9436,26.8438, 10.0, 0, false);
     
-	Create3DTextLabel("{00ff00}[DEPOSIT]\n{FFFFFF}Su dung {ffff00}Y{FFFFFF} de tim hieu.", COLOR_WHITE, -2679.9775,807.0945,1500.9688, 30.0, 0, false);
-    Create3DTextLabel("{00ff00}[INVESTMENT]\n{FFFFFF}Su dung {ffff00}Y{FFFFFF} de tim hieu.", COLOR_WHITE, -2673.0344,807.2880,1500.9688, 30.0, 0, false);
-    Create3DTextLabel("{00ff00}[WITHDRAWS]\n{FFFFFF}Su dung {ffff00}Y{FFFFFF} de tim hieu.", COLOR_WHITE, -2666.8518,802.3608,1500.9688, 30.0, 0, false);
-    Create3DTextLabel("{00ff00}[INFORMATION]\n{FFFFFF}Su dung {ffff00}Y{FFFFFF} de tim hieu.", COLOR_WHITE, -2666.7080,796.2833,1500.9688, 30.0, 0, false);
+	Create3DTextLabel("{00ff00}[DEPOSIT]\n{FFFFFF}Su dung {ffff00}/banking{FFFFFF} de tim hieu.", COLOR_WHITE, -2679.9775,807.0945,1500.9688, 30.0, 0, false);
+    Create3DTextLabel("{00ff00}[INVESTMENT]\n{FFFFFF}Su dung {ffff00}/banking{FFFFFF} de tim hieu.", COLOR_WHITE, -2673.0344,807.2880,1500.9688, 30.0, 0, false);
+    Create3DTextLabel("{00ff00}[WITHDRAWS]\n{FFFFFF}Su dung {ffff00}/banking{FFFFFF} de tim hieu.", COLOR_WHITE, -2666.8518,802.3608,1500.9688, 30.0, 0, false);
+    Create3DTextLabel("{00ff00}[INFORMATION]\n{FFFFFF}Su dung {ffff00}/banking{FFFFFF} de tim hieu.", COLOR_WHITE, -2666.7080,796.2833,1500.9688, 30.0, 0, false);
     
 	new mexi_lv;
 	mexi_lv = CreateDynamicObject(1264, -283.049255, 1189.337769, 18.967802, 0.000000, 0.000000, 11.699997, -1, -1);
@@ -1621,7 +1621,7 @@ hook OnGameModeInit()
 	tmpobjid = CreateDynamicObject(19355, -2674.820801, 809.249451, 1506.086060, -0.000014, 89.999985, -89.999985);
 	SetDynamicObjectMaterial(tmpobjid, 0, 8536, "tikisign", "tikireed01_128", 0);
 	tmpobjid = CreateDynamicObject(19477, -2673.078857, 807.955322, 1501.098267, 0.000000, 0.000000, 270.000000);
-	SetDynamicObjectMaterialText(tmpobjid, 0, "TRANFERS", 130, "Ariel", 45, 1, -16777216, 0, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "TRANSFER BOX", 130, "Ariel", 45, 1, -16777216, 0, 1);
 	tmpobjid = CreateDynamicObject(19378, -2690.191162, 776.044556, 1505.526733, 0.000007, -0.000022, -90.000130);
 	SetDynamicObjectMaterial(tmpobjid, 0, 12853, "cunte_gas01", "sw_floor1", 0);
 	tmpobjid = CreateDynamicObject(19929, -2673.118896, 808.147888, 1499.920044, 0.000000, 0.000000, 90.000000);
@@ -1743,7 +1743,7 @@ hook OnGameModeInit()
 	SetDynamicObjectMaterial(tmpobjid, 6, 19480, "signsurf", "sign", 0);
 	SetDynamicObjectMaterial(tmpobjid, 0, 65535, "none", "none", -1);
 	tmpobjid = CreateDynamicObject(19477, -2666.087402, 802.314453, 1501.098267, 0.000000, 0.000000, 540.000000);
-	SetDynamicObjectMaterialText(tmpobjid, 0, "CASH CREDIT", 130, "Ariel", 45, 1, -16777216, 0, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "WITHDRAW", 130, "Ariel", 45, 1, -16777216, 0, 1);
 	tmpobjid = CreateDynamicObject(19929, -2665.922363, 791.791199, 1499.920044, 0.000000, 0.000000, 0.000000);
 	SetDynamicObjectMaterial(tmpobjid, 2, 3440, "airportpillar", "metalic_64", 0);
 	SetDynamicObjectMaterial(tmpobjid, 1, 4830, "airport2", "sanairtex2", 0);

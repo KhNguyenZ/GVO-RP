@@ -55,6 +55,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 {
+    SmartKeyClick(playerid, PlayerText:playertextid);
     BankingClick(playerid, PlayerText:playertextid);
     InvClick(playerid, PlayerText:playertextid);
     Org_Click(playerid, PlayerText:playertextid);

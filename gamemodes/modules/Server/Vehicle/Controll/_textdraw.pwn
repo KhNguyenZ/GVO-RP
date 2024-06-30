@@ -1,78 +1,116 @@
-new PlayerText: VehControllPTD[MAX_PLAYERS][6];
+new PlayerText:VehControllPTD[MAX_PLAYERS][4];
 func:CreatePlayerControll(playerid){
 
-    VehControllPTD[playerid][0] = CreatePlayerTextDraw(playerid, 189.000, 211.000, "mdl-2017:car");
-    PlayerTextDrawTextSize(playerid, VehControllPTD[playerid][0], 75.000, 17.000);
+    VehControllPTD[playerid][0] = CreatePlayerTextDraw(playerid, 552.000000, 289.000000, "mdl-2022:smartkey");
+    PlayerTextDrawFont(playerid, VehControllPTD[playerid][0], 4);
+    PlayerTextDrawLetterSize(playerid, VehControllPTD[playerid][0], 0.600000, 2.000000);
+    PlayerTextDrawTextSize(playerid, VehControllPTD[playerid][0], 65.500000, 148.500000);
+    PlayerTextDrawSetOutline(playerid, VehControllPTD[playerid][0], 1);
+    PlayerTextDrawSetShadow(playerid, VehControllPTD[playerid][0], 0);
     PlayerTextDrawAlignment(playerid, VehControllPTD[playerid][0], 1);
     PlayerTextDrawColor(playerid, VehControllPTD[playerid][0], -1);
-    PlayerTextDrawSetShadow(playerid, VehControllPTD[playerid][0], 0);
-    PlayerTextDrawSetOutline(playerid, VehControllPTD[playerid][0], 0);
     PlayerTextDrawBackgroundColor(playerid, VehControllPTD[playerid][0], 255);
-    PlayerTextDrawFont(playerid, VehControllPTD[playerid][0], 4);
+    PlayerTextDrawBoxColor(playerid, VehControllPTD[playerid][0], 50);
+    PlayerTextDrawUseBox(playerid, VehControllPTD[playerid][0], 1);
     PlayerTextDrawSetProportional(playerid, VehControllPTD[playerid][0], 1);
-    PlayerTextDrawSetSelectable(playerid, VehControllPTD[playerid][0], 1);
+    PlayerTextDrawSetSelectable(playerid, VehControllPTD[playerid][0], 0);
 
-    VehControllPTD[playerid][1] = CreatePlayerTextDraw(playerid, 189.000, 232.000, "mdl-2017:trunk");
-    PlayerTextDrawTextSize(playerid, VehControllPTD[playerid][1], 74.000, 15.000);
+    VehControllPTD[playerid][1] = CreatePlayerTextDraw(playerid, 564.000000, 331.000000, "mdl-2022:lock");
+    PlayerTextDrawFont(playerid, VehControllPTD[playerid][1], 4);
+    PlayerTextDrawLetterSize(playerid, VehControllPTD[playerid][1], 0.600000, 2.000000);
+    PlayerTextDrawTextSize(playerid, VehControllPTD[playerid][1], 42.500000, 38.000000);
+    PlayerTextDrawSetOutline(playerid, VehControllPTD[playerid][1], 1);
+    PlayerTextDrawSetShadow(playerid, VehControllPTD[playerid][1], 0);
     PlayerTextDrawAlignment(playerid, VehControllPTD[playerid][1], 1);
     PlayerTextDrawColor(playerid, VehControllPTD[playerid][1], -1);
-    PlayerTextDrawSetShadow(playerid, VehControllPTD[playerid][1], 0);
-    PlayerTextDrawSetOutline(playerid, VehControllPTD[playerid][1], 0);
     PlayerTextDrawBackgroundColor(playerid, VehControllPTD[playerid][1], 255);
-    PlayerTextDrawFont(playerid, VehControllPTD[playerid][1], 4);
+    PlayerTextDrawBoxColor(playerid, VehControllPTD[playerid][1], 50);
+    PlayerTextDrawUseBox(playerid, VehControllPTD[playerid][1], 1);
     PlayerTextDrawSetProportional(playerid, VehControllPTD[playerid][1], 1);
     PlayerTextDrawSetSelectable(playerid, VehControllPTD[playerid][1], 1);
 
-    VehControllPTD[playerid][2] = CreatePlayerTextDraw(playerid, 267.000, 165.000, "mdl-2017:lock");
-    PlayerTextDrawTextSize(playerid, VehControllPTD[playerid][2], 75.000, 17.000);
+    VehControllPTD[playerid][2] = CreatePlayerTextDraw(playerid, 560.000000, 388.000000, "mdl-2022:unlock");
+    PlayerTextDrawFont(playerid, VehControllPTD[playerid][2], 4);
+    PlayerTextDrawLetterSize(playerid, VehControllPTD[playerid][2], 0.600000, 2.000000);
+    PlayerTextDrawTextSize(playerid, VehControllPTD[playerid][2], 27.000000, 38.000000);
+    PlayerTextDrawSetOutline(playerid, VehControllPTD[playerid][2], 1);
+    PlayerTextDrawSetShadow(playerid, VehControllPTD[playerid][2], 0);
     PlayerTextDrawAlignment(playerid, VehControllPTD[playerid][2], 1);
     PlayerTextDrawColor(playerid, VehControllPTD[playerid][2], -1);
-    PlayerTextDrawSetShadow(playerid, VehControllPTD[playerid][2], 0);
-    PlayerTextDrawSetOutline(playerid, VehControllPTD[playerid][2], 0);
     PlayerTextDrawBackgroundColor(playerid, VehControllPTD[playerid][2], 255);
-    PlayerTextDrawFont(playerid, VehControllPTD[playerid][2], 4);
+    PlayerTextDrawBoxColor(playerid, VehControllPTD[playerid][2], 50);
+    PlayerTextDrawUseBox(playerid, VehControllPTD[playerid][2], 1);
     PlayerTextDrawSetProportional(playerid, VehControllPTD[playerid][2], 1);
     PlayerTextDrawSetSelectable(playerid, VehControllPTD[playerid][2], 1);
 
-    VehControllPTD[playerid][3] = CreatePlayerTextDraw(playerid, 267.000, 189.000, "mdl-2017:open");
-    PlayerTextDrawTextSize(playerid, VehControllPTD[playerid][3], 75.000, 17.000);
+    VehControllPTD[playerid][3] = CreatePlayerTextDraw(playerid, 584.000000, 388.000000, "mdl-2022:trunk");
+    PlayerTextDrawFont(playerid, VehControllPTD[playerid][3], 4);
+    PlayerTextDrawLetterSize(playerid, VehControllPTD[playerid][3], 0.600000, 2.000000);
+    PlayerTextDrawTextSize(playerid, VehControllPTD[playerid][3], 27.000000, 38.000000);
+    PlayerTextDrawSetOutline(playerid, VehControllPTD[playerid][3], 1);
+    PlayerTextDrawSetShadow(playerid, VehControllPTD[playerid][3], 0);
     PlayerTextDrawAlignment(playerid, VehControllPTD[playerid][3], 1);
     PlayerTextDrawColor(playerid, VehControllPTD[playerid][3], -1);
-    PlayerTextDrawSetShadow(playerid, VehControllPTD[playerid][3], 0);
-    PlayerTextDrawSetOutline(playerid, VehControllPTD[playerid][3], 0);
     PlayerTextDrawBackgroundColor(playerid, VehControllPTD[playerid][3], 255);
-    PlayerTextDrawFont(playerid, VehControllPTD[playerid][3], 4);
+    PlayerTextDrawBoxColor(playerid, VehControllPTD[playerid][3], 50);
+    PlayerTextDrawUseBox(playerid, VehControllPTD[playerid][3], 1);
     PlayerTextDrawSetProportional(playerid, VehControllPTD[playerid][3], 1);
     PlayerTextDrawSetSelectable(playerid, VehControllPTD[playerid][3], 1);
-
-    VehControllPTD[playerid][4] = CreatePlayerTextDraw(playerid, 267.000, 255.000, "mdl-2017:seatbelt");
-    PlayerTextDrawTextSize(playerid, VehControllPTD[playerid][4], 75.000, 17.000);
-    PlayerTextDrawAlignment(playerid, VehControllPTD[playerid][4], 1);
-    PlayerTextDrawColor(playerid, VehControllPTD[playerid][4], -1);
-    PlayerTextDrawSetShadow(playerid, VehControllPTD[playerid][4], 0);
-    PlayerTextDrawSetOutline(playerid, VehControllPTD[playerid][4], 0);
-    PlayerTextDrawBackgroundColor(playerid, VehControllPTD[playerid][4], 255);
-    PlayerTextDrawFont(playerid, VehControllPTD[playerid][4], 4);
-    PlayerTextDrawSetProportional(playerid, VehControllPTD[playerid][4], 1);
-    PlayerTextDrawSetSelectable(playerid, VehControllPTD[playerid][4], 1);
-
-    VehControllPTD[playerid][5] = CreatePlayerTextDraw(playerid, 267.000, 281.000, "mdl-2017:engine-off");
-    PlayerTextDrawTextSize(playerid, VehControllPTD[playerid][5], 75.000, 17.000);
-    PlayerTextDrawAlignment(playerid, VehControllPTD[playerid][5], 1);
-    PlayerTextDrawColor(playerid, VehControllPTD[playerid][5], -1);
-    PlayerTextDrawSetShadow(playerid, VehControllPTD[playerid][5], 0);
-    PlayerTextDrawSetOutline(playerid, VehControllPTD[playerid][5], 0);
-    PlayerTextDrawBackgroundColor(playerid, VehControllPTD[playerid][5], 255);
-    PlayerTextDrawFont(playerid, VehControllPTD[playerid][5], 4);
-    PlayerTextDrawSetProportional(playerid, VehControllPTD[playerid][5], 1);
-    PlayerTextDrawSetSelectable(playerid, VehControllPTD[playerid][5], 1);
-
-
-    for(new i; i < 6; i++)
-    {
-        PlayerTextDrawShow(playerid, VehControllPTD[playerid][i]);
-    }
-    SelectTextDraw(playerid, 0xffffffff);
     return 1;
 }
 
+func:OpenSmartKey(playerid)
+{
+    for(new i; i < 4; i++)
+    {
+        PlayerTextDrawShow(playerid, VehControllPTD[playerid][i]);
+    }
+    SelectTextDraw(playerid, COLOR_GREEN);
+}
+func:CloseSmartKey(playerid)
+{
+    for(new i; i < 4; i++)
+    {
+        PlayerTextDrawDestroy(playerid, VehControllPTD[playerid][i]);
+    }
+    CancelSelectTextDraw(playerid);
+    return 1;
+}
+
+func:SmartKeyClick(playerid, PlayerText:playertextid)
+{
+    if(playertextid == VehControllPTD[playerid][1])
+    {
+        PlayerPlaySound(playerid, 1147 , 0.0, 0.0, 10.0);
+        new vehicleid = GetNeraestVehicle(playerid, 10.0);
+        new bool:engine, bool:lights, bool:alarm, bool:doors, bool:bonnet, bool:boot, bool:objective;
+        GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
+        SetVehicleParamsEx(vehicleid, engine, lights, alarm, VEHICLE_PARAMS_ON, bonnet, boot , objective);
+        CloseSmartKey(playerid);
+    }
+    if(playertextid == VehControllPTD[playerid][2])
+    {
+        PlayerPlaySound(playerid, 1147 , 0.0, 0.0, 10.0);
+        new vehicleid = GetNeraestVehicle(playerid, 10.0);
+        new bool:engine, bool:lights, bool:alarm, bool:doors, bool:bonnet, bool:boot, bool:objective;
+        GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
+        SetVehicleParamsEx(vehicleid, engine, lights, alarm, VEHICLE_PARAMS_OFF, bonnet, boot , objective);
+        CloseSmartKey(playerid);
+    }
+    if(playertextid == VehControllPTD[playerid][3])
+    {
+        PlayerPlaySound(playerid, 1147 , 0.0, 0.0, 10.0);
+        new vehicleid = GetNeraestVehicle(playerid, 10.0);
+        new bool:engine, bool:lights, bool:alarm, bool:doors, bool:bonnet, bool:boot, bool:objective;
+        if(boot == VEHICLE_PARAMS_ON)
+        {
+            SetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, VEHICLE_PARAMS_OFF , objective);
+            CloseSmartKey(playerid);
+        }
+        else 
+        {
+            SetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, VEHICLE_PARAMS_ON, objective);
+            CloseSmartKey(playerid);
+        }
+    }
+}

@@ -46,7 +46,7 @@ func:OnLoadMechanic()
     {
         LoadMechanic(i);
     }
-    printf("Loaded Mechanic");
+    //printf("Loaded Mechanic");
 }
 forward LoadMechanic(Items);
 public LoadMechanic(Items)

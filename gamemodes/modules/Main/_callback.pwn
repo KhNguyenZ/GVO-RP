@@ -113,7 +113,6 @@ public OnPlayerSpawn(playerid)
 {
     if (Character[playerid][char_Injured] == 0)
     {
-        // ShowPlayerTextTime(playerid);
         SetPlayerSkin(playerid, Character[playerid][char_Skin]);
         ResetPlayerWeapons(playerid);
         GivePlayerMoney(playerid, Character[playerid][char_Cash]);

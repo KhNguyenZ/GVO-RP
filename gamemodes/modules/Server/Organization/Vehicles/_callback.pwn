@@ -4,7 +4,8 @@ public OnLoadOrgVehicle(_org_id)
     new v_count;
     cache_get_row_count(v_count);
     printf("Loaded %d vehicle for Org %d", v_count, _org_id);
-    for (new i; i < MAX_ORG_VEHICLES)
+
+    for (new i; i < MAX_ORG_VEHICLES; i++)
     {
         OrgVeh[_org_id][i][ov_vehid] = -1;
     }
@@ -26,7 +27,7 @@ public OnLoadOrgVehicle(_org_id)
         cache_get_value_name_int(i, "vw", OrgVeh[_org_id][i][ov_vw]);
         cache_get_value_name_int(i, "int", OrgVeh[_org_id][i][ov_int]);
 
-        cache_get_value_name_int(i, "health", OrgVeh[_org_id][i][ov_health]);
+        cache_get_value_name_float(i, "health", OrgVeh[_org_id][i][ov_health]);
         cache_get_value_name_int(i, "odo", OrgVeh[_org_id][i][ov_odo]);
         cache_get_value_name_int(i, "siren", OrgVeh[_org_id][i][ov_siren]);
         if (!IsValidVehicle(OrgVeh[_org_id][i][ov_vehid]))
@@ -40,6 +41,8 @@ public OnLoadOrgVehicle(_org_id)
                                            OrgVeh[_org_id][i][ov_color2],
                                            500,
                                            OrgVeh[_org_id][i][ov_siren]);
+
+            SetVehicleHealth(OrgVeh[_org_id][i][ov_vehid], OrgVeh[_org_id][i][ov_health]);
         }
     }
 }

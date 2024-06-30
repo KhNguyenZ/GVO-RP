@@ -43,7 +43,7 @@ public OnPlayerInjured(playerid)
 
         Character[playerid][char_Cash] -= 100;
         OrgData[0][org_safe] += 100;
-        SendOrgMessage(playerid, 0, "[{f76565}Hoa Don{FFFFFF}]: Hoa don thanh toan $100 (Xuat vien)");
+        SendOrgMessage(0, "[{f76565}Hoa Don{FFFFFF}]: Hoa don thanh toan $100 (Xuat vien)");
         SendHospitalMessage(playerid, "Ban da tra 100$ cho phi nhap vien cua minh");
         KillTimer(InjuredTimer[playerid]);
     }

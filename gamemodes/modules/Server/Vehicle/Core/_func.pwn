@@ -135,7 +135,7 @@ func:SavePlayerVehicle(playerid, vehsqlid){
             `impound` = '%d', \
             `vw` = '%d', \
             `int`  = '%d', \
-            `health` = '%d', \
+            `health` = '%f', \
             `odo` = '%d' \
             WHERE `sqlid` = '%d' ",
             PlayerVehicle[playerid][i][pv_model],
@@ -235,6 +235,7 @@ func:CreatePlayerVehicle(playerid, model, lock, paintjob , color1, color2)
     `restricted` = '0', \
     `fuel` = '%d', \
     `impound` = '0', \
+    `health` = '1000',\
     `vw` = '%d', \
     `int`  = '%d'",
     GetPlayerSQLID(playerid),

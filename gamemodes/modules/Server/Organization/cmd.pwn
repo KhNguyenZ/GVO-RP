@@ -31,7 +31,7 @@ CMD:makeleader(playerid, params[])
 
     format(ml_msg, 1280, "QTV %s da make leader cho %s", player_get_name(playerid), player_get_name(targetid));
     SendClientMessage(targetid, COLOR_CYAN, ml_msg);
-    SendOrgMessage(playerid, ml_orgid, ml_msg);
+    SendOrgMessage(ml_orgid, ml_msg);
     return 1;
 }
 

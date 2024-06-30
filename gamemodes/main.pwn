@@ -11,7 +11,7 @@
 #include <notify>
 #include <DialogCenter>
 #include <easyDialog>
-#include <Veh-Lib\tdw_vyengine> 
+#include <Veh-Lib\tdw_vyengine>
 #include <actor_plus>
 #include <strlib>
 #include <sampvoice>
@@ -23,29 +23,29 @@
 
 #define  			MYSQL_HOST				"localhost"
 #define  			MYSQL_USER				"root"
-#define  			MYSQL_PASS				"12346789" //123123
-#define  			MYSQL_DB				"gvo" //ssa
+#define  			MYSQL_PASS				"123456" //123123
+#define  			MYSQL_DB				"ssa" //ssa
 
 
-new SERVER_TEST = 1; // 1: Server test ( bỏ qua login và nhiều anti khác) | 0: Mở server bình thường 
+new SERVER_TEST = 1; // 1: Server test ( bỏ qua login và nhiều anti khác) | 0: Mở server bình thường
 new SERVER_API[20]    = "ssa-rp.xyz/api/",
-	SERVER_COMPONET[30]   = "ssa-rp.xyz/server/component/",
-	SEVRER_CONTROLLER[30] = "ssa-rp.xyz/server/controller/";
+                        SERVER_COMPONET[30]   = "ssa-rp.xyz/server/component/",
+                                SEVRER_CONTROLLER[30] = "ssa-rp.xyz/server/controller/";
 main()
 {
-	SetGameModeText("KhNguyen Dev");
-	EnableStuntBonusForAll(0);
-	DisableInteriorEnterExits();
-	SetNameTagDrawDistance(25.0);
-	ManualVehicleEngineAndLights();
-	ShowPlayerMarkers(PLAYER_MARKERS_MODE_OFF);
-	AddPlayerClass(265, 1958.3783, 1343.1572, 15.3746, 270.1425, 0, 0, 0, 0, -1, -1);
-	
-	if(GetMaxPlayers() > MAX_PLAYERS)
-	{
-		print("> Error FIX MAXPLAYERS.");
+    SetGameModeText("KhNguyen Dev");
+    EnableStuntBonusForAll(0);
+    DisableInteriorEnterExits();
+    SetNameTagDrawDistance(25.0);
+    ManualVehicleEngineAndLights();
+    ShowPlayerMarkers(PLAYER_MARKERS_MODE_OFF);
+    AddPlayerClass(265, 1958.3783, 1343.1572, 15.3746, 270.1425, 0, 0, 0, 0, -1, -1);
+
+    if (GetMaxPlayers() > MAX_PLAYERS)
+    {
+        print("> Error FIX MAXPLAYERS.");
         SendRconCommand("exit");
-	}
+    }
 }
 #include "./modules/Server/Voice/main.pwn"
 #include "./modules/Main/mysql.pwn"
@@ -92,36 +92,41 @@ main()
 #include "./modules/Server/Maps/build.pwn"
 
 #include "./modules/Players/characters/Death/textdraw.pwn"
-#include "./modules/Players/characters/Death/callback.pwn" 
+#include "./modules/Players/characters/Death/callback.pwn"
 
 public SSA_Mysql_Intit()
 {
-	LoadOrgs();
-	LoadInventoryDrop();
-	CreateInfo(); 
+    LoadOrgs();
+    LoadInventoryDrop();
+    CreateInfo();
 
-	return 1; 
+    return 1;
 }
 public OnGameModeExit()
 {
-	for(new i; i < MAX_ORG; i++) SaveOrg(i);
-	mysql_close(Handle());
-	return 1;
+    for (new i; i < MAX_ORG; i++)
+    {
+        SaveOrg(i);
+        SaveOrgVeh(i);
+    }
+    mysql_close(Handle());
+    return 1;
 }
 
 
 public OnQueryError(errorid, const error[], const callback[], const query[], MySQL:handle)
 {
     printf("[MySQL: OnQueryError (%d, %s, %s)]: Query: %s.", errorid, error, callback, query);
-    switch(errorid)
+    switch (errorid)
     {
-        case CR_COMMAND_OUT_OF_SYNC: {
+        case CR_COMMAND_OUT_OF_SYNC:
+        {
             printf("[MySQL: Error:: Callback; %s]: Commands Out Of Sync For (Query: %s).", callback, query);
         }
         case ER_UNKNOWN_TABLE: printf("[MySQL: Error:: Callback; %s]: Unknown table '%s' (Query: %s).", callback, error, query);
         case ER_SYNTAX_ERROR: printf("[MySQL: Error:: Callback; %s]: Something is wrong in your syntax (Query: %s).", callback, query);
-        // case CR_SERVER_GONE_ERROR, CR_SERVER_LOST, CR_SERVER_LOST_EXTENDED: mysql_reconnect();
-        //case 2003: Can't connect to MySQL server on 
+            // case CR_SERVER_GONE_ERROR, CR_SERVER_LOST, CR_SERVER_LOST_EXTENDED: mysql_reconnect();
+            //case 2003: Can't connect to MySQL server on
     }
     return 1;
 }

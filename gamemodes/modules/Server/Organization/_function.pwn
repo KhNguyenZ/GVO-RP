@@ -51,7 +51,7 @@ func:OrgGetTotalMember(orgid)
     return valstr(total_member_str, total_member);
 }
 
-func:SendOrgMessage(playerid, orgid, msg[])
+func:SendOrgMessage(orgid, msg[])
 {
     foreach (new i: Player)
     {

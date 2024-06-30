@@ -18,8 +18,9 @@ enum OrgVehicle_Data {
     ov_vehid,
     Float:ov_health,
     ov_odo,
-    ov_siren
+    ov_siren,
+    ov_sqlid
 }
 
 
-new OrgVeh[MAX_PLAYERS][MAX_PLAYER_VEHICLES][PlayerVehicle_Data];
+new OrgVeh[MAX_ORG][MAX_ORG_VEHICLES][PlayerVehicle_Data];

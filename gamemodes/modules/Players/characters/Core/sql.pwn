@@ -89,6 +89,8 @@ hook OnPlayerDisconnect(playerid, reason)
 		GetPlayerFacingAngle(playerid, R);
 		GetPlayerHealth(playerid, Character[playerid][char_health]);
 		GetPlayerArmour(playerid,Character[playerid][char_armour]);
+		Character[playerid][char_Interior] = GetPlayerInterior(playerid);
+		Character[playerid][char_VW] = GetPlayerVirtualWorld(playerid);
 
 		mysql_format(Handle(), query, sizeof(query), "%s PosX = '%f',", query, X);
 		mysql_format(Handle(), query, sizeof(query), "%s PosY = '%f',", query, Y);

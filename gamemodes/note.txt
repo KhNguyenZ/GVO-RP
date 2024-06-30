@@ -1,5 +1,0 @@
-- Tạm ẩn túi đồ (/inv1) để làm Inv mới (Done)
-- Fix bug textdraw (Done)
-- Add help function (Done)
-- Thêm CreateOrg
-- Thêm Hospital 

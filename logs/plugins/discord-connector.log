@@ -102,3 +102,5 @@
 [06/22/24 21:58:28] [ERROR] Can't read from Discord websocket gateway: The network connection was aborted by the local system (1236)
 [06/22/24 21:58:28] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
 [06/22/24 21:58:28] [ERROR] Can't resolve Discord gateway URL 'gateway.discord.gg': This is usually a temporary error during hostname resolution and means that the local server did not receive a response from an authoritative server (11002)
+[06/30/24 11:33:42] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[06/30/24 11:39:04] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)

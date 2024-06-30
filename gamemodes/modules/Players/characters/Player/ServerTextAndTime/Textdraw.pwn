@@ -1,4 +1,4 @@
-#include <YSI\y_hooks>
+#include <YSI_Coding\y_hooks>
 new Text: LSRP[1];
 new PlayerText: LSRPTime[MAX_PLAYERS][2];
 hook OnGameModeInit()

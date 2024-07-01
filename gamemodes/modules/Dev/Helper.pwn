@@ -25,8 +25,8 @@ new const Dynamic_HelpCMD[][AHelpCMD_D] = {
     {"/dedit", "Tuy chinh door"},
     {"/bcreate", "Tao cua hang"},
     {"/bedit", "Tao cua hang"},
-    {"/bcreate", "Tao cua hang"},
     {"/bcreate", "Tao cua hang"}
+    // {"/bcreate", "Tao cua hang"}
 };
 
 CMD:ahelp(playerid)

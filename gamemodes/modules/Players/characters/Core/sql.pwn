@@ -63,7 +63,7 @@ public OnCharacterLoad(const playerid)
 
 	cache_get_value_name_int(0, "Bank", Character[playerid][char_Bank]);
 	cache_get_value_name_int(0, "BankSaving", Character[playerid][char_BankSaving]);
-	cache_get_value_name_int(0, "LastLogin", Character[playerid][char_LastLogin]);
+	cache_get_value_name(0, "LastLogin", Character[playerid][char_LastLogin]);
 
 	cache_get_value_name(0, "HoursSaving", Character[playerid][char_HoursSaving]);
 

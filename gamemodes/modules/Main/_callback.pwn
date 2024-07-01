@@ -18,6 +18,7 @@ public OnPlayerConnect(playerid)
     TogglePlayerSpectating(playerid, 0);
 
     CreatePlayerInfo(playerid);
+    InitPlayerVehMap();
 
     return 1;
 }

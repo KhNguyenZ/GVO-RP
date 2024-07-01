@@ -107,7 +107,7 @@ CMD:mycar(playerid, params[])
 	for(new i; i < PlayerVehicleCount[playerid]; i++)
 	{
 		new mycar_dlg[1280];
-		format(mycar_dlg, sizeof(mycar_dlg), "%s\t%d\t%d\t%s\n", 
+		format(mycar_dlg, sizeof(mycar_dlg), "%s\t%d\t%0.2f\t%s\n", 
 		GetVehicleName(PlayerVehicle[playerid][i][pv_model]),
 		PlayerVehicle[playerid][i][pv_fuel],
 		PlayerVehicle[playerid][i][pv_health], 

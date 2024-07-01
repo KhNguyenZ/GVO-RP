@@ -16,7 +16,8 @@ new const Org_HelpCMD[][AHelpCMD_D] = {
     {"/orgs", "Cai dat to chuc"},
     {"/saveorgs", "Save tat ca cac to chuc"},
     {"/makeleader", "Trao quyen quan li 'To chuc' cho ai do"},
-    {"/createorg", "Tao 'To chuc' moi"}
+    {"/createorg", "Tao 'To chuc' moi"},
+    {"/createorgveh", "Tao xe cho 'To chuc'"}
 };
 new const Dynamic_HelpCMD[][AHelpCMD_D] = {
     {"/taodoor", "Tao door moi"},

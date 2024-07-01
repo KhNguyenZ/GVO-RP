@@ -1,8 +1,12 @@
-new PlayerText: KMH[MAX_PLAYERS];
-new PlayerText: Odo[MAX_PLAYERS];
-new PlayerText: SpeedoPTD[MAX_PLAYERS][7];
+new PlayerText:
+KMH[MAX_PLAYERS];
+new PlayerText:
+Odo[MAX_PLAYERS];
+new PlayerText:
+SpeedoPTD[MAX_PLAYERS][7];
 
-func:OnPlayerCreateSpeedo(playerid){
+func:OnPlayerCreateSpeedo(playerid)
+{
 
     SpeedoPTD[playerid][0] = CreatePlayerTextDraw(playerid, 463.000, 266.000, "mdl-2009:speedo");
     PlayerTextDrawTextSize(playerid, SpeedoPTD[playerid][0], 197.000, 230.000);
@@ -103,7 +107,7 @@ func:OnPlayerCreateSpeedo(playerid){
 func:ShowPlayerSpeedo(playerid)
 {
     pSpeedo[playerid] = 1;
-    for(new i; i < 7; i++) PlayerTextDrawShow(playerid, SpeedoPTD[playerid][i]);
+    for (new i; i < 7; i++) PlayerTextDrawShow(playerid, SpeedoPTD[playerid][i]);
     PlayerTextDrawShow(playerid, KMH[playerid]);
     PlayerTextDrawShow(playerid, Odo[playerid]);
     return 1;
@@ -111,29 +115,31 @@ func:ShowPlayerSpeedo(playerid)
 func:HidePlayerSpeedo(playerid)
 {
     pSpeedo[playerid] = 0;
-    for(new i; i < 7; i++) PlayerTextDrawHide(playerid, SpeedoPTD[playerid][i]);
+    for (new i; i < 7; i++) PlayerTextDrawHide(playerid, SpeedoPTD[playerid][i]);
     PlayerTextDrawHide(playerid, KMH[playerid]);
     PlayerTextDrawHide(playerid, Odo[playerid]);
     return 1;
 }
 func:player_get_speed(playerid)
 {
-	new Float: fVelocity[3];
+new Float:
+    fVelocity[3];
 
-	GetVehicleVelocity(GetPlayerVehicleID(playerid), fVelocity[0], fVelocity[1], fVelocity[2]);
-	return floatround(floatsqroot((fVelocity[0] * fVelocity[0]) + (fVelocity[1] * fVelocity[1]) + (fVelocity[2] * fVelocity[2])) * 100);
+    GetVehicleVelocity(GetPlayerVehicleID(playerid), fVelocity[0], fVelocity[1], fVelocity[2]);
+    return floatround(floatsqroot((fVelocity[0] * fVelocity[0]) + (fVelocity[1] * fVelocity[1]) + (fVelocity[2] * fVelocity[2])) * 100);
 }
 
 func:player_get_odometer(playerid)
 {
-    return floatround(player_get_speed(playerid)/3,6);
+    return floatround(player_get_speed(playerid) / 3, 6);
 }
 
 func:UpdatePlayerSpeedo(playerid, fuel)
 {
     new speedo_vid = GetPlayerVehicleID(playerid);
-    if(!IsPlayerInAnyVehicle(playerid)) return 0;
-    if(IsVehicleEngineStarted(speedo_vid)){
+    if (!IsPlayerInAnyVehicle(playerid)) return 0;
+    if (IsVehicleEngineStarted(speedo_vid))
+    {
         new sp_msg[1280];
         format(sp_msg, sizeof(sp_msg), "%d", player_get_speed(playerid));
         PlayerTextDrawSetString(playerid, KMH[playerid], sp_msg);
@@ -142,13 +148,13 @@ func:UpdatePlayerSpeedo(playerid, fuel)
         format(sp_msg, sizeof(sp_msg), "%s", GetVehicleName(GetVehicleModel(GetPlayerVehicleID(playerid))));
         PlayerTextDrawSetString(playerid, SpeedoPTD[playerid][6], sp_msg);
 
-        if(!IsVehicleAdminSpawn(speedo_vid))
+        if (IsPersonalVehicle(speedo_vid))
         {
-            foreach(new i:Player)
+            foreach (new i:Player)
             {
-                for(new j; j < MAX_PLAYER_VEHICLES; j++)
+                for (new j; j < MAX_PLAYER_VEHICLES; j++)
                 {
-                    if(PlayerVehicle[i][j][pv_vehid] == speedo_vid)
+                    if (PlayerVehicle[i][j][pv_vehid] == speedo_vid)
                     {
                         format(sp_msg, sizeof(sp_msg), "%d", PlayerVehicle[i][j][pv_odo]);
                         PlayerTextDrawSetString(playerid, Odo[playerid], sp_msg);
@@ -157,55 +163,43 @@ func:UpdatePlayerSpeedo(playerid, fuel)
                         PlayerTextDrawSetString(playerid, SpeedoPTD[playerid][5], sp_msg);
                     }
                 }
+
             }
         }
+        else
+        {
+            new var_veh[1280];
+            format(var_veh, 1280, "SVarVeh_%d", speedo_vid);
 
-        if(Seatbelt[playerid]){
+            format(sp_msg, sizeof(sp_msg), "%d",GetSVarInt(var_veh));
+            PlayerTextDrawSetString(playerid, Odo[playerid], sp_msg);
+
+            format(sp_msg, sizeof(sp_msg), "%d", fuel);
+            PlayerTextDrawSetString(playerid, SpeedoPTD[playerid][5], sp_msg);
+        }
+
+        if (Seatbelt[playerid])
+        {
             PlayerTextDrawSetString(playerid, SpeedoPTD[playerid][1], "mdl-2009:seatbelt-on");
             ReloadPlayerTextDraw(playerid, SpeedoPTD[playerid][1]);
         }
-        else{
+        else
+        {
             PlayerTextDrawSetString(playerid, SpeedoPTD[playerid][1], "mdl-2009:seatbelt");
             ReloadPlayerTextDraw(playerid, SpeedoPTD[playerid][1]);
         }
 
-        if(!IsVehicleEngineStarted(speedo_vid)) PlayerTextDrawShow(playerid, SpeedoPTD[playerid][4]);
+        if (!IsVehicleEngineStarted(speedo_vid)) PlayerTextDrawShow(playerid, SpeedoPTD[playerid][4]);
         else PlayerTextDrawHide(playerid, SpeedoPTD[playerid][4]);
 
     }
     return 1;
 }
 
-task UpdateOdo[1000]()
-{
-    foreach(new i:Player)
-    {
-        if(IsPlayerInAnyVehicle(i))
-        {
-            new speedo_vid = GetPlayerVehicleID(i);
-
-            if(!IsVehicleAdminSpawn(speedo_vid))
-            {
-                for(new j; j < MAX_PLAYER_VEHICLES; j++)
-                {
-                    if(PlayerVehicle[i][j][pv_vehid] == speedo_vid)
-                    {
-                        PlayerVehicle[i][j][pv_odo] += player_get_odometer(i);
-                    }
-                }
-            }
-
-            UpdatePlayerSpeedo(i, VehicleFuel[speedo_vid]);
-        }
-        if(IsPlayerInAnyVehicle(i)) ShowPlayerSpeedo(i);
-        else HidePlayerSpeedo(i);
-    }
-    return 1;
-}
 
 CMD:speedo(playerid, params[])
 {
-    if(!pSpeedo[playerid]) ShowPlayerSpeedo(playerid);
+    if (!pSpeedo[playerid]) ShowPlayerSpeedo(playerid);
     else HidePlayerSpeedo(playerid);
     return 1;
 }

@@ -56,32 +56,8 @@ new VehicleCustomName[][VehicleCustom_Data] = {
     {4788,"Bmw1250gs"}, {4789,"Snow kart"}, {4792,"Mxjack"}
 };
 
-enum PlayerVehicle_Data {
-    pv_id,
-    pv_sqlid,
-    pv_model,
-    Float:pvPosX,
-    Float:pvPosY,
-    Float:pvPosZ,
-    Float:pvPosR,
-    pv_lock,
-    pv_paintjob,
-    pv_color1,
-    pv_color2,
-    pv_ticket,
-    pv_restricted,
-    pv_fuel,
-    pv_impound,
-    pv_vw,
-    pv_int,
-    pv_spawned,
-    pv_vehid,
-    Float:pv_health,
-    pv_odo
-}
 
-new PlayerVehicle[MAX_PLAYERS][MAX_PLAYER_VEHICLES][PlayerVehicle_Data];
-
+new PlayerVehMap[MAX_PLAYERS][MAX_PLAYER_VEHICLES];
 
 new MaxVehicleFuel[212][] =
 {
@@ -113,3 +89,30 @@ new PlayerVehicleCount[MAX_PLAYERS];
 new Seatbelt[MAX_PLAYERS];
 
 new VehicleFuel[MAX_VEHICLES];
+
+
+enum PlayerVehicle_Data {
+    pv_id,
+    pv_sqlid,
+    pv_model,
+    Float:pvPosX,
+    Float:pvPosY,
+    Float:pvPosZ,
+    Float:pvPosR,
+    pv_lock,
+    pv_paintjob,
+    pv_color1,
+    pv_color2,
+    pv_ticket,
+    pv_restricted,
+    pv_fuel,
+    pv_impound,
+    pv_vw,
+    pv_int,
+    pv_spawned,
+    pv_vehid,
+    Float:pv_health,
+    pv_odo
+}
+
+new PlayerVehicle[MAX_PLAYERS][MAX_PLAYER_VEHICLES][PlayerVehicle_Data];

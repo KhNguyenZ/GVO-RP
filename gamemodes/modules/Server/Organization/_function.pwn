@@ -32,6 +32,7 @@ func:LoadOrgs()
         OrgData[i][org_id] = -1;
         LoadOrg(i);
     }
+    InitOrgVehMap();
 }
 func:LoadOrg(org_idzzz)
 {

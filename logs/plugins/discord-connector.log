@@ -104,3 +104,81 @@
 [06/22/24 21:58:28] [ERROR] Can't resolve Discord gateway URL 'gateway.discord.gg': This is usually a temporary error during hostname resolution and means that the local server did not receive a response from an authoritative server (11002)
 [06/30/24 11:33:42] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
 [06/30/24 11:39:04] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[06/30/24 12:38:59] [ERROR] Can't read from Discord websocket gateway: The semaphore timeout period has expired (121)
+[06/30/24 12:38:59] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[06/30/24 12:40:25] [ERROR] Can't establish secured connection to Discord API: An existing connection was forcibly closed by the remote host (10054)
+[06/30/24 12:51:47] [ERROR] Can't read from Discord websocket gateway: The semaphore timeout period has expired (121)
+[06/30/24 12:51:47] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[06/30/24 12:52:08] [ERROR] Can't connect to Discord gateway: A socket operation was attempted to an unreachable host (10065)
+[06/30/24 12:52:13] [ERROR] Can't resolve Discord gateway URL 'gateway.discord.gg': No such host is known (11001)
+[06/30/24 12:52:34] [ERROR] Can't resolve Discord gateway URL 'gateway.discord.gg': No such host is known (11001)
+[06/30/24 12:52:49] [ERROR] Can't resolve Discord gateway URL 'gateway.discord.gg': No such host is known (11001)
+[06/30/24 12:53:11] [ERROR] can't create guild: duplicate key '1'
+[06/30/24 12:53:11] [ERROR] can't create guild: duplicate key '6'
+[06/30/24 12:54:23] [ERROR] can't update guild member presence: guild id "1221835813386584126" not cached
+[06/30/24 12:54:23] [ERROR] can't update guild member presence: guild id "1221835813386584126" not cached
+[06/30/24 12:54:23] [ERROR] can't update guild member presence: guild id "1235864057278365756" not cached
+[06/30/24 12:54:23] [ERROR] can't update guild member presence: guild id "1221835813386584126" not cached
+[06/30/24 12:54:23] [ERROR] can't update guild member presence: guild id "1221835813386584126" not cached
+[06/30/24 12:54:23] [ERROR] can't update guild member presence: guild id "1221835813386584126" not cached
+[06/30/24 12:54:23] [ERROR] can't update guild member presence: guild id "1235864057278365756" not cached
+[06/30/24 12:54:23] [ERROR] can't update guild member presence: guild id "1235864057278365756" not cached
+[06/30/24 12:54:23] [ERROR] can't update guild member presence: guild id "1221835813386584126" not cached
+[06/30/24 12:54:23] [ERROR] can't update guild member presence: guild id "1221835813386584126" not cached
+[06/30/24 12:54:23] [ERROR] can't update guild member presence: guild id "1221835813386584126" not cached
+[06/30/24 12:54:24] [ERROR] can't update guild member presence: guild id "1235864057278365756" not cached
+[06/30/24 12:54:24] [ERROR] can't update guild member presence: guild id "1221835813386584126" not cached
+[06/30/24 12:54:34] [ERROR] can't update guild member presence: guild id "1221835813386584126" not cached
+[06/30/24 12:54:38] [ERROR] can't update guild member presence: guild id "1235864057278365756" not cached
+[06/30/24 12:54:40] [ERROR] Can't read from Discord websocket gateway: The network connection was aborted by the local system (1236)
+[06/30/24 12:54:40] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[06/30/24 12:54:40] [ERROR] Can't resolve Discord gateway URL 'gateway.discord.gg': No such host is known (11001)
+[06/30/24 12:54:46] [ERROR] can't update guild member presence: guild id "1221835813386584126" not cached
+[06/30/24 12:54:53] [ERROR] can't update guild member presence: guild id "1235864057278365756" not cached
+[06/30/24 12:54:54] [ERROR] can't update guild member presence: guild id "1221835813386584126" not cached
+[06/30/24 12:54:57] [ERROR] can't update guild member presence: guild id "1235864057278365756" not cached
+[06/30/24 12:54:58] [ERROR] can't update guild member presence: guild id "1221835813386584126" not cached
+[06/30/24 12:54:59] [ERROR] can't update guild member presence: guild id "1221835813386584126" not cached
+[06/30/24 12:55:04] [ERROR] can't update guild member presence: guild id "1221835813386584126" not cached
+[06/30/24 12:55:08] [ERROR] can't update guild member presence: guild id "1221835813386584126" not cached
+[06/30/24 12:55:14] [ERROR] can't update guild member presence: guild id "1221835813386584126" not cached
+[06/30/24 12:55:23] [ERROR] can't update guild member presence: guild id "1221835813386584126" not cached
+[06/30/24 12:55:24] [ERROR] can't update guild member presence: guild id "1221835813386584126" not cached
+[06/30/24 12:55:27] [ERROR] can't update guild member presence: guild id "1235864057278365756" not cached
+[06/30/24 12:55:29] [ERROR] can't update guild member presence: guild id "1235864057278365756" not cached
+[06/30/24 12:55:34] [ERROR] can't update guild member presence: guild id "1221835813386584126" not cached
+[06/30/24 12:55:44] [ERROR] can't update guild member presence: guild id "1221835813386584126" not cached
+[06/30/24 12:55:53] [ERROR] can't update guild member presence: guild id "1235864057278365756" not cached
+[06/30/24 12:55:54] [ERROR] can't update guild member presence: guild id "1221835813386584126" not cached
+[06/30/24 12:56:04] [ERROR] can't update guild member presence: guild id "1221835813386584126" not cached
+[06/30/24 12:56:14] [ERROR] can't update guild member presence: guild id "1221835813386584126" not cached
+[06/30/24 12:56:24] [ERROR] can't update guild member presence: guild id "1221835813386584126" not cached
+[06/30/24 12:56:33] [ERROR] can't update guild member presence: guild id "1235864057278365756" not cached
+[06/30/24 12:56:34] [ERROR] can't update guild member presence: guild id "1221835813386584126" not cached
+[06/30/24 14:05:05] [ERROR] Can't read from Discord websocket gateway: An existing connection was forcibly closed by the remote host (10054)
+[06/30/24 14:05:05] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[06/30/24 18:05:45] [ERROR] Can't read from Discord websocket gateway: An existing connection was forcibly closed by the remote host (10054)
+[06/30/24 18:05:45] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[06/30/24 18:05:57] [ERROR] Can't resolve Discord gateway URL 'gateway.discord.gg': No such host is known (11001)
+[06/30/24 18:06:13] [ERROR] Can't resolve Discord gateway URL 'gateway.discord.gg': No such host is known (11001)
+[06/30/24 18:28:51] [ERROR] Can't read from Discord websocket gateway: An existing connection was forcibly closed by the remote host (10054)
+[06/30/24 18:28:51] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[06/30/24 18:58:49] [ERROR] Can't read from Discord websocket gateway: An existing connection was forcibly closed by the remote host (10054)
+[06/30/24 18:58:49] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[06/30/24 19:05:59] [ERROR] Can't read from Discord websocket gateway: An existing connection was forcibly closed by the remote host (10054)
+[06/30/24 19:05:59] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[06/30/24 19:06:49] [ERROR] Can't read from Discord websocket gateway: The network connection was aborted by the local system (1236)
+[06/30/24 19:06:49] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[06/30/24 19:19:06] [ERROR] Can't read from Discord websocket gateway: An existing connection was forcibly closed by the remote host (10054)
+[06/30/24 19:19:06] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[06/30/24 23:03:04] [ERROR] Can't read from Discord websocket gateway: The semaphore timeout period has expired (121)
+[06/30/24 23:03:04] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[06/30/24 23:03:04] [ERROR] Can't resolve Discord gateway URL 'gateway.discord.gg': No such host is known (11001)
+[06/30/24 23:03:09] [ERROR] Can't resolve Discord gateway URL 'gateway.discord.gg': No such host is known (11001)
+[07/01/24 04:29:57] [ERROR] Can't read from Discord websocket gateway: An existing connection was forcibly closed by the remote host (10054)
+[07/01/24 04:29:57] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[07/01/24 09:44:39] [ERROR] Can't read from Discord websocket gateway: An existing connection was forcibly closed by the remote host (10054)
+[07/01/24 09:44:39] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[07/01/24 10:10:43] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[07/01/24 10:28:22] [ERROR] Can't read from Discord websocket gateway: An existing connection was forcibly closed by the remote host (10054)
+[07/01/24 10:28:22] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)

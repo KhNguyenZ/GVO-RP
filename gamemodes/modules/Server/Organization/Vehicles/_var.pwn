@@ -1,4 +1,5 @@
-#define MAX_ORG_VEHICLES 1000
+
+
 enum OrgVehicle_Data {
     ov_id,
     ov_orgid,
@@ -22,5 +23,6 @@ enum OrgVehicle_Data {
     ov_sqlid
 }
 
+new OrgVeh[MAX_ORG][MAX_ORG_VEHICLES][OrgVehicle_Data];
 
-new OrgVeh[MAX_ORG][MAX_ORG_VEHICLES][PlayerVehicle_Data];
+new OrgVehMap[MAX_ORG * MAX_ORG_VEHICLES][2];

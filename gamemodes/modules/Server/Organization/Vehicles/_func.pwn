@@ -50,8 +50,10 @@ func:SaveOrgVeh(_sorg_id)
                OrgVeh[_sorg_id][i][ov_int],
                OrgVeh[_sorg_id][i][ov_health],
                OrgVeh[_sorg_id][i][ov_odo],
-               OrgVeh[_sorg_id][i][ov_sqlid]);
+               OrgVeh[_sorg_id][i][ov_siren],
+               OrgVeh[_sorg_id][i][ov_id]);
 
+        printf("%s", v_save);
         mysql_tquery(Handle(), v_save, "");
         break;
     }
@@ -126,8 +128,24 @@ public OnCreateVehOrg(playerid, _org_id, _vmodel, lock, paintjob, color1, color2
     OrgVeh[_org_id][_vid][ov_int] = GetPlayerInterior(playerid);
     OrgVeh[_org_id][_vid][ov_health] = 3000;
     OrgVeh[_org_id][_vid][ov_odo] = 0;
-    OrgVeh[_org_id][_vid][ov_sqlid] = _vid;
+    OrgVeh[_org_id][_vid][ov_id] = _vid;
 
+    
+    printf("Model: %d\n", OrgVeh[_org_id][_vid][ov_model]); // Assuming ov_model is at index 0
+    printf("Position X: %.2f\n", OrgVeh[_org_id][_vid][ovPosX]); // Assuming ovPosX is at index 1
+    printf("Position Y: %.2f\n", OrgVeh[_org_id][_vid][ovPosY]); // Assuming ovPosY is at index 2
+    printf("Position Z: %.2f\n", OrgVeh[_org_id][_vid][ovPosZ]); // Assuming ovPosZ is at index 3
+    printf("Position R: %.2f\n", OrgVeh[_org_id][_vid][ovPosR]); // Assuming ovPosR is at index 4
+
+    printf("Lock: %d\n", OrgVeh[_org_id][_vid][ov_lock]); // Assuming ov_lock is at index 5
+    printf("Paintjob: %d\n", OrgVeh[_org_id][_vid][ov_paintjob]); // Assuming ov_paintjob is at index 6
+    printf("Fuel: %0.2f\n", OrgVeh[_org_id][_vid][ov_fuel]); // Assuming ov_fuel is at index 9
+    printf("Virtual World: %d\n", OrgVeh[_org_id][_vid][ov_vw]); // Assuming ov_vw is at index 10
+    printf("Interior: %d\n", OrgVeh[_org_id][_vid][ov_int]); // Assuming ov_int is at index 11
+    printf("Health: %d\n", OrgVeh[_org_id][_vid][ov_health]); // Assuming ov_health is at index 12
+    printf("Odometer: %d\n", OrgVeh[_org_id][_vid][ov_odo]); // Assuming ov_odo is at index 13
+    printf("Siren: %d\n", OrgVeh[_org_id][_vid][ov_siren]); // Assuming ov_siren is at index 14
+    printf("ID: %d\n", OrgVeh[_org_id][_vid][ov_id]); // Assuming ov_id is at index 15
 
     OrgVeh[_org_id][_vid][ov_vehid] = CreateVehicle(_vmodel, v_Pos[0], v_Pos[1], v_Pos[2], v_Pos[3], color1, color2, 500, siren);
     SetVehicleHealth(OrgVeh[_org_id][_vid][ov_vehid], OrgVeh[_org_id][_vid][ov_health]);
@@ -157,4 +175,13 @@ public OnPlayerStateChange(playerid, newstate, oldstate)
         }
     }
     return 1;
+}
+
+func:InitOrgVehMap() {
+    for (new j = 0; j < MAX_ORG; j++) {
+        for (new z = 0; z < MAX_ORG_VEHICLES; z++) {
+            OrgVehMap[OrgVeh[j][z][ov_vehid]][0] = j;
+            OrgVehMap[OrgVeh[j][z][ov_vehid]][1] = z;
+        }
+    }
 }

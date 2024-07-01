@@ -24,3 +24,11 @@
 
 #define         DIALOG_AHELP        10040
 #define         DIALOG_NOTHING      15000
+
+#define INVALID_INDEX -1
+#define             MAX_WEAPON_ORG         100
+#define             MAX_RANK_ORG           10
+#define             MAX_ORG                1000
+#define             MAX_SKIN_ORG           10
+
+#define MAX_ORG_VEHICLES 1000

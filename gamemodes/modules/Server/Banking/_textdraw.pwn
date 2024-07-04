@@ -735,6 +735,7 @@ func:DestroyPageTransferBanking(playerid)
 
 CMD:banking(playerid, params[])
 {
+    if(!IsPlayerInRangeOfPoint(playerid, 15.0, 2308.7346, -11.0134, 26.7422)) return SendErrorMessage(playerid, "Ban khong o ngan hang!");
     if(Character[playerid][char_OTP] != EOS)
     {
         OpenBanking(playerid);

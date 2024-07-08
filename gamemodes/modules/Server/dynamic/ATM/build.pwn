@@ -46,7 +46,7 @@ public LoadATMs(limit)
     
     return 1;
 }
-
+ 
 CMD:atm(playerid)
 {
 	for(new i; i < MAX_ATM; i++)

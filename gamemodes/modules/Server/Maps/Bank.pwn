@@ -11,6 +11,10 @@ hook OnGameModeInit()
     // Create3DTextLabel("{00ff00}[BANK]\n{99cc00}Exterior{FFFFFF}\nSu dung {ffff00}Y{FFFFFF} de vao Interrior Bank.", COLOR_WHITE, 1457.0790,-1010.0229,26.8438, 10.0, 0, false);
     // Create3DTextLabel("{00ff00}[BANK]\n{99cc00}Exterior{FFFFFF}\nSu dung {ffff00}Y{FFFFFF} de vao Interrior Bank.", COLOR_WHITE, 1467.3745,-1009.9436,26.8438, 10.0, 0, false);
     
+	Create3DTextLabel("{00ff00}[BANK]\n{FFFFFF}Su dung {ffff00}/banking{FFFFFF} de tim hieu.", COLOR_WHITE, 1102.346679, -1429.463378, 15.436881, 30.0, 0, false); //CAY ATM
+    Create3DTextLabel("{00ff00}[BANK]\n{FFFFFF}Su dung {ffff00}/banking{FFFFFF} de tim hieu.", COLOR_WHITE, 1928.636230, -1766.932739, 13.136870, 30.0, 0, false); //CAY ATM
+    Create3DTextLabel("{00ff00}[BANK]\n{FFFFFF}Su dung {ffff00}/banking{FFFFFF} de tim hieu.", COLOR_WHITE, 1495.875854, -1749.788452, 15.085303, 30.0, 0, false); //CAY ATM
+    
 	Create3DTextLabel("{00ff00}[DEPOSIT]\n{FFFFFF}Su dung {ffff00}/banking{FFFFFF} de tim hieu.", COLOR_WHITE, -2679.9775,807.0945,1500.9688, 30.0, 0, false);
     Create3DTextLabel("{00ff00}[INVESTMENT]\n{FFFFFF}Su dung {ffff00}/banking{FFFFFF} de tim hieu.", COLOR_WHITE, -2673.0344,807.2880,1500.9688, 30.0, 0, false);
     Create3DTextLabel("{00ff00}[WITHDRAWS]\n{FFFFFF}Su dung {ffff00}/banking{FFFFFF} de tim hieu.", COLOR_WHITE, -2666.8518,802.3608,1500.9688, 30.0, 0, false);
@@ -1167,6 +1171,9 @@ hook OnGameModeInit()
 	CreateDynamicObject(19861, 167.342804, -186.832794, 3.050300, 360.000000, 360.000000, 360.000000, -1, -1);
 	/////////////////////////////////////////////////////	
 	new tmpobjid;
+	tmpobjid = CreateObject(19324, 1102.346679, -1429.463378, 15.436881, 0.000000, 0.000000, 90.999931, 300.00); 
+    tmpobjid = CreateObject(19324, 1928.636230, -1766.932739, 13.136870, 0.000000, 0.000000, 91.099960, 300.00); 
+    tmpobjid = CreateObject(19324, 1495.875854, -1749.788452, 15.085303, 0.000000, 0.000000, -179.899948, 300.00); 
     CreateDynamicObject(18850, 1534.70764, -1791.15454, 20.29960,   0.00000, 0.00000, 90.00000);
     CreateDynamicObject(19121, 1547.26660, -1778.67004, 33.07820,   0.00000, 0.00000, 0.00000);
     CreateDynamicObject(19121, 1547.23669, -1803.72009, 33.05590,   0.00000, 0.00000, 0.00000);
@@ -2148,7 +2155,7 @@ hook OnGameModeInit()
 	SetDynamicObjectMaterial(tmpobjid, 0, 11301, "carshow_sfse", "concpanel_la", -1);
 	CreateDynamicObject(14793, -2645.095459, 798.913757, 1505.350220, 0.000000, 0.000000, 180.000000);
 
-    LogConsole("Map CityHall loaded","Map");
+    LogConsole("Map BANK loaded","Map");
 
     return 1;
 }

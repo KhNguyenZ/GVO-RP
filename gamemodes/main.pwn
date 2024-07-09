@@ -16,6 +16,7 @@
 #include <strlib>
 #include <sampvoice>
 #include <Pawn.RakNet>
+#include <VehiclePartPosition>
 #undef MAX_PLAYERS
 #define MAX_PLAYERS 500
 #pragma disablerecursion

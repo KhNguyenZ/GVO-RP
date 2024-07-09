@@ -18,7 +18,7 @@
 	* SetPlayerNearVehiclePart(playerid, vehicleid, part, Float:offset = 0.5); - Teleports a player to the front of a part of the vehicle.
 	* GetVehiclePartName(part); - Return the vehicle part name.
  	
-
+ 
 
  	Changelog:
 

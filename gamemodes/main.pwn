@@ -87,6 +87,8 @@ main()
 
 #include "./modules/Server/Banking/build.pwn"
 
+#include "./modules/Server/GPS/GPS.pwn"
+
 // JOB
 #include "./modules/Server/CongViec/build.pwn"
 #include "./modules/Server/CongViec/Mechanic/build.pwn"

@@ -174,3 +174,13 @@ public OnPlayerRequestClass(playerid, classid)
     }
     return 1;
 }
+
+public OnPlayerEnterCheckpoint(playerid)
+{
+	if(CP[playerid] == 252000)
+ 	{
+	 	CP[playerid] = 0;
+	 	PlayerPlaySound(playerid, 1056, 0.0, 0.0, 0.0);
+	 	DisablePlayerCheckpoint(playerid);
+ 	}
+}

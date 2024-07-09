@@ -118,8 +118,8 @@ CMD:xemhang(playerid, params[]) {
 	if(IsPlayerInAnyVehicle(playerid)) return SendClientMessage(playerid, COLOR_RED, "VUI LONG XUONG XE!");
 	if(DangLamViec[playerid] == 0) return true;
 	if(hangtrentay[playerid][0] == 1 || hangtrentay[playerid][1] == 1 || hangtrentay[playerid][2] == 1) return true;
-	new Float:X, Float:Y, Float:Z;
-    GetVehiclePos(XeTruck[playerid], X, Y, Z);
+	//new Float:X, Float:Y, Float:Z;
+    //GetVehiclePos(XeTruck[playerid], X, Y, Z);
 	if(IsPlayerInRangeOfPoint(playerid, 4.0,  X, Y, Z)) {
 		new szDialog[512], string[512];
 		strcat(szDialog, "#\tHang Hoa\tSo Luong\n");

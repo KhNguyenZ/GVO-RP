@@ -11,9 +11,4 @@
 #include "./modules/Server/dynamic/Biz/247/textdraw.pwn"
 #include "./modules/Server/dynamic/Biz/247/func.pwn"
 
-#include "./modules/Server/dynamic/ActionButton/_var.pwn"
-#include "./modules/Server/dynamic/ActionButton/_textdraw.pwn"
-#include "./modules/Server/dynamic/ActionButton/_callback.pwn"
-#include "./modules/Server/dynamic/ActionButton/_func.pwn"
-
 #include "./modules/Server/dynamic/ATM/build.pwn" 

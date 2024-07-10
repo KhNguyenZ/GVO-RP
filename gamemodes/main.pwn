@@ -16,13 +16,9 @@
 #include <strlib>
 #include <sampvoice>
 #include <Pawn.RakNet>
-<<<<<<< HEAD
 #include <memory>
 #include <VehiclePartPosition>
 #include <PreviewModelDialog>
-=======
-#include <VehiclePartPosition>
->>>>>>> 729b844565d8c1eca0d89e55f52e14d8c40243a0
 #undef MAX_PLAYERS
 #define MAX_PLAYERS 500
 #pragma disablerecursion
@@ -91,8 +87,6 @@ main()
 #include "./modules/Server/Organization/build.pwn"
 
 #include "./modules/Server/Banking/build.pwn"
-
-#include "./modules/Server/GPS/GPS.pwn"
 
 // JOB
 #include "./modules/Server/CongViec/build.pwn"

@@ -16,7 +16,13 @@
 #include <strlib>
 #include <sampvoice>
 #include <Pawn.RakNet>
+<<<<<<< HEAD
+#include <memory>
 #include <VehiclePartPosition>
+#include <PreviewModelDialog>
+=======
+#include <VehiclePartPosition>
+>>>>>>> 729b844565d8c1eca0d89e55f52e14d8c40243a0
 #undef MAX_PLAYERS
 #define MAX_PLAYERS 500
 #pragma disablerecursion
@@ -24,14 +30,13 @@
 
 #define  			MYSQL_HOST				"localhost"
 #define  			MYSQL_USER				"root"
-#define  			MYSQL_PASS				"" //123456
-#define  			MYSQL_DB				"gvo" //ssa
+#define  			MYSQL_PASS				"123456" //123456
+#define  			MYSQL_DB				"ssa" //ssa
 
 
 new SERVER_TEST = 1; // 1: Server test ( bỏ qua login và nhiều anti khác) | 0: Mở server bình thường
 new SERVER_API[20]    = "ssa-rp.xyz/api/",
-                        SERVER_COMPONET[30]   = "ssa-rp.xyz/server/component/",
-                                SEVRER_CONTROLLER[30] = "ssa-rp.xyz/server/controller/";
+    SEVRER_CONTROLLER[30] = "ssa-rp.xyz/server/controller/";
 main()
 {
     SetGameModeText("KhNguyen Dev");

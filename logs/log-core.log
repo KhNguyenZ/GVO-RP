@@ -187,3 +187,5 @@
 [07/01/24 10:47:31] [ERROR] exception 0XC0000005 (ACCESS_VIOLATION) from Vectored Exception Handler catched; shutting log-core down
 [07/01/24 10:47:33] [ERROR] exception 0XC0000005 (ACCESS_VIOLATION) from Vectored Exception Handler catched; shutting log-core down
 [07/01/24 10:47:33] [ERROR] exception 0XC0000005 (ACCESS_VIOLATION) from Vectored Exception Handler catched; shutting log-core down
+[07/10/24 13:17:13] [INFO] received Windows console close event; shutting log-core down
+[07/10/24 21:40:33] [INFO] received Windows console close event; shutting log-core down

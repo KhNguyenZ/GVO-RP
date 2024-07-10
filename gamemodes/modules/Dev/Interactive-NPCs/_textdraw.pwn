@@ -182,6 +182,7 @@ func:ShowPlayerInteractive(playerid, inter_ids, title[], content[], i_btn1[] = "
 
 func:DestroyPlayerInteractive(playerid)
 {
+    // SetPVarInt(playerid, #isOpenInteractive)
     CancelSelectTextDraw(playerid);
     for(new i; i < 13; i++) PlayerTextDrawHide(playerid, iNPC_PTD[playerid][i]);
     DeletePVar(playerid, #isOpenInteractive);
@@ -194,10 +195,10 @@ func:DestroyPlayerInteractive(playerid)
 hook OnGameModeInit()
 {
     for(new i; i < MAX_INTERACTIVE_NPC; i++) InteractiveNPCs_Data[i][iNPC_ID] = -1;
-    new Inter_NPC_Test;
-    Inter_NPC_Test = CreateInteractiveNPC(0, "Test", "Interactive Test",2, 1808.5581,-1905.7458,13.5741,90.0084);
+    // new Inter_NPC_Test;
+    // Inter_NPC_Test = CreateInteractiveNPC(0, "Test", "Interactive Test",2, 1808.5581,-1905.7458,13.5741,90.0084);
 
-    Inter_NPC_Test = CreateInteractiveNPC(1, "KhNguyen_Z", "Interactive Test Actor",2,1797.5756,-1909.0494,13.3979,150.5175);
-    Inter_NPC_Test = CreateInteractiveNPC(1, "KhNguyen_Z", "Interactive Test Actor",2,1797.5756,-1909.0494,13.3979,150.5175);
-    ApplyActorAnimation(Inter_NPC_Test, "LOWRIDER","prtial_gngtlkB",4.1,1,0,0,0,0);
+    // Inter_NPC_Test = CreateInteractiveNPC(1, "KhNguyen_Z", "Interactive Test Actor",2,1797.5756,-1909.0494,13.3979,150.5175);
+    // Inter_NPC_Test = CreateInteractiveNPC(1, "KhNguyen_Z", "Interactive Test Actor",2,1797.5756,-1909.0494,13.3979,150.5175);
+    // ApplyActorAnimation(Inter_NPC_Test, "LOWRIDER","prtial_gngtlkB",4.1,1,0,0,0,0);
 }

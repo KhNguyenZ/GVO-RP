@@ -63,14 +63,13 @@ enum character_Info
     char_Email_Code[10],
     char_Email_Status,
     char_Refer[MAX_PLAYER_NAME],
-    char_Injured
+    char_Injured,
 }
 
 new Character[MAX_PLAYERS][character_Info];
 new PlayerText:
 SpawnLSRP[MAX_PLAYERS][4];
 new PlayerSetupping[MAX_PLAYERS];
-// new PlayerText:SpawnNewbiePTD[MAX_PLAYERS][7];
 new PlayerText:
 FadeEffect[MAX_PLAYERS][1];
 new PlayerText:

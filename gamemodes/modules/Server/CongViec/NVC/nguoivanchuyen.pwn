@@ -59,7 +59,7 @@ CMD:diemgiaohang(playerid, params[]) {
 		format(string,sizeof(string), "%d\t%s\t%s\t%0.1fm\n",ThuMuaTruck[i][idhang],ThuMuaTruck[i][tenhang],ThuMuaTruck[i][KhuVuc],GetPlayerDistanceFromPoint(playerid, KhuVucThuMua[i][0],KhuVucThuMua[i][1],KhuVucThuMua[i][2]));
 		strcat(szDialog, string);
 	}
-	ShowPlayerDialog(playerid, DLG_DIEMGIAOHANG, DIALOG_STYLE_TABLIST_HEADERS, "Dia Diem Giao Hang",szDialog,"Den", "Huy");
+	// ShowPlayerDialog(playerid, DLG_DIEMGIAOHANG, DIALOG_STYLE_TABLIST_HEADERS, "Dia Diem Giao Hang",szDialog,"Den", "Huy");
 	return true;
 }
 CMD:reloadgiathumua(playerid, params[]) {
@@ -131,7 +131,7 @@ CMD:xemhang(playerid, params[]) {
 		strcat(szDialog, string);
 		format(string, sizeof(string), "4\t9mm\t%d\n", hangtrenxe[playerid][3]);
 		strcat(szDialog, string);
-		ShowPlayerDialog(playerid, DLG_XEMHANG, DIALOG_STYLE_TABLIST_HEADERS, "Hang Hoa", szDialog, "Lay", "Huy bo");
+		// ShowPlayerDialog(playerid, DLG_XEMHANG, DIALOG_STYLE_TABLIST_HEADERS, "Hang Hoa", szDialog, "Lay", "Huy bo");
 	}
 	return true;
 }

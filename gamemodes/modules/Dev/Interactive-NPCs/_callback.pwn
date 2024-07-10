@@ -9,6 +9,8 @@ hook OnPlayerUpdate(playerid)
         new inter_guide[1280], inter_aid = IsPlayerNearInteractiveNPC(playerid);
         format(inter_guide, 1280, "Tuong tac voi %s", GetActorName(InteractiveNPCs_Data[inter_aid][iNPC_ID]));
         ChangeGuideContent(playerid, "Y",inter_guide);
+
+        // DestroyPlayerInteractive(playerid);
     }
     else ChangeGuideContent(playerid, "Y","Tuong tac voi NULL");
     return 1;

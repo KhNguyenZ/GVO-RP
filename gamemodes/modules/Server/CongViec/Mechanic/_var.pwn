@@ -4,7 +4,7 @@
 #define     DIALOG_RUBBER       3000
 #define     DIALOG_PLASTIC      4000
 #define     MECHANIC_ITEMS      1000
-// PRESSED(keys)
+
 #define PRESSED(%0) \
 	(((newkeys & (%0)) == (%0)) && ((oldkeys & (%0)) != (%0)))
 

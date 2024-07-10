@@ -161,8 +161,8 @@ func:SavePlayerVehicle(playerid, vehsqlid)
                    PlayerVehicle[playerid][i][pv_int],
                    PlayerVehicle[playerid][i][pv_health],
                    PlayerVehicle[playerid][i][pv_odo],
-                   PlayerVehicle[playerid][i][pv_sqlid]);
-            printf("%s", v_save);
+                   PlayerVehicle[playerid][i][pv_id]);
+            // printf("%s", v_save);
             mysql_tquery(Handle(), v_save, "");
             break;
         }
@@ -256,7 +256,7 @@ func:CreatePlayerVehicle(playerid, model, lock, paintjob, color1, color2)
            fuel_v,
            GetPlayerVirtualWorld(playerid),
            GetPlayerInterior(playerid));
-    printf("%s", v_save);
+    // printf("%s", v_save);
     if (mysql_tquery(Handle(), v_save, "")) ReloadPlayerVehicle(playerid);
 
     return 1;

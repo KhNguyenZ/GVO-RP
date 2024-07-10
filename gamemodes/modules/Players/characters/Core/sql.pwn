@@ -72,6 +72,7 @@ public OnCharacterLoad(const playerid)
 	cache_get_value_name(0, "Refer", Character[playerid][char_Refer]);
 
 	cache_get_value_name_int(0, "Injured", Character[playerid][char_Injured]);
+	cache_get_value_name_int(0, "Job", Character[playerid][char_Job]);
     return 1;
 }
 
@@ -129,9 +130,10 @@ hook OnPlayerDisconnect(playerid, reason)
 
 		mysql_format(Handle(), query, sizeof(query), "%s LastLogin = '%s',", query, Character[playerid][char_LastLogin]);
 		mysql_format(Handle(), query, sizeof(query), "%s Injured = '%d',", query, Character[playerid][char_Injured]);		
+		mysql_format(Handle(), query, sizeof(query), "%s Job = '%d',", query, Character[playerid][char_Job]);		
 		
 		mysql_format(Handle(), query, sizeof(query), "%s Skin = %d WHERE `id` = '%d' LIMIT 1", query, Character[playerid][char_Skin], Character[playerid][char_player_id]);
-		printf("%s",query);
+		// printf("%s",query);
 		if(mysql_tquery(Handle(), query))
 		{
 			Character[playerid][char_Login] = false;

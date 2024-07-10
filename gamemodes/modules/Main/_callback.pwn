@@ -139,7 +139,7 @@ public OnPlayerLoad(playerid)
     TogglePlayerSpectating(playerid, 0);
     Clear_Chat(playerid);
     new sdm[1280];
-    mysql_format(Handle(), sdm, sizeof(sdm), "[{212c58}SSA{ffffff}] Chao mung ban den voi may chu, {0066ff}%s.", player_get_name(playerid));
+    mysql_format(Handle(), sdm, sizeof(sdm), "[{212c58}GVO{ffffff}] Chao mung ban den voi may chu, {0066ff}%s.", player_get_name(playerid));
     SendClientMessage(playerid, -1, sdm);
     PlayerSetupping[playerid] = 0;
     if (Character[playerid][char_Admin] > 0)
@@ -173,4 +173,14 @@ public OnPlayerRequestClass(playerid, classid)
         SetPlayerJoinCamera(playerid);
     }
     return 1;
+}
+
+public OnPlayerEnterCheckpoint(playerid)
+{
+	if(CP[playerid] == 252000)
+ 	{
+	 	CP[playerid] = 0;
+	 	PlayerPlaySound(playerid, 1056, 0.0, 0.0, 0.0);
+	 	DisablePlayerCheckpoint(playerid);
+ 	}
 }

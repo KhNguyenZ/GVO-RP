@@ -125,3 +125,5 @@ new CountGuide[MAX_PLAYERS];
 
 new PlayerText:
 DeathUI[MAX_PLAYERS][4];
+
+new CP[MAX_PLAYERS];

@@ -732,20 +732,3 @@ func:DestroyPageTransferBanking(playerid)
     PlayerTextDrawHide(playerid, BackToTransaction[playerid][1]);
     return 1;
 }
-
-CMD:banking(playerid, params[])
-{
-    if(!IsPlayerInRangeOfPoint(playerid, 15.0, -2666.7080,796.2833,1500.9688)) return SendErrorMessage(playerid, "Ban khong o ngan hang!");
-    if(Character[playerid][char_OTP] != EOS)
-    {
-        OpenBanking(playerid);
-        SelectTextDraw(playerid, 0xFF00FF);
-        
-    }
-    else 
-    {
-        SendClientMessage(playerid, COLOR_WHITE, "Ban chua cap nhat ma OTP [ {ff0000}/otp{ffffff} ] de cap nhat");    
-    }
-    
-    return 1;
-}

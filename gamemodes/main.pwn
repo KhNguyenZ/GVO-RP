@@ -19,6 +19,8 @@
 #include <memory>
 #include <VehiclePartPosition>
 #include <PreviewModelDialog>
+#include <progress3D>
+
 #undef MAX_PLAYERS
 #define MAX_PLAYERS 500
 #pragma disablerecursion
@@ -105,7 +107,6 @@ public SSA_Mysql_Intit()
     LoadOrgs();
     LoadInventoryDrop();
     CreateInfo();
-    // for(new i; i < 10; i++) printf("I:%d",i);
     return 1;
 }
 public OnGameModeExit()

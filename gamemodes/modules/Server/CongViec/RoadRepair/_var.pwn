@@ -116,3 +116,5 @@ new Float:DamagePoint[][4] =
 };
 
 new RepairPoint[MAX_PLAYERS];
+
+new VehRR_Renter[MAX_PLAYERS];

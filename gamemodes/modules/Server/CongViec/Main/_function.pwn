@@ -65,7 +65,7 @@ func:RentJobCar(playerid, _job, _veh_model, _color)
     SendJobMessage(playerid, "Su dung /traxe de tra xe va thanh toan so tien");
 
     Timer_Rent[Veh_Rent[_free_id][job_vehid]] = SetTimerEx("TimerVehRent", 1000, 1, "i", Veh_Rent[_free_id][job_vehid]);
-    return 1;
+    return Veh_Rent[_free_id][job_vehid];
 }
 
 
@@ -109,7 +109,7 @@ hook OnPlayerDisconnect(playerid, reason)
             new _realtime = floatround(Veh_Rent[_rentid][job_time] / 60);
             Character[_renter][char_Cash] -= (_realtime * 100);
 
-            // SendJobMessage(_renter, sprintf("Ban da phai tra $%d cho chiec xe da thue cua minh", (_realtime * 100)));
+            
             DestroyVehicle(Veh_Rent[_rentid][job_vehid]);
             Veh_Rent[_rentid][job_id] = -1;
             Veh_Rent[_rentid][job_renter] = -1;

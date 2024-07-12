@@ -1,6 +1,7 @@
 // id veh 552
 // 
 // GetPosNearVehiclePart
+#define IsPlayerRoadRepair(%0) (Character[%0][char_Job] == JOB_ROADREPAIR)
 func:StartRoadRepair(playerid)
 {
     new dm_point = RandomEx(0,sizeof(DamagePoint));

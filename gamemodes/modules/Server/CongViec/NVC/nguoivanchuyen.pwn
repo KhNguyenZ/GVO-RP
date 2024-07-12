@@ -249,7 +249,7 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[]) {
 		if(response)
 		{
 			if(LuongHang[playerid] == 5) return SendClientMessage(playerid, COLOR_WHITE, "Da Toi Da So Luong Cho Phep");
-			if(GivePlayerMoney(playerid) < giatruck[listitem]) return SendClientMessage(playerid, COLOR_GREY, "Ban khong du tien");
+			if(Character[playerid][char_Cash] < giatruck[listitem]) return SendClientMessage(playerid, COLOR_GREY, "Ban khong du tien");
 			switch(listitem) {
 				case 0:{
 					if(hangtrentay[playerid][0] == 1 || hangtrentay[playerid][1] == 1 || hangtrentay[playerid][2] == 1 || hangtrentay[playerid][3] == 1) return true;

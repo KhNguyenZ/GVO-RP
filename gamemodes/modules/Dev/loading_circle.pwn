@@ -1,5 +1,5 @@
-new PlayerText:
-CircleLoadPTD[MAX_PLAYERS][3];
+#include <YSI_Coding\y_hooks>
+new PlayerText: CircleLoadPTD[MAX_PLAYERS][3];
 forward OnFinishLoadCircle(playerid, _load_id);
 new CL_Loop[MAX_PLAYERS];
 new LoadingTimer[MAX_PLAYERS];

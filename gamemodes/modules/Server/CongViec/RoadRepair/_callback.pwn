@@ -1,5 +1,4 @@
 #include <YSI_Coding\y_hooks>
-#define IsPlayerRoadRepair(%0) (Character[%0][char_Job] == JOB_ROADREPAIR)
 hook OnGameModeInit()
 {
     new RoadRepair_NPC;
@@ -19,6 +18,16 @@ hook OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
             {
                 ShowPlayerInteractive(playerid, 2, "Cong viec sua duong", "Sua cac con duong bi hu hong", "Xin viec", "Nghi Viec", "Thay dong phuc", "Thue xe");
             }
+        }
+    }
+    if(newkeys == KEY_WALK)
+    {
+        new _rr_veh = GetNeraestVehicle(playerid, 10.0),
+        _vh_id = VehRR_Renter[playerid];
+        if(_rr_veh == _vh_id)
+        {
+            if(IsPlayerInAnyVehicle(playerid)) return SendErrorMessage(playerid, "Ban can phai xuong xe de thao tac");
+            ShowDialogCade(playerid);
         }
     }
     return 1;
@@ -52,7 +61,7 @@ hook OnInteractiveResponse(playerid, inter_id, response, btn_click)
                 }
                 case 3:
                 {
-                    new p_rent = RentJobCar(playerid, JOB_ROADREPAIR, RR_VEHMODEL, RR_VEHCOLOR)
+                    new p_rent = RentJobCar(playerid, JOB_ROADREPAIR, RR_VEHMODEL, RR_VEHCOLOR),
                     Float:_TrunkPos[3];
                     GetVehiclePartPos(p_rent, VEH_PART_TRUNK, _TrunkPos[0], _TrunkPos[1], _TrunkPos[2]);
 
@@ -60,24 +69,9 @@ hook OnInteractiveResponse(playerid, inter_id, response, btn_click)
                     new Text3D:Label_rent;
                     Label_rent = Create3DTextLabel("{ff0000}ALT{ffffff} de lay rao chan", COLOR_RED, 0,0,0, 5.0, 0);
                     Attach3DTextLabelToVehicle(Label_rent, p_rent, _TrunkPos[0], _TrunkPos[1], _TrunkPos[2]);
-                    VehRR_Renter[playerid] == p_rent;
+                    VehRR_Renter[playerid] = p_rent;
                 }
             }
-        }
-    }
-    return 1;
-}
-
-hook OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
-{
-    if(PRESSED(KEY_WALK))
-    {
-        new _rr_veh = GetNeraestVehicle(playerid, 10.0),
-        _vh_id = VehRR_Renter[playerid];
-        if(_rr_veh == _vh_id)
-        {
-            if(IsPlayerInAnyVehicle(playerid)) return SendErrorMessage(playerid, "Ban can phai xuong xe de thao tac");
-            ShowDialogCade(playerid);
         }
     }
     return 1;

@@ -93,7 +93,7 @@ func:LoadPlayerVehicle(playerid)
     format(v_query, sizeof(v_query), "SELECT * FROM `vehicle` WHERE `sqlid` = '%d'", GetPlayerSQLID(playerid));
     mysql_tquery(Handle(), v_query, "OnLoadPlayerVehicle", "i", playerid);
 
-    printf("%s", v_query);
+    // printf("%s", v_query);
     return 1;
 }
 

@@ -305,22 +305,6 @@ CMD:goto(playerid, params[])
             }
             else SetPlayerPos(playerid, 2231.578613, -48.729660, 26.484375);
         }
-        else if (strcmp(location, "nggshop", true) == 0)
-        {
-            if (GetPlayerState(playerid) == 2)
-            {
-                new tmpcar = GetPlayerVehicleID(playerid);
-                SetVehiclePos(tmpcar, 2930.920410, -1429.603637, 10.675988);
-                LinkVehicleToInterior(tmpcar, int);
-                SetVehicleVirtualWorld(tmpcar, 1);
-
-            }
-            else
-            {
-                SetPlayerPos(playerid, 2957.967041, -1459.404541, 10.809198);
-                SetPlayerVirtualWorld(playerid, 1);
-            }
-        }
         else if (strcmp(location, "sfdocks", true) == 0)
         {
             if (GetPlayerState(playerid) == 2)

@@ -1,3 +1,4 @@
+#include <YSI_Coding\y_hooks>
 hook OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstate)
 {
     if(GetPVarInt(playerid, "placevehicle") == 1)

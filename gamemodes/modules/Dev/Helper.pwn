@@ -12,6 +12,14 @@ enum AHelpCMD_D{
     h_cmd[1280],
     h_describe[1280]
 }
+new const General_HelpCMD[][AHelpCMD_D] = {
+    {"/banking", "Quan li tai khoan ngan hang"},
+    {"/mycar", "Quan li kho xe"},
+    {"/hanhdong or /animlist", "Tro giup hanh dong"},
+    {"/char or /r", "De tro chuyen"},
+    {"/org", "De quan li 'To chuc'"},
+    {"/sb","De deo day an toan"}
+};
 new const Org_HelpCMD[][AHelpCMD_D] = {
     {"/orgs", "Cai dat to chuc"},
     {"/saveorgs", "Save tat ca cac to chuc"},
@@ -37,9 +45,32 @@ CMD:ahelp(playerid)
     return 1;
 }
 
+CMD:help(playerid)
+{
+    if(!CheckAdmin(playerid, 1)) return SendErrorMessage(playerid, "Ban khong co quyen su dung lenh nay");
+    ShowPlayerDialog(playerid, DIALOG_HELP, DIALOG_STYLE_LIST, "Help",
+    "General", ">>", "<<");
+    return 1;
+}
+
 
 hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
+    if(dialogid == DIALOG_HELP)
+    {
+        new _cmd_ah[1280];
+        if(listitem == 0)
+        {
+            for(new i; i < sizeof(General_HelpCMD); i++)
+            {
+                new _cmd_ahz[1280];
+                format(_cmd_ahz, 1280, "{d7f562}%s{FFFFFF} - %s \n", General_HelpCMD[i][h_cmd], General_HelpCMD[i][h_describe]);
+                strcat(_cmd_ah, _cmd_ahz);
+            }
+            strcat(_cmd_ah, "END");
+            ShowPlayerDialog(playerid, DIALOG_NOTHING, DIALOG_STYLE_MSGBOX, "Help", _cmd_ah, "..", "");
+        }
+    }
     if(dialogid == DIALOG_AHELP)
     {
         new _cmd_ah[1280];
@@ -66,4 +97,5 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
             ShowPlayerDialog(playerid, DIALOG_NOTHING, DIALOG_STYLE_MSGBOX, "Admin Help", _cmd_ah, "..", "");
         }
     }
+    return 1;
 }

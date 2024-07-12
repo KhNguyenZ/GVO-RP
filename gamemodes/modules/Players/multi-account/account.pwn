@@ -207,7 +207,7 @@ func:LoadAccountInfo(playerid)
         cache_get_value_name(0, "Email", Character[playerid][char_Email]);
         cache_get_value_name(0, "Email_Code", Character[playerid][char_Email_Code]);
         cache_get_value_name_int(0, "Email_Status", Character[playerid][char_Email_Status]);
-        printf("%s", Character[playerid][char_Email]);
+        // printf("%s", Character[playerid][char_Email]);
     }
     cache_delete(acc_cache);
 }

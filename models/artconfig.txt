@@ -18,6 +18,7 @@ AddSimpleModel(-1, 19379, -2019, "object.dff", "death.txd");
 AddSimpleModel(-1, 19379, -2020, "object.dff", "Main_Banking.txd");
 AddSimpleModel(-1, 19379, -2021, "object.dff", "Tab_Banking.txd");
 AddSimpleModel(-1, 19379, -2022, "object.dff", "smartkey.txd");
+AddSimpleModel(-1, 19379, -2023, "object.dff", "puzzle.txd");
 
 AddSimpleModel(-1,19379, -5000, "newbiespawn.dff", "newbiespawn.txd");
 AddSimpleModel(-1,19379, -5001, "congvien.dff", "congvien.txd");

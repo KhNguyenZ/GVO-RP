@@ -23,6 +23,7 @@
 #define         DIALOG_MYCAR        100
 
 #define         DIALOG_AHELP        10040
+#define         DIALOG_HELP        10041
 #define         DIALOG_NOTHING      15000
 
 #define INVALID_INDEX -1

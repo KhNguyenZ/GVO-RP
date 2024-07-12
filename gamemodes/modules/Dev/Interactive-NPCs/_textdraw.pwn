@@ -146,7 +146,6 @@ func:CreatePlayerInteractiveNPC(playerid)
     PlayerTextDrawSetSelectable(playerid, iNPC_PTD[playerid][12], 1);
     return 1;
 }
-// InteractiveNPCs_Data[MAX_INTERACTIVE_NPC][InteractiveNPCs_Enum];
 func:ShowPlayerInteractive(playerid, inter_ids, title[], content[], i_btn1[] = "", i_btn2[] = "", i_btn3[] = "",i_btn4[] = "")
 {
     if(GetPVarInt(playerid, #isOpenInteractive)) return DestroyPlayerInteractive(playerid);
@@ -154,14 +153,9 @@ func:ShowPlayerInteractive(playerid, inter_ids, title[], content[], i_btn1[] = "
     new Float:Int_Pos[3];
     GetPlayerPos(playerid, Int_Pos[0], Int_Pos[1], Int_Pos[2]);
 
-    /*SetPlayerCameraLookAt(playerid, Int_Pos[0], Int_Pos[1]-1, Int_Pos[2]);
-    SetPlayerCameraPos(playerid,InteractiveNPCs_Data[inter_ids][iNPC_Pos][0],
-    InteractiveNPCs_Data[inter_ids][iNPC_Pos][1],
-    InteractiveNPCs_Data[inter_ids][iNPC_Pos][2]);*/
     TogglePlayerControllable(playerid, 0);
 
     SetPVarInt(playerid, #isOpenInteractive, 1);
-    CreatePlayerInteractiveNPC(playerid);
     PlayerTextDrawSetString(playerid, iNPC_PTD[playerid][0], title);
     PlayerTextDrawSetString(playerid, iNPC_PTD[playerid][8], content);
 
@@ -182,7 +176,6 @@ func:ShowPlayerInteractive(playerid, inter_ids, title[], content[], i_btn1[] = "
 
 func:DestroyPlayerInteractive(playerid)
 {
-    // SetPVarInt(playerid, #isOpenInteractive)
     CancelSelectTextDraw(playerid);
     for(new i; i < 13; i++) PlayerTextDrawHide(playerid, iNPC_PTD[playerid][i]);
     DeletePVar(playerid, #isOpenInteractive);
@@ -195,10 +188,11 @@ func:DestroyPlayerInteractive(playerid)
 hook OnGameModeInit()
 {
     for(new i; i < MAX_INTERACTIVE_NPC; i++) InteractiveNPCs_Data[i][iNPC_ID] = -1;
-    // new Inter_NPC_Test;
-    // Inter_NPC_Test = CreateInteractiveNPC(0, "Test", "Interactive Test",2, 1808.5581,-1905.7458,13.5741,90.0084);
+    return 1;
+}
 
-    // Inter_NPC_Test = CreateInteractiveNPC(1, "KhNguyen_Z", "Interactive Test Actor",2,1797.5756,-1909.0494,13.3979,150.5175);
-    // Inter_NPC_Test = CreateInteractiveNPC(1, "KhNguyen_Z", "Interactive Test Actor",2,1797.5756,-1909.0494,13.3979,150.5175);
-    // ApplyActorAnimation(Inter_NPC_Test, "LOWRIDER","prtial_gngtlkB",4.1,1,0,0,0,0);
+hook OnPlayerConnect(playerid)
+{
+    CreatePlayerInteractiveNPC(playerid);
+    return 1;
 }

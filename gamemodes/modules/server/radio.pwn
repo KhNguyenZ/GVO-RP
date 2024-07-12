@@ -22,3 +22,8 @@ CMD:chat(playerid, params[])
 	else SendRadioMessage(playerid, params, Character[playerid][char_tanso]);
 	return 1;
 }
+
+CMD:r(playerid, params[])
+{
+	return cmd_chat(playerid, params);
+}

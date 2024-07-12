@@ -78,7 +78,7 @@ func:CharacterSelect_Click(playerid, PlayerText:playertextid)
                 ShowPlayerDialog(playerid, dialog_charCreate, DIALOG_STYLE_INPUT, "Tao nhan vat.", "Nhap ten nhan vat ban muon tao.", "Tao", "Tro lai");
             }
 
-            printf("CharSelect: %d", GetPVarInt(playerid, "CharSelect_"));
+            // printf("CharSelect: %d", GetPVarInt(playerid, "CharSelect_"));
         }
     }
     return 1;

@@ -105,7 +105,7 @@ public SSA_Mysql_Intit()
     LoadOrgs();
     LoadInventoryDrop();
     CreateInfo();
-
+    // for(new i; i < 10; i++) printf("I:%d",i);
     return 1;
 }
 public OnGameModeExit()
@@ -131,8 +131,6 @@ public OnQueryError(errorid, const error[], const callback[], const query[], MyS
         }
         case ER_UNKNOWN_TABLE: printf("[MySQL: Error:: Callback; %s]: Unknown table '%s' (Query: %s).", callback, error, query);
         case ER_SYNTAX_ERROR: printf("[MySQL: Error:: Callback; %s]: Something is wrong in your syntax (Query: %s).", callback, query);
-            // case CR_SERVER_GONE_ERROR, CR_SERVER_LOST, CR_SERVER_LOST_EXTENDED: mysql_reconnect();
-            //case 2003: Can't connect to MySQL server on
     }
     return 1;
 }

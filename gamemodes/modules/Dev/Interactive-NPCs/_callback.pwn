@@ -7,15 +7,14 @@ hook OnPlayerUpdate(playerid)
     if(IsPlayerNearInteractiveNPC(playerid) != -1)
     {
         new inter_guide[1280], inter_aid = IsPlayerNearInteractiveNPC(playerid);
+        // printf("InterID: %d",inter_aid);
         format(inter_guide, 1280, "Tuong tac voi %s", GetActorName(InteractiveNPCs_Data[inter_aid][iNPC_ID]));
         ChangeGuideContent(playerid, "Y",inter_guide);
-
-        // DestroyPlayerInteractive(playerid);
     }
     else ChangeGuideContent(playerid, "Y","Tuong tac voi NULL");
     return 1;
 }
-
+/*
 hook OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 {
     if(IsPlayerNearInteractiveNPC(playerid) != -1)
@@ -35,7 +34,7 @@ hook OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
     }
     return 1;
 }
-
+*/
 
 InteractiveNPCs_Click(playerid, PlayerText:playertextid)
 {
@@ -43,6 +42,7 @@ InteractiveNPCs_Click(playerid, PlayerText:playertextid)
     {
         if(playertextid == iNPC_PTD[playerid][i])
         {
+            DestroyPlayerInteractive(playerid);
             new response = 1,
             inter_open_id = GetPVarInt(playerid, #Interactive_Open_ID),
             btn_click = (i-9);

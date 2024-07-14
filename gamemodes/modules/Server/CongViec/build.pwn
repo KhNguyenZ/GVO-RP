@@ -8,3 +8,6 @@
 #include "./modules/Server/CongViec/RoadRepair/_var.pwn"
 #include "./modules/Server/CongViec/RoadRepair/_function.pwn"
 #include "./modules/Server/CongViec/RoadRepair/_callback.pwn"
+
+#include "./modules/Server/CongViec/Electrician/build.pwn"
+

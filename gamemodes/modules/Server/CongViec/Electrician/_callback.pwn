@@ -89,7 +89,7 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
     }
     return 1;
 }
-hook OnPlayerEnterCheckpoint(playerid)
+func:OnPlayerEnterCheckpointElectrician(playerid)
 {
     if(PlayerElectricianPos[playerid])
     {

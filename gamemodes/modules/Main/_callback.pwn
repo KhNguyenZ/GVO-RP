@@ -178,6 +178,7 @@ public OnPlayerRequestClass(playerid, classid)
 
 public OnPlayerEnterCheckpoint(playerid)
 {
+    OnPlayerEnterCheckpointElectrician(playerid);
 	if(CP[playerid] == 1)
     {
         CP[playerid] = 0;

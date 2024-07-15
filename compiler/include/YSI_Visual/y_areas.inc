@@ -486,7 +486,7 @@ mhook OnScriptInit()
 	YSI_g_sAreas[MAX_AREAS - 1][E_AREA_UNUSED_NEXT] = AREA_NO_NEXT;
 	//for (new i = 0; i != AREAS_ZONE_ARRAY * AREAS_ZONE_ARRAY; ++i)
 	//{
-	//	YSI_g_sZones[i] = INVAILID_NUMBER;
+	//	YSI_g_sZones[i] = -1;
 	//}
 	return 1;
 }

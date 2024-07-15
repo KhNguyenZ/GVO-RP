@@ -1,4 +1,5 @@
 new Cade_Var[] = {
+    337,
     1427, 1237, 1434, 1435, 1425, 1228, 1282, 2650,
     2651, 1424, 1250, 1422, 1423, 1459, 997
 };
@@ -6,6 +7,7 @@ new Cade_Var[] = {
 #define SKIN_ROADREPAIR 260
 #define RR_VEHMODEL 552
 #define RR_VEHCOLOR 6
+#define DLG_REPAIRCADE 9000
 new Float:DamagePoint[][4] =
 {
     {-103.0559, -1624.8944, 2.9365, 276.8239},

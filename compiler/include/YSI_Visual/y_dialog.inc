@@ -140,7 +140,7 @@ global Dialog_ObtainID()
 			YSI_g_sIDs[i] ^= Bit:Cell_GetLowestComponent(b);
 			data += (i * 32);
 			YSI_g_sDialogPlayers[data] = 0;
-			YSI_g_sDialogMasters[data] = INVAILID_NUMBER;
+			YSI_g_sDialogMasters[data] = -1;
 			//YSI_g_sDialogInfo[data][E_CALLBACK_DATA_POINTER] = 0;
 			return data;
 		}
@@ -157,7 +157,7 @@ global Dialog_TryObtainID(id)
 	{
 		Bit_Vet(YSI_g_sIDs, id);
 		YSI_g_sDialogPlayers[id] = 0;
-		YSI_g_sDialogMasters[id] = INVAILID_NUMBER;
+		YSI_g_sDialogMasters[id] = -1;
 		//YSI_g_sDialogInfo[data][E_CALLBACK_DATA_POINTER] = 0;
 		return id;
 	}
@@ -194,7 +194,7 @@ global void:Dialog_Free(dialogid)
 			if (YSI_g_sPlayerDialog[i] == dialogid)
 			{
 				ShowPlayerDialog(i, -1, 0, NULL, NULL, NULL, NULL);
-				YSI_g_sPlayerDialog[i] = INVAILID_NUMBER;
+				YSI_g_sPlayerDialog[i] = -1;
 			}
 		}
 	}
@@ -220,7 +220,7 @@ global Dialog_Set(playerid, dialogid)
 			{
 				if (Bit_Get(YSI_g_sFree, old))
 				{
-					YSI_g_sDialogMasters[old] = INVAILID_NUMBER;
+					YSI_g_sDialogMasters[old] = -1;
 					Bit_Vet(YSI_g_sFree, old);
 					Bit_Let(YSI_g_sIDs, old);
 					// "old" destroyed.
@@ -311,7 +311,7 @@ stock Dialog_SetCallbackData(dialogid, callback[E_CALLBACK_DATA])
 // xhunterx editing all day
 
 hook OnPlayerConnect(playerid) {
-    YSI_g_sPlayerDialog[playerid] = INVAILID_NUMBER;
+    YSI_g_sPlayerDialog[playerid] = -1;
     return 1;
 }
 

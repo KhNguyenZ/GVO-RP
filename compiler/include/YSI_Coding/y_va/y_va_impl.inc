@@ -245,7 +245,7 @@ public OnCodeInit()
 	if (!YSI_g_sInitialised)
 	{
 		YVA2_Initalise();
-		YSI_g_sInitialised = INVAILID_NUMBER;
+		YSI_g_sInitialised = -1;
 	}
 	#if defined VA_OnCodeInit
 		VA_OnCodeInit();

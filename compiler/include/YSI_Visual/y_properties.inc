@@ -1110,8 +1110,8 @@ hook OnPlayerDisconnect(playerid, reason)
 	Bit_SetAll(YSI_g_sPlayerProperties[playerid], false);
 	YSI_g_sPropCount[playerid] = 0;
 	YSI_g_sHouseCount[playerid] = 0;
-	YSI_g_sCurrentHouse[playerid] = INVAILID_NUMBER;
-	//YSI_g_sPickupTimer[playerid] = INVAILID_NUMBER;
+	YSI_g_sCurrentHouse[playerid] = -1;
+	//YSI_g_sPickupTimer[playerid] = -1;
 	//YSI_g_sPlayerPickup[playerid] = NO_PICKUP;
 	//#pragma unused reason
 	return 1;
@@ -1238,7 +1238,7 @@ hook OnPlayerLeaveCheckpointEx(playerid, cpid)
 		if (!Pickup_IsPlayerOnPickup(playerid, pickupid))
 		{
 			KillTimer(YSI_g_sPickupTimer[playerid]);
-			YSI_g_sPickupTimer[playerid] = INVAILID_NUMBER;
+			YSI_g_sPickupTimer[playerid] = -1;
 			YSI_g_sPlayerPickup[playerid] = NO_PICKUP;
 			new
 				prop = YSI_g_sPickupPointers[pickupid];
@@ -2490,7 +2490,7 @@ YCMD:exit(playerid, params[], help)
 		{
 			if (IsPlayerInRangeOfPoint(playerid, 3.0, Float:YSI_g_sProperties[prop][E_PROP_DATA_NAME][3], Float:YSI_g_sProperties[prop][E_PROP_DATA_NAME][4], Float:YSI_g_sProperties[prop][E_PROP_DATA_NAME][5]))
 			{
-				YSI_g_sCurrentHouse[playerid] = INVAILID_NUMBER;
+				YSI_g_sCurrentHouse[playerid] = -1;
 				SetPlayerInterior(playerid, 0);
 				SetPlayerVirtualWorld(playerid, 0);
 				SetPlayerPos(playerid, Float:YSI_g_sProperties[prop][E_PROP_DATA_NAME][0], Float:YSI_g_sProperties[prop][E_PROP_DATA_NAME][1], Float:YSI_g_sProperties[prop][E_PROP_DATA_NAME][2]);

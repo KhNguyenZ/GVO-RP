@@ -1,4 +1,4 @@
-#define INVAILID_NUMBER -1
+#include <a_samp>
 #include <a_samp>
 #include <crashdetect>
 #include <a_mysql>

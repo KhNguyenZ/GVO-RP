@@ -200,8 +200,8 @@ stock XML_Destroy(XML:rule)
 {
 	P:3("XML_Destroy called: %i", _:rule);
 	if (!XML_IsValid(rule)) return 0;
-	YSI_g_sCurBuffer = INVAILID_NUMBER;
-	YSI_g_sCurHandler[rule] = INVAILID_NUMBER;
+	YSI_g_sCurBuffer = -1;
+	YSI_g_sCurHandler[rule] = -1;
 	return 1;
 }
 
@@ -726,7 +726,7 @@ stock XMLEntry:XML_AddParameter(XMLEntry:parent, tag[], value[] = "")
 	{
 		strcpy(YSI_g_sXMLWriteBuffer[YSI_g_sXMLWritePointer][E_XML_WRITE_TAG], tag, MAX_XML_ENTRY_NAME);
 		strcpy(YSI_g_sXMLWriteBuffer[YSI_g_sXMLWritePointer][E_XML_WRITE_VALUE], value, MAX_XML_ENTRY_TEXT);
-		YSI_g_sXMLWriteBuffer[YSI_g_sXMLWritePointer][E_XML_WRITE_CHILDREN] = INVAILID_NUMBER;
+		YSI_g_sXMLWriteBuffer[YSI_g_sXMLWritePointer][E_XML_WRITE_CHILDREN] = -1;
 		YSI_g_sXMLWriteBuffer[YSI_g_sXMLWritePointer][E_XML_WRITE_SIBLINGS] = YSI_g_sXMLWriteBuffer[_:parent][E_XML_WRITE_CHILDREN];
 		YSI_g_sXMLWriteBuffer[_:parent][E_XML_WRITE_CHILDREN] = YSI_g_sXMLWritePointer;
 		return XMLEntry:YSI_g_sXMLWritePointer++;
@@ -757,8 +757,8 @@ stock XMLEntry:XML_AddItem(tag[], name[] = "", XMLEntry:parent = XMLEntry:cellma
 	{
 		strcpy(YSI_g_sXMLWriteBuffer[YSI_g_sXMLWritePointer][E_XML_WRITE_TAG], tag, MAX_XML_ENTRY_NAME);
 		strcpy(YSI_g_sXMLWriteBuffer[YSI_g_sXMLWritePointer][E_XML_WRITE_VALUE], name, MAX_XML_ENTRY_TEXT);
-		YSI_g_sXMLWriteBuffer[YSI_g_sXMLWritePointer][E_XML_WRITE_CHILDREN] = INVAILID_NUMBER;
-		YSI_g_sXMLWriteBuffer[YSI_g_sXMLWritePointer][E_XML_WRITE_SIBLINGS] = INVAILID_NUMBER;
+		YSI_g_sXMLWriteBuffer[YSI_g_sXMLWritePointer][E_XML_WRITE_CHILDREN] = -1;
+		YSI_g_sXMLWriteBuffer[YSI_g_sXMLWritePointer][E_XML_WRITE_SIBLINGS] = -1;
 		return XMLEntry:YSI_g_sXMLWritePointer++;
 	}
 	return XMLEntry:cellmax;
@@ -1052,7 +1052,7 @@ stock XML_ReplaceItem(file[], tag[], name[], replacement)
 								atStart = tagCount - 1;
 								if (replacement != -1)
 								{
-									if (replacement >= YSI_g_sXMLWritePointer) replacement = INVAILID_NUMBER;
+									if (replacement >= YSI_g_sXMLWritePointer) replacement = -1;
 									else XML_WriteItemData(replacement, __ftemp, (tagCount - 1) * 2);
 								}
 							}

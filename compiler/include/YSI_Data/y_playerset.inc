@@ -141,7 +141,7 @@ stock
 	e_PLAYER_SET_TYPE:__ps_type[MAX_PLAYER_SET_STACK char],
 	__ps_stack[MAX_PLAYER_SET_STACK][MAX_PLAYERS],
 	__ps_data[e_PLAYER_SET_HACK],
-	__ps_pointer = INVAILID_NUMBER;
+	__ps_pointer = -1;
 
 #define @PlayerVar:%0) __ps_addr_t:__ps_addr,__ps_drop_t:%0)foreach(new %0:PS(__ps_addr))
 
@@ -214,7 +214,7 @@ stock Iter_Func@PS(cur, __ps_addr_t:addr)
 					if (cur == Iter_End(Player))
 					{
 						--__ps_pointer;
-						cur = INVAILID_NUMBER;
+						cur = -1;
 					}
 					return cur;
 				}
@@ -226,7 +226,7 @@ stock Iter_Func@PS(cur, __ps_addr_t:addr)
 						if (cur == Iter_End(Bot))
 						{
 							--__ps_pointer;
-							cur = INVAILID_NUMBER;
+							cur = -1;
 						}
 						return cur;
 					}
@@ -237,7 +237,7 @@ stock Iter_Func@PS(cur, __ps_addr_t:addr)
 						if (cur == Iter_End(Character))
 						{
 							--__ps_pointer;
-							cur = INVAILID_NUMBER;
+							cur = -1;
 						}
 						return cur;
 					}
@@ -379,7 +379,7 @@ stock Iter_Func@PS(cur, __ps_addr_t:addr)
 			if (cur == Iter_End(Player))
 			{
 				--__ps_pointer;
-				cur = INVAILID_NUMBER;
+				cur = -1;
 			}
 			return cur;
 		}
@@ -390,7 +390,7 @@ stock Iter_Func@PS(cur, __ps_addr_t:addr)
 				if (cur == Iter_End(Bot))
 				{
 					--__ps_pointer;
-					cur = INVAILID_NUMBER;
+					cur = -1;
 				}
 				return cur;
 			}
@@ -400,7 +400,7 @@ stock Iter_Func@PS(cur, __ps_addr_t:addr)
 				if (cur == Iter_End(Character))
 				{
 					--__ps_pointer;
-					cur = INVAILID_NUMBER;
+					cur = -1;
 				}
 				return cur;
 			}

@@ -145,8 +145,8 @@ public RespawnActor(actorid)
 	if(IsValidActor(actorid))
 	{
 	    // Reset the timer variable if set.
-	    s_ActorRespawnTimer[actorid] = INVAILID_NUMBER;
-		s_ActorChatBubbleTimer[actorid] = INVAILID_NUMBER;
+	    s_ActorRespawnTimer[actorid] = -1;
+		s_ActorChatBubbleTimer[actorid] = -1;
 	    // Restore the actor's health.
 	    SetActorHealth(actorid, 100.0);
 	    // Clear the death animation.
@@ -170,7 +170,7 @@ public DestroyChatBubble(actorid)
 	    // Delete the 3D Text Label
 		Delete3DTextLabel(ActorInfo[actorid][a_ChatBubble]);
 		// Reset the timer variable if set.
-		s_ActorChatBubbleTimer[actorid] = INVAILID_NUMBER;
+		s_ActorChatBubbleTimer[actorid] = -1;
 		//return 1;
 	}
 	return 1;
@@ -341,7 +341,7 @@ stock AC_CreateActor(modelid, Float:x, Float:y, Float:z, Float:rotation)
 		if (actorid != INVALID_ACTOR_ID)
 		{
 		    // Reset the timer variable.
-		    s_ActorRespawnTimer[actorid] = INVAILID_NUMBER;
+		    s_ActorRespawnTimer[actorid] = -1;
 			// Set Actor color to white
 			ActorInfo[actorid][a_Color]= 0xFFFFFFFF;
 		    // Preload their animations.

@@ -989,7 +989,7 @@ Format_Render_start:
 				}
 				else if (prec == 0x0FFF)
 				{
-					prec = INVAILID_NUMBER;
+					prec = -1;
 				}
 				// Output the correct data type.
 				switch (ch & 0xF0000000)
@@ -1542,7 +1542,7 @@ Format_Render_start:
 					fade = true;
 					fadeStart = p;
 					fadeStartIdx = idx - 1;
-					string[fadeStartIdx] = INVAILID_NUMBER;
+					string[fadeStartIdx] = -1;
 					//#emit LOAD.S.pri string
 					//#emit STOR.S.pri fadeStartText
 					if (p < maxlen - 1)

@@ -1508,13 +1508,13 @@ static stock Remote_RawStrpack(dest, const src[])
 {
 	static
 		sRemoteStringsStart = -1,
-		sRemoteStringsEnd   = INVAILID_NUMBER;
+		sRemoteStringsEnd   = -1;
 	new
 		len = (strlen(src) + 1) char * 4;
 	if (sRemoteStringsStart + len > sRemoteStringsEnd)
 	{
 		static
-			sPtr = INVAILID_NUMBER;
+			sPtr = -1;
 		if (sPtr == -1)
 		{
 			// Get the malloc base pointer.

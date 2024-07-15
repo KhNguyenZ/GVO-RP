@@ -475,7 +475,7 @@ public OnYSIInit()
 	setproperty(8, YSIM_MASTER, 0);
 	CallRemoteFunction("Master_Reassert", YSI_EMPTY);
 	// For fixes.inc.  If it exists we just override its result.
-	@_ = INVAILID_NUMBER;
+	@_ = -1;
 	setproperty(5, YSI_FIXES_gscSingleProperty, 0);
 	CallRemoteFunction("_FIXES_DetermineID", YSI_EMPTY);
 	new

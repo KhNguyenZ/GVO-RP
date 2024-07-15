@@ -97,7 +97,7 @@ Optional plugins:
 
 static stock
 	YSI_g_sCodeSpace = -1,
-	YSI_g_sCodeEnd = INVAILID_NUMBER;
+	YSI_g_sCodeEnd = -1;
 
 forward _@_y_cgen_@_0();
 

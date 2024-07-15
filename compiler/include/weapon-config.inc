@@ -1859,7 +1859,7 @@ stock WC_AddPlayerClassEx(teamid, modelid, Float:spawn_x, Float:spawn_y, Float:s
 stock WC_SetSpawnInfo(playerid, team, skin, Float:x, Float:y, Float:z, Float:rotation, WEAPON:weapon1 = WEAPON_UNARMED, weapon1_ammo = 0, WEAPON:weapon2 = WEAPON_UNARMED, weapon2_ammo = 0, WEAPON:weapon3 = WEAPON_UNARMED, weapon3_ammo = 0)
 {
 	if (SetSpawnInfo(playerid, team, skin, x, y, z, rotation, weapon1, weapon1_ammo, weapon2, weapon2_ammo, weapon3, weapon3_ammo)) {
-		s_PlayerClass[playerid] = INVAILID_NUMBER;
+		s_PlayerClass[playerid] = -1;
 		s_SpawnInfoModified[playerid] = false;
 
 		s_PlayerSpawnInfo[playerid][e_Skin] = skin;
@@ -2849,7 +2849,7 @@ public OnPlayerConnect(playerid)
 	s_BeingResynced[playerid] = false;
 	s_SpawnForStreamedIn[playerid] = false;
 	s_World[playerid] = 0;
-	s_LastAnim[playerid] = INVAILID_NUMBER;
+	s_LastAnim[playerid] = -1;
 	s_LastZVelo[playerid] = 0.0;
 	s_LastZ[playerid] = 0.0;
 	s_LastUpdate[playerid] = tick;
@@ -2867,7 +2867,7 @@ public OnPlayerConnect(playerid)
 	s_ForceClassSelection[playerid] = false;
 	s_PlayerClass[playerid] = -2;
 	s_SpawnInfoModified[playerid] = false;
-	s_PlayerFallbackSpawnInfo[playerid][e_Skin] = INVAILID_NUMBER;
+	s_PlayerFallbackSpawnInfo[playerid][e_Skin] = -1;
 	s_DeathSkip[playerid] = 0;
 	s_LastVehicleTick[playerid] = 0;
 	s_PreviousHitI[playerid] = 0;
@@ -2875,7 +2875,7 @@ public OnPlayerConnect(playerid)
 	s_CbugFroze[playerid] = 0;
 	s_DeathTimer[playerid] = 0;
 	s_DelayedDeathTimer[playerid] = 0;
-	s_DamageFeedPlayer[playerid] = INVAILID_NUMBER;
+	s_DamageFeedPlayer[playerid] = -1;
 	s_EnableHealthBar[playerid] = true; // enable by default
 
 	#if !defined _INC_SKY
@@ -4900,7 +4900,7 @@ static ScriptInit()
 	}
 
 	for (new i = 0; i < sizeof(s_ClassSpawnInfo); i++) {
-		s_ClassSpawnInfo[i][e_Skin] = INVAILID_NUMBER;
+		s_ClassSpawnInfo[i][e_Skin] = -1;
 	}
 
 	s_HealthBarBorder = TextDrawCreate(546.0, 66.7, "LD_SPAC:white");
@@ -4960,7 +4960,7 @@ static ScriptInit()
 		s_LastVehicleEnterTime[playerid] = 0;
 		s_TrueDeath[playerid] = true;
 		s_InClassSelection[playerid] = true;
-		s_PlayerFallbackSpawnInfo[playerid][e_Skin] = INVAILID_NUMBER;
+		s_PlayerFallbackSpawnInfo[playerid][e_Skin] = -1;
 		s_AlreadyConnected[playerid] = true;
 
 		#if WC_CUSTOM_VENDING_MACHINES
@@ -5120,10 +5120,10 @@ static UpdateHealthBar(playerid, bool:force = false)
 	}
 
 	if (force) {
-		s_LastSentHealth[playerid] = INVAILID_NUMBER;
-		s_LastSentArmour[playerid] = INVAILID_NUMBER;
+		s_LastSentHealth[playerid] = -1;
+		s_LastSentArmour[playerid] = -1;
 	} else if (s_HealthBarVisible[playerid] && s_HealthBarForeground[playerid] == PlayerText:INVALID_TEXT_DRAW && !s_IsDying[playerid]) {
-		s_LastSentHealth[playerid] = INVAILID_NUMBER;
+		s_LastSentHealth[playerid] = -1;
 	} else if (health == s_LastSentHealth[playerid] && armour == s_LastSentArmour[playerid]) {
 		return;
 	}
@@ -6357,7 +6357,7 @@ static DamageFeedAddHit(arr[WC_FEED_HEIGHT][E_DAMAGE_FEED_HIT], playerid, issuer
 
 	new tick = GetTickCount();
 	if (tick == 0) tick = 1;
-	new idx = INVAILID_NUMBER;
+	new idx = -1;
 
 	for (new i = 0; i < sizeof(arr) - 1; i++) {
 		if (!arr[i][e_Tick]) {
@@ -6373,7 +6373,7 @@ static DamageFeedAddHit(arr[WC_FEED_HEIGHT][E_DAMAGE_FEED_HIT], playerid, issuer
 		if (arr[i][e_Issuer] == issuerid) {
 			// Multiple weapons
 			if (arr[i][e_Weapon] != weapon) {
-				//weapon = INVAILID_NUMBER;
+				//weapon = -1;
 			}
 
 			amount += arr[i][e_Amount];

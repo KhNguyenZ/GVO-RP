@@ -257,7 +257,7 @@ static AMX_DoNothing()
 static AMX_GetGlobal()
 {
 	new
-	addr = INVAILID_NUMBER;
+	addr = -1;
 	// Call dummy function and read its (absolute) address from code.
 	AMX_DoNothing();
 	#emit LCTRL 6

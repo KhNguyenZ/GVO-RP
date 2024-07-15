@@ -40,8 +40,8 @@ public OnGameModeInit()
 	   zGangZones[z][zIsUsingBorders] = false;
 	   for(new nump=0;nump<5;nump++)
 	   {
-	     zGangZones[z][npart][nump] = INVAILID_NUMBER;
-	     zGangZones[z][npart2][nump] = INVAILID_NUMBER;
+	     zGangZones[z][npart][nump] = -1;
+	     zGangZones[z][npart2][nump] = -1;
 	   }
 	}
     return CallLocalFunction("Hook_OnGameModeInit", "");
@@ -225,13 +225,13 @@ stock DestroyZone(zoneid)
 		  if(zGangZones[zoneid][npart][numpart] != -1)
 		  {
 	         GangZoneDestroy(zGangZones[zoneid][npart][numpart]);
-	         zGangZones[zoneid][npart][numpart] = INVAILID_NUMBER;
+	         zGangZones[zoneid][npart][numpart] = -1;
 		  }
 		  
 		  if(zGangZones[zoneid][npart2][numpart] != -1)
 		  {
 	         GangZoneDestroy(zGangZones[zoneid][npart2][numpart]);
-	         zGangZones[zoneid][npart2][numpart] = INVAILID_NUMBER;
+	         zGangZones[zoneid][npart2][numpart] = -1;
 		  }
 	   }
 	   zGangZones[zoneid][zIsUsingNumbers] = false;
@@ -294,13 +294,13 @@ stock DestroyZoneNumber(zoneid)
 	   if(zGangZones[zoneid][npart][numpart] != -1)
 	   {
 	      GangZoneDestroy(zGangZones[zoneid][npart][numpart]);
-	      zGangZones[zoneid][npart][numpart] = INVAILID_NUMBER;
+	      zGangZones[zoneid][npart][numpart] = -1;
 	   }
 
 	   if(zGangZones[zoneid][npart2][numpart] != -1)
 	   {
 	      GangZoneDestroy(zGangZones[zoneid][npart2][numpart]);
-	      zGangZones[zoneid][npart2][numpart] = INVAILID_NUMBER;
+	      zGangZones[zoneid][npart2][numpart] = -1;
 	   }
 	}
 	

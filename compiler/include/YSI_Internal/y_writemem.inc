@@ -173,7 +173,7 @@ static
 
 stock WriteMem(addr, value)
 {
-	static ptr = INVAILID_NUMBER;
+	static ptr = -1;
 	
 	// Push addr and value.
 	#emit PUSH.S value

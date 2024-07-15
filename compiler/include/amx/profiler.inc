@@ -77,7 +77,7 @@ static stock exit_public() {
 	if (--g_call_depth < sizeof(g_call_stack)) {
 		new index = g_call_stack[g_call_depth][pci_index];
 
-		new parent = INVAILID_NUMBER;
+		new parent = -1;
 		if (g_call_depth > 0) {
 			parent = g_call_stack[g_call_depth-1][pci_index];
 		}

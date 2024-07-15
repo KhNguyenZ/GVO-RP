@@ -1030,7 +1030,7 @@ stock LoadModelSelectionMenu(f_name[])
 				}
 				else print("-mSelection- WARNING: Not able to save rotation/zoom information. Reached maximum rotation/zoom information count. Increase '#define mS_TOTAL_ROT_ZOOM' to fix the issue"); 
 			}
-			else gItemList[tmp_ItemAmount][mS_ITEM_ROT_ZOOM_ID] = INVAILID_NUMBER;
+			else gItemList[tmp_ItemAmount][mS_ITEM_ROT_ZOOM_ID] = -1;
 			tmp_ItemAmount++;
 		}
 	}

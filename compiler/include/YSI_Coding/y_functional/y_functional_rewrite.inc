@@ -195,7 +195,7 @@ static stock Functional_FoundCall(const scanner[CodeScanner], nestingLevel)
 	CodeScanNOPMatch(scanner);
 	if (callPos > YSI_g_sFunctionalLastEnd)
 	{
-		YSI_g_sFunctionalExpectedDepth = INVAILID_NUMBER;
+		YSI_g_sFunctionalExpectedDepth = -1;
 	}
 	
 	// Start a new scanner at the point this scanner ended.

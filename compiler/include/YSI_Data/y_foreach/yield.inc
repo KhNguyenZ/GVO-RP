@@ -34,7 +34,7 @@ static stock
 	YSI_g_sStackPtr;
 
 stock
-	YSI_gIteratorDepth = INVAILID_NUMBER;
+	YSI_gIteratorDepth = -1;
 
 static
 	YSI_g_sPtr;

@@ -1,7 +1,12 @@
-./modules/Main/color.pwn(59) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "Colors"
+./modules/Main/_var.pwn(108) : îøèáêà 017: íåîáúÿâëåííûé ñè́âîë "INVAILID_NUMBER"
+./modules/Main/_var.pwn(108) : îøèáêà 008: äîëæíî áụ̂ü ïîṇ̃îÿííû́ âûđàæåíèǻ; ïđèíỵ̈ íîëü
+./modules/Players/characters/Admin/character-admin.pwn(238) : íåïđàâèëüíàÿ ̣àáóëÿöèÿ
+./modules/Server/Vehicle/Speedo/_textdraw.pwn(128) : íåïđàâèëüíàÿ ̣àáóëÿöèÿ
 ./modules/Server/Discord/command.pwn(25) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "HintCommand"
 ./modules/Server/Organization/_var.pwn(22) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "ML_Targetid"
 ./modules/Server/Vehicle/Core/_var.pwn(84) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "MaxVehicleFuel"
-D:\Desktop\SSA-Project-Main\gamemodes\main.pwn(41) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "_UpdateProgress3D"
+D:\Desktop\SSA-Project-Main\gamemodes\main.pwn(43) : èäåị́èôèêạ̀îđ íå èñïîëüçóạ̊ñÿ: "_UpdateProgress3D"
 Pawn compiler 3.2.3664	 	 	Copyright (c) 1997-2016, ITB CompuPhase
 
+
+Îøèáîê:2.

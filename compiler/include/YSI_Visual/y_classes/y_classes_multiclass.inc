@@ -392,7 +392,7 @@ MASTER_HOOK__ OnPlayerSpawn(playerid)
 MASTER_HOOK__ OnPlayerConnect(playerid)
 {
 	YSI_g_sPlayerClass[playerid] = -1,
-	YSI_g_sInternalClass[playerid] = INVAILID_NUMBER;
+	YSI_g_sInternalClass[playerid] = -1;
 	NO_GROUPS<Class>()
 	{
 		new
@@ -694,7 +694,7 @@ stock Class_Reprocess(playerid)
 	if (!Player_InSelection(playerid))
 		return 0;
 	new
-		classid = INVAILID_NUMBER;
+		classid = -1;
 	if (YSI_g_sClassCount)
 	{
 		// Find the next available skin for this player.  I'm still not
@@ -776,7 +776,7 @@ public OnPlayerRequestClass(playerid, classid)
 				P:E("No YSI classes found");
 				SetSpawnInfo(playerid, NO_TEAM, 0, 1958.0, 1343.0, 15.0, 269.0, 0, 0, 0, 0, 0, 0),
 				SetPlayerSkin(playerid, 0),
-				classid = INVAILID_NUMBER;
+				classid = -1;
 			}
 			return CallRemoteFunction("Class_OnPlayerRequestClass", "ii", playerid, classid);
 		}

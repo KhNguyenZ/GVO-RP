@@ -1,5 +1,5 @@
 #include <progress3D>
-
+#include <YSI_Coding\y_hooks>
 #define IsPlayerRoadRepair(%0) (Character[%0][char_Job] == JOB_ROADREPAIR)
 func:SetPlayerDamagePoint(playerid)
 {
@@ -11,7 +11,7 @@ func:SetPlayerDamagePoint(playerid)
 
     DamageRoad[_point_id][DamageValue] = 0;
     DamageRoad[_point_id][DamageBar] = CreateProgressBar3D(Colors[5], false, x, y, z, 100.0, DamageRoad[_point_id][DamageValue], 100.0);;
-    DamageRoad[_point_id][DamageLabel] = CreateDynamic3DTextLabel(sprintf("Trang thai: %s \nNguoi sua: %s", GetRoadStatus(0), player_get_name));
+    DamageRoad[_point_id][DamageLabel] = CreateDynamic3DTextLabel(sprintf("Trang thai: %s \nNguoi sua: %s\n{ff0000}ALT{ffffff} de sua duong", GetRoadStatus(0), player_get_name));
     DamageRoad[_point_id][DamageWorker] = playerid;
     DamageRoad[_point_id][DamageRepair] = 1;
 }
@@ -64,5 +64,17 @@ func:ShowDialogCade(playerid)
         strcat(dlg_cade, subcade);
     }
     strcat(dlg_cade, "-1\tEND");
-    return ShowPlayerDialog(playerid, 0, DIALOG_STYLE_PREVIEW_MODEL, "Cade for Road Repair Job", dlg_cade, "Chon", "Huy");
+    return ShowPlayerDialog(playerid, DLG_REPAIRCADE, DIALOG_STYLE_PREVIEW_MODEL, "Cade for Road Repair Job", dlg_cade, "Chon", "Huy");
+}
+
+
+hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
+{
+    if(dialogid == DLG_REPAIRCADE)
+    {
+        if(listitem == 0)
+        {
+            GivePlayerWeapon(playerid, 6, 100000);
+        }
+    }
 }

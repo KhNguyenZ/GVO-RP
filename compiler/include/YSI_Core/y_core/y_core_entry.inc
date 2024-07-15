@@ -229,7 +229,7 @@ forward bool:DisasmWrite(const filename[]);
 #define Master_ID() (@_)
 #if !defined FIXES_ID
 	public
-		@_ = INVAILID_NUMBER;
+		@_ = -1;
 #endif
 
 // These three includes are just defines.  They declare no code at all, only

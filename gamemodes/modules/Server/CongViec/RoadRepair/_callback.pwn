@@ -82,3 +82,13 @@ hook OnInteractiveResponse(playerid, inter_id, response, btn_click)
     }
     return 1;
 }
+
+
+hook OnPlayerEnterCheckpoint(playerid)
+{
+    if(RepairPoint[playerid] != 0)
+    {
+        RepairPoint[playerid] = 0;
+        DisablePlayerCheckpoint(playerid);
+    }
+}

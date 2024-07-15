@@ -618,7 +618,7 @@ static stock Bit:_Group_SetSome(playerid, group)
 			YSI_g_sRecursionStack[s][1] = group;
 			++s;
 			group = g;
-			g = INVAILID_NUMBER;
+			g = -1;
 		}
 	}
 }
@@ -1563,7 +1563,7 @@ GLOBAL__ bool:Group_IsDescendant(Group:p, Group:c)
 				YSI_g_sRecursionStack[s][1] = _:p;
 				++s;
 				p = Group:g;
-				g = INVAILID_NUMBER;
+				g = -1;
 			}
 		}
 	}

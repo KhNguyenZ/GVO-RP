@@ -71,7 +71,7 @@ func:CloseSmartKey(playerid)
 {
     for(new i; i < 4; i++)
     {
-        PlayerTextDrawHide(playerid, VehControllPTD[playerid][i]);
+        PlayerTextDrawDestroy(playerid, VehControllPTD[playerid][i]);
     }
     CancelSelectTextDraw(playerid);
     return 1;

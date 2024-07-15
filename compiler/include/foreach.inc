@@ -679,12 +679,12 @@ Notes:
 			{
 				#if defined _FOREACH_BOT && !defined FOREACH_NO_BOTS
 					Bot@YSII_Ag[i] = MAX_PLAYERS + 1;
-					//Bot@YSII_Rg[i] = INVAILID_NUMBER;
+					//Bot@YSII_Rg[i] = -1;
 					Character@YSII_Ag[i] = MAX_PLAYERS + 1;
-					//Character@YSII_Rg[i] = INVAILID_NUMBER;
+					//Character@YSII_Rg[i] = -1;
 				#endif
 				Player@YSII_Ag[i] = MAX_PLAYERS + 1;
-				//Player@YSII_Rg[i] = INVAILID_NUMBER;
+				//Player@YSII_Rg[i] = -1;
 			}
 		}
 		#if defined _FOREACH_BOT && !defined FOREACH_NO_BOTS
@@ -788,12 +788,12 @@ Notes:
 			{
 				#if defined _FOREACH_BOT && !defined FOREACH_NO_BOTS
 					Bot@YSII_Ag[i] = MAX_PLAYERS + 1;
-					//Bot@YSII_Rg[i] = INVAILID_NUMBER;
+					//Bot@YSII_Rg[i] = -1;
 					Character@YSII_Ag[i] = MAX_PLAYERS + 1;
-					//Character@YSII_Rg[i] = INVAILID_NUMBER;
+					//Character@YSII_Rg[i] = -1;
 				#endif
 				Player@YSII_Ag[i] = MAX_PLAYERS + 1;
-				//Player@YSII_Rg[i] = INVAILID_NUMBER;
+				//Player@YSII_Rg[i] = -1;
 			}
 		}
 		#if defined _FOREACH_BOT && !defined FOREACH_NO_BOTS

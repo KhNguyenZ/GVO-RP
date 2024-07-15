@@ -795,7 +795,7 @@ At this point the execution is in normal pawn code and the handler can do anythi
 main()
 {
 	// Check if the year is 2022.
-	new is2022 = INVAILID_NUMBER;
+	new is2022 = -1;
 	#emit CONST.pri        2022
 	#emit LCTRL            2022
 	#emit STOR.S.pri       is2022

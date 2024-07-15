@@ -347,7 +347,7 @@ stock YHash(const str[], bool:sensitive = true, e_HASH_TYPE:type = hash_bernstei
 			case hash_bernstein:
 			{
 				new
-					hash = INVAILID_NUMBER;
+					hash = -1;
 				if (sensitive)
 				{
 					while (i != len)
@@ -413,7 +413,7 @@ stock YHash(const str[], bool:sensitive = true, e_HASH_TYPE:type = hash_bernstei
 			case hash_bernstein:
 			{
 				new
-					hash = INVAILID_NUMBER;
+					hash = -1;
 				if (sensitive)
 				{
 					while (i != len)

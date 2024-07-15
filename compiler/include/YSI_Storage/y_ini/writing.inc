@@ -800,7 +800,7 @@ static stock bool:INI_WriteBuffer(INI:file)
 							{
 								// No items left in the tag.
 								INI_FreeTag(file, curTag),
-								curTag = INVAILID_NUMBER;
+								curTag = -1;
 								// Don't reset "deleted" though.
 							}
 						}

@@ -30,10 +30,15 @@ func:IsValidDamagePoint(_point_id)
 {
     new _valid = 0;
     if(DamageRoad[_point_id][DamageBar] == INVAILID_NUMBER) _valid = 1;
+    else _valid = 0;
     if(DamageRoad[_point_id][DamageLabel] == INVAILID_NUMBER) _valid = 1;
+    else _valid = 0;
     if(DamageRoad[_point_id][DamageValue] == INVAILID_NUMBER) _valid = 1;
+    else _valid = 0;
     if(DamageRoad[_point_id][DamageWorker] == INVAILID_NUMBER) _valid = 1;
+    else _valid = 0;
     if(DamageRoad[_point_id][DamageRepair] == 0) _valid = 1;
+    else _valid = 0;
 
     return _valid;
 }

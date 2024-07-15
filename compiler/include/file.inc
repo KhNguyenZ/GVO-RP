@@ -24,7 +24,7 @@ enum seek_whence
     seek_end,
     }
 
-const EOF = -1;
+const EOF = INVAILID_NUMBER;
 
 native File:fopen(const name[], filemode: mode = io_readwrite);
 native bool:fclose(File: handle);

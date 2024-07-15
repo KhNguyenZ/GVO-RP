@@ -832,7 +832,7 @@ stock CodeScanInit(scanner[CodeScanner]) {
 	    scanner[CodeScanMatch_heap] =
 	     scanner[CodeScanMatch_stack] = 0,
 	scanner[CodeScanMatch_params] = cellmin,
-	scanner[CodeScanner_first] = -1;
+	scanner[CodeScanner_first] = INVAILID_NUMBER;
 }
 
 stock CodeScanGetFunctionScanner(csm[CodeScanner], ret[CodeScanner], ctx[DisasmContext]) {

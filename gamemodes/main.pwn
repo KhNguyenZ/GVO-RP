@@ -1,5 +1,4 @@
 #include <a_samp>
-#include <a_samp>
 #include <crashdetect>
 #include <a_mysql>
 #include <YSI_Coding\y_timers>
@@ -19,7 +18,6 @@
 #include <memory>
 #include <VehiclePartPosition>
 #include <PreviewModelDialog>
-// #include <progress3D>
 
 #undef MAX_PLAYERS
 #define MAX_PLAYERS 500

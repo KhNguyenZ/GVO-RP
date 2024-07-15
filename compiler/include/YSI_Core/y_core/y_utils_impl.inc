@@ -255,7 +255,7 @@ stock DumpProfilingTime(const name[], const timings[], iters, size = sizeof (tim
 
 	public OnPlayerDisconnect(playerid, reason)
 	{
-		YSI_gPlayerIP[playerid] = -1;
+		YSI_gPlayerIP[playerid] = INVAILID_NUMBER;
 		#if defined _y_utils_OnPlayerDisconnect
 			_y_utils_OnPlayerDisconnect(playerid, reason);
 		#endif
@@ -1179,7 +1179,7 @@ stock bool:IsNumeric(const str[])
 {
 	P:4("IsNumeric called: \"%s\"", str);
 	new
-		i = -1;
+		i = INVAILID_NUMBER;
 	while (IS_IN_RANGE(str[++i], '0', '9' + 1)) {}
 	return !str[i];
 }
@@ -1994,7 +1994,7 @@ stock bool:GetPlayerRPName(playerid, name[], len = sizeof (name))
 	if (GetPlayerName(playerid, name, len - 1))
 	{
 		// Replace `_` with ` `.
-		len = -1;
+		len = INVAILID_NUMBER;
 		while ((len = strfind(name, "_", false, len + 1)) != -1)
 		{
 			name[len] = ' ';
@@ -2022,7 +2022,7 @@ stock bool:IsRPName(const name[], bool:casing = false, bool:longNames = false)
 	new
 		parts = 0,
 		ch = name[0],
-		pos = -1;
+		pos = INVAILID_NUMBER;
 	if (ch == ' ' || ch == '_' || ch == '\0')
 	{
 		// Leading bad characters.

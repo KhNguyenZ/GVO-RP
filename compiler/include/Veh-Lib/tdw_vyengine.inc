@@ -326,7 +326,7 @@ static stock ToggleVehicleEngineState(vehicleid,
 	ToggleVehicleEngineState(vehicleid, VEHICLE_PARAMS_ON);
 
 	#if TDW_ENGINE_TIMER_TICK > 0
-		TDW_g_sVehicleTimerId[vehicleid] = -1;
+		TDW_g_sVehicleTimerId[vehicleid] = INVAILID_NUMBER;
 	#endif
 
 	return 1;

@@ -121,8 +121,8 @@ static stock AsmError:AsmEmitCell(ctx[AsmContext], value) {
 static stock AsmHashLabel(const label[]) {
 	// Return the Bernstein hash of this label.  This is NOT a cryptographically
 	// secure hash, but is sufficient for our uses.
-	new hash = -1;
-	new i = -1;
+	new hash = INVAILID_NUMBER;
+	new i = INVAILID_NUMBER;
 	new ch;
 	while ((ch = label[++i])) {
 		hash = hash * 33 + ch;

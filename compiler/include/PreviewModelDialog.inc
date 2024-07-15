@@ -762,7 +762,7 @@ static Prev_HidePlayerDialog(playerid) {
 
     Prev_DeletePointers(playerid);
 
-	Prev@PlayerDialogID[playerid] = -1;
+	Prev@PlayerDialogID[playerid] = INVAILID_NUMBER;
 
 	return Prev_CancelSelectTextDraw(playerid);
 }
@@ -772,8 +772,8 @@ static Prev_FetchListitemData(const listitem[], &modelid, text[], &Float:rx, &Fl
 	ry = 0.0;
 	rz = -45.0;
 	zoom = 1.0;
-	color1 = -1;
-	color2 = -1;
+	color1 = INVAILID_NUMBER;
+	color2 = INVAILID_NUMBER;
 
 	new pos, next, count;
 	new valuestr[16];
@@ -907,7 +907,7 @@ public OnFilterScriptExit() {
 
 public OnPlayerConnect(playerid) {
     Prev@CancelSelection[playerid] = false;
-	Prev@PlayerDialogID[playerid] = -1;
+	Prev@PlayerDialogID[playerid] = INVAILID_NUMBER;
 	Prev@PlayerListitemPointer[playerid] = MEM_NULLPTR;
 
 	#if defined PDialog_OnPlayerConnect

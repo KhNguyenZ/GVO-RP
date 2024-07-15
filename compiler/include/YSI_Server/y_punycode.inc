@@ -308,7 +308,7 @@ stock Puny_EncodeHash(string:dst[], string:src[], &hash, wlen = sizeof (dst), co
 		sSrc[YSI_MAX_STRING],
 		bPacked = ispacked(src);
 	--wlen,
-	hash = -1;
+	hash = INVAILID_NUMBER;
 
 	if (bPacked) {
 		strunpack(sSrc, src);

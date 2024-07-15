@@ -3026,8 +3026,8 @@ static Object_ParseSet(playerid, objSet, Float:x, Float:y, Float:z, world, objLi
 				{
 					if (objStart == -1)
 					{
-						objList[0][E_OBJECT_ITTER_NEXT] = -1;
-						objList[0][E_OBJECT_ITTER_LAST] = -1;
+						objList[0][E_OBJECT_ITTER_NEXT] = INVAILID_NUMBER;
+						objList[0][E_OBJECT_ITTER_LAST] = INVAILID_NUMBER;
 						objList[0][E_OBJECT_ITTER_OBJ] = objSet;
 						objList[0][E_OBJECT_ITTER_DISTANCE] = diff;
 						objList[0][E_OBJECT_ITTER_X] = px;
@@ -3047,7 +3047,7 @@ static Object_ParseSet(playerid, objSet, Float:x, Float:y, Float:z, world, objLi
 						if (objList[objEnd][E_OBJECT_ITTER_DISTANCE] < diff)
 						{
 							objList[objCount][E_OBJECT_ITTER_LAST] = objEnd;
-							objList[objCount][E_OBJECT_ITTER_NEXT] = -1;
+							objList[objCount][E_OBJECT_ITTER_NEXT] = INVAILID_NUMBER;
 							objList[objEnd][E_OBJECT_ITTER_NEXT] = objCount;
 							objEnd = objCount++;
 						}
@@ -3055,7 +3055,7 @@ static Object_ParseSet(playerid, objSet, Float:x, Float:y, Float:z, world, objLi
 						{
 							new
 								i = objStart,
-								j = -1;
+								j = INVAILID_NUMBER;
 							while (objList[i][E_OBJECT_ITTER_DISTANCE] < diff) i = objList[(j = i)][E_OBJECT_ITTER_NEXT];
 							objList[objCount][E_OBJECT_ITTER_NEXT] = i;
 							objList[objCount][E_OBJECT_ITTER_LAST] = j;
@@ -3084,7 +3084,7 @@ static Object_ParseSet(playerid, objSet, Float:x, Float:y, Float:z, world, objLi
 							if (j == -1) objStart = objEnd;
 							else objList[j][E_OBJECT_ITTER_NEXT] = objEnd;
 							objEnd = newend;
-							objList[newend][E_OBJECT_ITTER_NEXT] = -1;
+							objList[newend][E_OBJECT_ITTER_NEXT] = INVAILID_NUMBER;
 						}
 					}
 				}
@@ -3129,7 +3129,7 @@ static Object_FindSectors(playerid, Float:x, Float:y, sectors[][E_OSEC_ITTER], &
 		ysector = floatround(((y - OBJECT_BOUNDS_MINY) / YSI_g_sYSectorSize), floatround_floor);
 	if (!sLastCheck[playerid] || sLX[playerid] != xsector || sLY[playerid] != ysector)
 	{
-		secStart = -1;
+		secStart = INVAILID_NUMBER;
 		new
 			go = 0,
 			Float:diff = 10.0,
@@ -3215,11 +3215,11 @@ static Object_FindSectors(playerid, Float:x, Float:y, sectors[][E_OSEC_ITTER], &
 			go = 0;
 			sectors[0][E_OSEC_ITTER_SECTOR] = OBJECT_NO_SECTOR;
 			sectors[0][E_OSEC_ITTER_DIFF] = diff;
-			sectors[0][E_OSEC_ITTER_NEXT] = -1;
+			sectors[0][E_OSEC_ITTER_NEXT] = INVAILID_NUMBER;
 			secStart = 0;
 			k = 1;
 		}
-		else secStart = -1;
+		else secStart = INVAILID_NUMBER;
 		for (new i = xstart; i <= xend; i++)
 		{
 			new
@@ -3281,7 +3281,7 @@ static Object_FindSectors(playerid, Float:x, Float:y, sectors[][E_OSEC_ITTER], &
 					{
 						new
 							itterCur = secStart,
-							itterLast = -1;
+							itterLast = INVAILID_NUMBER;
 						while (itterCur != -1 && sectors[itterCur][E_OSEC_ITTER_DIFF] < diff) itterCur = sectors[(itterLast = itterCur)][E_OSEC_ITTER_NEXT];
 						if (itterLast == -1) secStart = k;
 						else sectors[itterLast][E_OSEC_ITTER_NEXT] = k;

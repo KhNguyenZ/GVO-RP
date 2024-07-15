@@ -258,7 +258,7 @@ static stock Text_AddLocal(const buffer[])
 	P:4("Text_AddLocal called: \"%s\", %i", buffer);
 	// Check if this already exists.  If not, add it to a found free slot.
 	new
-		slot = -1;
+		slot = INVAILID_NUMBER;
 	for (new i = 0; i != Y_TEXT_MAX_SETS; ++i)
 	{
 		if (YSI_g_sTextSets[i][E_TEXT_SETS_NAME][0] == '\0')
@@ -881,7 +881,7 @@ static stock Text_GetFreeEntry()
 	// Reset text storage pointers.
 	for (new Language:i = Language:0; i != YSI_MAX_LANGUAGES; ++i)
 	{
-		YSI_g_sTextEntries[ret][E_TEXT_ENTRY_POINTERS][i] = -1;
+		YSI_g_sTextEntries[ret][E_TEXT_ENTRY_POINTERS][i] = INVAILID_NUMBER;
 	}
 	return ret;
 }

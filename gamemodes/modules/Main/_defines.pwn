@@ -33,3 +33,5 @@
 #define             MAX_SKIN_ORG           10
 
 #define MAX_ORG_VEHICLES 1000
+
+#define INVAILID_NUMBER -1

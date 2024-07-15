@@ -459,7 +459,7 @@ stock Timer:_Timer_C(timerID)
 {
 	P:3("_Timer_C called: %d", timerID);
 	// This is done here for convenience.
-	I@ = -1;
+	I@ = INVAILID_NUMBER;
 	// Only repeating timers are freed like this.
 	// UPDATE: Now all timers with array parameters, regardless of repeat status
 	// are freed like this.  Only timers with no malloc aren't.

@@ -130,7 +130,7 @@ For special iterators, there is no size, so there is no start or end point using
 this scheme. Instead, `-1` is used:
 
 ```pawn
-for (new i = -1; (i = FUNC(i)) != -1; )
+for (new i = INVAILID_NUMBER; (i = FUNC(i)) != -1; )
 ```
 
 As a side note, this won't work for regular iterators because `-1` is not a
@@ -1240,7 +1240,7 @@ hook OnScriptInit()
 	gUnusedWarrants = 0;
 	
 	// End of the list.
-	gWarrants[MAX_WARRANTS][E_WARRANT_NEXT - 1] = -1;
+	gWarrants[MAX_WARRANTS][E_WARRANT_NEXT - 1] = INVAILID_NUMBER;
 }
 ```
 

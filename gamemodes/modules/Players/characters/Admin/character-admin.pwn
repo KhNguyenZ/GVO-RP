@@ -173,7 +173,7 @@ CMD:hoisinh(playerid, params[])
     SetPlayerHealth(targetid, 100);
     Character[targetid][char_Injured] = 0;
     OnPlayerSpawn(targetid);
-
+    TogglePlayerClock(playerid, 0);
     HienTextdraw(playerid, "Ban da hoi sinh thanh cong nguoi choi!", 3000);
     return 1;
 }
@@ -232,8 +232,7 @@ CMD:veh(playerid, params[])
         {
             if (iCreate[i] == -1)
             {
-new Float:
-                fVehPos[4];
+                new Float:fVehPos[4];
 
                 new fVW = GetPlayerVirtualWorld(playerid);
                 GetPlayerPos(playerid, fVehPos[0], fVehPos[1], fVehPos[2]);

@@ -2,7 +2,7 @@
 
 public OnPlayerDeath(playerid, killerid, reason)
 {
-    if(Character[playerid][char_Injured] == 0 && reason != 0)
+    if(Character[playerid][char_Injured] == 0)
     {
         Character[playerid][char_Injured] = 1;
 

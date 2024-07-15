@@ -248,7 +248,7 @@ stock GetColourStream(const str[], &idx, alpha = 0xAA)
 	// do a reverse hash incrementally.  Actually you can, but not well.
 	new
 		pos = idx,
-		ret = -1;
+		ret = INVAILID_NUMBER;
 	#if _YSI_USE_X11
 		//new
 		//	bool:checkSpace = YSI_g_sCheckSpaces;

@@ -149,7 +149,7 @@ HOOK__ OnPlayerDisconnect(playerid, reason)
 	// then we need all scripts to know that this is no longer the case.  If
 	// this script is not in charge of the current dialog then do not broadcast
 	// the reset, just do it locally.
-	YSI_g_sPlayerDialog[playerid] = -1;
+	YSI_g_sPlayerDialog[playerid] = INVAILID_NUMBER;
 	// This is NOT a `YSI_DIALOG_MASK` test, because we want to pass for invalid
 	// callbacks, i.e. just normal dialogs.
 	if (YSI_g_sPlayerCallback[playerid])

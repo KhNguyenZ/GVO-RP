@@ -576,12 +576,12 @@ stock strexplode(output[][], const input[], const delimiter[] = !",", limit = ce
 	}
 	
 	if (trim) {
-		new i = -1;
+		new i = INVAILID_NUMBER;
 		
 		if (ispacked(input)) {
 			while (input{++i}) {
 				if (input{i} > ' ') {
-					i = -1;
+					i = INVAILID_NUMBER;
 					
 					break;
 				}
@@ -589,7 +589,7 @@ stock strexplode(output[][], const input[], const delimiter[] = !",", limit = ce
 		} else {
 			while (input[++i]) {
 				if (input[i] > ' ') {
-					i = -1;
+					i = INVAILID_NUMBER;
 					
 					break;
 				}
@@ -621,7 +621,7 @@ stock strexplode(output[][], const input[], const delimiter[] = !",", limit = ce
 		++count;
 		
 		if (limit > 0 && count >= limit) {
-			next = -1;
+			next = INVAILID_NUMBER;
 		} else {
 			next = strfind(input, delimiter, ignorecase, pos);
 		}

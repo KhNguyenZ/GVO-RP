@@ -122,8 +122,7 @@ func:HidePlayerSpeedo(playerid)
 }
 func:player_get_speed(playerid)
 {
-new Float:
-    fVelocity[3];
+    new Float:fVelocity[3];
 
     GetVehicleVelocity(GetPlayerVehicleID(playerid), fVelocity[0], fVelocity[1], fVelocity[2]);
     return floatround(floatsqroot((fVelocity[0] * fVelocity[0]) + (fVelocity[1] * fVelocity[1]) + (fVelocity[2] * fVelocity[2])) * 100);

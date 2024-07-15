@@ -144,7 +144,7 @@ static stock Svar_FindData(const name[], const data[])
 		}
 		p = data[0];
 	}
-	YSI_g_sLastAddr = -1;
+	YSI_g_sLastAddr = INVAILID_NUMBER;
 }
 
 forward _Config_Load_y_svar(name[], value[]);
@@ -346,7 +346,7 @@ public OnCodeInit()
 {
 	P:1("hook Svar_OnScriptInit called");
 	// List them all.
-	YSI_g_sFirstUVarData = -1;
+	YSI_g_sFirstUVarData = INVAILID_NUMBER;
 	// Call all @yS_ functions to get all required data.
 	new
 		idx = 0,

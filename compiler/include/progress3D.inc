@@ -7,8 +7,6 @@
 #endif
 #define progress3D_included_
 
-#include <a_samp>
-#include <streamer>
 #include <YSI_Data\y_iterate>
 
 #define SetAlpha(%0)          (%0 & 0xFFFFFFFE)
@@ -121,10 +119,10 @@ stock DestroyProgressBar3D(Bar3D:barid) {
         return _:INVALID_GLOBAL_3D_BAR;
     }
 
-    GlobalBars3D[_:barid][barColor] = -1;
+    GlobalBars3D[_:barid][barColor] = INVAILID_NUMBER;
     GlobalBars3D[_:barid][barShown] = false;
-    GlobalBars3D[_:barid][maxValue] = -1;
-    GlobalBars3D[_:barid][barValue] = -1;
+    GlobalBars3D[_:barid][maxValue] = INVAILID_NUMBER;
+    GlobalBars3D[_:barid][barValue] = INVAILID_NUMBER;
 
     DestroyDynamic3DTextLabel(GlobalBars3D[_:barid][Bar1]);
     DestroyDynamic3DTextLabel(GlobalBars3D[_:barid][Bar2]);
@@ -259,10 +257,10 @@ stock DestroyPlayerProgressBar3D(playerid, PlayerBar3D:barid) {
         return _:INVALID_PLAYER_3D_BAR;
     }
 
-    PlayerBars3D[playerid][_:barid][barColor] = -1;
+    PlayerBars3D[playerid][_:barid][barColor] = INVAILID_NUMBER;
     PlayerBars3D[playerid][_:barid][barShown] = false;
-    PlayerBars3D[playerid][_:barid][maxValue] = -1;
-    PlayerBars3D[playerid][_:barid][barValue] = -1;
+    PlayerBars3D[playerid][_:barid][maxValue] = INVAILID_NUMBER;
+    PlayerBars3D[playerid][_:barid][barValue] = INVAILID_NUMBER;
 
     DestroyDynamic3DTextLabel(PlayerBars3D[playerid][_:barid][Bar1]);
     DestroyDynamic3DTextLabel(PlayerBars3D[playerid][_:barid][Bar2]);

@@ -3,7 +3,7 @@
 hook Mysql_PlayerInit(playerid){
     for(new i = 0; i < MAX_PLAYER_VEHICLES; i++)
     {
-        PlayerVehicle[playerid][i][pv_id] = -1;
+        PlayerVehicle[playerid][i][pv_id] = INVAILID_NUMBER;
     }
     LoadPlayerVehicle(playerid);
     return 1;
@@ -58,5 +58,5 @@ public OnLoadPlayerVehicle(playerid)
 
 hook OnGameModeInit()
 {
-    for(new i ; i < MAX_VEHICLES; i++) iCreate[i] = -1;
+    for(new i ; i < MAX_VEHICLES; i++) iCreate[i] = INVAILID_NUMBER;
 }

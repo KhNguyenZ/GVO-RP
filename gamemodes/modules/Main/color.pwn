@@ -47,3 +47,13 @@
 #define COLOR_NEWS 0xFFA500AA
 #define COLOR_OOC 0xE0FFFFAA
 #define COLOR_CYAN 0x40FFFFFF
+
+static const Colors[7] = {
+    0x0000FFFF, // Blue
+    0x00FF00FF, // Green
+    0x00FFFFFF, // Cyan
+    0xFF0000FF, // Red
+    0xFF00FFFF, // Purple
+    0xFFFF00FF, // Yellow
+    0xFFFFFFFF // White
+};

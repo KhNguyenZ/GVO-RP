@@ -3,7 +3,13 @@ hook OnGameModeInit()
 {
     new RoadRepair_NPC;
     RoadRepair_NPC = CreateInteractiveNPC(2, "Lands", "Road Repair Worker", 260, -73.1041, -1585.2783, 2.6172, 233.3594);
+    printf("Load road repair");
     ApplyActorAnimation(RoadRepair_NPC, "LOWRIDER", "prtial_gngtlkB", 4.1, 1, 0, 0, 0, 0);
+
+    for(new i; i < sizeof(DamagePoint); i++)
+    {
+        ResetDamagePoint(i);
+    }
     return 1;
 }
 
@@ -22,7 +28,7 @@ hook OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
     }
     if(newkeys == KEY_WALK)
     {
-        new _rr_veh = GetNeraestVehicle(playerid, 10.0),
+        new _rr_veh = GetNeraestVehicle(playerid, 1.0),
         _vh_id = VehRR_Renter[playerid];
         if(_rr_veh == _vh_id)
         {

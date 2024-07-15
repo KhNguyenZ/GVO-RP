@@ -3,7 +3,7 @@ hook OnGameModeInit()
 {
     for (new i = 0 ; i < MAX_DYNAMIC_DOORS ; i++)
     {
-        DoorInfo[i][door_id] = -1;
+        DoorInfo[i][door_id] = INVAILID_NUMBER;
     }
     mysql_tquery(Handle(), "SELECT * FROM `doors`", "Doors_Load", "");
     return 1;

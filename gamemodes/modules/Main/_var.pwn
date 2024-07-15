@@ -105,7 +105,7 @@ enum enum_pInventory
 
 new PlayerSelectSlot[MAX_PLAYERS];
 
-new iCreate[MAX_VEHICLES] = -1;
+new iCreate[MAX_VEHICLES] = INVAILID_NUMBER;
 
 new pSpeedo[MAX_PLAYERS];
 

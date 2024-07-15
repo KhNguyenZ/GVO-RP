@@ -559,7 +559,7 @@ GGLOBAL__ Iter_Func@Group_...(start, Group:g)
 
 const
 	F@z:_GROUP_MAKE_NAME<Iterator@Group_...> = F@z:0,
-	_GROUP_MAKE_NAME<iterstart@Group_...> = -1;
+	_GROUP_MAKE_NAME<iterstart@Group_...> = INVAILID_NUMBER;
 
 /*
 
@@ -721,7 +721,7 @@ GGLOBAL__ Iter_Func@Group_Global...(start)
 
 const
 	F@z:_GROUP_MAKE_NAME<Iterator@Group_Global...> = F@z:0,
-	_GROUP_MAKE_NAME<iterstart@Group_Global...> = -1;
+	_GROUP_MAKE_NAME<iterstart@Group_Global...> = INVAILID_NUMBER;
 
 #if defined GROUP_LIBRARY_TAGS
 	

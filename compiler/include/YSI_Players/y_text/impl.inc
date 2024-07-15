@@ -287,7 +287,7 @@ hook OnScriptInit()
 	for (i = 0; i != Y_TEXT_MAX_SETS; ++i)
 	{
 		YSI_g_sTextSets[i][e_TEXT_SETS_NAME][0] = '\1';
-		YSI_g_sTextSets[i][e_TEXT_SETS_INDEX] = -1;
+		YSI_g_sTextSets[i][e_TEXT_SETS_INDEX] = INVAILID_NUMBER;
 	}
 	for (i = 0; i != MAX_TEXT_ENTRIES; ++i)
 	{
@@ -1309,12 +1309,12 @@ static stock Text_GetFreeEntry()
 		ret = YSI_g_sUnusedEntry;
 	YSI_g_sUnusedEntry = YSI_g_sTextEntries[ret][e_TEXT_ENTRY_HASH];
 	YSI_g_sTextEntries[ret][e_TEXT_ENTRY_HASH] = 0;
-	YSI_g_sTextEntries[ret][e_TEXT_ENTRY_LEFT] = -1;
-	YSI_g_sTextEntries[ret][e_TEXT_ENTRY_RIGHT] = -1;
+	YSI_g_sTextEntries[ret][e_TEXT_ENTRY_LEFT] = INVAILID_NUMBER;
+	YSI_g_sTextEntries[ret][e_TEXT_ENTRY_RIGHT] = INVAILID_NUMBER;
 	// Reset text storage pointers.
 	for (new Language:i = Language:0; i != YSI_MAX_LANGUAGES; ++i)
 	{
-		YSI_g_sTextEntries[ret][e_TEXT_ENTRY_POINTERS][i] = -1;
+		YSI_g_sTextEntries[ret][e_TEXT_ENTRY_POINTERS][i] = INVAILID_NUMBER;
 	}
 	return ret;
 }

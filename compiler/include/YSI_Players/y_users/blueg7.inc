@@ -218,7 +218,7 @@ stock Player_Preload(string:name[], ret[E_USER_PRELOAD])
 			P:E("Error reading index %c.", filename[0]);
 			return -1;
 		}
-		ret[E_USER_PRELOAD_YID] = -1;
+		ret[E_USER_PRELOAD_YID] = INVAILID_NUMBER;
 	#endif
 	return 0;
 }
@@ -636,7 +636,7 @@ hook OnPlayerConnect(playerid)
 		P:5("Users_OnPlayerConnect: Done Preload");
 		// Can do checking in here to see if they just rejoined.
 	}
-	YSI_g_sPlayerYID[playerid] = -1;
+	YSI_g_sPlayerYID[playerid] = INVAILID_NUMBER;
 }
 
 hook OnPlayerDisconnect(playerid, reason)
@@ -953,7 +953,7 @@ static stock Player_DoLogout(playerid, uid)
 	// either having just been opened, or invoked in a previous call to this
 	// function from another script still running but loosing the player.
 	// This could in theory be used from some force-logout script.
-	YSI_g_sPlayerYID[playerid] = -1;*/
+	YSI_g_sPlayerYID[playerid] = INVAILID_NUMBER;*/
 	return 1;
 }
 
@@ -1001,7 +1001,7 @@ static stock Player_HashPass(pass[], target[])
 		#error SHA1 unsupported.
 	#elseif defined PP_YSI
 		static
-			charset[] = "A,UbRgdnS#|rT_%5+ZvEK¬NF<9¦IH[(C)2O07 Y-Less]$Qw^?/om4;@'8k£Pp.c{&l\\3zay>DfxV:WXjuG6*!1\"i~=Mh`JB}qt",
+			charset[] = "A,UbRgdnS#|rT_%5+ZvEKï¿½NF<9ï¿½IH[(C)2O07 Y-Less]$Qw^?/om4;@'8kï¿½Pp.c{&l\\3zay>DfxV:WXjuG6*!1\"i~=Mh`JB}qt",
 			css = 99;
 		new
 			//target[MAX_PASSWORD_LENGTH + 1],
@@ -1288,7 +1288,7 @@ static stock Player_RewritePreload(playerid)
 			P:E("Error reading index %c.", filename[0]);
 			return 0;
 		}
-		//ret[E_USER_PRELOAD_YID] = -1;
+		//ret[E_USER_PRELOAD_YID] = INVAILID_NUMBER;
 	#endif
 	return 0;
 }
@@ -1506,7 +1506,7 @@ static stock Player_GetNewID()
 	new
 		File:fHnd = fopen(USER_FILE_PATH "index.YSI", io_readwrite),
 		num[MAX_INDEX_LENGTH + 9],
-		uid = -1;
+		uid = INVAILID_NUMBER;
 	if (fHnd)
 	{
 		fread(fHnd, num);

@@ -187,7 +187,7 @@ func:DestroyPlayerInteractive(playerid)
 
 hook OnGameModeInit()
 {
-    for(new i; i < MAX_INTERACTIVE_NPC; i++) InteractiveNPCs_Data[i][iNPC_ID] = -1;
+    for(new i; i < MAX_INTERACTIVE_NPC; i++) InteractiveNPCs_Data[i][iNPC_ID] = INVAILID_NUMBER;
     return 1;
 }
 

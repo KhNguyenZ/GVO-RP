@@ -354,7 +354,7 @@ Test:y_commands_ReProcess()
 	// 1.
 	YSI_gsPlayerid = INVALID_PLAYER_ID;
 	YSI_gsParams[0] = '\0';
-	YSI_gsHelp = -1;
+	YSI_gsHelp = INVAILID_NUMBER;
 	Command_ReProcess(33, "y_commands_ReProcess", 0);
 	ASSERT(YSI_gsPlayerid == 33);
 	ASSERT(YSI_gsParams[0] == '\0');
@@ -362,7 +362,7 @@ Test:y_commands_ReProcess()
 	// 2.
 	YSI_gsPlayerid = INVALID_PLAYER_ID;
 	YSI_gsParams[0] = '\0';
-	YSI_gsHelp = -1;
+	YSI_gsHelp = INVAILID_NUMBER;
 	Command_ReProcess(33, "y_commands_ReProcess one", 1);
 	ASSERT(YSI_gsPlayerid == 33);
 	ASSERT(YSI_gsParams[0] != '\0');
@@ -371,7 +371,7 @@ Test:y_commands_ReProcess()
 	// 3.
 	YSI_gsPlayerid = INVALID_PLAYER_ID;
 	YSI_gsParams[0] = '\0';
-	YSI_gsHelp = -1;
+	YSI_gsHelp = INVAILID_NUMBER;
 	Command_ReProcess(33, "y_commands_ReProcess two and three", 0);
 	ASSERT(YSI_gsPlayerid == 33);
 	ASSERT(YSI_gsParams[0] != '\0');
@@ -380,7 +380,7 @@ Test:y_commands_ReProcess()
 	// 4.
 	YSI_gsPlayerid = INVALID_PLAYER_ID;
 	YSI_gsParams[0] = '\0';
-	YSI_gsHelp = -1;
+	YSI_gsHelp = INVAILID_NUMBER;
 	Command_ReProcess(33, "y_commands_ReProcess 99", 1);
 	ASSERT(YSI_gsPlayerid == 33);
 	ASSERT(YSI_gsParams[0] != '\0');
@@ -389,7 +389,7 @@ Test:y_commands_ReProcess()
 	// 5.
 	YSI_gsPlayerid = INVALID_PLAYER_ID;
 	YSI_gsParams[0] = '\0';
-	YSI_gsHelp = -1;
+	YSI_gsHelp = INVAILID_NUMBER;
 	Command_ReProcess(33, "y_commands_ReProcess yeah......", 0);
 	ASSERT(YSI_gsPlayerid == 33);
 	ASSERT(YSI_gsParams[0] != '\0');
@@ -398,7 +398,7 @@ Test:y_commands_ReProcess()
 	// 6.
 	YSI_gsPlayerid = INVALID_PLAYER_ID;
 	YSI_gsParams[0] = '\0';
-	YSI_gsHelp = -1;
+	YSI_gsHelp = INVAILID_NUMBER;
 	Command_ReProcess(33, "y_commands_ReProcess Hello World", 1);
 	ASSERT(YSI_gsPlayerid == 33);
 	ASSERT(YSI_gsParams[0] != '\0');
@@ -412,7 +412,7 @@ Test:y_commands_Parameters()
 	// 1.
 	YSI_gsPlayerid = INVALID_PLAYER_ID;
 	YSI_gsParams[0] = '\0';
-	YSI_gsHelp = -1;
+	YSI_gsHelp = INVAILID_NUMBER;
 	call OnPlayerCommandText(34, "/y_commands_ReProcess");
 	ASSERT(YSI_gsPlayerid == 34);
 	ASSERT(YSI_gsParams[0] == '\0');
@@ -420,7 +420,7 @@ Test:y_commands_Parameters()
 	// 2.
 	YSI_gsPlayerid = INVALID_PLAYER_ID;
 	YSI_gsParams[0] = '\0';
-	YSI_gsHelp = -1;
+	YSI_gsHelp = INVAILID_NUMBER;
 	call OnPlayerCommandText(34, "/y_commands_ReProcess one");
 	ASSERT(YSI_gsPlayerid == 34);
 	ASSERT(YSI_gsParams[0] != '\0');
@@ -429,7 +429,7 @@ Test:y_commands_Parameters()
 	// 3.
 	YSI_gsPlayerid = INVALID_PLAYER_ID;
 	YSI_gsParams[0] = '\0';
-	YSI_gsHelp = -1;
+	YSI_gsHelp = INVAILID_NUMBER;
 	call OnPlayerCommandText(34, "/y_commands_ReProcess two and three");
 	ASSERT(YSI_gsPlayerid == 34);
 	ASSERT(YSI_gsParams[0] != '\0');
@@ -438,7 +438,7 @@ Test:y_commands_Parameters()
 	// 4.
 	YSI_gsPlayerid = INVALID_PLAYER_ID;
 	YSI_gsParams[0] = '\0';
-	YSI_gsHelp = -1;
+	YSI_gsHelp = INVAILID_NUMBER;
 	call OnPlayerCommandText(34, "/y_commands_ReProcess 99");
 	ASSERT(YSI_gsPlayerid == 34);
 	ASSERT(YSI_gsParams[0] != '\0');
@@ -447,7 +447,7 @@ Test:y_commands_Parameters()
 	// 5.
 	YSI_gsPlayerid = INVALID_PLAYER_ID;
 	YSI_gsParams[0] = '\0';
-	YSI_gsHelp = -1;
+	YSI_gsHelp = INVAILID_NUMBER;
 	call OnPlayerCommandText(34, "/y_commands_ReProcess yeah......");
 	ASSERT(YSI_gsPlayerid == 34);
 	ASSERT(YSI_gsParams[0] != '\0');
@@ -456,7 +456,7 @@ Test:y_commands_Parameters()
 	// 6.
 	YSI_gsPlayerid = INVALID_PLAYER_ID;
 	YSI_gsParams[0] = '\0';
-	YSI_gsHelp = -1;
+	YSI_gsHelp = INVAILID_NUMBER;
 	call OnPlayerCommandText(34, "/y_commands_ReProcess Hello World");
 	ASSERT(YSI_gsPlayerid == 34);
 	ASSERT(YSI_gsParams[0] != '\0');

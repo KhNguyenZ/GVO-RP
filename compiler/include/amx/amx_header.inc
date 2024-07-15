@@ -367,7 +367,7 @@ stock bool:GetNativeInfo(index, info[AMX_FUNCSTUBNT]) {
 	InitStaticAmxHeader();
 
 	// For when "index" is not valid
-	info[AMX_FUNCSTUBNT_ADDRESS] = -1;
+	info[AMX_FUNCSTUBNT_ADDRESS] = INVAILID_NUMBER;
 
 	new num_natives = GetNumNatives(gHdr);
 

@@ -1091,7 +1091,7 @@ mhook OnPlayerConnect(playerid)
 #endif
 	{
 		static
-			race = -1;
+			race = INVAILID_NUMBER;
 		// Process a different race every call.
 		race = (race + 1) % MAX_RACES;
 		static

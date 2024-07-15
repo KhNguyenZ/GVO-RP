@@ -133,7 +133,7 @@ stock TDWVH_DATA@AddStaticVehicle(modelid, Float:spawn_x, Float:spawn_y,
 		TDW_g_sVehicle@Data[TDW_g_sVehicleId][EI_VEHICLE_SPAWN_POS_Y] = spawn_y;
 		TDW_g_sVehicle@Data[TDW_g_sVehicleId][EI_VEHICLE_SPAWN_POS_Z] = spawn_z;
 		TDW_g_sVehicle@Data[TDW_g_sVehicleId][EI_VEHICLE_SPAWN_ANGLE] = z_angle;
-		TDW_g_sVehicle@Data[TDW_g_sVehicleId][EI_VEHICLE_RESPAWN_TIME] = -1;
+		TDW_g_sVehicle@Data[TDW_g_sVehicleId][EI_VEHICLE_RESPAWN_TIME] = INVAILID_NUMBER;
 		TDW_g_sVehicle@Color1{TDW_g_sVehicleId} = color1;
 		TDW_g_sVehicle@Color2{TDW_g_sVehicleId} = color2;
 		TDW_g_sVehicle@Siren{TDW_g_sVehicleId} = false;

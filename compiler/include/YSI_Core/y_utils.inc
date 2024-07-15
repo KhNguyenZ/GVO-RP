@@ -314,7 +314,7 @@ public OnPlayerConnect(playerid)
 
 public OnPlayerDisconnect(playerid, reason)
 {
-	YSI_gPlayerIP[playerid] = -1;
+	YSI_gPlayerIP[playerid] = INVAILID_NUMBER;
 	#if defined _y_utils_OnPlayerDisconnect
 		_y_utils_OnPlayerDisconnect(playerid, reason);
 	#endif

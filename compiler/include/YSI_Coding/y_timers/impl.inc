@@ -75,7 +75,7 @@ Optional plugins:
 static stock
 	Alloc:YSI_g_sLastSlot = NO_ALLOC,
 	Alloc:YSI_g_sFirstSlot = NO_ALLOC,
-	YSI_g_sPlayerTimers = -1;
+	YSI_g_sPlayerTimers = INVAILID_NUMBER;
 
 hook OnScriptInit()
 {
@@ -285,14 +285,14 @@ stock _Timer_D(func[], interval, const action, who, results[MAX_PLAYERS], a[2])
 					if (results[who] != -1)
 					{
 						KillTimer(results[who]);
-						results[who] = -1;
+						results[who] = INVAILID_NUMBER;
 					}
 				}
 			}
 			else if (results[who] != -1)
 			{
 				KillTimer(results[who]);
-				results[who] = -1;
+				results[who] = INVAILID_NUMBER;
 			}
 		}
 		case 1:
@@ -378,7 +378,7 @@ stock _Timer_A(str[], len)
 }
 
 //stock
-//	I@ = -1;
+//	I@ = INVAILID_NUMBER;
 
 // Create the timer setup.
 stock _Timer_C(tt, g)
@@ -386,7 +386,7 @@ stock _Timer_C(tt, g)
 	P:3("_Timer_C called: %d, %d", tt, g);
 	//P:3("_Timer_C called: %d", tt);
 	// This is done here for convenience.
-	I@ = -1;
+	I@ = INVAILID_NUMBER;
 	// Only repeating timers are freed like this.
 	// UPDATE: Now all timers with array parameters, regardless of repeat status
 	// are freed like this.  Only timers with no malloc aren't.

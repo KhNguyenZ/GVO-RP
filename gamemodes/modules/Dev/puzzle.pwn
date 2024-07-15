@@ -209,7 +209,7 @@ hook OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
             }
             else
             {
-                Puzzle_Success[playerid] = -1;
+                Puzzle_Success[playerid] = INVAILID_NUMBER;
             }
         }
     }

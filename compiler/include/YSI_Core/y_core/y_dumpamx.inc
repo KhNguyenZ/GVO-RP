@@ -165,7 +165,7 @@ static stock DumpAMX_EncodeBytes(c, buffer[ENC_MAX])
 	buffer[1] = (c >>> 21) & 0x7F, // Store 7 bits.
 	buffer[0] = (c >>> 28);        // Store 7 bits.
 
-	new index = -1;
+	new index = INVAILID_NUMBER;
 
 	// Skip leading zeros.
 	while (index < ENC_MAX - 2 && buffer[index + 1] == 0 && (buffer[index + 2] & 0x40) == 0)

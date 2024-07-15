@@ -8,7 +8,7 @@ public Mysql_PlayerInit(playerid)
 }
 public OnPlayerConnect(playerid)
 {
-    PlayerSelectSlot[playerid] = -1;
+    PlayerSelectSlot[playerid] = INVAILID_NUMBER;
     CountGuide[playerid] = 0;
     // InvWeight[playerid] = 0.0;
     // InvMaxWeight[playerid] = 10.0;

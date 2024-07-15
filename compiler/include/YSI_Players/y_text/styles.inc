@@ -292,7 +292,7 @@ public Styles_EntryTag()
 			default:
 			{
 				//printf("SAVING %d", id);
-				YSI_g_sStyleData[id][E_STYLE_DATA_3D_ID] = -1;
+				YSI_g_sStyleData[id][E_STYLE_DATA_3D_ID] = INVAILID_NUMBER;
 				//printf("SAVING %d", id);
 				YSI_g_sStyleData[id][E_STYLE_DATA_TYPE] = e_STYLE_TYPE:(colour >>> 4 ) | type;
 				//printf("SAVING %d", id);
@@ -393,7 +393,7 @@ public Styles_3DTag()
 	YSI_g_s3DLabelData[YSI_g_sCur3D][E_3D_DATA_Y] = y;
 	YSI_g_s3DLabelData[YSI_g_sCur3D][E_3D_DATA_Z] = z;
 	YSI_g_s3DLabelData[YSI_g_sCur3D][E_3D_DATA_FLAGS] = flags;
-	YSI_g_s3DLabelData[YSI_g_sCur3D][E_3D_DATA_ATTACH] = -1;
+	YSI_g_s3DLabelData[YSI_g_sCur3D][E_3D_DATA_ATTACH] = INVAILID_NUMBER;
 	return YSI_g_sCur3D++;
 }
 

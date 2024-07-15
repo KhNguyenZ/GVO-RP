@@ -878,7 +878,7 @@ global void:Command_Remove(func)
 		#if defined Y_COMMANDS_USE_CHARS
 			Command_FlushPrefixes(_Command_GetPrefix(func)),
 		#endif
-		YSI_g_sCommands[func][E_COMMAND_POINTER] = -1;
+		YSI_g_sCommands[func][E_COMMAND_POINTER] = INVAILID_NUMBER;
 	}
 }
 
@@ -1377,7 +1377,7 @@ hook OnScriptInit()
 		HashMap_Init(YSI_g_sCommandMap, YSI_g_sCommands, E_COMMAND_HASH_MAP);
 		for (new func = 0; func != MAX_COMMANDS; ++func)
 		{
-			YSI_g_sCommands[func][E_COMMAND_POINTER] = -1;
+			YSI_g_sCommands[func][E_COMMAND_POINTER] = INVAILID_NUMBER;
 		}
 	#endif
 	P:2("_Command_DoInit <> called");

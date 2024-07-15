@@ -244,7 +244,7 @@ public OnScriptInit()
 	if (!YSI_g_sInitialised)
 	{
 		YVA2_Initalise();
-		YSI_g_sInitialised = -1;
+		YSI_g_sInitialised = INVAILID_NUMBER;
 	}
 	#if defined VA_OnScriptInit
 		return VA_OnScriptInit();

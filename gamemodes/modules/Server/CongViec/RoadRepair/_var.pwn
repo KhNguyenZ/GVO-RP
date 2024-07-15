@@ -115,6 +115,16 @@ new Float:DamagePoint[][4] =
     {2804.3818, -1891.8038, 10.488, 265.5088}
 };
 
-new RepairPoint[MAX_PLAYERS];
+new RepairPoint[MAX_PLAYERS] = INVAILID_NUMBER;
 
 new VehRR_Renter[MAX_PLAYERS];
+
+enum DamageRoad_Data{
+    Bar3D:DamageBar,
+    Text3D:DamageLabel,
+    DamageValue,
+    DamageWorker,
+    DamageRepair
+}
+new DamageRoad[][DamageRoad_Data];
+

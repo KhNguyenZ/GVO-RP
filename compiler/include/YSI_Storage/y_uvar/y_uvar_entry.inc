@@ -163,7 +163,7 @@ static stock Uvar_FindData(const name[], data[])
 		}
 		p = data[0];
 	}
-	YSI_g_sLastAddr = -1;
+	YSI_g_sLastAddr = INVAILID_NUMBER;
 }
 
 forward OnUserData[y_uvar](playerid, name[], value[]);
@@ -314,7 +314,7 @@ stock N@(volatile const vardata[], playerCount, dataSize, &pointer)
 public OnCodeInit()
 {
 	// List them all.
-	YSI_g_sFirstUVarData = -1;
+	YSI_g_sFirstUVarData = INVAILID_NUMBER;
 	// Call all @yA_ functions to get all required data.
 	new
 		idx = 0,

@@ -45,7 +45,7 @@ public OnLoadOrganizationGun(org_idzz)
 {
     for (new i; i < 100; i++)
     {
-        OrgData[org_idzz][org_gun][i] = -1;
+        OrgData[org_idzz][org_gun][i] = INVAILID_NUMBER;
         OrgData[org_idzz][org_ammo][i] = 0;
     }
     if (cache_num_rows() > 0)

@@ -364,7 +364,7 @@ stock Style:TD_Create(Float:x = 0.0, Float:y = 0.0, Float:letterX = 0.48, Float:
 	YSI_g_sTDData[i][E_TD_DATA_BG] = bgColour;
 	YSI_g_sTDData[i][E_TD_DATA_TIME] = time;
 	YSI_g_sTDData[i][E_TD_DATA_USE] = TEXT_DRAW_NO_NEXT;
-	YSI_g_sTDData[i][E_TD_DATA_UPDATE] = -1;
+	YSI_g_sTDData[i][E_TD_DATA_UPDATE] = INVAILID_NUMBER;
 	return Style:i;
 }
 
@@ -581,7 +581,7 @@ stock Style:TD_Clone(Style:styleID, name[] = "\1")
 	YSI_g_sTDData[i][E_TD_DATA_BG] = YSI_g_sTDData[styleID][E_TD_DATA_BG];
 	YSI_g_sTDData[i][E_TD_DATA_TIME] = YSI_g_sTDData[styleID][E_TD_DATA_TIME];*/
 	YSI_g_sTDData[i][E_TD_DATA_USE] = TEXT_DRAW_NO_NEXT;
-	YSI_g_sTDData[i][E_TD_DATA_UPDATE] = -1;
+	YSI_g_sTDData[i][E_TD_DATA_UPDATE] = INVAILID_NUMBER;
 	return Style:i;
 }
 
@@ -1249,7 +1249,7 @@ stock TD_Delete(Style:styleId)
 	if (YSI_g_sTDData[styleId][E_TD_DATA_UPDATE] != -1)
 	{
 		KillTimer(YSI_g_sTDData[styleId][E_TD_DATA_UPDATE]);
-		YSI_g_sTDData[styleId][E_TD_DATA_UPDATE] = -1;
+		YSI_g_sTDData[styleId][E_TD_DATA_UPDATE] = INVAILID_NUMBER;
 	}
 	new
 		Text:next = YSI_g_sTDData[styleId][E_TD_DATA_USE],

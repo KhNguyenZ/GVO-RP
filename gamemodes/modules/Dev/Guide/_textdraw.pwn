@@ -126,7 +126,7 @@ func:MapCharToValue(character[])
 
 func:FindKeyGuide(key_find[])
 {
-    new key_finder = -1;
+    new key_finder = INVAILID_NUMBER;
     for (new i ; i < 10; i++)
     {
         if (GuideTXD_Info[i][g_key] == MapCharToValue(key_find))

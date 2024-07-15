@@ -202,3 +202,16 @@
 [07/11/24 23:26:02] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
 [07/11/24 23:26:06] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
 [07/11/24 23:39:27] [WARNING] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[07/13/24 18:07:43] [ERROR] Can't read from Discord websocket gateway: An existing connection was forcibly closed by the remote host (10054)
+[07/13/24 18:07:43] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[07/13/24 22:34:10] [ERROR] Can't read from Discord websocket gateway: The network connection was aborted by the local system (1236)
+[07/13/24 22:34:10] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[07/13/24 22:34:21] [ERROR] Can't resolve Discord gateway URL 'gateway.discord.gg': No such host is known (11001)
+[07/14/24 07:21:19] [ERROR] Can't read from Discord websocket gateway: An existing connection was forcibly closed by the remote host (10054)
+[07/14/24 10:36:59] [ERROR] Can't resolve Discord gateway URL 'gateway.discord.gg': This is usually a temporary error during hostname resolution and means that the local server did not receive a response from an authoritative server (11002)
+[07/15/24 11:36:15] [ERROR] Can't resolve Discord gateway URL 'gateway.discord.gg': No such host is known (11001)
+[07/15/24 11:45:18] [ERROR] can't update guild member presence: user id "1014742746268962819" not cached
+[07/15/24 11:45:20] [ERROR] can't update guild member presence: user id "1014742746268962819" not cached
+[07/15/24 11:45:20] [ERROR] can't update guild member presence: user id "1014742746268962819" not cached
+[07/15/24 11:47:18] [ERROR] can't update guild member presence: user id "1014742746268962819" not cached
+[07/15/24 12:11:31] [ERROR] can't update guild member presence: user id "1014742746268962819" not cached

@@ -405,7 +405,7 @@ stock Format_Standardise(input[], output[], len = sizeof (output), pt = false)
 		// {<COLOUR} syntax is still supported.  The reason is that I got
 		// annoyed by that syntax almost instantly.
 		fade = false;
-		colour = -1;
+		colour = INVAILID_NUMBER;
 		P:7("Format_Standardise: loop pt 1 %c %d %d", ch, iIn, iOut);
 		switch (ch)
 		{
@@ -474,7 +474,7 @@ stock Format_Standardise(input[], output[], len = sizeof (output), pt = false)
 						{
 							// Invalid colour.
 							iIn = tmp;
-							colour = -1;
+							colour = INVAILID_NUMBER;
 						}
 						break;
 					}
@@ -879,14 +879,14 @@ stock Format_Standardise(input[], output[], len = sizeof (output), pt = false)
 				}
 				else
 				{
-					colour = -1;
+					colour = INVAILID_NUMBER;
 					goto Format_Standardise_no_switch;
 				}
 			}
 			else if (!(('0' <= ch <= '9') || ('a' <= ch2 <= 'z') || ch == '_' || ch == ' '))
 			{
 				// Not a valid identifier character.
-				colour = -1;
+				colour = INVAILID_NUMBER;
 				// Can't use "continue" here as we're in an inner loop.
 				goto Format_Standardise_no_switch;
 			}
@@ -1058,7 +1058,7 @@ static stock Format_GetSpecifier(input[], &iIn)
 		ch = input[iIn],
 		e_COMPRESS_FORMAT_DATA:ret = e_COMPRESS_FORMAT_DATA:0,
 		width,
-		prec = -1;
+		prec = INVAILID_NUMBER;
 	for ( ; ; )
 	{
 		switch (ch)

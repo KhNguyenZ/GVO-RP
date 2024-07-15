@@ -116,7 +116,7 @@ func:GetIntegersFromString(szInput[], output[]) {
     }
 
     // Terminate the output array
-    output[j] = -1;
+    output[j] = INVAILID_NUMBER;
 }
 func:player_get_name(const playerid, bool:fix_ = true) 
 {

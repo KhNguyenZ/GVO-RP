@@ -29,7 +29,7 @@ func:LoadOrgs()
 {
     for(new i; i < MAX_ORG; i++)
     {
-        OrgData[i][org_id] = -1;
+        OrgData[i][org_id] = INVAILID_NUMBER;
         LoadOrg(i);
     }
     InitOrgVehMap();

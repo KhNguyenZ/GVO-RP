@@ -145,7 +145,7 @@ func:ShowPlayerOrgManagement(playerid)
         if(OrgData[Character[playerid][char_OrgID]][org_id] == -1)
         {
             SendErrorMessage(playerid, "Org cua ban khong ton tai hoac da bi giai tan !");
-            Character[playerid][char_OrgID] = -1;
+            Character[playerid][char_OrgID] = INVAILID_NUMBER;
             return 1;
         }
         SelectTextDraw(playerid, -1);

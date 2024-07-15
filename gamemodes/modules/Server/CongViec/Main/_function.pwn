@@ -36,7 +36,7 @@ func:GetJobName(_job)
 }
 func:IsRentVeh(_vehid)
 {
-    // new _rvehid = -1;
+    // new _rvehid = INVAILID_NUMBER;
     for (new i; i < MAX_VEHICLES; i++)
     {
         if (Veh_Rent[i][job_vehid] == _vehid) return i;
@@ -85,10 +85,10 @@ public TimerVehRent(_veh_rent_id)
 
         SendJobMessage(_renter, sprintf("Ban da phai tra $%d cho chiec xe da thue cua minh", (_realtime * 100)));
         DestroyVehicle(Veh_Rent[_rentid][job_vehid]);
-        Veh_Rent[_rentid][job_id] = -1;
-        Veh_Rent[_rentid][job_renter] = -1;
-        Veh_Rent[_rentid][job_modelid] = -1;
-        Veh_Rent[_rentid][job_vehid] = -1;
+        Veh_Rent[_rentid][job_id] = INVAILID_NUMBER;
+        Veh_Rent[_rentid][job_renter] = INVAILID_NUMBER;
+        Veh_Rent[_rentid][job_modelid] = INVAILID_NUMBER;
+        Veh_Rent[_rentid][job_vehid] = INVAILID_NUMBER;
         Veh_Rent[_rentid][job_time] = 0;
         Veh_Rent[_rentid][job_traxe] = 0;
 
@@ -111,10 +111,10 @@ hook OnPlayerDisconnect(playerid, reason)
 
             
             DestroyVehicle(Veh_Rent[_rentid][job_vehid]);
-            Veh_Rent[_rentid][job_id] = -1;
-            Veh_Rent[_rentid][job_renter] = -1;
-            Veh_Rent[_rentid][job_modelid] = -1;
-            Veh_Rent[_rentid][job_vehid] = -1;
+            Veh_Rent[_rentid][job_id] = INVAILID_NUMBER;
+            Veh_Rent[_rentid][job_renter] = INVAILID_NUMBER;
+            Veh_Rent[_rentid][job_modelid] = INVAILID_NUMBER;
+            Veh_Rent[_rentid][job_vehid] = INVAILID_NUMBER;
             Veh_Rent[_rentid][job_time] = 0;
             Veh_Rent[_rentid][job_traxe] = 0;
         }

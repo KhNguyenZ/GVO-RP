@@ -19,7 +19,6 @@
 #include <memory>
 #include <VehiclePartPosition>
 #include <PreviewModelDialog>
-// #include <progress3D>
 
 #undef MAX_PLAYERS
 #define MAX_PLAYERS 500

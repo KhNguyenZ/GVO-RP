@@ -45,7 +45,7 @@ func:CreateInteractiveNPC(i_id, a_name[], describe[], skin, Float:iNPC_PosX, Flo
 
 func:IsPlayerNearInteractiveNPC(playerid)
 {
-    new near_npc_id = -1;
+    new near_npc_id = INVAILID_NUMBER;
     for(new a = 0; a < MAX_INTERACTIVE_NPC; a++)
     {
         if(IsPlayerInRangeOfActor(playerid, InteractiveNPCs_Data[a][iNPC_ID],1))

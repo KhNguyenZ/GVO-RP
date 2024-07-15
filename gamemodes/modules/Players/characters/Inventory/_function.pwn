@@ -55,7 +55,7 @@ func:GetPlayerPage(playerid)
 		case 38..57: page = 3;
 		case 58..76: page = 4;
 		case 77..95: page = 5;
-		default: page = -1;
+		default: page = INVAILID_NUMBER;
 	}
 	return page;
 }

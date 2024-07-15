@@ -33,19 +33,12 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         {
             if(strval(inputtext) != GetPVarInt(playerid, "Number1"))
             {
-                new Float:x, Float:y, Float:z;
-                GetPlayerPos(playerid, x, y, z);
-                // Create an explosion at the player's position
-                CreateExplosion(x, y, z, 12, 5);
-                SetPlayerHealth(playerid, 0);
-                for(new i = 0; i < 7; i++) PlayerTextDrawHide(playerid, ElectricianTD[playerid][i]);
-                CancelSelectTextDraw(playerid);
-                DelPvarE(playerid);
+                IncorrectElectrician(playerid);
             }
             else
             {
                 SetPVarInt(playerid, "PlayerNumber1", strval(inputtext));
-                HideElectrician(playerid);
+                SuccessElectrician(playerid);
             }
         }
     }
@@ -55,19 +48,12 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         {
             if(strval(inputtext) != GetPVarInt(playerid, "Number2"))
             {
-                new Float:x, Float:y, Float:z;
-                GetPlayerPos(playerid, x, y, z);
-                // Create an explosion at the player's position
-                CreateExplosion(x, y, z, 12, 5);
-                SetPlayerHealth(playerid, 0);
-                for(new i = 0; i < 7; i++) PlayerTextDrawHide(playerid, ElectricianTD[playerid][i]);
-                CancelSelectTextDraw(playerid);
-                DelPvarE(playerid);
+                IncorrectElectrician(playerid);
             }
             else
             {
                 SetPVarInt(playerid, "PlayerNumber2", strval(inputtext));
-                HideElectrician(playerid);
+                SuccessElectrician(playerid);
             }
         }
     }
@@ -77,19 +63,12 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         {
             if(strval(inputtext) != GetPVarInt(playerid, "Number3"))
             {
-                new Float:x, Float:y, Float:z;
-                GetPlayerPos(playerid, x, y, z);
-                // Create an explosion at the player's position
-                CreateExplosion(x, y, z, 12, 5);
-                SetPlayerHealth(playerid, 0);
-                for(new i = 0; i < 7; i++) PlayerTextDrawHide(playerid, ElectricianTD[playerid][i]);
-                CancelSelectTextDraw(playerid);
-                DelPvarE(playerid);
+                IncorrectElectrician(playerid);
             }
             else
             {
                 SetPVarInt(playerid, "PlayerNumber3", strval(inputtext));
-                HideElectrician(playerid);
+                SuccessElectrician(playerid);
             } 
         }
     }
@@ -99,30 +78,25 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         {
             if(strval(inputtext) != GetPVarInt(playerid, "Number4"))
             {
-                new Float:x, Float:y, Float:z;
-                GetPlayerPos(playerid, x, y, z);
-                // Create an explosion at the player's position
-                CreateExplosion(x, y, z, 12, 5);
-                SetPlayerHealth(playerid, 0);
-                for(new i = 0; i < 7; i++) PlayerTextDrawHide(playerid, ElectricianTD[playerid][i]);
-                CancelSelectTextDraw(playerid);
-                DelPvarE(playerid);
+                IncorrectElectrician(playerid);
             }
             else
             {
-            SetPVarInt(playerid, "PlayerNumber4", strval(inputtext));
-            HideElectrician(playerid);
+                SetPVarInt(playerid, "PlayerNumber4", strval(inputtext));
+                SuccessElectrician(playerid);
             }
         }
     }
     return 1;
 }
-
-
-
-
-CMD:fixelectrician(playerid){
-    SelectTextDraw(playerid, COLOR_RED);
-    ShowElectrician(playerid);
+hook OnPlayerEnterCheckpoint(playerid)
+{
+    if(PlayerElectricianPos[playerid])
+    {
+        SelectTextDraw(playerid, COLOR_RED);
+        ShowElectrician(playerid);
+        DisablePlayerCheckpoint(playerid);
+        PlayerElectricianPos[playerid] = false;
+    }
     return 1;
 }

@@ -232,7 +232,7 @@ CMD:veh(playerid, params[])
         {
             if (iCreate[i] == -1)
             {
-new Float:
+                new Float:
                 fVehPos[4];
 
                 new fVW = GetPlayerVirtualWorld(playerid);

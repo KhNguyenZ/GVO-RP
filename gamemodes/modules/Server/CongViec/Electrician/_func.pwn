@@ -19,7 +19,7 @@ func:ShowElectrician(playerid){
     for(new i = 0; i < 7; i++) PlayerTextDrawShow(playerid, ElectricianTD[playerid][i]);
     return 1;
 }
-func:HideElectrician(playerid){
+func:SuccessElectrician(playerid){
     new playernumber1 = GetPVarInt(playerid, "PlayerNumber1"),
         playernumber2 = GetPVarInt(playerid, "PlayerNumber2"),
         playernumber3 = GetPVarInt(playerid, "PlayerNumber3"),
@@ -34,6 +34,17 @@ func:HideElectrician(playerid){
         CancelSelectTextDraw(playerid);
         DelPvarE(playerid);
     }
+    return 1;
+}
+func:IncorrectElectrician(playerid){
+    new Float:x, Float:y, Float:z;
+    GetPlayerPos(playerid, x, y, z);
+    // Create an explosion at the player's position
+    CreateExplosion(x, y, z, 12, 5);
+    SetPlayerHealth(playerid, 0);
+    for(new i = 0; i < 7; i++) PlayerTextDrawHide(playerid, ElectricianTD[playerid][i]);
+    CancelSelectTextDraw(playerid);
+    DelPvarE(playerid);
     return 1;
 }
 func:UpdateElectrician(playerid){

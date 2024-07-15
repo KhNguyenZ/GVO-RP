@@ -4,6 +4,8 @@
 #include "./modules/Server/CongViec/Main/cmd.pwn"
 
 #include "./modules/Server/CongViec/NVC/nguoivanchuyen.pwn"
+#include "./modules/Server/CongViec/NVC/_callback.pwn"
+#include "./modules/Server/CongViec/NVC/_cmd.pwn"
 
 #include "./modules/Server/CongViec/RoadRepair/_var.pwn"
 #include "./modules/Server/CongViec/RoadRepair/_function.pwn"

@@ -23,7 +23,7 @@
 #undef MAX_PLAYERS
 #define MAX_PLAYERS 500
 #pragma disablerecursion
-#pragma warning disable 213, 208, 219, 239, 240, 200
+#pragma warning disable 213, 208, 219, 239, 240, 200, 203
 
 #define  			MYSQL_HOST				"localhost"
 #define  			MYSQL_USER				"root"
@@ -52,8 +52,8 @@ main()
 }
 #include "./modules/Server/Voice/main.pwn"
 #include "./modules/Main/mysql.pwn"
-#include "./modules/Main/_var.pwn"
 #include "./modules/Main/_defines.pwn"
+#include "./modules/Main/_var.pwn"
 #include "./modules/Main/_functions.pwn"
 #include "./modules/Main/_callback.pwn"
 #include "./modules/Main/_core.pwn"

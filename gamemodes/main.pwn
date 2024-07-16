@@ -23,7 +23,7 @@
 #undef MAX_PLAYERS
 #define MAX_PLAYERS 500
 #pragma disablerecursion
-#pragma warning disable 213, 208, 219, 239, 240, 200, 203
+#pragma warning disable 213, 208, 219, 239, 240, 200, 203, 209
 
 #define  			MYSQL_HOST				"localhost"
 #define  			MYSQL_USER				"root"

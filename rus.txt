@@ -1,4 +1,2 @@
-./modules/Players/characters/Admin/character-admin.pwn(238) : íåïđàâèëüíàÿ ̣àáóëÿöèÿ
-./modules/Server/Vehicle/Speedo/_textdraw.pwn(128) : íåïđàâèëüíàÿ ̣àáóëÿöèÿ
 Pawn compiler 3.2.3664	 	 	Copyright (c) 1997-2016, ITB CompuPhase
 

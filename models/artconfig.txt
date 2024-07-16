@@ -20,6 +20,9 @@ AddSimpleModel(-1, 19379, -2022, "object.dff", "smartkey.txd");
 AddSimpleModel(-1, 19379, -2023, "object.dff", "puzzle.txd");
 AddSimpleModel(-1, 19379, -2024, "object.dff", "loading.txd");
 AddSimpleModel(-1, 19379, -2025, "object.dff", "electrician.txd");
+AddSimpleModel(-1, 19379, -2026, "object.dff", "porters.txd");
+
+
 AddSimpleModel(-1,19379, -5000, "newbiespawn.dff", "newbiespawn.txd");
 AddSimpleModel(-1,19379, -5001, "congvien.dff", "congvien.txd");
 AddSimpleModel(-1,19379, -5002, "honuoc.dff", "honuoc.txd");

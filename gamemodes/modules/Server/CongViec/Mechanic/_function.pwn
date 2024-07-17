@@ -223,7 +223,8 @@ func:FixEngine(playerid)
     GetVehicleHealth(vehicleid, Float:health);
     PlayAnimEx(playerid, "BD_FIRE", "wash_up", 4.0, 1, 0, 0, 0, 0, 1);
     ////TogglePlayerControllable(playerid, 0);
-    SetTimer("FreezeTime", 7000, false);
+    // SetTimer("FreezeTime", 7000, false);
+    SetTimerEx("FreezeTime", 7000, false, "i", playerid);
     SetVehicleHealth(vehicleid, 1000.0);
     Update3DTextLabelText(vtext[5], 0xFF0000FF, "{ffffff}[ {33ff00}Engine {ffffff}]");
     SendClientMessage(playerid, -1, "[Mechanic] | Ban dang sua {ffffff}[ {33ff00}Engine {ffffff}]");
@@ -243,7 +244,8 @@ func:FixLeftFrontTire(playerid)
     rear_left = tires >> 2 & 1;
     PlayAnim(playerid, "BOMBER", "BOM_Plant", 4.0, 1, 0, 0, 0, 0, 1);
     //TogglePlayerControllable(playerid, 0);
-    SetTimer("FreezeTime", 5000, false);
+    // SetTimer("FreezeTime", 5000, false);
+    SetTimerEx("FreezeTime", 5000, false, "i", playerid);
     new vehicleid = GetNeraestVehicle(playerid, 10.0);
     GetVehicleDamageStatus(vehicleid, panels, doors, lights, tires);
     SetVehicleTires(vehicleid,0,front_right,rear_left,rear_right);
@@ -264,7 +266,8 @@ func:FixRightFrontTire(playerid)
     front_left = tires >> 3 & 1;
     PlayAnim(playerid, "BOMBER", "BOM_Plant", 4.0, 1, 0, 0, 0, 0, 1);
     //TogglePlayerControllable(playerid, 0);
-    SetTimer("FreezeTime", 5000, false);
+    // SetTimer("FreezeTime", 5000, false);
+    SetTimerEx("FreezeTime", 5000, false, "i", playerid);
     new vehicleid = GetNeraestVehicle(playerid, 10.0);
     GetVehicleDamageStatus(vehicleid, panels, doors, lights, tires);
     SetVehicleTires(vehicleid,front_left,0,rear_left,rear_right);
@@ -285,7 +288,8 @@ func:FixLeftRearTire(playerid)
     front_left = tires >> 3 & 1;
     PlayAnim(playerid, "BOMBER", "BOM_Plant", 4.0, 1, 0, 0, 0, 0, 1);
     //TogglePlayerControllable(playerid, 0);
-    SetTimer("FreezeTime", 5000, false);
+    // SetTimer("FreezeTime", 5000, false);
+    SetTimerEx("FreezeTime", 5000, false, "i", playerid);
     new vehicleid = GetNeraestVehicle(playerid, 10.0);
     GetVehicleDamageStatus(vehicleid, panels, doors, lights, tires);
     SetVehicleTires(vehicleid,front_left,front_right,0,rear_right);
@@ -306,7 +310,8 @@ func:FixRightRearTire(playerid)
     front_left = tires >> 3 & 1;
     PlayAnim(playerid, "BOMBER", "BOM_Plant", 4.0, 1, 0, 0, 0, 0, 1);
     //TogglePlayerControllable(playerid, 0);
-    SetTimer("FreezeTime", 5000, false);
+    // SetTimer("FreezeTime", 5000, false);
+    SetTimerEx("FreezeTime", 5000, false, "i", playerid);
     new vehicleid = GetNeraestVehicle(playerid, 10.0);
     GetVehicleDamageStatus(vehicleid, panels, doors, lights, tires);
     SetVehicleTires(vehicleid,front_left,front_right,rear_left,0);

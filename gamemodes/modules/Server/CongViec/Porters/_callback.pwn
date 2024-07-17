@@ -42,7 +42,7 @@ func:OnPlayerClickPorters(playerid, PlayerText:playertextid)
         HidePortersTD(playerid);
         ApplyAnimation(playerid, "CARRY", "LIFTUP", 4.0, 0, 0, 0, 0,0);
         SetTimerEx("Carry", 1000, false, "i", playerid);
-        SetPlayerAttachedObject(playerid, 9, 2912, 1, 0.170999, 0.363000, 0.100000, 0.000000, 93.700012, 0.000000, 1, 1, 1, 0, 0);
+        SetPlayerAttachedObject(playerid, 9, 2912, 1, 0.031999,0.589000,0.000000, 0.000000, 93.700012, 0.000000, 1, 1, 1, 0, 0);
     }
     return 1;
 }

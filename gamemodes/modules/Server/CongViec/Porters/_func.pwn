@@ -11,6 +11,6 @@ func:HidePortersTD(playerid){
 forward Carry(playerid);
 public Carry(playerid)
 {
-    ApplyAnimation(playerid, "CARRY", "CRRY_PRTIAL", 4.0, 0, 0, 0, 1, 100);
+    ApplyAnimation(playerid, "CARRY", "CRRY_PRTIAL", 4.0, 1, 1, 1, 1, 1, 1);
     return 1;
 }

@@ -86,9 +86,9 @@ CMD:xemhang(playerid, params[]) {
 CMD:layxelamviec(playerid, params[]) {
 	if(DangLamViec[playerid] == 1) return SendClientMessage(playerid, COLOR_GREY, "Xe Cua Ban Van Con O Dau Do Ngoai Kia.");
 	new rand = random(4);
-	if(!IsPlayerInRangeOfPoint(playerid, 5.0, -1547.13,125.99,3.55)) return true;
+	if(!IsPlayerInRangeOfPoint(playerid, 5.0, 2760.9275,-2395.9385,13.6328)) return true;
 	switch(rand) {
-		case 0: XeTruck[playerid] = CreateVehicle(414, -1572.34008789,129.09317017,3.69948244,225.00000000, 1, 1,-1);
+		case 0: XeTruck[playerid] = CreateVehicle(414, 2761.4404,-2390.5876,13.7255,225.00000000, 1, 1,-1);
 		case 1: XeTruck[playerid] = CreateVehicle(414, -1591.30224609,109.38220215,3.79948235,225.00000000, 1, 1,-1);
 		case 2: XeTruck[playerid] = CreateVehicle(414, -1595.57812500,105.83326721,3.79948235,225.00000000, 1, 1,-1);
 		case 3: XeTruck[playerid] = CreateVehicle(414, -1599.55334473,102.00447845,3.79948235,225.00000000, 1, 1,-1);

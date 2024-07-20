@@ -1,10 +1,12 @@
 hook OnGameModeInit()
 {
-    Create3DTextLabel("{00ff00}[BANK]\n{FFFFFF}Su dung {ffff00}/banking{FFFFFF} de tim hieu.", COLOR_WHITE, -1547.13,125.99,3.55, 30.0, 0, false); //CAY ATM   
+	// NPC 2749.7957,-2451.3630,13.6484,358.1701
+    Create3DTextLabel("{00ff00}[TRUCKING]\n{FFFFFF}Su dung {ffff00}/layxelamviec{FFFFFF} de tim hieu.", COLOR_WHITE, 2760.9275,-2395.9385,13.6328, 30.0, 0, false); //LAYXELAMVIEC 
+	Create3DTextLabel("{00ff00}[TRUCKING]\n{FFFFFF}Su dung {ffff00}Nhan Y{FFFFFF} de lay hang.", COLOR_WHITE, 2744.5603,-2425.2952,13.6286, 30.0, 0, false); // LAY HANG 
 }
 hook OnPlayerKeyStateChange(playerid, newkeys, oldkeys) {
     	if ((newkeys & KEY_YES)) {
-        if(IsPlayerInRangeOfPoint(playerid, 2.5, 2743.7791,-2425.2205,13.6288))
+        if(IsPlayerInRangeOfPoint(playerid, 2.5, 2744.5603,-2425.2952,13.6286))
         {
         	if(DangLamViec[playerid] == 0) return true;
 			new szDialog[1024], young[124];

@@ -123,7 +123,6 @@ InfoPTD[MAX_PLAYERS][2];
 new CountGuide[MAX_PLAYERS];
 
 
-new PlayerText:
-DeathUI[MAX_PLAYERS][4];
+new PlayerText:DeathUI[MAX_PLAYERS][3];
 
 new CP[MAX_PLAYERS];

@@ -12,7 +12,7 @@ AddSimpleModel(-1,19379, -2012, "object.dff", "GuideBtn.txd");
 AddSimpleModel(-1,19379, -2013, "object.dff", "Info.txd");
 AddSimpleModel(-1,19379, -2014, "object.dff", "custom_hud.txd");
 AddSimpleModel(-1, 19379, -2018, "object.dff", "start.txd");
-AddSimpleModel(-1, 19379, -2019, "object.dff", "death.txd");
+AddSimpleModel(-1, 19379, -2019, "object.dff", "Death.txd");
 
 AddSimpleModel(-1, 19379, -2020, "object.dff", "Main_Banking.txd");
 AddSimpleModel(-1, 19379, -2021, "object.dff", "Tab_Banking.txd");

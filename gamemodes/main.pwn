@@ -5,7 +5,7 @@
 #include <YSI_Coding\y_timers>
 #include <YSI_Coding\y_hooks>
 #include <streamer>
-#include <ZCMD>
+#include <Pawn.CMD>
 #include <sscanf2>
 #include <YSI\y_ini>
 #include <notify>

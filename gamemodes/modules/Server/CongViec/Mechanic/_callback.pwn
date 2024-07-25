@@ -43,7 +43,7 @@ hook OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 {
     if (PRESSED(KEY_YES))
     {
-        return cmd_fixvehicle(playerid);
+        return FixPVehicle(playerid);
     }
     return 1;
 }

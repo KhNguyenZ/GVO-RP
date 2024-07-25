@@ -16,14 +16,9 @@ func:SendRadioMessage(playerid, const message[], tan_so = 1)
 	}
 	return 1; 
 }
-CMD:chat(playerid, params[])
+CMD:r(playerid, params[])
 {
 	if(isnull(params)) SendClientMessage(playerid, -1, "SU DUNG: /chat [noi dung chat]");
 	else SendRadioMessage(playerid, params, Character[playerid][char_tanso]);
 	return 1;
-}
-
-CMD:r(playerid, params[])
-{
-	return cmd_chat(playerid, params);
 }

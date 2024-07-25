@@ -26,7 +26,7 @@ enum PlayerInventory_Info
 	pInvAmount,
 	pInvSQLID
 }
-new PlayerInvItem[MAX_PLAYERS][MAX_INV_PAGES][PlayerInventory_Info][INV_MAX_ITEM];
+new PlayerInvItem[MAX_PLAYERS][PlayerInventory_Info][INV_MAX_ITEM];
 
 enum PInventory_Info
 {
@@ -81,7 +81,6 @@ new const itemInfo[][InventoryItem_Info] = {
 };
 
 new PlayerText: ItemBackground[MAX_PLAYERS][41];
-// new PlayerText: TradeBackground[MAX_PLAYERS][21];
 
 new PlayerText: btnInv[MAX_PLAYERS][4];
 

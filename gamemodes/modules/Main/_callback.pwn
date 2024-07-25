@@ -56,6 +56,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 {
+    OnPlayerClickPorters(playerid, PlayerText:playertextid);
     ElectricianClick(playerid, PlayerText:playertextid);
     SmartKeyClick(playerid, PlayerText:playertextid);
     BankingClick(playerid, PlayerText:playertextid);

@@ -19,6 +19,7 @@
 #include <memory>
 #include <VehiclePartPosition>
 #include <PreviewModelDialog>
+#include <a_zones>
 
 #undef MAX_PLAYERS
 #define MAX_PLAYERS 500
@@ -27,8 +28,8 @@
 
 #define  			MYSQL_HOST				"localhost"
 #define  			MYSQL_USER				"root"
-#define  			MYSQL_PASS				"123456" //123456
-#define  			MYSQL_DB				"ssa" //ssa
+#define  			MYSQL_PASS				"123123" //123456
+#define  			MYSQL_DB				"ssarp" //ssa
 
 
 new SERVER_TEST = 1; // 1: Server test ( bỏ qua login và nhiều anti khác) | 0: Mở server bình thường

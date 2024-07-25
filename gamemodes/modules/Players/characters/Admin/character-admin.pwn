@@ -164,19 +164,7 @@ CMD:gotoco(playerid, params[])
     SetPlayerInterior(playerid, int);
     return 1;
 }
-CMD:hoisinh(playerid, params[])
-{
-    if (!CheckAdmin(playerid, 3)) return SendErrorMessage(playerid, "Ban khong co quyen su dung lenh nay");
-    new targetid;
-    if (sscanf(params, "i", targetid)) SendUsageMessage(playerid, "/hoisinh [playerid]");
 
-    SetPlayerHealth(targetid, 100);
-    Character[targetid][char_Injured] = 0;
-    OnPlayerSpawn(targetid);
-
-    HienTextdraw(playerid, "Ban da hoi sinh thanh cong nguoi choi!", 3000);
-    return 1;
-}
 
 CMD:sethealth(playerid, params[])
 {

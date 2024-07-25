@@ -64,6 +64,7 @@ enum character_Info
     char_Email_Status,
     char_Refer[MAX_PLAYER_NAME],
     char_Injured,
+    char_TimeInjured,
 }
 
 new Character[MAX_PLAYERS][character_Info];

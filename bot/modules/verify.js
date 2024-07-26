@@ -15,8 +15,6 @@ function verify(username, callback) {
     });
 }
 
-module.exports = verify;
-
 function fetchAll(query, params = []) {
     return new Promise((resolve, reject) => {
         connection.query(query, params, (error, results) => {
@@ -29,21 +27,22 @@ function fetchAll(query, params = []) {
     });
 }
 
-module.exports = fetchAll;
-
 
 
 function GetAccountInfo(username, callback) {
-    // Cẩn thận với việc xây dựng truy vấn SQL trực tiếp. Nên sử dụng tham số thay vì nối chuỗi để tránh SQL Injection.
     const query = "SELECT * FROM accounts WHERE Username = ?";
     
     fetchAll(query, [username])
         .then(results => {
-            callback(null, results); // Trả kết quả qua callback
+            if (results.length > 0) {
+                callback(null, results[0]); // Trả về đối tượng đầu tiên nếu tìm thấy
+            } else {
+                callback(null, null); // Không tìm thấy thông tin
+            }
         })
         .catch(error => {
-            callback(error, null); // Trả lỗi qua callback
+            callback(error, null); // Trả lỗi nếu có
         });
 }
 
-module.exports = GetAccountInfo;
+module.exports = {verify, GetAccountInfo, fetchAll };

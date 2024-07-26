@@ -1,4 +1,4 @@
-#include <YSI_Coding\y_hooks>
+#include <YSI\YSI_Coding\y_hooks>
 #define       AmbulanceCalling(%0)      GetPVarInt(%0, "#Ambulance_Calling")
 #define       CountdownCheck(%0)        GetPVarInt(%0, "#CountdownCheck")
 #define       CountdownTime(%0)         GetPVarInt(%0, "#CountdownTime")
@@ -35,7 +35,7 @@ hook OnPlayerUpdate(playerid)
 {
     return 1;
 }
-stock SendMessageToOrg(iGroupID, color, string[])
+stock SendMessageToOrg(iGroupID, color, const string[])
 {
 	foreach(new i: Player)
 	{
@@ -73,7 +73,7 @@ hook OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
     return 1;
 }
 
-public OnPlayerDeath(playerid, killerid, reason)
+hook OnPlayerDeath(playerid, killerid, reason)
 {
     if(Character[playerid][char_Injured] == 0 && reason != 0)
     {

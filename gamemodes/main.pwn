@@ -1,15 +1,13 @@
-
-#pragma warning disable 213, 208, 219, 239, 240, 200, 203, 209
-#define YSI_NO_HEAP_MALLOC
-#include <_open_mp>
+#include <a_samp>
+#include <a_samp>
 #include <crashdetect>
 #include <a_mysql>
-#include <YSI\YSI_Coding\y_timers>
-#include <YSI\YSI_Coding\y_hooks>
+#include <YSI_Coding\y_timers>
+#include <YSI_Coding\y_hooks>
 #include <streamer>
 #include <ZCMD>
 #include <sscanf2>
-#include <YSI\YSI_Storage\y_ini>
+#include <YSI\y_ini>
 #include <notify>
 #include <DialogCenter>
 #include <easyDialog>
@@ -22,20 +20,21 @@
 #include <VehiclePartPosition>
 #include <PreviewModelDialog>
 #include <a_zones>
-#include <profiler>
 
 #undef MAX_PLAYERS
 #define MAX_PLAYERS 500
+#pragma disablerecursion
+#pragma warning disable 213, 208, 219, 239, 240, 200, 203, 209
 
 #define  			MYSQL_HOST				"localhost"
 #define  			MYSQL_USER				"root"
-#define  			MYSQL_PASS				"123456" //123456
-#define  			MYSQL_DB				"ssa" //ssa
+#define  			MYSQL_PASS				"123123" //123456
+#define  			MYSQL_DB				"ssarp" //ssa
 
 
 new SERVER_TEST = 1; // 1: Server test ( bỏ qua login và nhiều anti khác) | 0: Mở server bình thường
 new SERVER_API[20]    = "ssa-rp.xyz/api/",
-                        SEVRER_CONTROLLER[30] = "ssa-rp.xyz/server/controller/";
+    SEVRER_CONTROLLER[30] = "ssa-rp.xyz/server/controller/";
 main()
 {
     SetGameModeText("KhNguyen Dev");
@@ -51,8 +50,6 @@ main()
         print("> Error FIX MAXPLAYERS.");
         SendRconCommand("exit");
     }
-
-    Profiler_Start();
 }
 #include "./modules/Server/Voice/main.pwn"
 #include "./modules/Main/mysql.pwn"
@@ -120,9 +117,6 @@ public OnGameModeExit()
         SaveOrgVeh(i);
     }
     mysql_close(Handle());
-
-    Profiler_Stop();
-    Profiler_Dump();
     return 1;
 }
 

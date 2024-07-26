@@ -1,4 +1,4 @@
-#include <YSI\YSI_Coding\y_hooks>
+#include <YSI_Coding\y_hooks>
 new SV_GSTREAM:gstream = SV_NULL;
 new SV_LSTREAM:lstream[MAX_PLAYERS] = { SV_NULL, ... };
 

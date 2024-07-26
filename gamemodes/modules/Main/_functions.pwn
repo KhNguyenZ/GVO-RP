@@ -11,15 +11,7 @@
 #define SendSelectMessage(%0,%1) \
     SendClientMessage(%0, 0xFF6347AA, "{FF6347}TUY CHON:{FFFFFF}"%1)
 
-func:IsPlayerSpawned(playerid)
-{ 
-    switch(GetPlayerState(playerid))
-    {
-        case PLAYER_STATE_ONFOOT, PLAYER_STATE_DRIVER, PLAYER_STATE_PASSENGER, PLAYER_STATE_SPAWNED:
-            return 1; 
-    } 
-    return 0; 
-} 
+
 func:player_Login(const playerid)
 {
 	if(IsPlayerConnected(playerid) && Character[playerid][char_Login])
@@ -79,16 +71,8 @@ func:IsPlayerInRangeOfVehicle(playerid, vehicleid, Float: radius) {
 	GetVehiclePos(vehicleid, Floats[0], Floats[1], Floats[2]);
 	return IsPlayerInRangeOfPoint(playerid, radius, Floats[0], Floats[1], Floats[2]);
 }
-func:IsNumeric(szInput[]) {
 
-	new
-		iChar,
-		i = 0;
-
-	while ((iChar = szInput[i++])) if (!('0' <= iChar <= '9')) return 0;
-	return 1;
-}
-func:GetIntegersFromString(szInput[], output[]) {
+func:GetIntegersFromString(const szInput[], const output[]) {
     new
         iChar,
         i = 0,
@@ -136,7 +120,7 @@ func:player_get_name(const playerid, bool:fix_ = true)
 	}
 	return player_name;
 }
-ProxDetector(Float: f_Radius, playerid, string[],col1,col2,col3,col4,col5)
+ProxDetector(Float: f_Radius, playerid, const string[],col1,col2,col3,col4,col5)
 {
 
 	new
@@ -262,7 +246,7 @@ func:LogConsole(string[], type[])
 }
 
 
-func:Log(sz_fileName[], sz_input[]) {
+func:Log(const sz_fileName[], const sz_input[]) {
 
     new 
     	File: logfile,
@@ -290,7 +274,7 @@ func:ReloadPlayerTextDraw(playerid, PlayerText:reload_ptd)
 	return 1;
 }
 
-func:HienTextdraw(playerid, string[], time = 2000)
+func:HienTextdraw(playerid, const string[], time = 2000)
 {
     PlayerTextDrawSetString(playerid, scm_PTD[playerid], " ");
     PlayerTextDrawHide(playerid, scm_PTD[playerid]);
@@ -318,7 +302,7 @@ public XoaTextDraw(playerid)
 func:FadeInPlayerScreen(playerid)
 {
 	SetPVarInt(playerid, "phatfadein", 255);
-	PlayerTextDrawColor(playerid, FadeEffect[playerid][0], GetPVarInt(playerid, "phatfadein"));
+	PlayerTextDrawColour(playerid, FadeEffect[playerid][0], GetPVarInt(playerid, "phatfadein"));
  	PlayerTextDrawShow(playerid, FadeEffect[playerid][0]);
 	SetTimerEx("fadein1", 25, false, "i", playerid);
 }
@@ -331,7 +315,7 @@ public fadein1(playerid)
 	    new fadeplus = GetPVarInt(playerid, "phatfadein");
 		SetPVarInt(playerid, "phatfadein", fadeplus-=15);
 		SetTimerEx("fadein2", 25, false, "i", playerid);
-		PlayerTextDrawColor(playerid, FadeEffect[playerid][0], GetPVarInt(playerid, "phatfadein"));
+		PlayerTextDrawColour(playerid, FadeEffect[playerid][0], GetPVarInt(playerid, "phatfadein"));
 	 	PlayerTextDrawShow(playerid, FadeEffect[playerid][0]);
 	}
 	return 1;
@@ -345,7 +329,7 @@ public fadein2(playerid)
 	    new fadeplus = GetPVarInt(playerid, "phatfadein");
 		SetPVarInt(playerid, "phatfadein", fadeplus-=15);
 		SetTimerEx("fadein1", 25, false, "i", playerid);
-		PlayerTextDrawColor(playerid, FadeEffect[playerid][0], GetPVarInt(playerid, "phatfadein"));
+		PlayerTextDrawColour(playerid, FadeEffect[playerid][0], GetPVarInt(playerid, "phatfadein"));
 	 	PlayerTextDrawShow(playerid, FadeEffect[playerid][0]);
 	}
 	return 1;
@@ -358,7 +342,7 @@ public fadein2(playerid)
 func:FadeOutPlayerScreen(playerid)
 {
 	SetPVarInt(playerid, "phatfade", 0);
-	PlayerTextDrawColor(playerid, FadeEffect[playerid][0], GetPVarInt(playerid, "phatfade"));
+	PlayerTextDrawColour(playerid, FadeEffect[playerid][0], GetPVarInt(playerid, "phatfade"));
  	PlayerTextDrawShow(playerid, FadeEffect[playerid][0]);
 	SetTimerEx("fadeout1", 25, false, "i", playerid);
 }
@@ -369,9 +353,9 @@ public fadeout1(playerid)
 	if(GetPVarInt(playerid, "phatfade") < 255)
 	{
 	    new fadeplus = GetPVarInt(playerid, "phatfade");
-		SetPVarInt(playerid, "phatfade", fadeplus+=15);
+		SetPVarInt(playerid, "phatfade", fadeplus+15);
 		SetTimerEx("fadeout2", 25, false, "i", playerid);
-		PlayerTextDrawColor(playerid, FadeEffect[playerid][0], GetPVarInt(playerid, "phatfade"));
+		PlayerTextDrawColour(playerid, FadeEffect[playerid][0], GetPVarInt(playerid, "phatfade"));
 	 	PlayerTextDrawShow(playerid, FadeEffect[playerid][0]);
 	}
 	return 1;
@@ -382,9 +366,9 @@ public fadeout2(playerid)
 	if(GetPVarInt(playerid, "phatfade") < 255)
 	{
 	    new fadeplus = GetPVarInt(playerid, "phatfade");
-		SetPVarInt(playerid, "phatfade", fadeplus+=15);
+		SetPVarInt(playerid, "phatfade", fadeplus+15);
 		SetTimerEx("fadeout1", 25, false, "i", playerid);
-		PlayerTextDrawColor(playerid, FadeEffect[playerid][0], GetPVarInt(playerid, "phatfade"));
+		PlayerTextDrawColour(playerid, FadeEffect[playerid][0], GetPVarInt(playerid, "phatfade"));
 	 	PlayerTextDrawShow(playerid, FadeEffect[playerid][0]);
 	}
 	return 1;

@@ -1,4 +1,4 @@
-#include <YSI_Coding\y_hooks>
+#include <YSI\YSI_Coding\y_hooks>
 hook OnGameModeInit()
 {
 	for(new i = 0 ; i < MAX_STORE_PAGE; i++)
@@ -12,20 +12,20 @@ hook OnPlayerConnect(playerid)
 	StorePTD[playerid][0] = CreatePlayerTextDraw(playerid, 109.000, 64.000, "mdl-2006:main");
 	PlayerTextDrawTextSize(playerid, StorePTD[playerid][0], 256.000, 350.000);
 	PlayerTextDrawAlignment(playerid, StorePTD[playerid][0], 1);
-	PlayerTextDrawColor(playerid, StorePTD[playerid][0], -1);
+	PlayerTextDrawColour(playerid, StorePTD[playerid][0], -1);
 	PlayerTextDrawSetShadow(playerid, StorePTD[playerid][0], 0);
 	PlayerTextDrawSetOutline(playerid, StorePTD[playerid][0], 0);
-	PlayerTextDrawBackgroundColor(playerid, StorePTD[playerid][0], 255);
+	PlayerTextDrawBackgroundColour(playerid, StorePTD[playerid][0], 255);
 	PlayerTextDrawFont(playerid, StorePTD[playerid][0], 4);
 	PlayerTextDrawSetProportional(playerid, StorePTD[playerid][0], 1);	
 
 	StoreButton[playerid][0] = CreatePlayerTextDraw(playerid, 312.000, 373.000, "LD_BEAT:right");
 	PlayerTextDrawTextSize(playerid, StoreButton[playerid][0], 33.000, 28.000);
 	PlayerTextDrawAlignment(playerid, StoreButton[playerid][0], 1);
-	PlayerTextDrawColor(playerid, StoreButton[playerid][0], -1);
+	PlayerTextDrawColour(playerid, StoreButton[playerid][0], -1);
 	PlayerTextDrawSetShadow(playerid, StoreButton[playerid][0], 0);
 	PlayerTextDrawSetOutline(playerid, StoreButton[playerid][0], 0);
-	PlayerTextDrawBackgroundColor(playerid, StoreButton[playerid][0], 255);
+	PlayerTextDrawBackgroundColour(playerid, StoreButton[playerid][0], 255);
 	PlayerTextDrawFont(playerid, StoreButton[playerid][0], 4);
 	PlayerTextDrawSetProportional(playerid, StoreButton[playerid][0], 1);
 	PlayerTextDrawSetSelectable(playerid, StoreButton[playerid][0], 1);
@@ -33,10 +33,10 @@ hook OnPlayerConnect(playerid)
 	StoreButton[playerid][1] = CreatePlayerTextDraw(playerid, 123.000, 373.000, "LD_BEAT:left");
 	PlayerTextDrawTextSize(playerid, StoreButton[playerid][1], 33.000, 28.000);
 	PlayerTextDrawAlignment(playerid, StoreButton[playerid][1], 1);
-	PlayerTextDrawColor(playerid, StoreButton[playerid][1], -1);
+	PlayerTextDrawColour(playerid, StoreButton[playerid][1], -1);
 	PlayerTextDrawSetShadow(playerid, StoreButton[playerid][1], 0);
 	PlayerTextDrawSetOutline(playerid, StoreButton[playerid][1], 0);
-	PlayerTextDrawBackgroundColor(playerid, StoreButton[playerid][1], 255);
+	PlayerTextDrawBackgroundColour(playerid, StoreButton[playerid][1], 255);
 	PlayerTextDrawFont(playerid, StoreButton[playerid][1], 4);
 	PlayerTextDrawSetProportional(playerid, StoreButton[playerid][1], 1);
 	PlayerTextDrawSetSelectable(playerid, StoreButton[playerid][1], 1);
@@ -44,10 +44,10 @@ hook OnPlayerConnect(playerid)
 	StoreButton[playerid][2] = CreatePlayerTextDraw(playerid, 220.000, 377.000, "1/100");
 	PlayerTextDrawLetterSize(playerid, StoreButton[playerid][2], 0.300, 1.500);
 	PlayerTextDrawAlignment(playerid, StoreButton[playerid][2], 1);
-	PlayerTextDrawColor(playerid, StoreButton[playerid][2], -1);
+	PlayerTextDrawColour(playerid, StoreButton[playerid][2], -1);
 	PlayerTextDrawSetShadow(playerid, StoreButton[playerid][2], 1);
 	PlayerTextDrawSetOutline(playerid, StoreButton[playerid][2], 0);
-	PlayerTextDrawBackgroundColor(playerid, StoreButton[playerid][2], 150);
+	PlayerTextDrawBackgroundColour(playerid, StoreButton[playerid][2], 150);
 	PlayerTextDrawFont(playerid, StoreButton[playerid][2], 1);
 	PlayerTextDrawSetProportional(playerid, StoreButton[playerid][2], 1);
 	PlayerTextDrawSetSelectable(playerid, StoreButton[playerid][2], 1);
@@ -55,30 +55,30 @@ hook OnPlayerConnect(playerid)
 	StoreItemInfo[playerid][0] = CreatePlayerTextDraw(playerid, 358.000, 68.500, "mdl-2006:thongtin");
 	PlayerTextDrawTextSize(playerid, StoreItemInfo[playerid][0], 173.000, 197.000);
 	PlayerTextDrawAlignment(playerid, StoreItemInfo[playerid][0], 1);
-	PlayerTextDrawColor(playerid, StoreItemInfo[playerid][0], -1);
+	PlayerTextDrawColour(playerid, StoreItemInfo[playerid][0], -1);
 	PlayerTextDrawSetShadow(playerid, StoreItemInfo[playerid][0], 0);
 	PlayerTextDrawSetOutline(playerid, StoreItemInfo[playerid][0], 0);
-	PlayerTextDrawBackgroundColor(playerid, StoreItemInfo[playerid][0], 255);
+	PlayerTextDrawBackgroundColour(playerid, StoreItemInfo[playerid][0], 255);
 	PlayerTextDrawFont(playerid, StoreItemInfo[playerid][0], 4);
 	PlayerTextDrawSetProportional(playerid, StoreItemInfo[playerid][0], 1);
 
 	StoreItemInfo[playerid][1] = CreatePlayerTextDraw(playerid, 391.000, 109.000, "CON ME MAY PHAT BEO");
 	PlayerTextDrawLetterSize(playerid, StoreItemInfo[playerid][1], 0.310, 2.198);
 	PlayerTextDrawAlignment(playerid, StoreItemInfo[playerid][1], 1);
-	PlayerTextDrawColor(playerid, StoreItemInfo[playerid][1], -1);
+	PlayerTextDrawColour(playerid, StoreItemInfo[playerid][1], -1);
 	PlayerTextDrawSetShadow(playerid, StoreItemInfo[playerid][1], 1);
 	PlayerTextDrawSetOutline(playerid, StoreItemInfo[playerid][1], 0);
-	PlayerTextDrawBackgroundColor(playerid, StoreItemInfo[playerid][1], 150);
+	PlayerTextDrawBackgroundColour(playerid, StoreItemInfo[playerid][1], 150);
 	PlayerTextDrawFont(playerid, StoreItemInfo[playerid][1], 1);
 	PlayerTextDrawSetProportional(playerid, StoreItemInfo[playerid][1], 1);
 
 	StoreItemInfo[playerid][2] = CreatePlayerTextDraw(playerid, 358.000, 68.500, "mdl-2006:thongtin");
 	PlayerTextDrawTextSize(playerid, StoreItemInfo[playerid][2], 173.000, 197.000);
 	PlayerTextDrawAlignment(playerid, StoreItemInfo[playerid][2], 1);
-	PlayerTextDrawColor(playerid, StoreItemInfo[playerid][2], -1);
+	PlayerTextDrawColour(playerid, StoreItemInfo[playerid][2], -1);
 	PlayerTextDrawSetShadow(playerid, StoreItemInfo[playerid][2], 0);
 	PlayerTextDrawSetOutline(playerid, StoreItemInfo[playerid][2], 0);
-	PlayerTextDrawBackgroundColor(playerid, StoreItemInfo[playerid][2], 255);
+	PlayerTextDrawBackgroundColour(playerid, StoreItemInfo[playerid][2], 255);
 	PlayerTextDrawFont(playerid, StoreItemInfo[playerid][2], 4);
 	PlayerTextDrawSetProportional(playerid, StoreItemInfo[playerid][2], 1);
 
@@ -86,10 +86,10 @@ hook OnPlayerConnect(playerid)
 	PlayerTextDrawLetterSize(playerid, StoreItemInfo[playerid][3], 0.189, 1.699);
 	PlayerTextDrawTextSize(playerid, StoreItemInfo[playerid][3], 513.000, 0.000);
 	PlayerTextDrawAlignment(playerid, StoreItemInfo[playerid][3], 1);
-	PlayerTextDrawColor(playerid, StoreItemInfo[playerid][3], -1);
+	PlayerTextDrawColour(playerid, StoreItemInfo[playerid][3], -1);
 	PlayerTextDrawSetShadow(playerid, StoreItemInfo[playerid][3], 1);
 	PlayerTextDrawSetOutline(playerid, StoreItemInfo[playerid][3], 0);
-	PlayerTextDrawBackgroundColor(playerid, StoreItemInfo[playerid][3], 150);
+	PlayerTextDrawBackgroundColour(playerid, StoreItemInfo[playerid][3], 150);
 	PlayerTextDrawFont(playerid, StoreItemInfo[playerid][3], 1);
 	PlayerTextDrawSetProportional(playerid, StoreItemInfo[playerid][3], 1);
 
@@ -97,10 +97,10 @@ hook OnPlayerConnect(playerid)
 	PlayerTextDrawLetterSize(playerid, StoreItemInfo[playerid][4], 0.300, 1.500);
 	PlayerTextDrawTextSize(playerid, StoreItemInfo[playerid][4], 16.000, 57.000);
 	PlayerTextDrawAlignment(playerid, StoreItemInfo[playerid][4], 2);
-	PlayerTextDrawColor(playerid, StoreItemInfo[playerid][4], -1);
+	PlayerTextDrawColour(playerid, StoreItemInfo[playerid][4], -1);
 	PlayerTextDrawSetShadow(playerid, StoreItemInfo[playerid][4], 1);
 	PlayerTextDrawSetOutline(playerid, StoreItemInfo[playerid][4], 0);
-	PlayerTextDrawBackgroundColor(playerid, StoreItemInfo[playerid][4], 150);
+	PlayerTextDrawBackgroundColour(playerid, StoreItemInfo[playerid][4], 150);
 	PlayerTextDrawFont(playerid, StoreItemInfo[playerid][4], 1);
 	PlayerTextDrawSetProportional(playerid, StoreItemInfo[playerid][4], 1);
 	PlayerTextDrawSetSelectable(playerid, StoreItemInfo[playerid][4], 1);
@@ -109,10 +109,10 @@ hook OnPlayerConnect(playerid)
 	PlayerTextDrawLetterSize(playerid, StoreItemInfo[playerid][5], 0.300, 1.500);
 	PlayerTextDrawTextSize(playerid, StoreItemInfo[playerid][5], 16.000, 57.000);
 	PlayerTextDrawAlignment(playerid, StoreItemInfo[playerid][5], 2);
-	PlayerTextDrawColor(playerid, StoreItemInfo[playerid][5], -1);
+	PlayerTextDrawColour(playerid, StoreItemInfo[playerid][5], -1);
 	PlayerTextDrawSetShadow(playerid, StoreItemInfo[playerid][5], 1);
 	PlayerTextDrawSetOutline(playerid, StoreItemInfo[playerid][5], 0);
-	PlayerTextDrawBackgroundColor(playerid, StoreItemInfo[playerid][5], 150);
+	PlayerTextDrawBackgroundColour(playerid, StoreItemInfo[playerid][5], 150);
 	PlayerTextDrawFont(playerid, StoreItemInfo[playerid][5], 1);
 	PlayerTextDrawSetProportional(playerid, StoreItemInfo[playerid][5], 1);
 	PlayerTextDrawSetSelectable(playerid, StoreItemInfo[playerid][5], 1);
@@ -130,10 +130,10 @@ func:CreateStoreItem(playerid, page,itemid)
 		PlayerTextDrawLetterSize(playerid, StoreItem[playerid][StoreSlot[page]], 0.300, 1.500);
 		PlayerTextDrawTextSize(playerid, StoreItem[playerid][StoreSlot[page]], 11.000, 101.000);
 		PlayerTextDrawAlignment(playerid, StoreItem[playerid][StoreSlot[page]], 2);
-		PlayerTextDrawColor(playerid, StoreItem[playerid][StoreSlot[page]], -1);
+		PlayerTextDrawColour(playerid, StoreItem[playerid][StoreSlot[page]], -1);
 		PlayerTextDrawSetShadow(playerid, StoreItem[playerid][StoreSlot[page]], 1);
 		PlayerTextDrawSetOutline(playerid, StoreItem[playerid][StoreSlot[page]], 0);
-		PlayerTextDrawBackgroundColor(playerid, StoreItem[playerid][StoreSlot[page]], 150);
+		PlayerTextDrawBackgroundColour(playerid, StoreItem[playerid][StoreSlot[page]], 150);
 		PlayerTextDrawFont(playerid, StoreItem[playerid][StoreSlot[page]], 1);
 		PlayerTextDrawSetProportional(playerid, StoreItem[playerid][StoreSlot[page]], 1);
 		PlayerTextDrawSetSelectable(playerid, StoreItem[playerid][StoreSlot[page]], 1);
@@ -146,10 +146,10 @@ func:CreateStoreItem(playerid, page,itemid)
 		PlayerTextDrawLetterSize(playerid, StoreItem[playerid][StoreSlot[page]], 0.300, 1.500);
 		PlayerTextDrawTextSize(playerid, StoreItem[playerid][StoreSlot[page]], 11.000, 101.000);
 		PlayerTextDrawAlignment(playerid, StoreItem[playerid][StoreSlot[page]], 2);
-		PlayerTextDrawColor(playerid, StoreItem[playerid][StoreSlot[page]], -1);
+		PlayerTextDrawColour(playerid, StoreItem[playerid][StoreSlot[page]], -1);
 		PlayerTextDrawSetShadow(playerid, StoreItem[playerid][StoreSlot[page]], 1);
 		PlayerTextDrawSetOutline(playerid, StoreItem[playerid][StoreSlot[page]], 0);
-		PlayerTextDrawBackgroundColor(playerid, StoreItem[playerid][StoreSlot[page]], 150);
+		PlayerTextDrawBackgroundColour(playerid, StoreItem[playerid][StoreSlot[page]], 150);
 		PlayerTextDrawFont(playerid, StoreItem[playerid][StoreSlot[page]], 1);
 		PlayerTextDrawSetProportional(playerid, StoreItem[playerid][StoreSlot[page]], 1);
 		PlayerTextDrawSetSelectable(playerid, StoreItem[playerid][StoreSlot[page]], 1);

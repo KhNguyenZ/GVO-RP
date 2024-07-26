@@ -1,4 +1,4 @@
-#include <YSI_Coding\y_hooks>
+#include <YSI\YSI_Coding\y_hooks>
 hook OnGameModeInit()
 {
     for (new i = 0 ; i < MAX_DYNAMIC_DOORS ; i++)

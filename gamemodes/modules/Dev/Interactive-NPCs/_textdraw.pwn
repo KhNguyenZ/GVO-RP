@@ -1,4 +1,4 @@
-#include <YSI_Coding\y_hooks>
+#include <YSI\YSI_Coding\y_hooks>
 // #include <actor_plus>
 
 func:CreatePlayerInteractiveNPC(playerid)
@@ -6,30 +6,30 @@ func:CreatePlayerInteractiveNPC(playerid)
     iNPC_PTD[playerid][0] = CreatePlayerTextDraw(playerid, 2.000, 313.000, ""); // title
     PlayerTextDrawLetterSize(playerid, iNPC_PTD[playerid][0], 0.479, 2.299);
     PlayerTextDrawAlignment(playerid, iNPC_PTD[playerid][0], 1);
-    PlayerTextDrawColor(playerid, iNPC_PTD[playerid][0], -1);
+    PlayerTextDrawColour(playerid, iNPC_PTD[playerid][0], -1);
     PlayerTextDrawSetShadow(playerid, iNPC_PTD[playerid][0], 1);
     PlayerTextDrawSetOutline(playerid, iNPC_PTD[playerid][0], 1);
-    PlayerTextDrawBackgroundColor(playerid, iNPC_PTD[playerid][0], 150);
+    PlayerTextDrawBackgroundColour(playerid, iNPC_PTD[playerid][0], 150);
     PlayerTextDrawFont(playerid, iNPC_PTD[playerid][0], 0);
     PlayerTextDrawSetProportional(playerid, iNPC_PTD[playerid][0], 1);
 
     iNPC_PTD[playerid][1] = CreatePlayerTextDraw(playerid, 0.000, 305.000, "mdl-2011:main");
     PlayerTextDrawTextSize(playerid, iNPC_PTD[playerid][1], 641.000, 145.000);
     PlayerTextDrawAlignment(playerid, iNPC_PTD[playerid][1], 1);
-    PlayerTextDrawColor(playerid, iNPC_PTD[playerid][1], -1);
+    PlayerTextDrawColour(playerid, iNPC_PTD[playerid][1], -1);
     PlayerTextDrawSetShadow(playerid, iNPC_PTD[playerid][1], 0);
     PlayerTextDrawSetOutline(playerid, iNPC_PTD[playerid][1], 0);
-    PlayerTextDrawBackgroundColor(playerid, iNPC_PTD[playerid][1], 255);
+    PlayerTextDrawBackgroundColour(playerid, iNPC_PTD[playerid][1], 255);
     PlayerTextDrawFont(playerid, iNPC_PTD[playerid][1], 4);
     PlayerTextDrawSetProportional(playerid, iNPC_PTD[playerid][1], 1);
 
     iNPC_PTD[playerid][2] = CreatePlayerTextDraw(playerid, 298.000, 310.000, "mdl-2011:optional");
     PlayerTextDrawTextSize(playerid, iNPC_PTD[playerid][2], 109.000, 24.000);
     PlayerTextDrawAlignment(playerid, iNPC_PTD[playerid][2], 1);
-    PlayerTextDrawColor(playerid, iNPC_PTD[playerid][2], -1);
+    PlayerTextDrawColour(playerid, iNPC_PTD[playerid][2], -1);
     PlayerTextDrawSetShadow(playerid, iNPC_PTD[playerid][2], 0);
     PlayerTextDrawSetOutline(playerid, iNPC_PTD[playerid][2], 0);
-    PlayerTextDrawBackgroundColor(playerid, iNPC_PTD[playerid][2], 255);
+    PlayerTextDrawBackgroundColour(playerid, iNPC_PTD[playerid][2], 255);
     PlayerTextDrawFont(playerid, iNPC_PTD[playerid][2], 4);
     PlayerTextDrawSetProportional(playerid, iNPC_PTD[playerid][2], 1);
     PlayerTextDrawSetSelectable(playerid, iNPC_PTD[playerid][2], 1);
@@ -37,10 +37,10 @@ func:CreatePlayerInteractiveNPC(playerid)
     iNPC_PTD[playerid][3] = CreatePlayerTextDraw(playerid, 412.000, 310.000, "mdl-2011:optional");
     PlayerTextDrawTextSize(playerid, iNPC_PTD[playerid][3], 109.000, 24.000);
     PlayerTextDrawAlignment(playerid, iNPC_PTD[playerid][3], 1);
-    PlayerTextDrawColor(playerid, iNPC_PTD[playerid][3], -1);
+    PlayerTextDrawColour(playerid, iNPC_PTD[playerid][3], -1);
     PlayerTextDrawSetShadow(playerid, iNPC_PTD[playerid][3], 0);
     PlayerTextDrawSetOutline(playerid, iNPC_PTD[playerid][3], 0);
-    PlayerTextDrawBackgroundColor(playerid, iNPC_PTD[playerid][3], 255);
+    PlayerTextDrawBackgroundColour(playerid, iNPC_PTD[playerid][3], 255);
     PlayerTextDrawFont(playerid, iNPC_PTD[playerid][3], 4);
     PlayerTextDrawSetProportional(playerid, iNPC_PTD[playerid][3], 1);
     PlayerTextDrawSetSelectable(playerid, iNPC_PTD[playerid][3], 1);
@@ -48,10 +48,10 @@ func:CreatePlayerInteractiveNPC(playerid)
     iNPC_PTD[playerid][4] = CreatePlayerTextDraw(playerid, 526.000, 310.000, "mdl-2011:optional");
     PlayerTextDrawTextSize(playerid, iNPC_PTD[playerid][4], 109.000, 24.000);
     PlayerTextDrawAlignment(playerid, iNPC_PTD[playerid][4], 1);
-    PlayerTextDrawColor(playerid, iNPC_PTD[playerid][4], -1);
+    PlayerTextDrawColour(playerid, iNPC_PTD[playerid][4], -1);
     PlayerTextDrawSetShadow(playerid, iNPC_PTD[playerid][4], 0);
     PlayerTextDrawSetOutline(playerid, iNPC_PTD[playerid][4], 0);
-    PlayerTextDrawBackgroundColor(playerid, iNPC_PTD[playerid][4], 255);
+    PlayerTextDrawBackgroundColour(playerid, iNPC_PTD[playerid][4], 255);
     PlayerTextDrawFont(playerid, iNPC_PTD[playerid][4], 4);
     PlayerTextDrawSetProportional(playerid, iNPC_PTD[playerid][4], 1);
     PlayerTextDrawSetSelectable(playerid, iNPC_PTD[playerid][4], 1);
@@ -59,30 +59,30 @@ func:CreatePlayerInteractiveNPC(playerid)
     iNPC_PTD[playerid][5] = CreatePlayerTextDraw(playerid, 350.000, 315.000, ""); //Optional 1
     PlayerTextDrawLetterSize(playerid, iNPC_PTD[playerid][5], 0.300, 1.500);
     PlayerTextDrawAlignment(playerid, iNPC_PTD[playerid][5], 2);
-    PlayerTextDrawColor(playerid, iNPC_PTD[playerid][5], -1);
+    PlayerTextDrawColour(playerid, iNPC_PTD[playerid][5], -1);
     PlayerTextDrawSetShadow(playerid, iNPC_PTD[playerid][5], 1);
     PlayerTextDrawSetOutline(playerid, iNPC_PTD[playerid][5], 0);
-    PlayerTextDrawBackgroundColor(playerid, iNPC_PTD[playerid][5], 150);
+    PlayerTextDrawBackgroundColour(playerid, iNPC_PTD[playerid][5], 150);
     PlayerTextDrawFont(playerid, iNPC_PTD[playerid][5], 2);
     PlayerTextDrawSetProportional(playerid, iNPC_PTD[playerid][5], 1);
 
     iNPC_PTD[playerid][6] = CreatePlayerTextDraw(playerid, 465.000, 315.000, "");
     PlayerTextDrawLetterSize(playerid, iNPC_PTD[playerid][6], 0.300, 1.500);
     PlayerTextDrawAlignment(playerid, iNPC_PTD[playerid][6], 2);
-    PlayerTextDrawColor(playerid, iNPC_PTD[playerid][6], -1);
+    PlayerTextDrawColour(playerid, iNPC_PTD[playerid][6], -1);
     PlayerTextDrawSetShadow(playerid, iNPC_PTD[playerid][6], 1);
     PlayerTextDrawSetOutline(playerid, iNPC_PTD[playerid][6], 0);
-    PlayerTextDrawBackgroundColor(playerid, iNPC_PTD[playerid][6], 150);
+    PlayerTextDrawBackgroundColour(playerid, iNPC_PTD[playerid][6], 150);
     PlayerTextDrawFont(playerid, iNPC_PTD[playerid][6], 2);
     PlayerTextDrawSetProportional(playerid, iNPC_PTD[playerid][6], 1);
 
     iNPC_PTD[playerid][7] = CreatePlayerTextDraw(playerid, 581.000, 315.000, "");
     PlayerTextDrawLetterSize(playerid, iNPC_PTD[playerid][7], 0.300, 1.500);
     PlayerTextDrawAlignment(playerid, iNPC_PTD[playerid][7], 2);
-    PlayerTextDrawColor(playerid, iNPC_PTD[playerid][7], -1);
+    PlayerTextDrawColour(playerid, iNPC_PTD[playerid][7], -1);
     PlayerTextDrawSetShadow(playerid, iNPC_PTD[playerid][7], 1);
     PlayerTextDrawSetOutline(playerid, iNPC_PTD[playerid][7], 0);
-    PlayerTextDrawBackgroundColor(playerid, iNPC_PTD[playerid][7], 150);
+    PlayerTextDrawBackgroundColour(playerid, iNPC_PTD[playerid][7], 150);
     PlayerTextDrawFont(playerid, iNPC_PTD[playerid][7], 2);
     PlayerTextDrawSetProportional(playerid, iNPC_PTD[playerid][7], 1);
 
@@ -90,10 +90,10 @@ func:CreatePlayerInteractiveNPC(playerid)
     PlayerTextDrawLetterSize(playerid, iNPC_PTD[playerid][8], 0.270, 1.299);
     PlayerTextDrawTextSize(playerid, iNPC_PTD[playerid][8], 633.000, 40.000);
     PlayerTextDrawAlignment(playerid, iNPC_PTD[playerid][8], 1);
-    PlayerTextDrawColor(playerid, iNPC_PTD[playerid][8], -1);
+    PlayerTextDrawColour(playerid, iNPC_PTD[playerid][8], -1);
     PlayerTextDrawSetShadow(playerid, iNPC_PTD[playerid][8], 0);
     PlayerTextDrawSetOutline(playerid, iNPC_PTD[playerid][8], 0);
-    PlayerTextDrawBackgroundColor(playerid, iNPC_PTD[playerid][8], 150);
+    PlayerTextDrawBackgroundColour(playerid, iNPC_PTD[playerid][8], 150);
     PlayerTextDrawFont(playerid, iNPC_PTD[playerid][8], 1);
     PlayerTextDrawSetProportional(playerid, iNPC_PTD[playerid][8], 1);
 
@@ -101,10 +101,10 @@ func:CreatePlayerInteractiveNPC(playerid)
     PlayerTextDrawLetterSize(playerid, iNPC_PTD[playerid][9], 0.270, 1.299);
     PlayerTextDrawTextSize(playerid, iNPC_PTD[playerid][9], 633.000, 67.000);
     PlayerTextDrawAlignment(playerid, iNPC_PTD[playerid][9], 2);
-    PlayerTextDrawColor(playerid, iNPC_PTD[playerid][9], -1);
+    PlayerTextDrawColour(playerid, iNPC_PTD[playerid][9], -1);
     PlayerTextDrawSetShadow(playerid, iNPC_PTD[playerid][9], 0);
     PlayerTextDrawSetOutline(playerid, iNPC_PTD[playerid][9], 0);
-    PlayerTextDrawBackgroundColor(playerid, iNPC_PTD[playerid][9], 150);
+    PlayerTextDrawBackgroundColour(playerid, iNPC_PTD[playerid][9], 150);
     PlayerTextDrawFont(playerid, iNPC_PTD[playerid][9], 1);
     PlayerTextDrawSetProportional(playerid, iNPC_PTD[playerid][9], 1);
     PlayerTextDrawSetSelectable(playerid, iNPC_PTD[playerid][9], 1);
@@ -113,10 +113,10 @@ func:CreatePlayerInteractiveNPC(playerid)
     PlayerTextDrawLetterSize(playerid, iNPC_PTD[playerid][10], 0.270, 1.299);
     PlayerTextDrawTextSize(playerid, iNPC_PTD[playerid][10], 633.000, 67.000);
     PlayerTextDrawAlignment(playerid, iNPC_PTD[playerid][10], 2);
-    PlayerTextDrawColor(playerid, iNPC_PTD[playerid][10], -1);
+    PlayerTextDrawColour(playerid, iNPC_PTD[playerid][10], -1);
     PlayerTextDrawSetShadow(playerid, iNPC_PTD[playerid][10], 0);
     PlayerTextDrawSetOutline(playerid, iNPC_PTD[playerid][10], 0);
-    PlayerTextDrawBackgroundColor(playerid, iNPC_PTD[playerid][10], 150);
+    PlayerTextDrawBackgroundColour(playerid, iNPC_PTD[playerid][10], 150);
     PlayerTextDrawFont(playerid, iNPC_PTD[playerid][10], 1);
     PlayerTextDrawSetProportional(playerid, iNPC_PTD[playerid][10], 1);
     PlayerTextDrawSetSelectable(playerid, iNPC_PTD[playerid][10], 1);
@@ -125,10 +125,10 @@ func:CreatePlayerInteractiveNPC(playerid)
     PlayerTextDrawLetterSize(playerid, iNPC_PTD[playerid][11], 0.270, 1.299);
     PlayerTextDrawTextSize(playerid, iNPC_PTD[playerid][11], 633.000, 67.000);
     PlayerTextDrawAlignment(playerid, iNPC_PTD[playerid][11], 2);
-    PlayerTextDrawColor(playerid, iNPC_PTD[playerid][11], -1);
+    PlayerTextDrawColour(playerid, iNPC_PTD[playerid][11], -1);
     PlayerTextDrawSetShadow(playerid, iNPC_PTD[playerid][11], 0);
     PlayerTextDrawSetOutline(playerid, iNPC_PTD[playerid][11], 0);
-    PlayerTextDrawBackgroundColor(playerid, iNPC_PTD[playerid][11], 150);
+    PlayerTextDrawBackgroundColour(playerid, iNPC_PTD[playerid][11], 150);
     PlayerTextDrawFont(playerid, iNPC_PTD[playerid][11], 1);
     PlayerTextDrawSetProportional(playerid, iNPC_PTD[playerid][11], 1);
     PlayerTextDrawSetSelectable(playerid, iNPC_PTD[playerid][11], 1);
@@ -137,16 +137,16 @@ func:CreatePlayerInteractiveNPC(playerid)
     PlayerTextDrawLetterSize(playerid, iNPC_PTD[playerid][12], 0.270, 1.299);
     PlayerTextDrawTextSize(playerid, iNPC_PTD[playerid][12], 633.000, 67.000);
     PlayerTextDrawAlignment(playerid, iNPC_PTD[playerid][12], 2);
-    PlayerTextDrawColor(playerid, iNPC_PTD[playerid][12], -1);
+    PlayerTextDrawColour(playerid, iNPC_PTD[playerid][12], -1);
     PlayerTextDrawSetShadow(playerid, iNPC_PTD[playerid][12], 0);
     PlayerTextDrawSetOutline(playerid, iNPC_PTD[playerid][12], 0);
-    PlayerTextDrawBackgroundColor(playerid, iNPC_PTD[playerid][12], 150);
+    PlayerTextDrawBackgroundColour(playerid, iNPC_PTD[playerid][12], 150);
     PlayerTextDrawFont(playerid, iNPC_PTD[playerid][12], 1);
     PlayerTextDrawSetProportional(playerid, iNPC_PTD[playerid][12], 1);
     PlayerTextDrawSetSelectable(playerid, iNPC_PTD[playerid][12], 1);
     return 1;
 }
-func:ShowPlayerInteractive(playerid, inter_ids, title[], content[], i_btn1[] = "", i_btn2[] = "", i_btn3[] = "",i_btn4[] = "")
+func:ShowPlayerInteractive(playerid, inter_ids, const title[], const content[], const i_btn1[] = "", const i_btn2[] = "", const i_btn3[] = "",const i_btn4[] = "")
 {
     if(GetPVarInt(playerid, #isOpenInteractive)) return DestroyPlayerInteractive(playerid);
     SetPVarInt(playerid, #Interactive_Open_ID, inter_ids);

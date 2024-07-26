@@ -16,7 +16,7 @@ C:\Users\KhNguyenz\Desktop\base-ompvn\pawno\include\YSI_Coding\..\YSI_Core\y_uti
 C:\Users\KhNguyenz\Desktop\base-ompvn\pawno\include\YSI_Coding\..\YSI_Core\y_utils.inc(1320) : ïðåäóïðåæäåíèå 219: ïåðåìåííàÿ "str" óæå îáúÿâëåíà â áîëåå ãëîáàëüíîé çîíå âèäèìîñòè
 C:\Users\KhNguyenz\Desktop\base-ompvn\pawno\include\YSI_Coding\..\YSI_Core\y_utils.inc(1336) : ïðåäóïðåæäåíèå 219: ïåðåìåííàÿ "str" óæå îáúÿâëåíà â áîëåå ãëîáàëüíîé çîíå âèäèìîñòè
 C:\Users\KhNguyenz\Desktop\base-ompvn\pawno\include\YSI_Coding\y_hooks/impl.inc(390) : ïðåäóïðåæäåíèå 219: ïåðåìåííàÿ "str" óæå îáúÿâëåíà â áîëåå ãëîáàëüíîé çîíå âèäèìîñòè
-C:\Users\KhNguyenz\Desktop\base-ompvn\gamemodes\modules\server\ProgressLoad.pwn(11) : îøèáêà 021: èäåíòèôèêàòîð "PlayerTextDrawColor" óæå îáúÿâëåí
+C:\Users\KhNguyenz\Desktop\base-ompvn\gamemodes\modules\server\ProgressLoad.pwn(11) : îøèáêà 021: èäåíòèôèêàòîð "PlayerTextDrawColour" óæå îáúÿâëåí
 C:\Users\KhNguyenz\Desktop\base-ompvn\gamemodes\modules\server\ProgressLoad.pwn(23) : îøèáêà 021: èäåíòèôèêàòîð "format" óæå îáúÿâëåí
 C:\Users\KhNguyenz\Desktop\base-ompvn\gamemodes\modules\server\ProgressLoad.pwn(29) : îøèáêà 010: íåâåðíàÿ ôóíêöèÿ èëè îáúÿâëåíèå
 C:\Users\KhNguyenz\Desktop\base-ompvn\gamemodes\modules\server\ProgressLoad.pwn(41) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "Loader"

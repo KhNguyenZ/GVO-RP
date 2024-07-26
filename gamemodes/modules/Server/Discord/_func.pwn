@@ -47,7 +47,7 @@ func:DISCORD_SendUsageCMD(fcmd[])
     return DCC_SendChannelMessage(SSA_CMD, output_dmsg);
 }
 
-func:DISCORD_SendEmbedMsg(DCC_Channel:fchannel,title[], content[], color = 0x2ac7ff, thumbnail[] = "", img[] = "")
+func:DISCORD_SendEmbedMsg(DCC_Channel:fchannel,const title[], const content[], color = 0x2ac7ff, const thumbnail[] = "", const img[] = "")
 {
     new DCC_Embed:embed = DCC_CreateEmbed(title, content);
     DCC_SetEmbedColor(embed, color);

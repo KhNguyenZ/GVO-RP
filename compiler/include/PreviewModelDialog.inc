@@ -92,50 +92,50 @@ static Prev_CreateTextDraws() {
 	Prev@FrameTD[1] = TextDrawCreate(146.5000, 155.5000, "LD_SPAC:WHITE");
 	TextDrawFont(Prev@FrameTD[1], 4);
 	TextDrawLetterSize(Prev@FrameTD[1], 0.0000, 18.2000);
-	TextDrawColor(Prev@FrameTD[1], -1);
+	TextDrawColour(Prev@FrameTD[1], -1);
 	TextDrawSetShadow(Prev@FrameTD[1], 0);
 	TextDrawSetOutline(Prev@FrameTD[1], 0);
-	TextDrawBackgroundColor(Prev@FrameTD[1], 255);
+	TextDrawBackgroundColour(Prev@FrameTD[1], 255);
 	TextDrawSetProportional(Prev@FrameTD[1], 1);
 	TextDrawUseBox(Prev@FrameTD[1], 1);
-	TextDrawBoxColor(Prev@FrameTD[1], 150);
+	TextDrawBoxColour(Prev@FrameTD[1], 150);
 	TextDrawTextSize(Prev@FrameTD[1], 351.5000, 130.0000);
 
 	Prev@FrameTD[2] = TextDrawCreate(147.0000, 156.0000, "LD_SPAC:BLACK");
 	TextDrawFont(Prev@FrameTD[2], 4);
 	TextDrawLetterSize(Prev@FrameTD[2], 0.0000, 18.2000);
-	TextDrawColor(Prev@FrameTD[2], -1);
+	TextDrawColour(Prev@FrameTD[2], -1);
 	TextDrawSetShadow(Prev@FrameTD[2], 0);
 	TextDrawSetOutline(Prev@FrameTD[2], 0);
-	TextDrawBackgroundColor(Prev@FrameTD[2], 255);
+	TextDrawBackgroundColour(Prev@FrameTD[2], 255);
 	TextDrawSetProportional(Prev@FrameTD[2], 1);
 	TextDrawUseBox(Prev@FrameTD[2], 1);
-	TextDrawBoxColor(Prev@FrameTD[2], 150);
+	TextDrawBoxColour(Prev@FrameTD[2], 150);
 	TextDrawTextSize(Prev@FrameTD[2], 340.5000, 129.0000);
 
 	Prev@FrameTD[3] = TextDrawCreate(488.0000, 156.0000, "LD_SPAC:BLACK");
 	TextDrawFont(Prev@FrameTD[3], 4);
 	TextDrawLetterSize(Prev@FrameTD[3], 0.0000, 18.2000);
-	TextDrawColor(Prev@FrameTD[3], -1);
+	TextDrawColour(Prev@FrameTD[3], -1);
 	TextDrawSetShadow(Prev@FrameTD[3], 0);
 	TextDrawSetOutline(Prev@FrameTD[3], 0);
-	TextDrawBackgroundColor(Prev@FrameTD[3], 255);
+	TextDrawBackgroundColour(Prev@FrameTD[3], 255);
 	TextDrawSetProportional(Prev@FrameTD[3], 1);
 	TextDrawUseBox(Prev@FrameTD[3], 1);
-	TextDrawBoxColor(Prev@FrameTD[3], 150);
+	TextDrawBoxColour(Prev@FrameTD[3], 150);
 	TextDrawTextSize(Prev@FrameTD[3], 9.5000, 129.0000);
 
 	// button for scrolling up
 	Prev@FrameTD[4] = TextDrawCreate(488.0000, 156.0000, "LD_POOL:BALL");
 	TextDrawFont(Prev@FrameTD[4], 4);
 	TextDrawLetterSize(Prev@FrameTD[4], 0.0000, 18.2000);
-	TextDrawColor(Prev@FrameTD[4], -1);
+	TextDrawColour(Prev@FrameTD[4], -1);
 	TextDrawSetShadow(Prev@FrameTD[4], 0);
 	TextDrawSetOutline(Prev@FrameTD[4], 0);
-	TextDrawBackgroundColor(Prev@FrameTD[4], 255);
+	TextDrawBackgroundColour(Prev@FrameTD[4], 255);
 	TextDrawSetProportional(Prev@FrameTD[4], 1);
 	TextDrawUseBox(Prev@FrameTD[4], 1);
-	TextDrawBoxColor(Prev@FrameTD[4], 150);
+	TextDrawBoxColour(Prev@FrameTD[4], 150);
 	TextDrawTextSize(Prev@FrameTD[4], 9.5000, 9.5000);
 	TextDrawSetSelectable(Prev@FrameTD[4], 1);
 	//
@@ -143,26 +143,26 @@ static Prev_CreateTextDraws() {
 	Prev@FrameTD[5] = TextDrawCreate(489.0000, 156.5000, "LD_BEAT:UP");
 	TextDrawFont(Prev@FrameTD[5], 4);
 	TextDrawLetterSize(Prev@FrameTD[5], 0.0000, 18.2000);
-	TextDrawColor(Prev@FrameTD[5], 255);
+	TextDrawColour(Prev@FrameTD[5], 255);
 	TextDrawSetShadow(Prev@FrameTD[5], 0);
 	TextDrawSetOutline(Prev@FrameTD[5], 0);
-	TextDrawBackgroundColor(Prev@FrameTD[5], 255);
+	TextDrawBackgroundColour(Prev@FrameTD[5], 255);
 	TextDrawSetProportional(Prev@FrameTD[5], 1);
 	TextDrawUseBox(Prev@FrameTD[5], 1);
-	TextDrawBoxColor(Prev@FrameTD[5], 150);
+	TextDrawBoxColour(Prev@FrameTD[5], 150);
 	TextDrawTextSize(Prev@FrameTD[5], 7.5000, 7.5000);
 
 	// button for scrolling down
 	Prev@FrameTD[6] = TextDrawCreate(488.0000, 275.5000, "LD_POOL:BALL");
 	TextDrawFont(Prev@FrameTD[6], 4);
 	TextDrawLetterSize(Prev@FrameTD[6], 0.0000, 18.2000);
-	TextDrawColor(Prev@FrameTD[6], -1);
+	TextDrawColour(Prev@FrameTD[6], -1);
 	TextDrawSetShadow(Prev@FrameTD[6], 0);
 	TextDrawSetOutline(Prev@FrameTD[6], 0);
-	TextDrawBackgroundColor(Prev@FrameTD[6], 255);
+	TextDrawBackgroundColour(Prev@FrameTD[6], 255);
 	TextDrawSetProportional(Prev@FrameTD[6], 1);
 	TextDrawUseBox(Prev@FrameTD[6], 1);
-	TextDrawBoxColor(Prev@FrameTD[6], 150);
+	TextDrawBoxColour(Prev@FrameTD[6], 150);
 	TextDrawTextSize(Prev@FrameTD[6], 9.5000, 9.5000);
 	TextDrawSetSelectable(Prev@FrameTD[6], 1);
 	//
@@ -170,25 +170,25 @@ static Prev_CreateTextDraws() {
 	Prev@FrameTD[7] = TextDrawCreate(489.0000, 277.0000, "LD_BEAT:DOWN");
 	TextDrawFont(Prev@FrameTD[7], 4);
 	TextDrawLetterSize(Prev@FrameTD[7], 0.0000, 18.2000);
-	TextDrawColor(Prev@FrameTD[7], 255);
+	TextDrawColour(Prev@FrameTD[7], 255);
 	TextDrawSetShadow(Prev@FrameTD[7], 0);
 	TextDrawSetOutline(Prev@FrameTD[7], 0);
-	TextDrawBackgroundColor(Prev@FrameTD[7], 255);
+	TextDrawBackgroundColour(Prev@FrameTD[7], 255);
 	TextDrawSetProportional(Prev@FrameTD[7], 1);
 	TextDrawUseBox(Prev@FrameTD[7], 1);
-	TextDrawBoxColor(Prev@FrameTD[7], 150);
+	TextDrawBoxColour(Prev@FrameTD[7], 150);
 	TextDrawTextSize(Prev@FrameTD[7], 7.5000, 7.5000);
 
 	Prev@FrameTD[8] = TextDrawCreate(144.0000, 143.0000, "CONTENT_BOX");
 	TextDrawFont(Prev@FrameTD[8], 2);
 	TextDrawLetterSize(Prev@FrameTD[8], 0.0000, 19.5000);
-	TextDrawColor(Prev@FrameTD[8], -1);
+	TextDrawColour(Prev@FrameTD[8], -1);
 	TextDrawSetShadow(Prev@FrameTD[8], 0);
 	TextDrawSetOutline(Prev@FrameTD[8], 0);
-	TextDrawBackgroundColor(Prev@FrameTD[8], 255);
+	TextDrawBackgroundColour(Prev@FrameTD[8], 255);
 	TextDrawSetProportional(Prev@FrameTD[8], 1);
 	TextDrawUseBox(Prev@FrameTD[8], 1);
-	TextDrawBoxColor(Prev@FrameTD[8], 175);
+	TextDrawBoxColour(Prev@FrameTD[8], 175);
 	TextDrawTextSize(Prev@FrameTD[8], 501.0000, 0.0000);
 
 	/*
@@ -198,10 +198,10 @@ static Prev_CreateTextDraws() {
 	Prev@LeftButtonTD[0] = TextDrawCreate(260.0000, 293.0000, "LD_SPAC:WHITE");
 	TextDrawFont(Prev@LeftButtonTD[0], 4);
 	TextDrawLetterSize(Prev@LeftButtonTD[0], 0.5000, 1.0000);
-	TextDrawColor(Prev@LeftButtonTD[0], -1);
+	TextDrawColour(Prev@LeftButtonTD[0], -1);
 	TextDrawSetShadow(Prev@LeftButtonTD[0], 0);
 	TextDrawSetOutline(Prev@LeftButtonTD[0], 0);
-	TextDrawBackgroundColor(Prev@LeftButtonTD[0], 255);
+	TextDrawBackgroundColour(Prev@LeftButtonTD[0], 255);
 	TextDrawSetProportional(Prev@LeftButtonTD[0], 1);
 	TextDrawTextSize(Prev@LeftButtonTD[0], 55.0000, 18.0000);
 	TextDrawSetSelectable(Prev@LeftButtonTD[0], 1);
@@ -210,10 +210,10 @@ static Prev_CreateTextDraws() {
 	Prev@LeftButtonTD[1] = TextDrawCreate(260.5000, 293.5000, "LD_SPAC:BLACK");
 	TextDrawFont(Prev@LeftButtonTD[1], 4);
 	TextDrawLetterSize(Prev@LeftButtonTD[1], 0.5000, 1.0000);
-	TextDrawColor(Prev@LeftButtonTD[1], -1);
+	TextDrawColour(Prev@LeftButtonTD[1], -1);
 	TextDrawSetShadow(Prev@LeftButtonTD[1], 0);
 	TextDrawSetOutline(Prev@LeftButtonTD[1], 0);
-	TextDrawBackgroundColor(Prev@LeftButtonTD[1], 255);
+	TextDrawBackgroundColour(Prev@LeftButtonTD[1], 255);
 	TextDrawSetProportional(Prev@LeftButtonTD[1], 1);
 	TextDrawTextSize(Prev@LeftButtonTD[1], 54.0000, 17.0000);
 
@@ -224,10 +224,10 @@ static Prev_CreateTextDraws() {
 	Prev@RightButtonTD[0] = TextDrawCreate(325.0000, 293.0000, "LD_SPAC:WHITE");
 	TextDrawFont(Prev@RightButtonTD[0], 4);
 	TextDrawLetterSize(Prev@RightButtonTD[0], 0.5000, 1.0000);
-	TextDrawColor(Prev@RightButtonTD[0], -1);
+	TextDrawColour(Prev@RightButtonTD[0], -1);
 	TextDrawSetShadow(Prev@RightButtonTD[0], 0);
 	TextDrawSetOutline(Prev@RightButtonTD[0], 0);
-	TextDrawBackgroundColor(Prev@RightButtonTD[0], 255);
+	TextDrawBackgroundColour(Prev@RightButtonTD[0], 255);
 	TextDrawSetProportional(Prev@RightButtonTD[0], 1);
 	TextDrawTextSize(Prev@RightButtonTD[0], 55.0000, 18.0000);
 	TextDrawSetSelectable(Prev@RightButtonTD[0], 1);
@@ -236,10 +236,10 @@ static Prev_CreateTextDraws() {
 	Prev@RightButtonTD[1] = TextDrawCreate(325.5000, 293.5000, "LD_SPAC:BLACK");
 	TextDrawFont(Prev@RightButtonTD[1], 4);
 	TextDrawLetterSize(Prev@RightButtonTD[1], 0.5000, 1.0000);
-	TextDrawColor(Prev@RightButtonTD[1], -1);
+	TextDrawColour(Prev@RightButtonTD[1], -1);
 	TextDrawSetShadow(Prev@RightButtonTD[1], 0);
 	TextDrawSetOutline(Prev@RightButtonTD[1], 0);
-	TextDrawBackgroundColor(Prev@RightButtonTD[1], 255);
+	TextDrawBackgroundColour(Prev@RightButtonTD[1], 255);
 	TextDrawSetProportional(Prev@RightButtonTD[1], 1);
 	TextDrawTextSize(Prev@RightButtonTD[1], 54.0000, 17.0000);
 
@@ -250,10 +250,10 @@ static Prev_CreateTextDraws() {
 	Prev@CenterButtonTD[0] = TextDrawCreate(290.5000, 293.0000, "LD_SPAC:WHITE");
 	TextDrawFont(Prev@CenterButtonTD[0], 4);
 	TextDrawLetterSize(Prev@CenterButtonTD[0], 0.5000, 1.0000);
-	TextDrawColor(Prev@CenterButtonTD[0], -1);
+	TextDrawColour(Prev@CenterButtonTD[0], -1);
 	TextDrawSetShadow(Prev@CenterButtonTD[0], 0);
 	TextDrawSetOutline(Prev@CenterButtonTD[0], 0);
-	TextDrawBackgroundColor(Prev@CenterButtonTD[0], 255);
+	TextDrawBackgroundColour(Prev@CenterButtonTD[0], 255);
 	TextDrawSetProportional(Prev@CenterButtonTD[0], 1);
 	TextDrawTextSize(Prev@CenterButtonTD[0], 55.0000, 18.0000);
 	TextDrawSetSelectable(Prev@CenterButtonTD[0], 1);
@@ -262,10 +262,10 @@ static Prev_CreateTextDraws() {
 	Prev@CenterButtonTD[1] = TextDrawCreate(291.0000, 293.5000, "LD_SPAC:BLACK");
 	TextDrawFont(Prev@CenterButtonTD[1], 4);
 	TextDrawLetterSize(Prev@CenterButtonTD[1], 0.5000, 1.0000);
-	TextDrawColor(Prev@CenterButtonTD[1], -1);
+	TextDrawColour(Prev@CenterButtonTD[1], -1);
 	TextDrawSetShadow(Prev@CenterButtonTD[1], 0);
 	TextDrawSetOutline(Prev@CenterButtonTD[1], 0);
-	TextDrawBackgroundColor(Prev@CenterButtonTD[1], 255);
+	TextDrawBackgroundColour(Prev@CenterButtonTD[1], 255);
 	TextDrawSetProportional(Prev@CenterButtonTD[1], 1);
 	TextDrawTextSize(Prev@CenterButtonTD[1], 54.0000, 17.0000);
 
@@ -282,10 +282,10 @@ static Prev_CreateTextDraws() {
 			Prev@ModelTD[textdrawid][0] = TextDrawCreate((148.5000 + (b * DIALOG_PREVIEW_HORIZONTAL_GAP)), (157.5000 + (a * DIALOG_PREVIEW_VERTICAL_GAP)), "LD_SPAC:WHITE");
 			TextDrawFont(Prev@ModelTD[textdrawid][0], 4);
 			TextDrawLetterSize(Prev@ModelTD[textdrawid][0], 0.5000, 1.0000);
-			TextDrawColor(Prev@ModelTD[textdrawid][0], -16776961);
+			TextDrawColour(Prev@ModelTD[textdrawid][0], -16776961);
 			TextDrawSetShadow(Prev@ModelTD[textdrawid][0], 0);
 			TextDrawSetOutline(Prev@ModelTD[textdrawid][0], 0);
-			TextDrawBackgroundColor(Prev@ModelTD[textdrawid][0], 255);
+			TextDrawBackgroundColour(Prev@ModelTD[textdrawid][0], 255);
 			TextDrawSetProportional(Prev@ModelTD[textdrawid][0], 1);
 			TextDrawTextSize(Prev@ModelTD[textdrawid][0], 55.0000, 62.0000);
 			TextDrawSetSelectable(Prev@ModelTD[textdrawid][0], 1);
@@ -294,10 +294,10 @@ static Prev_CreateTextDraws() {
 			Prev@ModelTD[textdrawid][1] = TextDrawCreate((149.0000 + (b * DIALOG_PREVIEW_HORIZONTAL_GAP)), (158.0000 + (a * DIALOG_PREVIEW_VERTICAL_GAP)), "MODEL");
 			TextDrawFont(Prev@ModelTD[textdrawid][1], 5);
 			TextDrawLetterSize(Prev@ModelTD[textdrawid][1], 0.5000, 1.0000);
-			TextDrawColor(Prev@ModelTD[textdrawid][1], -1);
+			TextDrawColour(Prev@ModelTD[textdrawid][1], -1);
 			TextDrawSetShadow(Prev@ModelTD[textdrawid][1], 0);
 			TextDrawSetOutline(Prev@ModelTD[textdrawid][1], 0);
-			TextDrawBackgroundColor(Prev@ModelTD[textdrawid][1], 842150655);
+			TextDrawBackgroundColour(Prev@ModelTD[textdrawid][1], 842150655);
 			TextDrawSetProportional(Prev@ModelTD[textdrawid][1], 1);
 			TextDrawTextSize(Prev@ModelTD[textdrawid][1], 54.0000, 61.0000);
 			TextDrawSetPreviewModel(Prev@ModelTD[textdrawid][1], 132);
@@ -307,10 +307,10 @@ static Prev_CreateTextDraws() {
 			Prev@ModelTD[textdrawid][2] = TextDrawCreate((157.5000 + (b * DIALOG_PREVIEW_HORIZONTAL_GAP)), (204.0000 + (a * DIALOG_PREVIEW_VERTICAL_GAP)), "LD_BEAT:LEFT");
 			TextDrawFont(Prev@ModelTD[textdrawid][2], 4);
 			TextDrawLetterSize(Prev@ModelTD[textdrawid][2], 0.5000, 1.0000);
-			TextDrawColor(Prev@ModelTD[textdrawid][2], -156);
+			TextDrawColour(Prev@ModelTD[textdrawid][2], -156);
 			TextDrawSetShadow(Prev@ModelTD[textdrawid][2], 0);
 			TextDrawSetOutline(Prev@ModelTD[textdrawid][2], 0);
-			TextDrawBackgroundColor(Prev@ModelTD[textdrawid][2], 255);
+			TextDrawBackgroundColour(Prev@ModelTD[textdrawid][2], 255);
 			TextDrawSetProportional(Prev@ModelTD[textdrawid][2], 1);
 			TextDrawTextSize(Prev@ModelTD[textdrawid][2], 10.0000, 10.0000);
 			TextDrawSetSelectable(Prev@ModelTD[textdrawid][2], 1);
@@ -320,10 +320,10 @@ static Prev_CreateTextDraws() {
 			Prev@ModelTD[textdrawid][3] = TextDrawCreate((185.0000 + (b * DIALOG_PREVIEW_HORIZONTAL_GAP)), (204.0000 + (a * DIALOG_PREVIEW_VERTICAL_GAP)), "LD_BEAT:RIGHT");
 			TextDrawFont(Prev@ModelTD[textdrawid][3], 4);
 			TextDrawLetterSize(Prev@ModelTD[textdrawid][3], 0.5000, 1.0000);
-			TextDrawColor(Prev@ModelTD[textdrawid][3], -156);
+			TextDrawColour(Prev@ModelTD[textdrawid][3], -156);
 			TextDrawSetShadow(Prev@ModelTD[textdrawid][3], 0);
 			TextDrawSetOutline(Prev@ModelTD[textdrawid][3], 0);
-			TextDrawBackgroundColor(Prev@ModelTD[textdrawid][3], 255);
+			TextDrawBackgroundColour(Prev@ModelTD[textdrawid][3], 255);
 			TextDrawSetProportional(Prev@ModelTD[textdrawid][3], 1);
 			TextDrawTextSize(Prev@ModelTD[textdrawid][3], 10.0000, 10.0000);
 			TextDrawSetSelectable(Prev@ModelTD[textdrawid][3], 1);
@@ -333,10 +333,10 @@ static Prev_CreateTextDraws() {
 			Prev@ModelTD[textdrawid][4] = TextDrawCreate((191.5000 + (b * DIALOG_PREVIEW_HORIZONTAL_GAP)), (171.0000 + (a * DIALOG_PREVIEW_VERTICAL_GAP)), "LD_BEAT:UP");
 			TextDrawFont(Prev@ModelTD[textdrawid][4], 4);
 			TextDrawLetterSize(Prev@ModelTD[textdrawid][4], 0.5000, 1.0000);
-			TextDrawColor(Prev@ModelTD[textdrawid][4], -156);
+			TextDrawColour(Prev@ModelTD[textdrawid][4], -156);
 			TextDrawSetShadow(Prev@ModelTD[textdrawid][4], 0);
 			TextDrawSetOutline(Prev@ModelTD[textdrawid][4], 0);
-			TextDrawBackgroundColor(Prev@ModelTD[textdrawid][4], 255);
+			TextDrawBackgroundColour(Prev@ModelTD[textdrawid][4], 255);
 			TextDrawSetProportional(Prev@ModelTD[textdrawid][4], 1);
 			TextDrawTextSize(Prev@ModelTD[textdrawid][4], 10.0000, 10.0000);
 			TextDrawSetSelectable(Prev@ModelTD[textdrawid][4], 1);
@@ -346,10 +346,10 @@ static Prev_CreateTextDraws() {
 			Prev@ModelTD[textdrawid][5] = TextDrawCreate((191.5000 + (b * DIALOG_PREVIEW_HORIZONTAL_GAP)), (193.0000 + (a * DIALOG_PREVIEW_VERTICAL_GAP)), "LD_BEAT:DOWN");
 			TextDrawFont(Prev@ModelTD[textdrawid][5], 4);
 			TextDrawLetterSize(Prev@ModelTD[textdrawid][5], 0.5000, 1.0000);
-			TextDrawColor(Prev@ModelTD[textdrawid][5], -156);
+			TextDrawColour(Prev@ModelTD[textdrawid][5], -156);
 			TextDrawSetShadow(Prev@ModelTD[textdrawid][5], 0);
 			TextDrawSetOutline(Prev@ModelTD[textdrawid][5], 0);
-			TextDrawBackgroundColor(Prev@ModelTD[textdrawid][5], 255);
+			TextDrawBackgroundColour(Prev@ModelTD[textdrawid][5], 255);
 			TextDrawSetProportional(Prev@ModelTD[textdrawid][5], 1);
 			TextDrawTextSize(Prev@ModelTD[textdrawid][5], 10.0000, 10.0000);
 			TextDrawSetSelectable(Prev@ModelTD[textdrawid][5], 1);
@@ -397,20 +397,20 @@ static Prev_DestroyTextDraws() {
 	}
 }
 
-static Prev_CreatePlayerTextDraws(playerid, header[],button1[], button2[], button3[], totalItems) {
+static Prev_CreatePlayerTextDraws(playerid, const header[], const button1[], const button2[], const button3[], totalItems) {
     /*
 	* HEADER
 	*/
     Prev@HeaderPTD[playerid] = CreatePlayerTextDraw(playerid, 144.0000, 143.0000, header);
 	PlayerTextDrawFont(playerid, Prev@HeaderPTD[playerid], 2);
 	PlayerTextDrawLetterSize(playerid, Prev@HeaderPTD[playerid], 0.1399, 0.8999);
-	PlayerTextDrawColor(playerid, Prev@HeaderPTD[playerid], -1);
+	PlayerTextDrawColour(playerid, Prev@HeaderPTD[playerid], -1);
 	PlayerTextDrawSetShadow(playerid, Prev@HeaderPTD[playerid], 0);
 	PlayerTextDrawSetOutline(playerid, Prev@HeaderPTD[playerid], 0);
-	PlayerTextDrawBackgroundColor(playerid, Prev@HeaderPTD[playerid], 255);
+	PlayerTextDrawBackgroundColour(playerid, Prev@HeaderPTD[playerid], 255);
 	PlayerTextDrawSetProportional(playerid, Prev@HeaderPTD[playerid], 1);
 	PlayerTextDrawUseBox(playerid, Prev@HeaderPTD[playerid], 1);
-	PlayerTextDrawBoxColor(playerid, Prev@HeaderPTD[playerid], 255);
+	PlayerTextDrawBoxColour(playerid, Prev@HeaderPTD[playerid], 255);
 	PlayerTextDrawTextSize(playerid, Prev@HeaderPTD[playerid], 501.0000, 0.0000);
 
 	/*
@@ -421,10 +421,10 @@ static Prev_CreatePlayerTextDraws(playerid, header[],button1[], button2[], butto
 		PlayerTextDrawFont(playerid, Prev@LeftButtonPTD[playerid], 2);
 		PlayerTextDrawLetterSize(playerid, Prev@LeftButtonPTD[playerid], 0.1399, 0.8999);
 		PlayerTextDrawAlignment(playerid, Prev@LeftButtonPTD[playerid], 2);
-		PlayerTextDrawColor(playerid, Prev@LeftButtonPTD[playerid], -1);
+		PlayerTextDrawColour(playerid, Prev@LeftButtonPTD[playerid], -1);
 		PlayerTextDrawSetShadow(playerid, Prev@LeftButtonPTD[playerid], 0);
 		PlayerTextDrawSetOutline(playerid, Prev@LeftButtonPTD[playerid], 0);
-		PlayerTextDrawBackgroundColor(playerid, Prev@LeftButtonPTD[playerid], 255);
+		PlayerTextDrawBackgroundColour(playerid, Prev@LeftButtonPTD[playerid], 255);
 		PlayerTextDrawSetProportional(playerid, Prev@LeftButtonPTD[playerid], 1);
 		PlayerTextDrawTextSize(playerid, Prev@LeftButtonPTD[playerid], 0.0000, 480.0000);
 	} else {
@@ -439,10 +439,10 @@ static Prev_CreatePlayerTextDraws(playerid, header[],button1[], button2[], butto
 		PlayerTextDrawFont(playerid, Prev@RightButtonPTD[playerid], 2);
 		PlayerTextDrawLetterSize(playerid, Prev@RightButtonPTD[playerid], 0.1399, 0.8999);
 		PlayerTextDrawAlignment(playerid, Prev@RightButtonPTD[playerid], 2);
-		PlayerTextDrawColor(playerid, Prev@RightButtonPTD[playerid], -1);
+		PlayerTextDrawColour(playerid, Prev@RightButtonPTD[playerid], -1);
 		PlayerTextDrawSetShadow(playerid, Prev@RightButtonPTD[playerid], 0);
 		PlayerTextDrawSetOutline(playerid, Prev@RightButtonPTD[playerid], 0);
-		PlayerTextDrawBackgroundColor(playerid, Prev@RightButtonPTD[playerid], 255);
+		PlayerTextDrawBackgroundColour(playerid, Prev@RightButtonPTD[playerid], 255);
 		PlayerTextDrawSetProportional(playerid, Prev@RightButtonPTD[playerid], 1);
 		PlayerTextDrawTextSize(playerid, Prev@RightButtonPTD[playerid], 0.0000, 480.0000);
     } else {
@@ -457,10 +457,10 @@ static Prev_CreatePlayerTextDraws(playerid, header[],button1[], button2[], butto
 		PlayerTextDrawFont(playerid, Prev@CenterButtonPTD[playerid], 2);
 		PlayerTextDrawLetterSize(playerid, Prev@CenterButtonPTD[playerid], 0.1399, 0.8999);
 		PlayerTextDrawAlignment(playerid, Prev@CenterButtonPTD[playerid], 2);
-		PlayerTextDrawColor(playerid, Prev@CenterButtonPTD[playerid], -1);
+		PlayerTextDrawColour(playerid, Prev@CenterButtonPTD[playerid], -1);
 		PlayerTextDrawSetShadow(playerid, Prev@CenterButtonPTD[playerid], 0);
 		PlayerTextDrawSetOutline(playerid, Prev@CenterButtonPTD[playerid], 0);
-		PlayerTextDrawBackgroundColor(playerid, Prev@CenterButtonPTD[playerid], 255);
+		PlayerTextDrawBackgroundColour(playerid, Prev@CenterButtonPTD[playerid], 255);
 		PlayerTextDrawSetProportional(playerid, Prev@CenterButtonPTD[playerid], 1);
 		PlayerTextDrawTextSize(playerid, Prev@CenterButtonPTD[playerid], 0.0000, 480.0000);
     } else {
@@ -475,10 +475,10 @@ static Prev_CreatePlayerTextDraws(playerid, header[],button1[], button2[], butto
 		PlayerTextDrawFont(playerid, Prev@PageNumberPTD[playerid], 2);
 		PlayerTextDrawLetterSize(playerid, Prev@PageNumberPTD[playerid], 0.1399, 0.8999);
 		PlayerTextDrawAlignment(playerid, Prev@PageNumberPTD[playerid], 3);
-		PlayerTextDrawColor(playerid, Prev@PageNumberPTD[playerid], -1);
+		PlayerTextDrawColour(playerid, Prev@PageNumberPTD[playerid], -1);
 		PlayerTextDrawSetShadow(playerid, Prev@PageNumberPTD[playerid], 0);
 		PlayerTextDrawSetOutline(playerid, Prev@PageNumberPTD[playerid], 0);
-		PlayerTextDrawBackgroundColor(playerid, Prev@PageNumberPTD[playerid], 255);
+		PlayerTextDrawBackgroundColour(playerid, Prev@PageNumberPTD[playerid], 255);
 		PlayerTextDrawSetProportional(playerid, Prev@PageNumberPTD[playerid], 1);
 		PlayerTextDrawTextSize(playerid, Prev@PageNumberPTD[playerid], 501.0000, 0.0000);
 	} else {
@@ -504,23 +504,23 @@ static Prev_CreatePlayerTextDraws(playerid, header[],button1[], button2[], butto
 			Prev@ModelTextPTD[playerid][textdrawid][0] = CreatePlayerTextDraw(playerid, (153.5000 + (b * DIALOG_PREVIEW_HORIZONTAL_GAP)), (161.5000 + (a * DIALOG_PREVIEW_VERTICAL_GAP)), "");
 			PlayerTextDrawFont(playerid, Prev@ModelTextPTD[playerid][textdrawid][0], 2);
 			PlayerTextDrawLetterSize(playerid, Prev@ModelTextPTD[playerid][textdrawid][0], 0.1399, 0.8999);
-			PlayerTextDrawColor(playerid, Prev@ModelTextPTD[playerid][textdrawid][0], -1);
+			PlayerTextDrawColour(playerid, Prev@ModelTextPTD[playerid][textdrawid][0], -1);
 			PlayerTextDrawSetShadow(playerid, Prev@ModelTextPTD[playerid][textdrawid][0], 0);
 			PlayerTextDrawSetOutline(playerid, Prev@ModelTextPTD[playerid][textdrawid][0], 0);
-			PlayerTextDrawBackgroundColor(playerid, Prev@ModelTextPTD[playerid][textdrawid][0], 255);
+			PlayerTextDrawBackgroundColour(playerid, Prev@ModelTextPTD[playerid][textdrawid][0], 255);
 			PlayerTextDrawSetProportional(playerid, Prev@ModelTextPTD[playerid][textdrawid][0], 1);
 			PlayerTextDrawUseBox(playerid, Prev@ModelTextPTD[playerid][textdrawid][0], 1);
-			PlayerTextDrawBoxColor(playerid, Prev@ModelTextPTD[playerid][textdrawid][0], 0);
+			PlayerTextDrawBoxColour(playerid, Prev@ModelTextPTD[playerid][textdrawid][0], 0);
 			PlayerTextDrawTextSize(playerid, Prev@ModelTextPTD[playerid][textdrawid][0], (201.5000 + (b * DIALOG_PREVIEW_HORIZONTAL_GAP)), 0.0000);
 
 			Prev@ModelTextPTD[playerid][textdrawid][1] = CreatePlayerTextDraw(playerid, (176.5000 + (b * DIALOG_PREVIEW_HORIZONTAL_GAP)), (204.5000 + (a * DIALOG_PREVIEW_VERTICAL_GAP)), "0.0");
 			PlayerTextDrawFont(playerid, Prev@ModelTextPTD[playerid][textdrawid][1], 2);
 			PlayerTextDrawLetterSize(playerid, Prev@ModelTextPTD[playerid][textdrawid][1], 0.1399, 0.8999);
 			PlayerTextDrawAlignment(playerid, Prev@ModelTextPTD[playerid][textdrawid][1], 2);
-			PlayerTextDrawColor(playerid, Prev@ModelTextPTD[playerid][textdrawid][1], -156);
+			PlayerTextDrawColour(playerid, Prev@ModelTextPTD[playerid][textdrawid][1], -156);
 			PlayerTextDrawSetShadow(playerid, Prev@ModelTextPTD[playerid][textdrawid][1], 0);
 			PlayerTextDrawSetOutline(playerid, Prev@ModelTextPTD[playerid][textdrawid][1], 0);
-			PlayerTextDrawBackgroundColor(playerid, Prev@ModelTextPTD[playerid][textdrawid][1], 255);
+			PlayerTextDrawBackgroundColour(playerid, Prev@ModelTextPTD[playerid][textdrawid][1], 255);
 			PlayerTextDrawSetProportional(playerid, Prev@ModelTextPTD[playerid][textdrawid][1], 1);
 			PlayerTextDrawTextSize(playerid, Prev@ModelTextPTD[playerid][textdrawid][1], 640.0000, 480.0000);
 
@@ -528,10 +528,10 @@ static Prev_CreatePlayerTextDraws(playerid, header[],button1[], button2[], butto
 			PlayerTextDrawFont(playerid, Prev@ModelTextPTD[playerid][textdrawid][2], 2);
 			PlayerTextDrawLetterSize(playerid, Prev@ModelTextPTD[playerid][textdrawid][2], 0.1399, 0.8999);
 			PlayerTextDrawAlignment(playerid, Prev@ModelTextPTD[playerid][textdrawid][2], 2);
-			PlayerTextDrawColor(playerid, Prev@ModelTextPTD[playerid][textdrawid][2], -156);
+			PlayerTextDrawColour(playerid, Prev@ModelTextPTD[playerid][textdrawid][2], -156);
 			PlayerTextDrawSetShadow(playerid, Prev@ModelTextPTD[playerid][textdrawid][2], 0);
 			PlayerTextDrawSetOutline(playerid, Prev@ModelTextPTD[playerid][textdrawid][2], 0);
-			PlayerTextDrawBackgroundColor(playerid, Prev@ModelTextPTD[playerid][textdrawid][2], 255);
+			PlayerTextDrawBackgroundColour(playerid, Prev@ModelTextPTD[playerid][textdrawid][2], 255);
 			PlayerTextDrawSetProportional(playerid, Prev@ModelTextPTD[playerid][textdrawid][2], 1);
 			PlayerTextDrawTextSize(playerid, Prev@ModelTextPTD[playerid][textdrawid][2], 640.0000, 480.0000);
 		}
@@ -595,13 +595,13 @@ static Prev_UpdateScrollBar(playerid, page, totalPages) {
     Prev@ScrollBarPTD[playerid] = CreatePlayerTextDraw(playerid, 489.0000, y, "LD_SPAC:WHITE");
 	PlayerTextDrawFont(playerid, Prev@ScrollBarPTD[playerid], 4);
 	PlayerTextDrawLetterSize(playerid, Prev@ScrollBarPTD[playerid], 0.0000, 18.2000);
-	PlayerTextDrawColor(playerid, Prev@ScrollBarPTD[playerid], -16776961);
+	PlayerTextDrawColour(playerid, Prev@ScrollBarPTD[playerid], -16776961);
 	PlayerTextDrawSetShadow(playerid, Prev@ScrollBarPTD[playerid], 0);
 	PlayerTextDrawSetOutline(playerid, Prev@ScrollBarPTD[playerid], 0);
-	PlayerTextDrawBackgroundColor(playerid, Prev@ScrollBarPTD[playerid], 255);
+	PlayerTextDrawBackgroundColour(playerid, Prev@ScrollBarPTD[playerid], 255);
 	PlayerTextDrawSetProportional(playerid, Prev@ScrollBarPTD[playerid], 1);
 	PlayerTextDrawUseBox(playerid, Prev@ScrollBarPTD[playerid], 1);
-	PlayerTextDrawBoxColor(playerid, Prev@ScrollBarPTD[playerid], 150);
+	PlayerTextDrawBoxColour(playerid, Prev@ScrollBarPTD[playerid], 150);
 	PlayerTextDrawTextSize(playerid, Prev@ScrollBarPTD[playerid], 7.5000, height);
 
 	PlayerTextDrawShow(playerid, Prev@ScrollBarPTD[playerid]);
@@ -647,11 +647,11 @@ static Prev_UpdateListitems(playerid, page, selected, totalItems) {
 
 			TextDrawSetPreviewModel(Prev@ModelTD[textdrawid][1], modelid);
 			TextDrawSetPreviewRot(Prev@ModelTD[textdrawid][1], rx, ry, rz, zoom);
-			TextDrawSetPreviewVehCol(Prev@ModelTD[textdrawid][1], color1, color2);
+			TextDrawSetPreviewVehicleColours(Prev@ModelTD[textdrawid][1], color1, color2);
 			TextDrawShowForPlayer(playerid, Prev@ModelTD[textdrawid][1]);
 
 			if (textdrawid == selected) {
-				TextDrawColor(Prev@ModelTD[textdrawid][0], DIALOG_PREVIEW_SELECT_COLOR);
+				TextDrawColour(Prev@ModelTD[textdrawid][0], DIALOG_PREVIEW_SELECT_COLOR);
 				TextDrawShowForPlayer(playerid, Prev@ModelTD[textdrawid][0]);
 
 			    TextDrawShowForPlayer(playerid, Prev@ModelTD[textdrawid][2]);
@@ -669,7 +669,7 @@ static Prev_UpdateListitems(playerid, page, selected, totalItems) {
 			    PlayerTextDrawSetString(playerid, Prev@ModelTextPTD[playerid][textdrawid][2], string);
 			    PlayerTextDrawShow(playerid, Prev@ModelTextPTD[playerid][textdrawid][2]);
 			} else {
-				TextDrawColor(Prev@ModelTD[textdrawid][0], DIALOG_PREVIEW_UNSELECT_COLOR);
+				TextDrawColour(Prev@ModelTD[textdrawid][0], DIALOG_PREVIEW_UNSELECT_COLOR);
 				TextDrawShowForPlayer(playerid, Prev@ModelTD[textdrawid][0]);
 
 			    TextDrawHideForPlayer(playerid, Prev@ModelTD[textdrawid][2]);
@@ -1109,7 +1109,7 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid) {
 						// reset previous listitem
 						new previous = Prev@PlayerDialogListitem[playerid];
 
-					 	TextDrawColor(Prev@ModelTD[previous][0], DIALOG_PREVIEW_UNSELECT_COLOR);
+					 	TextDrawColour(Prev@ModelTD[previous][0], DIALOG_PREVIEW_UNSELECT_COLOR);
 						TextDrawShowForPlayer(playerid, Prev@ModelTD[previous][0]);
 
 					    TextDrawHideForPlayer(playerid, Prev@ModelTD[previous][2]);
@@ -1122,7 +1122,7 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid) {
 					    PlayerTextDrawHide(playerid, Prev@ModelTextPTD[playerid][previous][2]);
 
 					    // update new selected listitem
-					    TextDrawColor(Prev@ModelTD[i][0], DIALOG_PREVIEW_SELECT_COLOR);
+					    TextDrawColour(Prev@ModelTD[i][0], DIALOG_PREVIEW_SELECT_COLOR);
 						TextDrawShowForPlayer(playerid, Prev@ModelTD[i][0]);
 
 					    TextDrawShowForPlayer(playerid, Prev@ModelTD[i][2]);

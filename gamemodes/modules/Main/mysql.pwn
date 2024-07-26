@@ -1,5 +1,5 @@
 #include <a_mysql>
-#include <YSI_Coding\y_hooks>
+#include <YSI\YSI_Coding\y_hooks>
 
 static 
 	MySQL:iDatabase;
@@ -12,7 +12,7 @@ MySQL: Handle()
 hook OnGameModeInit() 
 {
 	iDatabase = mysql_connect(MYSQL_HOST, MYSQL_USER, MYSQL_PASS, MYSQL_DB);
-	if(mysql_errno(iDatabase))
+	if(mysql_errno(iDatabase) != 0)
 	{
 		print("> Ket noi de du lieu that bai."); 
 		print(">>> This Server Will Shutdown After 5 Second");

@@ -11,50 +11,50 @@ func:OnPlayerCreateSpeedo(playerid)
     SpeedoPTD[playerid][0] = CreatePlayerTextDraw(playerid, 463.000, 266.000, "mdl-2009:speedo");
     PlayerTextDrawTextSize(playerid, SpeedoPTD[playerid][0], 197.000, 230.000);
     PlayerTextDrawAlignment(playerid, SpeedoPTD[playerid][0], 1);
-    PlayerTextDrawColor(playerid, SpeedoPTD[playerid][0], -1);
+    PlayerTextDrawColour(playerid, SpeedoPTD[playerid][0], -1);
     PlayerTextDrawSetShadow(playerid, SpeedoPTD[playerid][0], 0);
     PlayerTextDrawSetOutline(playerid, SpeedoPTD[playerid][0], 0);
-    PlayerTextDrawBackgroundColor(playerid, SpeedoPTD[playerid][0], 255);
+    PlayerTextDrawBackgroundColour(playerid, SpeedoPTD[playerid][0], 255);
     PlayerTextDrawFont(playerid, SpeedoPTD[playerid][0], 4);
     PlayerTextDrawSetProportional(playerid, SpeedoPTD[playerid][0], 1);
 
     SpeedoPTD[playerid][1] = CreatePlayerTextDraw(playerid, 526.000, 341.000, "mdl-2009:seatbelt");
     PlayerTextDrawTextSize(playerid, SpeedoPTD[playerid][1], 15.000, 18.000);
     PlayerTextDrawAlignment(playerid, SpeedoPTD[playerid][1], 1);
-    PlayerTextDrawColor(playerid, SpeedoPTD[playerid][1], -1);
+    PlayerTextDrawColour(playerid, SpeedoPTD[playerid][1], -1);
     PlayerTextDrawSetShadow(playerid, SpeedoPTD[playerid][1], 0);
     PlayerTextDrawSetOutline(playerid, SpeedoPTD[playerid][1], 0);
-    PlayerTextDrawBackgroundColor(playerid, SpeedoPTD[playerid][1], 255);
+    PlayerTextDrawBackgroundColour(playerid, SpeedoPTD[playerid][1], 255);
     PlayerTextDrawFont(playerid, SpeedoPTD[playerid][1], 4);
     PlayerTextDrawSetProportional(playerid, SpeedoPTD[playerid][1], 1);
 
     SpeedoPTD[playerid][2] = CreatePlayerTextDraw(playerid, 583.000, 341.000, "mdl-2009:car_lock");
     PlayerTextDrawTextSize(playerid, SpeedoPTD[playerid][2], 18.000, 18.000);
     PlayerTextDrawAlignment(playerid, SpeedoPTD[playerid][2], 1);
-    PlayerTextDrawColor(playerid, SpeedoPTD[playerid][2], -1);
+    PlayerTextDrawColour(playerid, SpeedoPTD[playerid][2], -1);
     PlayerTextDrawSetShadow(playerid, SpeedoPTD[playerid][2], 0);
     PlayerTextDrawSetOutline(playerid, SpeedoPTD[playerid][2], 0);
-    PlayerTextDrawBackgroundColor(playerid, SpeedoPTD[playerid][2], 255);
+    PlayerTextDrawBackgroundColour(playerid, SpeedoPTD[playerid][2], 255);
     PlayerTextDrawFont(playerid, SpeedoPTD[playerid][2], 4);
     PlayerTextDrawSetProportional(playerid, SpeedoPTD[playerid][2], 1);
 
     SpeedoPTD[playerid][3] = CreatePlayerTextDraw(playerid, 557.000, 319.000, "mdl-2009:engine");
     PlayerTextDrawTextSize(playerid, SpeedoPTD[playerid][3], 9.000, 16.000);
     PlayerTextDrawAlignment(playerid, SpeedoPTD[playerid][3], 1);
-    PlayerTextDrawColor(playerid, SpeedoPTD[playerid][3], -1);
+    PlayerTextDrawColour(playerid, SpeedoPTD[playerid][3], -1);
     PlayerTextDrawSetShadow(playerid, SpeedoPTD[playerid][3], 0);
     PlayerTextDrawSetOutline(playerid, SpeedoPTD[playerid][3], 0);
-    PlayerTextDrawBackgroundColor(playerid, SpeedoPTD[playerid][3], 255);
+    PlayerTextDrawBackgroundColour(playerid, SpeedoPTD[playerid][3], 255);
     PlayerTextDrawFont(playerid, SpeedoPTD[playerid][3], 4);
     PlayerTextDrawSetProportional(playerid, SpeedoPTD[playerid][3], 1);
 
     SpeedoPTD[playerid][4] = CreatePlayerTextDraw(playerid, 557.000, 319.000, "mdl-2009:on_off");
     PlayerTextDrawTextSize(playerid, SpeedoPTD[playerid][4], 9.000, 17.000);
     PlayerTextDrawAlignment(playerid, SpeedoPTD[playerid][4], 1);
-    PlayerTextDrawColor(playerid, SpeedoPTD[playerid][4], -1);
+    PlayerTextDrawColour(playerid, SpeedoPTD[playerid][4], -1);
     PlayerTextDrawSetShadow(playerid, SpeedoPTD[playerid][4], 0);
     PlayerTextDrawSetOutline(playerid, SpeedoPTD[playerid][4], 0);
-    PlayerTextDrawBackgroundColor(playerid, SpeedoPTD[playerid][4], 255);
+    PlayerTextDrawBackgroundColour(playerid, SpeedoPTD[playerid][4], 255);
     PlayerTextDrawFont(playerid, SpeedoPTD[playerid][4], 4);
     PlayerTextDrawSetProportional(playerid, SpeedoPTD[playerid][4], 1);
 
@@ -62,10 +62,10 @@ func:OnPlayerCreateSpeedo(playerid)
     PlayerTextDrawLetterSize(playerid, SpeedoPTD[playerid][5], 0.180, 0.799);
     PlayerTextDrawTextSize(playerid, SpeedoPTD[playerid][5], -9.000, -4.000);
     PlayerTextDrawAlignment(playerid, SpeedoPTD[playerid][5], 1);
-    PlayerTextDrawColor(playerid, SpeedoPTD[playerid][5], -1);
+    PlayerTextDrawColour(playerid, SpeedoPTD[playerid][5], -1);
     PlayerTextDrawSetShadow(playerid, SpeedoPTD[playerid][5], 1);
     PlayerTextDrawSetOutline(playerid, SpeedoPTD[playerid][5], 0);
-    PlayerTextDrawBackgroundColor(playerid, SpeedoPTD[playerid][5], 150);
+    PlayerTextDrawBackgroundColour(playerid, SpeedoPTD[playerid][5], 150);
     PlayerTextDrawFont(playerid, SpeedoPTD[playerid][5], 3);
     PlayerTextDrawSetProportional(playerid, SpeedoPTD[playerid][5], 1);
 
@@ -73,10 +73,10 @@ func:OnPlayerCreateSpeedo(playerid)
     PlayerTextDrawLetterSize(playerid, SpeedoPTD[playerid][6], 0.180, 0.699);
     PlayerTextDrawTextSize(playerid, SpeedoPTD[playerid][6], 0.000, 206.000);
     PlayerTextDrawAlignment(playerid, SpeedoPTD[playerid][6], 2);
-    PlayerTextDrawColor(playerid, SpeedoPTD[playerid][6], -1);
+    PlayerTextDrawColour(playerid, SpeedoPTD[playerid][6], -1);
     PlayerTextDrawSetShadow(playerid, SpeedoPTD[playerid][6], 1);
     PlayerTextDrawSetOutline(playerid, SpeedoPTD[playerid][6], 1);
-    PlayerTextDrawBackgroundColor(playerid, SpeedoPTD[playerid][6], 150);
+    PlayerTextDrawBackgroundColour(playerid, SpeedoPTD[playerid][6], 150);
     PlayerTextDrawFont(playerid, SpeedoPTD[playerid][6], 3);
     PlayerTextDrawSetProportional(playerid, SpeedoPTD[playerid][6], 1);
 
@@ -84,10 +84,10 @@ func:OnPlayerCreateSpeedo(playerid)
     PlayerTextDrawLetterSize(playerid, KMH[playerid], 0.289, 1.199);
     PlayerTextDrawTextSize(playerid, KMH[playerid], 0.000, 23.000);
     PlayerTextDrawAlignment(playerid, KMH[playerid], 2);
-    PlayerTextDrawColor(playerid, KMH[playerid], -1);
+    PlayerTextDrawColour(playerid, KMH[playerid], -1);
     PlayerTextDrawSetShadow(playerid, KMH[playerid], 1);
     PlayerTextDrawSetOutline(playerid, KMH[playerid], 0);
-    PlayerTextDrawBackgroundColor(playerid, KMH[playerid], 150);
+    PlayerTextDrawBackgroundColour(playerid, KMH[playerid], 150);
     PlayerTextDrawFont(playerid, KMH[playerid], 3);
     PlayerTextDrawSetProportional(playerid, KMH[playerid], 1);
 
@@ -95,10 +95,10 @@ func:OnPlayerCreateSpeedo(playerid)
     PlayerTextDrawLetterSize(playerid, Odo[playerid], 0.189, 0.699);
     PlayerTextDrawTextSize(playerid, Odo[playerid], 0.000, 23.000);
     PlayerTextDrawAlignment(playerid, Odo[playerid], 2);
-    PlayerTextDrawColor(playerid, Odo[playerid], -1);
+    PlayerTextDrawColour(playerid, Odo[playerid], -1);
     PlayerTextDrawSetShadow(playerid, Odo[playerid], 1);
     PlayerTextDrawSetOutline(playerid, Odo[playerid], 0);
-    PlayerTextDrawBackgroundColor(playerid, Odo[playerid], 150);
+    PlayerTextDrawBackgroundColour(playerid, Odo[playerid], 150);
     PlayerTextDrawFont(playerid, Odo[playerid], 3);
     PlayerTextDrawSetProportional(playerid, Odo[playerid], 1);
     return 1;

@@ -1,4 +1,4 @@
-#include <YSI_Coding\y_hooks>
+#include <YSI\YSI_Coding\y_hooks>
 
 hook OnPlayerConnect(playerid)
 {
@@ -32,7 +32,7 @@ InvClick(playerid, PlayerText:playertextid)
 				pCurrentSelect[playerid] = PlayerInvInfo[playerid][PlayerPage[playerid]][pSelectItemID];
 				if(pCurrentSelect[playerid] > 0)
 				{
-					PlayerTextDrawColor(playerid, ItemInv[playerid][PlayerPage[playerid]][pCurrentSelect[playerid]-1], -1);
+					PlayerTextDrawColour(playerid, ItemInv[playerid][PlayerPage[playerid]][pCurrentSelect[playerid]-1], -1);
 					ReloadPlayerTextDraw(playerid, ItemInv[playerid][PlayerPage[playerid]][pCurrentSelect[playerid]-1]);
 				}
 
@@ -42,7 +42,7 @@ InvClick(playerid, PlayerText:playertextid)
 
 				if(pCurrentSelect[playerid] == pSelect[playerid]) { // Cancel Select
 					
-					PlayerTextDrawColor(playerid, ItemInv[playerid][PlayerPage[playerid]][pCurrentSelect[playerid]-1], -1);
+					PlayerTextDrawColour(playerid, ItemInv[playerid][PlayerPage[playerid]][pCurrentSelect[playerid]-1], -1);
 					ReloadPlayerTextDraw(playerid, ItemInv[playerid][PlayerPage[playerid]][pCurrentSelect[playerid]-1]);
 
 					PlayerInvInfo[playerid][PlayerPage[playerid]][pSelectItemID] = 0;

@@ -6,9 +6,9 @@ func:OnPlayerLoadPortersJobTD(playerid){
     PlayerTextDrawSetOutline(playerid, PortersTD[playerid][0], 1);
     PlayerTextDrawSetShadow(playerid, PortersTD[playerid][0], 0);
     PlayerTextDrawAlignment(playerid, PortersTD[playerid][0], 1);
-    PlayerTextDrawColor(playerid, PortersTD[playerid][0], -1);
-    PlayerTextDrawBackgroundColor(playerid, PortersTD[playerid][0], 255);
-    PlayerTextDrawBoxColor(playerid, PortersTD[playerid][0], 50);
+    PlayerTextDrawColour(playerid, PortersTD[playerid][0], -1);
+    PlayerTextDrawBackgroundColour(playerid, PortersTD[playerid][0], 255);
+    PlayerTextDrawBoxColour(playerid, PortersTD[playerid][0], 50);
     PlayerTextDrawUseBox(playerid, PortersTD[playerid][0], 1);
     PlayerTextDrawSetProportional(playerid, PortersTD[playerid][0], 1);
     PlayerTextDrawSetSelectable(playerid, PortersTD[playerid][0], 0);
@@ -20,9 +20,9 @@ func:OnPlayerLoadPortersJobTD(playerid){
     PlayerTextDrawSetOutline(playerid, PortersTD[playerid][1], 1);
     PlayerTextDrawSetShadow(playerid, PortersTD[playerid][1], 0);
     PlayerTextDrawAlignment(playerid, PortersTD[playerid][1], 1);
-    PlayerTextDrawColor(playerid, PortersTD[playerid][1], -1);
-    PlayerTextDrawBackgroundColor(playerid, PortersTD[playerid][1], 255);
-    PlayerTextDrawBoxColor(playerid, PortersTD[playerid][1], 50);
+    PlayerTextDrawColour(playerid, PortersTD[playerid][1], -1);
+    PlayerTextDrawBackgroundColour(playerid, PortersTD[playerid][1], 255);
+    PlayerTextDrawBoxColour(playerid, PortersTD[playerid][1], 50);
     PlayerTextDrawUseBox(playerid, PortersTD[playerid][1], 1);
     PlayerTextDrawSetProportional(playerid, PortersTD[playerid][1], 1);
     PlayerTextDrawSetSelectable(playerid, PortersTD[playerid][1], 1);

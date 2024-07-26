@@ -1,6 +1,6 @@
-#include <YSI_Coding\y_hooks>
+#include <YSI\YSI_Coding\y_hooks>
 
-func:GetNumberic(szInput[])
+func:GetNumberic(const szInput[])
 {
     new szOutput[1280];
     for(new i; i < strlen(szInput); i++)

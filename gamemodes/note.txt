@@ -1,2 +1,7 @@
-Job Road Repair
-- NPC Job
+- Tối ưu hóa timer
+- Fix request class
+
+* Tồn đọng:
+- Treo lâu ngốn nhiều tài nguyên gây quá tải server
+- Vượt ngưỡng asklimit , msglimit
+- Lỗi discord connect

@@ -10,16 +10,13 @@ public OnPlayerConnect(playerid)
 {
     PlayerSelectSlot[playerid] = INVAILID_NUMBER;
     CountGuide[playerid] = 0;
-    // InvWeight[playerid] = 0.0;
-    // InvMaxWeight[playerid] = 10.0;
     CreateFadeEffectTextDraw(playerid);
     CreateHienTextDraw(playerid);
     SetPVarString(playerid, "Current_IC_@", player_get_name(playerid));
     TogglePlayerSpectating(playerid, 0);
 
     CreatePlayerInfo(playerid);
-    InitPlayerVehMap();
-
+    // InitPlayerVehMap();
     return 1;
 }
 
@@ -95,7 +92,8 @@ public OnPlayerUpdate(playerid)
         GetPlayerFacingAngle(playerid, Character[playerid][char_last_Pos][3]);
     }
 
-    // UpdateTextTime(playerid);
+    defer CoreUpdate(playerid);
+    defer UpdatePlayerHud(playerid);
 
     new info_f[128];
     format(info_f, 128, "ID: ~w~%d", playerid);
@@ -107,9 +105,6 @@ public OnPlayerUpdate(playerid)
     format(info_f, 128, "%d", GetTotalPlayerOnline());
     TextDrawSetString(InfoTD[1], info_f);
     TextDrawShowForPlayer(playerid, InfoTD[1]);
-
-    ReloadPlayerTextDraw(playerid, InfoPTD[playerid][0]);
-    ReloadPlayerTextDraw(playerid, InfoPTD[playerid][1]);
     return 1;
 }
 public OnPlayerSpawn(playerid)
@@ -156,27 +151,27 @@ public OnPlayerLoad(playerid)
     return 1;
 }
 
+public OnPlayerRequestClass(playerid, classid)
+{
+    if(IsPlayerNPC(playerid)) return 1;
+    if(Character[playerid][char_Login] == true)
+    {
+        SetSpawnInfo(playerid, 0, Character[playerid][char_Skin], Character[playerid][char_last_Pos][0],Character[playerid][char_last_Pos][1],Character[playerid][char_last_Pos][2],Character[playerid][char_last_Pos][3],0,0,0,0,0,0);
+        TogglePlayerSpectating(playerid, false);
+    }
+    else
+    {
+        TogglePlayerSpectating(playerid, true);
+    }
+
+    return 1;
+}
 forward ForceSpawn(playerid);
 public ForceSpawn(playerid)
 {
-    SpawnPlayer(playerid);
+    SetSpawnInfo(playerid, 0, Character[playerid][char_Skin], Character[playerid][char_last_Pos][0],Character[playerid][char_last_Pos][1],Character[playerid][char_last_Pos][2],Character[playerid][char_last_Pos][3],0,0,0,0,0,0);
+    // SpawnPlayer(playerid);
 }
-
-public OnPlayerRequestClass(playerid, classid)
-{
-    if (Character[playerid][char_Login] == true)
-    {
-        TogglePlayerSpectating(playerid, 0);
-        SetTimerEx("ForceSpawn", 1000, 0, "i", playerid);
-    }
-    if (Character[playerid][char_Login] == false)
-    {
-        TogglePlayerSpectating(playerid, 1);
-        SetPlayerJoinCamera(playerid);
-    }
-    return 1;
-}
-
 public OnPlayerEnterCheckpoint(playerid)
 {
     OnPlayerEnterCheckpointElectrician(playerid);

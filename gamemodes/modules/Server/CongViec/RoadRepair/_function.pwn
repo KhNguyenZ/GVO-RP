@@ -1,5 +1,5 @@
 #include <progress3D>
-#include <YSI_Coding\y_hooks>
+#include <YSI\YSI_Coding\y_hooks>
 #define IsPlayerRoadRepair(%0) (Character[%0][char_Job] == JOB_ROADREPAIR)
 func:SetPlayerDamagePoint(playerid)
 {

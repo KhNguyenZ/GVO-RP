@@ -122,7 +122,7 @@ stock ShowPlayerCircleProgress(playerid, value, Float:pos_x, Float:pos_y, color 
 		PlayerTextDrawAlignment(playerid, __ctd[playerid][ctd_][count], 2);
 		PlayerTextDrawLetterSize(playerid, __ctd[playerid][ctd_][count], thickness, thickness * 3.0);
 		PlayerTextDrawSetShadow(playerid, __ctd[playerid][ctd_][count], 0);
-		PlayerTextDrawColor(playerid, __ctd[playerid][ctd_][count], percent <= count ? (background_color) : (color));
+		PlayerTextDrawColour(playerid, __ctd[playerid][ctd_][count], percent <= count ? (background_color) : (color));
 		PlayerTextDrawShow(playerid, __ctd[playerid][ctd_][count]);
 		count ++;
 	}

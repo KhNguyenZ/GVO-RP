@@ -1,4 +1,4 @@
-#include <YSI_Coding\y_hooks>
+#include <YSI\YSI_Coding\y_hooks>
 
 func:DepositPlayer(playerid, cash_amount)
 {

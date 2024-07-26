@@ -182,11 +182,11 @@ static stock _WC_IncludeStates() <_ALS : _ALS_go> {}
 	#endif
 
 	#if !defined PlayerTextDrawBackgroundColour
-		#define PlayerTextDrawBackgroundColour PlayerTextDrawBackgroundColor
+		#define PlayerTextDrawBackgroundColour PlayerTextDrawBackgroundColour
 	#endif
 
 	#if !defined PlayerTextDrawColour
-		#define PlayerTextDrawColour PlayerTextDrawColor
+		#define PlayerTextDrawColour PlayerTextDrawColour
 	#endif
 
 	#if !defined TextDrawBackgroundColour
@@ -2289,11 +2289,11 @@ stock WC_PlayerTextDrawAlignment(playerid, PlayerText:text, TEXT_DRAW_ALIGN:alig
 	return PlayerTextDrawAlignment(playerid, text, alignment);
 }
 
-stock WC_PlayerTextDrawColor(playerid, PlayerText:text, color)
+stock WC_PlayerTextDrawColour(playerid, PlayerText:text, color)
 {
 	if (playerid < 0 || playerid >= MAX_PLAYERS) return 0;
 	if (_:text < 0 || text >= PlayerText:MAX_PLAYER_TEXT_DRAWS || s_InternalPlayerTextDraw[playerid][text]) return 0;
-	return PlayerTextDrawColor(playerid, text, color);
+	return PlayerTextDrawColour(playerid, text, color);
 }
 
 stock WC_PlayerTextDrawUseBox(playerid, PlayerText:text, use)
@@ -2303,11 +2303,11 @@ stock WC_PlayerTextDrawUseBox(playerid, PlayerText:text, use)
 	return PlayerTextDrawUseBox(playerid, text, !!use);
 }
 
-stock WC_PlayerTextDrawBoxColor(playerid, PlayerText:text, color)
+stock WC_PlayerTextDrawBoxColour(playerid, PlayerText:text, color)
 {
 	if (playerid < 0 || playerid >= MAX_PLAYERS) return 0;
 	if (_:text < 0 || text >= PlayerText:MAX_PLAYER_TEXT_DRAWS || s_InternalPlayerTextDraw[playerid][text]) return 0;
-	return PlayerTextDrawBoxColor(playerid, text, color);
+	return PlayerTextDrawBoxColour(playerid, text, color);
 }
 
 stock WC_PlayerTextDrawSetShadow(playerid, PlayerText:text, size)
@@ -2328,7 +2328,7 @@ stock WC_PlayerTextDrawBackgroundColo(playerid, PlayerText:text, color)
 {
 	if (playerid < 0 || playerid >= MAX_PLAYERS) return 0;
 	if (_:text < 0 || text >= PlayerText:MAX_PLAYER_TEXT_DRAWS || s_InternalPlayerTextDraw[playerid][text]) return 0;
-	return PlayerTextDrawBackgroundColor(playerid, text, color);
+	return PlayerTextDrawBackgroundColour(playerid, text, color);
 }
 
 stock WC_PlayerTextDrawFont(playerid, PlayerText:text, TEXT_DRAW_FONT:font)
@@ -7542,15 +7542,15 @@ CHAIN_FORWARD:WC_OnPlayerDeathFinished(playerid, bool:cancelable) = 1;
 #define PlayerTextDrawAlignment WC_PlayerTextDrawAlignment
 
 
-#if defined _ALS_PlayerTextDrawColor
-	#undef PlayerTextDrawColor
+#if defined _ALS_PlayerTextDrawColour
+	#undef PlayerTextDrawColour
 #else
-	#define _ALS_PlayerTextDrawColor
+	#define _ALS_PlayerTextDrawColour
 #endif
-#define PlayerTextDrawColor WC_PlayerTextDrawColor
+#define PlayerTextDrawColour WC_PlayerTextDrawColour
 #if !defined _INC_open_mp
 	#undef PlayerTextDrawColour
-	#define PlayerTextDrawColour WC_PlayerTextDrawColor
+	#define PlayerTextDrawColour WC_PlayerTextDrawColour
 #endif
 
 
@@ -7562,12 +7562,12 @@ CHAIN_FORWARD:WC_OnPlayerDeathFinished(playerid, bool:cancelable) = 1;
 #define PlayerTextDrawUseBox WC_PlayerTextDrawUseBox
 
 
-#if defined _ALS_PlayerTextDrawBoxColor
-	#undef PlayerTextDrawBoxColor
+#if defined _ALS_PlayerTextDrawBoxColour
+	#undef PlayerTextDrawBoxColour
 #else
-	#define _ALS_PlayerTextDrawBoxColor
+	#define _ALS_PlayerTextDrawBoxColour
 #endif
-#define PlayerTextDrawBoxColor WC_PlayerTextDrawBoxColor
+#define PlayerTextDrawBoxColour WC_PlayerTextDrawBoxColour
 
 
 #if defined _ALS_PlayerTextDrawSetShadow
@@ -7587,11 +7587,11 @@ CHAIN_FORWARD:WC_OnPlayerDeathFinished(playerid, bool:cancelable) = 1;
 
 
 #if defined _ALS_PlayerTextDrawBackgroundCo
-	#undef PlayerTextDrawBackgroundColor
+	#undef PlayerTextDrawBackgroundColour
 #else
 	#define _ALS_PlayerTextDrawBackgroundCo
 #endif
-#define PlayerTextDrawBackgroundColor WC_PlayerTextDrawBackgroundColo
+#define PlayerTextDrawBackgroundColour WC_PlayerTextDrawBackgroundColo
 #if !defined _INC_open_mp
 	#undef PlayerTextDrawBackgroundColour
 	#define PlayerTextDrawBackgroundColour WC_PlayerTextDrawBackgroundColo

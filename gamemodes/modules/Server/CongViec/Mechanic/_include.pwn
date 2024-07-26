@@ -38,12 +38,12 @@ stock IsPlayerValidFixer(playerid)
 {
     return Character[playerid][char_OrgID] == MECHANIC_JOB_ID;
 }
-PlayAnim(playerid, animlib[], animname[], Float:fDelta, loop, lockx, locky, freeze, time, forcesync)
+PlayAnim(playerid, const animlib[], const animname[], Float:fDelta, loop, lockx, locky, freeze, time, forcesync)
 {
     ApplyAnimation(playerid, animlib, animname, fDelta, loop, lockx, locky, freeze, time, forcesync);
 }
 
-PlayAnimEx(playerid, animlib[], animname[], Float:fDelta, loop, lockx, locky, freeze, time, forcesync)
+PlayAnimEx(playerid, const animlib[], const animname[], Float:fDelta, loop, lockx, locky, freeze, time, forcesync)
 {
     gPlayerUsingLoopingAnim[playerid] = 1;
     ApplyAnimation(playerid, animlib, animname, fDelta, loop, lockx, locky, freeze, time, forcesync);

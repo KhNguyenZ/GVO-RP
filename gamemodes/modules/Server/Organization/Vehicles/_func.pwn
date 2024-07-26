@@ -53,7 +53,6 @@ func:SaveOrgVeh(_sorg_id)
                OrgVeh[_sorg_id][i][ov_siren],
                OrgVeh[_sorg_id][i][ov_id]);
 
-        printf("%s", v_save);
         mysql_tquery(Handle(), v_save, "");
         break;
     }

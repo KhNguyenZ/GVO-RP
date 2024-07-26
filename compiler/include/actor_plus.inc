@@ -36,7 +36,7 @@ forward SetActorRespawnTime(actorid, time);
 // Checks if a player is in range of an actor.
 forward IsPlayerInRangeOfActor(playerid, actorid, Float:radius = 5.0);
 // Attaches a 3D text label to an actor.
-forward Text3D:Attach3DTextLabelToActor(actorid, text[], color, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:distance = 10.0, worldid = 0, testlos = 0);
+forward Attach3DTextLabelToActorEx(actorid, text[], color, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:distance = 10.0, worldid = 0, testlos = 0);
 
 // Called when an actor dies.
 forward OnActorDeath(actorid, killerid, reason);
@@ -219,28 +219,28 @@ stock IsPlayerInRangeOfActor(playerid, actorid, Float:radius = 5.0)
 	return 0;
 }
 
-stock Text3D:Attach3DTextLabelToActor(actorid, text[], color, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:distance = 10.0, worldid = 0, testlos = 0)
-{
-	new Text3D:textid = Text3D:INVALID_3DTEXT_ID;
+// stock Attach3DTextLabelToActorEx(actorid, const text[], color, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:distance = 10.0, worldid = 0, testlos = 0)
+// {
+// 	new Text3D:textid = Text3D:INVALID_3DTEXT_ID;
 
-	if(IsValidActor(actorid))
-	{
-	    new
-			Float:x,
-			Float:y,
-			Float:z;
+// 	if(IsValidActor(actorid))
+// 	{
+// 	    new
+// 			Float:x,
+// 			Float:y,
+// 			Float:z;
 
-		GetActorPos(actorid, x, y, z);
+// 		GetActorPos(actorid, x, y, z);
 		
-		textid = Create3DTextLabel(text, color, x + fOffsetX, y + fOffsetY, (z + 0.8) + fOffsetZ, distance, worldid, testlos);
+// 		textid = Create3DTextLabel(text, color, x + fOffsetX, y + fOffsetY, (z + 0.8) + fOffsetZ, distance, worldid, testlos);
 		
-		if(textid != Text3D:INVALID_3DTEXT_ID)
-		{
-			s_3DTextActorID[_:textid] = actorid;
-		}
-	}
-	return textid;
-}
+// 		if(textid != Text3D:INVALID_3DTEXT_ID)
+// 		{
+// 			s_3DTextActorID[_:textid] = actorid;
+// 		}
+// 	}
+// 	return textid;
+// }
 
 stock SetActorName(actorid, name[])
 {
@@ -405,7 +405,7 @@ public OnPlayerUpdate(playerid)
 	#endif
 }
 
-public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, weaponid, bodypart)
+hook OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, weaponid, bodypart)
 {
 	// Sanity checks for safety. Players can easily manipulate this data.
 	if(!IsValidActor(damaged_actorid) || (!(0 <= amount <= 500.0)) || (!(0 <= weaponid <= 42)))

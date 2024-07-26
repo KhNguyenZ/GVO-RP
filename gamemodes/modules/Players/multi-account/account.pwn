@@ -1,6 +1,6 @@
 const MAX_PASSWORD_LEN = 32;
 
-#include <YSI_Coding\y_hooks>
+#include <YSI\YSI_Coding\y_hooks>
 hook OnGameModeInit()
 {
     return 1;
@@ -237,8 +237,6 @@ func:LoginClick(playerid, PlayerText:playertextid)
 
             character_Select(playerid);
             HideAuthPTD(playerid);
-
-            // Character[playerid][char_Login] = true;
         }
         else
         {

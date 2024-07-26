@@ -1,4 +1,4 @@
-#include <YSI_Coding\y_hooks>
+#include <YSI\YSI_Coding\y_hooks>
 new PlayerText: CircleLoadPTD[MAX_PLAYERS][3];
 forward OnFinishLoadCircle(playerid, _load_id);
 new CL_Loop[MAX_PLAYERS];
@@ -8,30 +8,30 @@ hook OnPlayerConnect(playerid)
     CircleLoadPTD[playerid][0] = CreatePlayerTextDraw(playerid, 296.000, 353.000, "mdl-2024:background");
     PlayerTextDrawTextSize(playerid, CircleLoadPTD[playerid][0], 45.000, 52.000);
     PlayerTextDrawAlignment(playerid, CircleLoadPTD[playerid][0], 1);
-    PlayerTextDrawColor(playerid, CircleLoadPTD[playerid][0], -1);
+    PlayerTextDrawColour(playerid, CircleLoadPTD[playerid][0], -1);
     PlayerTextDrawSetShadow(playerid, CircleLoadPTD[playerid][0], 0);
     PlayerTextDrawSetOutline(playerid, CircleLoadPTD[playerid][0], 0);
-    PlayerTextDrawBackgroundColor(playerid, CircleLoadPTD[playerid][0], 255);
+    PlayerTextDrawBackgroundColour(playerid, CircleLoadPTD[playerid][0], 255);
     PlayerTextDrawFont(playerid, CircleLoadPTD[playerid][0], 4);
     PlayerTextDrawSetProportional(playerid, CircleLoadPTD[playerid][0], 1);
 
     CircleLoadPTD[playerid][1] = CreatePlayerTextDraw(playerid, 295.000, 351.000, "mdl-2024:l1");
     PlayerTextDrawTextSize(playerid, CircleLoadPTD[playerid][1], 48.000, 56.000);
     PlayerTextDrawAlignment(playerid, CircleLoadPTD[playerid][1], 1);
-    PlayerTextDrawColor(playerid, CircleLoadPTD[playerid][1], -1);
+    PlayerTextDrawColour(playerid, CircleLoadPTD[playerid][1], -1);
     PlayerTextDrawSetShadow(playerid, CircleLoadPTD[playerid][1], 0);
     PlayerTextDrawSetOutline(playerid, CircleLoadPTD[playerid][1], 0);
-    PlayerTextDrawBackgroundColor(playerid, CircleLoadPTD[playerid][1], 255);
+    PlayerTextDrawBackgroundColour(playerid, CircleLoadPTD[playerid][1], 255);
     PlayerTextDrawFont(playerid, CircleLoadPTD[playerid][1], 4);
     PlayerTextDrawSetProportional(playerid, CircleLoadPTD[playerid][1], 1);
 
     CircleLoadPTD[playerid][2] = CreatePlayerTextDraw(playerid, 318.000, 412.000, "");
     PlayerTextDrawLetterSize(playerid, CircleLoadPTD[playerid][2], 0.300, 1.500);
     PlayerTextDrawAlignment(playerid, CircleLoadPTD[playerid][2], 2);
-    PlayerTextDrawColor(playerid, CircleLoadPTD[playerid][2], -1);
+    PlayerTextDrawColour(playerid, CircleLoadPTD[playerid][2], -1);
     PlayerTextDrawSetShadow(playerid, CircleLoadPTD[playerid][2], 1);
     PlayerTextDrawSetOutline(playerid, CircleLoadPTD[playerid][2], 0);
-    PlayerTextDrawBackgroundColor(playerid, CircleLoadPTD[playerid][2], 150);
+    PlayerTextDrawBackgroundColour(playerid, CircleLoadPTD[playerid][2], 150);
     PlayerTextDrawFont(playerid, CircleLoadPTD[playerid][2], 2);
     PlayerTextDrawSetProportional(playerid, CircleLoadPTD[playerid][2], 1);
     return 1;

@@ -1,4 +1,4 @@
-#include <YSI_Coding\y_hooks>
+#include <YSI\YSI_Coding\y_hooks>
 #include <discord-connector>
 
 new DCC_Guild:SSA_GUILD_ID;

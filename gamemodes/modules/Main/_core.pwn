@@ -31,26 +31,18 @@ func:SendRangeMessage(const playerid, Float:range, string[])
 
 // Anti Hack Money
 
-task CoreUpdate[1000]()
+timer CoreUpdate[1000](playerid)
 {
-	for(new i = 0 ; i < MAX_PLAYERS ; i++)
-	{
-		if(IsPlayerConnected(i))
-		{
-			if(Character[i][char_Cash] != GetPlayerMoney(i))
-			{
-				ResetPlayerMoney(i);
-				GivePlayerMoney(i, Character[i][char_Cash]);
-			}
-		}
-	}
+    if (Character[playerid][char_Cash] != GetPlayerMoney(playerid))
+    {
+        ResetPlayerMoney(playerid);
+        GivePlayerMoney(playerid, Character[playerid][char_Cash]);
+    }
 }
+
 
 
 public OnGameModeInit()
 {
-	// AddPlayerClass(0, 1958.33, 1343.12, 15.36, 269.15, 0, 0, 0, 0, 0, 0);
-	// AddPlayerClass(0, 1958.3783, 1343.1572, 15.3746, 269.1425, 0, 0, 0, 0, 0, 0);
-	
 	return 1;
 }

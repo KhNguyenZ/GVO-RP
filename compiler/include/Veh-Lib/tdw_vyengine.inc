@@ -171,7 +171,7 @@ static stock const
 	forward TDWVH_ENGIN@OnPlayerStateChange(playerid, newstate, oldstate);
 #endif
 
-public OnPlayerStateChange(playerid, newstate, oldstate)
+hook OnPlayerStateChange(playerid, newstate, oldstate)
 {
 	if (newstate == PLAYER_STATE_DRIVER) {
 		new vehicleid = GetPlayerVehicleID(playerid);

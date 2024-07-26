@@ -1,4 +1,4 @@
-#include "YSI_Coding\y_hooks"
+#include "YSI\YSI_Coding\y_hooks"
 
 new PlayerText: LoadingPTD[MAX_PLAYERS][3];
 forward LoadingProgress(playerid,loadingid,speed);
@@ -11,14 +11,14 @@ static
 stock LoaderStarting(playerid, loadingid, const LoaderInfo[], Float:speed,color = 3) {
 	if(GetPVarInt(playerid, "is_loading") == 1) return 1;
     switch(color) {
-        case 1: PlayerTextDrawBoxColor(playerid, LoadingPTD[playerid][2], 65443);
-        case 2: PlayerTextDrawBoxColor(playerid, LoadingPTD[playerid][2], -202218806);
-        case 3: PlayerTextDrawBoxColor(playerid, LoadingPTD[playerid][2], 1960470730);
-        case 4: PlayerTextDrawBoxColor(playerid, LoadingPTD[playerid][2], 2021902794);
-        case 5: PlayerTextDrawBoxColor(playerid, LoadingPTD[playerid][2], -943949110);
-        case 6: PlayerTextDrawBoxColor(playerid, LoadingPTD[playerid][2], -948405558);
+        case 1: PlayerTextDrawBoxColour(playerid, LoadingPTD[playerid][2], 65443);
+        case 2: PlayerTextDrawBoxColour(playerid, LoadingPTD[playerid][2], -202218806);
+        case 3: PlayerTextDrawBoxColour(playerid, LoadingPTD[playerid][2], 1960470730);
+        case 4: PlayerTextDrawBoxColour(playerid, LoadingPTD[playerid][2], 2021902794);
+        case 5: PlayerTextDrawBoxColour(playerid, LoadingPTD[playerid][2], -943949110);
+        case 6: PlayerTextDrawBoxColour(playerid, LoadingPTD[playerid][2], -948405558);
     }
-    PlayerTextDrawColor(playerid, LoadingPTD[playerid][2], color);
+    PlayerTextDrawColour(playerid, LoadingPTD[playerid][2], color);
 	new str[60];
 	format(str, sizeof str, "%s", LoaderInfo);
 	PlayerTextDrawSetString(playerid, LoadingPTD[playerid][1], str);
@@ -56,12 +56,12 @@ hook OnPlayerConnect(playerid) {
     PlayerTextDrawLetterSize(playerid, LoadingPTD[playerid][0], 0.000, 1.098);
     PlayerTextDrawTextSize(playerid, LoadingPTD[playerid][0], 385.300, 0.000);
     PlayerTextDrawAlignment(playerid, LoadingPTD[playerid][0], 1);
-    PlayerTextDrawColor(playerid, LoadingPTD[playerid][0], -1);
+    PlayerTextDrawColour(playerid, LoadingPTD[playerid][0], -1);
     PlayerTextDrawUseBox(playerid, LoadingPTD[playerid][0], 1);
-    PlayerTextDrawBoxColor(playerid, LoadingPTD[playerid][0], 228);
+    PlayerTextDrawBoxColour(playerid, LoadingPTD[playerid][0], 228);
     PlayerTextDrawSetShadow(playerid, LoadingPTD[playerid][0], 0);
     PlayerTextDrawSetOutline(playerid, LoadingPTD[playerid][0], 0);
-    PlayerTextDrawBackgroundColor(playerid, LoadingPTD[playerid][0], 255);
+    PlayerTextDrawBackgroundColour(playerid, LoadingPTD[playerid][0], 255);
     PlayerTextDrawFont(playerid, LoadingPTD[playerid][0], 1);
     PlayerTextDrawSetProportional(playerid, LoadingPTD[playerid][0], 1);
 
@@ -69,22 +69,22 @@ hook OnPlayerConnect(playerid) {
     PlayerTextDrawLetterSize(playerid, LoadingPTD[playerid][1], 0.000, 1.098);
     PlayerTextDrawTextSize(playerid, LoadingPTD[playerid][1], 385.300, 0.000);
     PlayerTextDrawAlignment(playerid, LoadingPTD[playerid][1], 1);
-    PlayerTextDrawColor(playerid, LoadingPTD[playerid][1], -1);
+    PlayerTextDrawColour(playerid, LoadingPTD[playerid][1], -1);
     PlayerTextDrawUseBox(playerid, LoadingPTD[playerid][1], 1);
-    PlayerTextDrawBoxColor(playerid, LoadingPTD[playerid][1], 65443);
+    PlayerTextDrawBoxColour(playerid, LoadingPTD[playerid][1], 65443);
     PlayerTextDrawSetShadow(playerid, LoadingPTD[playerid][1], 0);
     PlayerTextDrawSetOutline(playerid, LoadingPTD[playerid][1], 0);
-    PlayerTextDrawBackgroundColor(playerid, LoadingPTD[playerid][1], 255);
+    PlayerTextDrawBackgroundColour(playerid, LoadingPTD[playerid][1], 255);
     PlayerTextDrawFont(playerid, LoadingPTD[playerid][1], 1);
     PlayerTextDrawSetProportional(playerid, LoadingPTD[playerid][1], 1);
 
     LoadingPTD[playerid][2] = CreatePlayerTextDraw(playerid, 321.385, 395.916, "_");
     PlayerTextDrawLetterSize(playerid, LoadingPTD[playerid][2], 0.178, 1.127);
     PlayerTextDrawAlignment(playerid, LoadingPTD[playerid][2], 2);
-    PlayerTextDrawColor(playerid, LoadingPTD[playerid][2], -1);
+    PlayerTextDrawColour(playerid, LoadingPTD[playerid][2], -1);
     PlayerTextDrawSetShadow(playerid, LoadingPTD[playerid][2], 0);
     PlayerTextDrawSetOutline(playerid, LoadingPTD[playerid][2], 0);
-    PlayerTextDrawBackgroundColor(playerid, LoadingPTD[playerid][2], 255);
+    PlayerTextDrawBackgroundColour(playerid, LoadingPTD[playerid][2], 255);
     PlayerTextDrawFont(playerid, LoadingPTD[playerid][2], 1);
     PlayerTextDrawSetProportional(playerid, LoadingPTD[playerid][2], 1);
     return 1;

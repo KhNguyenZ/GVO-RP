@@ -1,4 +1,4 @@
-#include <YSI_Coding\y_hooks>
+#include <YSI\YSI_Coding\y_hooks>
 
 new PlayerText:p_BarTextDraw[MAX_PLAYERS][1];
 new PlayerText:p_LocationTextdraw[MAX_PLAYERS][19];
@@ -120,170 +120,170 @@ public CreateTextDraws(playerid) {
 	p_BarTextDraw[playerid][0] = CreatePlayerTextDraw(playerid, 447.000, 300.000, "mdl-2009:main");
 	PlayerTextDrawTextSize(playerid, p_DirectionTextDraw[playerid][0], 174.000, 34.000);
 	PlayerTextDrawAlignment(playerid, p_DirectionTextDraw[playerid][0], 1);
-	PlayerTextDrawColor(playerid, p_DirectionTextDraw[playerid][0], -1);
+	PlayerTextDrawColour(playerid, p_DirectionTextDraw[playerid][0], -1);
 	PlayerTextDrawSetShadow(playerid, p_DirectionTextDraw[playerid][0], 0);
 	PlayerTextDrawSetOutline(playerid, p_DirectionTextDraw[playerid][0], 0);
-	PlayerTextDrawBackgroundColor(playerid, p_DirectionTextDraw[playerid][0], 255);
+	PlayerTextDrawBackgroundColour(playerid, p_DirectionTextDraw[playerid][0], 255);
 	PlayerTextDrawFont(playerid, p_DirectionTextDraw[playerid][0], 4);
 	PlayerTextDrawSetProportional(playerid, p_DirectionTextDraw[playerid][0], 1);
 
 	p_DirectionTextDraw[playerid][1] = CreatePlayerTextDraw(playerid, 597.000, 307.000, "mdl-2009:S");
 	PlayerTextDrawTextSize(playerid, p_DirectionTextDraw[playerid][1], 14.000, 19.000);
 	PlayerTextDrawAlignment(playerid, p_DirectionTextDraw[playerid][1], 1);
-	PlayerTextDrawColor(playerid, p_DirectionTextDraw[playerid][1], -1);
+	PlayerTextDrawColour(playerid, p_DirectionTextDraw[playerid][1], -1);
 	PlayerTextDrawSetShadow(playerid, p_DirectionTextDraw[playerid][1], 0);
 	PlayerTextDrawSetOutline(playerid, p_DirectionTextDraw[playerid][1], 0);
-	PlayerTextDrawBackgroundColor(playerid, p_DirectionTextDraw[playerid][1], 255);
+	PlayerTextDrawBackgroundColour(playerid, p_DirectionTextDraw[playerid][1], 255);
 	PlayerTextDrawFont(playerid, p_DirectionTextDraw[playerid][1], 4);
 	PlayerTextDrawSetProportional(playerid, p_DirectionTextDraw[playerid][1], 1);
 
 	p_DirectionTextDraw[playerid][2] = CreatePlayerTextDraw(playerid, 597.000, 307.000, "mdl-2009:W");
 	PlayerTextDrawTextSize(playerid, p_DirectionTextDraw[playerid][2], 14.000, 19.000);
 	PlayerTextDrawAlignment(playerid, p_DirectionTextDraw[playerid][2], 1);
-	PlayerTextDrawColor(playerid, p_DirectionTextDraw[playerid][2], -1);
+	PlayerTextDrawColour(playerid, p_DirectionTextDraw[playerid][2], -1);
 	PlayerTextDrawSetShadow(playerid, p_DirectionTextDraw[playerid][2], 0);
 	PlayerTextDrawSetOutline(playerid, p_DirectionTextDraw[playerid][2], 0);
-	PlayerTextDrawBackgroundColor(playerid, p_DirectionTextDraw[playerid][2], 255);
+	PlayerTextDrawBackgroundColour(playerid, p_DirectionTextDraw[playerid][2], 255);
 	PlayerTextDrawFont(playerid, p_DirectionTextDraw[playerid][2], 4);
 	PlayerTextDrawSetProportional(playerid, p_DirectionTextDraw[playerid][2], 1);
 
 	p_DirectionTextDraw[playerid][3] = CreatePlayerTextDraw(playerid, 597.000, 307.000, "mdl-2009:N");
 	PlayerTextDrawTextSize(playerid, p_DirectionTextDraw[playerid][3], 14.000, 19.000);
 	PlayerTextDrawAlignment(playerid, p_DirectionTextDraw[playerid][3], 1);
-	PlayerTextDrawColor(playerid, p_DirectionTextDraw[playerid][3], -1);
+	PlayerTextDrawColour(playerid, p_DirectionTextDraw[playerid][3], -1);
 	PlayerTextDrawSetShadow(playerid, p_DirectionTextDraw[playerid][3], 0);
 	PlayerTextDrawSetOutline(playerid, p_DirectionTextDraw[playerid][3], 0);
-	PlayerTextDrawBackgroundColor(playerid, p_DirectionTextDraw[playerid][3], 255);
+	PlayerTextDrawBackgroundColour(playerid, p_DirectionTextDraw[playerid][3], 255);
 	PlayerTextDrawFont(playerid, p_DirectionTextDraw[playerid][3], 4);
 	PlayerTextDrawSetProportional(playerid, p_DirectionTextDraw[playerid][3], 1);
 
 	p_DirectionTextDraw[playerid][4] = CreatePlayerTextDraw(playerid, 597.000, 307.000, "mdl-2009:E");
 	PlayerTextDrawTextSize(playerid, p_DirectionTextDraw[playerid][4], 14.000, 19.000);
 	PlayerTextDrawAlignment(playerid, p_DirectionTextDraw[playerid][4], 1);
-	PlayerTextDrawColor(playerid, p_DirectionTextDraw[playerid][4], -1);
+	PlayerTextDrawColour(playerid, p_DirectionTextDraw[playerid][4], -1);
 	PlayerTextDrawSetShadow(playerid, p_DirectionTextDraw[playerid][4], 0);
 	PlayerTextDrawSetOutline(playerid, p_DirectionTextDraw[playerid][4], 0);
-	PlayerTextDrawBackgroundColor(playerid, p_DirectionTextDraw[playerid][4], 255);
+	PlayerTextDrawBackgroundColour(playerid, p_DirectionTextDraw[playerid][4], 255);
 	PlayerTextDrawFont(playerid, p_DirectionTextDraw[playerid][4], 4);
 	PlayerTextDrawSetProportional(playerid, p_DirectionTextDraw[playerid][4], 1);
 
 	p_DirectionTextDraw[playerid][5] = CreatePlayerTextDraw(playerid, 593.000, 308.000, "mdl-2009:SW");
 	PlayerTextDrawTextSize(playerid, p_DirectionTextDraw[playerid][5], 23.000, 18.000);
 	PlayerTextDrawAlignment(playerid, p_DirectionTextDraw[playerid][5], 1);
-	PlayerTextDrawColor(playerid, p_DirectionTextDraw[playerid][5], -1);
+	PlayerTextDrawColour(playerid, p_DirectionTextDraw[playerid][5], -1);
 	PlayerTextDrawSetShadow(playerid, p_DirectionTextDraw[playerid][5], 0);
 	PlayerTextDrawSetOutline(playerid, p_DirectionTextDraw[playerid][5], 0);
-	PlayerTextDrawBackgroundColor(playerid, p_DirectionTextDraw[playerid][5], 255);
+	PlayerTextDrawBackgroundColour(playerid, p_DirectionTextDraw[playerid][5], 255);
 	PlayerTextDrawFont(playerid, p_DirectionTextDraw[playerid][5], 4);
 	PlayerTextDrawSetProportional(playerid, p_DirectionTextDraw[playerid][5], 1);
 
 	p_DirectionTextDraw[playerid][6] = CreatePlayerTextDraw(playerid, 593.000, 308.000, "mdl-2009:NE");
 	PlayerTextDrawTextSize(playerid, p_DirectionTextDraw[playerid][6], 23.000, 18.000);
 	PlayerTextDrawAlignment(playerid, p_DirectionTextDraw[playerid][6], 1);
-	PlayerTextDrawColor(playerid, p_DirectionTextDraw[playerid][6], -1);
+	PlayerTextDrawColour(playerid, p_DirectionTextDraw[playerid][6], -1);
 	PlayerTextDrawSetShadow(playerid, p_DirectionTextDraw[playerid][6], 0);
 	PlayerTextDrawSetOutline(playerid, p_DirectionTextDraw[playerid][6], 0);
-	PlayerTextDrawBackgroundColor(playerid, p_DirectionTextDraw[playerid][6], 255);
+	PlayerTextDrawBackgroundColour(playerid, p_DirectionTextDraw[playerid][6], 255);
 	PlayerTextDrawFont(playerid, p_DirectionTextDraw[playerid][6], 4);
 	PlayerTextDrawSetProportional(playerid, p_DirectionTextDraw[playerid][6], 1);
 
 	p_DirectionTextDraw[playerid][7] = CreatePlayerTextDraw(playerid, 593.000, 308.000, "mdl-2009:SE");
 	PlayerTextDrawTextSize(playerid, p_DirectionTextDraw[playerid][7], 23.000, 18.000);
 	PlayerTextDrawAlignment(playerid, p_DirectionTextDraw[playerid][7], 1);
-	PlayerTextDrawColor(playerid, p_DirectionTextDraw[playerid][7], -1);
+	PlayerTextDrawColour(playerid, p_DirectionTextDraw[playerid][7], -1);
 	PlayerTextDrawSetShadow(playerid, p_DirectionTextDraw[playerid][7], 0);
 	PlayerTextDrawSetOutline(playerid, p_DirectionTextDraw[playerid][7], 0);
-	PlayerTextDrawBackgroundColor(playerid, p_DirectionTextDraw[playerid][7], 255);
+	PlayerTextDrawBackgroundColour(playerid, p_DirectionTextDraw[playerid][7], 255);
 	PlayerTextDrawFont(playerid, p_DirectionTextDraw[playerid][7], 4);
 	PlayerTextDrawSetProportional(playerid, p_DirectionTextDraw[playerid][7], 1);
 
 	p_DirectionTextDraw[playerid][8] = CreatePlayerTextDraw(playerid, 593.000, 308.000, "mdl-2009:NW");
 	PlayerTextDrawTextSize(playerid, p_DirectionTextDraw[playerid][8], 23.000, 18.000);
 	PlayerTextDrawAlignment(playerid, p_DirectionTextDraw[playerid][8], 1);
-	PlayerTextDrawColor(playerid, p_DirectionTextDraw[playerid][8], -1);
+	PlayerTextDrawColour(playerid, p_DirectionTextDraw[playerid][8], -1);
 	PlayerTextDrawSetShadow(playerid, p_DirectionTextDraw[playerid][8], 0);
 	PlayerTextDrawSetOutline(playerid, p_DirectionTextDraw[playerid][8], 0);
-	PlayerTextDrawBackgroundColor(playerid, p_DirectionTextDraw[playerid][8], 255);
+	PlayerTextDrawBackgroundColour(playerid, p_DirectionTextDraw[playerid][8], 255);
 	PlayerTextDrawFont(playerid, p_DirectionTextDraw[playerid][8], 4);
 	PlayerTextDrawSetProportional(playerid, p_DirectionTextDraw[playerid][8], 1);
 
 	p_DirectionTextDraw[playerid][9] = CreatePlayerTextDraw(playerid, 593.000, 310.000, "mdl-2009:NNE");
 	PlayerTextDrawTextSize(playerid, p_DirectionTextDraw[playerid][9], 23.000, 12.000);
 	PlayerTextDrawAlignment(playerid, p_DirectionTextDraw[playerid][9], 1);
-	PlayerTextDrawColor(playerid, p_DirectionTextDraw[playerid][9], -1);
+	PlayerTextDrawColour(playerid, p_DirectionTextDraw[playerid][9], -1);
 	PlayerTextDrawSetShadow(playerid, p_DirectionTextDraw[playerid][9], 0);
 	PlayerTextDrawSetOutline(playerid, p_DirectionTextDraw[playerid][9], 0);
-	PlayerTextDrawBackgroundColor(playerid, p_DirectionTextDraw[playerid][9], 255);
+	PlayerTextDrawBackgroundColour(playerid, p_DirectionTextDraw[playerid][9], 255);
 	PlayerTextDrawFont(playerid, p_DirectionTextDraw[playerid][9], 4);
 	PlayerTextDrawSetProportional(playerid, p_DirectionTextDraw[playerid][9], 1);
 
 	p_DirectionTextDraw[playerid][10] = CreatePlayerTextDraw(playerid, 593.000, 310.000, "mdl-2009:ENE");
 	PlayerTextDrawTextSize(playerid, p_DirectionTextDraw[playerid][10], 23.000, 12.000);
 	PlayerTextDrawAlignment(playerid, p_DirectionTextDraw[playerid][10], 1);
-	PlayerTextDrawColor(playerid, p_DirectionTextDraw[playerid][10], -1);
+	PlayerTextDrawColour(playerid, p_DirectionTextDraw[playerid][10], -1);
 	PlayerTextDrawSetShadow(playerid, p_DirectionTextDraw[playerid][10], 0);
 	PlayerTextDrawSetOutline(playerid, p_DirectionTextDraw[playerid][10], 0);
-	PlayerTextDrawBackgroundColor(playerid, p_DirectionTextDraw[playerid][10], 255);
+	PlayerTextDrawBackgroundColour(playerid, p_DirectionTextDraw[playerid][10], 255);
 	PlayerTextDrawFont(playerid, p_DirectionTextDraw[playerid][10], 4);
 	PlayerTextDrawSetProportional(playerid, p_DirectionTextDraw[playerid][10], 1);
 
 	p_DirectionTextDraw[playerid][11] = CreatePlayerTextDraw(playerid, 593.000, 310.000, "mdl-2009:ESE");
 	PlayerTextDrawTextSize(playerid, p_DirectionTextDraw[playerid][11], 23.000, 12.000);
 	PlayerTextDrawAlignment(playerid, p_DirectionTextDraw[playerid][11], 1);
-	PlayerTextDrawColor(playerid, p_DirectionTextDraw[playerid][11], -1);
+	PlayerTextDrawColour(playerid, p_DirectionTextDraw[playerid][11], -1);
 	PlayerTextDrawSetShadow(playerid, p_DirectionTextDraw[playerid][11], 0);
 	PlayerTextDrawSetOutline(playerid, p_DirectionTextDraw[playerid][11], 0);
-	PlayerTextDrawBackgroundColor(playerid, p_DirectionTextDraw[playerid][11], 255);
+	PlayerTextDrawBackgroundColour(playerid, p_DirectionTextDraw[playerid][11], 255);
 	PlayerTextDrawFont(playerid, p_DirectionTextDraw[playerid][11], 4);
 	PlayerTextDrawSetProportional(playerid, p_DirectionTextDraw[playerid][11], 1);
 
 	p_DirectionTextDraw[playerid][12] = CreatePlayerTextDraw(playerid, 593.000, 310.000, "mdl-2009:SSE");
 	PlayerTextDrawTextSize(playerid, p_DirectionTextDraw[playerid][12], 23.000, 12.000);
 	PlayerTextDrawAlignment(playerid, p_DirectionTextDraw[playerid][12], 1);
-	PlayerTextDrawColor(playerid, p_DirectionTextDraw[playerid][12], -1);
+	PlayerTextDrawColour(playerid, p_DirectionTextDraw[playerid][12], -1);
 	PlayerTextDrawSetShadow(playerid, p_DirectionTextDraw[playerid][12], 0);
 	PlayerTextDrawSetOutline(playerid, p_DirectionTextDraw[playerid][12], 0);
-	PlayerTextDrawBackgroundColor(playerid, p_DirectionTextDraw[playerid][12], 255);
+	PlayerTextDrawBackgroundColour(playerid, p_DirectionTextDraw[playerid][12], 255);
 	PlayerTextDrawFont(playerid, p_DirectionTextDraw[playerid][12], 4);
 	PlayerTextDrawSetProportional(playerid, p_DirectionTextDraw[playerid][12], 1);
 
 	p_DirectionTextDraw[playerid][13] = CreatePlayerTextDraw(playerid, 593.000, 310.000, "mdl-2009:SSW");
 	PlayerTextDrawTextSize(playerid, p_DirectionTextDraw[playerid][13], 23.000, 12.000);
 	PlayerTextDrawAlignment(playerid, p_DirectionTextDraw[playerid][13], 1);
-	PlayerTextDrawColor(playerid, p_DirectionTextDraw[playerid][13], -1);
+	PlayerTextDrawColour(playerid, p_DirectionTextDraw[playerid][13], -1);
 	PlayerTextDrawSetShadow(playerid, p_DirectionTextDraw[playerid][13], 0);
 	PlayerTextDrawSetOutline(playerid, p_DirectionTextDraw[playerid][13], 0);
-	PlayerTextDrawBackgroundColor(playerid, p_DirectionTextDraw[playerid][13], 255);
+	PlayerTextDrawBackgroundColour(playerid, p_DirectionTextDraw[playerid][13], 255);
 	PlayerTextDrawFont(playerid, p_DirectionTextDraw[playerid][13], 4);
 	PlayerTextDrawSetProportional(playerid, p_DirectionTextDraw[playerid][13], 1);
 
 	p_DirectionTextDraw[playerid][14] = CreatePlayerTextDraw(playerid, 593.000, 310.000, "mdl-2009:WSW");
 	PlayerTextDrawTextSize(playerid, p_DirectionTextDraw[playerid][14], 23.000, 12.000);
 	PlayerTextDrawAlignment(playerid, p_DirectionTextDraw[playerid][14], 1);
-	PlayerTextDrawColor(playerid, p_DirectionTextDraw[playerid][14], -1);
+	PlayerTextDrawColour(playerid, p_DirectionTextDraw[playerid][14], -1);
 	PlayerTextDrawSetShadow(playerid, p_DirectionTextDraw[playerid][14], 0);
 	PlayerTextDrawSetOutline(playerid, p_DirectionTextDraw[playerid][14], 0);
-	PlayerTextDrawBackgroundColor(playerid, p_DirectionTextDraw[playerid][14], 255);
+	PlayerTextDrawBackgroundColour(playerid, p_DirectionTextDraw[playerid][14], 255);
 	PlayerTextDrawFont(playerid, p_DirectionTextDraw[playerid][14], 4);
 	PlayerTextDrawSetProportional(playerid, p_DirectionTextDraw[playerid][14], 1);
 
 	p_DirectionTextDraw[playerid][15] = CreatePlayerTextDraw(playerid, 593.000, 310.000, "mdl-2009:WNW");
 	PlayerTextDrawTextSize(playerid, p_DirectionTextDraw[playerid][15], 23.000, 12.000);
 	PlayerTextDrawAlignment(playerid, p_DirectionTextDraw[playerid][15], 1);
-	PlayerTextDrawColor(playerid, p_DirectionTextDraw[playerid][15], -1);
+	PlayerTextDrawColour(playerid, p_DirectionTextDraw[playerid][15], -1);
 	PlayerTextDrawSetShadow(playerid, p_DirectionTextDraw[playerid][15], 0);
 	PlayerTextDrawSetOutline(playerid, p_DirectionTextDraw[playerid][15], 0);
-	PlayerTextDrawBackgroundColor(playerid, p_DirectionTextDraw[playerid][15], 255);
+	PlayerTextDrawBackgroundColour(playerid, p_DirectionTextDraw[playerid][15], 255);
 	PlayerTextDrawFont(playerid, p_DirectionTextDraw[playerid][15], 4);
 	PlayerTextDrawSetProportional(playerid, p_DirectionTextDraw[playerid][15], 1);
 
 	p_DirectionTextDraw[playerid][16] = CreatePlayerTextDraw(playerid, 593.000, 310.000, "mdl-2009:NNW");
 	PlayerTextDrawTextSize(playerid, p_DirectionTextDraw[playerid][16], 23.000, 12.000);
 	PlayerTextDrawAlignment(playerid, p_DirectionTextDraw[playerid][16], 1);
-	PlayerTextDrawColor(playerid, p_DirectionTextDraw[playerid][16], -1);
+	PlayerTextDrawColour(playerid, p_DirectionTextDraw[playerid][16], -1);
 	PlayerTextDrawSetShadow(playerid, p_DirectionTextDraw[playerid][16], 0);
 	PlayerTextDrawSetOutline(playerid, p_DirectionTextDraw[playerid][16], 0);
-	PlayerTextDrawBackgroundColor(playerid, p_DirectionTextDraw[playerid][16], 255);
+	PlayerTextDrawBackgroundColour(playerid, p_DirectionTextDraw[playerid][16], 255);
 	PlayerTextDrawFont(playerid, p_DirectionTextDraw[playerid][16], 4);
 	PlayerTextDrawSetProportional(playerid, p_DirectionTextDraw[playerid][16], 1);
 
@@ -291,10 +291,10 @@ public CreateTextDraws(playerid) {
 	PlayerTextDrawLetterSize(playerid, p_LocationTextdraw[playerid][17], 0.200, 1.199);
 	PlayerTextDrawTextSize(playerid, p_LocationTextdraw[playerid][17], -40.000, 14.000);
 	PlayerTextDrawAlignment(playerid, p_LocationTextdraw[playerid][17], 3);
-	PlayerTextDrawColor(playerid, p_LocationTextdraw[playerid][17], -2686721);
+	PlayerTextDrawColour(playerid, p_LocationTextdraw[playerid][17], -2686721);
 	PlayerTextDrawSetShadow(playerid, p_LocationTextdraw[playerid][17], 0);
 	PlayerTextDrawSetOutline(playerid, p_LocationTextdraw[playerid][17], 0);
-	PlayerTextDrawBackgroundColor(playerid, p_LocationTextdraw[playerid][17], 150);
+	PlayerTextDrawBackgroundColour(playerid, p_LocationTextdraw[playerid][17], 150);
 	PlayerTextDrawFont(playerid, p_LocationTextdraw[playerid][17], 1);
 	PlayerTextDrawSetProportional(playerid, p_LocationTextdraw[playerid][17], 1);
 
@@ -302,10 +302,10 @@ public CreateTextDraws(playerid) {
 	PlayerTextDrawLetterSize(playerid, p_LocationTextdraw[playerid][18], 0.280, 1.299);
 	PlayerTextDrawTextSize(playerid, p_LocationTextdraw[playerid][18], -40.000, 14.000);
 	PlayerTextDrawAlignment(playerid, p_LocationTextdraw[playerid][18], 3);
-	PlayerTextDrawColor(playerid, p_LocationTextdraw[playerid][18], -1);
+	PlayerTextDrawColour(playerid, p_LocationTextdraw[playerid][18], -1);
 	PlayerTextDrawSetShadow(playerid, p_LocationTextdraw[playerid][18], 0);
 	PlayerTextDrawSetOutline(playerid, p_LocationTextdraw[playerid][18], 0);
-	PlayerTextDrawBackgroundColor(playerid, p_LocationTextdraw[playerid][18], 150);
+	PlayerTextDrawBackgroundColour(playerid, p_LocationTextdraw[playerid][18], 150);
 	PlayerTextDrawFont(playerid, p_LocationTextdraw[playerid][18], 1);
 	PlayerTextDrawSetProportional(playerid, p_LocationTextdraw[playerid][18], 1);
 

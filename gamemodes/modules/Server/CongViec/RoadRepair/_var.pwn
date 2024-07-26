@@ -128,5 +128,5 @@ enum DamageRoad_Data{
     DamageWorker,
     DamageRepair
 }
-new DamageRoad[][DamageRoad_Data];
+new DamageRoad[200][DamageRoad_Data];
 

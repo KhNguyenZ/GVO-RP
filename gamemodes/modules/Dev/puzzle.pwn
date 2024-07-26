@@ -10,7 +10,7 @@ new Float:Puzzle_Success[MAX_PLAYERS];
 
 forward OnPlayingPuzzle(playerid, _success);
 
-func:CreatePuzzle(playerid, Float:_size = 5.0, _title[], _des[])
+func:CreatePuzzle(playerid, Float:_size = 5.0, const _title[], const _des[])
 {
     /*
     progress :
@@ -26,30 +26,30 @@ func:CreatePuzzle(playerid, Float:_size = 5.0, _title[], _des[])
     PuzzlePTD[playerid][0] = CreatePlayerTextDraw(playerid, 250.000, 323.000, "mdl-2023:puzzle_bg");
     PlayerTextDrawTextSize(playerid, PuzzlePTD[playerid][0], 128.000, 70.000);
     PlayerTextDrawAlignment(playerid, PuzzlePTD[playerid][0], 1);
-    PlayerTextDrawColor(playerid, PuzzlePTD[playerid][0], -1);
+    PlayerTextDrawColour(playerid, PuzzlePTD[playerid][0], -1);
     PlayerTextDrawSetShadow(playerid, PuzzlePTD[playerid][0], 0);
     PlayerTextDrawSetOutline(playerid, PuzzlePTD[playerid][0], 0);
-    PlayerTextDrawBackgroundColor(playerid, PuzzlePTD[playerid][0], 255);
+    PlayerTextDrawBackgroundColour(playerid, PuzzlePTD[playerid][0], 255);
     PlayerTextDrawFont(playerid, PuzzlePTD[playerid][0], 4);
     PlayerTextDrawSetProportional(playerid, PuzzlePTD[playerid][0], 1);
 
     PuzzlePTD[playerid][1] = CreatePlayerTextDraw(playerid, 261.000, 332.000, _title);
     PlayerTextDrawLetterSize(playerid, PuzzlePTD[playerid][1], 0.250, 1.098);
     PlayerTextDrawAlignment(playerid, PuzzlePTD[playerid][1], 1);
-    PlayerTextDrawColor(playerid, PuzzlePTD[playerid][1], -1);
+    PlayerTextDrawColour(playerid, PuzzlePTD[playerid][1], -1);
     PlayerTextDrawSetShadow(playerid, PuzzlePTD[playerid][1], 1);
     PlayerTextDrawSetOutline(playerid, PuzzlePTD[playerid][1], 0);
-    PlayerTextDrawBackgroundColor(playerid, PuzzlePTD[playerid][1], 150);
+    PlayerTextDrawBackgroundColour(playerid, PuzzlePTD[playerid][1], 150);
     PlayerTextDrawFont(playerid, PuzzlePTD[playerid][1], 1);
     PlayerTextDrawSetProportional(playerid, PuzzlePTD[playerid][1], 1);
 
     PuzzlePTD[playerid][2] = CreatePlayerTextDraw(playerid, 354.000, 332.000, _des);
     PlayerTextDrawLetterSize(playerid, PuzzlePTD[playerid][2], 0.189, 1.098);
     PlayerTextDrawAlignment(playerid, PuzzlePTD[playerid][2], 1);
-    PlayerTextDrawColor(playerid, PuzzlePTD[playerid][2], -1);
+    PlayerTextDrawColour(playerid, PuzzlePTD[playerid][2], -1);
     PlayerTextDrawSetShadow(playerid, PuzzlePTD[playerid][2], 1);
     PlayerTextDrawSetOutline(playerid, PuzzlePTD[playerid][2], 0);
-    PlayerTextDrawBackgroundColor(playerid, PuzzlePTD[playerid][2], 150);
+    PlayerTextDrawBackgroundColour(playerid, PuzzlePTD[playerid][2], 150);
     PlayerTextDrawFont(playerid, PuzzlePTD[playerid][2], 1);
     PlayerTextDrawSetProportional(playerid, PuzzlePTD[playerid][2], 1);
 
@@ -57,12 +57,12 @@ func:CreatePuzzle(playerid, Float:_size = 5.0, _title[], _des[])
     PlayerTextDrawLetterSize(playerid, PuzzlePTD[playerid][3], 0.119, 1.699);
     PlayerTextDrawTextSize(playerid, PuzzlePTD[playerid][3], 371.000, 115.000);
     PlayerTextDrawAlignment(playerid, PuzzlePTD[playerid][3], 2);
-    PlayerTextDrawColor(playerid, PuzzlePTD[playerid][3], -1);
+    PlayerTextDrawColour(playerid, PuzzlePTD[playerid][3], -1);
     PlayerTextDrawUseBox(playerid, PuzzlePTD[playerid][3], 1);
-    PlayerTextDrawBoxColor(playerid, PuzzlePTD[playerid][3], -1);
+    PlayerTextDrawBoxColour(playerid, PuzzlePTD[playerid][3], -1);
     PlayerTextDrawSetShadow(playerid, PuzzlePTD[playerid][3], 1);
     PlayerTextDrawSetOutline(playerid, PuzzlePTD[playerid][3], 1);
-    PlayerTextDrawBackgroundColor(playerid, PuzzlePTD[playerid][3], -1);
+    PlayerTextDrawBackgroundColour(playerid, PuzzlePTD[playerid][3], -1);
     PlayerTextDrawFont(playerid, PuzzlePTD[playerid][3], 1);
     PlayerTextDrawSetProportional(playerid, PuzzlePTD[playerid][3], 1);
 
@@ -70,12 +70,12 @@ func:CreatePuzzle(playerid, Float:_size = 5.0, _title[], _des[])
     PlayerTextDrawLetterSize(playerid, PuzzlePTD[playerid][4], 0.190, 1.699);
     PlayerTextDrawTextSize(playerid, PuzzlePTD[playerid][4], 358.000, 5.000);
     PlayerTextDrawAlignment(playerid, PuzzlePTD[playerid][4], 1);
-    PlayerTextDrawColor(playerid, PuzzlePTD[playerid][4], -1);
+    PlayerTextDrawColour(playerid, PuzzlePTD[playerid][4], -1);
     PlayerTextDrawUseBox(playerid, PuzzlePTD[playerid][4], 1);
-    PlayerTextDrawBoxColor(playerid, PuzzlePTD[playerid][4], -1515913054);
+    PlayerTextDrawBoxColour(playerid, PuzzlePTD[playerid][4], -1515913054);
     PlayerTextDrawSetShadow(playerid, PuzzlePTD[playerid][4], 1);
     PlayerTextDrawSetOutline(playerid, PuzzlePTD[playerid][4], 1);
-    PlayerTextDrawBackgroundColor(playerid, PuzzlePTD[playerid][4], -1);
+    PlayerTextDrawBackgroundColour(playerid, PuzzlePTD[playerid][4], -1);
     PlayerTextDrawFont(playerid, PuzzlePTD[playerid][4], 1);
     PlayerTextDrawSetProportional(playerid, PuzzlePTD[playerid][4], 1);
 
@@ -83,12 +83,12 @@ func:CreatePuzzle(playerid, Float:_size = 5.0, _title[], _des[])
     PlayerTextDrawLetterSize(playerid, PuzzlePTD[playerid][5], 0.119, 1.699);
     PlayerTextDrawTextSize(playerid, PuzzlePTD[playerid][5], 294.000, _size);
     PlayerTextDrawAlignment(playerid, PuzzlePTD[playerid][5], 2);
-    PlayerTextDrawColor(playerid, PuzzlePTD[playerid][5], -1);
+    PlayerTextDrawColour(playerid, PuzzlePTD[playerid][5], -1);
     PlayerTextDrawUseBox(playerid, PuzzlePTD[playerid][5], 1);
-    PlayerTextDrawBoxColor(playerid, PuzzlePTD[playerid][5], -1962934017);
+    PlayerTextDrawBoxColour(playerid, PuzzlePTD[playerid][5], -1962934017);
     PlayerTextDrawSetShadow(playerid, PuzzlePTD[playerid][5], 1);
     PlayerTextDrawSetOutline(playerid, PuzzlePTD[playerid][5], 1);
-    PlayerTextDrawBackgroundColor(playerid, PuzzlePTD[playerid][5], -1);
+    PlayerTextDrawBackgroundColour(playerid, PuzzlePTD[playerid][5], -1);
     PlayerTextDrawFont(playerid, PuzzlePTD[playerid][5], 1);
     PlayerTextDrawSetProportional(playerid, PuzzlePTD[playerid][5], 1);
 

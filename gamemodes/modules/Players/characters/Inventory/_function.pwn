@@ -29,7 +29,7 @@ func:GetPlayerItem(playerid, page = 0)
 	}
 	for(new i = 0; i < MAX_INV_ITEM; i++)
 	{
-		PlayerTextDrawColor(playerid, ItemInv[playerid][page][i], -1);
+		PlayerTextDrawColour(playerid, ItemInv[playerid][page][i], -1);
 		PlayerTextDrawShow(playerid, ItemInv[playerid][page][i]);
 		PlayerTextDrawShow(playerid, ItemName[playerid][page][i]);
 	}
@@ -63,11 +63,11 @@ func:PlayerSelectItem(playerid, color_item)
 {
 	switch(color_item){
 		case 0:{
-			PlayerTextDrawColor(playerid, ItemInv[playerid][PlayerPage[playerid]][pSelect[playerid]-1], -1);
+			PlayerTextDrawColour(playerid, ItemInv[playerid][PlayerPage[playerid]][pSelect[playerid]-1], -1);
 			ReloadPlayerTextDraw(playerid, ItemInv[playerid][PlayerPage[playerid]][pSelect[playerid]-1]);
 		}
 		case 1:{
-			PlayerTextDrawColor(playerid, ItemInv[playerid][PlayerPage[playerid]][pSelect[playerid]-1], -16711681);
+			PlayerTextDrawColour(playerid, ItemInv[playerid][PlayerPage[playerid]][pSelect[playerid]-1], -16711681);
 			ReloadPlayerTextDraw(playerid, ItemInv[playerid][PlayerPage[playerid]][pSelect[playerid]-1]);
 		}
 	}
@@ -117,10 +117,10 @@ func:CreateInvItem(playerid, itemid, page, amountz, itemsqlid = -1)
 	ItemInv[playerid][page][InvIndex] = CreatePlayerTextDraw(playerid, InvX, InvY, itemInfo[itemid][item_txd]);
 	PlayerTextDrawTextSize(playerid, ItemInv[playerid][page][InvIndex], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, ItemInv[playerid][page][InvIndex], 1);
-	PlayerTextDrawColor(playerid, ItemInv[playerid][page][InvIndex], -1);
+	PlayerTextDrawColour(playerid, ItemInv[playerid][page][InvIndex], -1);
 	PlayerTextDrawSetShadow(playerid, ItemInv[playerid][page][InvIndex], 0);
 	PlayerTextDrawSetOutline(playerid, ItemInv[playerid][page][InvIndex], 0);
-	PlayerTextDrawBackgroundColor(playerid, ItemInv[playerid][page][InvIndex], 255);
+	PlayerTextDrawBackgroundColour(playerid, ItemInv[playerid][page][InvIndex], 255);
 	PlayerTextDrawFont(playerid, ItemInv[playerid][page][InvIndex], 4);
 	PlayerTextDrawSetProportional(playerid, ItemInv[playerid][page][InvIndex], 1);
 
@@ -128,10 +128,10 @@ func:CreateInvItem(playerid, itemid, page, amountz, itemsqlid = -1)
 	PlayerTextDrawLetterSize(playerid, ItemName[playerid][page][InvIndex], 0.129, 0.599);
 	PlayerTextDrawTextSize(playerid, ItemName[playerid][page][InvIndex], 4.000, 30.000);
 	PlayerTextDrawAlignment(playerid, ItemName[playerid][page][InvIndex], 2);
-	PlayerTextDrawColor(playerid, ItemName[playerid][page][InvIndex], -1);
+	PlayerTextDrawColour(playerid, ItemName[playerid][page][InvIndex], -1);
 	PlayerTextDrawSetShadow(playerid, ItemName[playerid][page][InvIndex], 1);
 	PlayerTextDrawSetOutline(playerid, ItemName[playerid][page][InvIndex], 0);
-	PlayerTextDrawBackgroundColor(playerid, ItemName[playerid][page][InvIndex], 150);
+	PlayerTextDrawBackgroundColour(playerid, ItemName[playerid][page][InvIndex], 150);
 	PlayerTextDrawFont(playerid, ItemName[playerid][page][InvIndex], 1);
 	PlayerTextDrawSetProportional(playerid, ItemName[playerid][page][InvIndex], 1);
 
@@ -181,10 +181,10 @@ func:CreateInvTrade(playerid, itemid, amountz)
 	TradeItem[playerid][TradeIndex] = CreatePlayerTextDraw(playerid, InvX, InvY, itemInfo[itemid][item_txd]);
 	PlayerTextDrawTextSize(playerid, TradeItem[playerid][TradeIndex], 33.000, 42.000);
 	PlayerTextDrawAlignment(playerid, TradeItem[playerid][TradeIndex], 1);
-	PlayerTextDrawColor(playerid, TradeItem[playerid][TradeIndex], -1);
+	PlayerTextDrawColour(playerid, TradeItem[playerid][TradeIndex], -1);
 	PlayerTextDrawSetShadow(playerid, TradeItem[playerid][TradeIndex], 0);
 	PlayerTextDrawSetOutline(playerid, TradeItem[playerid][TradeIndex], 0);
-	PlayerTextDrawBackgroundColor(playerid, TradeItem[playerid][TradeIndex], 255);
+	PlayerTextDrawBackgroundColour(playerid, TradeItem[playerid][TradeIndex], 255);
 	PlayerTextDrawFont(playerid, TradeItem[playerid][TradeIndex], 4);
 	PlayerTextDrawSetProportional(playerid, TradeItem[playerid][TradeIndex], 1);
 
@@ -192,10 +192,10 @@ func:CreateInvTrade(playerid, itemid, amountz)
 	PlayerTextDrawLetterSize(playerid, TradeName[playerid][TradeIndex], 0.129, 0.599);
 	PlayerTextDrawTextSize(playerid, TradeName[playerid][TradeIndex], 4.000, 30.000);
 	PlayerTextDrawAlignment(playerid, TradeName[playerid][TradeIndex], 2);
-	PlayerTextDrawColor(playerid, TradeName[playerid][TradeIndex], -1);
+	PlayerTextDrawColour(playerid, TradeName[playerid][TradeIndex], -1);
 	PlayerTextDrawSetShadow(playerid, TradeName[playerid][TradeIndex], 1);
 	PlayerTextDrawSetOutline(playerid, TradeName[playerid][TradeIndex], 0);
-	PlayerTextDrawBackgroundColor(playerid, TradeName[playerid][TradeIndex], 150);
+	PlayerTextDrawBackgroundColour(playerid, TradeName[playerid][TradeIndex], 150);
 	PlayerTextDrawFont(playerid, TradeName[playerid][TradeIndex], 1);
 	PlayerTextDrawSetProportional(playerid, TradeName[playerid][TradeIndex], 1);
 
@@ -309,6 +309,43 @@ func:PickDropBox(playerid)
 	return 1;
 }
 
+func:CreateDropObject(objid, objitemid,objamount, Float:DropObjX, Float:DropObjY, Float:DropObjZ)
+{
+	new szDrop[1280];
+	format(szDrop, sizeof(szDrop), "{53f55b}#%d \n%s (Amount: %d) {ffffff}\nSu dung {53f55b}H{ffffff} de nhat",objid, itemInfo[objitemid][item_name], objamount);
+	DropItemInfo[objid][d_object] = CreateDynamicObject(2969, DropObjX, DropObjY, DropObjZ-1, 0.0, 0.0, 0.0);
+	DropItemInfo[objid][d_label] = CreateDynamic3DTextLabel(szDrop, -1, DropObjX, DropObjY, DropObjZ-1, 100);
+	return 1;
+}
+func:DropItem(playerid, dropitem_id, dropamount)
+{
+	new Float:DropObject[4], DropIDz, szDropQuery[1280];
+
+	DropIDz = GetDropIDFree();
+	DropItemInfo[DropIDz][d_id] = DropIDz;
+	DropItemInfo[DropIDz][d_uid] = Character[playerid][char_player_id];
+	DropItemInfo[DropIDz][d_itemid] = dropitem_id;
+	DropItemInfo[DropIDz][d_amount] = dropamount;
+	format(szDropQuery, sizeof(szDropQuery), "DELETE FROM `inventory` WHERE `item` = '%d' AND `amount` = '%d' AND `uid` = '%d'", 
+		DropItemInfo[DropIDz][d_itemid],
+		DropItemInfo[DropIDz][d_amount],
+		Character[playerid][char_player_id]
+	);
+	mysql_query(Handle(), szDropQuery);
+
+	GetPlayerPos(playerid, DropObject[0], DropObject[1], DropObject[2]);
+	format(szDropQuery, sizeof(szDropQuery), "INSERT INTO `inventory_drop` SET \
+		`item` = '%d', `amount` = '%d', `uid` = '%d', `posx` = '%0.2f', `posy` = '%0.2f', `posz` = '%0.2f'",
+		DropItemInfo[DropIDz][d_itemid],
+		DropItemInfo[DropIDz][d_amount],
+		DropItemInfo[DropIDz][d_uid],
+		DropObject[0], DropObject[1], DropObject[2]);
+
+	mysql_tquery(Handle(), szDropQuery, "OnInvDropItem", "iii", playerid,DropItemInfo[DropIDz][d_itemid],DropItemInfo[DropIDz][d_amount]);
+	CreateDropObject(DropItemInfo[DropIDz][d_id], DropItemInfo[DropIDz][d_itemid],DropItemInfo[DropIDz][d_amount], DropObject[0], DropObject[1], DropObject[2]);
+	HidePlayerIndexInv(playerid);
+	ReLoadPlayerInventory(playerid);
+}
 
 CMD:inv(playerid, params[])
 {

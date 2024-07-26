@@ -34,7 +34,7 @@ func:CreateInteractiveNPC(i_id, a_name[], describe[], skin, Float:iNPC_PosX, Flo
     format(Inter_lbmsg, 1280,"{41bcfa}%s (%d)", a_name,inter_npc);
     SetActorName(InteractiveNPCs_Data[inter_npc][iNPC_ID], a_name);
     format(Inter_lbmsg, 1280,"{FFFFFF}%s", describe);
-    Attach3DTextLabelToActor(InteractiveNPCs_Data[inter_npc][iNPC_ID], Inter_lbmsg, -1, 0,0,0,8);
+    Create3DTextLabel(Inter_lbmsg, -1, iNPC_PosX, iNPC_PosY, iNPC_PosZ, 50, 0);
 
     format(InteractiveNPCs_Data[inter_npc][iNPC_Name], MAX_INTERACTIVE_NPC_NAME, "%s", GetActorName(InteractiveNPCs_Data[inter_npc][iNPC_ID]));
     Count_InterNPC++;

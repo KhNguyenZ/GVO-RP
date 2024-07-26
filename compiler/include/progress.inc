@@ -84,18 +84,18 @@ stock PlayerBar:CreatePlayerProgressBar(playerid, Float:x, Float:y, Float:width=
 	PlayerTextDrawUseBox		(playerid, in_t, 1);
 	PlayerTextDrawTextSize		(playerid, in_t, x + width, 0.0);
 	PlayerTextDrawLetterSize	(playerid, in_t, 1.0, height / 10);
-	PlayerTextDrawBoxColor		(playerid, in_t, 0x00000000 | (color & 0x000000FF));
+	PlayerTextDrawBoxColour		(playerid, in_t, 0x00000000 | (color & 0x000000FF));
 
 	in_t = PlayerBarText[barid][pbar_textdraw2] = CreatePlayerTextDraw(playerid, x + 1.2, y + 2.15, "_");
 	PlayerTextDrawUseBox		(playerid, in_t, 1);
 	PlayerTextDrawTextSize		(playerid, in_t, x + width - 2.0, 0.0);
 	PlayerTextDrawLetterSize	(playerid, in_t, 1.0, height / 10 - 0.35);
-	PlayerTextDrawBoxColor		(playerid, in_t, (color & 0xFFFFFF00) | (0x66 & ((color & 0x000000FF) / 2)));
+	PlayerTextDrawBoxColour		(playerid, in_t, (color & 0xFFFFFF00) | (0x66 & ((color & 0x000000FF) / 2)));
 
 	in_t = PlayerBarText[barid][pbar_textdraw3] = CreatePlayerTextDraw(playerid, x + 1.2, y + 2.15, "_");
 	PlayerTextDrawTextSize		(playerid, in_t, pb_percent(x, width, max, 1.0), 0.0);
 	PlayerTextDrawLetterSize	(playerid, in_t, 1.0, height / 10 - 0.35);
-	PlayerTextDrawBoxColor		(playerid, in_t, color);
+	PlayerTextDrawBoxColour		(playerid, in_t, color);
 
 	PlayerBars[playerid][barid][pbar_x] = x;
 	PlayerBars[playerid][barid][pbar_y] = y;
@@ -217,12 +217,12 @@ stock SetPlayerProgressBarColor(playerid, PlayerBar:barid, color)
 	if(PlayerBars[playerid][_:barid][pbar_valid])
 	{	
 		PlayerBars[playerid][_:barid][pbar_colour] = color;
-		PlayerTextDrawBoxColor(playerid, PlayerBarText[_:barid][pbar_textdraw1], 0x00000000 | (color & 0x000000FF));
+		PlayerTextDrawBoxColour(playerid, PlayerBarText[_:barid][pbar_textdraw1], 0x00000000 | (color & 0x000000FF));
 
-		PlayerTextDrawBoxColor(playerid, PlayerBarText[_:barid][pbar_textdraw2],
+		PlayerTextDrawBoxColour(playerid, PlayerBarText[_:barid][pbar_textdraw2],
 			(color & 0xFFFFFF00) | (0x66 & ((color & 0x000000FF) / 2)));
 
-		PlayerTextDrawBoxColor(playerid, PlayerBarText[_:barid][pbar_textdraw3], color);
+		PlayerTextDrawBoxColour(playerid, PlayerBarText[_:barid][pbar_textdraw3], color);
 		return 1;
 	}
 	return 0;

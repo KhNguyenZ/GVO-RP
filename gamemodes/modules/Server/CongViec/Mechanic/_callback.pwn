@@ -1,4 +1,4 @@
-#include <YSI_Coding\y_hooks>
+#include <YSI\YSI_Coding\y_hooks>
 hook OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstate)
 {
     if(GetPVarInt(playerid, "placevehicle") == 1)
@@ -43,7 +43,7 @@ hook OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 {
     if (PRESSED(KEY_YES))
     {
-        return FixPVehicle(playerid);
+        return cmd_fixvehicle(playerid);
     }
     return 1;
 }
@@ -77,7 +77,7 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         if (response)
         {
             
-            if(isnumeric(inputtext))
+            if(IsNumeric(inputtext))
             {
                 PlusMechanicItems(playerid, strval(inputtext), 1);
             }
@@ -85,7 +85,7 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         else
         {
             
-            if(isnumeric(inputtext))
+            if(IsNumeric(inputtext))
             {
                 MinusMechanicItems(playerid, strval(inputtext), 1);
             }
@@ -96,7 +96,7 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         if (response)
         {
             
-            if(isnumeric(inputtext))
+            if(IsNumeric(inputtext))
             {
                 PlusMechanicItems(playerid, strval(inputtext), 2);
             }
@@ -104,7 +104,7 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         else
         {
             
-            if(isnumeric(inputtext))
+            if(IsNumeric(inputtext))
             {
                 MinusMechanicItems(playerid, strval(inputtext), 2);
             }
@@ -115,7 +115,7 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         if (response)
         {
             
-            if(isnumeric(inputtext))
+            if(IsNumeric(inputtext))
             {
                 PlusMechanicItems(playerid, strval(inputtext), 3);
             }
@@ -123,7 +123,7 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         else
         {
             
-            if(isnumeric(inputtext))
+            if(IsNumeric(inputtext))
             {
                 MinusMechanicItems(playerid, strval(inputtext), 3);
             }

@@ -1,9 +1,0 @@
-./modules/Dev/Job/_main.pwn(448) : èäåíòèôèêàòîðó ïðèñâîåíî çíà÷åíèå, íî îí íå èñïîëüçóåòñÿ: "playerjob"
-./modules/Players/characters/Inventory/_function.pwn(397) : èäåíòèôèêàòîð íå èñïîëüçóåòñÿ: "page"
-./modules/Server/dynamic/Biz/callback.pwn(13) : èäåíòèôèêàòîð íå èñïîëüçóåòñÿ: "count"
-./modules/Server/Organization/_function.pwn(22) : èäåíòèôèêàòîð íå èñïîëüçóåòñÿ: "org_type"
-./modules/Server/Discord/command.pwn(25) : èäåíòèôèêàòîð íå èñïîëüçóåòñÿ: "HintCommand"
-./modules/Server/Vehicle/Core/_var.pwn(108) : èäåíòèôèêàòîð íå èñïîëüçóåòñÿ: "MaxVehicleFuel"
-./modules/Main/_var.pwn(114) : èäåíòèôèêàòîð íå èñïîëüçóåòñÿ: "pCountVeh"
-Pawn compiler 3.2.3664	 	 	Copyright (c) 1997-2016, ITB CompuPhase
-

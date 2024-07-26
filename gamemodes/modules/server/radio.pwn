@@ -1,6 +1,6 @@
 #include <a_samp>
 #include <sscanf2>
-#include <YSI_Coding\y_hooks>
+#include <YSI\YSI_Coding\y_hooks>
 
 // Radio
 func:SendRadioMessage(playerid, const message[], tan_so = 1)
@@ -16,9 +16,14 @@ func:SendRadioMessage(playerid, const message[], tan_so = 1)
 	}
 	return 1; 
 }
-CMD:r(playerid, params[])
+CMD:chat(playerid, params[])
 {
 	if(isnull(params)) SendClientMessage(playerid, -1, "SU DUNG: /chat [noi dung chat]");
 	else SendRadioMessage(playerid, params, Character[playerid][char_tanso]);
 	return 1;
+}
+
+CMD:r(playerid, params[])
+{
+	return cmd_chat(playerid, params);
 }

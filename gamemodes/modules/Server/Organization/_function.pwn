@@ -1,4 +1,4 @@
-#include <YSI_Coding\y_hooks>
+#include <YSI\YSI_Coding\y_hooks>
 
 func:SaveOrg(_org_id)
 {
@@ -32,7 +32,7 @@ func:LoadOrgs()
         OrgData[i][org_id] = INVAILID_NUMBER;
         LoadOrg(i);
     }
-    InitOrgVehMap();
+    // InitOrgVehMap();
 }
 func:LoadOrg(org_idzzz)
 {
@@ -234,7 +234,7 @@ func:SettingOrgDialog(playerid, dialogid, response, listitem, inputtext[])
             case SETTING_ORG_SKIN_INPUT:
             {
                 if (isnull(inputtext)) return ShowPlayerDialog(playerid, SETTING_ORG_RANK_INPUT, DIALOG_STYLE_INPUT, "Cai dat skin", "Nhap ten cua chuc vu nay", ">>", "<<");
-                if (!isnumeric(inputtext) && 1 < strval(inputtext) < 312) return ShowPlayerDialog(playerid, SETTING_ORG_RANK_INPUT, DIALOG_STYLE_INPUT, "Cai dat skin", "ID khong hop le", ">>", "<<");
+                if (!IsNumeric(inputtext) && 1 < strval(inputtext) < 312) return ShowPlayerDialog(playerid, SETTING_ORG_RANK_INPUT, DIALOG_STYLE_INPUT, "Cai dat skin", "ID khong hop le", ">>", "<<");
                 OrgData[GetPVarInt(playerid, #SettingOrgID)][org_skin][GetPVarInt(playerid, #SkinSettingID)] = strval(inputtext);
                 HienTextdraw(playerid, "Cai dat skin thanh cong", 2000);
             }
@@ -247,7 +247,7 @@ func:SettingOrgDialog(playerid, dialogid, response, listitem, inputtext[])
             case SETTING_ORG_LEADER:
             {
                 if (isnull(inputtext)) return ShowPlayerDialog(playerid, SETTING_ORG_LEADER, DIALOG_STYLE_INPUT, "Cai dat leader", "Vui long nhap ID nguoi choi", ">>", "<<");
-                if (!isnumeric(inputtext)) return ShowPlayerDialog(playerid, SETTING_ORG_LEADER, DIALOG_STYLE_INPUT, "Cai dat leader", "ID khong hop le !", ">>", "<<");
+                if (!IsNumeric(inputtext)) return ShowPlayerDialog(playerid, SETTING_ORG_LEADER, DIALOG_STYLE_INPUT, "Cai dat leader", "ID khong hop le !", ">>", "<<");
                 FuncMakeleader(strval(inputtext), GetPVarInt(playerid, #SettingOrgID));
                 HienTextdraw(playerid, "Cai dat leader thanh cong", 2000);
             }

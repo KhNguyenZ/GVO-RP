@@ -9,7 +9,7 @@
 
 #include <a_samp>
 #include <streamer>
-#include <YSI_Data\y_iterate>
+#include <YSI\YSI_Data\y_iterate>
 
 #define SetAlpha(%0)          (%0 & 0xFFFFFFFE)
 #define Darken(%0)            (%0 & 0x80808000)

@@ -7,9 +7,9 @@ func:CreateDeathUI(playerid)
     PlayerTextDrawSetOutline(playerid, DeathUI[playerid][0], 1);
     PlayerTextDrawSetShadow(playerid, DeathUI[playerid][0], 0);
     PlayerTextDrawAlignment(playerid, DeathUI[playerid][0], 1);
-    PlayerTextDrawColor(playerid, DeathUI[playerid][0], -1);
-    PlayerTextDrawBackgroundColor(playerid, DeathUI[playerid][0], 255);
-    PlayerTextDrawBoxColor(playerid, DeathUI[playerid][0], 50);
+    PlayerTextDrawColour(playerid, DeathUI[playerid][0], -1);
+    PlayerTextDrawBackgroundColour(playerid, DeathUI[playerid][0], 255);
+    PlayerTextDrawBoxColour(playerid, DeathUI[playerid][0], 50);
     PlayerTextDrawUseBox(playerid, DeathUI[playerid][0], 1);
     PlayerTextDrawSetProportional(playerid, DeathUI[playerid][0], 1);
     PlayerTextDrawSetSelectable(playerid, DeathUI[playerid][0], 0);
@@ -21,9 +21,9 @@ func:CreateDeathUI(playerid)
     PlayerTextDrawSetOutline(playerid, DeathUI[playerid][1], 1);
     PlayerTextDrawSetShadow(playerid, DeathUI[playerid][1], 0);
     PlayerTextDrawAlignment(playerid, DeathUI[playerid][1], 1);
-    PlayerTextDrawColor(playerid, DeathUI[playerid][1], -1);
-    PlayerTextDrawBackgroundColor(playerid, DeathUI[playerid][1], 255);
-    PlayerTextDrawBoxColor(playerid, DeathUI[playerid][1], 50);
+    PlayerTextDrawColour(playerid, DeathUI[playerid][1], -1);
+    PlayerTextDrawBackgroundColour(playerid, DeathUI[playerid][1], 255);
+    PlayerTextDrawBoxColour(playerid, DeathUI[playerid][1], 50);
     PlayerTextDrawUseBox(playerid, DeathUI[playerid][1], 1);
     PlayerTextDrawSetProportional(playerid, DeathUI[playerid][1], 1);
     PlayerTextDrawSetSelectable(playerid, DeathUI[playerid][1], 0);
@@ -35,9 +35,9 @@ func:CreateDeathUI(playerid)
     PlayerTextDrawSetOutline(playerid, DeathUI[playerid][2], 0);
     PlayerTextDrawSetShadow(playerid, DeathUI[playerid][2], 0);
     PlayerTextDrawAlignment(playerid, DeathUI[playerid][2], 1);
-    PlayerTextDrawColor(playerid, DeathUI[playerid][2], -1);
-    PlayerTextDrawBackgroundColor(playerid, DeathUI[playerid][2], 255);
-    PlayerTextDrawBoxColor(playerid, DeathUI[playerid][2], 50);
+    PlayerTextDrawColour(playerid, DeathUI[playerid][2], -1);
+    PlayerTextDrawBackgroundColour(playerid, DeathUI[playerid][2], 255);
+    PlayerTextDrawBoxColour(playerid, DeathUI[playerid][2], 50);
     PlayerTextDrawUseBox(playerid, DeathUI[playerid][2], 0);
     PlayerTextDrawSetProportional(playerid, DeathUI[playerid][2], 1);
     PlayerTextDrawSetSelectable(playerid, DeathUI[playerid][2], 0);

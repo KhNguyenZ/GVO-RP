@@ -86,7 +86,7 @@
 	return 1;
 }
 */
-#include <YSI_Coding\y_hooks>
+#include <YSI\YSI_Coding\y_hooks>
 CMD:createpvehicle(playerid, params[])
 {
 	if(!CheckAdmin(playerid, 4)) return SendErrorMessage(playerid, "Ban khong co quyen su dung lenh nay !");

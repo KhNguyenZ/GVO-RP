@@ -64,7 +64,7 @@ public OnCharacterCreate(const playerid)
 	return 1;
 }
 
-#include <YSI_Coding\y_hooks>
+#include <YSI\YSI_Coding\y_hooks>
 hook OnPlayerConnect(playerid)
 {
 	for(new i = 0; i < 3; i ++) 

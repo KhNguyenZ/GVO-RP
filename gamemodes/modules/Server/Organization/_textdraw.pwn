@@ -3,20 +3,20 @@ func:CreatePlayerOrgManagement(playerid)
     OrgPTD[playerid][0] = CreatePlayerTextDraw(playerid, 116.000, 122.000, "mdl-2010:org");
     PlayerTextDrawTextSize(playerid, OrgPTD[playerid][0], 421.000, 242.000);
     PlayerTextDrawAlignment(playerid, OrgPTD[playerid][0], 1);
-    PlayerTextDrawColor(playerid, OrgPTD[playerid][0], -1);
+    PlayerTextDrawColour(playerid, OrgPTD[playerid][0], -1);
     PlayerTextDrawSetShadow(playerid, OrgPTD[playerid][0], 0);
     PlayerTextDrawSetOutline(playerid, OrgPTD[playerid][0], 0);
-    PlayerTextDrawBackgroundColor(playerid, OrgPTD[playerid][0], 255);
+    PlayerTextDrawBackgroundColour(playerid, OrgPTD[playerid][0], 255);
     PlayerTextDrawFont(playerid, OrgPTD[playerid][0], 4);
     PlayerTextDrawSetProportional(playerid, OrgPTD[playerid][0], 1);
 
     OrgPTD[playerid][1] = CreatePlayerTextDraw(playerid, 123.000, 315.000, "mdl-2010:list-member");
     PlayerTextDrawTextSize(playerid, OrgPTD[playerid][1], 92.000, 17.000);
     PlayerTextDrawAlignment(playerid, OrgPTD[playerid][1], 1);
-    PlayerTextDrawColor(playerid, OrgPTD[playerid][1], -1);
+    PlayerTextDrawColour(playerid, OrgPTD[playerid][1], -1);
     PlayerTextDrawSetShadow(playerid, OrgPTD[playerid][1], 0);
     PlayerTextDrawSetOutline(playerid, OrgPTD[playerid][1], 0);
-    PlayerTextDrawBackgroundColor(playerid, OrgPTD[playerid][1], 255);
+    PlayerTextDrawBackgroundColour(playerid, OrgPTD[playerid][1], 255);
     PlayerTextDrawFont(playerid, OrgPTD[playerid][1], 4);
     PlayerTextDrawSetProportional(playerid, OrgPTD[playerid][1], 1);
     PlayerTextDrawSetSelectable(playerid, OrgPTD[playerid][1], 1);
@@ -24,10 +24,10 @@ func:CreatePlayerOrgManagement(playerid)
     OrgPTD[playerid][2] = CreatePlayerTextDraw(playerid, 228.000, 315.000, "mdl-2010:weapon");
     PlayerTextDrawTextSize(playerid, OrgPTD[playerid][2], 92.000, 17.000);
     PlayerTextDrawAlignment(playerid, OrgPTD[playerid][2], 1);
-    PlayerTextDrawColor(playerid, OrgPTD[playerid][2], -1);
+    PlayerTextDrawColour(playerid, OrgPTD[playerid][2], -1);
     PlayerTextDrawSetShadow(playerid, OrgPTD[playerid][2], 0);
     PlayerTextDrawSetOutline(playerid, OrgPTD[playerid][2], 0);
-    PlayerTextDrawBackgroundColor(playerid, OrgPTD[playerid][2], 255);
+    PlayerTextDrawBackgroundColour(playerid, OrgPTD[playerid][2], 255);
     PlayerTextDrawFont(playerid, OrgPTD[playerid][2], 4);
     PlayerTextDrawSetProportional(playerid, OrgPTD[playerid][2], 1);
     PlayerTextDrawSetSelectable(playerid, OrgPTD[playerid][2], 1);
@@ -35,10 +35,10 @@ func:CreatePlayerOrgManagement(playerid)
     OrgPTD[playerid][3] = CreatePlayerTextDraw(playerid, 333.000, 315.000, "mdl-2010:safe");
     PlayerTextDrawTextSize(playerid, OrgPTD[playerid][3], 92.000, 17.000);
     PlayerTextDrawAlignment(playerid, OrgPTD[playerid][3], 1);
-    PlayerTextDrawColor(playerid, OrgPTD[playerid][3], -1);
+    PlayerTextDrawColour(playerid, OrgPTD[playerid][3], -1);
     PlayerTextDrawSetShadow(playerid, OrgPTD[playerid][3], 0);
     PlayerTextDrawSetOutline(playerid, OrgPTD[playerid][3], 0);
-    PlayerTextDrawBackgroundColor(playerid, OrgPTD[playerid][3], 255);
+    PlayerTextDrawBackgroundColour(playerid, OrgPTD[playerid][3], 255);
     PlayerTextDrawFont(playerid, OrgPTD[playerid][3], 4);
     PlayerTextDrawSetProportional(playerid, OrgPTD[playerid][3], 1);
     PlayerTextDrawSetSelectable(playerid, OrgPTD[playerid][3], 1);
@@ -46,10 +46,10 @@ func:CreatePlayerOrgManagement(playerid)
     OrgPTD[playerid][4] = CreatePlayerTextDraw(playerid, 438.000, 315.000, "mdl-2010:quit");
     PlayerTextDrawTextSize(playerid, OrgPTD[playerid][4], 92.000, 17.000);
     PlayerTextDrawAlignment(playerid, OrgPTD[playerid][4], 1);
-    PlayerTextDrawColor(playerid, OrgPTD[playerid][4], -1);
+    PlayerTextDrawColour(playerid, OrgPTD[playerid][4], -1);
     PlayerTextDrawSetShadow(playerid, OrgPTD[playerid][4], 0);
     PlayerTextDrawSetOutline(playerid, OrgPTD[playerid][4], 0);
-    PlayerTextDrawBackgroundColor(playerid, OrgPTD[playerid][4], 255);
+    PlayerTextDrawBackgroundColour(playerid, OrgPTD[playerid][4], 255);
     PlayerTextDrawFont(playerid, OrgPTD[playerid][4], 4);
     PlayerTextDrawSetProportional(playerid, OrgPTD[playerid][4], 1);
     PlayerTextDrawSetSelectable(playerid, OrgPTD[playerid][4], 1);
@@ -57,10 +57,10 @@ func:CreatePlayerOrgManagement(playerid)
     OrgPTD[playerid][5] = CreatePlayerTextDraw(playerid, 282.000, 339.000, "mdl-2010:giaitan");
     PlayerTextDrawTextSize(playerid, OrgPTD[playerid][5], 92.000, 17.000);
     PlayerTextDrawAlignment(playerid, OrgPTD[playerid][5], 1);
-    PlayerTextDrawColor(playerid, OrgPTD[playerid][5], -1);
+    PlayerTextDrawColour(playerid, OrgPTD[playerid][5], -1);
     PlayerTextDrawSetShadow(playerid, OrgPTD[playerid][5], 0);
     PlayerTextDrawSetOutline(playerid, OrgPTD[playerid][5], 0);
-    PlayerTextDrawBackgroundColor(playerid, OrgPTD[playerid][5], 255);
+    PlayerTextDrawBackgroundColour(playerid, OrgPTD[playerid][5], 255);
     PlayerTextDrawFont(playerid, OrgPTD[playerid][5], 4);
     PlayerTextDrawSetProportional(playerid, OrgPTD[playerid][5], 1);
     PlayerTextDrawSetSelectable(playerid, OrgPTD[playerid][5], 1);
@@ -69,10 +69,10 @@ func:CreatePlayerOrgManagement(playerid)
     PlayerTextDrawLetterSize(playerid, OrgPTD[playerid][6], 0.300, 1.500);
     PlayerTextDrawTextSize(playerid, OrgPTD[playerid][6], -12.000, 149.000);
     PlayerTextDrawAlignment(playerid, OrgPTD[playerid][6], 2);
-    PlayerTextDrawColor(playerid, OrgPTD[playerid][6], -1);
+    PlayerTextDrawColour(playerid, OrgPTD[playerid][6], -1);
     PlayerTextDrawSetShadow(playerid, OrgPTD[playerid][6], 1);
     PlayerTextDrawSetOutline(playerid, OrgPTD[playerid][6], 0);
-    PlayerTextDrawBackgroundColor(playerid, OrgPTD[playerid][6], 150);
+    PlayerTextDrawBackgroundColour(playerid, OrgPTD[playerid][6], 150);
     PlayerTextDrawFont(playerid, OrgPTD[playerid][6], 3);
     PlayerTextDrawSetProportional(playerid, OrgPTD[playerid][6], 1);
 
@@ -80,10 +80,10 @@ func:CreatePlayerOrgManagement(playerid)
     PlayerTextDrawLetterSize(playerid, OrgPTD[playerid][7], 0.300, 1.500);
     PlayerTextDrawTextSize(playerid, OrgPTD[playerid][7], -12.000, 122.000);
     PlayerTextDrawAlignment(playerid, OrgPTD[playerid][7], 2);
-    PlayerTextDrawColor(playerid, OrgPTD[playerid][7], -1);
+    PlayerTextDrawColour(playerid, OrgPTD[playerid][7], -1);
     PlayerTextDrawSetShadow(playerid, OrgPTD[playerid][7], 1);
     PlayerTextDrawSetOutline(playerid, OrgPTD[playerid][7], 0);
-    PlayerTextDrawBackgroundColor(playerid, OrgPTD[playerid][7], 150);
+    PlayerTextDrawBackgroundColour(playerid, OrgPTD[playerid][7], 150);
     PlayerTextDrawFont(playerid, OrgPTD[playerid][7], 3);
     PlayerTextDrawSetProportional(playerid, OrgPTD[playerid][7], 1);
 
@@ -91,10 +91,10 @@ func:CreatePlayerOrgManagement(playerid)
     PlayerTextDrawLetterSize(playerid, OrgPTD[playerid][8], 0.300, 1.500);
     PlayerTextDrawTextSize(playerid, OrgPTD[playerid][8], -12.000, 28.000);
     PlayerTextDrawAlignment(playerid, OrgPTD[playerid][8], 2);
-    PlayerTextDrawColor(playerid, OrgPTD[playerid][8], -1);
+    PlayerTextDrawColour(playerid, OrgPTD[playerid][8], -1);
     PlayerTextDrawSetShadow(playerid, OrgPTD[playerid][8], 1);
     PlayerTextDrawSetOutline(playerid, OrgPTD[playerid][8], 0);
-    PlayerTextDrawBackgroundColor(playerid, OrgPTD[playerid][8], 150);
+    PlayerTextDrawBackgroundColour(playerid, OrgPTD[playerid][8], 150);
     PlayerTextDrawFont(playerid, OrgPTD[playerid][8], 3);
     PlayerTextDrawSetProportional(playerid, OrgPTD[playerid][8], 1);
 
@@ -102,20 +102,20 @@ func:CreatePlayerOrgManagement(playerid)
     PlayerTextDrawLetterSize(playerid, OrgPTD[playerid][9], 0.300, 1.500);
     PlayerTextDrawTextSize(playerid, OrgPTD[playerid][9], -12.000, 28.000);
     PlayerTextDrawAlignment(playerid, OrgPTD[playerid][9], 2);
-    PlayerTextDrawColor(playerid, OrgPTD[playerid][9], -1);
+    PlayerTextDrawColour(playerid, OrgPTD[playerid][9], -1);
     PlayerTextDrawSetShadow(playerid, OrgPTD[playerid][9], 1);
     PlayerTextDrawSetOutline(playerid, OrgPTD[playerid][9], 0);
-    PlayerTextDrawBackgroundColor(playerid, OrgPTD[playerid][9], 150);
+    PlayerTextDrawBackgroundColour(playerid, OrgPTD[playerid][9], 150);
     PlayerTextDrawFont(playerid, OrgPTD[playerid][9], 3);
     PlayerTextDrawSetProportional(playerid, OrgPTD[playerid][9], 1);
 
     OrgPTD[playerid][10] = CreatePlayerTextDraw(playerid, 415.000, 132.000, "");
     PlayerTextDrawTextSize(playerid, OrgPTD[playerid][10], 76.000, 73.000);
     PlayerTextDrawAlignment(playerid, OrgPTD[playerid][10], 1);
-    PlayerTextDrawColor(playerid, OrgPTD[playerid][10], -1);
+    PlayerTextDrawColour(playerid, OrgPTD[playerid][10], -1);
     PlayerTextDrawSetShadow(playerid, OrgPTD[playerid][10], 0);
     PlayerTextDrawSetOutline(playerid, OrgPTD[playerid][10], 0);
-    PlayerTextDrawBackgroundColor(playerid, OrgPTD[playerid][10], 255);
+    PlayerTextDrawBackgroundColour(playerid, OrgPTD[playerid][10], 255);
     PlayerTextDrawFont(playerid, OrgPTD[playerid][10], 4);
     PlayerTextDrawSetProportional(playerid, OrgPTD[playerid][10], 1);
     PlayerTextDrawSetSelectable(playerid, OrgPTD[playerid][10], 1);
@@ -124,10 +124,10 @@ func:CreatePlayerOrgManagement(playerid)
     PlayerTextDrawLetterSize(playerid, OrgPTD[playerid][11], 0.300, 1.500);
     PlayerTextDrawTextSize(playerid, OrgPTD[playerid][11], -12.000, 28.000);
     PlayerTextDrawAlignment(playerid, OrgPTD[playerid][11], 2);
-    PlayerTextDrawColor(playerid, OrgPTD[playerid][11], -1);
+    PlayerTextDrawColour(playerid, OrgPTD[playerid][11], -1);
     PlayerTextDrawSetShadow(playerid, OrgPTD[playerid][11], 1);
     PlayerTextDrawSetOutline(playerid, OrgPTD[playerid][11], 0);
-    PlayerTextDrawBackgroundColor(playerid, OrgPTD[playerid][11], 150);
+    PlayerTextDrawBackgroundColour(playerid, OrgPTD[playerid][11], 150);
     PlayerTextDrawFont(playerid, OrgPTD[playerid][11], 3);
     PlayerTextDrawSetProportional(playerid, OrgPTD[playerid][11], 1);
     return 1;

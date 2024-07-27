@@ -1,45 +1,55 @@
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_float: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_float: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_float: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: field 'ExVW' not found
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: field 'InVW' not found
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: field 'ExInterior' not found
-[26/07/2024 11:16:03 CH] [plugins/mysql] cache_get_value_name_int: field 'InInterior' not found
-[26/07/2024 11:16:03 CH] [plugins/mysql] error #1054 while executing query "UPDATE `biz` SET `Name` = '', `Type` = '1',`ExPosX` = '1929.000000',`ExPosY` = '-1776.119995',`ExPosZ` = '13.546900',`InPosX` = '0.000000',`InPosY` = '0.000000',`InPosZ` = '0.000000',`Locked` = '0',`OwnerName` = 'NULL',`ExVW` = '0',`InVW` = '0',`ExInterior` = '0',`InInterior` = '0'WHERE `id` = '0'": Unknown column 'ExVW' in 'field list'
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_float: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_float: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_float: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: field 'ExVW' not found
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: field 'InVW' not found
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: field 'ExInterior' not found
+[27/07/2024 11:59:57 CH] [plugins/mysql] cache_get_value_name_int: field 'InInterior' not found
+[27/07/2024 11:59:57 CH] [plugins/mysql] error #1054 while executing query "UPDATE `biz` SET `Name` = '', `Type` = '1',`ExPosX` = '1929.000000',`ExPosY` = '-1776.119995',`ExPosZ` = '13.546900',`InPosX` = '0.000000',`InPosY` = '0.000000',`InPosZ` = '0.000000',`Locked` = '0',`OwnerName` = 'NULL',`ExVW` = '0',`InVW` = '0',`ExInterior` = '0',`InInterior` = '0'WHERE `id` = '0'": Unknown column 'ExVW' in 'field list'
+[28/07/2024 12:00:07 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[28/07/2024 12:00:07 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[28/07/2024 12:00:07 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[28/07/2024 12:00:07 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[28/07/2024 12:00:07 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[28/07/2024 12:00:07 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[28/07/2024 12:00:07 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[28/07/2024 12:00:07 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[28/07/2024 12:00:07 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[28/07/2024 12:00:07 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number

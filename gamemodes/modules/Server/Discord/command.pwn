@@ -24,21 +24,21 @@ new HintCommand[][HINT_COMMAND] = {
     {0, "verify", "Xác thực tài khoản"}
 };
 
-DCMD:verify(user, channel, params[])
-{
-    if(!DISCORD_IsChannel(channel,SSA_CMD)) return DISCORD_WARNING_MSG(channel, "Lệnh không khả dụng trong kênh này \nCố tình 'Spam' sẽ bị `Mute`");
+// DCMD:verify(user, channel, params[])
+// {
+//     if(!DISCORD_IsChannel(channel,SSA_CMD)) return DISCORD_WARNING_MSG(channel, "Lệnh không khả dụng trong kênh này \nCố tình 'Spam' sẽ bị `Mute`");
 
-    if(DISCORD_HadRole(user, AuthMember)) return DISCORD_ERROR_MSG(SSA_CMD, "Bạn đã xác thực \nNếu đây là bug role(chưa xác thực nhưng đã có role `Authentic Member`) thì hãy liên hệ Admin ngay nhé~~~");
-    new PlayerAuthName[MAX_PLAYER_NAME];
-    if(sscanf(params, "s[128]",PlayerAuthName)) return DISCORD_SendUsageCMD("/verify [Tên đăng nhập (VD: ~~Jey_Bee)~~]");
+//     if(DISCORD_HadRole(user, AuthMember)) return DISCORD_ERROR_MSG(SSA_CMD, "Bạn đã xác thực \nNếu đây là bug role(chưa xác thực nhưng đã có role `Authentic Member`) thì hãy liên hệ Admin ngay nhé~~~");
+//     new PlayerAuthName[MAX_PLAYER_NAME];
+//     if(sscanf(params, "s[128]",PlayerAuthName)) return DISCORD_SendUsageCMD("/verify [Tên đăng nhập (VD: ~~Jey_Bee)~~]");
 
-    if(IsUserOnline(PlayerAuthName)) return DISCORD_ERROR_MSG(SSA_CMD, "Tài khoản của bạn đang Online , vui lòng thoát (/quit) game !!!");
-    new dcid_o[DCC_ID_SIZE];
-    DCC_GetUserId(user,dcid_o);
-    if(IsDiscordLinked(dcid_o)) return DISCORD_ERROR_MSG(SSA_CMD,"1 Discord chỉ có thể liên kết được 1 Account !");
-    AuthAccount(user, PlayerAuthName, dcid_o);
-    return 1;
-}
+//     if(IsUserOnline(PlayerAuthName)) return DISCORD_ERROR_MSG(SSA_CMD, "Tài khoản của bạn đang Online , vui lòng thoát (/quit) game !!!");
+//     new dcid_o[DCC_ID_SIZE];
+//     DCC_GetUserId(user,dcid_o);
+//     if(IsDiscordLinked(dcid_o)) return DISCORD_ERROR_MSG(SSA_CMD,"1 Discord chỉ có thể liên kết được 1 Account !");
+//     AuthAccount(user, PlayerAuthName, dcid_o);
+//     return 1;
+// }
 
 CMD:verify(playerid, params[])
 {

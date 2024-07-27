@@ -156,8 +156,8 @@ public OnPlayerRequestClass(playerid, classid)
     if(IsPlayerNPC(playerid)) return 1;
     if(Character[playerid][char_Login] == true)
     {
-        SetSpawnInfo(playerid, 0, Character[playerid][char_Skin], Character[playerid][char_last_Pos][0],Character[playerid][char_last_Pos][1],Character[playerid][char_last_Pos][2],Character[playerid][char_last_Pos][3],0,0,0,0,0,0);
         TogglePlayerSpectating(playerid, false);
+        SetSpawnInfo(playerid, 0, Character[playerid][char_Skin], Character[playerid][char_last_Pos][0],Character[playerid][char_last_Pos][1],Character[playerid][char_last_Pos][2],Character[playerid][char_last_Pos][3],0,0,0,0,0,0);
     }
     else
     {
@@ -166,12 +166,7 @@ public OnPlayerRequestClass(playerid, classid)
 
     return 1;
 }
-forward ForceSpawn(playerid);
-public ForceSpawn(playerid)
-{
-    SetSpawnInfo(playerid, 0, Character[playerid][char_Skin], Character[playerid][char_last_Pos][0],Character[playerid][char_last_Pos][1],Character[playerid][char_last_Pos][2],Character[playerid][char_last_Pos][3],0,0,0,0,0,0);
-    // SpawnPlayer(playerid);
-}
+
 public OnPlayerEnterCheckpoint(playerid)
 {
     OnPlayerEnterCheckpointElectrician(playerid);

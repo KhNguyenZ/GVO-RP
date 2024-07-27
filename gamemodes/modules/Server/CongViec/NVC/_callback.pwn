@@ -2,11 +2,138 @@ hook OnGameModeInit()
 {
 	// NPC 2749.7957,-2451.3630,13.6484,358.1701
     Create3DTextLabel("{00ff00}[TRUCKING]\n{FFFFFF}Su dung {ffff00}/layxelamviec{FFFFFF} de tim hieu.", COLOR_WHITE, 2760.9275,-2395.9385,13.6328, 30.0, 0, false); //LAYXELAMVIEC 
-	Create3DTextLabel("{00ff00}[TRUCKING]\n{FFFFFF}Su dung {ffff00}Nhan Y{FFFFFF} de lay hang.", COLOR_WHITE, 2744.5603,-2425.2952,13.6286, 30.0, 0, false); // LAY HANG 
+	Create3DTextLabel("{00ff00}[TRUCKING]\n{FFFFFF}Su dung {ffff00}Nhan Y{FFFFFF} de lay hang.", COLOR_WHITE, 2780.0386,-2413.1477,13.6356, 30.0, 0, false); // LAY HANG 
 }
+
+hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[]) {
+    if(dialogid == DLG_BANHANGTRUCK) {
+		if(response) {
+			ClearAnimations(playerid);
+    		RemovePlayerAttachedObject(playerid, 6);
+			SetPlayerSpecialAction(playerid, 0);
+			GivePlayerMoney(playerid, GetPVarInt(playerid, "giatientruck"));
+			new young = GetPVarInt(playerid, "idloaihang");
+			hangtrentay[playerid][young-1] = 0;
+			SetPVarInt(playerid,"idloaihang", 0);
+			SetPVarInt(playerid,"giatientruck", 0);
+			LuongHang[playerid] -= 1;
+		}
+	}
+	if(dialogid == DLG_XEMHANG) {
+		if(response)
+		{
+			if(hangtrenxe[playerid][listitem] == 0) return true;
+			switch(listitem) {
+				case 0:{
+					if(hangtrenxe[playerid][listitem] == 0) return true;
+					LuongHang[playerid] -= 1;
+					hangtrenxe[playerid][listitem] -= 1;
+					hangtrentay[playerid][0] = 1;
+					SetPVarInt(playerid,"idloaihang", 1);
+					ApplyAnimation(playerid, "CARRY", "crry_prtial", 4.0, 1, 1, 1, 0, 1);
+	    			SetPlayerSpecialAction(playerid, SPECIAL_ACTION_CARRY);
+	    			SetPlayerAttachedObject(playerid, 6, 1220, 1, 0.299822, 0.663485, -0.036337, 184.311355, 90.004089, 0.000000, 1.000000, 1.000000, 1.000000 );
+				}
+				case 1:{
+					if(hangtrenxe[playerid][listitem] == 0) return true;
+					hangtrenxe[playerid][listitem] -= 1;
+					hangtrentay[playerid][1] = 1;
+					LuongHang[playerid] -= 1;
+					SetPVarInt(playerid,"idloaihang", 2);
+					ApplyAnimation(playerid, "CARRY", "crry_prtial", 4.0, 1, 1, 1, 0, 1);
+	    			SetPlayerSpecialAction(playerid, SPECIAL_ACTION_CARRY);
+	    			SetPlayerAttachedObject(playerid, 6, 1220, 1, 0.299822, 0.663485, -0.036337, 184.311355, 90.004089, 0.000000, 1.000000, 1.000000, 1.000000 );
+				}
+				case 2:{
+					if(hangtrenxe[playerid][listitem] == 0) return true;
+					hangtrenxe[playerid][listitem] -= 1;
+					hangtrentay[playerid][2] = 1;
+					LuongHang[playerid] -= 1;
+					SetPVarInt(playerid,"idloaihang", 3);
+					ApplyAnimation(playerid, "CARRY", "crry_prtial", 4.0, 1, 1, 1, 0, 1);
+	    			SetPlayerSpecialAction(playerid, SPECIAL_ACTION_CARRY);
+	    			SetPlayerAttachedObject(playerid, 6, 1220, 1, 0.299822, 0.663485, -0.036337, 184.311355, 90.004089, 0.000000, 1.000000, 1.000000, 1.000000 );
+				}
+                case 3:{
+					if(hangtrenxe[playerid][listitem] == 0) return true;
+					hangtrenxe[playerid][listitem] -= 1;
+					hangtrentay[playerid][3] = 1;
+					LuongHang[playerid] -= 1;
+					SetPVarInt(playerid,"idloaihang", 4);
+					ApplyAnimation(playerid, "CARRY", "crry_prtial", 4.0, 1, 1, 1, 0, 1);
+	    			SetPlayerSpecialAction(playerid, SPECIAL_ACTION_CARRY);
+	    			SetPlayerAttachedObject(playerid, 6, 1220, 1, 0.299822, 0.663485, -0.036337, 184.311355, 90.004089, 0.000000, 1.000000, 1.000000, 1.000000 );
+				}
+			}
+		}
+	}
+	if(dialogid == DLG_DIEMGIAOHANG) {
+		if(response){
+			DisablePlayerCheckpoint(playerid);
+			SetPlayerCheckpoint(playerid, KhuVucThuMua[listitem][0], KhuVucThuMua[listitem][1], KhuVucThuMua[listitem][2], 5);
+			CP[playerid] = 1;
+			SendClientMessage(playerid, COLOR_GREY, "Trucker Delivery: {FFFFFF}Da danh dau diem ban hang.");
+		}
+	}
+	if(dialogid == DLG_TRUCKERGVO) {
+		if(response)
+		{
+			if(LuongHang[playerid] == 5) return SendClientMessage(playerid, COLOR_WHITE, "Da Toi Da So Luong Cho Phep");
+			if(Character[playerid][char_Cash] < giatruck[listitem]) return SendClientMessage(playerid, COLOR_GREY, "Ban khong du tien");
+			switch(listitem) {
+				case 0:{
+					if(hangtrentay[playerid][0] == 1 || hangtrentay[playerid][1] == 1 || hangtrentay[playerid][2] == 1 || hangtrentay[playerid][3] == 1) return true;
+					new young[64];
+					format(young, sizeof(young), "Trucker: Ban Da Mua 1 Thung 'Thuc An' Voi Gia $%d", giatruck[0]);
+					SendClientMessage(playerid, COLOR_WHITE, young);
+					GivePlayerMoney(playerid, -giatruck[0]);
+					hangtrentay[playerid][0] = 1;
+					ApplyAnimation(playerid, "CARRY", "crry_prtial", 4.0, 1, 1, 1, 0, 1);
+	    			SetPlayerSpecialAction(playerid, SPECIAL_ACTION_CARRY);
+	    			SetPlayerAttachedObject(playerid, 6, 1220, 1, 0.299822, 0.663485, -0.036337, 184.311355, 90.004089, 0.000000, 1.000000, 1.000000, 1.000000 );
+				}
+				case 1:{
+					if(hangtrentay[playerid][0] == 1 || hangtrentay[playerid][1] == 1 || hangtrentay[playerid][2] == 1 || hangtrentay[playerid][3] == 1) return true;
+					new young[64];
+					format(young, sizeof(young), "Trucker: Ban Da Mua 1 Thung 'Vat Pham' Voi Gia $%d", giatruck[1]);
+					SendClientMessage(playerid, COLOR_WHITE, young);
+					GivePlayerMoney(playerid, -giatruck[1]);
+					hangtrentay[playerid][1] = 1;
+					ApplyAnimation(playerid, "CARRY", "crry_prtial", 4.0, 1, 1, 1, 0, 1);
+	    			SetPlayerSpecialAction(playerid, SPECIAL_ACTION_CARRY);
+	    			SetPlayerAttachedObject(playerid, 6, 1220, 1, 0.299822, 0.663485, -0.036337, 184.311355, 90.004089, 0.000000, 1.000000, 1.000000, 1.000000 );
+				}
+				case 2:{
+					if(hangtrentay[playerid][0] == 1 || hangtrentay[playerid][1] == 1 || hangtrentay[playerid][2] == 1 || hangtrentay[playerid][3] == 1) return true;
+					new young[64];
+					format(young, sizeof(young), "Trucker: Ban Da Mua 1 Thung 'Quan Ao' Voi Gia $%d", giatruck[2]);
+					SendClientMessage(playerid, COLOR_WHITE, young);
+					GivePlayerMoney(playerid, -giatruck[2]);
+					hangtrentay[playerid][2] = 1;
+					ApplyAnimation(playerid, "CARRY", "crry_prtial", 4.0, 1, 1, 1, 0, 1);
+	    			SetPlayerSpecialAction(playerid, SPECIAL_ACTION_CARRY);
+	    			SetPlayerAttachedObject(playerid, 6, 1220, 1, 0.299822, 0.663485, -0.036337, 184.311355, 90.004089, 0.000000, 1.000000, 1.000000, 1.000000 );
+				}
+				case 3:{
+					if(hangtrentay[playerid][0] == 1 || hangtrentay[playerid][1] == 1 || hangtrentay[playerid][2] == 1 || hangtrentay[playerid][3] == 1) return true;
+					new young[64];
+					format(young, sizeof(young), "Trucker: Ban Da Mua 1 Thung Hang Cam '9mm' Voi Gia $%d", giatruck[3]);
+					SendClientMessage(playerid, COLOR_WHITE, young);
+					GivePlayerMoney(playerid, -giatruck[3]);
+					hangtrentay[playerid][3] = 1;
+					ApplyAnimation(playerid, "CARRY", "crry_prtial", 4.0, 1, 1, 1, 0, 1);
+	    			SetPlayerSpecialAction(playerid, SPECIAL_ACTION_CARRY);
+	    			SetPlayerAttachedObject(playerid, 6, 1220, 1, 0.299822, 0.663485, -0.036337, 184.311355, 90.004089, 0.000000, 1.000000, 1.000000, 1.000000 );
+				}
+			}
+		}
+	}
+	return 1;
+}
+
 hook OnPlayerKeyStateChange(playerid, newkeys, oldkeys) {
     	if ((newkeys & KEY_YES)) {
-        if(IsPlayerInRangeOfPoint(playerid, 2.5, 2744.5603,-2425.2952,13.6286))
+        if(IsPlayerInRangeOfPoint(playerid, 2.5, 2780.0386,-2413.1477,13.6356))
         {
         	if(DangLamViec[playerid] == 0) return true;
 			new szDialog[1024], young[124];

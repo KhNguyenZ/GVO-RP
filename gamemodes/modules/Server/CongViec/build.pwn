@@ -3,7 +3,7 @@
 #include "./modules/Server/CongViec/Main/_callback.pwn"
 #include "./modules/Server/CongViec/Main/cmd.pwn"
 
-#include "./modules/Server/CongViec/NVC/nguoivanchuyen.pwn"
+#include "./modules/Server/CongViec/NVC/_var.pwn"
 #include "./modules/Server/CongViec/NVC/_callback.pwn"
 #include "./modules/Server/CongViec/NVC/_cmd.pwn"
 

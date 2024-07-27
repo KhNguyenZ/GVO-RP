@@ -7,6 +7,8 @@ func:CharacterSelect_Click(playerid, PlayerText:playertextid)
         {
             if (IsLoadChar(playerid, char_click - 3))
             {
+                // Character[playerid][char_Login] = true;
+                printf("Da Login");
                 SetPVarInt(playerid, "CharSelected_", char_click - 3);
 
                 HideCharacterSelect(playerid);
@@ -16,9 +18,15 @@ func:CharacterSelect_Click(playerid, PlayerText:playertextid)
                 format(query, sizeof(query), "SELECT * FROM `players` WHERE `PlayerName` = '%s'", player_get_name(playerid, false));
                 mysql_tquery(Handle(), query, "OnCharacterLoad", "i", playerid);
                 SetPVarInt(playerid, "CharSelected_", 1);
-                Character[playerid][char_Login] = true;
-                SetSpawnInfo(playerid, 0, Character[playerid][char_Skin], Character[playerid][char_last_Pos][0],Character[playerid][char_last_Pos][1],Character[playerid][char_last_Pos][2],Character[playerid][char_last_Pos][3],0,0,0,0,0,0);
-	            SpawnPlayer(playerid);
+                
+
+                SetSpawnInfo(playerid, 0, Character[playerid][char_Skin], Character[playerid][char_last_Pos][0], Character[playerid][char_last_Pos][1], Character[playerid][char_last_Pos][2], Character[playerid][char_last_Pos][3], 0, 0, 0, 0, 0, 0);
+                FadeOutPlayerScreen(playerid);
+                SetTimerEx("PlayerJoinGameReal", 1000, false, "i", playerid);
+                HidePlayerSpawnMenu(playerid);
+                PlayerSetupping[playerid] = 0;
+                OnPlayerLoad(playerid);
+                SpawnPlayer(playerid);
             }
             else
             {

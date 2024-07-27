@@ -16,7 +16,7 @@ public OnPlayerConnect(playerid)
     TogglePlayerSpectating(playerid, 0);
 
     CreatePlayerInfo(playerid);
-    // InitPlayerVehMap();
+    Character[playerid][char_Login] = false;
     return 1;
 }
 
@@ -146,24 +146,26 @@ public OnPlayerLoad(playerid)
         SendClientMessage(playerid, -1, msgzz);
     }
 
-
     CallRemoteFunction("Mysql_PlayerInit", "i", playerid);
     return 1;
 }
 
 public OnPlayerRequestClass(playerid, classid)
 {
+    if(Character[playerid][char_Login] == true) printf("Logined");
+    else printf("No login");
+
     if(IsPlayerNPC(playerid)) return 1;
     if(Character[playerid][char_Login] == true)
     {
-        TogglePlayerSpectating(playerid, false);
-        SetSpawnInfo(playerid, 0, Character[playerid][char_Skin], Character[playerid][char_last_Pos][0],Character[playerid][char_last_Pos][1],Character[playerid][char_last_Pos][2],Character[playerid][char_last_Pos][3],0,0,0,0,0,0);
+        TogglePlayerSpectating(playerid, 0);
+        SpawnPlayer(playerid);
+        return 1;
     }
-    else
-    {
-        TogglePlayerSpectating(playerid, true);
+    else {
+        TogglePlayerSpectating(playerid, 1);
+        SetPlayerJoinCamera(playerid);
     }
-
     return 1;
 }
 
@@ -182,4 +184,11 @@ public OnPlayerEnterCheckpoint(playerid)
 	 	PlayerPlaySound(playerid, 1056, 0.0, 0.0, 0.0);
 	 	DisablePlayerCheckpoint(playerid);
  	}
+}
+
+
+public OnPlayerDisconnect(playerid, reason)
+{
+    Character[playerid][char_Login] = false;
+    return 1;
 }

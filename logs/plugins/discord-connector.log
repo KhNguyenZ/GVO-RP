@@ -4029,3 +4029,4 @@
 [07/27/24 18:04:21] [ERROR] can't update guild member presence: user id "1184821332005900338" not cached
 [07/27/24 21:30:57] [ERROR] Can't read from Discord websocket gateway: An existing connection was forcibly closed by the remote host (10054)
 [07/27/24 21:30:57] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[07/28/24 00:39:03] [WARNING] Unknown gateway event 'VOICE_CHANNEL_STATUS_UPDATE'

@@ -5,25 +5,33 @@
 
 stock GetAdmin(playerid)
 {
-    new name[1280];
+    new _name[150];
     switch (Character[playerid][char_Admin])
     {
-        case 1: name = "{22A699}Game Support I{FFFFFF}";
-        case 2: name = "{22A699}Game Support II{FFFFFF}";
-        case 3: name = "{22A699}Game Support III{FFFFFF}";
-        case 4: name = "{F2BE22}Game Admin I{FFFFFF}";
-        case 5: name = "{F2BE22}Game Admin II";
-        case 6: name = "{F2BE22}Game Admin III {FFFFFF}";
-        case 7: name = "{F29727}Game Operator I{FFFFFF}";
-        case 8: name = "{F29727}Game Operator II{FFFFFF}";
-        case 9: name = "{9575DE}Game Leader{FFFFFF}";
-        case 10: name = "{F24C3D}Founder{FFFFFF}";
+        case 1: _name = "{22A699}Game Support I{FFFFFF}";
+        case 2: _name = "{22A699}Game Support II{FFFFFF}";
+        case 3: _name = "{22A699}Game Support III{FFFFFF}";
+        case 4: _name = "{F2BE22}Game Admin I{FFFFFF}";
+        case 5: _name = "{F2BE22}Game Admin II";
+        case 6: _name = "{F2BE22}Game Admin III {FFFFFF}";
+        case 7: _name = "{F29727}Game Operator I{FFFFFF}";
+        case 8: _name = "{F29727}Game Operator II{FFFFFF}";
+        case 9: _name = "{9575DE}Game Leader{FFFFFF}";
+        case 10: _name = "{F24C3D}Founder{FFFFFF}";
     }
-    return name;
+    return _name;
 }
 
 new flying[MAX_PLAYERS];
-
+CMD:cc(playerid)
+{
+    if (!CheckAdmin(playerid, 3)) return SendErrorMessage(playerid, "Ban khong co quyen su dung lenh nay");
+    foreach(new playerid:Player)
+    {
+        Clear_Chat(playerid);
+    }
+    return 1;
+}
 CMD:fly(playerid, params[])
 {
     if (!CheckAdmin(playerid, 3)) return SendErrorMessage(playerid, "Ban khong co quyen su dung lenh nay");

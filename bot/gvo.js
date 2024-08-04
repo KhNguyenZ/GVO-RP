@@ -34,7 +34,7 @@ client.once('ready', () => {
     console.log('GVO Bot is online!');
     console.log(`Logged in as ${client.user.tag}!`);
     try {
-        client.user.setActivity('GVO Roleplay', { type: 'PLAYING' });
+        client.user.setActivity('GVO Roleplay', { type: 4 });
         console.log('Activity set successfully.');
     } catch (error) {
         console.error('Error setting activity:', error);

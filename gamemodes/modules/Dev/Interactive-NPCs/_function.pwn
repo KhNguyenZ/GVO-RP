@@ -50,7 +50,6 @@ func:IsPlayerNearInteractiveNPC(playerid)
     {
         if(IsPlayerInRangeOfActor(playerid, InteractiveNPCs_Data[a][iNPC_ID],1))
         {
-            // printf("ID: %d| Inter: %d | Count: %d", a, InteractiveNPCs_Data[a][iNPC_ID], Count_InterNPC);
             near_npc_id = a;
             break;
         }

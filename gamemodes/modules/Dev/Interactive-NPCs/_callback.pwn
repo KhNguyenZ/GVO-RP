@@ -7,34 +7,12 @@ hook OnPlayerUpdate(playerid)
     if(IsPlayerNearInteractiveNPC(playerid) != -1)
     {
         new inter_guide[1280], inter_aid = IsPlayerNearInteractiveNPC(playerid);
-        // printf("InterID: %d",inter_aid);
         format(inter_guide, 1280, "Tuong tac voi %s", GetActorName(InteractiveNPCs_Data[inter_aid][iNPC_ID]));
         ChangeGuideContent(playerid, "Y",inter_guide);
     }
     else ChangeGuideContent(playerid, "Y","Tuong tac voi NULL");
     return 1;
 }
-/*
-hook OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
-{
-    if(IsPlayerNearInteractiveNPC(playerid) != -1)
-    {
-        new inter_near = IsPlayerNearInteractiveNPC(playerid);
-        if(newkeys == KEY_YES)
-        {
-            if(GetPVarInt(playerid, #isOpenInteractive) == 1) return DestroyPlayerInteractive(playerid);
-            if(inter_near == 0) {
-                ShowPlayerInteractive(playerid, 0, "Dcm ao lon that day", "day la test thoi hahahaah", "Xin viec", "Nghi Viec", "Thay dong phuc", "Thue xe");
-                
-            }
-            if(inter_near == 1) {
-                ShowPlayerInteractive(playerid, 1, "Actor so 2", "khoi nguyen dep trai so 1 the gioi", "Mua Vat Pham", "Ban Vat Pham", "Doi Ten", "Mua VIP");
-            }
-        }
-    }
-    return 1;
-}
-*/
 
 InteractiveNPCs_Click(playerid, PlayerText:playertextid)
 {

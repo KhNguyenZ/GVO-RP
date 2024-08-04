@@ -10,4 +10,3 @@
 #include "./modules/Players/characters/Player/SpawnPlayer/callback.pwn"
 #include "./modules/Players/characters/Player/SpawnPlayer/func.pwn"
 #include "./modules/Players/characters/Player/SpawnPlayer/textdraw.pwn"
-#include "./modules/Players/characters/Inventory/build.pwn"

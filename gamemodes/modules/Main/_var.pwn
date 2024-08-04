@@ -89,22 +89,7 @@ new CharSelectInfo[MAX_PLAYERS][Char_Select_E][3];
 new character_Name_data[MAX_PLAYERS][3][24];
 
 new CharSkinSelect[MAX_PLAYERS] = 1;
-enum Inv_Item
-{
-    item_id,
-    Float:item_weight,
-    item_strtd[32],
-    item_name[32],
-    item_detail[100],
-    item_maxamount
-}
-enum enum_pInventory
-{
-    invSlot[MAX_INVENTORY_SLOT],
-    invSlotAmount[MAX_INVENTORY_SLOT]
-}
 
-new PlayerSelectSlot[MAX_PLAYERS];
 
 new iCreate[MAX_VEHICLES] = INVAILID_NUMBER;
 

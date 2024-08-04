@@ -85,7 +85,6 @@
             "discord-connector", 
             "pawn-memory", 
             "PawnPlus",
-            "sscanf",
             "nativechecker",
             "GPS",
             "profiler"

@@ -2,9 +2,32 @@
 #define       AmbulanceCalling(%0)      GetPVarInt(%0, "#Ambulance_Calling")
 #define       CountdownCheck(%0)        GetPVarInt(%0, "#CountdownCheck")
 #define       CountdownTime(%0)         GetPVarInt(%0, "#CountdownTime")
-#define       PlayerCarry(%0)           GetPVarInt(%0, "#PlayerCarry")
+#define       GetPT(%0)           GetPVarInt(%0, "#GetPT")
 #define       RemainedTime              300
 #define       MEDIC_ID                  7
+new bool:EMSAccept[MAX_PLAYERS];
+new EMSID[MAX_PLAYERS];
+new Float:HospitalBed[][5] =
+{
+    {1173.9620,-1325.3093,1020.1516,86.9873},
+    {1174.0614,-1327.7770,1020.1516,90.4339},
+    {1173.8945,-1331.7494,1020.1516,91.3529},
+    {1173.8336,-1334.3246,1020.1516,89.5147},
+    {1174.1259,-1338.4363,1020.1516,87.9063},
+    {1165.8088,-1334.4187,1020.1516,269.4324},
+    {1165.8810,-1331.6674,1020.1516,274.2578},
+    {1165.9379,-1327.6980,1020.1516,279.6078},
+    {1174.0437,-1300.4484,1020.1516,104.1211},
+    {1174.0994,-1296.4720,1020.1516,92.8620},
+    {1174.0659,-1293.9335,1020.1516,75.7931},
+    {1174.1458,-1289.9956,1020.1516,86.0680},
+    {1174.1200,-1287.4171,1020.1516,87.8411},
+    {1173.9718,-1283.5054,1020.1516,84.1645},
+    {1165.6130,-1283.2233,1020.1516,274.8167},
+    {1165.3950,-1286.9529,1020.1516,262.5733},
+    {1165.4633,-1289.8169,1020.1516,269.0072},
+    {1165.4238,-1293.7858,1020.1516,272.6837}
+};
 hook OnPlayerConnect(playerid){
     CreateDeathUI(playerid);
     SetPVarInt(playerid, "#CountdownTime", Character[playerid][char_TimeInjured]);
@@ -46,6 +69,11 @@ stock SendMessageToOrg(iGroupID, color, const string[])
 		}
 	}
 }
+stock IsAMedic(playerid)
+{
+	if(Character[playerid][char_OrgID] == MEDIC_ID) return 1;
+	return 0;
+}
 hook OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 {
     if(newkeys == KEY_WALK)
@@ -62,12 +90,12 @@ hook OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
         }
     }
     if(oldkeys && newkeys == KEY_FIRE || newkeys == KEY_FIRE){
-        if(Character[PlayerCarry(playerid)][char_Injured] == 2)
+        if(Character[GetPT(playerid)][char_Injured] == 2)
         {
             new Float:mX, Float:mY, Float:mZ;
             GetPlayerPos(playerid, mX, mY, mZ);
-            SetPlayerPos(PlayerCarry(playerid), mX+0.5, mY+0.5, mZ);
-            Character[PlayerCarry(playerid)][char_Injured] = 1;
+            SetPlayerPos(GetPT(playerid), mX+0.5, mY+0.5, mZ);
+            Character[GetPT(playerid)][char_Injured] = 1;
         }
     }
     return 1;
@@ -82,6 +110,7 @@ hook OnPlayerDeath(playerid, killerid, reason)
         Character[playerid][char_last_Pos][1],
         Character[playerid][char_last_Pos][2]);
         GetPlayerFacingAngle(playerid, Character[playerid][char_last_Pos][3]);
+        Character[playerid][char_Skin] = GetPlayerSkin(playerid);
     }
     else{
         HienTextdraw(playerid, "Ban dang bi thuong nang!", 3000);
@@ -94,6 +123,7 @@ hook OnPlayerSpawn(playerid)
 {
     if (Character[playerid][char_Injured] == 1)
     {
+        SetPlayerSkin(playerid, Character[playerid][char_Skin]);
         SetPlayerPos(playerid, Character[playerid][char_last_Pos][0], 
         Character[playerid][char_last_Pos][1],
         Character[playerid][char_last_Pos][2]);
@@ -105,7 +135,7 @@ hook OnPlayerSpawn(playerid)
         SetPlayerArmour(playerid, 0);
         HienTextdraw(playerid, "Ban dang bi thuong nang!", 3000);
     }
-    else if (Character[PlayerCarry(playerid)][char_Injured] == 2)
+    else if (Character[GetPT(playerid)][char_Injured] == 2)
     {
         ApplyAnimation(playerid, "SWEET", "Sweet_injuredloop", 4.0, 0,0,0, 1, 0, 1);
         Character[playerid][char_Injured] = 1;
@@ -114,6 +144,28 @@ hook OnPlayerSpawn(playerid)
         SetPlayerArmour(playerid, 0);
         HienTextdraw(playerid, "Ban dang bi thuong nang!", 3000);
     }
+    return 1;
+}
+// forward Treatment(playerid);
+// public Treatment(playerid)
+// {
+//     HienTextdraw(playerid, "Ban da tinh day sau giac ngu say", 3000);
+//     ClearAnimations(playerid);
+//     SetPlayerPos(playerid, 1122.6455,-1311.5551,1019.4119);
+//     return 1;
+// }
+func:SetPlayerDeliverpt(playerid){
+    DestroyDeathUI(playerid);
+    SetPlayerHealth(playerid, 100);
+    Character[playerid][char_Injured] = 0;
+    OnPlayerSpawn(playerid);
+    SetPVarInt(playerid, "#Ambulance_Calling", 0);
+    SetPVarInt(playerid, "#CountdownTime", RemainedTime);
+    Character[playerid][char_TimeInjured] = RemainedTime;
+    new randBed = Random(sizeof(HospitalBed));
+    SetPlayerPos(playerid, HospitalBed[randBed][0], HospitalBed[randBed][1], HospitalBed[randBed][2]);
+    SetPlayerFacingAngle(playerid, HospitalBed[randBed][4]);
+    HienTextdraw(playerid, "Ban da tinh day sau giac ngu say", 3000);
     return 1;
 }
 new countdownSeconds; // Biến toàn cục lưu giá trị đếm ngược theo giây
@@ -140,14 +192,8 @@ func:CountdownTimer(playerid)
     }
     else
     {
-        DestroyDeathUI(playerid);
-        SetPlayerHealth(playerid, 100);
-        Character[playerid][char_Injured] = 0;
-        OnPlayerSpawn(playerid);
-        SetPVarInt(playerid, "#Ambulance_Calling", 0);
-        HienTextdraw(playerid, "Ban da hoi sinh thanh cong nguoi choi!", 3000);
-        SetPVarInt(playerid, "#CountdownTime", RemainedTime);
-        Character[playerid][char_TimeInjured] = RemainedTime;
+        Character[playerid][char_Cash] = Character[playerid][char_Cash] - 5000;
+        SetPlayerDeliverpt(playerid);
     }
 }
 task Death[1000]()
@@ -163,10 +209,10 @@ task Death[1000]()
 }
 
 
-CMD:bb(playerid){
-    SetPlayerHealth(playerid, 0);
-    return 1;
-}
+// CMD:bb(playerid){
+//     SetPlayerHealth(playerid, 0);
+//     return 1;
+// }
 
 
 CMD:hoisinh(playerid, params[])
@@ -187,56 +233,68 @@ CMD:hoisinh(playerid, params[])
 
 CMD:socuu(playerid, params[])
 {
-    new targetid;
-	if(sscanf(params, "u", targetid)) return SendClientMessage(playerid, COLOR_GREY, "SU DUNG: /socuu [player]");
-    SetPlayerHealth(targetid, 100);    
-    DestroyDeathUI(targetid);
-    SetPVarInt(targetid, "#Ambulance_Calling", 0);
-    SetPVarInt(targetid, "#CountdownTime", RemainedTime);
+    if(IsAMedic(playerid))
+    {
+        new targetid;
+        if(sscanf(params, "u", targetid)) return SendClientMessage(playerid, COLOR_GREY, "SU DUNG: /socuu [player]");
+        SetPlayerHealth(targetid, 100);    
+        DestroyDeathUI(targetid);
+        PlayerTextDrawShow(targetid, DeathUI[playerid][0]);
+        SetPVarInt(targetid, "#CountdownTime", RemainedTime);
+    }
+    
     return 1;
 }
 
 CMD:movept(playerid, params[])
 {
-    new targetid;
-	if(sscanf(params, "u", targetid)) return SendClientMessage(playerid, COLOR_GREY, "SU DUNG: /movept [player]");
-    if(Character[targetid][char_Injured] != 0)
+    if(IsAMedic(playerid))
     {
-        SetPVarInt(playerid, "#PlayerCarry", targetid);
-        Character[targetid][char_Injured] = 2;
-        DestroyDeathUI(targetid);       
-        PlayerTextDrawShow(targetid, DeathUI[playerid][0]);
+        new targetid;
+        if(sscanf(params, "u", targetid)) return SendClientMessage(playerid, COLOR_GREY, "SU DUNG: /movept [player]");
+        if(Character[targetid][char_Injured] != 0)
+        {
+            SetPVarInt(playerid, "#GetPT", targetid);
+            Character[targetid][char_Injured] = 2;
+            DestroyDeathUI(targetid);       
+            PlayerTextDrawShow(targetid, DeathUI[playerid][0]);
+            SetPVarInt(targetid, "#CountdownTime", RemainedTime);
+            Character[targetid][char_TimeInjured] = RemainedTime;
+        }
+        else SendClientMessage(playerid, -1, "{ffff00}[ Ambulance ]{ffffff} Nguoi nay khong bi thuong");
     }
-    else SendClientMessage(playerid, -1, "{ffff00}[ Ambulance ]{ffffff} Nguoi nay khong bi thuong");
     return 1;
 }
 CMD:loadpt(playerid, params[])
 {
-    new targetid, seat;
-    if(IsPlayerInAnyVehicle(playerid))
+    if(IsAMedic(playerid))
     {
-        SendClientMessage(playerid, COLOR_GREY, "   Khong the su dung khi ban dang tren mot chiec xe!");
-        return 1;
-    }
-    if(sscanf(params, "ud", targetid, seat)) return SendClientMessage(playerid, COLOR_GREY, "SU DUNG: /loadpt [playerid] [ 2 - 3 ]");
-    if(targetid != INVALID_PLAYER_ID)
-    {
-        if(Character[targetid][char_Injured] < 1) SendClientMessage(playerid, -1, "{ffff00}[ Ambulance ]{ffffff} Nguoi nay khong bi thuong");
-        if(IsPlayerInAnyVehicle(targetid)) SendClientMessage(playerid, COLOR_GREY, "Benh nhan do dang tren mot chiec xe, ban khong the dua len xe");
-                
-        if(!(2 <= seat <= 3)) SendClientMessage(playerid, COLOR_GRAD1, "ID nghe ngoi khong duoc tren 3 va duoi 2.");
-        if(Character[targetid][char_Injured] != 0)
+        new targetid, seat;
+        if(IsPlayerInAnyVehicle(playerid))
         {
-            PutPlayerInVehicle(targetid, GetNeraestVehicle(playerid, 5.0), seat);
-            TogglePlayerControllable(targetid, false);
-            ClearAnimations(targetid);
-            Character[targetid][char_Injured] = 1;
-            Character[targetid][char_TimeInjured] = RemainedTime;
-            DestroyDeathUI(targetid);       
-            PlayerTextDrawShow(targetid, DeathUI[playerid][0]);
+            SendClientMessage(playerid, COLOR_GREY, "   Khong the su dung khi ban dang tren mot chiec xe!");
+            return 1;
+        }
+        if(sscanf(params, "ud", targetid, seat)) return SendClientMessage(playerid, COLOR_GREY, "SU DUNG: /loadpt [playerid] [ 2 - 3 ]");
+        if(targetid != INVALID_PLAYER_ID)
+        {
+            if(Character[targetid][char_Injured] < 1) SendClientMessage(playerid, -1, "{ffff00}[ Ambulance ]{ffffff} Nguoi nay khong bi thuong");
+            if(IsPlayerInAnyVehicle(targetid)) SendClientMessage(playerid, COLOR_GREY, "Benh nhan do dang tren mot chiec xe, ban khong the dua len xe");
+                    
+            if(!(2 <= seat <= 3)) SendClientMessage(playerid, COLOR_GRAD1, "ID nghe ngoi khong duoc tren 3 va duoi 2.");
+            if(Character[targetid][char_Injured] != 0)
+            {
+                PutPlayerInVehicle(targetid, GetNeraestVehicle(playerid, 5.0), seat);
+                TogglePlayerControllable(targetid, false);
+                ClearAnimations(targetid);
+                Character[targetid][char_Injured] = 1;
+                Character[targetid][char_TimeInjured] = RemainedTime;
+                DestroyDeathUI(targetid);       
+                PlayerTextDrawShow(targetid, DeathUI[playerid][0]);
+                SetPVarInt(targetid, "#CountdownTime", RemainedTime);
+            }
         }
     }
-    
     return 1;
 }
 stock IsAtDeliverPatientPoint(playerid)
@@ -270,31 +328,68 @@ stock IsAtDeliverPatientPoint(playerid)
 	}
 	return 0;
 }
-func:deliverpt(playerid)
-{
-
-    return 1;
-}
 CMD:deliverpt(playerid, params[])
 {
-    new targetid;
-    if(sscanf(params, "u", targetid)) return SendClientMessage(playerid, COLOR_GREY, "SU DUNG: /deliverpt [player]");
-    if(IsPlayerInAnyVehicle(playerid))
+    if(IsAMedic(playerid))
     {
-            new carid = GetPlayerVehicleID(playerid);
-            new caridex = GetPlayerVehicleID(targetid);
-            if(carid == caridex)
-            {
-                if(IsAtDeliverPatientPoint(playerid))
-				{
-                    if(playerid == targetid)
+        new targetid;
+        if(sscanf(params, "u", targetid)) return SendClientMessage(playerid, COLOR_GREY, "SU DUNG: /deliverpt [player]");
+        if(IsPlayerInAnyVehicle(playerid))
+        {
+                new carid = GetPlayerVehicleID(playerid);
+                new caridex = GetPlayerVehicleID(targetid);
+                if(carid == caridex)
+                {
+                    if(IsAtDeliverPatientPoint(playerid))
                     {
-                        SendClientMessage(playerid, COLOR_GRAD2, "Ban khong the tu dua minh vao benh vien!");
-                        return 1;
+                        if(playerid == targetid)
+                        {
+                            SendClientMessage(playerid, COLOR_GRAD2, "Ban khong the tu dua minh vao benh vien!");
+                            return 1;
+                        }
+                        if(Character[targetid][char_Injured] < 1) SendClientMessage(playerid, -1, "{ffff00}[ Ambulance ]{ffffff} Nguoi nay khong bi thuong");
+                        SetPlayerDeliverpt(playerid);
+                        Character[playerid][char_Cash] = Character[playerid][char_Cash] - 2000;
                     }
-                    if(Character[targetid][char_Injured] < 1) SendClientMessage(playerid, -1, "{ffff00}[ Ambulance ]{ffffff} Nguoi nay khong bi thuong");
                 }
-            }
+        }
+    }
+    return 1;
+}
+
+
+CMD:getpt(playerid, params[]){
+    if(IsAMedic(playerid))
+    {
+        new targetid;
+        if(sscanf(params, "u", targetid)) return SendClientMessage(playerid, COLOR_GREY, "SU DUNG: /getpt [player]");
+        if(Character[targetid][char_Injured] != 0)
+        {
+            new 
+            float:x,
+            float:y,
+            float:z;
+            GetPlayerPos(targetid, x,y,z);
+            SetPlayerCheckpoint(playerid, x, y, z, 5.0);
+            EMSAccept[playerid] = true;
+            SetPVarInt(playerid, "#GetPT", targetid);
+        }
+    }
+    return 1;
+}
+
+hook OnPlayerEnterCheckpoint(playerid)
+{
+    if(EMSAccept[playerid] == true)
+    {
+        ApplyAnimation(GetPT(playerid), "SWEET", "Sweet_injuredloop", 4.0, 0,0,0, 1, 0, 1);
+        Character[GetPT(playerid)][char_Injured] = 1;
+        ShowDeathUI(GetPT(playerid));
+        SetPlayerHealth(GetPT(playerid), 100.0);
+        SetPlayerArmour(GetPT(playerid), 0);
+        EMSAccept[playerid] = false;
+        DeletePVar(playerid, "#GetPT");
+        DisablePlayerCheckpoint(playerid);
     }
     return 1;
 }

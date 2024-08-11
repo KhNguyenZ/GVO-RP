@@ -29,7 +29,10 @@ public OnPlayerText(playerid, text[])
 {
     if (player_Login(playerid))
     {
-        if (Character[playerid][char_DC_Auth] == 0) return SendErrorMessage(playerid, "[!] Vui long xac thuc tai khoan discord");
+        if (Character[playerid][char_DC_Auth] == 0) {
+            SendErrorMessage(playerid, "[!] Vui long xac thuc tai khoan discord");
+            return 1;
+        }
         SendRangeMessage(playerid, 10, text);
         Log("log/chat.log", text);
         return 1;
@@ -54,7 +57,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 {
     OnPlayerClickPorters(playerid, PlayerText:playertextid);
     ElectricianClick(playerid, PlayerText:playertextid);
-    SmartKeyClick(playerid, PlayerText:playertextid);
+    // SmartKeyClick(playerid, PlayerText:playertextid);
     BankingClick(playerid, PlayerText:playertextid);
     OnInvClick(playerid, PlayerText:playertextid);
     Org_Click(playerid, PlayerText:playertextid);
@@ -90,9 +93,6 @@ public OnPlayerUpdate(playerid)
         GetPlayerFacingAngle(playerid, Character[playerid][char_last_Pos][3]);
     }
 
-    defer CoreUpdate(playerid);
-    defer UpdatePlayerHud(playerid);
-
     new info_f[128];
     format(info_f, 128, "ID: ~w~%d", playerid);
     PlayerTextDrawSetString(playerid, InfoPTD[playerid][0], info_f);
@@ -109,9 +109,7 @@ public OnPlayerSpawn(playerid)
 {
     if (Character[playerid][char_Injured] == 0)
     {
-        SetPlayerPos(playerid, Character[playerid][char_last_Pos][0]
-        , Character[playerid][char_last_Pos][1]
-        , Character[playerid][char_last_Pos][2]);
+        SetPlayerPos(playerid, Character[playerid][char_last_Pos][0], Character[playerid][char_last_Pos][1], Character[playerid][char_last_Pos][2]);
         SetPlayerFacingAngle(playerid, Character[playerid][char_last_Pos][3]);
         SetPlayerSkin(playerid, Character[playerid][char_Skin]);
         ResetPlayerWeapons(playerid);
@@ -125,9 +123,6 @@ public OnPlayerSpawn(playerid)
         TextDrawShowForPlayer(playerid, InfoTD[0]);
         TextDrawShowForPlayer(playerid, InfoTD[1]);
         TextDrawShowForPlayer(playerid, InfoTD[2]);
-
-
-        LoadPlayerInventory(playerid);
     }
 
     return 1;
@@ -135,11 +130,13 @@ public OnPlayerSpawn(playerid)
 forward OnPlayerLoad(playerid);
 public OnPlayerLoad(playerid)
 {
+    LoadPlayerInventory(playerid);
     TogglePlayerSpectating(playerid, 0);
     Clear_Chat(playerid);
     SendClientMessage(playerid, -1, sprintf("[{212c58}GVO{ffffff}] Chao mung ban den voi may chu, {0066ff}%s.", player_get_name(playerid)));
     PlayerSetupping[playerid] = 0;
-    if (Character[playerid][char_Admin] > 0)
+    printf("Admin: %d",Character[playerid][char_Admin]);
+    if(Character[playerid][char_Admin] > 0)
     {
         SendClientMessage(playerid, -1, sprintf("Xin Chao {0000EE}%s{FFFFFF}, ban la %s.", player_get_name(playerid), GetAdmin(playerid)));
     }
@@ -153,6 +150,8 @@ public OnPlayerRequestClass(playerid, classid)
     if(IsPlayerNPC(playerid)) return 1;
     if(Character[playerid][char_Login] == true)
     {
+        // printf("%.2f %.2f %.2f %.2f",Character[playerid][char_last_Pos][0], Character[playerid][char_last_Pos][1], Character[playerid][char_last_Pos][2])
+        SetSpawnInfo(playerid, 0, Character[playerid][char_Skin], Character[playerid][char_last_Pos][0], Character[playerid][char_last_Pos][1], Character[playerid][char_last_Pos][2], Character[playerid][char_last_Pos][3], 0, 0, 0, 0, 0, 0);
         TogglePlayerSpectating(playerid, 0);
         SpawnPlayer(playerid);
         return 1;

@@ -8,7 +8,6 @@ public Mysql_PlayerInit(playerid)
 }
 public OnPlayerConnect(playerid)
 {
-    PlayerSelectSlot[playerid] = INVAILID_NUMBER;
     CountGuide[playerid] = 0;
     CreateFadeEffectTextDraw(playerid);
     CreateHienTextDraw(playerid);
@@ -57,17 +56,16 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
     ElectricianClick(playerid, PlayerText:playertextid);
     SmartKeyClick(playerid, PlayerText:playertextid);
     BankingClick(playerid, PlayerText:playertextid);
-    InvClick(playerid, PlayerText:playertextid);
+    OnInvClick(playerid, PlayerText:playertextid);
     Org_Click(playerid, PlayerText:playertextid);
     RegMenuClick(playerid, PlayerText:playertextid);
     CharacterSelect_Click(playerid, PlayerText:playertextid);
 
-    if (GetPVarInt(playerid, #Auth_Case) == 1)
+    if(GetPVarInt(playerid, #Auth_Case) == 1)
     {
         LoginClick(playerid, PlayerText:playertextid);
     }
-
-    if (GetPVarInt(playerid, #Auth_Case) == 0)
+    else
     {
         RegClick(playerid, PlayerText:playertextid);
     }
@@ -111,6 +109,10 @@ public OnPlayerSpawn(playerid)
 {
     if (Character[playerid][char_Injured] == 0)
     {
+        SetPlayerPos(playerid, Character[playerid][char_last_Pos][0]
+        , Character[playerid][char_last_Pos][1]
+        , Character[playerid][char_last_Pos][2]);
+        SetPlayerFacingAngle(playerid, Character[playerid][char_last_Pos][3]);
         SetPlayerSkin(playerid, Character[playerid][char_Skin]);
         ResetPlayerWeapons(playerid);
         GivePlayerMoney(playerid, Character[playerid][char_Cash]);
@@ -135,15 +137,11 @@ public OnPlayerLoad(playerid)
 {
     TogglePlayerSpectating(playerid, 0);
     Clear_Chat(playerid);
-    new sdm[1280];
-    mysql_format(Handle(), sdm, sizeof(sdm), "[{212c58}GVO{ffffff}] Chao mung ban den voi may chu, {0066ff}%s.", player_get_name(playerid));
-    SendClientMessage(playerid, -1, sdm);
+    SendClientMessage(playerid, -1, sprintf("[{212c58}GVO{ffffff}] Chao mung ban den voi may chu, {0066ff}%s.", player_get_name(playerid)));
     PlayerSetupping[playerid] = 0;
     if (Character[playerid][char_Admin] > 0)
     {
-        new msgzz[1280];
-        format(msgzz, sizeof(msgzz), "Xin Chao {0000EE}%s{FFFFFF}, ban la %s.", player_get_name(playerid), GetAdmin(playerid));
-        SendClientMessage(playerid, -1, msgzz);
+        SendClientMessage(playerid, -1, sprintf("Xin Chao {0000EE}%s{FFFFFF}, ban la %s.", player_get_name(playerid), GetAdmin(playerid)));
     }
 
     CallRemoteFunction("Mysql_PlayerInit", "i", playerid);
@@ -152,9 +150,6 @@ public OnPlayerLoad(playerid)
 
 public OnPlayerRequestClass(playerid, classid)
 {
-    if(Character[playerid][char_Login] == true) printf("Logined");
-    else printf("No login");
-
     if(IsPlayerNPC(playerid)) return 1;
     if(Character[playerid][char_Login] == true)
     {

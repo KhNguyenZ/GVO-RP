@@ -7,14 +7,12 @@ func:CharacterSelect_Click(playerid, PlayerText:playertextid)
         {
             if (IsLoadChar(playerid, char_click - 3))
             {
-                // Character[playerid][char_Login] = true;
-                printf("Da Login");
                 SetPVarInt(playerid, "CharSelected_", char_click - 3);
 
                 HideCharacterSelect(playerid);
                 new Char_Selected = GetPVarInt(playerid, "CharSelected_");
                 SetPlayerName(playerid, character_Name_data[playerid][Char_Selected]);
-                new query[240];
+                new query[500];
                 format(query, sizeof(query), "SELECT * FROM `players` WHERE `PlayerName` = '%s'", player_get_name(playerid, false));
                 mysql_tquery(Handle(), query, "OnCharacterLoad", "i", playerid);
                 SetPVarInt(playerid, "CharSelected_", 1);
@@ -26,7 +24,6 @@ func:CharacterSelect_Click(playerid, PlayerText:playertextid)
                 HidePlayerSpawnMenu(playerid);
                 PlayerSetupping[playerid] = 0;
                 OnPlayerLoad(playerid);
-                SpawnPlayer(playerid);
             }
             else
             {

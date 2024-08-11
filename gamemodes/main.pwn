@@ -80,6 +80,8 @@ main()
 #include "./modules/Players/characters/Player/ServerTextAndTime/textdraw.pwn"
 #include "./modules/Players/characters/Player/ServerTextAndTime/func.pwn"
 
+#include "./modules/Players/characters/Inventory/build.pwn"
+
 // core login
 #include "./modules/Players/multi-account/account.pwn"
 // core server
@@ -108,7 +110,6 @@ main()
 public SSA_Mysql_Intit()
 {
     LoadOrgs();
-    LoadInventoryDrop();
     CreateInfo();
     return 1;
 }

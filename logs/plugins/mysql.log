@@ -1,5 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 [08/08/2024 12:26:07 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
 [08/08/2024 12:26:07 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
 [08/08/2024 12:26:07 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
@@ -354,8 +353,6 @@
 [11/08/2024 10:07:36 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
 [11/08/2024 10:07:36 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
 =======
-=======
->>>>>>> parent of f8a425f (fix & upgrade)
 [06/08/24 22:51:51] [ERROR] cache_get_value_name_int: value 'NULL' is not a number (./modules/Server/dynamic/Doors/callback.pwn:21)
 [06/08/24 22:51:51] [ERROR] cache_get_value_name_int: value 'NULL' is not a number (./modules/Server/dynamic/Doors/callback.pwn:24)
 [06/08/24 22:51:51] [ERROR] cache_get_value_name_int: value 'NULL' is not a number (./modules/Server/dynamic/Doors/callback.pwn:25)
@@ -7380,7 +7377,4 @@
 [05/08/2024 1:04:01 SA] [ERROR] cache_get_value_name_int: field 'ExInterior' not found
 [05/08/2024 1:04:01 SA] [ERROR] cache_get_value_name_int: field 'InInterior' not found
 [05/08/2024 1:04:01 SA] [ERROR] error #1054 while executing query "UPDATE `biz` SET `Name` = '', `Type` = '1',`ExPosX` = '1929.000000',`ExPosY` = '-1776.119995',`ExPosZ` = '13.546900',`InPosX` = '0.000000',`InPosY` = '0.000000',`InPosZ` = '0.000000',`Locked` = '0',`OwnerName` = 'NULL',`ExVW` = '0',`InVW` = '0',`ExInterior` = '0',`InInterior` = '0'WHERE `id` = '0'": Unknown column 'ExVW' in 'field list'
-<<<<<<< HEAD
->>>>>>> parent of f8a425f (fix & upgrade)
-=======
 >>>>>>> parent of f8a425f (fix & upgrade)

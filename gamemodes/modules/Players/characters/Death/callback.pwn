@@ -2,11 +2,12 @@
 #define       AmbulanceCalling(%0)      GetPVarInt(%0, "#Ambulance_Calling")
 #define       CountdownCheck(%0)        GetPVarInt(%0, "#CountdownCheck")
 #define       CountdownTime(%0)         GetPVarInt(%0, "#CountdownTime")
-#define       GetPT(%0)           GetPVarInt(%0, "#GetPT")
+new GetPT[MAX_PLAYERS];
+new PlayerPT[MAX_PLAYERS];
 #define       RemainedTime              300
 #define       MEDIC_ID                  7
 new bool:EMSAccept[MAX_PLAYERS];
-new EMSID[MAX_PLAYERS];
+new EMS_Patient[MAX_PLAYERS];
 new Float:HospitalBed[][5] =
 {
     {1173.9620,-1325.3093,1020.1516,86.9873},
@@ -35,19 +36,10 @@ hook OnPlayerConnect(playerid){
     {
         Character[playerid][char_TimeInjured] = RemainedTime;
     }
-    if(Character[playerid][char_TimeInjured] == 2)
-    {
-        Character[playerid][char_TimeInjured] = RemainedTime;
-        Character[playerid][char_TimeInjured] = 1;
-    }
     return 1;
 }
 hook OnPlayerDisconnect(playerid, reason)
 {
-    if(Character[playerid][char_Injured] == 2)  
-    {
-        Character[playerid][char_Injured] = 1;
-    }
     if(Character[playerid][char_TimeInjured] == 0)
     {
         Character[playerid][char_TimeInjured] = RemainedTime;
@@ -62,12 +54,15 @@ stock SendMessageToOrg(iGroupID, color, const string[])
 {
 	foreach(new i: Player)
 	{
-	    iGroupID = Character[i][char_OrgID];
+        iGroupID = Character[i][char_OrgID];
 		if(0 <= iGroupID < 9999)
 		{
+            new query[128];
+            format(query, 128, "{ffff00}[ ORG ] {ffffff}%s", string);
 			SendClientMessage(i, color, string);
 		}
 	}
+    return 1;
 }
 stock IsAMedic(playerid)
 {
@@ -90,12 +85,12 @@ hook OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
         }
     }
     if(oldkeys && newkeys == KEY_FIRE || newkeys == KEY_FIRE){
-        if(Character[GetPT(playerid)][char_Injured] == 2)
+        new targetid = GetPT[playerid];
+        if(Character[targetid][char_Injured] == 2)
         {
             new Float:mX, Float:mY, Float:mZ;
             GetPlayerPos(playerid, mX, mY, mZ);
-            SetPlayerPos(GetPT(playerid), mX+0.5, mY+0.5, mZ);
-            Character[GetPT(playerid)][char_Injured] = 1;
+            SetPlayerPos(targetid, mX+0.5, mY+0.5, mZ);
         }
     }
     return 1;
@@ -130,15 +125,7 @@ hook OnPlayerSpawn(playerid)
         SetPlayerFacingAngle(playerid, Character[playerid][char_last_Pos][3]);
         ApplyAnimation(playerid, "SWEET", "Sweet_injuredloop", 4.0, 0,0,0, 1, 0, 1);
         // if(Character[playerid][char_Injured] == 1)
-        ShowDeathUI(playerid);
-        SetPlayerHealth(playerid, 100.0);
-        SetPlayerArmour(playerid, 0);
-        HienTextdraw(playerid, "Ban dang bi thuong nang!", 3000);
-    }
-    else if (Character[GetPT(playerid)][char_Injured] == 2)
-    {
-        ApplyAnimation(playerid, "SWEET", "Sweet_injuredloop", 4.0, 0,0,0, 1, 0, 1);
-        Character[playerid][char_Injured] = 1;
+        SetPVarInt(playerid, "#CountdownCheck", 1);
         ShowDeathUI(playerid);
         SetPlayerHealth(playerid, 100.0);
         SetPlayerArmour(playerid, 0);
@@ -166,6 +153,7 @@ func:SetPlayerDeliverpt(playerid){
     SetPlayerPos(playerid, HospitalBed[randBed][0], HospitalBed[randBed][1], HospitalBed[randBed][2]);
     SetPlayerFacingAngle(playerid, HospitalBed[randBed][4]);
     HienTextdraw(playerid, "Ban da tinh day sau giac ngu say", 3000);
+    DeletePVar(playerid, "#CountdownCheck");
     return 1;
 }
 new countdownSeconds; // Biến toàn cục lưu giá trị đếm ngược theo giây
@@ -228,6 +216,7 @@ CMD:hoisinh(playerid, params[])
     HienTextdraw(targetid, "Ban da hoi sinh thanh cong nguoi choi!", 3000);
     SetPVarInt(targetid, "#CountdownTime", RemainedTime);
     Character[playerid][char_TimeInjured] = RemainedTime;
+    DeletePVar(playerid, "#CountdownCheck");
     return 1;
 }
 
@@ -239,8 +228,9 @@ CMD:socuu(playerid, params[])
         if(sscanf(params, "u", targetid)) return SendClientMessage(playerid, COLOR_GREY, "SU DUNG: /socuu [player]");
         SetPlayerHealth(targetid, 100);    
         DestroyDeathUI(targetid);
-        PlayerTextDrawShow(targetid, DeathUI[playerid][0]);
+        PlayerTextDrawShow(targetid, DeathUI[targetid][0]);
         SetPVarInt(targetid, "#CountdownTime", RemainedTime);
+        DeletePVar(playerid, "#CountdownCheck");
     }
     
     return 1;
@@ -250,26 +240,28 @@ CMD:movept(playerid, params[])
 {
     if(IsAMedic(playerid))
     {
-        new targetid;
+        new targetid,float:x,float:y,float:z;
         if(sscanf(params, "u", targetid)) return SendClientMessage(playerid, COLOR_GREY, "SU DUNG: /movept [player]");
-        if(Character[targetid][char_Injured] != 0)
+        GetPlayerPos(targetid, x, y, z);
+        if(Character[targetid][char_Injured] != 0 && IsPlayerInRangeOfPoint(playerid, 2.0, Float:x, Float:y, Float:z))
         {
-            SetPVarInt(playerid, "#GetPT", targetid);
+            GetPT[playerid] = targetid; 
             Character[targetid][char_Injured] = 2;
             DestroyDeathUI(targetid);       
-            PlayerTextDrawShow(targetid, DeathUI[playerid][0]);
+            PlayerTextDrawShow(targetid, DeathUI[targetid][0]);
             SetPVarInt(targetid, "#CountdownTime", RemainedTime);
+            DeletePVar(playerid, "#CountdownCheck");
             Character[targetid][char_TimeInjured] = RemainedTime;
         }
         else SendClientMessage(playerid, -1, "{ffff00}[ Ambulance ]{ffffff} Nguoi nay khong bi thuong");
     }
     return 1;
 }
-CMD:loadpt(playerid, params[])
+/*CMD:loadpt(playerid, params[])
 {
     if(IsAMedic(playerid))
     {
-        new targetid, seat;
+        new targetid, seat,float:x,float:y,float:z;
         if(IsPlayerInAnyVehicle(playerid))
         {
             SendClientMessage(playerid, COLOR_GREY, "   Khong the su dung khi ban dang tren mot chiec xe!");
@@ -282,7 +274,8 @@ CMD:loadpt(playerid, params[])
             if(IsPlayerInAnyVehicle(targetid)) SendClientMessage(playerid, COLOR_GREY, "Benh nhan do dang tren mot chiec xe, ban khong the dua len xe");
                     
             if(!(2 <= seat <= 3)) SendClientMessage(playerid, COLOR_GRAD1, "ID nghe ngoi khong duoc tren 3 va duoi 2.");
-            if(Character[targetid][char_Injured] != 0)
+            GetPlayerPos(targetid, x, y, z);
+            if(Character[targetid][char_Injured] != 0 && IsPlayerInRangeOfPoint(playerid, 2.0, Float:x, Float:y, Float:z))
             {
                 PutPlayerInVehicle(targetid, GetNeraestVehicle(playerid, 5.0), seat);
                 TogglePlayerControllable(targetid, false);
@@ -297,6 +290,51 @@ CMD:loadpt(playerid, params[])
     }
     return 1;
 }
+*/
+
+CMD:loadpt(playerid, params[])
+{
+    if(IsAMedic(playerid))
+    {
+        new targetid,seat,float:x,float:y,float:z;
+        if(sscanf(params, "ui", targetid, seat)) return SendClientMessage(playerid, -1, "Sử dụng: /loadpt [ PlayerID ] [ 2 - 3 ]");
+        if(IsPlayerInAnyVehicle(playerid))
+        {
+            SendClientMessage(playerid, COLOR_GREY, "   Khong the su dung khi ban dang tren mot chiec xe!");
+            return 1;
+        }
+        GetPlayerPos(targetid, x,y,z);
+        if(IsPlayerInRangeOfPoint(playerid, 5.0, x,y,z)) // Kiểm tra xem người chơi có gần bệnh nhân không
+        {
+            new vehicleid = GetNeraestVehicle(playerid, 5.0);
+            if(Character[targetid][char_Injured] < 1) SendClientMessage(playerid, -1, "{ffff00}[ Ambulance ]{ffffff} Nguoi nay khong bi thuong");
+            if(IsPlayerInAnyVehicle(targetid)) SendClientMessage(playerid, COLOR_GREY, "Benh nhan do dang tren mot chiec xe, ban khong the dua len xe");  
+            if(!(2 <= seat <= 3)) SendClientMessage(playerid, COLOR_GRAD1, "ID nghe ngoi khong duoc tren 3 va duoi 2.");
+            if(Character[targetid][char_Injured] != 0) // Kiểm tra xem người chơi có ở trong xe cứu thương không
+            {
+                PutPlayerInVehicle(targetid, vehicleid, seat); // Đặt bệnh nhân vào ghế sau của xe cứu thương
+                EMS_Patient[playerid] = targetid; // Lưu trữ thông tin người vận chuyển
+                TogglePlayerControllable(targetid, false);
+                //ClearAnimations(targetid);
+                DestroyDeathUI(targetid);       
+                PlayerTextDrawShow(targetid, DeathUI[playerid][0]);
+                SetPVarInt(targetid, "#CountdownTime", RemainedTime);
+                DeletePVar(playerid, "#CountdownCheck");
+                SendClientMessage(playerid, -1, "Benh nhan da duoc dua len xe.");
+                Character[targetid][char_Injured] = 1;
+                Character[targetid][char_TimeInjured] = RemainedTime;
+            }
+        }
+        else
+        {
+            SendClientMessage(playerid, -1, "Ban phai o gan benh gan de dung lenh nay.");
+        }
+    }
+    return 1;
+}
+
+
+
 stock IsAtDeliverPatientPoint(playerid)
 {
 	if(IsPlayerConnected(playerid))
@@ -340,7 +378,7 @@ CMD:deliverpt(playerid, params[])
                 new caridex = GetPlayerVehicleID(targetid);
                 if(carid == caridex)
                 {
-                    if(IsAtDeliverPatientPoint(playerid))
+                    if(IsAtDeliverPatientPoint(playerid) && IsAtDeliverPatientPoint(targetid))
                     {
                         if(playerid == targetid)
                         {
@@ -348,7 +386,7 @@ CMD:deliverpt(playerid, params[])
                             return 1;
                         }
                         if(Character[targetid][char_Injured] < 1) SendClientMessage(playerid, -1, "{ffff00}[ Ambulance ]{ffffff} Nguoi nay khong bi thuong");
-                        SetPlayerDeliverpt(playerid);
+                        SetPlayerDeliverpt(targetid);
                         Character[playerid][char_Cash] = Character[playerid][char_Cash] - 2000;
                     }
                 }
@@ -363,6 +401,7 @@ CMD:getpt(playerid, params[]){
     {
         new targetid;
         if(sscanf(params, "u", targetid)) return SendClientMessage(playerid, COLOR_GREY, "SU DUNG: /getpt [player]");
+        if(PlayerPT[targetid] > 0) return SendClientMessage(playerid, -1, "[ Ambulance ] Nguoi choi nay khong goi cap cuu");
         if(Character[targetid][char_Injured] != 0)
         {
             new 
@@ -372,7 +411,8 @@ CMD:getpt(playerid, params[]){
             GetPlayerPos(targetid, x,y,z);
             SetPlayerCheckpoint(playerid, x, y, z, 5.0);
             EMSAccept[playerid] = true;
-            SetPVarInt(playerid, "#GetPT", targetid);
+            GetPT[playerid] = targetid;
+            PlayerPT[targetid] = playerid;
         }
     }
     return 1;
@@ -382,14 +422,20 @@ hook OnPlayerEnterCheckpoint(playerid)
 {
     if(EMSAccept[playerid] == true)
     {
-        ApplyAnimation(GetPT(playerid), "SWEET", "Sweet_injuredloop", 4.0, 0,0,0, 1, 0, 1);
-        Character[GetPT(playerid)][char_Injured] = 1;
-        ShowDeathUI(GetPT(playerid));
-        SetPlayerHealth(GetPT(playerid), 100.0);
-        SetPlayerArmour(GetPT(playerid), 0);
+        ApplyAnimation(GetPT[playerid], "SWEET", "Sweet_injuredloop", 4.0, 0,0,0, 1, 0, 1);
+        Character[GetPT[playerid]][char_Injured] = 1;
+        DestroyDeathUI(GetPT[playerid]);
+        PlayerTextDrawShow(GetPT[playerid], DeathUI[GetPT[playerid]][0]);
+        SetPlayerHealth(GetPT[playerid], 100.0);
+        SetPlayerArmour(GetPT[playerid], 0);
         EMSAccept[playerid] = false;
-        DeletePVar(playerid, "#GetPT");
+        GetPT[playerid] = -1;
+        PlayerPT[GetPT[playerid]] = -1;
         DisablePlayerCheckpoint(playerid);
+        DeletePVar(playerid, "#CountdownCheck");
+        Character[GetPT[playerid]][char_Injured] = 1;
+        Character[GetPT[playerid]][char_TimeInjured] = RemainedTime;
     }
     return 1;
 }
+

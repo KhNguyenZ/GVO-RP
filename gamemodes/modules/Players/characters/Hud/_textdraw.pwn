@@ -547,14 +547,3 @@ func:UpdatePlayerHealth(playerid)
         PlayerTextDrawShow(playerid, CursorPTD_2[playerid]);
     }
 }
-
-
-timer UpdatePlayerHud[1000](playerid)
-{
-    if (IsPlayerSpawned(playerid))
-    {
-        SetPlayerIconHud(playerid);
-        UpdatePlayerHealth(playerid);
-    }
-    return 1;
-}

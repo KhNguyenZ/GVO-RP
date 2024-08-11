@@ -112,3 +112,14 @@ new CountGuide[MAX_PLAYERS];
 new PlayerText:DeathUI[MAX_PLAYERS][3];
 
 new CP[MAX_PLAYERS];
+
+new DCC_Guild:SSA_GUILD_ID;
+new DCC_Channel:SSA_MAINTAINCE;
+new DCC_Channel:SSA_CMD;
+new DCC_Role:AuthMember;
+new DCC_Channel:LogAuth;
+new DCC_Channel:LogMoney;
+new DCC_Channel:LogBank;
+
+
+new CountBed[10];

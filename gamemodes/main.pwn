@@ -60,7 +60,6 @@ main()
 #include "./modules/Main/_var.pwn"
 #include "./modules/Main/_functions.pwn"
 #include "./modules/Main/_callback.pwn"
-#include "./modules/Main/_core.pwn"
 #include "./modules/Main/_textdraw.pwn"
 #include "./modules/Main/color.pwn"
 
@@ -107,6 +106,9 @@ main()
 #include "./modules/Players/characters/Death/textdraw.pwn"
 #include "./modules/Players/characters/Death/callback.pwn"
 
+
+#include "./modules/Main/_core.pwn"
+
 public SSA_Mysql_Intit()
 {
     LoadOrgs();
@@ -121,9 +123,6 @@ public OnGameModeExit()
         SaveOrgVeh(i);
     }
     mysql_close(Handle());
-
-    Profiler_Stop();
-    Profiler_Dump();
     return 1;
 }
 

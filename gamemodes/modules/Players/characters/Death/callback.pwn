@@ -184,17 +184,7 @@ func:CountdownTimer(playerid)
         SetPlayerDeliverpt(playerid);
     }
 }
-task Death[1000]()
-{
-    foreach(new playerid: Player){
-        
-        if(Character[playerid][char_Injured] == 1)
-        {
-            CountdownTimer(playerid);
-        }
-    }
-    return 1;
-}
+
 
 
 // CMD:bb(playerid){

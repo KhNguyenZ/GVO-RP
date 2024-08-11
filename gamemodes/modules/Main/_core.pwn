@@ -19,7 +19,10 @@ func:OnServerInit()
         BizInfo[i][biz_id] = INVAILID_NUMBER;
         DoorInfo[i][door_id] = INVAILID_NUMBER;
     }
-    for (new i; i < 10; i++) CountBed[i] = INVAILID_NUMBER;
+    for (new i; i < 10; i++) 
+	{
+		CountBed[i] = INVAILID_NUMBER;
+	}
 
     LogBank = DCC_FindChannelById("1253565213446373397");
 
@@ -53,6 +56,7 @@ task ServerHeartBeat[1000]()
         {
             CountdownTimer(playerid);
         }
+
 
         UpdateOdo(playerid);
         UpdateFuel(playerid);

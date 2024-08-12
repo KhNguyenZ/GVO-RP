@@ -95,7 +95,7 @@ hook OnGameModeInit()
     {
         for (new j; j < MAX_ORG_VEHICLES; j++)
         {
-            OrgVeh[i][j][ov_vehid] = INVAILID_NUMBER;
+            OrgVeh[i][j][ov_vehid] = INVALID_NUMBER;
         }
     }
 }

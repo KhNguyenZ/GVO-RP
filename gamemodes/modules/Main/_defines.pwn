@@ -34,4 +34,4 @@
 
 #define MAX_ORG_VEHICLES 1000
 
-#define INVAILID_NUMBER -1
+#define INVALID_NUMBER -1

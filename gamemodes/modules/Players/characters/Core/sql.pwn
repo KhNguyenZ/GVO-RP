@@ -22,7 +22,8 @@ forward OnCharacterLoad(const playerid);
 public OnCharacterLoad(const playerid)
 {
 	Character[playerid][char_Login] = true;
-
+	SetSpawnInfo(playerid, 0, Character[playerid][char_Skin], Character[playerid][char_last_Pos][0], Character[playerid][char_last_Pos][1], Character[playerid][char_last_Pos][2], Character[playerid][char_last_Pos][3], 0, 0, 0, 0, 0, 0);
+	TogglePlayerSpectating(playerid, 0);
 	cache_get_value_name_int(0, "id", Character[playerid][char_player_id]);
 	cache_get_value_name_float(0, "PosX", Character[playerid][char_last_Pos][0]);
 	cache_get_value_name_float(0, "PosY", Character[playerid][char_last_Pos][1]);
@@ -74,6 +75,8 @@ public OnCharacterLoad(const playerid)
 	cache_get_value_name_int(0, "Injured", Character[playerid][char_Injured]);
 	cache_get_value_name_int(0, "TimeInjured", Character[playerid][char_TimeInjured]);
 	cache_get_value_name_int(0, "Job", Character[playerid][char_Job]);
+
+	cache_get_value_name_int(0, "InvWeight", Character[playerid][char_InvWeight]);
     return 1;
 }
 
@@ -133,6 +136,7 @@ hook OnPlayerDisconnect(playerid, reason)
 		mysql_format(Handle(), query, sizeof(query), "%s Injured = '%d',", query, Character[playerid][char_Injured]);
 		mysql_format(Handle(), query, sizeof(query), "%s TimeInjured = '%d',", query, Character[playerid][char_TimeInjured]);			
 		mysql_format(Handle(), query, sizeof(query), "%s Job = '%d',", query, Character[playerid][char_Job]);		
+		mysql_format(Handle(), query, sizeof(query), "%s InvWeight = '%d',", query, Character[playerid][char_InvWeight]);		
 		
 		mysql_format(Handle(), query, sizeof(query), "%s Skin = %d WHERE `id` = '%d' LIMIT 1", query, Character[playerid][char_Skin], Character[playerid][char_player_id]);
 		// printf("%s",query);

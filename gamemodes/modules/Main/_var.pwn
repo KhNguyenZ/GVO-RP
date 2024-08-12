@@ -65,6 +65,7 @@ enum character_Info
     char_Refer[MAX_PLAYER_NAME],
     char_Injured,
     char_TimeInjured,
+    char_InvWeight,
 }
 
 new Character[MAX_PLAYERS][character_Info];
@@ -91,7 +92,7 @@ new character_Name_data[MAX_PLAYERS][3][24];
 new CharSkinSelect[MAX_PLAYERS] = 1;
 
 
-new iCreate[MAX_VEHICLES] = INVAILID_NUMBER;
+new iCreate[MAX_VEHICLES] = INVALID_NUMBER;
 
 new pSpeedo[MAX_PLAYERS];
 

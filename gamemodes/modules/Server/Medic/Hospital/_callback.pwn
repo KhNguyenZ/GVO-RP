@@ -3,6 +3,6 @@
 
 hook OnGameModeInit()
 {
-    for(new i; i < 10; i++) CountBed[i] = INVAILID_NUMBER;
+    for(new i; i < 10; i++) CountBed[i] = INVALID_NUMBER;
     return 1;
 }

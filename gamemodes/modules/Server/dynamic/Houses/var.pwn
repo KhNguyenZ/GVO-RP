@@ -3,7 +3,7 @@
 #define     MAX_HOUSE_PASSWORD  (16)
 #define     MAX_INT_NAME        (32)
 #define     DIALOG_HOUSE        (7500)
-#define     INVALID_HOUSE_ID    (-1)
+
 #define     MAX_HOUSE_ADDRESS   (300)
 
 #define     LOCK_MODE_NOLOCK    (0)
@@ -44,7 +44,6 @@ enum    e_house
     SalePrice,
     Address,
     furnitureVW,
-    SQL_HOST,
     bool: Save
 };
 
@@ -82,11 +81,10 @@ enum    e_furniture
 
 
 new
-    SQLHandle,
     HouseTimer,
     HouseData[MAX_HOUSES][e_house],
     Iterator: Houses<MAX_HOUSES>,
-    InHouse[MAX_PLAYERS] = {INVALID_HOUSE_ID, ...},
+    InHouse[MAX_PLAYERS] = {INVALID_NUMBER, ...},
     SelectMode[MAX_PLAYERS] = {SELECT_MODE_EDIT, ...};
 
 new

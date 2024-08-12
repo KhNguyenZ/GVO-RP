@@ -18,5 +18,5 @@ new OrgRank[MAX_ORG][MAX_RANK_ORG][255];
 
 new PlayerText:
 OrgPTD[MAX_PLAYERS][12];
-new MakeLeader_V[MAX_ORG] = INVAILID_NUMBER;
+new MakeLeader_V[MAX_ORG] = INVALID_NUMBER;
 new ML_Targetid[MAX_PLAYERS];

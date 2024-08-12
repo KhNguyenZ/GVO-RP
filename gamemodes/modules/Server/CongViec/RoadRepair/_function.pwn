@@ -29,13 +29,13 @@ func:GetRoadStatus(_status)
 func:IsValidDamagePoint(_point_id)
 {
     new _valid = 0;
-    if(DamageRoad[_point_id][DamageBar] == INVAILID_NUMBER) _valid = 1;
+    if(DamageRoad[_point_id][DamageBar] == INVALID_NUMBER) _valid = 1;
     else _valid = 0;
-    if(DamageRoad[_point_id][DamageLabel] == INVAILID_NUMBER) _valid = 1;
+    if(DamageRoad[_point_id][DamageLabel] == INVALID_NUMBER) _valid = 1;
     else _valid = 0;
-    if(DamageRoad[_point_id][DamageValue] == INVAILID_NUMBER) _valid = 1;
+    if(DamageRoad[_point_id][DamageValue] == INVALID_NUMBER) _valid = 1;
     else _valid = 0;
-    if(DamageRoad[_point_id][DamageWorker] == INVAILID_NUMBER) _valid = 1;
+    if(DamageRoad[_point_id][DamageWorker] == INVALID_NUMBER) _valid = 1;
     else _valid = 0;
     if(DamageRoad[_point_id][DamageRepair] == 0) _valid = 1;
     else _valid = 0;
@@ -46,10 +46,10 @@ func:ResetDamagePoint(_point_id)
 {
     if(_point_id > sizeof(_point_id)-1) return 0;
 
-    DamageRoad[_point_id][DamageBar] = INVAILID_NUMBER;
-    DamageRoad[_point_id][DamageLabel] = INVAILID_NUMBER;
-    DamageRoad[_point_id][DamageValue] = INVAILID_NUMBER;
-    DamageRoad[_point_id][DamageWorker] = INVAILID_NUMBER;
+    DamageRoad[_point_id][DamageBar] = INVALID_NUMBER;
+    DamageRoad[_point_id][DamageLabel] = INVALID_NUMBER;
+    DamageRoad[_point_id][DamageValue] = INVALID_NUMBER;
+    DamageRoad[_point_id][DamageWorker] = INVALID_NUMBER;
     DamageRoad[_point_id][DamageRepair] = 0;
     return 1;
 }

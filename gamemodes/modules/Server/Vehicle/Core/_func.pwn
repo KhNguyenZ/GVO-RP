@@ -211,7 +211,7 @@ func:DestroyPlayerVehicle(playerid, sqlid)
             DestroyVehicle(PlayerVehicle[playerid][i][pv_vehid]);
 
 
-            PlayerVehicle[playerid][i][pv_vehid] = INVAILID_NUMBER;
+            PlayerVehicle[playerid][i][pv_vehid] = INVALID_NUMBER;
             PlayerVehicle[playerid][i][pv_spawned] = 0;
         }
     }

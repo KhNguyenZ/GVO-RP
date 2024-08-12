@@ -1,44 +1,83 @@
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_float: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_float: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_float: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
-[11/08/2024 10:07:36 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_float: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_float: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_float: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name: field 'HouseName' not found
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name: field 'HouseOwner' not found
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name: field 'HousePassword' not found
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_float: field 'HouseX' not found
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_float: field 'HouseY' not found
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_float: field 'HouseZ' not found
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: field 'HouseSalePrice' not found
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: field 'HouseLock' not found
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: field 'HouseMoney' not found
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name: field 'HouseName' not found
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name: field 'HouseOwner' not found
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name: field 'HousePassword' not found
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_float: field 'HouseX' not found
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_float: field 'HouseY' not found
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_float: field 'HouseZ' not found
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: field 'HouseSalePrice' not found
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: field 'HouseLock' not found
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: field 'HouseMoney' not found
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name: field 'HouseName' not found
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name: field 'HouseOwner' not found
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name: field 'HousePassword' not found
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_float: field 'HouseX' not found
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_float: field 'HouseY' not found
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_float: field 'HouseZ' not found
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: field 'HouseSalePrice' not found
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: field 'HouseLock' not found
+[13/08/2024 12:40:12 SA] [plugins/mysql] cache_get_value_name_int: field 'HouseMoney' not found
+[13/08/2024 12:40:50 SA] [plugins/mysql] error #1054 while executing query "UPDATE `housefurnitures` SET `ModelID` = '78', `Name` = 'Nha Dang Rao Ban!', `Price` = '0', `SQLID` = '78', `HouseID` = '104', `ArrayID` = '97', `furnitureX` = '0.000000', `furnitureY` = '0.000000', `furnitureZ` = '0.000000', `furnitureRX` = '0.000000', `furnitureRY` = '0.000000', `furnitureRZ` = '0.000000' WHERE `furnitureid` = '3'": Unknown column 'ModelID' in 'field list'
+[13/08/2024 12:40:50 SA] [plugins/mysql] cache_get_row_count: no active cache
+[13/08/2024 12:40:50 SA] [plugins/mysql] cache_delete: invalid cache id '0'
+[13/08/2024 12:41:01 SA] [plugins/mysql] error #1054 while executing query "UPDATE `housefurnitures` SET `ModelID` = '78', `Name` = 'Nha Dang Rao Ban!', `Price` = '0', `SQLID` = '78', `HouseID` = '104', `ArrayID` = '97', `furnitureX` = '0.000000', `furnitureY` = '0.000000', `furnitureZ` = '0.000000', `furnitureRX` = '0.000000', `furnitureRY` = '0.000000', `furnitureRZ` = '0.000000' WHERE `furnitureid` = '3'": Unknown column 'ModelID' in 'field list'
+[13/08/2024 12:41:01 SA] [plugins/mysql] cache_get_row_count: no active cache
+[13/08/2024 12:41:01 SA] [plugins/mysql] cache_delete: invalid cache id '0'
+[13/08/2024 12:41:34 SA] [plugins/mysql] error #1364 while executing query "INSERT INTO housefurnitures SET HouseID=3, FurnitureID=11, FurnitureX=2319.324463, FurnitureY=-1021.982239, FurnitureZ=1050.210938, FurnitureVW=3, FurnitureInt=9": Field 'FurnitureRX' doesn't have a default value
+[13/08/2024 12:41:34 SA] [plugins/mysql] cache_insert_id: no active cache
+[13/08/2024 12:41:34 SA] [plugins/mysql] cache_delete: invalid cache id '0'
+[13/08/2024 12:41:34 SA] [plugins/mysql] error #1054 while executing query "UPDATE `housefurnitures` SET `ModelID` = '78', `Name` = 'Nha Dang Rao Ban!', `Price` = '0', `SQLID` = '78', `HouseID` = '104', `ArrayID` = '97', `furnitureX` = '0.000000', `furnitureY` = '0.000000', `furnitureZ` = '0.000000', `furnitureRX` = '0.000000', `furnitureRY` = '0.000000', `furnitureRZ` = '0.000000' WHERE `furnitureid` = '3'": Unknown column 'ModelID' in 'field list'
+[13/08/2024 12:41:34 SA] [plugins/mysql] cache_get_row_count: no active cache
+[13/08/2024 12:41:34 SA] [plugins/mysql] cache_delete: invalid cache id '0'

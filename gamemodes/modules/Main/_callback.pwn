@@ -12,7 +12,7 @@ public OnPlayerConnect(playerid)
     CreateFadeEffectTextDraw(playerid);
     CreateHienTextDraw(playerid);
     SetPVarString(playerid, "Current_IC_@", player_get_name(playerid));
-    TogglePlayerSpectating(playerid, 0);
+    TogglePlayerSpectating(playerid, 1);
 
     CreatePlayerInfo(playerid);
     Character[playerid][char_Login] = false;
@@ -29,7 +29,8 @@ public OnPlayerText(playerid, text[])
 {
     if (player_Login(playerid))
     {
-        if (Character[playerid][char_DC_Auth] == 0) {
+        if (Character[playerid][char_DC_Auth] == 0)
+        {
             SendErrorMessage(playerid, "[!] Vui long xac thuc tai khoan discord");
             return 1;
         }
@@ -64,7 +65,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
     RegMenuClick(playerid, PlayerText:playertextid);
     CharacterSelect_Click(playerid, PlayerText:playertextid);
 
-    if(GetPVarInt(playerid, #Auth_Case) == 1)
+    if (GetPVarInt(playerid, #Auth_Case) == 1)
     {
         LoginClick(playerid, PlayerText:playertextid);
     }
@@ -131,12 +132,11 @@ forward OnPlayerLoad(playerid);
 public OnPlayerLoad(playerid)
 {
     LoadPlayerInventory(playerid);
-    TogglePlayerSpectating(playerid, 0);
     Clear_Chat(playerid);
     SendClientMessage(playerid, -1, sprintf("[{212c58}GVO{ffffff}] Chao mung ban den voi may chu, {0066ff}%s.", player_get_name(playerid)));
     PlayerSetupping[playerid] = 0;
-    printf("Admin: %d",Character[playerid][char_Admin]);
-    if(Character[playerid][char_Admin] > 0)
+    printf("Admin: %d", Character[playerid][char_Admin]);
+    if (Character[playerid][char_Admin] > 0)
     {
         SendClientMessage(playerid, -1, sprintf("Xin Chao {0000EE}%s{FFFFFF}, ban la %s.", player_get_name(playerid), GetAdmin(playerid)));
     }
@@ -147,17 +147,15 @@ public OnPlayerLoad(playerid)
 
 public OnPlayerRequestClass(playerid, classid)
 {
-    if(IsPlayerNPC(playerid)) return 1;
-    if(Character[playerid][char_Login] == true)
+    if (IsPlayerNPC(playerid)) return 1;
+    if (Character[playerid][char_Login] == true)
     {
-        // printf("%.2f %.2f %.2f %.2f",Character[playerid][char_last_Pos][0], Character[playerid][char_last_Pos][1], Character[playerid][char_last_Pos][2])
         SetSpawnInfo(playerid, 0, Character[playerid][char_Skin], Character[playerid][char_last_Pos][0], Character[playerid][char_last_Pos][1], Character[playerid][char_last_Pos][2], Character[playerid][char_last_Pos][3], 0, 0, 0, 0, 0, 0);
         TogglePlayerSpectating(playerid, 0);
-        SpawnPlayer(playerid);
         return 1;
     }
-    else {
-        TogglePlayerSpectating(playerid, 1);
+    else
+    {
         SetPlayerJoinCamera(playerid);
     }
     return 1;
@@ -166,18 +164,18 @@ public OnPlayerRequestClass(playerid, classid)
 public OnPlayerEnterCheckpoint(playerid)
 {
     OnPlayerEnterCheckpointElectrician(playerid);
-	if(CP[playerid] == 1)
+    if (CP[playerid] == 1)
     {
         CP[playerid] = 0;
         PlayerPlaySound(playerid, 1056, 0.0, 0.0, 0.0);
         DisablePlayerCheckpoint(playerid);
     }
-    if(CP[playerid] == 252000)
- 	{
-	 	CP[playerid] = 0;
-	 	PlayerPlaySound(playerid, 1056, 0.0, 0.0, 0.0);
-	 	DisablePlayerCheckpoint(playerid);
- 	}
+    if (CP[playerid] == 252000)
+    {
+        CP[playerid] = 0;
+        PlayerPlaySound(playerid, 1056, 0.0, 0.0, 0.0);
+        DisablePlayerCheckpoint(playerid);
+    }
 }
 
 

@@ -29,7 +29,7 @@ func:CreateInteractiveNPC(i_id, a_name[], describe[], skin, Float:iNPC_PosX, Flo
     InteractiveNPCs_Data[inter_npc][iNPC_Skin] = skin;
 
     InteractiveNPCs_Data[inter_npc][iNPC_ID] = CreateActor(skin, iNPC_PosX, iNPC_PosY, iNPC_PosZ, iNPC_PosA);
-    printf("ID: %d| Inter: %d",inter_npc,InteractiveNPCs_Data[inter_npc][iNPC_ID]);
+    // printf("ID: %d| Inter: %d",inter_npc,InteractiveNPCs_Data[inter_npc][iNPC_ID]);
     new Inter_lbmsg[1280];
     format(Inter_lbmsg, 1280,"{41bcfa}%s (%d)", a_name,inter_npc);
     SetActorName(InteractiveNPCs_Data[inter_npc][iNPC_ID], a_name);
@@ -39,14 +39,16 @@ func:CreateInteractiveNPC(i_id, a_name[], describe[], skin, Float:iNPC_PosX, Flo
     format(InteractiveNPCs_Data[inter_npc][iNPC_Name], MAX_INTERACTIVE_NPC_NAME, "%s", GetActorName(InteractiveNPCs_Data[inter_npc][iNPC_ID]));
     Count_InterNPC++;
 
+    Iter_Add(InterNPC, inter_npc);
+    
     return InteractiveNPCs_Data[inter_npc][iNPC_ID];
 }
 
 
 func:IsPlayerNearInteractiveNPC(playerid)
 {
-    new near_npc_id = INVAILID_NUMBER;
-    for(new a = 0; a < MAX_INTERACTIVE_NPC; a++)
+    new near_npc_id = INVALID_NUMBER;
+    foreach(new a: InterNPC)
     {
         if(IsPlayerInRangeOfActor(playerid, InteractiveNPCs_Data[a][iNPC_ID],1))
         {

@@ -2,26 +2,26 @@ func:OnServerInit()
 {
     for (new i; i < 1000; i++)
     {
-        InteractiveNPCs_Data[i][iNPC_ID] = INVAILID_NUMBER;
+        InteractiveNPCs_Data[i][iNPC_ID] = INVALID_NUMBER;
     }
     for (new i; i < MAX_VEHICLES; i++)
     {
-        Veh_Rent[i][job_id] = INVAILID_NUMBER;
-        Veh_Rent[i][job_renter] = INVAILID_NUMBER;
-        Veh_Rent[i][job_modelid] = INVAILID_NUMBER;
-        Veh_Rent[i][job_vehid] = INVAILID_NUMBER;
+        Veh_Rent[i][job_id] = INVALID_NUMBER;
+        Veh_Rent[i][job_renter] = INVALID_NUMBER;
+        Veh_Rent[i][job_modelid] = INVALID_NUMBER;
+        Veh_Rent[i][job_vehid] = INVALID_NUMBER;
 
-        iCreate[i] = INVAILID_NUMBER;
+        iCreate[i] = INVALID_NUMBER;
     }
 
     for (new i = 0 ; i < MAX_DYNAMIC_DOORS ; i++)
     {
-        BizInfo[i][biz_id] = INVAILID_NUMBER;
-        DoorInfo[i][door_id] = INVAILID_NUMBER;
+        BizInfo[i][biz_id] = INVALID_NUMBER;
+        DoorInfo[i][door_id] = INVALID_NUMBER;
     }
     for (new i; i < 10; i++) 
 	{
-		CountBed[i] = INVAILID_NUMBER;
+		CountBed[i] = INVALID_NUMBER;
 	}
 
     LogBank = DCC_FindChannelById("1253565213446373397");
@@ -64,8 +64,3 @@ task ServerHeartBeat[1000]()
 }
 
 
-public OnGameModeInit()
-{
-    OnServerInit();
-    return 1;
-}

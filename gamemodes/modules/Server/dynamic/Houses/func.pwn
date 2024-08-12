@@ -461,7 +461,7 @@ func: GetXYInFrontOfPlayer(playerid, &Float:x, &Float:y, Float:distance)
     y += (distance * floatcos(-a, degrees));
 }
 
-func: SendToHouse(playerid, id)
+func:SendToHouse(playerid, id)
 {
     if(!Iter_Contains(Houses, id)) return 0;
     SetPVarInt(playerid, "HousePickupCooldown", tickcount()+8000);
@@ -522,13 +522,13 @@ func: ResetHouse(id)
             SetPlayerVirtualWorld(i, 0);
             SetPlayerInterior(i, 0);
             SetPlayerPos(i, HouseData[ InHouse[i] ][houseX], HouseData[ InHouse[i] ][houseY], HouseData[ InHouse[i] ][houseZ]);
-            InHouse[i] = INVALID_HOUSE_ID;
+            InHouse[i] = INVALID_NUMBER;
         }
     }
 
     new query[64], data[e_furniture];
-    mysql_format(SQLHandle, query, sizeof(query), "DELETE FROM houseguns WHERE HouseID=%d", id);
-    mysql_tquery(SQLHandle, query, "", "");
+    mysql_format(Handle(), query, sizeof(query), "DELETE FROM houseguns WHERE HouseID=%d", id);
+    mysql_tquery(Handle(), query, "", "");
 
     for(new i; i < Streamer_GetUpperBound(STREAMER_TYPE_OBJECT); ++i)
     {
@@ -537,8 +537,8 @@ func: ResetHouse(id)
         if(data[SQLID] > 0 && data[HouseID] == id) DestroyDynamicObject(i);
     }
 
-    mysql_format(SQLHandle, query, sizeof(query), "DELETE FROM housefurnitures WHERE HouseID=%d", id);
-    mysql_tquery(SQLHandle, query, "", "");
+    mysql_format(Handle(), query, sizeof(query), "DELETE FROM housefurnitures WHERE HouseID=%d", id);
+    mysql_tquery(Handle(), query, "", "");
     return 1;
 }
 
@@ -546,28 +546,22 @@ func: ResetHouse(id)
 {
     if(!Iter_Contains(Houses, id)) return 0;
     new query[256];
-    mysql_format(SQLHandle, query, sizeof(query), "UPDATE houses SET HouseName='%e', HouseOwner='%e', HousePassword='%e', HouseLock=%d, HouseMoney=%d, LastEntered=%d WHERE ID=%d",
+    mysql_format(Handle(), query, sizeof(query), "UPDATE houses SET HouseName='%e', HouseOwner='%e', HousePassword='%e', HouseLock=%d, HouseMoney=%d, LastEntered=%d WHERE ID=%d",
     HouseData[id][Name], HouseData[id][Owner], HouseData[id][Password], HouseData[id][LockMode], HouseData[id][SafeMoney], HouseData[id][LastEntered], id);
-    mysql_tquery(SQLHandle, query, "", "");
+    mysql_tquery(Handle(), query, "", "");
     HouseData[id][Save] = false;
     return 1;
 }*/
 
 func: SaveHouseData(houseid)
 {
-	// Kiểm tra kết nối cơ sở dữ liệu
-    if (SQLHandle == INVALID_HANDLE)
-    {
-        LogConsole("Không thể kết nối đến cơ sở dữ liệu!", "Error");
-        return;
-    }
     new _housequery[2048];
-    mysql_format(SQLHandle, _housequery, sizeof(_housequery), 
+    mysql_format(Handle(), _housequery, sizeof(_housequery), 
         "UPDATE `houses` SET \
         `Name` = '%s', `Owner` = '%s', `Password` = '%s', `HouseX` = '%f', `HouseY` = '%f', `HouseZ` = '%f', \
         `Price` = '%d', `Interior` = '%d', `LockMode` = '%d', `SafeMoney` = '%d', `LastEntered` = '%d', \
         `ExVW` = '%d', `InVW` = '%d', `ExInterior` = '%d', `InInterior` = '%d', `SalePrice` = '%d', \
-        `Address` = '%s', `furnitureVW` = '%d', `SQL_HOST` = '%d', \
+        `Address` = '%s', `furnitureVW` = '%d',\
         `IntName` = '%s', `intX` = '%f', `intY` = '%f', `intZ` = '%f', `intID` = '%d' \
         WHERE `id` = '%d'",
         HouseData[houseid][Name],
@@ -588,7 +582,6 @@ func: SaveHouseData(houseid)
         HouseData[houseid][SalePrice],
         HouseData[houseid][Address],
         HouseData[houseid][furnitureVW],
-        HouseData[houseid][SQL_HOST],
         HouseData[houseid][IntName],
         HouseData[houseid][intX],
         HouseData[houseid][intY],
@@ -601,7 +594,7 @@ func: SaveHouseData(houseid)
 
     // Thực thi câu lệnh SQL
     new iCache:update_expos;
-    update_expos = mysql_query(SQLHandle, _housequery);
+    update_expos = mysql_query(Handle(), _housequery);
 
 
     // Xác nhận cập nhật
@@ -631,7 +624,7 @@ func: SaveHouseData(houseid)
 func:SaveHouseFurnitureData(furnitureid)
 {
     new _FurnitureDataquery[1024];
-    mysql_format(SQLHandle, _FurnitureDataquery, sizeof(_FurnitureDataquery), 
+    mysql_format(Handle(), _FurnitureDataquery, sizeof(_FurnitureDataquery), 
         "UPDATE `housefurnitures` SET \
         `ModelID` = '%d', `Name` = '%s', `Price` = '%d', \
         `SQLID` = '%d', `HouseID` = '%d', `ArrayID` = '%d', \
@@ -887,6 +880,7 @@ func:ExitHouse(playerid)
                 SetPlayerPos(playerid, HouseData[i][houseX], HouseData[i][houseY], HouseData[i][houseZ]);
             }
         }
+        InHouse[playerid] = INVALID_NUMBER;
     }
     else
     {

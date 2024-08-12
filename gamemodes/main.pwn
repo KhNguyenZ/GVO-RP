@@ -23,7 +23,7 @@
 #include <PreviewModelDialog>
 #include <a_zones>
 #include <profiler>
-
+#include <zone>
 #undef MAX_PLAYERS
 #define MAX_PLAYERS 500
 

@@ -62,39 +62,42 @@ CMD:chinhgiatruck(playerid, params[]) {
 	}
 	return true;
 }
+
 CMD:xemhang(playerid, params[]) {
 	if(IsPlayerInAnyVehicle(playerid)) return SendClientMessage(playerid, COLOR_RED, "VUI LONG XUONG XE!");
-	if(DangLamViec[playerid] == 0) return true;
+	//if(DangLamViec[playerid] == 0) return true;
 	if(hangtrentay[playerid][0] == 1 || hangtrentay[playerid][1] == 1 || hangtrentay[playerid][2] == 1) return true;
-	//new Float:X, Float:Y, Float:Z;
-    //GetVehiclePos(XeTruck[playerid], X, Y, Z);
-	if(IsPlayerInRangeOfPoint(playerid, 4.0,  X, Y, Z)) {
+	new Float:x, Float:y, Float:z;
+    GetVehiclePos(XeTruck[playerid], x, y, z);
+	if(IsPlayerInRangeOfPoint(playerid, 4.0,  x, y, z)) {
 		new szDialog[512], string[512];
 		strcat(szDialog, "#\tHang Hoa\tSo Luong\n");
-		format(string, sizeof(string), "1\tThuc An\t%d\n", hangtrenxe[playerid][0]);
+		format(string, sizeof(string), "1\tThuc Pham\t%d\n", hangtrenxe[playerid][0]);
 		strcat(szDialog, string);
-		format(string, sizeof(string), "2\tVat Pham\t%d\n", hangtrenxe[playerid][1]);
+		format(string, sizeof(string), "2\tSat Thep\t%d\n", hangtrenxe[playerid][1]);
 		strcat(szDialog, string);
 		format(string, sizeof(string), "3\tQuan Ao\t%d\n", hangtrenxe[playerid][2]);
 		strcat(szDialog, string);
-		format(string, sizeof(string), "4\t9mm\t%d\n", hangtrenxe[playerid][3]);
+		format(string, sizeof(string), "4\tXang Dau\t%d\n", hangtrenxe[playerid][3]);
 		strcat(szDialog, string);
 		ShowPlayerDialog(playerid, DLG_XEMHANG, DIALOG_STYLE_TABLIST_HEADERS, "Hang Hoa", szDialog, "Lay", "Huy bo");
 	}
 	return true;
 }
+
 CMD:layxelamviec(playerid, params[]) {
 	if(DangLamViec[playerid] == 1) return SendClientMessage(playerid, COLOR_GREY, "Xe Cua Ban Van Con O Dau Do Ngoai Kia.");
 	new rand = random(4);
 	if(!IsPlayerInRangeOfPoint(playerid, 5.0, 2760.9275,-2395.9385,13.6328)) return true;
 	switch(rand) {
-		case 0: XeTruck[playerid] = CreateVehicle(414, 2761.4404,-2390.5876,13.7255,225.00000000, 1, 1,-1);
-		case 1: XeTruck[playerid] = CreateVehicle(414, -1591.30224609,109.38220215,3.79948235,225.00000000, 1, 1,-1);
-		case 2: XeTruck[playerid] = CreateVehicle(414, -1595.57812500,105.83326721,3.79948235,225.00000000, 1, 1,-1);
-		case 3: XeTruck[playerid] = CreateVehicle(414, -1599.55334473,102.00447845,3.79948235,225.00000000, 1, 1,-1);
+		case 0: XeTruck[playerid] = CreateVehicle(414, 2740.6870,-2388.9485,13.7266,177.2962, 1, 1,-1);
+		case 1: XeTruck[playerid] = CreateVehicle(414, 2749.2437,-2389.1902,13.7446,175.4585, 1, 1,-1);
+		case 2: XeTruck[playerid] = CreateVehicle(414, 2762.0164,-2389.3687,13.7266,179.8551, 1, 1,-1);
+		case 3: XeTruck[playerid] = CreateVehicle(414, 2755.2356,-2389.6658,13.7273,174.5112, 1, 1,-1);
 	}
 	new string[64];
-	format(string,sizeof(string),"Trucker Delivery\nPhuong Tien Cua %s", GetPlayerNameEx(playerid));
+	//format(string,sizeof(string),"Trucker Delivery\nPhuong Tien Cua %s", GetPlayerNameEx(playerid));
+	format(string,sizeof(string),"Trucker Delivery");
 	textvehicletruck[XeTruck[playerid]] = Create3DTextLabel(string, 0xFFFFFFFF, 0.0, 0.0, 0.0, 50.0, 0, 1 );
 	Attach3DTextLabelToVehicle(textvehicletruck[XeTruck[playerid]] , XeTruck[playerid], 0.0, 0.0, 0.7);
 	PutPlayerInVehicle(playerid, XeTruck[playerid], 0);

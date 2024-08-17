@@ -1,9 +1,32 @@
+hook OnPlayerConnect(playerid)
+{
+	DangLamViec[playerid] = 0;
+	XeTruck[playerid] = 0;
+	hangtrenxe[playerid][0] = 0;
+	hangtrenxe[playerid][1] = 0;
+	hangtrenxe[playerid][2] = 0;
+	hangtrenxe[playerid][3] = 0;
+	hangtrentay[playerid][0] = 0;
+	hangtrentay[playerid][1] = 0;
+	hangtrentay[playerid][2] = 0;
+	hangtrentay[playerid][3] = 0;
+	LuongHang[playerid] = 0;
+	SetPVarInt(playerid, "idloaihang",0);
+	SetPVarInt(playerid, "giatientruck",0);
+}
+
 hook OnGameModeInit()
 {
+	for(new xxx = 0; xxx < 14; xxx++) {
+		new string[128];
+		format(string,sizeof(string), "< DIEM BAN HANG >\n\nHang Nhan: %s(Khong nhan hang khac)\nSu Dung Y De Ban Hang",ThuMuaTruck[xxx][tenhang]);
+		CreateDynamic3DTextLabel(string,COLOR_GREY,KhuVucThuMua[xxx][0],KhuVucThuMua[xxx][1],KhuVucThuMua[xxx][2],10.0);
+	}
 	// NPC 2749.7957,-2451.3630,13.6484,358.1701
     Create3DTextLabel("{00ff00}[TRUCKING]\n{FFFFFF}Su dung {ffff00}/layxelamviec{FFFFFF} de tim hieu.", COLOR_WHITE, 2760.9275,-2395.9385,13.6328, 30.0, 0, false); //LAYXELAMVIEC 
 	Create3DTextLabel("{00ff00}[TRUCKING]\n{FFFFFF}Su dung {ffff00}Nhan Y{FFFFFF} de lay hang.", COLOR_WHITE, 2780.0386,-2413.1477,13.6356, 30.0, 0, false); // LAY HANG 
 }
+
 
 hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[]) {
     if(dialogid == DLG_BANHANGTRUCK) {
@@ -17,6 +40,14 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[]) {
 			SetPVarInt(playerid,"idloaihang", 0);
 			SetPVarInt(playerid,"giatientruck", 0);
 			LuongHang[playerid] -= 1;
+		}
+	}
+	if(dialogid == DLG_DIEMGIAOHANG) {
+		if(response){
+			DisablePlayerCheckpoint(playerid);
+			SetPlayerCheckpoint(playerid, KhuVucThuMua[listitem][0], KhuVucThuMua[listitem][1], KhuVucThuMua[listitem][2], 5);
+			CP[playerid] = 1;
+			SendClientMessage(playerid, COLOR_GREY, "Trucker Delivery: {FFFFFF}Da danh dau diem ban hang.");
 		}
 	}
 	if(dialogid == DLG_XEMHANG) {
@@ -65,14 +96,6 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[]) {
 	    			SetPlayerAttachedObject(playerid, 6, 1220, 1, 0.299822, 0.663485, -0.036337, 184.311355, 90.004089, 0.000000, 1.000000, 1.000000, 1.000000 );
 				}
 			}
-		}
-	}
-	if(dialogid == DLG_DIEMGIAOHANG) {
-		if(response){
-			DisablePlayerCheckpoint(playerid);
-			SetPlayerCheckpoint(playerid, KhuVucThuMua[listitem][0], KhuVucThuMua[listitem][1], KhuVucThuMua[listitem][2], 5);
-			CP[playerid] = 1;
-			SendClientMessage(playerid, COLOR_GREY, "Trucker Delivery: {FFFFFF}Da danh dau diem ban hang.");
 		}
 	}
 	if(dialogid == DLG_TRUCKERGVO) {

@@ -1,3 +1,21 @@
+func:IsVehicleEngineStarted(veh_id)
+{
+    new _v_output;
+    Vehicle_GetEngineState(veh_id, _v_output);
+    return _v_output;
+}
+func:SetVehicleEngine(_veh_id)
+{
+    if(!IsVehicleEngineStarted(_veh_id))
+    {
+        Vehicle_SetEngineState(_veh_id, VEHICLE_PARAMS_ON);
+        return 1;
+    }
+    else{
+        Vehicle_SetEngineState(_veh_id, VEHICLE_PARAMS_ON);
+        return 0;
+    }
+}
 func:GetClosestCar(iPlayer, iException = INVALID_VEHICLE_ID, Float: fRange = Float: 0x7F800000)
 {
 

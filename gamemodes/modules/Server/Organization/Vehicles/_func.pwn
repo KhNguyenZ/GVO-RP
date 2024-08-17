@@ -150,7 +150,7 @@ public OnCreateVehOrg(playerid, _org_id, _vmodel, lock, paintjob, color1, color2
     SetVehicleHealth(OrgVeh[_org_id][_vid][ov_vehid], OrgVeh[_org_id][_vid][ov_health]);
     return 1;
 }
-public OnPlayerStateChange(playerid, newstate, oldstate)
+hook OnPlayerStateChange(playerid, newstate, oldstate)
 {
     if(newstate == PLAYER_STATE_DRIVER)
     {

@@ -78,9 +78,12 @@ hook OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
             SendClientMessage(playerid, -1, "{ffff00}[ Ambulance ] {ffffff} Ban da goi 1 chiec xe cap cuu toi");
             SetPVarInt(playerid, "#Ambulance_Calling", 1);
             new string[128];
-            new zone[9999];
-            GetPlayer2DZone(playerid, zone, 9999);
-            format(string, sizeof(string), "Cong Van khuan cap ( {ffff00}%i {ffffff}){ffff00}%s {ffffff}duoc nguoi bi thuong tai{ffff00} %s,{ffffff} Ho yeu cau van chuyen cap cuu ngay lam tuc.",playerid, GetPlayerNameEx(playerid), zone);
+            new Float:zone[3];
+            new zname[64];
+            GetPlayerPos(playerid, zone[0],zone[1],zone[2]);
+            new _zone_id = GetZoneID(zone[0],zone[1],zone[2]);
+            GetZoneName(_zone_id, zname, 64);
+            format(string, sizeof(string), "Cong Van khuan cap ( {ffff00}%i {ffffff}){ffff00}%s {ffffff}duoc nguoi bi thuong tai{ffff00} %s,{ffffff} Ho yeu cau van chuyen cap cuu ngay lam tuc.",playerid, GetPlayerNameEx(playerid), zname);
             SendMessageToOrg(MEDIC_ID, -1,string);
         }
     }

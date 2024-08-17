@@ -978,3 +978,1021 @@
 [13/08/2024 12:41:34 SA] [ERROR] error #1054 while executing query "UPDATE `housefurnitures` SET `ModelID` = '78', `Name` = 'Nha Dang Rao Ban!', `Price` = '0', `SQLID` = '78', `HouseID` = '104', `ArrayID` = '97', `furnitureX` = '0.000000', `furnitureY` = '0.000000', `furnitureZ` = '0.000000', `furnitureRX` = '0.000000', `furnitureRY` = '0.000000', `furnitureRZ` = '0.000000' WHERE `furnitureid` = '3'": Unknown column 'ModelID' in 'field list'
 [13/08/2024 12:41:34 SA] [ERROR] cache_get_row_count: no active cache
 [13/08/2024 12:41:34 SA] [ERROR] cache_delete: invalid cache id '0'
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name: field 'HouseName' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name: field 'HouseOwner' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name: field 'HousePassword' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_float: field 'HouseX' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_float: field 'HouseY' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_float: field 'HouseZ' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: field 'HouseSalePrice' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: field 'HouseLock' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: field 'HouseMoney' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name: field 'HouseName' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name: field 'HouseOwner' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name: field 'HousePassword' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_float: field 'HouseX' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_float: field 'HouseY' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_float: field 'HouseZ' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: field 'HouseSalePrice' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: field 'HouseLock' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: field 'HouseMoney' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name: field 'HouseName' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name: field 'HouseOwner' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name: field 'HousePassword' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_float: field 'HouseX' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_float: field 'HouseY' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_float: field 'HouseZ' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: field 'HouseSalePrice' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: field 'HouseLock' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: field 'HouseMoney' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name: field 'HouseName' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name: field 'HouseOwner' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name: field 'HousePassword' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_float: field 'HouseX' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_float: field 'HouseY' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_float: field 'HouseZ' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: field 'HouseSalePrice' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: field 'HouseLock' not found
+[15/08/2024 1:04:43 CH] [ERROR] cache_get_value_name_int: field 'HouseMoney' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name: field 'HouseName' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name: field 'HouseOwner' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name: field 'HousePassword' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_float: field 'HouseX' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_float: field 'HouseY' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_float: field 'HouseZ' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: field 'HouseSalePrice' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: field 'HouseLock' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: field 'HouseMoney' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name: field 'HouseName' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name: field 'HouseOwner' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name: field 'HousePassword' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_float: field 'HouseX' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_float: field 'HouseY' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_float: field 'HouseZ' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: field 'HouseSalePrice' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: field 'HouseLock' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: field 'HouseMoney' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name: field 'HouseName' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name: field 'HouseOwner' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name: field 'HousePassword' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_float: field 'HouseX' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_float: field 'HouseY' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_float: field 'HouseZ' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: field 'HouseSalePrice' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: field 'HouseLock' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: field 'HouseMoney' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name: field 'HouseName' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name: field 'HouseOwner' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name: field 'HousePassword' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_float: field 'HouseX' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_float: field 'HouseY' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_float: field 'HouseZ' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: field 'HouseSalePrice' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: field 'HouseLock' not found
+[15/08/2024 1:06:17 CH] [ERROR] cache_get_value_name_int: field 'HouseMoney' not found
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name: field 'HouseName' not found
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name: field 'HouseOwner' not found
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name: field 'HousePassword' not found
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_float: field 'HouseX' not found
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_float: field 'HouseY' not found
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_float: field 'HouseZ' not found
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: field 'HouseSalePrice' not found
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: field 'HouseLock' not found
+[15/08/2024 2:17:12 CH] [ERROR] cache_get_value_name_int: field 'HouseMoney' not found
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name: field 'HouseName' not found
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name: field 'HouseOwner' not found
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name: field 'HousePassword' not found
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_float: field 'HouseX' not found
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_float: field 'HouseY' not found
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_float: field 'HouseZ' not found
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: field 'HouseSalePrice' not found
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: field 'HouseLock' not found
+[15/08/2024 2:18:39 CH] [ERROR] cache_get_value_name_int: field 'HouseMoney' not found
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name: field 'HouseName' not found
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name: field 'HouseOwner' not found
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name: field 'HousePassword' not found
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_float: field 'HouseX' not found
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_float: field 'HouseY' not found
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_float: field 'HouseZ' not found
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: field 'HouseSalePrice' not found
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: field 'HouseLock' not found
+[15/08/2024 2:21:09 CH] [ERROR] cache_get_value_name_int: field 'HouseMoney' not found
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name: field 'HouseName' not found
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name: field 'HouseOwner' not found
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name: field 'HousePassword' not found
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_float: field 'HouseX' not found
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_float: field 'HouseY' not found
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_float: field 'HouseZ' not found
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: field 'HouseSalePrice' not found
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: field 'HouseLock' not found
+[15/08/2024 2:39:19 CH] [ERROR] cache_get_value_name_int: field 'HouseMoney' not found
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name: field 'HouseName' not found
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name: field 'HouseOwner' not found
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name: field 'HousePassword' not found
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_float: field 'HouseX' not found
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_float: field 'HouseY' not found
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_float: field 'HouseZ' not found
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: field 'HouseSalePrice' not found
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: field 'HouseLock' not found
+[15/08/2024 3:14:14 CH] [ERROR] cache_get_value_name_int: field 'HouseMoney' not found
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name: field 'HouseName' not found
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name: field 'HouseOwner' not found
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name: field 'HousePassword' not found
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_float: field 'HouseX' not found
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_float: field 'HouseY' not found
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_float: field 'HouseZ' not found
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: field 'HouseSalePrice' not found
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: field 'HouseLock' not found
+[15/08/2024 10:19:47 CH] [ERROR] cache_get_value_name_int: field 'HouseMoney' not found
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name: field 'HouseName' not found
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name: field 'HouseOwner' not found
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name: field 'HousePassword' not found
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_float: field 'HouseX' not found
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_float: field 'HouseY' not found
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_float: field 'HouseZ' not found
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: field 'HouseSalePrice' not found
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: field 'HouseLock' not found
+[17/08/2024 1:25:29 SA] [ERROR] cache_get_value_name_int: field 'HouseMoney' not found
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name: field 'HouseName' not found
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name: field 'HouseOwner' not found
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name: field 'HousePassword' not found
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_float: field 'HouseX' not found
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_float: field 'HouseY' not found
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_float: field 'HouseZ' not found
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: field 'HouseSalePrice' not found
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: field 'HouseLock' not found
+[17/08/2024 2:34:57 CH] [ERROR] cache_get_value_name_int: field 'HouseMoney' not found
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name: field 'HouseName' not found
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name: field 'HouseOwner' not found
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name: field 'HousePassword' not found
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_float: field 'HouseX' not found
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_float: field 'HouseY' not found
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_float: field 'HouseZ' not found
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: field 'HouseSalePrice' not found
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: field 'HouseLock' not found
+[17/08/2024 2:38:26 CH] [ERROR] cache_get_value_name_int: field 'HouseMoney' not found
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name: field 'HouseName' not found
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name: field 'HouseOwner' not found
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name: field 'HousePassword' not found
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_float: field 'HouseX' not found
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_float: field 'HouseY' not found
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_float: field 'HouseZ' not found
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: field 'HouseSalePrice' not found
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: field 'HouseLock' not found
+[17/08/2024 2:44:05 CH] [ERROR] cache_get_value_name_int: field 'HouseMoney' not found
+[17/08/2024 2:45:04 CH] [ERROR] error #1064 while executing query "INSERT INTO `dealership` (Model, Type, Price,PositionX,PositionY,PositionZ,PositionA) VALUES (0, 0, 10000, 1778.38,-1752.42,13.": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[17/08/2024 2:45:23 CH] [ERROR] error #1064 while executing query "INSERT INTO `dealership` (Model, Type, Price,PositionX,PositionY,PositionZ,PositionA) VALUES (0, 0, 10000, 1778.70,-1765.31,13.": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[17/08/2024 2:50:49 CH] [ERROR] error #1064 while executing query "INSERT INTO `dealership` (Model, Type, Price,PositionX,PositionY,PositionZ,PositionA) VALUES (0, 0, 10000, 1766.13,-1760.17,13.": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name: field 'HouseName' not found
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name: field 'HouseOwner' not found
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name: field 'HousePassword' not found
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_float: field 'HouseX' not found
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_float: field 'HouseY' not found
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_float: field 'HouseZ' not found
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: field 'HouseSalePrice' not found
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: field 'HouseLock' not found
+[17/08/2024 2:53:18 CH] [ERROR] cache_get_value_name_int: field 'HouseMoney' not found
+[17/08/2024 2:53:46 CH] [ERROR] error #1064 while executing query "INSERT INTO `dealership` (Model, Type, Price,PositionX,PositionY,PositionZ,PositionA) VALUES (0, 0, 10000, 1769.92,-1766.54,13.": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name: field 'HouseName' not found
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name: field 'HouseOwner' not found
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name: field 'HousePassword' not found
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_float: field 'HouseX' not found
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_float: field 'HouseY' not found
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_float: field 'HouseZ' not found
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: field 'HouseSalePrice' not found
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: field 'HouseLock' not found
+[17/08/2024 2:55:22 CH] [ERROR] cache_get_value_name_int: field 'HouseMoney' not found
+[17/08/2024 2:56:23 CH] [ERROR] error #1064 while executing query "INSERT INTO `dealership` (Model, Type, Price,PositionX,PositionY,PositionZ,PositionA) VALUES (411, 0, 10000, 1771.47,-1771.50,,": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name: field 'HouseName' not found
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name: field 'HouseOwner' not found
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name: field 'HousePassword' not found
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_float: field 'HouseX' not found
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_float: field 'HouseY' not found
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_float: field 'HouseZ' not found
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: field 'HouseSalePrice' not found
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: field 'HouseLock' not found
+[17/08/2024 3:00:41 CH] [ERROR] cache_get_value_name_int: field 'HouseMoney' not found
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name: field 'HouseName' not found
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name: field 'HouseOwner' not found
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name: field 'HousePassword' not found
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_float: field 'HouseX' not found
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_float: field 'HouseY' not found
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_float: field 'HouseZ' not found
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: field 'HouseSalePrice' not found
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: field 'HouseLock' not found
+[17/08/2024 3:02:06 CH] [ERROR] cache_get_value_name_int: field 'HouseMoney' not found
+[17/08/2024 3:03:03 CH] [ERROR] error #1064 while executing query "INSERT INTO `dealership` (Model, Type, Price,PositionX,PositionY,PositionZ,PositionA) VALUES (522, 0, 100000, 1765.35,-1759.43,": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[17/08/2024 3:03:45 CH] [ERROR] error #1064 while executing query "INSERT INTO `dealership` (Model, Type, Price,PositionX,PositionY,PositionZ,PositionA) VALUES (522, 0, 100000, 1766.01,-1759.95,": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name: field 'HouseName' not found
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name: field 'HouseOwner' not found
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name: field 'HousePassword' not found
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_float: field 'HouseX' not found
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_float: field 'HouseY' not found
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_float: field 'HouseZ' not found
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: field 'HouseSalePrice' not found
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: field 'HouseLock' not found
+[17/08/2024 3:05:18 CH] [ERROR] cache_get_value_name_int: field 'HouseMoney' not found
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_float: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: value 'NULL' is not a number
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name: field 'HouseName' not found
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name: field 'HouseOwner' not found
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name: field 'HousePassword' not found
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_float: field 'HouseX' not found
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_float: field 'HouseY' not found
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_float: field 'HouseZ' not found
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: field 'HouseSalePrice' not found
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: field 'HouseLock' not found
+[17/08/2024 3:10:04 CH] [ERROR] cache_get_value_name_int: field 'HouseMoney' not found
+[17/08/2024 3:11:16 CH] [ERROR] error #1064 while executing query "INSERT INTO `dealership` (Model, Type, Price,PositionX,PositionY,PositionZ,PositionA) VALUES (3166, 0, 100000, 1779.19,-1765.38": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[17/08/2024 3:12:03 CH] [ERROR] error #1064 while executing query "INSERT INTO `dealership` (Model, Type, Price,PositionX,PositionY,PositionZ,PositionA) VALUES (3155, 0, 100000, 1770.87,-1770.97": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[17/08/2024 3:12:28 CH] [ERROR] error #1064 while executing query "INSERT INTO `dealership` (Model, Type, Price,PositionX,PositionY,PositionZ,PositionA) VALUES (3155, 0, 100000, 1788.92,-1772.76": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1

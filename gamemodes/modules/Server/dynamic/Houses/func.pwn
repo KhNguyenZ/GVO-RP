@@ -366,18 +366,6 @@ SAZones[][e_sazone] = {
 {"Flint County", {-1213.90,-2892.90,-242.90,44.60,-768.00,900.00}},
 {"Whetstone", {-2997.40,-2892.90,-242.90,-1213.90,-1115.50,900.00}}
 };
-func: convertNumber(value)
-{
-    new string[24];
-    format(string, sizeof(string), "%d", value);
-
-    for(new i = (strlen(string) - 3); i > (value < 0 ? 1 : 0) ; i -= 3)
-    {
-        strins(string[i], ",", 0);
-    }
-    
-    return string;
-}
 
 // Hàm sao chép chuỗi
 func: strcopys(destination[], maxlen, const source[])

@@ -1,5 +1,5 @@
 
-#pragma warning disable 213, 208, 219, 239, 240, 200, 203, 209
+#pragma warning disable 213, 208, 219, 239, 240, 200, 203, 209, 214
 #define YSI_NO_HEAP_MALLOC
 #include <_open_mp>
 #include <crashdetect>
@@ -13,7 +13,6 @@
 #include <notify>
 #include <DialogCenter>
 #include <easyDialog>
-#include <Veh-Lib\tdw_vyengine>
 #include <actor_plus>
 #include <strlib>
 #include <sampvoice>
@@ -21,9 +20,9 @@
 #include <memory>
 #include <VehiclePartPosition>
 #include <PreviewModelDialog>
-#include <a_zones>
 #include <profiler>
 #include <zone>
+#include <vehicle_plus>
 #include <YSI\YSI_Data\y_iterate>
 #undef MAX_PLAYERS
 #define MAX_PLAYERS 500
@@ -107,6 +106,8 @@ main()
 #include "./modules/Players/characters/Death/textdraw.pwn"
 #include "./modules/Players/characters/Death/callback.pwn"
 
+#include "./modules/Server/Dealership/build.pwn"
+
 
 #include "./modules/Main/_core.pwn"
 public OnGameModeInit()
@@ -146,6 +147,8 @@ public SSA_Mysql_Intit()
 {
     LoadOrgs();
     CreateInfo();
+
+    LoadDealership();
     return 1;
 }
 public OnGameModeExit()

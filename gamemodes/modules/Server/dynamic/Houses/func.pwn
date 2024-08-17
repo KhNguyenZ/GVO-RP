@@ -480,7 +480,7 @@ func: ShowHouseMenu(playerid)
     if(strcmp(HouseData[ InHouse[playerid] ][Owner], name)) return SendClientMessage(playerid, 0xE74C3CFF, "He Thong House: Ban khong phai la chu so huu ngoi nha nay.");
 
     new string[256], id = InHouse[playerid];
-    format(string, sizeof(string), "Ten Ngoi Nha: %s\nMat Khau: %s\nKhoa Nha: %s\nKet Sat {2ECC71}($%s)\nNoi That\nKho Vu Khi\nRao Ban Nha {2ECC71}($%s)", HouseData[id][Name], HouseData[id][Password], LockNames[ HouseData[id][LockMode] ], convertNumber(HouseData[id][SafeMoney]), convertNumber(floatround(HouseData[id][Price]*0.85)));
+    format(string, sizeof(string), "Ten Ngoi Nha: %s\nMat Khau: %s\nKhoa Nha: %s\nKet Sat {2ECC71}($%s)\nNoi That\nKho Vu Khi\nRao Ban Nha {2ECC71}($%s)", HouseData[id][Name], HouseData[id][Password], LockNames[ HouseData[id][LockMode] ], FormatMoney(HouseData[id][SafeMoney]), FormatMoney(floatround(HouseData[id][Price]*0.85)));
     ShowPlayerDialog(playerid, DIALOG_HOUSE+2, DIALOG_STYLE_LIST, HouseData[id][Name], string, "Chon", "Dong");
     return 1;
 }
@@ -497,7 +497,7 @@ func: ResetHouse(id)
     HouseData[id][Save] = true;
     
     new label[200];
-    format(label, sizeof(label), "{2ECC71}Nha dang rao ban(ID: %d)\n{FFFFFF}%s\n{F1C40F}Gia Ban: {2ECC71}$%s", id, HouseInteriors[ HouseData[id][Interior] ][IntName], convertNumber(HouseData[id][Price]));
+    format(label, sizeof(label), "{2ECC71}Nha dang rao ban(ID: %d)\n{FFFFFF}%s\n{F1C40F}Gia Ban: {2ECC71}$%s", id, HouseInteriors[ HouseData[id][Interior] ][IntName], FormatMoney(HouseData[id][Price]));
     UpdateDynamic3DTextLabelText(HouseData[id][HouseLabel], 0xFFFFFFFF, label);
     Streamer_SetIntData(STREAMER_TYPE_PICKUP, HouseData[id][HousePickup], E_STREAMER_MODEL_ID, 1273);
     Streamer_SetIntData(STREAMER_TYPE_MAP_ICON, HouseData[id][HouseIcon], E_STREAMER_TYPE, 31);
@@ -687,14 +687,14 @@ public LoadHouses()
             if(strcmp(HouseData[id][Owner], "-")) {
                 if(HouseData[id][SalePrice] > 0) {
                     for_sale = 1;
-                    format(label, sizeof(label), "{E67E22}%s's Nha dang ban! (ID: %d)\n{FFFFFF}%s\n{FFFFFF}%s\n{F1C40F}Gia ban: {2ECC71}$%s", HouseData[id][Owner], id, HouseData[id][Name], HouseInteriors[ HouseData[id][Interior] ][IntName], convertNumber(HouseData[id][SalePrice]));
+                    format(label, sizeof(label), "{E67E22}%s's Nha dang ban! (ID: %d)\n{FFFFFF}%s\n{FFFFFF}%s\n{F1C40F}Gia ban: {2ECC71}$%s", HouseData[id][Owner], id, HouseData[id][Name], HouseInteriors[ HouseData[id][Interior] ][IntName], FormatMoney(HouseData[id][SalePrice]));
                 } else {
                     for_sale = 0;
                     format(label, sizeof(label), "{E67E22}%s's House (ID: %d)\n{FFFFFF}%s\n{FFFFFF}%s\n%s\n{FFFFFF}%s", HouseData[id][Owner], id, HouseData[id][Name], HouseInteriors[ HouseData[id][Interior] ][IntName], LockNames[ HouseData[id][LockMode] ], HouseData[id][Address]);
                 }
             } else {
                 for_sale = 1;
-                format(label, sizeof(label), "{2ECC71}Nha dang ban! (ID: %d)\n{FFFFFF}%s\n{F1C40F}Gia ban: {2ECC71}$%s", id, HouseInteriors[ HouseData[id][Interior] ][IntName], convertNumber(HouseData[id][Price]));
+                format(label, sizeof(label), "{2ECC71}Nha dang ban! (ID: %d)\n{FFFFFF}%s\n{F1C40F}Gia ban: {2ECC71}$%s", id, HouseInteriors[ HouseData[id][Interior] ][IntName], FormatMoney(HouseData[id][Price]));
             }
 
             HouseData[id][HousePickup] = CreateDynamicPickup((!for_sale) ? 19522 : 1273, 1, HouseData[id][houseX], HouseData[id][houseY], HouseData[id][houseZ]);

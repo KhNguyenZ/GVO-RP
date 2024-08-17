@@ -10,7 +10,7 @@
 #endif
 
 #if !defined STRLIB_RETURN_SIZE
-	#define STRLIB_RETURN_SIZE  12800
+	#define STRLIB_RETURN_SIZE  128
 #endif
 
 #if !defined STRLIB_USE_FORMATEX

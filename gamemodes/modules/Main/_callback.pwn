@@ -184,3 +184,8 @@ public OnPlayerDisconnect(playerid, reason)
     Character[playerid][char_Login] = false;
     return 1;
 }
+
+public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
+{
+    return 1;
+}

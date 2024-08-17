@@ -69,8 +69,6 @@ main()
 
 #include "./modules/Dev/build.pwn"
 
-#include "./modules/Server/ProgressLoad.pwn"
-
 // login
 #include "./modules/Players/characters/build.pwn"
 
@@ -112,6 +110,8 @@ main()
 #include "./modules/Main/_core.pwn"
 public OnGameModeInit()
 {
+    SetCrashDetectLongCallTime(1000000); // cái này crashdetect nó sẽ ưu tiên kiểm tra crash sẻver
+
     OnServerInit();
     AddSimpleModel(-1, 19379, -2001, "object.dff", "char.txd");
     AddSimpleModel(-1, 19379, -2002, "object.dff", "login.txd");

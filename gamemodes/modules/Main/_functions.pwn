@@ -301,18 +301,6 @@ func:HienTextdraw(playerid, const string[], time = 2000)
     return 1;
 }
 
-func: convertNumber(value)
-{
-    new string[24];
-    format(string, sizeof(string), "%d", value);
-
-    for(new i = (strlen(string) - 3); i > (value < 0 ? 1 : 0) ; i -= 3)
-    {
-        strins(string[i], ",", 0);
-    }
-    
-    return string;
-}
 forward XoaTextDraw(playerid);
 public XoaTextDraw(playerid)
 {
@@ -365,7 +353,7 @@ func:GetNameFromDB(sqlid)
     return namedb;
 }
 
-stock FormatMoney(amount)
+func:FormatMoney(amount)
 {
     new output[1220];
     new formatted_str[32];

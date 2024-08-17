@@ -48,7 +48,7 @@ public OnPlayerPickUpDynamicPickup(playerid, pickupid)
                     if (!strcmp(HouseData[i][Owner], "-"))
                     {
                         new string[64];
-                        format(string, sizeof(string), "nha dang duoc rao ban\n\nPrice: {2ECC71}$%s", convertNumber(HouseData[i][Price]));
+                        format(string, sizeof(string), "nha dang duoc rao ban\n\nPrice: {2ECC71}$%s", FormatMoney(HouseData[i][Price]));
                         ShowPlayerDialog(playerid, DIALOG_HOUSE, DIALOG_STYLE_MSGBOX, "Nha dang rao ban!", string, "Buy", "Close");
                     }
                     else
@@ -149,7 +149,7 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         if (listitem == 3)
         {
             new string[128];
-            format(string, sizeof(string), "Lay tien tu ket sat {2ECC71}($%s)\nDat tien vao ket sat {2ECC71}($%s)", convertNumber(HouseData[id][SafeMoney]), convertNumber(GetPlayerMoney(playerid)));
+            format(string, sizeof(string), "Lay tien tu ket sat {2ECC71}($%s)\nDat tien vao ket sat {2ECC71}($%s)", FormatMoney(HouseData[id][SafeMoney]), FormatMoney(GetPlayerMoney(playerid)));
             ShowPlayerDialog(playerid, DIALOG_HOUSE + 6, DIALOG_STYLE_LIST, "Ket Sat", string, "Chon", "Tro ve");
         }
 
@@ -362,7 +362,7 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
             new list[512];
             for (new i; i < sizeof(HouseFurnitures); ++i)
             {
-                format(list, sizeof(list), "%s%d\tID: %d\t%s\n", list, HouseFurnitures[i][Name], i + 1, convertNumber(HouseFurnitures[i][Price]));
+                format(list, sizeof(list), "%s%d\tID: %d\t%s\n", list, HouseFurnitures[i][Name], i + 1, FormatMoney(HouseFurnitures[i][Price]));
             }
 
             ShowPlayerDialog(playerid, DIALOG_HOUSE + 12, DIALOG_STYLE_PREVIEW_MODEL, "Mua Noi That", list, "Mua", "Tro Ve");
@@ -398,7 +398,7 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
             }
 
             new string[64];
-            format(string, sizeof(string), "He Thong House: Da ban %d noi that voi gia $%s", sold, convertNumber(money));
+            format(string, sizeof(string), "He Thong House: Da ban %d noi that voi gia $%s", sold, FormatMoney(money));
             SendClientMessage(playerid, -1, string);
             GivePlayerMoney(playerid, money);
 
@@ -480,7 +480,7 @@ public OnPlayerSelectDynamicObject(playerid, objectid, modelid, Float: x, Float:
             new data[e_furniture], string[128];
             SetPVarInt(playerid, "SelectedFurniture", objectid);
             Streamer_GetArrayData(STREAMER_TYPE_OBJECT, objectid, E_STREAMER_EXTRA_ID, data);
-            format(string, sizeof(string), "Ban co muon ban %s cua minh khong?\nBan se nhan duoc {2ECC71}$%s.", HouseFurnitures[ data[ArrayID] ][Name], convertNumber(HouseFurnitures[ data[ArrayID] ][Price]));
+            format(string, sizeof(string), "Ban co muon ban %s cua minh khong?\nBan se nhan duoc {2ECC71}$%s.", HouseFurnitures[ data[ArrayID] ][Name], FormatMoney(HouseFurnitures[ data[ArrayID] ][Price]));
             ShowPlayerDialog(playerid, DIALOG_HOUSE + 13, DIALOG_STYLE_MSGBOX, "Xac nhan ban hang", string, "Ban", "Dong");
         }
     }

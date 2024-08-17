@@ -43,7 +43,7 @@ CMD:createhouse(playerid, params[])
     HouseData[id][Save] = true;
 
     new label[200];
-    format(label, sizeof(label), "{2ECC71}Nha Dang Rao Ban (ID: %d)\n{FFFFFF}%s\n{F1C40F}Gia ban: {2ECC71}$%s", id, HouseInteriors[interior][IntName], convertNumber(price));
+    format(label, sizeof(label), "{2ECC71}Nha Dang Rao Ban (ID: %d)\n{FFFFFF}%s\n{F1C40F}Gia ban: {2ECC71}$%s", id, HouseInteriors[interior][IntName], FormatMoney(price));
     HouseData[id][HouseLabel] = CreateDynamic3DTextLabel(label, 0xFFFFFFFF, HouseData[id][houseX], HouseData[id][houseY], HouseData[id][houseZ] + 0.35, 15.0, .testlos = 1);
     HouseData[id][HousePickup] = CreateDynamicPickup(1273, 1, HouseData[id][houseX], HouseData[id][houseY], HouseData[id][houseZ]);
     HouseData[id][HouseIcon] = CreateDynamicMapIcon(HouseData[id][houseX], HouseData[id][houseY], HouseData[id][houseZ], 31, 0);
@@ -73,7 +73,7 @@ CMD:hinterior(playerid, params[])
 
     if (!strcmp(HouseData[id][Owner], "-"))
     {
-        format(label, sizeof(label), "{2ECC71}Nha Dang Rao Ban (ID: %d)\n{FFFFFF}%s\n{F1C40F}Price: {2ECC71}$%s", id, HouseInteriors[interior][IntName], convertNumber(HouseData[id][Price]));
+        format(label, sizeof(label), "{2ECC71}Nha Dang Rao Ban (ID: %d)\n{FFFFFF}%s\n{F1C40F}Price: {2ECC71}$%s", id, HouseInteriors[interior][IntName], FormatMoney(HouseData[id][Price]));
     }
     else
     {
@@ -102,7 +102,7 @@ CMD:hsetprice(playerid, params[])
 
     if (!strcmp(HouseData[id][Owner], "-"))
     {
-        format(label, sizeof(label), "{2ECC71}Nha Dang Rao Ban (ID: %d)\n{FFFFFF}%s\n{F1C40F}Price: {2ECC71}$%s", id, HouseInteriors[ HouseData[id][Interior] ][IntName], convertNumber(price));
+        format(label, sizeof(label), "{2ECC71}Nha Dang Rao Ban (ID: %d)\n{FFFFFF}%s\n{F1C40F}Price: {2ECC71}$%s", id, HouseInteriors[ HouseData[id][Interior] ][IntName], FormatMoney(price));
     }
     else
     {

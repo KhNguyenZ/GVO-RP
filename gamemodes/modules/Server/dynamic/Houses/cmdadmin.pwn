@@ -7,8 +7,21 @@ CMD:money(playerid, params[])
     return 1;
 }
 
+CMD:test(playerid, params[]){
+    new queryzzzzz[1280];
+    new id = Iter_Free(Houses);
+    printf("%s", queryzzzzz);
+    mysql_format(Handle(), queryzzzzz, sizeof(queryzzzzz), "INSERT INTO `houses` SET \
+     `ID`= '%d', `HouseX`='%f', `HouseY`='%f', `HouseZ`='%f', `HousePrice`='%d', `HouseInterior`='%d' ",id, 1819.8929, -1588.9333, 13.3548, 2, 3);
+    mysql_tquery(SQLHandle, queryzzzzz, "houses", "");
+    SaveHouseData(id);
+    SaveHouseFurnitureData(id);
+    return 1;
+}
+
 CMD:house(playerid, params[])
 {
+<<<<<<< Updated upstream
     foreach (new i: Houses)
     {
         if (IsPlayerInRangeOfPoint(playerid, 2.0, HouseInteriors[HouseData[i][Interior]][intX], HouseInteriors[HouseData[i][Interior]][intY], HouseInteriors[HouseData[i][Interior]][intZ]))
@@ -17,6 +30,17 @@ CMD:house(playerid, params[])
             break;
         }
     }
+=======
+    for(new i = 0; i < MAX_HOUSES; i++)
+        {
+            if(IsPlayerInRangeOfPoint(playerid, 2.0, HouseInteriors[HouseData[i][Interior]][intX], HouseInteriors[HouseData[i][Interior]][intY], HouseInteriors[HouseData[i][Interior]][intZ]))
+            {
+                ShowHouseMenu(playerid);
+            }else{
+                SendClientMessage(playerid, 0xE74C3CFF, "He Thong House: Ban khong o trong nha.");
+            }
+        }
+>>>>>>> Stashed changes
     return 1;
 }
 
@@ -48,13 +72,18 @@ CMD:createhouse(playerid, params[])
     HouseData[id][HousePickup] = CreateDynamicPickup(1273, 1, HouseData[id][houseX], HouseData[id][houseY], HouseData[id][houseZ]);
     HouseData[id][HouseIcon] = CreateDynamicMapIcon(HouseData[id][houseX], HouseData[id][houseY], HouseData[id][houseZ], 31, 0);
 
+<<<<<<< Updated upstream
     new query[1080];
     mysql_format(Handle(), query, sizeof(query), "INSERT INTO houses SET id=%d, HouseX=%f, HouseY=%f, HouseZ=%f, HousePrice=%d, HouseInterior=%d", id, HouseData[id][houseX], HouseData[id][houseY], HouseData[id][houseZ], price, interior);
     printf("%s",query);
     mysql_tquery(Handle(), query);
+=======
+    new query[256];
+    mysql_format(SQLHandle, query, sizeof(query), "INSERT INTO houses SET ID=%d, HouseX=%f, HouseY=%f, HouseZ=%f, HousePrice=%d, HouseInterior=%d", id, HouseData[id][houseX], HouseData[id][houseY], HouseData[id][houseZ], price, interior);
+    mysql_tquery(SQLHandle, query, "houses", "");
+
+>>>>>>> Stashed changes
     Iter_Add(Houses, id);
-    SaveHouseData(id);
-    SaveHouseFurnitureData(id);
     return 1;
 }
 
@@ -82,8 +111,6 @@ CMD:hinterior(playerid, params[])
 
     UpdateDynamic3DTextLabelText(HouseData[id][HouseLabel], 0xFFFFFFFF, label);
     SendClientMessage(playerid, -1, "He Thong House: Noi that da duoc cap nhat.");
-    SaveHouseData(id);
-    SaveHouseFurnitureData(id);
     return 1;
 }
 
@@ -111,8 +138,6 @@ CMD:hsetprice(playerid, params[])
 
     UpdateDynamic3DTextLabelText(HouseData[id][HouseLabel], 0xFFFFFFFF, label);
     SendClientMessage(playerid, -1, "He Thong House: Da cap nhat gia ban nha.");
-    SaveHouseData(id);
-    SaveHouseFurnitureData(id);
     return 1;
 }
 
@@ -125,8 +150,6 @@ CMD:resethouse(playerid, params[])
     if (!Iter_Contains(Houses, id)) return SendClientMessage(playerid, 0xE74C3CFF, "He Thong House: ID nha ban da nhap khong ton tai");
     ResetHouse(id);
     SendClientMessage(playerid, -1, "He Thong House: Dat lai nha.");
-    SaveHouseData(id);
-    SaveHouseFurnitureData(id);
     return 1;
 }
 
@@ -152,9 +175,6 @@ CMD:deletehouse(playerid, params[])
     mysql_format(Handle(), query, sizeof(query), "DELETE FROM houses WHERE ID=%d", id);
     mysql_tquery(Handle(), query, "", "");
     SendClientMessage(playerid, -1, "He Thong House: Nha da bi xoa.");
-    SaveHouseData(id);
-    SaveHouseFurnitureData(id);
-
     return 1;
 }
 

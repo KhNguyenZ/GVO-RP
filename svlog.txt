@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 [23:45:04] : [sv:dbg:network:init] : module initializing...
 [23:45:04] : [dbg:raknet:init] : module initializing...
 [23:45:04] : [dbg:raknet:init] : module initialized
@@ -18,3 +19,33 @@
 [23:46:08] : [sv:dbg:network:connect] : player (0) assigned key (100007f81d5184f)
 [23:46:09] : [sv:dbg:network:receive] : player (0) identified (port:62555)
 [23:47:10] : [sv:dbg:network:connect] : disconnecting player (0) ...
+=======
+[10:46:18] : [sv:dbg:network:init] : module initializing...
+[10:46:18] : [dbg:raknet:init] : module initializing...
+[10:46:18] : [dbg:raknet:init] : module initialized
+[10:46:18] : [sv:dbg:network:init] : module initialized
+[10:46:18] : [sv:dbg:main:Load] : creating 8 work threads...
+[10:46:18] :  -------------------------------------------    
+[10:46:18] :    ___                __   __    _              
+[10:46:18] :   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[10:46:18] :   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[10:46:18] :   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[10:46:18] :                   |_|                           
+[10:46:18] :  -------------------------------------------    
+[10:46:18] :                 SampVoice by MOR                
+[10:46:18] :     Ported to open.mp by AmyrAhmady (iAmir)     
+[10:46:18] :  -------------------------------------------    
+[10:46:21] : [sv:dbg:network:bind] : voice server running on port 65167
+[10:46:25] : [sv:dbg:network:connect] : connecting player (0) with address (127.0.0.1) ...
+[10:46:25] : [sv:dbg:network:connect] : player (0) assigned key (100007fe3e1bdad)
+[10:46:26] : [sv:dbg:network:receive] : player (0) identified (port:52731)
+[10:47:46] :  -------------------------------------------
+[10:47:46] :            SampVoice unloading...           
+[10:47:46] :  -------------------------------------------
+[10:47:46] : [sv:dbg:pawn:free] : module releasing...
+[10:47:46] : [sv:dbg:pawn:free] : module released
+[10:47:46] : [sv:dbg:network:free] : module releasing...
+[10:47:46] : [dbg:raknet:free] : module releasing...
+[10:47:46] : [dbg:raknet:free] : module released
+[10:47:46] : [sv:dbg:network:free] : module released
+>>>>>>> Stashed changes

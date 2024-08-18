@@ -10,7 +10,54 @@ hook OnGameModeInit()
     return 1;
 }
 
+<<<<<<< Updated upstream
 hook OnGameModeExit()
+=======
+hook OnGameModeExit(){
+    for (new i = 0; i < MAX_HOUSES; i++)
+    {
+        HouseData[i][Save] = INVALID_HOUSE_ID;
+        SaveHouseData(i);
+        SaveHouseFurnitureData(i);
+    }
+    return 1;
+}
+
+/*forward Houses_Load_Sql();
+public Houses_Load_Sql()
+{
+    new houses_counts, count;
+    cache_get_row_count(houses_counts);
+
+    for (new i = 0 ; i < houses_counts; i++)
+    {
+        cache_get_value_name_int(i, "ID", i);
+        cache_get_value_name(i, "HouseName", HouseData[i][Name]);
+        cache_get_value_name(i, "HouseOwner", HouseData[i][Owner]);
+        cache_get_value_name(i, "HousePassword", HouseData[i][Password]);
+        cache_get_value_name_float(i, "HouseX", HouseData[i][houseX]);
+        cache_get_value_name_float(i, "HouseY", HouseData[i][houseY]);
+        cache_get_value_name_float(i, "HouseZ", HouseData[i][houseZ]);
+        cache_get_value_name_int(i, "HousePrice", HouseData[i][Price]);
+        cache_get_value_name_int(i, "HouseSalePrice", HouseData[i][SalePrice]);
+        cache_get_value_name_int(i, "HouseInterior", HouseData[i][Interior]);
+        cache_get_value_name_int(i, "HouseLock", HouseData[i][LockMode]);
+        cache_get_value_name_int(i, "HouseMoney", HouseData[i][SafeMoney]);
+        cache_get_value_name_int(i, "LastEntered", HouseData[i][LastEntered]);
+
+        LoadHouses(i);
+
+        count++;
+    }
+
+    new load_msg[128];
+    format(load_msg, sizeof(load_msg), "[House System] %d houses", count);
+    LogConsole(load_msg, "SQL");
+    return 1;
+}*/
+
+hook OnFilterScriptExit()
+>>>>>>> Stashed changes
 {
     foreach (new i : Houses)
     {

@@ -29,7 +29,7 @@
 
 #define  			MYSQL_HOST				"localhost"
 #define  			MYSQL_USER				"root"
-#define  			MYSQL_PASS				"123456" //123456
+#define  			MYSQL_PASS				"" //123456
 #define  			MYSQL_DB				"ssa" //ssa
 
 
@@ -104,7 +104,13 @@ main()
 #include "./modules/Players/characters/Death/textdraw.pwn"
 #include "./modules/Players/characters/Death/callback.pwn"
 
+<<<<<<< Updated upstream
 #include "./modules/Server/Dealership/build.pwn"
+=======
+#include "./modules/Weapone/build.pwn"
+
+
+>>>>>>> Stashed changes
 
 
 #include "./modules/Main/_core.pwn"

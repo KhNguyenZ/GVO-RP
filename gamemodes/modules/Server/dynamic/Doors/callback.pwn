@@ -3,7 +3,7 @@ hook OnGameModeInit()
 {
     for (new i = 0 ; i < MAX_DYNAMIC_DOORS ; i++)
     {
-        DoorInfo[i][door_id] = INVAILID_NUMBER;
+        DoorInfo[i][door_id] = INVALID_NUMBER;
     }
     mysql_tquery(Handle(), "SELECT * FROM `doors`", "Doors_Load", "");
     return 1;
@@ -65,7 +65,7 @@ public OnAdminDoorCreate(playerid, name[], Float:dx, Float:dy, Float:dz, pickup)
     return 1;
 
 }
-public OnLoadingFinish(playerid, loadingid)
+/*public OnLoadingFinish(playerid, loadingid)
 {
     switch (loadingid)
     {
@@ -102,7 +102,7 @@ public OnLoadingFinish(playerid, loadingid)
         }
     }
     return 1;
-}
+}*/
 
 
 hook OnPlayerKeyStateChange(playerid, newkeys, oldkeys)

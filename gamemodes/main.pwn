@@ -1,5 +1,5 @@
 
-#pragma warning disable 213, 208, 219, 239, 240, 200, 203, 209
+#pragma warning disable 213, 208, 219, 239, 240, 200, 203, 209, 214
 #define YSI_NO_HEAP_MALLOC
 #include <_open_mp>
 #include <crashdetect>
@@ -13,7 +13,6 @@
 #include <notify>
 #include <DialogCenter>
 #include <easyDialog>
-#include <Veh-Lib\tdw_vyengine>
 #include <actor_plus>
 #include <strlib>
 #include <sampvoice>
@@ -21,9 +20,10 @@
 #include <memory>
 #include <VehiclePartPosition>
 #include <PreviewModelDialog>
-#include <a_zones>
 #include <profiler>
-
+#include <zone>
+#include <vehicle_plus>
+#include <YSI\YSI_Data\y_iterate>
 #undef MAX_PLAYERS
 #define MAX_PLAYERS 500
 
@@ -60,7 +60,6 @@ main()
 #include "./modules/Main/_var.pwn"
 #include "./modules/Main/_functions.pwn"
 #include "./modules/Main/_callback.pwn"
-#include "./modules/Main/_core.pwn"
 #include "./modules/Main/_textdraw.pwn"
 #include "./modules/Main/color.pwn"
 
@@ -69,8 +68,6 @@ main()
 #include "./modules/Server/Discord/command.pwn"
 
 #include "./modules/Dev/build.pwn"
-
-#include "./modules/Server/ProgressLoad.pwn"
 
 // login
 #include "./modules/Players/characters/build.pwn"
@@ -107,10 +104,51 @@ main()
 #include "./modules/Players/characters/Death/textdraw.pwn"
 #include "./modules/Players/characters/Death/callback.pwn"
 
+#include "./modules/Server/Dealership/build.pwn"
+
+
+#include "./modules/Main/_core.pwn"
+public OnGameModeInit()
+{
+    SetCrashDetectLongCallTime(1000000); // cái này crashdetect nó sẽ ưu tiên kiểm tra crash sẻver
+
+    OnServerInit();
+    AddSimpleModel(-1, 19379, -2001, "object.dff", "char.txd");
+    AddSimpleModel(-1, 19379, -2002, "object.dff", "login.txd");
+    AddSimpleModel(-1, 19379, -2004, "object.dff", "inv.txd");
+    AddSimpleModel(-1, 19379, -2006, "object.dff", "247.txd");
+
+    AddSimpleModel(-1, 19379, -2007, "object.dff", "Inventory.txd");
+    AddSimpleModel(-1, 19379, -2008, "object.dff", "Hudz.txd");
+    AddSimpleModel(-1, 19379, -2009, "object.dff", "Speedometter.txd");
+    AddSimpleModel(-1, 19379, -2010, "object.dff", "Org.txd");
+    AddSimpleModel(-1, 19379, -2011, "object.dff", "npctextbox.txd");
+    AddSimpleModel(-1, 19379, -2012, "object.dff", "GuideBtn.txd");
+    AddSimpleModel(-1, 19379, -2013, "object.dff", "Info.txd");
+    AddSimpleModel(-1, 19379, -2014, "object.dff", "custom_hud.txd");
+    AddSimpleModel(-1, 19379, -2018, "object.dff", "start.txd");
+    AddSimpleModel(-1, 19379, -2019, "object.dff", "Death.txd");
+
+    AddSimpleModel(-1, 19379, -2020, "object.dff", "Main_Banking.txd");
+    AddSimpleModel(-1, 19379, -2021, "object.dff", "Tab_Banking.txd");
+    AddSimpleModel(-1, 19379, -2022, "object.dff", "smartkey.txd");
+    AddSimpleModel(-1, 19379, -2023, "object.dff", "puzzle.txd");
+    AddSimpleModel(-1, 19379, -2024, "object.dff", "loading.txd");
+    AddSimpleModel(-1, 19379, -2025, "object.dff", "electrician.txd");
+    AddSimpleModel(-1, 19379, -2026, "object.dff", "porters.txd");
+
+
+    AddSimpleModel(-1, 19379, -5000, "newbiespawn.dff", "newbiespawn.txd");
+    AddSimpleModel(-1, 19379, -5001, "congvien.dff", "congvien.txd");
+    AddSimpleModel(-1, 19379, -5002, "honuoc.dff", "honuoc.txd");
+    return 1;
+}
 public SSA_Mysql_Intit()
 {
     LoadOrgs();
     CreateInfo();
+
+    LoadDealership();
     return 1;
 }
 public OnGameModeExit()
@@ -121,13 +159,8 @@ public OnGameModeExit()
         SaveOrgVeh(i);
     }
     mysql_close(Handle());
-
-    Profiler_Stop();
-    Profiler_Dump();
     return 1;
 }
-
-
 public OnQueryError(errorid, const error[], const callback[], const query[], MySQL:handle)
 {
     printf("[MySQL: OnQueryError (%d, %s, %s)]: Query: %s.", errorid, error, callback, query);

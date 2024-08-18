@@ -11,6 +11,5 @@ new Float:InjuredBed[10][4] = {
     {1416.8751, 1496.1519, 1011.6442, 180.3067}
 };
 
-new CountBed[10];
 
 new InjuredTimer[MAX_PLAYERS];

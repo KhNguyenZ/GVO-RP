@@ -6,3 +6,4 @@
 #include "./modules/Server/Maps/Mechanic.pwn"
 #include "./modules/Server/Maps/Lodo.pwn"
 #include "./modules/Server/Maps/NguoiVanChuyen.pwn"
+#include "./modules/Server/Maps/Dealership.pwn"

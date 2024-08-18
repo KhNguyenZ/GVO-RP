@@ -1,9 +1,9 @@
 #include <YSI\YSI_Coding\y_hooks>
-
-hook Mysql_PlayerInit(playerid){
-    for(new i = 0; i < MAX_PLAYER_VEHICLES; i++)
+hook Mysql_PlayerInit(playerid)
+{
+    for (new i = 0; i < MAX_PLAYER_VEHICLES; i++)
     {
-        PlayerVehicle[playerid][i][pv_id] = INVAILID_NUMBER;
+        PlayerVehicle[playerid][i][pv_id] = INVALID_NUMBER;
     }
     LoadPlayerVehicle(playerid);
     return 1;
@@ -15,9 +15,9 @@ hook OnPlayerConnect(playerid)
 }
 hook OnPlayerDisconnect(playerid, reason)
 {
-    for(new i = 0; i < MAX_PLAYER_VEHICLES; i++)
+    for (new i = 0; i < MAX_PLAYER_VEHICLES; i++)
     {
-        if(PlayerVehicle[playerid][i][pv_id] != -1) SavePlayerVehicle(playerid, PlayerVehicle[playerid][i][pv_id]);
+        if (PlayerVehicle[playerid][i][pv_id] != -1) SavePlayerVehicle(playerid, PlayerVehicle[playerid][i][pv_id]);
     }
     return 1;
 }
@@ -28,7 +28,7 @@ public OnLoadPlayerVehicle(playerid)
     cache_get_row_count(v_count);
     PlayerVehicleCount[playerid] = v_count;
     printf("Loaded %d vehicle for %s", v_count, player_get_name(playerid, false));
-    for(new i; i < v_count; i++)
+    for (new i; i < v_count; i++)
     {
         cache_get_value_name_int(i, "id", PlayerVehicle[playerid][i][pv_id]);
         cache_get_value_name_int(i, "sqlid", PlayerVehicle[playerid][i][pv_sqlid]);
@@ -58,5 +58,24 @@ public OnLoadPlayerVehicle(playerid)
 
 hook OnGameModeInit()
 {
-    for(new i ; i < MAX_VEHICLES; i++) iCreate[i] = INVAILID_NUMBER;
+    for (new i ; i < MAX_VEHICLES; i++) iCreate[i] = INVALID_NUMBER;
+}
+
+hook OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
+{
+    if (newkeys == KEY_YES)
+    {
+        if (!IsPlayerInAnyVehicle(playerid)) return 1;
+        new vid = GetPlayerVehicleID(playerid);
+        new _engine = SetVehicleEngine(vid);
+        if (_engine)
+        {
+            SendGVOMessage(playerid, "[VEHICLE]: Dong co da duoc khoi dong thanh cong !");
+        }
+        else
+        {
+            SendGVOMessage(playerid, "[VEHICLE]: Dong co da duoc tat thanh cong !");
+        }
+    }
+    return 1;
 }

@@ -37,7 +37,7 @@ hook OnPlayerConnect(playerid)
     return 1;
 }
 
-func:PlayerLoading(playerid, _time = 5000, _loading_id, _title[])
+func:PlayerLoading(playerid, _time = 5000, _loading_id, const _title[])
 {
     // CL_Loop[playerid] = floatround(_time / 5);
     if (GetPVarInt(playerid, #_IsOpenLoadCircle) == 1) return 0;

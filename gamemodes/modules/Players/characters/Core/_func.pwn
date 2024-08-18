@@ -16,12 +16,6 @@ func:CharacterSelect_Click(playerid, PlayerText:playertextid)
                 format(query, sizeof(query), "SELECT * FROM `players` WHERE `PlayerName` = '%s'", player_get_name(playerid, false));
                 mysql_tquery(Handle(), query, "OnCharacterLoad", "i", playerid);
                 SetPVarInt(playerid, "CharSelected_", 1);
-                
-
-                SetSpawnInfo(playerid, 0, Character[playerid][char_Skin], Character[playerid][char_last_Pos][0], Character[playerid][char_last_Pos][1], Character[playerid][char_last_Pos][2], Character[playerid][char_last_Pos][3], 0, 0, 0, 0, 0, 0);
-                FadeOutPlayerScreen(playerid);
-                SetTimerEx("PlayerJoinGameReal", 1000, false, "i", playerid);
-                HidePlayerSpawnMenu(playerid);
                 PlayerSetupping[playerid] = 0;
                 OnPlayerLoad(playerid);
             }

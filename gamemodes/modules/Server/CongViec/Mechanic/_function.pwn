@@ -186,7 +186,7 @@ func:PlaceVehicle(playerid)
             SetPlayerNearVehiclePart(playerid, vehicleid, VEH_PART_PCAP);
             SetVehiclePos(vehicleid, 1796.5164,-1692.8284,13.8737);
             SetVehicleZAngle(vehicleid, 0.1911);
-            StopVehicleEngine(vehicleid);
+            SetVehicleEngine(vehicleid);
             ActiveVehicleObject(vehicleid);
             VehicleStatus(vehicleid);
             SetPVarInt(playerid, "placevehicle", 1);
@@ -196,7 +196,7 @@ func:PlaceVehicle(playerid)
             SetPlayerNearVehiclePart(playerid, vehicleid, VEH_PART_PCAP);
             SetVehiclePos(vehicleid, 1803.5920,-1692.2446,13.3448);
             SetVehicleZAngle(vehicleid, 0.8215);
-            StopVehicleEngine(vehicleid);
+            SetVehicleEngine(vehicleid);
             ActiveVehicleObject(vehicleid);
             VehicleStatus(vehicleid);
             SetPVarInt(playerid, "placevehicle", 1);
@@ -206,7 +206,7 @@ func:PlaceVehicle(playerid)
             SetPlayerNearVehiclePart(playerid, vehicleid, VEH_PART_PCAP);
             SetVehiclePos(vehicleid, 1807.6543,-1691.8947,13.3455);
             SetVehicleZAngle(vehicleid, 0.5379);
-            StopVehicleEngine(vehicleid);
+            SetVehicleEngine(vehicleid);
             ActiveVehicleObject(vehicleid);
             VehicleStatus(vehicleid);
             SetPVarInt(playerid, "placevehicle", 1);
@@ -331,7 +331,7 @@ func:RepairTool(playerid)
     if(vehicleid != 0)
     {
             SetPlayerNearVehiclePart(playerid, vehicleid, VEH_PART_PCAP);
-            StopVehicleEngine(vehicleid);
+            SetVehicleEngine(vehicleid);
             ActiveVehicleObject(vehicleid);
             VehicleStatus(vehicleid);
             SetPVarInt(playerid, "placevehicle", 2);

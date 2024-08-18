@@ -47,7 +47,7 @@
 #define COLOR_NEWS 0xFFA500AA
 #define COLOR_OOC 0xE0FFFFAA
 #define COLOR_CYAN 0x40FFFFFF
-
+#define COLOR_GVO 0xffc928FF
 static const Colors[7] = {
     0x0000FFFF, // Blue
     0x00FF00FF, // Green

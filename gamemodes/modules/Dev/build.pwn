@@ -6,8 +6,7 @@
 #include "./modules/Dev/Interactive-NPCs/_function.pwn"
 #include "./modules/Dev/Interactive-NPCs/_callback.pwn"
 
-// #include "./modules/Dev/Job/_main.pwn"
 
 #include "./modules/Dev/Helper.pwn"
 #include "./modules/Dev/puzzle.pwn"
-// #include "./modules/Dev/loading_circle.pwn"
+#include "./modules/Dev/loading_circle.pwn"

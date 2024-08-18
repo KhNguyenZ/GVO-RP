@@ -1,14 +1,5 @@
 #include <YSI\YSI_Coding\y_hooks>
 #include <discord-connector>
-
-new DCC_Guild:SSA_GUILD_ID;
-new DCC_Channel:SSA_MAINTAINCE;
-new DCC_Channel:SSA_CMD;
-new DCC_Role:AuthMember;
-new DCC_Channel:LogAuth;
-new DCC_Channel:LogMoney;
-new DCC_Channel:LogBank;
-
 hook SSA_Mysql_Intit()
 {
     LogBank = DCC_FindChannelById("1253565213446373397");

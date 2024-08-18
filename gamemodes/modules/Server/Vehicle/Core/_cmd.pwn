@@ -142,13 +142,6 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 	return 1;
 }
 
-CMD:carengine(playerid){
-	if(!IsPlayerInAnyVehicle(playerid)) return 1;
-	new vid = GetPlayerVehicleID(playerid);
-	if(!IsVehicleEngineStarted(vid)) StartVehicleEngine(vid);
-	else StopVehicleEngine(vid);
-	return 1;
-}
 
 
 

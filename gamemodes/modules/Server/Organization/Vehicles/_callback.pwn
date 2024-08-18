@@ -43,60 +43,50 @@ public OnLoadOrgVehicle(_org_id)
 }
 
 
-task UpdateFuel[60000]()
+func:UpdateFuel(p)
 {
-    foreach (new p: Player)
+    if (!IsPlayerInAnyVehicle(p)) return 1;
+    new speedo_vid = GetPlayerVehicleID(p);
+    for (new z; z < MAX_PLAYER_VEHICLES; z++)
     {
-        if (!IsPlayerInAnyVehicle(p)) return 1;
-        new speedo_vid = GetPlayerVehicleID(p);
-        for (new z; z < MAX_PLAYER_VEHICLES; z++)
+        if (speedo_vid == PlayerVehicle[p][z][pv_vehid])
         {
-            if (speedo_vid == PlayerVehicle[p][z][pv_vehid])
-            {
-                PlayerVehicle[p][z][pv_fuel] -= 1;
-            }
+            PlayerVehicle[p][z][pv_fuel] -= 1;
         }
     }
-    return 1;
 }
-
-
-
-task UpdateOdo[1000]()
+func:UpdateOdo(i)
 {
-    foreach (new i : Player)
+    new speedo_vid = GetPlayerVehicleID(i);
+    if (IsPlayerInAnyVehicle(i))
     {
-        new speedo_vid = GetPlayerVehicleID(i);
-        if (IsPlayerInAnyVehicle(i))
+        if (IsPersonalVehicle(speedo_vid))
         {
-            if(IsPersonalVehicle(speedo_vid))
+            for (new j = 0; j < MAX_PLAYER_VEHICLES; j++)
             {
-                for (new j = 0; j < MAX_PLAYER_VEHICLES; j++)
+                if (PlayerVehicle[i][j][pv_vehid] == speedo_vid)
                 {
-                    if (PlayerVehicle[i][j][pv_vehid] == speedo_vid)
-                    {
-                        PlayerVehicle[i][j][pv_odo] += player_get_odometer(i);
-                        UpdatePlayerSpeedo(i, PlayerVehicle[i][j][pv_fuel]);
-                        break;
-                    }
+                    PlayerVehicle[i][j][pv_odo] += player_get_odometer(i);
+                    UpdatePlayerSpeedo(i, PlayerVehicle[i][j][pv_fuel]);
+                    break;
                 }
             }
-            else{
-                new var_veh[1280];
-                format(var_veh, 1280, "SVarVeh_%d", speedo_vid);
-                SetSVarInt(var_veh, GetSVarInt(var_veh) + player_get_odometer(i));
-                UpdatePlayerSpeedo(i, 1000);
-            }
-            ShowPlayerSpeedo(i);
         }
         else
         {
-            HidePlayerSpeedo(i);
+            new var_veh[1280];
+            format(var_veh, 1280, "SVarVeh_%d", speedo_vid);
+            SetSVarInt(var_veh, GetSVarInt(var_veh) + player_get_odometer(i));
+            UpdatePlayerSpeedo(i, 1000);
         }
+        ShowPlayerSpeedo(i);
+    }
+    else
+    {
+        HidePlayerSpeedo(i);
     }
     return 1;
 }
-
 
 
 hook OnGameModeInit()
@@ -105,7 +95,7 @@ hook OnGameModeInit()
     {
         for (new j; j < MAX_ORG_VEHICLES; j++)
         {
-            OrgVeh[i][j][ov_vehid] = INVAILID_NUMBER;
+            OrgVeh[i][j][ov_vehid] = INVALID_NUMBER;
         }
     }
 }

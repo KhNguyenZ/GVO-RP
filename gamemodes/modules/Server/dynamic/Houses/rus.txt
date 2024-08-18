@@ -1,0 +1,24 @@
+C:\Users\Admin\Desktop\SSA-Project-Scripting\SSA-Project-Scripting\gamemodes\modules\Server\dynamic\Houses\func.pwn(2) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "e_sazone"
+C:\Users\Admin\Desktop\SSA-Project-Scripting\SSA-Project-Scripting\gamemodes\modules\Server\dynamic\Houses\func.pwn(368) : îøèáêà 010: íåâåðíàÿ ôóíêöèÿ èëè îáúÿâëåíèå
+C:\Users\Admin\Desktop\SSA-Project-Scripting\SSA-Project-Scripting\gamemodes\modules\Server\dynamic\Houses\func.pwn(372) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "format"
+C:\Users\Admin\Desktop\SSA-Project-Scripting\SSA-Project-Scripting\gamemodes\modules\Server\dynamic\Houses\func.pwn(372) : ïðåäóïðåæäåíèå 202: êîëè÷åñòâî àðãóìåíòîâ íå ñîâïàäàåò ñ îáúÿâëåíèåì
+C:\Users\Admin\Desktop\SSA-Project-Scripting\SSA-Project-Scripting\gamemodes\modules\Server\dynamic\Houses\func.pwn(372) : ïðåäóïðåæäåíèå 202: êîëè÷åñòâî àðãóìåíòîâ íå ñîâïàäàåò ñ îáúÿâëåíèåì
+C:\Users\Admin\Desktop\SSA-Project-Scripting\SSA-Project-Scripting\gamemodes\modules\Server\dynamic\Houses\func.pwn(372) : ïðåäóïðåæäåíèå 202: êîëè÷åñòâî àðãóìåíòîâ íå ñîâïàäàåò ñ îáúÿâëåíèåì
+C:\Users\Admin\Desktop\SSA-Project-Scripting\SSA-Project-Scripting\gamemodes\modules\Server\dynamic\Houses\func.pwn(374) : ïðåäóïðåæäåíèå 219: ïåðåìåííàÿ "i" óæå îáúÿâëåíà â áîëåå ãëîáàëüíîé çîíå âèäèìîñòè
+C:\Users\Admin\Desktop\SSA-Project-Scripting\SSA-Project-Scripting\gamemodes\modules\Server\dynamic\Houses\func.pwn(374) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "strlen"
+C:\Users\Admin\Desktop\SSA-Project-Scripting\SSA-Project-Scripting\gamemodes\modules\Server\dynamic\Houses\func.pwn(376) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "strins"
+C:\Users\Admin\Desktop\SSA-Project-Scripting\SSA-Project-Scripting\gamemodes\modules\Server\dynamic\Houses\func.pwn(385) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "strlen"
+C:\Users\Admin\Desktop\SSA-Project-Scripting\SSA-Project-Scripting\gamemodes\modules\Server\dynamic\Houses\func.pwn(387) : ïðåäóïðåæäåíèå 219: ïåðåìåííàÿ "i" óæå îáúÿâëåíà â áîëåå ãëîáàëüíîé çîíå âèäèìîñòè
+C:\Users\Admin\Desktop\SSA-Project-Scripting\SSA-Project-Scripting\gamemodes\modules\Server\dynamic\Houses\func.pwn(402) : ïðåäóïðåæäåíèå 219: ïåðåìåííàÿ "i" óæå îáúÿâëåíà â áîëåå ãëîáàëüíîé çîíå âèäèìîñòè
+C:\Users\Admin\Desktop\SSA-Project-Scripting\SSA-Project-Scripting\gamemodes\modules\Server\dynamic\Houses\func.pwn(404) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "SAZONE_AREA"
+C:\Users\Admin\Desktop\SSA-Project-Scripting\SSA-Project-Scripting\gamemodes\modules\Server\dynamic\Houses\func.pwn(404) : îøèáêà 029: íåïðàâèëüíîå âûðàæåíèå, ïðèíÿò íîëü
+C:\Users\Admin\Desktop\SSA-Project-Scripting\SSA-Project-Scripting\gamemodes\modules\Server\dynamic\Houses\func.pwn(404) : ïðåäóïðåæäåíèå 215: âûðàæåíèå íå èìååò ýôôåêòà
+C:\Users\Admin\Desktop\SSA-Project-Scripting\SSA-Project-Scripting\gamemodes\modules\Server\dynamic\Houses\func.pwn(404) : îøèáêà 001: îæèäàëñÿ òîêåí ";", íî íàéäåí "]"
+C:\Users\Admin\Desktop\SSA-Project-Scripting\SSA-Project-Scripting\gamemodes\modules\Server\dynamic\Houses\func.pwn(404) : ôàòàëüíàÿ îøèáêà 107: ñëèøêîì ìíîãî îøèáîê íà îäíîé ñòðîêå
+
+Êîìïèëÿöèÿ îñòàíîâëåíà.
+
+Pawn compiler 3.2.3664	 	 	Copyright (c) 1997-2016, ITB CompuPhase
+
+
+Îøèáîê:10.

@@ -2,7 +2,7 @@
     SendClientMessage(%0, 0xFF6347AA, "{f76565}BENH VIEN:{FFFFFF}"%1)
 func:IsFreeInjuredBed()
 {
-    new _id_free = INVAILID_NUMBER;
+    new _id_free = INVALID_NUMBER;
     for(new i; i < 10; i++)
     {
         if(CountBed[i] == -1)

@@ -23,6 +23,7 @@ enum e_sazone
 
 enum    e_house
 {
+    houseid,
     Name[MAX_HOUSE_NAME],
     Owner[MAX_PLAYER_NAME],
     Password[MAX_HOUSE_PASSWORD],

@@ -1,0 +1,4 @@
+[08/19/24 13:46:54] [plugins/discord-connector] Unhandled payload opcode '1'
+[08/19/24 14:42:21] [plugins/discord-connector] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[08/19/24 14:42:22] [plugins/discord-connector] Unknown gateway event 'GUILD_AUDIT_LOG_ENTRY_CREATE'
+[08/19/24 15:28:49] [plugins/discord-connector] Unhandled payload opcode '1'

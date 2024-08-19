@@ -92,19 +92,25 @@ CMD:createdealerveh(playerid, params[])
     return 1;
 }
 
-hook OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
+hook OnPlayerUpdate(playerid)
 {
-    foreach(new i: Vehicle_Dealership)
+    if(IsPlayerInAnyVehicle(playerid))
     {
-        if(vehicleid == i)
+        foreach(new i: Vehicle_Dealership)
         {
-            if(Character[playerid][char_Admin] == 0)
+            if(vehicleid == i)
             {
-                new _v_arr_id = FindDealerVehByID(i);
-                Dialog_Open(playerid, "OnPlayerBuyVehicle", DIALOG_STYLE_MSGBOX, "Mua xe", 
-                sprintf("Ban co dong y mua \nXe {ffc928}%s{FFFFFF}\nGia: %s", GetVehicleName(Dealership[_v_arr_id][d_model]),FormatMoney(Dealership[_v_arr_id][d_price])), ">>", "<<");
+                if(Character[playerid][char_Admin] == 0)
+                {
+                    new _v_arr_id = FindDealerVehByID(i);
+                    Dialog_Open(playerid, "OnPlayerBuyVehicle", DIALOG_STYLE_MSGBOX, "Mua xe", 
+                    sprintf("Ban co dong y mua \nXe {ffc928}%s{FFFFFF}\nGia: %s", GetVehicleName(Dealership[_v_arr_id][d_model]),FormatMoney(Dealership[_v_arr_id][d_price])), ">>", "<<");
+                }
             }
         }
-    }
+    } 
     return 1;
 }
+
+
+// Dialog:OnPlayerBuyVehicle(playerid, dialogid, response, listitem, inputtext[])

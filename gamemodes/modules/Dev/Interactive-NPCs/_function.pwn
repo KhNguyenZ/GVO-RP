@@ -39,7 +39,7 @@ func:CreateInteractiveNPC(i_id, a_name[], describe[], skin, Float:iNPC_PosX, Flo
     format(InteractiveNPCs_Data[inter_npc][iNPC_Name], MAX_INTERACTIVE_NPC_NAME, "%s", GetActorName(InteractiveNPCs_Data[inter_npc][iNPC_ID]));
     Count_InterNPC++;
 
-    Iter_Add(InterNPC, inter_npc);
+    Iter_Add(InterNPC, InteractiveNPCs_Data[inter_npc][iNPC_ID]);
     
     return InteractiveNPCs_Data[inter_npc][iNPC_ID];
 }

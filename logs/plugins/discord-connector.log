@@ -70,3 +70,7 @@
 [08/19/24 15:28:49] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
 [08/19/24 18:01:35] [ERROR] Can't read from Discord websocket gateway: An existing connection was forcibly closed by the remote host (10054)
 [08/20/24 18:02:36] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[08/20/24 22:11:41] [WARNING] Unhandled payload opcode '1'
+[08/20/24 22:11:41] [ERROR] Discord terminated websocket connection; reason:  (1000)
+[08/20/24 22:11:41] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
+[08/20/24 22:26:29] [ERROR] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)

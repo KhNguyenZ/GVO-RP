@@ -2,7 +2,6 @@
 
 hook OnGameModeInit()
 {
-    LoadDatabase();
     return 1;
 }
 

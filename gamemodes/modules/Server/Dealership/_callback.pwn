@@ -12,7 +12,11 @@ hook OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
     }
     return 1;
 }
-
+hook OnPlayerConnect(playerid)
+{
+    SetPVarInt(playerid, #BuyingInDealer, 0);
+    return 1;
+}
 
 hook OnPlayerUpdate(playerid)
 {

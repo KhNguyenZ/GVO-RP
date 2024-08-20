@@ -100,30 +100,7 @@ CMD:createpvehicle(playerid, params[])
 	return 1;
 }
 
-CMD:mycar(playerid, params[])
-{
-	new dialog_mycar[1280];
-	strcat(dialog_mycar, "Ten xe\tXang\tHealth\tTrang thai\n");
-	for(new i; i < PlayerVehicleCount[playerid]; i++)
-	{
-		new mycar_dlg[1280];
-		format(mycar_dlg, sizeof(mycar_dlg), "%s\t%d\t%0.2f\t%s\n", 
-		GetVehicleName(PlayerVehicle[playerid][i][pv_model]),
-		PlayerVehicle[playerid][i][pv_fuel],
-		PlayerVehicle[playerid][i][pv_health], 
-		GetVehicleStatus(playerid, PlayerVehicle[playerid][i][pv_vehid]));
 
-		strcat(dialog_mycar, mycar_dlg, sizeof(mycar_dlg));
-		new p_vehid[128];
-		format(p_vehid, sizeof(p_vehid), "P_Veh_%d", i);
-		SetPVarInt(playerid, p_vehid, PlayerVehicle[playerid][i][pv_id]);
-		// printf("VehID: %s", p_vehid);
-	}
-	strcat(dialog_mycar, "Trong", 5);
-
-	ShowPlayerDialog(playerid,DIALOG_MYCAR, DIALOG_STYLE_TABLIST_HEADERS, "Kho xe", dialog_mycar, ">>", "<<");
-	return 1;
-}
 hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
 	if(dialogid == DIALOG_MYCAR)
@@ -132,7 +109,6 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			new p_vehid[128];
 			format(p_vehid, sizeof(p_vehid), "P_Veh_%d", listitem);
 			SpawnPlayerVehicle(playerid, GetPVarInt(playerid, p_vehid));
-			// printf("value listitem: %d",GetPVarInt(playerid, p_vehid));
 			for(new i; i < PlayerVehicleCount[playerid]; i++){
 				format(p_vehid, sizeof(p_vehid), "P_Veh_%d", i);
 				DeletePVar(playerid, p_vehid);

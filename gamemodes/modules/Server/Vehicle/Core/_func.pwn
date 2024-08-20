@@ -4,6 +4,31 @@ func:IsVehicleEngineStarted(veh_id)
     Vehicle_GetEngineState(veh_id, _v_output);
     return _v_output;
 }
+
+func:ShowPlayerVehStorage(playerid)
+{
+	new dialog_mycar[1280];
+	strcat(dialog_mycar, "Ten xe\tXang\tHealth\tTrang thai\n");
+	for(new i; i < PlayerVehicleCount[playerid]; i++)
+	{
+		new mycar_dlg[1280];
+		format(mycar_dlg, sizeof(mycar_dlg), "%s\t%d\t%0.2f\t%s\n", 
+		GetVehicleName(PlayerVehicle[playerid][i][pv_model]),
+		PlayerVehicle[playerid][i][pv_fuel],
+		PlayerVehicle[playerid][i][pv_health], 
+		GetVehicleStatus(playerid, PlayerVehicle[playerid][i][pv_vehid]));
+
+		strcat(dialog_mycar, mycar_dlg, sizeof(mycar_dlg));
+		new p_vehid[128];
+		format(p_vehid, sizeof(p_vehid), "P_Veh_%d", i);
+		SetPVarInt(playerid, p_vehid, PlayerVehicle[playerid][i][pv_id]);
+	}
+	strcat(dialog_mycar, "Trong", 5);
+
+	ShowPlayerDialog(playerid,DIALOG_MYCAR, DIALOG_STYLE_TABLIST_HEADERS, "Kho xe", dialog_mycar, ">>", "<<");
+	return 1;
+}
+
 func:SetVehicleEngine(_veh_id)
 {
     if(!IsVehicleEngineStarted(_veh_id))

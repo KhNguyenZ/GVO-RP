@@ -13,8 +13,8 @@
 
 #include "./modules/Server/dynamic/ATM/build.pwn" 
 
-#include "./modules/Server/dynamic/Houses/var.pwn"
-#include "./modules/Server/dynamic/Houses/func.pwn"
-#include "./modules/Server/dynamic/Houses/callback.pwn"
-#include "./modules/Server/dynamic/Houses/cmdadmin.pwn"
+// #include "./modules/Server/dynamic/Houses/var.pwn"
+// #include "./modules/Server/dynamic/Houses/func.pwn"
+// #include "./modules/Server/dynamic/Houses/callback.pwn"
+// #include "./modules/Server/dynamic/Houses/cmdadmin.pwn"
 //#include "./modules/Server/dynamic/Houses/cmdmember.pwn"

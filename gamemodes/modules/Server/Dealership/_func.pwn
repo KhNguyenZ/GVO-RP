@@ -6,7 +6,7 @@ func:CreateDealershipVehicle(_slot)
     Dealership[_slot][d_PosZ],
     Dealership[_slot][d_PosA],
     1, 1, 1000, 0);
-    Dealership[_slot][d_Label] = Create3DTextLabel(sprintf("Chiec xe %s nay dang ban voi gia %s", GetVehicleName(Dealership[_slot][d_model]), FormatMoney(Dealership[_slot][d_price])),
+    Dealership[_slot][d_Label] = Create3DTextLabel(sprintf("Chiec xe {ffc928}%s{FFFFFF} nay dang duoc ban\nGia:{ffc928}%s{FFFFFF}", GetVehicleName(Dealership[_slot][d_model]), FormatMoney(Dealership[_slot][d_price])),
         -1,
         Dealership[_slot][d_PosX],
         Dealership[_slot][d_PosY],
@@ -92,25 +92,44 @@ CMD:createdealerveh(playerid, params[])
     return 1;
 }
 
-hook OnPlayerUpdate(playerid)
+Dialog:OnPlayerBuyVehicle(playerid, dialogid, response, listitem, inputtext[])
 {
-    if(IsPlayerInAnyVehicle(playerid))
+    if(response)
     {
-        foreach(new i: Vehicle_Dealership)
-        {
-            if(vehicleid == i)
+        new _dv_id = GetPVarInt(playerid, #DealerVehID);
+        if(Character[playerid][char_Cash] < Dealership[_dv_id][d_price]) return SendErrorMessage(playerid, "Ban khong co du tien mua chiec xe nay !");
+
+        switch(RandomEx(1, 3)){
+            case 1:
             {
-                if(Character[playerid][char_Admin] == 0)
-                {
-                    new _v_arr_id = FindDealerVehByID(i);
-                    Dialog_Open(playerid, "OnPlayerBuyVehicle", DIALOG_STYLE_MSGBOX, "Mua xe", 
-                    sprintf("Ban co dong y mua \nXe {ffc928}%s{FFFFFF}\nGia: %s", GetVehicleName(Dealership[_v_arr_id][d_model]),FormatMoney(Dealership[_v_arr_id][d_price])), ">>", "<<");
-                }
+                SetPlayerPos(playerid,1741.8796,-1791.4370,13.3024);
+                SetPlayerFacingAngle(playerid, 181.2385);
+            }
+            case 2:
+            {
+                SetPlayerPos(playerid,1707.2175,-1775.9380,13.4909);
+                SetPlayerFacingAngle(playerid, 33.6387);
+            }
+            case 3:
+            {
+                SetPlayerPos(playerid,1769.7389,-1819.5503,13.2845);
+                SetPlayerFacingAngle(playerid, 258.8463);
             }
         }
-    } 
+
+        CreatePlayerVehicle(playerid, Dealership[_dv_id][d_model], 0, 0, RandomEx(1,255), RandomEx(1,255));
+        
+        Character[playerid][char_Cash] -= Dealership[_dv_id][d_price];
+        SendClientMessage(playerid, COLOR_GVO, sprintf("Ban da mua thanh cong 1 chiec {ffc928}%s{FFFFFF}", GetVehicleName(Dealership[_dv_id][d_model])));
+        SendUsageMessage(playerid, "(/my veh) de lay chiec xe cua ban ra khoi kho !");
+        DeletePVar(playerid, #DealerVehID);
+    }
+    else{
+
+        DeletePVar(playerid, #DealerVehID);
+
+        DeletePVar(playerid, #DealerVehID);
+        RemovePlayerFromVehicle(playerid);
+    }
     return 1;
 }
-
-
-// Dialog:OnPlayerBuyVehicle(playerid, dialogid, response, listitem, inputtext[])

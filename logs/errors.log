@@ -1,66 +1,36 @@
-[08/18/24 11:01:59] [plugins/discord-connector] Can't read from Discord websocket gateway: The semaphore timeout period has expired (121)
-[08/18/24 11:01:59] [plugins/discord-connector] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
-[08/18/24 11:01:59] [plugins/discord-connector] Can't resolve Discord gateway URL 'gateway.discord.gg': No such host is known (11001)
-[08/18/24 11:02:04] [plugins/discord-connector] Can't resolve Discord gateway URL 'gateway.discord.gg': No such host is known (11001)
-[08/18/24 11:08:22] [plugins/discord-connector] Can't resolve Discord gateway URL 'gateway.discord.gg': No such host is known (11001)
-[08/18/24 23:11:37] [plugins/discord-connector] Can't read from Discord websocket gateway: An existing connection was forcibly closed by the remote host (10054)
-[08/18/24 23:11:37] [plugins/discord-connector] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
-[08/19/24 12:03:14] [plugins/discord-connector] Can't read from Discord websocket gateway: An existing connection was forcibly closed by the remote host (10054)
-[08/19/24 12:03:14] [plugins/discord-connector] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
-[08/19/24 13:47:10] [plugins/discord-connector] Can't read from Discord websocket gateway: An existing connection was forcibly closed by the remote host (10054)
-[08/19/24 13:49:57] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 13:52:12] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 13:52:41] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 13:53:59] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 13:54:00] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 13:55:27] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 13:55:27] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 13:55:28] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 13:57:25] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 13:57:28] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 13:57:30] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 13:57:45] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 13:57:46] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 14:00:19] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 14:00:24] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 14:01:49] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 14:02:45] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 14:02:50] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 14:02:51] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 14:02:54] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 14:03:31] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 14:03:47] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 14:05:34] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 14:05:52] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 14:06:02] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 14:07:03] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 14:22:22] [plugins/discord-connector] Can't read from Discord websocket gateway: An existing connection was forcibly closed by the remote host (10054)
-[08/19/24 14:22:22] [plugins/discord-connector] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
-[08/19/24 14:24:09] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 14:28:11] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 14:29:34] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 14:32:52] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 14:33:04] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 14:35:52] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 14:35:55] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 14:37:07] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 14:37:08] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 14:37:14] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 14:38:26] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 14:39:23] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 14:39:35] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 14:39:45] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 14:47:32] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 14:47:51] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 15:01:34] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 15:01:51] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 15:08:18] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 15:10:45] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 15:12:35] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 15:18:10] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 15:18:22] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 15:20:57] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 15:21:09] [plugins/discord-connector] can't update guild member presence: user id "1274948998624706636" not cached
-[08/19/24 15:28:49] [plugins/discord-connector] Discord terminated websocket connection; reason:  (1000)
-[08/19/24 15:28:49] [plugins/discord-connector] Can't write to Discord websocket gateway: The I/O operation has been aborted because of either a thread exit or an application request (995)
-[08/19/24 18:01:35] [plugins/discord-connector] Can't read from Discord websocket gateway: An existing connection was forcibly closed by the remote host (10054)
+[20/08/2024 6:03:45 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:47 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:47 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:51 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:51 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:51 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:52 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:52 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:52 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:52 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:53 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:53 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:53 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:53 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:53 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:54 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:54 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:54 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:54 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:54 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:54 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:54 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:54 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:54 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:54 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:54 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:54 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:54 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:55 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:55 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:55 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:55 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:55 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:55 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:55 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number
+[20/08/2024 6:03:55 CH] [plugins/mysql] cache_get_value_name_int: value 'NULL' is not a number

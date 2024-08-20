@@ -543,14 +543,9 @@ func: ResetHouse(id)
 forward SaveHouseData(houseid);
 public SaveHouseData(houseid)
 {
-<<<<<<< Updated upstream
-    new _housequery[2048];
-    mysql_format(Handle(), _housequery, sizeof(_housequery), 
-=======
 
     new _housequery[2048];
     mysql_format(Handle(), _housequery, sizeof(_housequery),
->>>>>>> Stashed changes
         "UPDATE `houses` SET \
         `Name` = '%s', `Owner` = '%s', `Password` = '%s', `HouseX` = '%f', `HouseY` = '%f', `HouseZ` = '%f', \
         `Price` = '%d', `Interior` = '%d', `LockMode` = '%d', `SafeMoney` = '%d', `LastEntered` = '%d', \
@@ -583,8 +578,7 @@ public SaveHouseData(houseid)
         HouseData[houseid][intID],
         houseid
     );
-    new iCache:update_expos;
-<<<<<<< Updated upstream
+    new Cache:update_expos;
     update_expos = mysql_query(Handle(), _housequery);
 
 
@@ -610,16 +604,6 @@ public SaveHouseData(houseid)
         LogConsole(house_str, "House");
     }
     cache_delete(update_expos);*/
-=======
-	update_expos = mysql_query(Handle(), _housequery);
-	if(cache_num_rows())
-	{
-		new house_str[1280];
-		format(house_str, sizeof(house_str), "Luu thong tin Door ID %d thanh cong", houseid);
-		LogConsole(house_str, "Door");
-	}
-	cache_delete(update_expos);
->>>>>>> Stashed changes
 }
 forward SaveHouseFurnitureData(furnitureid);
 public SaveHouseFurnitureData(furnitureid)

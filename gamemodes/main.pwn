@@ -29,8 +29,8 @@
 
 #define  			MYSQL_HOST				"localhost"
 #define  			MYSQL_USER				"root"
-#define  			MYSQL_PASS				"123456" //123456
-#define  			MYSQL_DB				"ssa" //ssa
+#define  			MYSQL_PASS				"" //123456
+#define  			MYSQL_DB				"gvo" //ssa
 
 
 new SERVER_TEST = 1; // 1: Server test ( bỏ qua login và nhiều anti khác) | 0: Mở server bình thường

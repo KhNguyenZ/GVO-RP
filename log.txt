@@ -14965,3 +14965,333 @@ encountered.  This could be caused by many things:
 [2024-08-20T22:34:07+0700] [Info] 
 [2024-08-20T22:34:07+0700] [Info]  ===============================
 [2024-08-20T22:34:07+0700] [Info] 
+Starting open.mp server (1.3.1.2744) from commit 8669d86786ed7ea018b66832e42efc90f76709b8
+Loading component Actors.dll
+	Successfully loaded component Actors (1.3.1.2744) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.3.1.2744) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.3.1.2744) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.3.1.2744) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.3.1.2744) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.3.1.2744) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.3.1.2744) with UID 44a111350d611dde
+Loading component Fixes.dll
+	Successfully loaded component Fixes (1.3.1.2744) with UID b5c615eff0329ff7
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.3.1.2744) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.3.1.2744) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.3.1.2744) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.3.1.2744) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.3.1.2744) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.3.1.2744) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.3.1.2744) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.3.1.2744) with UID 871144d399f5f613
+Loading component sampvoice.dll
+	Successfully loaded component sampvoice open.mp port (0.0.0.1) with UID 6f7d8cbde58c9ce9
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.3.1.2744) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.3.1.2744) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.3.1.2744) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.3.1.2744) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.3.1.0) with UID 3f1f62ee9e22ab19
+Loaded 25 component(s) from C:\Users\Game\Documents\GitHub\GVO-RP\components
+Parsing unknown legacy option discord_bot_token
+[2024-08-26T13:38:29+0100] [Info] [artwork:info] Loading artconfig.txt
+[2024-08-26T13:38:29+0100] [Warning] No bind address provided. Attempting to start webserver on 127.0.0.1:7777
+[2024-08-26T13:38:29+0100] [Info] Web server is running on http://127.0.0.1:7777/
+[2024-08-26T13:38:30+0100] [Info] 
+[2024-08-26T13:38:30+0100] [Info]  ===============================
+[2024-08-26T13:38:30+0100] [Info] 
+[2024-08-26T13:38:30+0100] [Info]      sscanf component loaded.   
+[2024-08-26T13:38:30+0100] [Info] 
+[2024-08-26T13:38:30+0100] [Info]          Version: 2.13.8
+[2024-08-26T13:38:30+0100] [Info] 
+[2024-08-26T13:38:30+0100] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2024-08-26T13:38:30+0100] [Info] 
+[2024-08-26T13:38:30+0100] [Info]  ===============================
+[2024-08-26T13:38:30+0100] [Info] 
+[2024-08-26T13:38:30+0100] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2024-08-26T13:38:30+0100] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2024-08-26T13:38:30+0100] [Info] [sv:dbg:network:init] : module initializing...
+[2024-08-26T13:38:30+0100] [Info] [dbg:raknet:init] : module initializing...
+[2024-08-26T13:38:30+0100] [Info] [dbg:raknet:init] : module initialized
+[2024-08-26T13:38:30+0100] [Info] [sv:dbg:network:init] : module initialized
+[2024-08-26T13:38:30+0100] [Info] [sv:dbg:main:Load] : creating 3 work threads...
+[2024-08-26T13:38:30+0100] [Info]  -------------------------------------------    
+[2024-08-26T13:38:30+0100] [Info]    ___                __   __    _              
+[2024-08-26T13:38:30+0100] [Info]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[2024-08-26T13:38:30+0100] [Info]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[2024-08-26T13:38:30+0100] [Info]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[2024-08-26T13:38:30+0100] [Info]                   |_|                           
+[2024-08-26T13:38:30+0100] [Info]  -------------------------------------------    
+[2024-08-26T13:38:30+0100] [Info]                 SampVoice by MOR                
+[2024-08-26T13:38:30+0100] [Info]     Ported to open.mp by AmyrAhmady (iAmir)     
+[2024-08-26T13:38:30+0100] [Info]  -------------------------------------------    
+[2024-08-26T13:38:30+0100] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2024-08-26T13:38:30+0100] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2024-08-26T13:38:30+0100] [Info] Loading plugin: crashdetect
+[2024-08-26T13:38:30+0100] [Info]   CrashDetect plugin 4.22
+[2024-08-26T13:38:30+0100] [Info] Loading plugin: mysql
+[2024-08-26T13:38:30+0100] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2024-08-26T13:38:30+0100] [Info] Loading plugin: whirlpool
+[2024-08-26T13:38:30+0100] [Info]  
+[2024-08-26T13:38:30+0100] [Info]  ==================
+[2024-08-26T13:38:30+0100] [Info]  
+[2024-08-26T13:38:30+0100] [Info]   Whirlpool loaded
+[2024-08-26T13:38:30+0100] [Info]  
+[2024-08-26T13:38:30+0100] [Info]  ==================
+[2024-08-26T13:38:30+0100] [Info]  
+[2024-08-26T13:38:30+0100] [Info] Loading plugin: streamer
+[2024-08-26T13:38:30+0100] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2024-08-26T13:38:30+0100] [Info] Loading plugin: discord-connector
+[2024-08-26T13:38:51+0100] [Info]  >> plugin.dc-connector: timeout while initializing data.
+[2024-08-26T13:38:51+0100] [Info]                          plugin will proceed to retry connecting in the background.
+[2024-08-26T13:38:51+0100] [Info] Loading plugin: pawn-memory
+[2024-08-26T13:38:51+0100] [Info] ========================
+[2024-08-26T13:38:51+0100] [Info] = Memory access plugin =
+[2024-08-26T13:38:51+0100] [Info] =       Made by BigETI =
+[2024-08-26T13:38:51+0100] [Info] = Loaded!              =
+[2024-08-26T13:38:51+0100] [Info] ========================
+[2024-08-26T13:38:51+0100] [Info] Loading plugin: PawnPlus
+[2024-08-26T13:38:51+0100] [Info]  PawnPlus v1.4.3 loaded
+[2024-08-26T13:38:51+0100] [Info]  Created by IS4
+[2024-08-26T13:38:51+0100] [Error] Skipping legacy plugin 'nativechecker'; It is not needed anymore since open.mp has built in native checking mechanism when a script is being loaded
+[2024-08-26T13:38:51+0100] [Info] Loading plugin: GPS
+[2024-08-26T13:38:52+0100] [Info] [GPS plugin]: Read 84462 lines, loaded 27608 nodes and 55891 connections.
+[2024-08-26T13:38:52+0100] [Info] Loading plugin: profiler
+[2024-08-26T13:38:52+0100] [Info]   Profiler plugin 2.15.3
+[2024-08-26T13:38:52+0100] [Info] Could not find:
+
+	 .amx 
+While attempting to load a PAWN script, a file-not-found error was
+encountered.  This could be caused by many things:
+
+ * The wrong filename was given.
+ * The wrong gamemodes path was given.
+ * The server was launched from a different directory, making relative paths
+   relative to the wrong place (and thus wrong).
+ * You didn't copy the file to the correct directory or server.
+ * The compilation failed, leading to no output file.
+ * `-l` or `-a` were used to compile, which output intermediate steps for
+   inspecting, rather than a full script.
+ * Anything else, really just check the file is at the path given.
+
+[2024-08-26T13:38:52+0100] [Info] [sv:dbg:network:bind] : voice server running on port 52462
+[2024-08-26T13:38:52+0100] [Info] AMX (98171120) loaded
+[2024-08-26T13:38:53+0100] [Info]  
+[2024-08-26T13:38:53+0100] [Info]  
+[2024-08-26T13:38:53+0100] [Info]          ==============================================================
+[2024-08-26T13:38:53+0100] [Info]          |                                                            |
+[2024-08-26T13:38:53+0100] [Info]          |                                                            |
+[2024-08-26T13:38:53+0100] [Info]          |    YYYYYYY       YYYYYYY    SSSSSSSSSSSSSSS  IIIIIIIIII    |
+[2024-08-26T13:38:53+0100] [Info]          |    Y:::::Y       Y:::::Y  SS:::::::::::::::S I::::::::I    |
+[2024-08-26T13:38:53+0100] [Info]          |    Y:::::Y       Y:::::Y S:::::SSSSSS::::::S I::::::::I    |
+[2024-08-26T13:38:53+0100] [Info]          |    Y::::::Y     Y::::::Y S:::::S     SSSSSSS II::::::II    |
+[2024-08-26T13:38:53+0100] [Info]          |    YYY:::::Y   Y:::::YYY S:::::S               I::::I      |
+[2024-08-26T13:38:53+0100] [Info]          |       Y:::::Y Y:::::Y    S:::::S               I::::I      |
+[2024-08-26T13:38:53+0100] [Info]          |        Y:::::Y:::::Y      S::::SSSS            I::::I      |
+[2024-08-26T13:38:53+0100] [Info]          |         Y:::::::::Y        SS::::::SSSSS       I::::I      |
+[2024-08-26T13:38:53+0100] [Info]          |          Y:::::::Y           SSS::::::::SS     I::::I      |
+[2024-08-26T13:38:53+0100] [Info]          |           Y:::::Y               SSSSSS::::S    I::::I      |
+[2024-08-26T13:38:53+0100] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2024-08-26T13:38:53+0100] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2024-08-26T13:38:53+0100] [Info]          |           Y:::::Y        SSSSSSS     S:::::S II::::::II    |
+[2024-08-26T13:38:53+0100] [Info]          |        YYYY:::::YYYY     S::::::SSSSSS:::::S I::::::::I    |
+[2024-08-26T13:38:53+0100] [Info]          |        Y:::::::::::Y     S:::::::::::::::SS  I::::::::I    |
+[2024-08-26T13:38:53+0100] [Info]          |        YYYYYYYYYYYYY      SSSSSSSSSSSSSSS    IIIIIIIIII    |
+[2024-08-26T13:38:53+0100] [Info]          |                                                            |
+[2024-08-26T13:38:53+0100] [Info]          |                                                            |
+[2024-08-26T13:38:53+0100] [Info]          |                      (c) 2021 MPL v1.1                     |
+[2024-08-26T13:38:53+0100] [Info]          |            Alex "Y_Less" Cole and contributors.            |
+[2024-08-26T13:38:53+0100] [Info]          |                                                            |
+[2024-08-26T13:38:53+0100] [Info]          |                                                            |
+[2024-08-26T13:38:53+0100] [Info]          ==============================================================
+[2024-08-26T13:38:53+0100] [Info]  
+[2024-08-26T13:38:53+0100] [Info]  
+[2024-08-26T13:38:53+0100] [Info]  ========================================== 
+[2024-08-26T13:38:53+0100] [Info]  |                                        | 
+[2024-08-26T13:38:53+0100] [Info]  |  Missing YSI scriptfiles directories:  | 
+[2024-08-26T13:38:53+0100] [Info]  |                                        | 
+[2024-08-26T13:38:53+0100] [Info]  |      /scriptfiles/YSI/fixes/           | 
+[2024-08-26T13:38:53+0100] [Info]  |      /scriptfiles/YSI/temp/            | 
+[2024-08-26T13:38:53+0100] [Info]  |                                        | 
+[2024-08-26T13:38:53+0100] [Info]  ========================================== 
+[2024-08-26T13:38:53+0100] [Info]  |                                        | 
+[2024-08-26T13:38:53+0100] [Info]  |   Generating code, this may take a     | 
+[2024-08-26T13:38:53+0100] [Info]  |  little bit of time.  Note that this   | 
+[2024-08-26T13:38:53+0100] [Info]  |  code generation works best with the   | 
+[2024-08-26T13:38:53+0100] [Info]  |     JIT plugin, which you are not      | 
+[2024-08-26T13:38:53+0100] [Info]  |     currently using.  Get it here:     | 
+[2024-08-26T13:38:53+0100] [Info]  |                                        | 
+[2024-08-26T13:38:53+0100] [Info]  |       https://git.io/jit-plugin        | 
+[2024-08-26T13:38:53+0100] [Info]  |                                        | 
+[2024-08-26T13:38:53+0100] [Info]  |             Please wait...             | 
+[2024-08-26T13:38:53+0100] [Info]  |                                        | 
+[2024-08-26T13:38:53+0100] [Info]  |             Done in 437ms!             | 
+[2024-08-26T13:38:53+0100] [Info]  |                                        | 
+[2024-08-26T13:38:53+0100] [Info]  ========================================== 
+[2024-08-26T13:38:53+0100] [Info]  |                                        | 
+[2024-08-26T13:38:53+0100] [Info]  | Server:      open.mp 1.3.1.2744 (Wind  | 
+[2024-08-26T13:38:53+0100] [Info]  | Started:     26 Aug 2024 - 13:38:53    | 
+[2024-08-26T13:38:53+0100] [Info]  |                                        | 
+[2024-08-26T13:38:53+0100] [Info]  | Compiler:    3.10.11 (Windows)         | 
+[2024-08-26T13:38:53+0100] [Info]  | Includes:    samp-stdlib v037030       | 
+[2024-08-26T13:38:53+0100] [Info]  | Codepage:    <none>                    | 
+[2024-08-26T13:38:53+0100] [Info]  | Built:       26 Aug 2024 - 13:37:47    | 
+[2024-08-26T13:38:53+0100] [Info]  |                                        | 
+[2024-08-26T13:38:53+0100] [Info]  | YSI:         v5.07.3082                | 
+[2024-08-26T13:38:53+0100] [Info]  | Master:      -1                        | 
+[2024-08-26T13:38:53+0100] [Info]  |                                        | 
+[2024-08-26T13:38:53+0100] [Info]  | JIT:         <none>                    | 
+[2024-08-26T13:38:53+0100] [Info]  | Crashdetect: <found>                   | 
+[2024-08-26T13:38:53+0100] [Info]  |                                        | 
+[2024-08-26T13:38:53+0100] [Info]  ========================================== 
+[2024-08-26T13:38:53+0100] [Info]  
+[2024-08-26T13:38:53+0100] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2024-08-26T13:38:53+0100] [Info] [debug] AMX backtrace:
+[2024-08-26T13:38:53+0100] [Info] [debug] #0 0000662c in AMX_GetEntryPrefix (E_AMX_TABLE:table=0, idx=19, &buffer=@0cb19cb8 0, pattern=1598650688) at C:\Users\Game\Documents\GitHub\GVO-RP\compiler\include\YSI\YSI_Coding\y_timers\..\..\YSI_Core\y_core\y_amx_impl.inc:1170
+[2024-08-26T13:38:53+0100] [Info] [debug] #1 000066cc in AMX_GetPointerPrefix (E_AMX_TABLE:table=0, idx=0, &buffer=@0cb19cd8 0, pattern=1598650688) at C:\Users\Game\Documents\GitHub\GVO-RP\compiler\include\YSI\YSI_Coding\y_timers\..\..\YSI_Core\y_core\y_amx_impl.inc:2016
+[2024-08-26T13:38:53+0100] [Info] [debug] #2 0000a1f8 in ScriptInit_PreInitFuncs_ () at C:\Users\Game\Documents\GitHub\GVO-RP\compiler\include\YSI\YSI_Coding\y_timers\..\..\YSI_Core\y_core\y_core_entry.inc:515
+[2024-08-26T13:38:53+0100] [Info] [debug] #3 00003000 in public cmd_org () at C:\Users\Game\Documents\GitHub\GVO-RP\compiler\include\YSI\YSI_Coding\y_timers\..\..\YSI_Core\y_core\y_scriptinit_impl.inc:1835
+[2024-08-26T13:38:53+0100] [Info]  
+[2024-08-26T13:38:53+0100] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2024-08-26T13:38:53+0100] [Info] [debug] AMX backtrace:
+[2024-08-26T13:38:53+0100] [Info] [debug] #0 00100c50 in LoadOrg (org_idzzz=7) at ./modules/Server/Organization/_function.pwn:37
+[2024-08-26T13:38:53+0100] [Info] [debug] #1 00100c34 in LoadOrgs () at ./modules/Server/Organization/_function.pwn:33
+[2024-08-26T13:38:53+0100] [Info] [debug] #2 001fbd58 in SSA_Mysql_Intit () at C:/Users/Game/Documents/GitHub/GVO-RP/gamemodes/main.pwn:149
+[2024-08-26T13:38:53+0100] [Info] [debug] #3 00022d68 in public SSA_Mysql_Intit () at C:\Users\Game\Documents\GitHub\GVO-RP\compiler\include\YSI\YSI_Coding\y_hooks\..\y_cgen\y_cgen_impl.inc:157
+[2024-08-26T13:38:53+0100] [Info] [debug] #4 native CallRemoteFunction () in Pawn.dll
+[2024-08-26T13:38:53+0100] [Info] [debug] #5 00069384 in _@yHOnGameModeInit@03 () at ./modules/Main/mysql.pwn:23
+[2024-08-26T13:38:53+0100] [Info] [debug] #6 00021258 in public OnScriptInit@E () at C:\Users\Game\Documents\GitHub\GVO-RP\compiler\include\YSI\YSI_Coding\y_hooks\..\y_cgen\y_cgen_impl.inc:157
+[2024-08-26T13:38:53+0100] [Info] [debug] #7 native CallLocalFunction () in Pawn.dll
+[2024-08-26T13:38:53+0100] [Info] [debug] #8 000030d4 in public cmd_org () at C:\Users\Game\Documents\GitHub\GVO-RP\compiler\include\YSI\YSI_Coding\y_timers\..\..\YSI_Core\y_core\y_scriptinit_impl.inc:1868
+[2024-08-26T13:38:53+0100] [Info] > Ket noi den du lieu thanh cong.
+[2024-08-26T13:38:53+0100] [Info] Load road repair
+[2024-08-26T13:38:53+0100] [Info] [KNCMS][Log-Map]:Map CityHall loaded
+[2024-08-26T13:38:53+0100] [Info] [KNCMS][Log-Map]:Map Officer da load thanh cong
+[2024-08-26T13:38:53+0100] [Info] [KNCMS][Log-Map]:Map Hospital da load thanh cong
+[2024-08-26T13:38:53+0100] [Info] [KNCMS][Log-Map]:Map BANK loaded
+[2024-08-26T13:38:53+0100] [Info] [KNCMS][Log-Map]:Map Mechanic loaded
+[2024-08-26T13:38:54+0100] [Info] [KNCMS][Log-Map]:Map Dealership loaded
+[2024-08-26T13:38:54+0100] [Error] [artwork:error] Model -2001 is already in use
+[2024-08-26T13:38:54+0100] [Error] [artwork:error] Model -2002 is already in use
+[2024-08-26T13:38:54+0100] [Error] [artwork:error] Model -2004 is already in use
+[2024-08-26T13:38:54+0100] [Error] [artwork:error] Model -2006 is already in use
+[2024-08-26T13:38:54+0100] [Error] [artwork:error] Model -2007 is already in use
+[2024-08-26T13:38:54+0100] [Error] [artwork:error] Model -2008 is already in use
+[2024-08-26T13:38:54+0100] [Error] [artwork:error] Model -2009 is already in use
+[2024-08-26T13:38:54+0100] [Error] [artwork:error] Model -2010 is already in use
+[2024-08-26T13:38:54+0100] [Error] [artwork:error] Model -2011 is already in use
+[2024-08-26T13:38:54+0100] [Error] [artwork:error] Model -2012 is already in use
+[2024-08-26T13:38:54+0100] [Error] [artwork:error] Model -2013 is already in use
+[2024-08-26T13:38:54+0100] [Error] [artwork:error] Model -2014 is already in use
+[2024-08-26T13:38:54+0100] [Error] [artwork:error] Model -2018 is already in use
+[2024-08-26T13:38:54+0100] [Error] [artwork:error] Model -2019 is already in use
+[2024-08-26T13:38:54+0100] [Error] [artwork:error] Model -2020 is already in use
+[2024-08-26T13:38:54+0100] [Error] [artwork:error] Model -2021 is already in use
+[2024-08-26T13:38:54+0100] [Error] [artwork:error] Model -2022 is already in use
+[2024-08-26T13:38:54+0100] [Error] [artwork:error] Model -2023 is already in use
+[2024-08-26T13:38:54+0100] [Error] [artwork:error] Model -2024 is already in use
+[2024-08-26T13:38:54+0100] [Error] [artwork:error] Model -2025 is already in use
+[2024-08-26T13:38:54+0100] [Error] [artwork:error] Model -2026 is already in use
+[2024-08-26T13:38:54+0100] [Error] [artwork:error] Model -5000 is already in use
+[2024-08-26T13:38:54+0100] [Error] [artwork:error] Model -5001 is already in use
+[2024-08-26T13:38:54+0100] [Error] [artwork:error] Model -5002 is already in use
+[2024-08-26T13:38:54+0100] [Info] Legacy Network started on port 7777
+[2024-08-26T13:38:54+0100] [Info] [profiler] Attached profiler to gamemodes/main
+[2024-08-26T13:38:54+0100] [Info] [profiler] Started profiling gamemodes/main
+[2024-08-26T13:38:54+0100] [Info] [MySQL: OnQueryError (1146, Table 'gvo.dealership' doesn't exist, OnLoadDealership)]: Query: SELECT * FROM `dealership`.
+[2024-08-26T13:38:54+0100] [Info] [KNCMS][Log-SQL]:Da load thanh cong 1 Door
+[2024-08-26T13:39:04+0100] [Warning] Couldn't announce legacy network to open.mp list.
+[2024-08-26T13:39:04+0100] [Warning] 	 Status: 406
+[2024-08-26T13:39:04+0100] [Warning] 	 Message: {"error":"failed to query server: socket read timed out"}
+[2024-08-26T13:39:04+0100] [Warning] This won't affect the server's behaviour.
+[2024-08-26T13:39:42+0100] [Info] [sv:dbg:network:connect] : connecting player (0) with address (127.0.0.1) ...
+[2024-08-26T13:39:42+0100] [Info] [sv:dbg:network:connect] : player (0) assigned key (100007f600860fe)
+[2024-08-26T13:39:42+0100] [Info] [connection] incoming connection: 127.0.0.1:61769 id: 0
+[2024-08-26T13:39:42+0100] [Info] [join] Daniel_James has joined the server (0:127.0.0.1)
+[2024-08-26T13:39:43+0100] [Info] [sv:dbg:network:receive] : player (0) identified (port:61770)
+[2024-08-26T13:40:01+0100] [Info] jamesrpgmae@gmail.com
+[2024-08-26T13:40:02+0100] [Info] jamesrpgmae@gmail.com
+[2024-08-26T13:40:14+0100] [Info] [KNCMS][Log-Register]:Nguoi choi TAOLA AII vua dang ky tai khoan
+[2024-08-26T13:40:24+0100] [Info] UPDATE `players` SET `BirthDay` = '1', `BirthMonth` = '1', `BirthYear` = '2010', `Gender` = '1', `QuocTich` = '1',`Skin` = '1', `Note` = '' WHERE `PlayerName` = 'TAOLA_AII'
+[2024-08-26T13:40:24+0100] [Info] Admin: 0
+[2024-08-26T13:40:24+0100] [Info] Loaded 0 vehicle for TAOLA_AII
+[2024-08-26T13:41:59+0100] [Info] [sv:dbg:network:connect] : disconnecting player (0) ...
+[2024-08-26T13:41:59+0100] [Info] Character Save: TAOLA AII | AccountID: 31
+[2024-08-26T13:41:59+0100] [Info] [part] TAOLA_AII has left the server (0:1)
+[2024-08-26T13:41:59+0100] [Info] [MySQL: OnQueryError (1054, Unknown column 'TimeInjured' in 'field list', )]: Query: UPDATE `players` SET PosX = '1804.140503', PosY = '-1594.287842', PosZ = '14.046875', PosA = '64.421875', Health = '77.000000', Armour = '100.000000', TanSo = '0', Cash = '943100', AdminLevel = '10', Interior = '1', VW = '0', Phone = '0', DanhBa = '0', Dice = '0', CanXang = '0', DayThung = '0', XiGa = '0', Drink = '0', BinhSonXe = '0', Radio = '0', MatNa = '0', OrgID = '2', OrgRank = '1', Eat = '80', Refer = 'NULL', Bank = '42900', BankSaving = '15000', HoursSaving = '0', LastLogin = '2:47:50 6-21-2024', Injured = '0', TimeInjured = '300', Job = '0', InvWeight = '0', Skin = 3 WHERE `id` = '31' LIMIT 1.
+[2024-08-26T13:42:09+0100] [Info]  -------------------------------------------
+[2024-08-26T13:42:09+0100] [Info]            SampVoice unloading...           
+[2024-08-26T13:42:09+0100] [Info]  -------------------------------------------
+[2024-08-26T13:42:09+0100] [Info] [sv:dbg:network:free] : module releasing...
+[2024-08-26T13:42:09+0100] [Info] [dbg:raknet:free] : module releasing...
+[2024-08-26T13:42:09+0100] [Info] [dbg:raknet:free] : module released
+[2024-08-26T13:42:09+0100] [Info] [sv:dbg:network:free] : module released
+[2024-08-26T13:42:09+0100] [Info] [Pawn.RakNet] plugin unloaded
+[2024-08-26T13:42:09+0100] [Info] [Pawn.CMD] plugin unloaded
+[2024-08-26T13:42:10+0100] [Info] [profiler] Dumping profiling statistics for gamemodes/main
+[2024-08-26T13:42:10+0100] [Info] [profiler] Total functions logged: 29 (native: 0, public: 29, other: 0)
+[2024-08-26T13:42:10+0100] [Info] [profiler] Total function calls logged: 2014
+[2024-08-26T13:42:10+0100] [Info] [profiler] Writing profile to gamemodes/main-profile.html
+[2024-08-26T13:42:10+0100] [Info] [GPS plugin]: Unloaded.
+[2024-08-26T13:42:10+0100] [Info]  PawnPlus v1.4.3 unloaded
+[2024-08-26T13:42:10+0100] [Info]  
+[2024-08-26T13:42:10+0100] [Info]  ====================
+[2024-08-26T13:42:10+0100] [Info]  
+[2024-08-26T13:42:10+0100] [Info]   Whirlpool unloaded
+[2024-08-26T13:42:10+0100] [Info]  
+[2024-08-26T13:42:10+0100] [Info]  ====================
+[2024-08-26T13:42:10+0100] [Info]  
+[2024-08-26T13:42:10+0100] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2024-08-26T13:42:10+0100] [Info] plugin.dc-connector: Unloading plugin...
